@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+    font-family: 'Raleway';
+    margin-bottom: 100px;
+    padding-top: 40px;
+    }
+    
+.floatingBox {
+    display: inline-block;
+    padding-top: 20px;
+    width: 150px;
+    height: 75px;
+    margin: 10px;
+    border: 3px solid;
+    text-align: center;
+    font-family: 'Raleway';
+}
+
+.outerbox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 540px;
+}
+
+center {
+    width: 50%;
+    display: inline-block;
+}
+a{
+    color:black;
+}
