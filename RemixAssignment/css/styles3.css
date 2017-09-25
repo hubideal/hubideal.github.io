@@ -1,0 +1,66 @@
+.next {font-size: 10px;
+font-family:'Avenir';
+text-align: right;
+margin-right:30%;
+position: relative;
+}
+
+a {
+    color: white;
+}
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {font-family: 'Dosis';
+}
+
+#title {margin-left: 150px;
+margin-bottom: 0px;
+}
+
+
+h2 {font-family: 'Dosis';
+    font-size: 12px;
+}
+
+#byline {margin-left: 150px;
+margin-top: 2px;
+margin-bottom: 10px;
+}
+
+
+
+p {font-family: 'Dosis';
+    font-size: 12px;
+}
+
+.stanzas {margin-left: 1px;
+font-family: 'Dosis';
+text-shadow: .6px .6px #C0C0C0;
+width: 190px;
+border-left: solid 3px;
+border-left-color: rgba(255, 255, 255, .8);
+border-right: solid 3px;
+border-right-color: rgba(255, 255, 255, .8);
+padding:18px;
+}
+.outside1 {
+    
+    width: 234px;
+    padding: 0px;
+   border-left: solid 3px;
+border-left-color: rgba(255, 255, 255, .6);
+border-right: solid 3px;
+border-right-color: rgba(255, 255, 255, .6);
+}
+.outside2 {
+    margin-left: 145px;
+    width: 241px;
+    padding: 0px;
+   border-left: solid 3px;
+border-left-color: rgba(255, 255, 255, .4);
+border-right: solid 3px;
+border-right-color: rgba(255, 255, 255, .4);
+}

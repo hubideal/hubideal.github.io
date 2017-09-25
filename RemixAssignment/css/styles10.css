@@ -1,0 +1,133 @@
+.next {font-size: 10px;
+font-family:'Avenir';
+text-align: right;
+margin-right:30%;
+position: relative;
+}
+    
+h1 {font-family: 'Lato', 'Avenir';
+font-size: 20pt;
+text-align: center
+}
+
+.title {text-align: center;
+margin-bottom: 0px;
+padding-bottom: 0px;
+}
+
+h2 {font-family: 'Lato', 'Avenir';
+    font-size: 12pt;
+}
+
+#byline {text-align:center;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+table {
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+
+.stanza{
+    font-family: 'Avenir';
+    font-size: 11pt;
+    border-collapse: collapse;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.wordReplace {
+    color: rgb(255, 255, 255);
+    border-bottom: solid black thin;
+}
+
+tr {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+td {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#Human {
+    font-size: 20pt;
+    text-align: center;
+    font-family: 'Avenir';
+}
+
+#Reality {
+    font-size: 20pt;
+    text-align: center;
+    font-family: "Droid Sans";
+    
+}
+
+#MaryJane {
+    font-size: 20pt;
+    text-align: center;
+    font-family: 'Righteous', 'Lato';
+   
+}
+
+#Mirror {
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+    text-align: center;
+    font-size:20pt;
+    font-family:courier;
+}
+
+#Bemuse {
+    font-size:20pt;
+    font-family:"Droid Sans";
+    text-align: center;
+}
+
+#Love {
+    font-size:30pt;
+    font-family:"Dancing Script";
+    text-align: center;
+}
+
+#Wonders {
+    font-size:25pt;
+    font-family:"Droid Sans";
+    text-align: center;
+    font-variant: small-caps;
+}
+
+#Die {
+    font-size:20pt;
+    font-family:'UnifrakturCook';
+    text-align: center;
+}
+
+#MyFriends {
+    font-size:20pt;
+    font-family:"Oswald";
+    text-align: center;
+}
+
+#Unalike {
+    font-size:20pt;
+    font-family:"Avenir";
+    text-align: center;
+}
+
+#Alike {
+    font-size:20pt;
+    font-family:"Avenir";
+    text-align: center;
+}

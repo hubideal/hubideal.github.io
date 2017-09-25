@@ -1,0 +1,90 @@
+.next {font-size: 10px;
+font-family:'Avenir';
+text-align: right;
+margin-right:25%;
+position: relative;
+}
+
+h1 {font-family: 'Open Sans', 'Avenir';
+font-size: 30pt;
+
+}
+
+.title {margin-left: 20%;
+margin-bottom: 10px;
+font-variant: normal;
+}
+
+
+h2 {font-family: 'Open Sans', 'Avenir';
+    font-size: 12px;
+   
+}
+
+#byline {margin-left: 20%;
+margin-top: 2px;
+margin-bottom: 25px;
+}
+
+
+.stanzas {
+font-family: 'Open Sans', 'Avenir';
+font-size: 12pt;
+transform: rotate(90deg);
+margin-top: 60%;
+line-height: 1em;
+vertical-align: text-top;
+}
+
+
+/*#line01 {margin-top: 50px;
+
+}
+
+#line02 {margin-top: 50px;
+
+}
+
+#line03 {
+margin-top: 50px;
+}
+
+#line04 {
+    margin-top: 50px;
+}
+
+#line05 {
+    margin-top: 50px;
+}
+
+#line06 {
+    margin-top: 50px;
+}
+
+#line07 {
+    margin-top: 50px;
+}
+
+#line08 {
+    margin-top: 50px;
+}
+
+#line09 {
+    margin-top: 50px;
+}
+
+#line10 {
+    margin-top: 50px;
+}
+
+#line11 {
+    margin-top: 50px;
+}
+
+#line12 {
+   margin-top: 50px;
+}
+
+#line13 {
+   margin-top: 50px;
+}*/

@@ -1,0 +1,742 @@
+.next {font-size: 10px;
+font-family:'Avenir';
+text-align: right;
+margin-right:30%;
+position: relative;
+}
+
+
+h1 {font-family: 'Raleway', serif;
+margin: 15%;
+font-variant: small-caps;
+margin-top: 10px;
+margin-bottom: 5px;
+}
+
+
+
+h2 {font-family: 'Raleway', serif;
+    font-size: 12px;
+}
+
+#byline {margin-left: 15%;
+margin-top: 2px;
+margin-bottom: 1px;
+}
+
+p {
+    font-size: 14pt;
+    line-height: 18pt;
+}
+
+.stanzas {font-family: 'Raleway', serif;;
+margin-left: 20%;
+}
+
+#f1 {
+    position:relative;
+    letter-spacing: .15em;
+    top: .25px;
+}
+
+#a1 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -1.25px;
+}
+
+#m1 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -1.75px;
+}
+
+#i1 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -2.25px;
+}
+
+#l1 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -2.75px;
+}
+
+#y1 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -3.25px;
+}
+
+
+#c2 {
+    position:relative;
+    letter-spacing: .15em;
+    top: .25px;
+}
+
+#o2 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -1.25px;
+}
+
+#m2 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -1.75px;
+}
+
+#e2 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -2.25px;
+}
+
+#d2 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -2.75px;
+}
+
+#y2 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -3.5px;
+}
+
+
+/*profundity*/
+#p3 {
+    position:relative;
+    letter-spacing: .15em;
+    top: .25px;
+}
+
+#r3 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 1.25px;
+}
+
+#o3 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 2px;
+}
+
+#f3 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 2.5px;
+}
+
+#u3 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 3px;
+}
+
+#n3 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 3.5px;
+}
+
+#d3 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 4px;
+}
+
+#i3 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 4.5px;
+}
+
+#t3 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 4.75px;
+}
+
+#y3 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 5px;
+}
+
+
+/*Reality*/
+#r32 {
+    position:relative;
+    letter-spacing: .15em;
+    top: .25px;
+}
+
+#e32 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 1.25px;
+}
+
+#e32 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 1.25px;
+}
+
+#a32 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 1.75px;
+}
+
+#l32 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 2.25px;
+}
+
+#i32 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 2.75px;
+}
+
+#t32 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 3.25px;
+}
+
+#y32 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 3.75px;
+}
+
+/*delight*/
+#d4 {
+    position:relative;
+    letter-spacing: .15em;
+    top: .5px;
+}
+#e4 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -.5px;
+}
+
+#l4 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -1px;
+}
+
+#i4 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -1.5px;
+}
+
+#g4 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -2px;
+}
+
+#h4 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -2.5px;
+}
+#t4 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -3px;
+}
+
+
+/*white*/
+#w42 {
+    position:relative;
+    letter-spacing: .15em;
+    top: .5px;
+}
+#h42 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -.5px;
+}
+
+#i42 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -1px;
+}
+
+#t42 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -1.5px;
+}
+#e42 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -2px;
+}
+
+/*land*/
+
+#l5 {
+   position:relative;
+    letter-spacing: .15em;
+    top: -2.5px; 
+}
+
+#a5 {
+   position:relative;
+    letter-spacing: .15em;
+    top: -1.5px; 
+}
+
+#n5 {
+   position:relative;
+    letter-spacing: .15em;
+    top: -.5px; 
+}
+
+#d5 {
+   position:relative;
+    letter-spacing: .15em;
+    top: .5px; 
+}
+
+/*man*/
+#m52 {
+   position:relative;
+    letter-spacing: .15em;
+    top: -2.5px; 
+}
+
+#a52 {
+   position:relative;
+    letter-spacing: .15em;
+    top: -1.5px; 
+}
+
+#n52 {
+   position:relative;
+    letter-spacing: .15em;
+    top: -.5px; 
+}
+
+/*jane*/
+#j6 {
+    position:relative;
+    letter-spacing: .15em;
+    top: .5px;
+    
+}
+
+#a6 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -1.5px;
+    
+}
+
+#n6 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -2.5px;
+    
+}
+
+#e6 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -3.5px;
+}
+
+/*same*/
+#s62 {
+    position:relative;
+    letter-spacing: .15em;
+    top:.5px;
+}
+#a62 {
+    position:relative;
+    letter-spacing: .15em;
+    top:-1.5px;
+}
+#m62 {
+    position:relative;
+    letter-spacing: .15em;
+    top:-2.5px;
+}
+#e62 {
+    position:relative;
+    letter-spacing: .15em;
+    top:-3.5px;
+}
+
+/*jibe*/
+
+#j7 {
+    position:relative;
+    letter-spacing: .15em;
+    top:-4px;
+}
+
+#i7 {
+    position:relative;
+    letter-spacing: .15em;
+    top:-3px;
+}
+
+#b7 {
+    position:relative;
+    letter-spacing: .15em;
+    top:-2px;
+}
+
+
+#e7 {
+    position:relative;
+    letter-spacing: .15em;
+    top: .5px;
+}
+
+/*side*/
+#s72 {
+    position:relative;
+    letter-spacing: .15em;
+    top:-4px;
+}
+
+#i72 {
+    position:relative;
+    letter-spacing: .15em;
+    top:-3px;
+}
+
+#d72 {
+    position:relative;
+    letter-spacing: .15em;
+    top:-2px;
+}
+
+
+#e72 {
+    position:relative;
+    letter-spacing: .15em;
+    top: .5px;
+}
+
+/*moors*/
+
+#m8 {
+    position:relative;
+    letter-spacing: .15em;
+    top:4px;
+}
+
+#o81 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 3px;
+}
+
+#o82 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 2px;
+}
+
+
+#r8 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 1px;
+}
+
+#s8 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -.5px;
+}
+
+/*shores*/
+
+#s82 {
+    position:relative;
+    letter-spacing: .15em;
+    top:4px;
+}
+
+#h82 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 3px;
+}
+
+#o83 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 2px;
+}
+
+
+#r82 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 1px;
+}
+
+#e82 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -.5px;
+}
+
+#s83 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -.5px;
+}
+
+#m9 {
+    position:relative;
+    letter-spacing: .15em;
+    top: .25px;
+}
+
+#a9 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 1.25px;
+}
+
+#i9 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 2.25px;
+}
+
+#n9 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 3.25px;
+}
+
+#e9 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 4.25px;
+}
+
+/*same*/
+#s10 {
+    position:relative;
+    letter-spacing: .15em;
+    top: .25px;
+}
+
+#a10 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 1.25px;
+}
+
+#m10 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 2.25px;
+}
+
+#e10 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 3.25px;
+}
+
+/*type*/
+
+#t11 {
+    position:relative;
+    letter-spacing: .15em;
+    top: .1px;
+}
+
+#y11 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -2px;
+}
+
+#p11 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -4px;
+}
+
+#e11 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -6px;
+}
+
+/*unalike*/
+#u112 {
+    position:relative;
+    letter-spacing: .15em;
+    top: .1px;
+}
+
+#n112 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -2px;
+}
+
+#a112 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -4px;
+}
+
+#l112 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -6px;
+}
+#i112 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -7px;
+}
+
+#k112 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -8px;
+}
+
+#e112 {
+    position:relative;
+    letter-spacing: .15em;
+    top: -9px;
+}
+
+/*alike*/
+#a12 {
+    position:relative;
+    letter-spacing: .15em;
+    top: .5px;
+}
+
+#l12 {
+    position:relative;
+    letter-spacing: .15em;
+    top: .7px;
+}
+
+#i12 {
+    position:relative;
+    letter-spacing: .15em;
+    top: .9px;
+}
+
+#k12 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 1.1px;
+}
+#e12 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 1.3px;
+}
+
+/*unalike*/
+
+#u122 {
+    position:relative;
+    letter-spacing: .15em;
+    top: .5px;
+}
+
+#n122 {
+    position:relative;
+    letter-spacing: .15em;
+    top: .7px;
+}
+
+#a122 {
+    position:relative;
+    letter-spacing: .15em;
+    top: .9px;
+}
+
+#l122 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 1.1px;
+}
+#i122 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 1.3px;
+}
+
+#k122 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 1.5px;
+}
+
+#e122 {
+    position:relative;
+    letter-spacing: .15em;
+    top: 1.7px;
+}
+
+/*.profundityreality {
+    transform: rotate(-2deg);
+}
+
+.delightwhite {
+    transform: rotate(4deg);
+}
+
+.landman {
+    transform: rotate(-6deg);
+}
+
+.janesame {
+    transform: rotate(8deg);
+}
+
+.jibeside {
+    transform: rotate(-1deg);
+}
+
+.moorsshores {
+    transform: rotate(10deg);
+}
+
+.mainesame {
+    transform: rotate(3deg);
+}
+
+.typeunalike {
+    transform: rotate(-9deg);
+}
+
+.alike {
+    transform: rotate(15deg);
+}*/

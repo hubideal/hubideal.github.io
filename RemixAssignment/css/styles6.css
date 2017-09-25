@@ -1,0 +1,79 @@
+header {
+    color: white;
+}
+.next {font-size: 10px;
+color: rgb(255, 255, 255);
+font-family:'Avenir';
+text-align: right;
+margin-right:30%;
+position: relative;
+}
+
+a {
+    color: white;
+}
+h1 {font-family: 'Open Sans', sans-serif;
+margin-left: 33%;
+padding:0px;
+max-width: 320px;
+text-align: center;
+font-variant: small-caps;
+    color: white;
+}
+
+h2 {font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    max-width: 320px;
+    color: white;
+}
+
+#byline {margin-left: 33%;
+text-align: center;
+margin-top: 2px;
+margin-bottom: 1px;
+}
+
+body {
+    background: rgba(0, 0, 0,.9);
+}
+p {font-family: 'Open Sans', sans-serif;
+    font-size: 13pt;
+    line-height: 16pt
+}
+
+.stanzas {margin-left: 33%;
+max-width:320px;
+padding: 0px 0px 0px 0px;
+}
+
+
+.borderEffect {
+    margin: -10px;
+    border-style: outset;
+    max-width:320px;
+    text-align:center;
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, .9);
+    color: black;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.lowerStanzas {
+    padding-left:25px;
+    color: white;
+    text-align:center;
+    padding: 0px 0px 0px 0px;
+}
+
+.bigPunch {
+    margin-top: 30px;
+    border-style: dotted solid dotted solid;
+    border-color: black;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, .9);
+     padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+    

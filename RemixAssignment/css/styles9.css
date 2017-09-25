@@ -1,0 +1,204 @@
+.next {font-size: 10px;
+font-family:'Avenir';
+text-align: right;
+margin-right:30%;
+position: relative;
+}
+
+h1 {font-family: 'Josefin Sans', 'Oxygen', 'Avenir';
+}
+
+#title {margin-left: 150px;
+}
+
+#title2 {margin-left: 150px;
+}
+
+h2 {font-family: 'Josefin Sans', 'Oxygen', 'Avenir';;
+    font-size: 12px;
+}
+
+#byline {margin-left: 150px;
+}
+
+p {font-family: 'Josefin Sans', 'Oxygen', 'Avenir';
+padding-left: 40px;
+}
+
+.stanzas {
+font-family: 'Josefin Sans', 'Oxygen', 'Avenir';
+width:500px;
+background: grey; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(white, black); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(white, black); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(white, black); /* For Firefox 3.6 to 15 */
+background: linear-gradient(white, black); /* Standard syntax */
+margin-left: 150px;
+}
+
+
+
+#line01{color: rgb(100, 100, 100);
+    color: rgba(0,0,0, 1);
+}
+#line02{color: rgb(100, 100, 100);
+color: rgba(0, 0, 0, .98);
+}
+#line03{color: rgb(100, 100, 100);
+   color: rgba(0, 0, 0, .96);
+}
+#line04{color: rgb(100, 100, 100);
+    color: rgba(0, 0, 0, .94);
+}
+#line05{color: rgb(100, 100, 100);
+    color: rgba(0, 0, 0, .92);
+}
+#line06{color: rgb(100, 100, 100);
+    color: rgba(0, 0, 0, .90);
+}
+#line07{color: rgb(100, 100, 100);
+    color: rgba(0, 0, 0, .88);
+}
+#line08{
+    color: rgb(100, 100, 100);
+    color: rgba(0, 0, 0, .86);
+}
+#line09{
+color: rgb(100, 100, 100);
+    color: rgba(0, 0, 0, .84);}
+#line10{
+    color: rgb(100, 100, 100);
+    color: rgba(0, 0, 0, .82);
+}
+#line11{
+    color: rgb(100, 100, 100);
+    color: rgba(0, 0, 0, .80);
+}
+#line12{
+    color: rgb(100, 100, 100);
+    color: rgba(0, 0, 0, .78);
+}
+#line13{
+    color: rgb(100, 100, 100);
+    color: rgba(0, 0, 0, .76);
+}
+#line14{
+    color: rgb(100, 100, 100);
+    color: rgba(0, 0, 0, .74);
+}
+#line15{
+    color: rgb(100, 100, 100);
+    color: rgba(0, 0, 0, .72);
+}
+#line16{
+    color: rgb(100, 100, 100);
+    color: rgba(0, 0, 0, .70);
+}
+#line17{color: rgb(100, 100, 100);
+    color: rgba(0, 0, 0, .68);
+}
+#line18{
+    color: rgb(100, 100, 100);
+    color: rgba(0, 0, 0, .66);
+}
+#line19{
+    color: rgb(100, 100, 100);
+    color: rgba(0, 0, 0, .64);
+}
+#line20{
+   color: rgb(100, 100, 100);
+    color: rgba(0, 0, 0, .62);
+}
+#line21{
+    color: rgb(100, 100, 100);
+    color: rgba(0, 0, 0, .60);
+}
+#line22{
+    color: rgb(100, 100, 100);
+    color: rgba(0, 0, 0, .58);
+}
+#line23{
+    color: rgb(100, 100, 100);
+    color: rgba(0, 0, 0, .56);
+}
+#line24{
+    color: rgb(100, 100, 100);
+    color: rgba(0, 0, 0, .54);
+}
+#line25{ color: rgb(100, 100, 100);
+    color: rgba(0, 0, 0, .52);
+}
+#line26{ color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255, .54);
+}
+#line27{ color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255,.56);
+}
+#line28{ color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255, .58);
+}
+#line29{ color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255, .60);
+}
+#line30{ color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255, .62);
+}
+#line31{ color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255, .64);
+}
+#line32{ color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255, .66);
+}
+#line33{ color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255, .68);
+}
+#line34{ color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255, .70);
+}
+#line35{ color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255, .72);
+}
+#line36{color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255, .74);
+}
+#line37{color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255, .76);}
+    
+#line38{ color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255, .78);}
+    
+#line39{ color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255, .80);}
+    
+#line40{ color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255, .82);}
+#line41{ color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255, .84);
+}
+#line42{ color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255, .86);
+}
+#line43{ color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255, .88);
+}
+#line44{ color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255, .86);
+}
+#line45{ color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255, .88);
+}
+#line46{ color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255, .90);
+}
+#line47{ color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255, .92);
+}
+#line48{ color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255, .94);
+}
+#line49{ color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255, .96);
+}
+#line50{ color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255, .98);
+}

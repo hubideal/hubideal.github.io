@@ -1,0 +1,103 @@
+.next {font-size: 10px;
+font-family:'Avenir';
+text-align: right;
+margin-right:30%;
+position: relative;
+}
+    
+h1 {font-family: 'Raleway', 'Lato';
+font-size: 200%;
+text-align: center;
+}
+
+.title {text-align: center;
+margin-bottom: 0px;
+}
+
+h2 {font-family: 'Raleway', 'Lato';
+    font-size: 12pt;
+}
+
+#byline {text-align:center;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+
+.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+
+.stanza {
+    font-family:'Lato', 'Raleway';
+    text-align: center;
+    position: relative;
+    margin: 0px 0px 0px 0px;
+}
+td {
+    width: 370px;
+    height: 120px;
+    margin: 0px 0px 0px 0px;
+    
+}
+
+#cell1 {
+     -ms-transform: scale(.7,.8); /* IE 9 */
+    -webkit-transform: scale(.7,.8); /* Safari */
+    transform: scale(.7,.8); /* Standard syntax */
+}
+
+#cell2 {
+    
+    -ms-transform: scale(.9,.8); /* IE 9 */
+    -webkit-transform: scale(.9,.8); /* Safari */
+    transform: scale(.9,.8); /* Standard syntax */
+}
+
+#cell3 {
+    -ms-transform: scale(.95,.85);
+    -webkit-transform: scale(95,.85); 
+    transform: scale(.95,.85);
+}
+
+#cell4 {
+   
+    -ms-transform: scale(1.05,1.05);
+    -webkit-transform: scale(1.05,1.05); 
+    transform: scale(1.05,1.05); 
+}
+
+#cell5 {
+   -ms-transform: scale(1.15,1.15);
+    -webkit-transform: scale(1.15,1.15); 
+    transform: scale(1.15,1.15);
+}
+
+#cell6 {
+  -ms-transform: scale(1.25,1.25);
+    -webkit-transform: scale(1.25,1.25); 
+    transform: scale(1.25,1.25);
+}
+
+#cell7 {
+     
+    -ms-transform: scale(1.3,1.3);
+    -webkit-transform: scale(1.3,1.3); 
+    transform: scale(1.3,1.3); 
+}
+
+#cell9 {
+    -ms-transform: scale(1.35,1.35);
+    -webkit-transform: scale(1.35,1.35); 
+    transform: scale(1.35,1.35); 
+ 
+}
+
+
+#cell10 {
+ 
+    -ms-transform: scale(1.6,1.6);
+    -webkit-transform: scale(1.6,1.6); 
+    transform: scale(1.6,1.6); 
+}

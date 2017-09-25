@@ -1,0 +1,145 @@
+.next {font-size: 10px;
+font-family:'Avenir';
+text-align: right;
+margin-right:30%;
+position: relative;
+}
+    
+h1 {font-family: 'Open Sans', sans-serif;
+font-size: 200%;
+text-align: center;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+.title {text-align: center;
+margin-bottom: 0px;
+}
+
+h2 {font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+    margin-top: 0px;
+margin-bottom: 0px;
+}
+
+#byline {text-align:center;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+.stanzas {
+font-family: 'Open Sans', sans-serif;
+text-align: center;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+div {
+    margin-top: 0px;
+margin-bottom: 0px;
+}
+
+
+#line01{font-size:80%;
+}
+#line02{font-size:100%;
+}
+#line03{font-size:120%;
+}
+#line04{font-size:140%;
+}
+
+#line06{font-size:160%;
+}
+#line07{font-size:160%;
+}
+#line08{font-size:120%;
+}
+#line09{font-size: 80%;}
+
+
+#line11{font-size:80%;;
+}
+
+#line12{font-size:100%;;
+}
+
+#line13{font-size:140%;;
+}
+
+#line14{font-size:150%;
+}
+
+#line16{
+    font-size:150%
+}
+
+#line17{font-size:140%;
+}
+
+#line18{font-size:110%;
+}
+#line19{font-size:80%;
+}
+
+#line21{font-size:100%;
+}
+#line22{font-size:120%;
+}
+#line23{font-size:140%;
+}
+#line24{font-size:160%;
+}
+
+#line26{font-size:160%;
+}
+#line27{ font-size:140%;
+}
+#line28{ font-size:120%;
+}
+#line29{font-size:100%;
+}
+#line31{ font-size:100%;
+}
+#line32{font-size:120%;
+}
+#line33{font-size:140%;
+}
+#line34{font-size:160%;
+}
+
+#line36{font-size:160%;
+}
+#line37{ font-size:170%;
+}
+#line38{ font-size:140%;
+}
+#line39{font-size:100%;
+}
+    
+#line41{font-size:80%;;
+}
+
+#line42{font-size:120%;;
+}
+
+#line43{font-size:140%;;
+}
+
+#line44{font-size:160%;
+}
+
+
+#line46{
+    font-size:180%
+}
+
+#line47{font-size:140%;
+}
+
+#line48{font-size:120%;
+}
+#line49{font-size:80%;
+}
+#line50{font-size:60%;
+}

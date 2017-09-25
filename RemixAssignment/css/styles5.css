@@ -1,0 +1,142 @@
+
+.next {font-size: 10px;
+font-family:'Avenir';
+text-align: right;
+margin-right:30%;
+position: relative;
+}
+    
+h1 {font-family: 'Montserrat Regular', 'Avenir';
+font-size: 20pt;
+text-align: center;
+margin-bottom: 0px;
+padding-bottom: 0px;
+}
+
+
+h2 {font-family: 'Montserrat Regular', 'Avenir';
+    font-size: 12px;
+}
+
+#byline {text-align:center;
+margin-top: 2px;
+margin-bottom: 2px;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+
+.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+
+.stanza{
+    font-family: 'Montserrat Regular', sans-serif;
+    font-size:11px;
+    color: rgb(0,0,0);
+    padding: 0px 10px 0px 10px;
+    margin: 0px 0px 0px 0px;
+    border-collapse: collapse;
+}
+
+#repeat1 {
+    background: rgb(0,0,0);
+    color: rgb(255, 255, 255);
+    color: rgba(255,255,255,0);
+    padding: 0px 10px 0px 10px;
+    margin: 0px 0px 0px 0px;
+    font-family: 'Vollkorn';
+    font-size: 11pt;
+}
+
+#repeat2 {
+    background: rgb(0,0,0);
+    color: rgb(255, 255, 255);
+    color: rgba(255,255,255,.2);
+    padding: 0px 10px 0px 10px;
+    margin: 0px 0px 0px 0px;
+    /*line-height: 5px;*/
+    font-family: 'Vollkorn';
+    font-size: 11pt;
+}
+
+#repeat3 {
+    background: rgb(0,0,0);
+    color: rgb(255, 255, 255);
+    color: rgba(255,255,255,.4);
+    padding: 0px 10px 0px 10px;
+    margin: 0px 0px 0px 0px;
+    /*line-height: 5px;*/
+    font-family: 'Vollkorn';
+    font-size: 11pt;
+}
+
+#repeat4 {
+    background: rgb(0,0,0);
+    color: rgb(255, 255, 255);
+    color: rgba(255,255,255,.5);
+    padding: 0px 10px 0px 10px;
+    margin: 0px 0px 0px 0px;
+    /*line-height: 5px;*/
+    font-family: 'Vollkorn';
+    font-size: 11pt;
+}
+
+#repeat5 {
+    background: rgb(0,0,0);
+    color: rgb(255, 255, 255);
+    color: rgba(255,255,255,.6);
+    padding: 0px 10px 0px 10px;
+    margin: 0px 0px 0px 0px;
+   /*line-height: 5px;*/
+    font-family: 'Vollkorn';
+    font-size: 11pt;
+}
+
+#repeat6 {
+    background: rgb(0,0,0);
+    color: rgb(255, 255, 255);
+    color: rgba(255,255,255,.7);
+     padding: 0px 10px 0px 10px;
+     margin: 0px 0px 0px 0px;
+    /*line-height: 5px;*/
+    font-family: 'Vollkorn';
+    font-size: 11pt;
+}
+
+#repeat7 {
+    background: rgb(0,0,0);
+    color: rgb(255, 255, 255);
+    color: rgba(255,255,255,.8);
+   padding: 0px 10px 0px 10px;
+   margin: 0px 0px 0px 0px;
+   /*line-height: 5px;*/
+    font-family: 'Vollkorn';
+    font-size: 11pt;
+}
+
+#repeat8 {
+    background: rgb(0,0,0);
+    color: rgb(255, 255, 255);
+    color: rgba(255,255,255,.9);
+    padding: 0px 10px 0px 10px;
+    margin: 0px 0px 0px 0px;
+    /*line-height: 5px;*/
+    font-family: 'Vollkorn';
+    font-size: 11pt;
+}
+
+#repeat9 {
+    background: rgb(0,0,0);
+    color: rgb(255, 255, 255);
+    color: rgba(255,255,255,1);
+    padding: 0px 10px 0px 10px;
+    margin: 0px 0px 0px 0px;
+    /*line-height: 5px;*/
+    font-family: 'Vollkorn';
+    font-size: 11pt;
+}

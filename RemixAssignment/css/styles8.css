@@ -1,0 +1,179 @@
+.next {font-size: 10px;
+font-family:'Avenir';
+text-align: right;
+margin-right:30%;
+position: relative;
+}
+
+h1 {font-family: 'Avenir';
+}
+
+#title {margin-left: 60px;
+}
+
+#title2 {margin-left: 60px;
+}
+
+h2 {font-family: 'Avenir';
+    font-size: 12px;
+}
+
+#byline {margin-left: 60px;
+}
+
+p {font-family: 'Avenir';
+}
+
+.stanzas {margin-left: 40px;
+font-family: 'Avenir';
+}
+
+/*.letterEm {
+    font-weight: 600;
+}*/
+
+#line01{margin-left: 0px;
+    font-weight: 100;
+}
+#line02{margin-left: 10px;
+    font-weight: 100;
+}
+#line03{margin-left: 20px;
+    font-weight: 100;
+}
+#line04{margin-left: 30px;
+    font-weight: 100;
+}
+#line05{margin-left: 40px;
+    font-weight: 100;
+}
+#line06{margin-left: 50px;
+    font-weight: 200;
+}
+#line07{margin-left: 60px;
+    font-weight: 200;
+}
+#line08{margin-left: 70px;
+    font-weight: 200;
+}
+#line09{margin-left: 80px;
+font-weight: 200;}
+#line10{margin-left: 90px;
+    font-weight: 200;
+}
+#line11{margin-left: 100px;
+    font-weight: 300;
+}
+#line12{margin-left: 110px;
+    font-weight: 300;
+}
+#line13{margin-left: 120px;
+    font-weight: 300;
+}
+#line14{margin-left: 130px;
+    font-weight: 300;
+}
+#line15{margin-left: 140px;
+    font-weight: 300;
+}
+#line16{margin-left: 150px;
+    font-weight: 400;
+}
+#line17{margin-left: 160px;
+    font-weight: 400;
+}
+#line18{margin-left: 170px;
+    font-weight: 400;
+}
+#line19{margin-left: 180px;
+    font-weight: 400;
+}
+#line20{margin-left: 190px;
+    font-weight: 400;
+}
+#line21{margin-left: 200px;
+    font-weight: 500;
+}
+#line22{margin-left: 210px;
+    font-weight: 500;
+}
+#line23{margin-left: 220px;
+    font-weight: 500;
+}
+#line24{margin-left: 230px;
+    font-weight: 500;
+}
+#line25{margin-left: 240px;
+    font-weight: 500;
+}
+#line26{margin-left: 240px;
+    font-weight: 600;
+}
+#line27{margin-left: 230px;
+    font-weight: 600;
+}
+#line28{margin-left: 220px;
+    font-weight: 600;
+}
+#line29{margin-left: 210px;
+    font-weight: 600;
+}
+#line30{margin-left: 200px;
+    font-weight: 600;
+}
+#line31{margin-left: 190px;
+    font-weight: 700;
+}
+#line32{margin-left: 180px;
+    font-weight: 700;
+}
+#line33{margin-left: 170px;
+    font-weight: 700;
+}
+#line34{margin-left: 160px;
+    font-weight: 700;
+}
+#line35{margin-left: 150px;
+    font-weight: 700;
+}
+#line36{margin-left: 140px;
+font-weight: 700;
+}
+#line37{margin-left: 130px;
+font-weight: 700;}
+#line38{margin-left: 120px;
+font-weight: 700;}
+#line39{margin-left: 110px;
+font-weight: 800;}
+#line40{margin-left: 100px;
+font-weight: 800;}
+#line41{margin-left: 90px;
+    font-weight: 800;
+}
+#line42{margin-left: 80px;
+    font-weight: 800;
+}
+#line43{margin-left: 70px;
+    font-weight: 800;
+}
+#line44{margin-left: 60px;
+    font-weight: 800;
+}
+#line45{margin-left: 50px;
+    font-weight: 800;
+}
+#line46{margin-left: 40px;
+    font-weight: 800;
+}
+#line47{margin-left: 30px;
+    font-weight: 900;
+}
+#line48{margin-left: 20px;
+    font-weight: 900;
+}
+#line49{margin-left: 10px;
+    font-weight: 900;
+}
+#line50{margin-left: 0px;
+    font-weight: 900;
+}

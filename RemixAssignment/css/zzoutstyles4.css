@@ -1,0 +1,105 @@
+.next {
+    font-family: 'Avenir';
+    text-align: right;
+    font-size: 10px;
+}
+
+h1 {font-family: 'Avenir';
+}
+
+#title {text-align: center;
+margin-top: 5px;
+}
+
+
+h2 {font-family: 'Avenir';
+    font-size: 12px;
+}
+
+#byline {text-align: center;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+#next {font-size: 8;
+font-family:'Avenir';
+}
+
+p {font-family: 'Avenir';
+    font-size: 14px;
+}
+
+#leftSide {
+    margin-left:40px;
+    transform: rotate(90deg);
+	transform-origin: 5% 25%;
+	float: left;
+	text-align: center;
+}
+
+#leftSide2 {
+    margin-left:40px;
+    transform: rotate(90deg);
+	transform-origin: 10% 25%;
+	float: left;
+	text-align: center;
+}
+
+
+
+#backwards {
+    text-align: center;
+    transform: rotate(180deg);
+    transform-origin: 40% 0%;
+    float:right;
+}
+
+#backwards2 {
+    text-align: center;
+    transform: rotate(180deg);
+    transform-origin: 100% -50%;
+    float:right;
+    position: relative;
+}
+    
+#rightSide {
+    text-align: center;
+    margin-right:20px;
+    transform: rotate(270deg);
+    transform-origin: 90% 70%;
+	float: right;}
+    
+#rightSide2 {
+    text-align: center;
+    margin-right:20px;
+    transform: rotate(270deg);
+    transform-origin: 80% 70%;
+	float: right;}
+
+
+.centerBlock {
+    width: 140px;
+    height: auto;
+    position: relative;
+    top: 20px;
+    left: 60px;
+    float: inherit;
+    margin: 200px 200px 350px 400px;
+    text-align: center;
+}
+
+.largeText {
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    line-height: 40px;
+    float:inherit;
+}
+
+
+
+
+
+    
+    

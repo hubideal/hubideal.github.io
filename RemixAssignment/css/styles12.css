@@ -1,0 +1,92 @@
+.next {font-size: 10px;
+font-family:'Avenir';
+text-align: right;
+margin-right:30%;
+position: relative;
+}
+    
+h1 {font-family: 'Source Sans Pro', 'Avenir';
+font-size: 20pt;
+text-align: center
+}
+
+.title {text-align: center;
+margin-bottom: 0px;
+}
+
+h2 {font-family: 'Source Sans Pro', 'Avenir';
+    font-size: 12pt;
+}
+
+#byline {text-align:center;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+table {
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.row1 {
+    width: 200px;
+    height: 200px;
+}
+
+.row2 {
+    width: 200px;
+    height: 200px;
+}
+
+.row3 {
+    width: 200px;
+    height: 275px;
+}
+
+.row4 {
+    width: 200px;
+    height: 300px;
+    text-align: right;
+}
+.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+
+.stanza{
+    font-family: 'Source Sans Pro';
+    font-size: 11pt;
+    border-collapse: collapse;
+}
+
+#cell2 {
+    transform: rotate(270deg);
+}
+
+#cell3 {
+    transform: rotate(270deg);
+}
+
+#cell5 {
+    transform: rotate(270deg);
+}
+
+#cell6 {
+    transform: rotate(270deg);
+}
+
+#cell8 {
+    transform: rotate(90deg);
+}
+
+#cell9 {
+    transform: rotate(90deg);
+}
+
+#cell11 {
+    text-align:center;
+    font-size: 20px;
+    font-family: "Open Sans";
+    background: black;
+    color: white;
+}

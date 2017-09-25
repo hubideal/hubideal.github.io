@@ -1,0 +1,181 @@
+.next {font-size: 10px;
+font-family:'Avenir';
+text-align: right;
+margin-right:30%;
+position: relative;
+}
+    
+h1 {font-family: 'Open Sans Regular','Lato',sans-serif;
+font-size: 250%;
+text-align: center;
+}
+
+.title {text-align: center;
+margin-bottom: 0px;
+}
+
+h2 {font-family: 'Open Sans Regular','Lato',sans-serif;
+    font-size: 12pt;
+}
+
+#byline {text-align:center;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+/*table {
+    text-align: left;
+    border-collapse: collapse;
+    font-family: "Open Sans";*/
+}
+
+/*.center {
+    margin-left:auto; 
+    margin-right:auto;
+   
+  }*/
+  
+ 
+.stanza {
+    
+    
+}
+
+.poem {
+    text-align: center;
+    width: 400px;
+    height: 300px;
+    font-family: 'Open Sans';
+    margin-left:auto; 
+    margin-right:auto;
+    color: rgb(50,50,50);
+    
+}
+
+
+#cell1 {
+    background: -webkit-linear-gradient(rgb(255,255,255), rgba(0,0,0,.2)); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(rgb(255,255,255), rgba(0,0,0,.7)); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(rgb(255,255,255), rgba(0,0,0,.7)); /* For Firefox 3.6 to 15 */
+background: linear-gradient(rgb(255,255,255), rgba(0,0,0,.7)); /* Standard syntax */
+margin-bottom: 0px;
+margin-top: 0px;
+padding-top: 8px;
+padding-bottom: 8px;
+text-align: center;
+    font-family: 'Open Sans Regular', 'Lato';
+     
+}
+
+#cell2 {background: -webkit-linear-gradient(rgba(0,0,0,.7), rgb(255,255,255)); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(rgba(0,0,0,.7), rgb(255,255,255)); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(rgba(20,0,0,.7), rgb(255,255,255)); /* For Firefox 3.6 to 15 */
+background: linear-gradient(rgba(0,0,0,.7), rgb(255,255,255)); /* Standard syntax */
+margin-bottom: 0px;
+margin-top: 0px;
+padding-top: 8px;
+padding-bottom:8px;
+text-align: center;
+    font-family: 'Open Sans Regular', 'Lato';
+}
+
+#cell3 {
+    background: -webkit-linear-gradient(rgb(255,255,255), rgba(0,0,0,.2)); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(rgb(255,255,255), rgba(0,0,0,.7)); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(rgb(255,255,255), rgba(0,0,0,.7)); /* For Firefox 3.6 to 15 */
+background: linear-gradient(rgb(255,255,255), rgba(0,0,0,.7)); /* Standard syntax */
+margin-bottom: 0px;
+margin-top: 0px;
+padding-top: 8px;
+padding-bottom:8px;
+text-align: center;
+    font-family: 'Open Sans Regular', 'Lato';
+}
+
+#cell4 {background: -webkit-linear-gradient(rgba(0,0,0,.7), rgb(255,255,255)); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(rgba(0,0,0,.7), rgb(255,255,255)); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(rgba(20,0,0,.7), rgb(255,255,255)); /* For Firefox 3.6 to 15 */
+background: linear-gradient(rgba(0,0,0,.7), rgb(255,255,255)); /* Standard syntax */
+margin-bottom: 0px;
+margin-top: 0px;
+padding-top: 8px;
+padding-bottom:8px;
+text-align: center;
+    font-family: 'Open Sans Regular', 'Lato';
+}
+
+#cell5 {
+    background: -webkit-linear-gradient(rgb(255,255,255), rgba(0,0,0,.2)); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(rgb(255,255,255), rgba(0,0,0,.7)); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(rgb(255,255,255), rgba(0,0,0,.7)); /* For Firefox 3.6 to 15 */
+background: linear-gradient(rgb(255,255,255), rgba(0,0,0,.7)); /* Standard syntax */
+margin-bottom: 0px;
+margin-top: 0px;
+padding-top: 8px;
+padding-bottom:8px;
+text-align: center;
+    font-family: 'Open Sans Regular', 'Lato';
+}
+
+#cell6 {background: -webkit-linear-gradient(rgba(0,0,0,.7), rgb(255,255,255)); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(rgba(0,0,0,.7), rgb(255,255,255)); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(rgba(20,0,0,.7), rgb(255,255,255)); /* For Firefox 3.6 to 15 */
+background: linear-gradient(rgba(0,0,0,.7), rgb(255,255,255)); /* Standard syntax */
+margin-bottom: 0px;
+margin-top: 0px;
+padding-top: 8px;
+padding-bottom:8px;
+text-align: center;
+    font-family: 'Open Sans Regular', 'Lato';
+}
+
+#cell7 {
+    background: -webkit-linear-gradient(rgb(255,255,255), rgba(0,0,0,.2)); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(rgb(255,255,255), rgba(0,0,0,.7)); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(rgb(255,255,255), rgba(0,0,0,.7)); /* For Firefox 3.6 to 15 */
+background: linear-gradient(rgb(255,255,255), rgba(0,0,0,.7)); /* Standard syntax */
+margin-bottom: 0px;
+margin-top: 0px;
+padding-top: 8px;
+padding-bottom:8px;
+text-align: center;
+    font-family: 'Open Sans Regular', 'Lato';
+}
+
+#cell8 {
+   background: -webkit-linear-gradient(rgba(0,0,0,.7), rgb(255,255,255)); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(rgba(0,0,0,.7), rgb(255,255,255)); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(rgba(20,0,0,.7), rgb(255,255,255)); /* For Firefox 3.6 to 15 */
+background: linear-gradient(rgba(0,0,0,.7), rgb(255,255,255)); /* Standard syntax */
+margin-bottom: 0px;
+margin-top: 0px;
+padding-top: 8px;
+padding-bottom:8px;
+text-align: center;
+    font-family: 'Open Sans Regular', 'Lato';
+}
+
+#cell9 {
+    background: -webkit-linear-gradient(rgb(255,255,255), rgba(0,0,0,.2)); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(rgb(255,255,255), rgba(0,0,0,.7)); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(rgb(255,255,255), rgba(0,0,0,.7)); /* For Firefox 3.6 to 15 */
+background: linear-gradient(rgb(255,255,255), rgba(0,0,0,.7)); /* Standard syntax */
+margin-bottom: 0px;
+margin-top: 0px;
+padding-top: 8px;
+padding-bottom:8px;
+text-align: center;
+   font-family: 'Open Sans Regular', 'Lato';
+}
+
+#cell10 {
+  background: rgba(0,0,0,.8);
+  color:white;
+  margin-bottom: 0px;
+margin-top: 0px;
+padding-top: 8px;
+padding-bottom:8px;
+text-align: center;
+    font-family: 'Open Sans Regular', 'Lato';
+  
+}
