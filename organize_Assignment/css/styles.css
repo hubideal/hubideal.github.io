@@ -1,0 +1,48 @@
+
+
+h1 {
+    font-family: Playfair+Display, serif;
+    font-style: black;
+    font-size: 72pt;
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-bottom: 2px;
+    padding-bottom: 2px;
+    
+}
+h3 {
+    font-family: Playfair+Display, serif;
+    font-size: 24pt;
+    font-style: black;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-left: 40px;
+    margin-left: 40px;
+    margin-bottom: 70px;
+}
+
+img {
+    width: 80%;
+    height: auto;
+    opacity: .8;
+}
+
+td {
+    text-align:center;
+}
+.text {
+    font-size: 64px;
+    text-align: center;
+    font-family:  Playfair+Display, serif;
+    color: rgb(15, 15,15);
+    text-decoration: none;
+    font-style: italic;
+}
+.home {
+    font-size: 24pt;
+    font-style: italic;
+}
+
+span {
+    font-style: italic;
+}

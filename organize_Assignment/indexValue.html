@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Waterwheel Carousel Demo</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+    <!--<script src="js/jquery-3.2.1.min.js"></script>-->
+    <script type="text/javascript">
+    
+
+      
+    
+      $(document).ready(function () {
+        var carousel = $("#carousel").waterwheelCarousel({
+          flankingItems: 2,
+         
+          movingToCenter: function ($item) { 
+          $('#textbox p').empty();
+          $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedToCenter: function ($item) {
+          var caption = $item.data('content');
+          $('#textbox p').append(caption);
+          $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movingFromCenter: function ($item) {
+            $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedFromCenter: function ($item) {
+            $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          clickedCenter: function ($item) {
+            $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
+          }
+        });
+
+        $('#prev').bind('click', function () {
+          carousel.prev();
+          return false
+        });
+
+        $('#next').bind('click', function () {
+          carousel.next();
+          return false;
+        });
+
+        $('#reload').bind('click', function () {
+          newOptions = eval("(" + $('#newoptions').val() + ")");
+          carousel.reload(newOptions);
+          return false;
+        });
+
+      });
+      
+    
+    </script>
+
+    <style type="text/css">
+      body {
+        font-family: 'Playfair Display', serif;
+        font-size:32px;
+        background: white;
+        text-align: center;
+      }
+      h1 {
+        font-size: 72px;
+        margin-bottom: 12px;
+      }
+      h2 {
+        font-size: 56px;
+        font-style: italic;
+      }
+      .example-desc {
+        margin:3px 0;
+        padding:5px;
+      }
+
+      #carousel {
+        min-width: 450px;
+        min-height: 450px;
+        height:450px;
+        position:relative;
+        clear:both;
+        overflow:hidden;
+        background: white;
+        margin-bottom: 12px;
+      }
+      #carousel img {
+        visibility:hidden; /* hide images until carousel can handle them */
+        cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+      }
+
+      .split-left {
+        width:450px;
+        float:left;
+      }
+      .split-right {
+        width:450px;
+        float:left;
+        margin-left:10px;
+      }
+      #callback-output {
+        min-height:450px;
+        overflow:scroll;
+      }
+      textarea#newoptions {
+        width:450px;
+      }
+      #textbox {
+      font-size: 32;
+      margin-left: auto;
+      margin-right: auto;
+      font-style: italic;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>Bertin Revisited</h1>
+    <h2>value</h2>
+    <div id="carousel">
+      <a href="imagesValue/1v.jpg"><img src="imagesValue/1v.jpg" data-content="point/value" id="item-1" /></a>
+      <a href="imagesValue/2v.jpg"><img src="imagesValue/2v.jpg" data-content="point/value/Bertin" id="item-2" /></a>
+      <a href="imagesValue/3v.jpg"><img src="imagesValue/3v.jpg" data-content="point/value/orientation" id="item-3" /></a>
+      <a href="imagesValue/4v.jpg"><img src="imagesValue/4v.jpg" data-content="point/value/shape" id="item-4" /></a>
+      <a href="imagesValue/5v.jpg"><img src="imagesValue/5v.jpg" data-content="point/value/Value" id="item-5" /></a>
+      <a href="imagesValue/6v.jpg"><img src="imagesValue/6v.jpg" data-content="point/value/value" id="item-6" /></a>
+      <a href="imagesValue/7v.jpg"><img src="imagesValue/7v.jpg" data-content="point/value/size" id="item-7" /></a>
+      <a href="imagesValue/8v.jpg"><img src="imagesValue/8v.jpg" data-content="point/value/random" id="item-8" /></a>
+      <a href="imagesValue/9v.jpg"><img src="imagesValue/9v.jpg" data-content="point/value/revisited" id="item-9" /></a>
+    </div>
+    <div id="textbox" style="(absolutely positioned container)"><p></p>
+</div>
+
+    <a href="#" id="prev">&#9664;</a> | <a href="#" id="next">&#x25B6;</a>
+    
+    <a href="valueComposite.html"><p>complete set</p></a>
+    
+    <a href="indexSignifcation.html"><p>point</p></a>
+
+    <br/>
+
+   
+
+  </body>
+</html>
+
