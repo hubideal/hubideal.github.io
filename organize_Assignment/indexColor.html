@@ -14,7 +14,7 @@
     
       $(document).ready(function () {
         var carousel = $("#carousel").waterwheelCarousel({
-          flankingItems: 2,
+          flankingItems: 0,
          
           movingToCenter: function ($item) { 
           $('#textbox p').empty();
@@ -61,7 +61,7 @@
       body {
         font-family: 'Playfair Display', serif;
         font-size:32px;
-        background: white;
+        background: rgb(240, 240, 248);
         text-align: center;
       }
       h1 {
@@ -84,7 +84,7 @@
         position:relative;
         clear:both;
         overflow:hidden;
-        background: white;
+        background: rgb(240, 240, 248);
         margin-bottom: 12px;
       }
       #carousel img {
@@ -102,17 +102,20 @@
         margin-left:10px;
       }
       #callback-output {
-        min-height:650px;
+        min-height:400px;
         overflow:scroll;
       }
       textarea#newoptions {
         width:450px;
       }
       #textbox {
-      font-size: 32;
+      font-size: 40px;
       margin-left: auto;
       margin-right: auto;
       font-style: italic;
+      }
+      p {
+        font-size: 40px;
       }
       
     </style>
