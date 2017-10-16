@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Waterwheel Carousel Demo</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+    <!--<script src="js/jquery-3.2.1.min.js"></script>-->
+    <script type="text/javascript">
+    
+
+      
+    
+      $(document).ready(function () {
+        var carousel = $("#carousel").waterwheelCarousel({
+          flankingItems: 2,
+         
+          movingToCenter: function ($item) { 
+          
+          $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedToCenter: function ($item) {
+    
+          $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movingFromCenter: function ($item) {
+            $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedFromCenter: function ($item) {
+            $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          clickedCenter: function ($item) {
+            $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
+          }
+        });
+
+        $('#prev').bind('click', function () {
+          carousel.prev();
+          return false
+        });
+
+        $('#next').bind('click', function () {
+          carousel.next();
+          return false;
+        });
+
+        $('#reload').bind('click', function () {
+          newOptions = eval("(" + $('#newoptions').val() + ")");
+          carousel.reload(newOptions);
+          return false;
+        });
+
+      });
+      
+    
+    </script>
+
+    <style type="text/css">
+      body {
+        font-family: 'Playfair Display', serif;
+        font-size: 48px;
+        background-color: rgb(240, 240, 248);
+        text-align: center;
+      }
+      h1 {
+        font-size: 72px;
+        margin-bottom: 12px;
+      }
+      h2 {
+        font-size: 56px;
+        font-style: italic;
+      }
+      .example-desc {
+        margin:3px 0;
+        padding:5px;
+      }
+
+      #carousel {
+        min-width: 420px;
+        min-height: 420px;
+        height:400px;
+        position:relative;
+        clear:both;
+        overflow:hidden;
+        background: rgb(240, 240, 248);
+        margin-bottom: 12px;
+      }
+      #carousel img {
+        visibility:hidden; /* hide images until carousel can handle them */
+        cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+      }
+
+      .split-left {
+        width:400px;
+        float:left;
+      }
+      .split-right {
+        width:400px;
+        float:left;
+        margin-left:10px;
+      }
+      #callback-output {
+        min-height:400px;
+        overflow:scroll;
+      }
+      textarea#newoptions {
+        width:530px;
+      }
+      #textbox {
+      font-size: 48px;
+      margin-left: auto;
+      margin-right: auto;
+      font-style: italic;
+      padding:0px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>Bertin Revisited</h1>
+    <h2>point</h2>
+    <div id="carousel">
+      <a href="indexShape.html"><img src="imagesSign/1.png" data-content="shape" id="item-1" /></a>
+      <a href="indexColor.html"><img src="imagesSign/2.png" data-content="color" id="item-2" /></a>
+      <a href="indexOrientation.html"><img src="imagesSign/3.png" data-content="orientation" id="item-3" /></a>
+      <a href="indexTexture.html"><img src="imagesSign/4.png" data-content="texture" id="item-4" /></a>
+      <a href="indexSize.html"><img src="imagesSign/5.png" data-content="size" id="item-5" /></a>
+      <a href="indexValue.html"><img src="imagesSign/6.png" data-content="value" id="item-6" /></a>
+    </div>
+    <div id="textbox" style="(absolutely positioned container)"><p></p>
+</div>
+
+    <a href="#" id="prev" style="text-decoration:none" class = "panel">shape  |  color  |  orientation  |  texture  |  size  |  value<br></a>
+    
+    <a href = "index.html" style="text-decoration:none"><p class= "home">home</p></a>
+
+    <br/>
+
+   
+
+  </body>
+</html>
+
