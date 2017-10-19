@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--p5js download: https://p5js.org/download/-->
+    <!--Content Delivery Network (CDN): https://cdnjs.com/libraries/p5.js-->
+    <title>Word Frequency</title>
+    <!--p5 core library, minified-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.13/p5.min.js" type="text/javascript"></script>
+    <!--p5 interaction with the DOM-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.13/addons/p5.dom.min.js" type="text/javascript"></script>
+
+    <script>
+      var dictionary = [];
+      var value = 1;
+      var wordCount;
+      var textX = 100;
+      var noWord = ["and","however","the","to","are","a","have","by","have","by","The", "of", "as", "at", "from", "in", "for","s", "on", "has", "b", "but", "if","than", "any", 'has', 'was', 'were', 'had', 'shall', 'should', 'can', "between", 'been', "is", "become", "it", "all", "this", 'that', "with", "there","their", "also","which","those", "these", "where", "be", "per", "cent", "likely", "many", "or", "an", "other", "some", "only", "such", "while", "but"];
+      var box_xCoor = [100, 6, 6, 7, 7, 7, 6, 5, 5, 5, 5, 6, 7, 8, 8, 8, 8, 8, 7, 6, 5, 4, 4, 4, 4, 4, 4, 5, 6, 7, 8, 9, 9, 9, 9, 9, 9, 9, 8, 7, 6, 5, 4, 3, 3, 3, 3, 3, 3, 3, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 10, 10, 10, 10, 10, 9, 8, 7, 6, 5, 4, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 71,  16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 ];
+      var box_yCoor = [100, 6, 5, 5, 6, 7, 7, 7, 6, 5, 4, 4, 4, 4, 5, 6, 7, 8, 8, 8, 8, 8, 7, 6, 5, 4, 3, 3, 3, 3, 3, 3, 4, 5, 6, 7, 8, 9, 9, 9, 9, 9, 9, 9, 8, 7, 6, 5, 4, 3, 2, 2, 2, 2, 2, 2, 2, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 10, 10, 10, 10, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16,16, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9,10, 11, 12, 13, 14, 15, 16, 17,17, 17, 17, 17, 17, 17, 17, 17,17, 17, 17, 17, 17, 17,17, 17, 17,  0, 1, 2, 3, 4, 5, 6, 7, 8, 9,10, 11, 12, 13, 14, 15, 16, 17, 18 ];
+    
+      
+      function preload() {
+      myFont = loadFont('AvenirFree/AvenirLTStd-Book.otf');
+}
+      function setup() {
+        createCanvas(2500, 2500);
+        loadStrings('ed_inequality.txt', analyze);
+        textFont(myFont);
+      }
+      
+    
+      function analyze(qual) {
+        //console.log(qual);
+        qual.forEach(function(phrases){
+          //console.log(phrases);
+          
+          phrases = phrases.replace(/[^\w\s]/gi, '');
+          phrases = phrases.replace(/[1234567890]/gi, '');
+          var words = phrases.toLowerCase().split(' ');
+        
+          
+          words.forEach(function(word) {
+            noWord.forEach(function(item, index, array) {
+            if (word === noWord[index]) {
+              word= "";
+            }
+});
+            // console.log(word);
+            // got to mosilla docs reference global objects array filter website. search it.  Daniel has it in his code wordFrequency
+            wordCount = dictionary.filter(function(element) { 
+              return element.word == word;
+            })
+            
+            if (wordCount.length)   // if wordCount.length == true  another way to write if the word is there.
+                wordCount[0].count++;
+            else
+                dictionary.push({word: word, count: 1})  //
+                
+            dictionary.sort(function(a, b) {
+                   return b.count - a.count;  //b.count-a.count is descending and a.count-b.count is ascenting
+                 });
+          });
+        });
+        console.log(dictionary);
+        //console.log(wordCount);
+        //console.log(dictionary);
+        display();
+        
+      }
+    
+    function display(){
+      //background(255);
+      var column = 2500/18;
+      var row = 2500/18;
+      dictionary.forEach(function(element, index){
+        if (element.word !== "") {
+          value = 0
+          textSize(20);
+          if (index<2500){
+          var boxX = box_xCoor[index];
+          var boxY = box_yCoor[index];
+          var boxYT = box_yCoor[index]+1;
+          console.log(boxX, boxY, index);
+          fill(index*.75);
+          strokeWeight(.5);
+          stroke(200);
+          rect(boxX*column, boxY*row, column, row);
+          fill(255);
+          strokeWeight();
+          textAlign(CENTER);
+          text(element.word, (boxX*column)+(.5*column), (boxYT*row)-(.4*row));
+          }
+          else {
+            return;
+          }
+          
+        }
+       
+    });
+  
+    }
+    
+function mousePressed()  {
+  if(value === 0) {
+      var column = 2500/18;
+      var row = 2500/18;
+      dictionary.forEach(function(element, index){
+        if (element.word !== "") {
+           textSize(20);
+          if (index<2500){
+          var boxX = box_xCoor[index];
+          var boxY = box_yCoor[index];
+          var boxYT = box_yCoor[index]+1;
+          console.log(boxX, boxY, boxYT);
+          fill(index*.75);
+          strokeWeight(.5);
+          stroke(200);
+          rect(boxX*column, boxY*row, column, row);
+          fill(255);
+          strokeWeight();
+          textAlign(CENTER);
+          text(element.word, (boxX*column)+(.5*column), (boxYT*row)-(.2*row));
+          text(element.count, (boxX*column)+(.5*column), (boxYT*row)-(.7*row));
+          value =1;
+          }
+          else {
+            return;
+          }
+          
+        }
+       
+    });
+  }
+  else {
+    value = 1
+    display();
+  }
+}
+
+    function mouseDragged() {
+      textX += mouseX - pmouseX;
+      display();
+    }
+    
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
+

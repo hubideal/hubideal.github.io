@@ -1,0 +1,45 @@
+body {
+    width: 750px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Raleway';
+    margin-bottom: 10%;
+    margin-top:10%;
+    }
+h4 {
+    text-align: center;
+    font-family: 'Raleway';
+    margin-bottom: 0;
+    margin-top:0;
+    }
+h3 {
+    text-align: center;
+    font-family: 'Raleway';
+    margin-bottom: 0%;
+    margin-top:0%;
+    }
+.floatingBox {
+
+    width: 150px;
+    height: 75px;
+    margin: 30px;
+    border: 3px solid;
+    text-align: center;
+    font-family: 'Raleway';
+   
+}
+
+.center {
+    width:200px;
+    margin-left: auto;
+      margin-right: auto;
+       vertical-align: bottom;
+}
+a{
+    color:black;
+}
+span{
+    vertical-align: middle;
+}
