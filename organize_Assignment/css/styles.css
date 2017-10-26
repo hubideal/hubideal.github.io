@@ -1,11 +1,11 @@
 body {
-    background-color: rgb(240, 240, 248);
+    background-color: rgb(243, 238, 233);
 }
 
 h1 {
     font-family: Playfair Display, serif;
     font-style: black;
-    font-size: 52pt;
+    font-size: 48pt;
     margin-top: 50px;
     margin-left: 25px;
     margin-bottom: 6px;
@@ -14,7 +14,7 @@ h1 {
 }
 h3 {
     font-family: Playfair Display, serif;
-    font-size: 28pt;
+    font-size: 26pt;
     font-style: black;
     padding-top: 0px;
     margin-top: 0px;
@@ -32,7 +32,7 @@ h4 {
 }
 
 img {
-    width: 50%;
+    width: 48%;
     height: auto;
     opacity: .8;
 }
