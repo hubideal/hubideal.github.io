@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto|Roboto+Condensed" rel="stylesheet">
+    </head>
+    <style type="text/css">
+        body {
+            background-color: rgb(243, 238, 233);
+        }
+        
+        svg {
+            font-family: sans-serif;
+        }
+        
+        @media (max-width: 699px) {
+            h1 {
+            width: 700px;
+            text-align: left;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 1.1em;
+            margin-bottom: 3px;
+            margin-left: 11%;
+            margin-right: auto;
+        }
+        .intro {
+            font-family: 'Roboto Condensed', sans-serif;
+            width: 700px;
+            margin-left: 14%;
+        }
+            #plot {
+            width: 700px;
+            margin-left: 11%;
+        }
+        p {
+            line-height: 157%;
+            font-size: 1em;
+        }
+        footer {
+            margin-top: 2px;
+            margin-left: 14%;
+        }
+        .map {
+            width: 12%;
+            height: auto;
+        }
+        .dots {
+            width: 18%;
+            height: auto;
+        }
+        }
+        
+     
+        
+         @media (min-width: 700px) and (max-width: 1499px) {.intro {
+            font-family: 'Roboto Condensed', sans-serif;
+            width: 1100px;
+            margin-left: 14%;
+        }
+             h1 {
+            width: 1100px;
+            text-align: left;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 2em;
+            margin-bottom: 15px;
+            margin-left: 11%;
+            margin-right: auto;
+        }
+        #plot {
+            width: 1200px;
+            margin-left: 11%;
+        }
+        p {
+            line-height: 157%;
+            font-size: 1em;
+        }
+        footer {
+            
+            margin-left: 14%;
+        }
+        .map {
+            width: 8%;
+            height: auto;
+        }
+        .dots {
+            width: 15%;
+            height: auto;
+        }
+        .school {
+            width: 20%;
+        }
+         }
+        
+         @media (min-width: 1500px) {.intro {
+            font-family: 'Roboto Condensed', sans-serif;
+            width: 1700px;
+            margin-left: 14%;
+        }
+        h1 {
+            width: 1700px;
+            text-align: left;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 2.7em;
+            margin-bottom: 25px;
+            margin-left: 11%;
+            margin-right: auto;
+        }
+        
+         #plot {
+            width: 1700px;
+            margin-left: 11%;
+        }
+        
+        p {
+            line-height: 157%;
+            font-size: 1.3em;
+        }
+        
+        footer {
+            margin-top: 18px;
+            margin-left: 14%;
+        }
+        .map {
+            width: 8%;
+            height: auto;
+        }
+        .dots {
+            width: 11.5%;
+            height: auto;
+        }
+            
+        }
+        
+        
+        
+        
+        .x-axis {
+                fill: none;
+                font-size: 1em;
+                stroke: rgb(100,100,100);
+                shape-rendering: crispEdges;
+        }
+        
+         
+        .radioButtons {
+            margin-left: 14%;
+            font-size: 1.2em;
+        }
+
+        .y-axis {
+            fill: none;
+            stroke: rgb(100,100,100);
+            font-size: 1em;
+            shape-rendering: crispEdges;
+        }
+        
+        
+        .form {
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        label {
+     
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        .country {
+            text-size: 0.25em;
+        }
+        
+        
+        .source {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: .95em;
+            line-height: 100%;
+        }
+        
+        
+        
+        
+    </style>
+    
+    <body>
+        <h1>
+            Education and Agriculture in Sub Saharan Africa
+        </h1>
+        <div class="intro"><p>Agriculture has become an industry heavily reliant on science and technology.  This data visualization tool explores the relationship between education and agriculture in Sub Saharan Africa by comparing <i>agriculture value added per worker</i> (a measure of agriculture productivity, 2013) with three educational measures: <i>expected years of school</i>, <i>mean years of school</i>, and the <i>difference between expected and mean years of school</i> (2014).  See radial buttons below.</p></div>
+        <form>
+  <div class="radioButtons">
+  <label><input type="radio" name="mode" value="stacked" checked>Expected Years of School</label>
+  <span>&nbsp&nbsp</span>
+  <label><input type="radio" name="mode" value="grouped">Mean Years of School</label>
+  <span>&nbsp&nbsp</span>
+  <label><input type="radio" name="mode" value="difference">Difference in Expected & Mean Years of School</label>
+</div>
+</form>
+        
+         <div id="plot"></div>
+        <script>
+            var pad = 70;
+            var w = screen.width*.75;
+            var h = screen.width*.28;
+            
+            d3.csv("ag&hdiSubData.csv", function(error, data) {
+              if (error) throw error;
+              
+            
+            var svg = d3.select("#plot")
+            .append("svg")
+            .attr("height", h)
+            .attr("width", w);
+            
+
+              
+            var xScale = d3.scaleLinear()
+            // .domain([0, d3.max(data, function(d) { return d['ExpectedYearsatSchool']; })])  
+            .domain([0, 16])
+            .range([pad, w - pad]);
+            
+            var yScale = d3.scaleLinear()
+            .domain([0, 10000])
+            .range([h - pad, pad]);
+          
+            
+            var rScale = d3.scaleLinear()
+            .domain([0, d3.max(data, function(d) { return d['GNIKap']; })])
+            .range([5, 18]);
+            
+            var xAxis = d3.axisBottom(xScale);
+            var yAxis = d3.axisLeft(yScale);
+            
+            
+            
+            var circ = svg.selectAll("circle")
+            .data(data)
+            .enter()
+            .append("circle")
+                .attr("class", "circle1")
+                .attr("cx", function(d) { return xScale(d['ExpectedYearsatSchool']); })
+                .attr("cy", function(d) { return yScale(d['AgValWork']); })
+                .attr("r", function(d) { return rScale(d['GNIKap']); })
+                .attr("fill", function(d) { return (d['mapColor']); })
+                .attr('stroke', 'white')
+                .attr("opacity", 0.92);
+
+            svg.append("g")
+                .attr("class", "x-axis")
+                .attr("transform", "translate(0," + (h - pad) + ")")
+                //.text("Human Development Index", 50, 40)
+                .call(xAxis);   
+                
+            d3.select('.x-axis')
+                .append('text')
+                .attr('class', 'school')
+                .attr("transform",'translate(1700,50)')
+                .attr('fill','black')
+                .attr('text-anchor','middle')
+                .text("Years of School (2014)");
+
+            svg.append("g")
+                .attr("class", "y-axis")
+                .attr("transform", "translate(" + pad +", 0)")
+                .call(yAxis);
+
+             d3.select('.y-axis')
+                .append('text')
+                .attr("class", "axis-title")
+                .attr("transform", 'translate (228,50)')
+                .attr('fill','black')
+                .text("Ag Value Added per Worker ($US, 2013)");
+            
+            
+            d3.selectAll('.circle1').on('mouseover', function() {
+                 d3.select("svg")
+                    .append('text')
+                    .attr('class',"country")
+                    .attr('id','_temp')
+                    .text(d3.select(this).datum().Country)
+                    .attr('x',d3.select(this).attr('cx'))
+                    .attr('y',d3.select(this).attr('cy'))
+                    .attr("fill", "black")
+                    .attr('class', 'label')
+                    .attr('visibility', 'visible');
+            });
+            d3.selectAll('.circle1').on('mouseout', function() {
+                d3.select('#_temp').remove();
+            });
+            
+            d3.selectAll("input")
+                .on("change", changed);
+                
+            var timeout = d3.timeout(function() {
+                d3.select("input[value=\"grouped\"]")
+                .property("checked", true)
+                .dispatch("change");
+            }, 100000);
+
+            function changed() {
+                timeout.stop();
+                if (this.value === "grouped") transitionGrouped();
+                else if (this.value === "difference") transitionDifference();
+                else transitionStacked();
+            }
+            
+            
+            
+            function transitionGrouped() {
+                
+            var xScale = d3.scaleLinear()
+                            .domain([0, 16])  
+                            .range([pad, w - pad]);
+            
+            var yScale = d3.scaleLinear()
+                            .domain([0, 10000])
+                            .range([h - pad, pad]);
+          
+            
+            var rScale = d3.scaleLinear()
+                            .domain([0, d3.max(data, function(d) { return d['GNIKap']; })])
+                            .range([5, 18]);
+            
+            var xAxis = d3.axisBottom(xScale);
+            var yAxis = d3.axisLeft(yScale);
+            
+    
+            
+                circ.transition()
+                    .duration(1750)
+                    .attr("cx", function(d) { return xScale(d['MeanYearsatSchool']); })
+                    .attr("cy", function(d) { return yScale(d['AgValWork']); })
+                    .attr("r", function(d) { return rScale(d['GNIKap']); })
+                    .attr("fill", function(d) { return (d['mapColor']); })
+                    .attr('stroke', 'white')
+                    .attr("opacity", 0.92);
+                    
+             svg.append("g")
+                .attr("class", "x-axis")
+                .attr("transform", "translate(0," + (h - pad) + ")")
+                //.text("Human Development Index", 50, 40)
+                .call(xAxis).transition();   
+                
+            // d3.select('.x-axis')
+            //     .append('text')
+            //     .attr("transform",'translate(1300, 50)')
+            //     .attr('fill','black')
+            //     .attr('text-anchor','middle')
+            //     .text("Years of School");
+
+            svg.append("g")
+                .attr("class", "y-axis")
+                .attr("transform", "translate(" + pad +", 0)")
+                .call(yAxis);
+
+            //  d3.select('.y-axis')
+            //     .append('text')
+            //     .attr("class", "axis-title")
+            //     .attr("transform", 'translate (160,50)')
+            //     .attr('fill','black')
+            //     .text("Ag Value Added per Worker ($US)");
+            
+            d3.selectAll('.circle1').on('mouseover', function() {
+                 d3.select("svg")
+                    .append('text')
+                    .attr('id','_temp')
+                    .text(d3.select(this).datum().Country)
+                    .attr('x',d3.select(this).attr('cx'))
+                    .attr('y',d3.select(this).attr('cy'))
+                    .attr("fill", "black")
+                    .attr('class', 'label')
+                    .attr('visibility', 'visible');
+            });
+            d3.selectAll('.circle1').on('mouseout', function() {
+                d3.select('#_temp').remove();
+            });
+}
+                
+            function transitionStacked() {
+                
+              
+                
+                var xScale = d3.scaleLinear()
+                            .domain([0, 16])  
+                            .range([pad, w - pad]);
+            
+            var yScale = d3.scaleLinear()
+                            .domain([0,10000])
+                            .range([h - pad, pad]);
+          
+            
+            var rScale = d3.scaleLinear()
+                            .domain([0, d3.max(data, function(d) { return d['GNIKap']; })])
+                            .range([5, 18]);
+            
+            var xAxis = d3.axisBottom(xScale);
+            var yAxis = d3.axisLeft(yScale);
+            
+            
+            
+                circ.transition()
+                    .duration(1750)
+                    .attr("cx", function(d) { return xScale(d['ExpectedYearsatSchool']); })
+                    .attr("cy", function(d) { return yScale(d['AgValWork']); })
+                    .attr("r", function(d) { return rScale(d['GNIKap']); })
+                    .attr("fill", function(d) { return (d['mapColor']); })
+                    .attr('stroke', 'white')
+                    .attr("opacity", 0.92);
+                
+           svg.append("g")
+                    .attr("class", "x-axis")
+                    .attr("transform", "translate(0," + (h - pad) + ")")
+                    .call(xAxis).transition();   
+                
+            // d3.select('.x-axis')
+            //     .append('text')
+            //     .attr("transform",'translate(1300,50)')
+            //     .attr('fill','black')
+            //     .attr('text-anchor','middle')
+            //     .text("Years of School");
+
+            svg.append("g")
+                .attr("class", "y-axis")
+                .attr("transform", "translate(" + pad +", 0)")
+                .call(yAxis);
+
+            //  d3.select('.y-axis')
+            //     .append('text')
+            //     .attr("class", "axis-title")
+            //     .attr("transform", 'translate (160,50)')
+            //     .attr('fill','black')
+            //     .text("Ag Value Added per Worker ($US)");
+            
+            d3.selectAll('.circle1').on('mouseover', function() {
+                 d3.select("svg")
+                    .append('text')
+                    .attr('id','_temp')
+                    .text(d3.select(this).datum().Country)
+                    .attr('x',d3.select(this).attr('cx'))
+                    .attr('y',d3.select(this).attr('cy'))
+                    .attr("fill", "black")
+                    .attr('class', 'label')
+                    .attr('visibility', 'visible');
+            });
+            d3.selectAll('.circle1').on('mouseout', function() {
+                d3.select('#_temp').remove();
+            });
+            
+    
+}
+           
+            
+           
+          
+            
+             function transitionDifference() {
+                
+
+                
+            var xScale = d3.scaleLinear()
+                            .domain([0, 16])  
+                            .range([pad, w - pad]);
+            
+            var yScale = d3.scaleLinear()
+                            .domain([0,10000])
+                            .range([h - pad, pad]);
+          
+            
+            var rScale = d3.scaleLinear()
+                            .domain([0, d3.max(data, function(d) { return d['GNIKap']; })])
+                            .range([5, 18]);
+            
+            var xAxis = d3.axisBottom(xScale);
+            var yAxis = d3.axisLeft(yScale);
+            
+            
+            
+                circ.transition()
+                    .duration(1750)
+                    .attr("cx", function(d) { return xScale(d['DiffEd']); })
+                    .attr("cy", function(d) { return yScale(d['AgValWork']); })
+                    .attr("r", function(d) { return rScale(d['GNIKap']); })
+                    .attr("fill", function(d) { return (d['mapColor']); })
+                    .attr('stroke', 'white')
+                    .attr("opacity", 0.92);
+                
+           svg.append("g")
+                    .attr("class", "x-axis")
+                    .attr("transform", "translate(0," + (h - pad) + ")")
+                    .call(xAxis).transition();   
+                
+            // d3.select('.x-axis')
+            //     .append('text')
+            //     .attr("transform",'translate(1300,50)')
+            //     .attr('fill','black')
+            //     .attr('text-anchor','middle')
+            //     .text("Years of School");
+
+            svg.append("g")
+                .attr("class", "y-axis")
+                .attr("transform", "translate(" + pad +", 0)")
+                .call(yAxis);
+
+            //  d3.select('.y-axis')
+            //     .append('text')
+            //     .attr("class", "axis-title")
+            //     .attr("transform", 'translate (160,50)')
+            //     .attr('fill','black')
+            //     .text("Ag Value Added per Worker ($US)");
+            
+            d3.selectAll('.circle1').on('mouseover', function() {
+                 d3.select("svg")
+                    .append('text')
+                    .attr('id','_temp')
+                    .text(d3.select(this).datum().Country)
+                    .attr('x',d3.select(this).attr('cx'))
+                    .attr('y',d3.select(this).attr('cy'))
+                    .attr("fill", "black")
+                    .attr('class', 'label')
+                    .attr('visibility', 'visible');
+            });
+            d3.selectAll('.circle1').on('mouseout', function() {
+                d3.select('#_temp').remove();
+            });
+            
+    
+}
+           
+            
+            });
+          
+           
+
+            
+        </script>
+        
+    </body>
+    <footer><div class="legend">
+        <img src="africa_dots_legend.png" class="dots">
+        <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+        <img src="africaMapEdAg.png" class="map">
+        <p class="source">Source: Agriculture data from "Databank:  The World Bank." edited by The World Bank, 2017. & Education data from "Human Development Data." edited by United Nations Development Programme, 2017.</p>
+        </div>
+    </footer>
+</html>
