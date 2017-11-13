@@ -1,0 +1,164 @@
+<html>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.3/p5.min.js"></script>
+  <script src="./rita-full.js"></script>
+  <script>
+  var dictionary = [];
+  var verbArray = [];
+  var bioArray = [];
+  var columnArray = [.5, 2, 3, 1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3];
+  var rowArray = [1, 1, 1, 2,2,2,3,3,3,4,4,4,5,5,5,6,6,6,7,7,7,8,8,8,9,9,9];
+  var buttons = [];
+  var wordCount;
+  var kwic;
+  var wordBut = buttons[7], buttonX = 150, over, input;
+
+  function setup() {
+      
+    loadStrings('bioFinance.txt', analyze);
+    createCanvas(1500,2500);
+    background(245);
+    textSize(20);
+
+  }
+  
+  function analyze(qual) {
+      qual.forEach(function(phrases){
+        var linkbio = phrases.split('/n');
+        linkbio.forEach(function(bio){
+          bioArray.push({para: bio});
+        });
+      var wordPOS = phrases.toLowerCase().replace(/[^\w\s]/gi, '').split(' ');
+      wordPOS.forEach(function(word)  {
+        
+        wordCount = dictionary.filter(function(element) { 
+              return element.word == word;
+            });
+            
+            if (wordCount.length)   {
+                wordCount[0].count++;
+            }
+            else
+            {
+                var posWord = RiTa.getPosTags(word);
+                dictionary.push({word: word, pos: posWord[0], count: 1});  //
+}
+        dictionary.sort(function(a, b) {
+                   return b.count - a.count;  //b.count-a.count is descending and a.count-b.count is ascenting
+                 });
+      
+    });
+    
+});
+display();
+
+  }
+
+
+function display(){
+      dictionary.forEach(function(element, index){
+        if (element.pos == "vb" && element.word !== "been" || element.pos == "vbn" && element.word !== "been" || element.pos == "nn" || element.pos == "nnp" || element.pos == "nnps" || element.pos == "nns") {
+          verbArray.push(element.word);
+          }
+          else {
+            return;
+          }
+    });
+    for (var p = 0; p < 7 ; p++) {
+      buttons.push(verbArray[p]);
+    }  
+    updateKWIC();
+    } 
+
+function updateKWIC() {
+  for (var j=0; j<bioArray.length; j++) {
+  kwic = RiTa.kwic(bioArray[j].para, wordBut, {
+    ignorePunctuation: true,
+    ignoreStopWords: true,
+    wordCount: 25
+  });
+  
+  }
+background(254);
+
+drawButtons();
+
+for (var m=0; m<bioArray.length; m++) {
+
+   if (kwic.length == 0) {
+     return;
+
+   } else {
+    console.log(kwic[m]);
+    console.log(wordBut);
+   }
+noLoop();
+}
+
+    
+ function drawButtons() {
+
+   var posX = buttonX, posY = 40;
+
+   for (var i = 0; i < buttons.length; i++) {
+
+     stroke(0);
+     fill(0);
+     var on = wordBut == (buttons[i]) ? true : false;
+     var tw = textWidth(buttons[i]);
+     fill(!on && buttons[i] == over ? 235 : 255);
+     rect(posX - 5, 24, tw + 10, 20, 7);
+     fill((on ? 255 : 0), 0, 0);
+     text(buttons[i], posX, 40);
+     posX += tw + 20;
+   }
+   noLoop();
+ }
+
+ function inside(mx, my, posX, tw) {
+
+   return (mx >= posX - 5 && mx <= posX + tw + 5 && my >= 25 && my <= 44);
+ }
+
+ function mouseMoved() {
+
+   over = null;
+   var posX = buttonX, tw;
+
+   for (var i = 0; i < buttons.length; i++) {
+
+     tw = textWidth(buttons[i]);
+
+     if (inside(mouseX, mouseY, posX, tw)) {
+
+       over = buttons[i];
+       break;
+     }
+     posX += tw + 20;
+   }
+ }
+
+ function mouseClicked() {
+
+   var posX = buttonX, tw;
+
+   for (var i = 0; i < buttons.length; i++) {
+
+     tw = textWidth(buttons[i]);
+
+     if (inside(mouseX, mouseY, posX, tw)) {
+
+       wordBut = buttons[i];
+       kwic = null;
+       updateKWIC();
+       break;
+     }
+     posX += tw + 20;
+   }
+ }
+
+}
+  </script>
+</html>
+
+
+

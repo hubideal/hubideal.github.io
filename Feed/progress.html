@@ -1,0 +1,63 @@
+<html>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.3/p5.min.js"></script>
+  <script src="./rita-full.js"></script>
+  <script>
+  var dictionary = [];
+  var verbArray = [];
+  var wordCount;
+  var noWord = ["and","the","to"];
+  function setup() {
+      
+    loadStrings('LinkedInBios.txt', analyze);
+    createCanvas(600,600);
+    background(50);
+    textSize(20);
+    noStroke();
+
+  }
+  
+  function analyze(qual) {
+      qual.forEach(function(phrases){
+      var wordPOS = phrases.toLowerCase().split(' ');
+      wordPOS.forEach(function(word)  {
+        
+        wordCount = dictionary.filter(function(element) { 
+              return element.word == word;
+            });
+            
+            if (wordCount.length)   {
+                wordCount[0].count++;
+            }
+            else
+            {
+                var posWord = RiTa.getPosTags(word);
+                dictionary.push({word: word, pos: posWord[0], count: 1});  //
+}
+        dictionary.sort(function(a, b) {
+                   return b.count - a.count;  //b.count-a.count is descending and a.count-b.count is ascenting
+                 });
+      
+    });
+    
+});
+display();
+}
+
+
+function display(){
+      dictionary.forEach(function(element, index){
+        if (element.pos == "vb" && element.word !== "been" || element.pos == "vbn" && element.word !== "been") {
+          verbArray.push(element.word);
+          }
+          else {
+            return;
+          }
+    });
+  for (var k=0; k<verbArray.length; k++) {
+    textSize(19);
+    stroke(200);
+    text(verbArray[k], 300, 19.75*(k+1))
+  }
+    }    
+  </script>
+</html>
