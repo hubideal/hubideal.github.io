@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/topojson.v1.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Lato" rel="stylesheet">
+  
+</head>
+
+<style>
+body {
+  background: rgb(35, 35, 35);
+  margin:0;
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  text-align: CENTER;
+  font-size: 36pt;
+  color: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+img {
+    max-width: 60%;
+    height: auto;
+}
+
+#MEL {
+    max-width: 98%;
+    height: auto;
+}
+
+#NYC {
+     max-width: 90%;
+    height: auto;
+}
+
+#LA {
+     max-width: 88%;
+    height: auto;
+}
+
+.bigtable {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.citykey {
+   margin-top: 25px;
+}
+
+span {
+    margin:0;
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+}
+
+</style>
+
+<body style="text-align:center;">
+    
+<script>
+  
+/* Set up */
+/* ====== */
+  
+var width = 150,
+    height = 135,
+    margin = { top: 10, right: 10, bottom: 10, left: 10 },
+    originalScale = height / 1.9,
+    scale = originalScale,
+    translation = [width / 2, height / 2],
+    scaleChange,
+    rotation;
+
+var sphere = {type: 'Sphere'};
+
+var graticule = d3.geoGraticule();
+
+
+// set up the main canvas and the projection
+
+var svg = d3.selectAll('div')
+  .append('svg')
+    .attr('width', width + margin.left + margin.right)
+    .attr('height', height + margin.top + margin.bottom)
+    .append('g')
+    .attr('transform', 'translate(' + margin.top + ', ' + margin.left + ')');
+
+
+var projection = d3.geoOrthographic()
+    .scale(scale) 
+    .translate(translation)
+    .clipAngle(90);
+
+var path = d3.geoPath()
+    .projection(projection)
+    .pointRadius(4);
+
+
+
+/* Data load */
+/* ========= */
+
+
+d3.queue()
+  .defer(d3.csv, 'selectedArray.csv')
+  .defer(d3.json, 'world-110m-simple.json')
+  .await(load);
+
+
+function load(error, cities, world) {
+  if (error) { console.log(error); }
+
+  var land = topojson.feature(world, world.objects.countries),
+      grid = graticule();
+
+
+  var outerArray = [];
+  cities.forEach(function(el) {
+
+    var innerArray = [+el.Longitude, +el.Latitude];
+    outerArray.push(innerArray);
+
+  }); 
+
+  var points = { 
+    type: "MultiPoint", 
+    coordinates: outerArray 
+  }; 
+  
+  
+
+  console.log(land);
+  console.log(points);
+  console.log(outerArray);
+
+
+  
+  // Draw the world 
+
+  var outline = svg
+    .append('path')
+      .datum(sphere)
+      .classed('world', true)
+      .attr('id', 'sphere')
+      .attr('d', path)
+      .attr('fill', 'rgba(55,55,55,.1)')
+      .attr('stroke', '#ccc')
+      .attr('stroke-width', 1);
+
+  var gridlines = svg.selectAll('.grid')
+      .data([grid])
+      .enter()
+    .append('path')
+      .classed('world', true)
+      .classed('grid', true)
+      .attr('d', path)
+      .attr('fill', 'none')
+      .attr('stroke', 'rgba(127, 63, 155, .8)')
+      .attr('stroke-width', 1);
+
+  var world = svg.selectAll('.countries')
+      .data([land])
+      .enter()
+    .append('path')
+      .classed('world', true)
+      .classed('countries', true)
+      .attr('d', path)
+      .attr('fill', 'rgba(127, 63, 152,.8)')
+      .attr('stroke', 'rgba(127, 63, 152,.6)')
+      .attr('stroke-width', 1);
+
+
+  // Draw the cities 
+
+ var cities = svg.selectAll('.cities')
+      .data([points])
+      .enter()
+      .append('path')
+      .classed('cities', true)
+      .attr('d', path)
+      .attr('fill', 'tomato');
+
+
+  // Zoom and pan set-up 
+
+  var zoom = d3.zoom()
+    .scaleExtent([0.5, 4])
+    .on("zoom", zoomed)
+
+  d3.select('svg').call(zoom);
+
+  var previousScaleFactor = 1; 
+
+  function zoomed() {
+    var dx = d3.event.sourceEvent.movementX;
+    var dy = d3.event.sourceEvent.movementY;
+
+    var event = d3.event.sourceEvent.type;
+    
+    
+    if (event === 'wheel') {
+      
+      scaleFactor = d3.event.transform.k; 
+      scaleChange = scaleFactor - previousScaleFactor;
+      scale = scale + scaleChange * originalScale;
+      projection.scale(scale);
+      previousScaleFactor = scaleFactor;
+
+      d3.selectAll('.world').attr('d', path);
+      d3.selectAll('.cities').attr('d', path);
+      d3.selectAll('.cities').attr('d', path);
+
+
+    } else {
+
+      var r = projection.rotate();
+      rotation = [r[0] + dx * 0.4, r[1] - dy * 0.5, r[2]];
+      projection.rotate(rotation);
+
+      d3.selectAll('.world').attr('d', path);
+      d3.selectAll('.cities').attr('d', path);
+
+    }
+  
+  } // zoomed()
+
+} // load()
+
+  
+</script>
+    
+  <div class="background">
+  
+  <h1 class="textBack">The World's Best City</h1>
+  <div class="bigtable"><table>
+  <tr>
+  <td><div class="citykey"><img src="AmsterdamSphereTitle.png" class="city" id="Amsterdam"></div></td>
+  <td><div class="citykey" id="MEL"><img src="MelbourneSphereTitle.png" class="city" id="Bangkok"></div></td>
+  <td><div class="citykey"><img src="VancouverSphereTitle.png" class="city" id="Berlin"></div></td>
+  <td><div class="citykey"><img src="TorontoSphereTitle.png" class="city" id="Calgary"></div></td>
+  <td><div class="citykey"><img src="StockholmSphereTitle.png" class="city" id="Paris"></div></td>
+  </tr>
+  <tr>
+  <td><div class="citykey"><img src="TokyoSphereTitle.png" class="city" id="Amsterdam"></div></td>
+  <td><div class="citykey" id="LA"><img src="LosAngelesSphereTitle.png" class="city" id="LosAngeles"></div></td>
+ <td><div class="globe"><span>g</span></div></td>
+  <td><div class="citykey"><img src="ParisSphereTitle.png" class="city" id="Sydney"></div></td>
+  <td><div class="citykey"><img src="DubaiSphereTitle.png" class="city" id="NewYork"></div></td>
+  </tr>
+  <tr>
+  <td><div class="citykey"><img src="SingaporeSphereTitle.png" class="city" id="Amsterdam"></div></td>
+  <td><div class="citykey" id="NYC"><img src="NewYorkSphereTitle.png" class="city" id="NewYork"></div></td>
+  <td><div class="citykey"><img src="IstanbulSphereTitle.png" class="city" id="Paris"></div></td>
+  <td><div class="citykey"><a href="world_LondonInfo.pdf"><img src="LondonSphereTitle.png" class="city" id="Sydney"></a></div></td>
+  <td><div class="citykey"><img src="BangkokSphereTitle.png" class="city" id="Berlin"></div></td>
+  </tr>
+  
+  </table>
+  </div>
+  
+
+
+</div>
+</body>
+
+
