@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Cabin:600|Roboto|Roboto+Condensed|Cabin" rel="stylesheet">
+    </head>
+    <style type="text/css">
+    
+    .countryLabel {
+    font-family: sans-serif;
+    font-size: .9em;
+    }
+    #plot {
+        width: 95%;
+        margin-top: 2%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0%;
+        text-align: center;
+        padding-top: 1%;
+    }
+    
+    div {
+        vertical-align: bottom;
+    }
+    
+    body {
+            background-color: rgb(249,247,253);
+        }
+        
+    svg {
+            font-family: sans-serif;
+        }
+    
+    h1 {
+    width: 100%;
+    text-align: Center;
+    font-family: 'Cabin', sans-serif;
+    font-size: 2em;
+        }
+    .explanation {
+        width: 92%;
+        text-align: left;
+        font-family: 'Cabin', sans-serif;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    }
+        
+    .radioButtons {
+        width: 100%;
+        font-family: Cabin;
+        text-align: CENTER;
+        font-size: 1.2em;
+    }
+    p {
+        font-family: Cabin;
+    }
+    .x-axisBottom {
+        color: rgb(249,247,253);
+        opacity: .5;
+    }
+    
+    .x-axisBottom .tick line {display: none;}
+    
+
+.fhighlight {
+    background-color: #fd6925;
+    color: snow;
+    opacity: .75;
+}
+
+.mhighlight {
+    background-color: rgb(139,0,139);
+    color: snow;
+     opacity: .75;
+}
+
+.yearLabel {
+    margin-left: 7%;
+}
+
+div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 80px;					
+    height: 28px;					
+    padding: 1px;				
+    font: 12px sans-serif;		
+    background: lightgrey;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+    
+    
+   
+    
+    /*p {*/
+    /*    margin: 2%;*/
+    /*}*/
+        
+        
+    
+    </style>
+    
+    <body>
+        <div class='title'><h1>Gender Differences in Expected & Mean Years of Schooling in Sub-Saharan Africa</h1></div>
+        <div class="explanation"><p>This project explores the differences between the expected years of schooling and the mean years of schooling based on gender from 2013 (UNDP). The radio buttons allow you to explore the data by seeing the differences in years of schooling (mean and expected) based on gender. The <a href='https://github.com/hubideal/major_student_one'>README file</a> provides more explanation about the background of this data. Data for this project was attained from the United Nations Development Programme (UNDP). In the visualization below, orange represents <span class="fhighlight">female</span> years of schooling and green represents <span class="mhighlight">male</span> years of schooling.</p></div>
+        
+        <form>
+  <div class="radioButtons">
+  <label><input type="radio" name="mode" value="grouped" checked>Expected Years of School</label>
+  <span>&nbsp&nbsp</span>
+  <label><input type="radio" name="mode" value="stacked">Mean Years of School</label>
+  <span>&nbsp&nbsp</span>
+  <label><input type="radio" name="mode" value="difference">Combined Expected and Mean Years of Schooling</label>
+</div>
+
+
+</form>
+
+        
+         <div id="plot"></div>
+        <script>
+            var pad = 60;
+            var w = screen.width*.93;
+            var h = screen.height*.65;
+            
+            d3.csv("edSubSahAfrCont2.csv", function(error, data) {
+              if (error) throw error;
+             
+            var div = d3.select("#plot").append("div")	
+    .attr("class", "tooltip")				
+    .style("opacity", 0);  
+            
+            var svg = d3.select("#plot")
+            .append("svg")
+            .attr("height", h)
+            .attr("width", w);
+            
+
+              
+            var xScale = d3.scaleLinear()
+            .domain([0, 32])  
+            .range([pad, w - pad]);
+            
+            
+            
+            
+            var yScale = d3.scaleLinear()
+            .domain([0, 14])
+            .range([h - pad, pad]);
+            
+            
+            var xAxis = d3.axisBottom(xScale);
+            var yAxis = d3.axisLeft(yScale);
+            
+            
+            var mSquare = svg.selectAll("rect")
+            .data(data)
+            .enter()
+            .append("rect")
+                .attr("class", "maleSquare")
+                .attr("x", function(d) {return xScale(d['count'])-6;})  
+                .attr("y", function(d) {return yScale(d['mExp2013'])-6;})
+                .attr("width", 12)
+                .attr("height", 12)
+                .attr("fill", "rgb(139,0,139)")
+                .attr('visibility', 'visible')
+                .on("mouseover", function(d) {		
+            div.transition()		
+                .duration(200)		
+                .style("opacity", .7);
+            div	.html("expected: " + d.mExp2013 +"</br>  mean: " + d.mMean2013)	
+                .style("left", (d3.event.pageX + 20) + "px")		
+                .style("top", (d3.event.pageY - 48) + "px");	
+            })					
+        .on("mouseout", function(d) {		
+            div.transition()		
+                .duration(500)		
+                .style("opacity", 0);	
+        });
+                
+        
+                // .attr("opacity", 0.8);
+               
+            
+            
+            var fSquare = svg.selectAll("rect2")
+            .data(data)
+            .enter()
+            .append("rect")
+                .attr("class", "femaleSquare")
+                .attr("x", function(d) {return xScale(d['count'])+6;})  
+                .attr("y", function(d) {return yScale(d['fExp2013'])-6;})
+                .attr("width", 12)
+                .attr("height", 12)
+                .attr("fill", "#fd6925")
+                .attr('visibility', 'visible')
+                .on("mouseover", function(d) {		
+            div.transition()		
+                .duration(200)		
+                .style("opacity", .7);
+            div	.html("expected: " + d.fExp2013 +"</br>  mean: " + d.fMean2013)	
+                .style("left", (d3.event.pageX + 20) + "px")		
+                .style("top", (d3.event.pageY - 48) + "px");	
+            })					
+        .on("mouseout", function(d) {		
+            div.transition()		
+                .duration(500)		
+                .style("opacity", 0);	
+        });
+                // .attr("opacity", 0.8);
+                // .on('click', function(){d3.selectAll('rect').attr('visibility','hidden'); svg.selectAll('.bar').attr('visibility', 'visible');});
+            
+           
+            
+            var mDifference = svg.selectAll("mRectDif")
+                .data(data)
+                .enter()
+                .append('rect')
+                .attr("x", function(d) {return xScale(d['count'])-6;})  
+                .attr("y", function(d) {return yScale(d['mExp2013'])-6;})
+                .attr("height", function(d) {return yScale(d['mMean2013']) - yScale(d['mExp2013']);})
+                .attr('class', 'maleDif')
+                .attr('width', 12)
+                .attr("fill", "rgb(139,0,139)")
+                .attr('visibility', 'hidden')
+                .attr("opacity", 0)
+                .on("mouseover", function(d) {		
+            div.transition()		
+                .duration(200)		
+                .style("opacity", .7);
+            div	.html("expected: " + d.mExp2013 +"</br>  mean: " + d.mMean2013)	
+                .style("left", (d3.event.pageX + 20) + "px")		
+                .style("top", (d3.event.pageY - 48) + "px");	
+            })					
+        .on("mouseout", function(d) {		
+            div.transition()		
+                .duration(500)		
+                .style("opacity", 0);	
+        });
+            
+            var fDifference = svg.selectAll("fRectDif")
+                .data(data)
+                .enter()
+                .append('rect')
+                .attr("x", function(d) {return xScale(d['count'])+6;})  
+                .attr("y", function(d) {return yScale(d['fExp2013'])-6;})
+                .attr("height", function(d) {return yScale(d['fMean2013']) - yScale(d['fExp2013']);})
+                .attr('class', 'femaleDif')
+                .attr('width', 12)
+                .attr("fill", "#fd6925")
+                .attr('visibility', 'hidden')
+                .attr("opacity", 0)
+                .on("mouseover", function(d) {		
+            div.transition()		
+                .duration(200)		
+                .style("opacity", .7);
+            div	.html("expected: " + d.fExp2013 +"</br>  mean: " + d.fMean2013)	
+                .style("left", (d3.event.pageX + 20) + "px")		
+                .style("top", (d3.event.pageY - 48) + "px");	
+            })					
+        .on("mouseout", function(d) {		
+            div.transition()		
+                .duration(500)		
+                .style("opacity", 0);	
+        });;
+            
+            var xLabel = svg.selectAll('text') 
+                .data(data)
+                .enter()
+                .append('text')
+                .text(function(d) { return d.Country; })
+                .attr('transform', function(d, i) { return 'translate('+ (xScale(d['count'])+11)  + " , "  + (yScale(d['mExp2013'])-20) + ') rotate(-90) '; })
+                // .attr('transform', function(d, i) { return 'translate(' + (x(1)/2) + ', ' + (window.innerHeight-y(d.operatingExpenses)) + ')rotate(-90)'; });
+                .attr("fill", "black")
+                .attr('class', 'countryLabel')
+                .attr('visibility', 'visible')
+                .attr('opacity', .45);
+                
+            
+            var fBar = svg.selectAll('barRect')
+                .data(data)
+                .enter()
+                .append('rect')
+                .attr("x", function(d) {return xScale(d['count'])+6;})  
+                .attr("y", function(d) {return yScale(d['fMean2013'])-6;})
+                .attr("height", function(d) {return ((h - pad + 7.5) - yScale(d['fMean2013']));})
+                .attr('class', 'bar')
+                .attr('width', 12)
+                .attr("fill", "#fd6925")
+                .attr('visibility', 'hidden')
+                .attr("opacity", 0.5)
+                .on("mouseover", function(d) {		
+            div.transition()		
+                .duration(200)		
+                .style("opacity", .7);
+            div	.html("expected: " + d.fExp2013 +"</br>  mean: " + d.fMean2013)	
+                .style("left", (d3.event.pageX + 20) + "px")		
+                .style("top", (d3.event.pageY - 48) + "px");	
+            })					
+        .on("mouseout", function(d) {		
+            div.transition()		
+                .duration(500)		
+                .style("opacity", 0);	
+        });
+        
+            var mBar = svg.selectAll('barRect')
+                .data(data)
+                .enter()
+                .append('rect')
+                .attr("x", function(d) {return xScale(d['count'])-6;})  
+                .attr("y", function(d) {return yScale(d['mMean2013'])-6;})
+                .attr("height", function(d) {return ((h - pad + 7.5) - yScale(d['mMean2013']));})
+                .attr('class', 'bar')
+                .attr('width', 12)
+                .attr("fill", "rgb(139,0,139)")
+                .attr('visibility', 'hidden')
+                .attr("opacity", 0.5)
+                .on("mouseover", function(d) {		
+            div.transition()		
+                .duration(200)		
+                .style("opacity", .7);
+            div	.html("expected: " + d.mExp2013 +"</br>  mean: " + d.mMean2013)	
+                .style("left", (d3.event.pageX + 20) + "px")		
+                .style("top", (d3.event.pageY - 48) + "px");	
+            })					
+        .on("mouseout", function(d) {		
+            div.transition()		
+                .duration(500)		
+                .style("opacity", 0);	
+        });
+             
+                
+
+            var bottomAxis = svg.append('g')
+                .attr("class", "x-axis")
+                .attr("transform", "translate(0," + (h - pad) + ")")
+                .attr('class', 'x-axisBottom')
+                .call(xAxis);
+                
+            bottomAxis.selectAll("text").remove();
+
+    
+
+            svg.append("g")
+                .attr("class", "y-axis")
+                .attr("transform", "translate(" + pad +", 0)")
+                .call(yAxis);
+            
+            d3.select('.y-axis')
+                .append('text')
+                .attr("class", "axis-title")
+                .attr("transform", 'translate (0,20)')
+                .attr('fill','black')
+                .text("Years")
+                .attr("class", "yearLabel");
+
+
+            d3.selectAll('.countryLabel').on('click', function() {
+                 d3.select(this)
+                    .attr('opacity', .95)
+                    .attr('visibility', 'visible');
+            });
+            
+            
+            
+            d3.selectAll("input")
+                .on("change", changed);
+                
+            var timeout = d3.timeout(function() {
+                d3.select("input[value=\"grouped\"]")
+                .property("checked", true)
+                .dispatch("change");
+            }, 1000000);
+            
+            function changed() {
+                timeout.stop();
+                if (this.value === "grouped") transitionGrouped();
+                else if (this.value === "difference") transitionDifference();
+                else transitionStacked();
+            }
+        
+    function transitionGrouped() {
+                
+            var xScale = d3.scaleLinear()
+            .domain([0, 32])  
+            .range([pad, w - pad]);
+            
+            
+            var yScale = d3.scaleLinear()
+            .domain([0, 14])
+            .range([h - pad, pad]);
+            
+            
+          
+            
+            var xAxis = d3.axisBottom(xScale);
+            var yAxis = d3.axisLeft(yScale);
+            
+             svg.selectAll("rect.bar").remove();
+            
+           mSquare.transition()
+                .duration(1750)
+                .attr("x", function(d) {return xScale(d['count'])-6;})  
+                .attr("y", function(d) {return yScale(d['mExp2013'])-6;})
+                .attr("width", 12)
+                .attr("height", 12)
+                .attr("fill", "rgb(139,0,139)")
+                .attr('visibility', 'visible');
+                // .attr("opacity", 0.7);
+                // .on('click', function(){d3.selectAll('rect').attr('visibility','visible'); svg.selectAll('.bar').attr('visibility', 'hidden');});
+                
+            
+            fSquare.transition()
+                    .duration(1750)
+                    .attr("x", function(d) {return xScale(d['count'])+6;})  
+                    .attr("y", function(d) {return yScale(d['fExp2013'])-6;})
+                    .attr("width", 12)
+                    .attr("height", 12)
+                    .attr("fill", "#fd6925")
+                    .attr('visibility', 'visible');
+                    
+                    // .attr("opacity", 0.7);
+                    // .on('click', function(){d3.selectAll('rect').attr('visibility','visible'); svg.selectAll('.bar').attr('visibility', 'hidden');});
+                    
+                    
+            mDifference.transition()
+            .duration(1750)
+                .attr("x", function(d) {return xScale(d['count'])-6;})  
+                .attr("y", function(d) {return yScale(d['mExp2013'])-6;})
+                .attr("height", function(d) {return yScale(d['mMean2013']) - yScale(d['mExp2013']);})
+                .attr('class', 'polygon')
+                .attr('width', 12)
+                .attr("fill", "rgb(139,0,139)")
+                .attr('visibility', 'visible')
+                .attr("opacity", 0.25);
+            
+            fDifference.transition()
+            .duration(1550)
+                .attr("x", function(d) {return xScale(d['count'])+6;})  
+                .attr("y", function(d) {return yScale(d['fExp2013'])-6;})
+                .attr("height", function(d) {return yScale(d['fMean2013']) - yScale(d['fExp2013']);})
+                .attr('class', 'polygon')
+                .attr('width', 12)
+                .attr("fill", "#fd6925")
+                .attr('visibility', 'visible')
+                .attr("opacity", 0.25); 
+            
+          
+                    
+            xLabel.transition()
+                  .duration(1550)
+                .attr('transform', function(d, i) { return 'translate('+ (xScale(d['count'])+11)  + " , "  + (yScale(d['mExp2013'])-20) + ') rotate(-90) '; })
+                // .attr('transform', function(d, i) { return 'translate(' + (x(1)/2) + ', ' + (window.innerHeight-y(d.operatingExpenses)) + ')rotate(-90)'; });
+                .attr("fill", "black")
+                .attr('opacity', .35)
+                .attr('class', 'countryLabel')
+                .attr('visibility', 'visible')
+                .attr('opacity', .35);
+
+            
+
+            svg.append("g")
+                .attr("class", "y-axis")
+                .attr("transform", "translate(" + pad +", 0)")
+                .call(yAxis);
+
+
+}
+
+function transitionStacked() {
+                
+              var xScale = d3.scaleLinear()
+            .domain([0, 32])  
+            .range([pad, w - pad]);
+            
+            
+            var yScale = d3.scaleLinear()
+            .domain([0, 14])
+            .range([h - pad, pad]);
+            
+            var xAxis = d3.axisBottom(xScale);
+            var yAxis = d3.axisLeft(yScale);
+            
+            svg.selectAll("rect.bar").remove();
+            
+            mSquare.transition()
+                .duration(1550)
+                .attr("x", function(d) {return xScale(d['count'])-6;})  
+                .attr("y", function(d) {return yScale(d['mMean2013'])-6;})
+                .attr("width", 12)
+                .attr("height", 12)
+                .attr("fill", "rgb(139,0,139)")
+                .attr('visibility', 'visible')
+                // .attr("opacity", 0.7);
+                
+            
+            fSquare.transition()
+                    .duration(1550)
+                    .attr("x", function(d) {return xScale(d['count'])+6;})  
+                    .attr("y", function(d) {return yScale(d['fMean2013'])-6;})
+                    .attr("width", 12)
+                    .attr("height", 12)
+                    .attr("fill", "#fd6925")
+                    .attr('visibility', 'visible')
+                    // .attr("opacity", 0.7);
+                   
+            
+            mDifference.transition()
+            .duration(2750)
+                .attr("x", function(d) {return xScale(d['count'])-6;})  
+                .attr("y", function(d) {return yScale(d['mExp2013'])-6;})
+                .attr("height", function(d) {return yScale(d['mMean2013']) - yScale(d['mExp2013']);})
+                .attr('class', 'polygon')
+                .attr('width', 12)
+                .attr("fill", "rgb(139,0,139)")
+                .attr('visibility', 'visible')
+                .attr("opacity", 0.25);
+            
+            fDifference.transition()
+            .duration(2750)
+                .attr("x", function(d) {return xScale(d['count'])+6;})  
+                .attr("y", function(d) {return yScale(d['fExp2013'])-6;})
+                .attr("height", function(d) {return yScale(d['fMean2013']) - yScale(d['fExp2013']);})
+                .attr('class', 'polygon')
+                .attr('width', 12)
+                .attr("fill", "#fd6925")
+                .attr('visibility', 'visible')
+                .attr("opacity", 0.25); 
+                    
+             xLabel.transition()
+                   .duration(1750)
+                // .data(data)
+                // .enter()
+                // .append('text')
+                // .text(function(d) { return d.Country; })
+                // // .attr('x',function(d) {return xScale(d['count'])-7.5;})
+                // // .attr('y',function(d) {return yScale(d['mExp2013'])-40;})
+                .attr('transform', function(d, i) { return 'translate('+ (xScale(d['count'])+11)  + " , "  + (yScale(d['mMean2013'])-20) + ') rotate(-90) '; })
+                // .attr('transform', function(d, i) { return 'translate(' + (x(1)/2) + ', ' + (window.innerHeight-y(d.operatingExpenses)) + ')rotate(-90)'; });
+                .attr("fill", 'black')
+                .attr('class', 'countryLabel')
+                .attr('visibility', 'visible')
+                .attr('opacity', .35);
+
+           
+    
+
+            svg.append("g")
+                .attr("class", "y-axis")
+                .attr("transform", "translate(" + pad +", 0)")
+                .call(yAxis);
+                
+            
+
+            
+}
+
+function transitionDifference() {
+ var xScale = d3.scaleLinear()
+            .domain([0, 32])  
+            .range([pad, w - pad]);
+            
+            
+            var yScale = d3.scaleLinear()
+            .domain([0, 14])
+            .range([h - pad, pad]);
+            
+            var xAxis = d3.axisBottom(xScale);
+            var yAxis = d3.axisLeft(yScale);
+            
+            
+            
+            mSquare.transition()
+                .duration(1550)
+                .attr("x", function(d) {return xScale(d['count'])-6;})  
+                .attr("y", function(d) {return yScale(d['mExp2013'])-6;})
+                .attr("width", 12)
+                .attr("height", 12)
+                .attr("fill", "rgb(139,0,139)")
+                .attr('visibility', 'visible')
+                // .attr("opacity", 0.7);
+                
+            
+            fSquare.transition()
+                    .duration(1550)
+                    .attr("x", function(d) {return xScale(d['count'])+6;})  
+                    .attr("y", function(d) {return yScale(d['fExp2013'])-6;})
+                    .attr("width", 12)
+                    .attr("height", 12)
+                    .attr("fill", "#fd6925")
+                    .attr('visibility', 'visible')
+                    // .attr("opacity", 0.7);
+                   
+            
+            // function transitionDifference() {mDifference.transition()
+            mDifference.transition()
+            .duration(2750)
+                .attr("x", function(d) {return xScale(d['count'])-6;})  
+                .attr("y", function(d) {return yScale(d['mExp2013'])-6;})
+                .attr("height", function(d) {return yScale(d['mMean2013']) - yScale(d['mExp2013']);})
+                .attr('class', 'polygon')
+                .attr('width', 12)
+                .attr("fill", "rgb(139,0,139)")
+                .attr('visibility', 'visible')
+                .attr("opacity", 0.45);
+            
+            fDifference.transition()
+            .duration(2750)
+                .attr("x", function(d) {return xScale(d['count'])+6;})  
+                .attr("y", function(d) {return yScale(d['fExp2013'])-6;})
+                .attr("height", function(d) {return yScale(d['fMean2013']) - yScale(d['fExp2013']);})
+                .attr('class', 'polygon')
+                .attr('width', 12)
+                .attr("fill", "#fd6925")
+                .attr('visibility', 'visible')
+                .attr("opacity", 0.45); 
+                    
+             xLabel.transition()
+                   .duration(1750)
+                // .data(data)
+                // .enter()
+                // .append('text')
+                // .text(function(d) { return d.Country; })
+                // // .attr('x',function(d) {return xScale(d['count'])-7.5;})
+                // // .attr('y',function(d) {return yScale(d['mExp2013'])-40;})
+                .attr('transform', function(d, i) { return 'translate('+ (xScale(d['count'])+11)  + " , "  + (yScale(d['mExp2013'])-20) + ') rotate(-90) '; })
+                // .attr('transform', function(d, i) { return 'translate(' + (x(1)/2) + ', ' + (window.innerHeight-y(d.operatingExpenses)) + ')rotate(-90)'; });
+                .attr("fill", 'black')
+                .attr('class', 'countryLabel')
+                .attr('visibility', 'visible')
+                .attr('opacity', .35);
+
+           fBar = svg.selectAll('barRect')
+                .data(data)
+                .enter()
+                .append('rect')
+                .attr("x", function(d) {return xScale(d['count'])+6;})  
+                .attr("y", function(d) {return yScale(d['fMean2013'])-6;})
+                .attr("height", function(d) {return ((h - pad + 7.5) - yScale(d['fMean2013']));})
+                .attr('class', 'bar')
+                .attr('width', 12)
+                .attr("fill", "#fd6925")
+                .attr('visibility', 'visible')
+                .attr("opacity", 0.75)
+                
+                
+            mBar = svg.selectAll('barRect')
+                .data(data)
+                .enter()
+                .append('rect')
+                .attr("x", function(d) {return xScale(d['count'])-6;})  
+                .attr("y", function(d) {return yScale(d['mMean2013'])-6;})
+                .attr("height", function(d) {return ((h - pad + 7.5) - yScale(d['mMean2013']));})
+                .attr('class', 'bar')
+                .attr('width', 12)
+                .attr("fill", "rgb(139,0,139)")
+                .attr('visibility', 'visible')
+                .attr("opacity", 0.75)
+                .
+
+    
+
+            svg.append("g")
+                .attr("class", "y-axis")
+                .attr("transform", "translate(" + pad +", 0)")
+                .call(yAxis);
+
+
+}
+  
+            
+             }); 
+             
+             
+        //      .on("mouseover", function(d) {		
+        //     div.transition()		
+        //         .duration(200)		
+        //         .style("opacity", .9);
+        //     div	.html(d.mExp2013 + "<br/>"  + d.mMean2013)	
+        //         .style("left", (d3.event.pageX) + "px")		
+        //         .style("top", (d3.event.pageY - 28) + "px");	
+        //     })					
+        // .on("mouseout", function(d) {		
+        //     div.transition()		
+        //         .duration(500)		
+        //         .style("opacity", 0);	
+        // });
+        
+        </script>
+        
+   
+    </body>
+    
+</html>
+
