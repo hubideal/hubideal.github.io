@@ -36,13 +36,13 @@
     width: 100%;
     text-align: Center;
     font-family: 'Cabin', sans-serif;
-    font-size: 2em;
+    font-size: 3em;
         }
     .explanation {
         width: 92%;
         text-align: left;
         font-family: 'Cabin', sans-serif;
-    font-size: 1em;
+    font-size: 2em;
     padding: 0;
     margin: 0;
     margin-left: auto;
@@ -53,7 +53,7 @@
         width: 100%;
         font-family: Cabin;
         text-align: CENTER;
-        font-size: 1.2em;
+        font-size: 2.9em;
     }
     p {
         font-family: Cabin;
@@ -80,21 +80,25 @@
 
 .yearLabel {
     margin-left: 7%;
+    font-size: 1em;
 }
 
 div.tooltip {	
     position: absolute;			
     text-align: center;			
-    width: 80px;					
-    height: 28px;					
+    width: 85px;					
+    height: 48px;					
     padding: 1px;				
-    font: 12px sans-serif;		
+    font: 16px sans-serif;		
     background: lightgrey;	
     border: 0px;		
     border-radius: 8px;			
     pointer-events: none;			
 }
-    
+
+.y-axis {
+    font-size: 1.5em;
+}
     
    
     
@@ -164,10 +168,10 @@ div.tooltip {
             .enter()
             .append("rect")
                 .attr("class", "maleSquare")
-                .attr("x", function(d) {return xScale(d['count'])-6;})  
-                .attr("y", function(d) {return yScale(d['mExp2013'])-6;})
-                .attr("width", 12)
-                .attr("height", 12)
+                .attr("x", function(d) {return xScale(d['count'])-8;})  
+                .attr("y", function(d) {return yScale(d['mExp2013'])-8;})
+                .attr("width", 16)
+                .attr("height", 16)
                 .attr("fill", "rgb(139,0,139)")
                 .attr('visibility', 'visible')
                 .on("mouseover", function(d) {		
@@ -194,10 +198,10 @@ div.tooltip {
             .enter()
             .append("rect")
                 .attr("class", "femaleSquare")
-                .attr("x", function(d) {return xScale(d['count'])+6;})  
-                .attr("y", function(d) {return yScale(d['fExp2013'])-6;})
-                .attr("width", 12)
-                .attr("height", 12)
+                .attr("x", function(d) {return xScale(d['count'])+8;})  
+                .attr("y", function(d) {return yScale(d['fExp2013'])-8;})
+                .attr("width", 16)
+                .attr("height", 16)
                 .attr("fill", "#fd6925")
                 .attr('visibility', 'visible')
                 .on("mouseover", function(d) {		
@@ -222,11 +226,11 @@ div.tooltip {
                 .data(data)
                 .enter()
                 .append('rect')
-                .attr("x", function(d) {return xScale(d['count'])-6;})  
-                .attr("y", function(d) {return yScale(d['mExp2013'])-6;})
+                .attr("x", function(d) {return xScale(d['count'])-8;})  
+                .attr("y", function(d) {return yScale(d['mExp2013'])-8;})
                 .attr("height", function(d) {return yScale(d['mMean2013']) - yScale(d['mExp2013']);})
                 .attr('class', 'maleDif')
-                .attr('width', 12)
+                .attr('width', 16)
                 .attr("fill", "rgb(139,0,139)")
                 .attr('visibility', 'hidden')
                 .attr("opacity", 0)
@@ -248,11 +252,11 @@ div.tooltip {
                 .data(data)
                 .enter()
                 .append('rect')
-                .attr("x", function(d) {return xScale(d['count'])+6;})  
-                .attr("y", function(d) {return yScale(d['fExp2013'])-6;})
+                .attr("x", function(d) {return xScale(d['count'])+8;})  
+                .attr("y", function(d) {return yScale(d['fExp2013'])-8;})
                 .attr("height", function(d) {return yScale(d['fMean2013']) - yScale(d['fExp2013']);})
                 .attr('class', 'femaleDif')
-                .attr('width', 12)
+                .attr('width', 16)
                 .attr("fill", "#fd6925")
                 .attr('visibility', 'hidden')
                 .attr("opacity", 0)
@@ -287,11 +291,11 @@ div.tooltip {
                 .data(data)
                 .enter()
                 .append('rect')
-                .attr("x", function(d) {return xScale(d['count'])+6;})  
-                .attr("y", function(d) {return yScale(d['fMean2013'])-6;})
-                .attr("height", function(d) {return ((h - pad + 7.5) - yScale(d['fMean2013']));})
+                .attr("x", function(d) {return xScale(d['count'])+8;})  
+                .attr("y", function(d) {return yScale(d['fMean2013'])-8;})
+                .attr("height", function(d) {return ((h - pad + 8) - yScale(d['fMean2013']));})
                 .attr('class', 'bar')
-                .attr('width', 12)
+                .attr('width', 16)
                 .attr("fill", "#fd6925")
                 .attr('visibility', 'hidden')
                 .attr("opacity", 0.5)
@@ -313,11 +317,11 @@ div.tooltip {
                 .data(data)
                 .enter()
                 .append('rect')
-                .attr("x", function(d) {return xScale(d['count'])-6;})  
-                .attr("y", function(d) {return yScale(d['mMean2013'])-6;})
-                .attr("height", function(d) {return ((h - pad + 7.5) - yScale(d['mMean2013']));})
+                .attr("x", function(d) {return xScale(d['count'])-8;})  
+                .attr("y", function(d) {return yScale(d['mMean2013'])-8;})
+                .attr("height", function(d) {return ((h - pad + 8) - yScale(d['mMean2013']));})
                 .attr('class', 'bar')
-                .attr('width', 12)
+                .attr('width', 16)
                 .attr("fill", "rgb(139,0,139)")
                 .attr('visibility', 'hidden')
                 .attr("opacity", 0.5)
@@ -406,10 +410,10 @@ div.tooltip {
             
            mSquare.transition()
                 .duration(1750)
-                .attr("x", function(d) {return xScale(d['count'])-6;})  
-                .attr("y", function(d) {return yScale(d['mExp2013'])-6;})
-                .attr("width", 12)
-                .attr("height", 12)
+                .attr("x", function(d) {return xScale(d['count'])-8;})  
+                .attr("y", function(d) {return yScale(d['mExp2013'])-8;})
+                .attr("width", 16)
+                .attr("height", 16)
                 .attr("fill", "rgb(139,0,139)")
                 .attr('visibility', 'visible');
                 // .attr("opacity", 0.7);
@@ -418,10 +422,10 @@ div.tooltip {
             
             fSquare.transition()
                     .duration(1750)
-                    .attr("x", function(d) {return xScale(d['count'])+6;})  
-                    .attr("y", function(d) {return yScale(d['fExp2013'])-6;})
-                    .attr("width", 12)
-                    .attr("height", 12)
+                    .attr("x", function(d) {return xScale(d['count'])+8;})  
+                    .attr("y", function(d) {return yScale(d['fExp2013'])-8;})
+                    .attr("width", 16)
+                    .attr("height", 16)
                     .attr("fill", "#fd6925")
                     .attr('visibility', 'visible');
                     
@@ -431,22 +435,22 @@ div.tooltip {
                     
             mDifference.transition()
             .duration(1750)
-                .attr("x", function(d) {return xScale(d['count'])-6;})  
-                .attr("y", function(d) {return yScale(d['mExp2013'])-6;})
+                .attr("x", function(d) {return xScale(d['count'])-8;})  
+                .attr("y", function(d) {return yScale(d['mExp2013'])-8;})
                 .attr("height", function(d) {return yScale(d['mMean2013']) - yScale(d['mExp2013']);})
                 .attr('class', 'polygon')
-                .attr('width', 12)
+                .attr('width', 16)
                 .attr("fill", "rgb(139,0,139)")
                 .attr('visibility', 'visible')
                 .attr("opacity", 0.25);
             
             fDifference.transition()
             .duration(1550)
-                .attr("x", function(d) {return xScale(d['count'])+6;})  
-                .attr("y", function(d) {return yScale(d['fExp2013'])-6;})
+                .attr("x", function(d) {return xScale(d['count'])+8;})  
+                .attr("y", function(d) {return yScale(d['fExp2013'])-8;})
                 .attr("height", function(d) {return yScale(d['fMean2013']) - yScale(d['fExp2013']);})
                 .attr('class', 'polygon')
-                .attr('width', 12)
+                .attr('width', 16)
                 .attr("fill", "#fd6925")
                 .attr('visibility', 'visible')
                 .attr("opacity", 0.25); 
@@ -491,10 +495,10 @@ function transitionStacked() {
             
             mSquare.transition()
                 .duration(1550)
-                .attr("x", function(d) {return xScale(d['count'])-6;})  
-                .attr("y", function(d) {return yScale(d['mMean2013'])-6;})
-                .attr("width", 12)
-                .attr("height", 12)
+                .attr("x", function(d) {return xScale(d['count'])-8;})  
+                .attr("y", function(d) {return yScale(d['mMean2013'])-8;})
+                .attr("width", 16)
+                .attr("height", 16)
                 .attr("fill", "rgb(139,0,139)")
                 .attr('visibility', 'visible')
                 // .attr("opacity", 0.7);
@@ -502,10 +506,10 @@ function transitionStacked() {
             
             fSquare.transition()
                     .duration(1550)
-                    .attr("x", function(d) {return xScale(d['count'])+6;})  
-                    .attr("y", function(d) {return yScale(d['fMean2013'])-6;})
-                    .attr("width", 12)
-                    .attr("height", 12)
+                    .attr("x", function(d) {return xScale(d['count'])+8;})  
+                    .attr("y", function(d) {return yScale(d['fMean2013'])-8;})
+                    .attr("width", 16)
+                    .attr("height", 16)
                     .attr("fill", "#fd6925")
                     .attr('visibility', 'visible')
                     // .attr("opacity", 0.7);
@@ -513,22 +517,22 @@ function transitionStacked() {
             
             mDifference.transition()
             .duration(2750)
-                .attr("x", function(d) {return xScale(d['count'])-6;})  
-                .attr("y", function(d) {return yScale(d['mExp2013'])-6;})
+                .attr("x", function(d) {return xScale(d['count'])-8;})  
+                .attr("y", function(d) {return yScale(d['mExp2013'])-8;})
                 .attr("height", function(d) {return yScale(d['mMean2013']) - yScale(d['mExp2013']);})
                 .attr('class', 'polygon')
-                .attr('width', 12)
+                .attr('width', 16)
                 .attr("fill", "rgb(139,0,139)")
                 .attr('visibility', 'visible')
                 .attr("opacity", 0.25);
             
             fDifference.transition()
             .duration(2750)
-                .attr("x", function(d) {return xScale(d['count'])+6;})  
-                .attr("y", function(d) {return yScale(d['fExp2013'])-6;})
+                .attr("x", function(d) {return xScale(d['count'])+8;})  
+                .attr("y", function(d) {return yScale(d['fExp2013'])-8;})
                 .attr("height", function(d) {return yScale(d['fMean2013']) - yScale(d['fExp2013']);})
                 .attr('class', 'polygon')
-                .attr('width', 12)
+                .attr('width', 16)
                 .attr("fill", "#fd6925")
                 .attr('visibility', 'visible')
                 .attr("opacity", 0.25); 
@@ -578,10 +582,10 @@ function transitionDifference() {
             
             mSquare.transition()
                 .duration(1550)
-                .attr("x", function(d) {return xScale(d['count'])-6;})  
-                .attr("y", function(d) {return yScale(d['mExp2013'])-6;})
-                .attr("width", 12)
-                .attr("height", 12)
+                .attr("x", function(d) {return xScale(d['count'])-8;})  
+                .attr("y", function(d) {return yScale(d['mExp2013'])-8;})
+                .attr("width", 16)
+                .attr("height", 16)
                 .attr("fill", "rgb(139,0,139)")
                 .attr('visibility', 'visible')
                 // .attr("opacity", 0.7);
@@ -589,10 +593,10 @@ function transitionDifference() {
             
             fSquare.transition()
                     .duration(1550)
-                    .attr("x", function(d) {return xScale(d['count'])+6;})  
-                    .attr("y", function(d) {return yScale(d['fExp2013'])-6;})
-                    .attr("width", 12)
-                    .attr("height", 12)
+                    .attr("x", function(d) {return xScale(d['count'])+8;})  
+                    .attr("y", function(d) {return yScale(d['fExp2013'])-8;})
+                    .attr("width", 16)
+                    .attr("height", 16)
                     .attr("fill", "#fd6925")
                     .attr('visibility', 'visible')
                     // .attr("opacity", 0.7);
@@ -601,22 +605,22 @@ function transitionDifference() {
             // function transitionDifference() {mDifference.transition()
             mDifference.transition()
             .duration(2750)
-                .attr("x", function(d) {return xScale(d['count'])-6;})  
-                .attr("y", function(d) {return yScale(d['mExp2013'])-6;})
+                .attr("x", function(d) {return xScale(d['count'])-8;})  
+                .attr("y", function(d) {return yScale(d['mExp2013'])-8;})
                 .attr("height", function(d) {return yScale(d['mMean2013']) - yScale(d['mExp2013']);})
                 .attr('class', 'polygon')
-                .attr('width', 12)
+                .attr('width', 16)
                 .attr("fill", "rgb(139,0,139)")
                 .attr('visibility', 'visible')
                 .attr("opacity", 0.45);
             
             fDifference.transition()
             .duration(2750)
-                .attr("x", function(d) {return xScale(d['count'])+6;})  
-                .attr("y", function(d) {return yScale(d['fExp2013'])-6;})
+                .attr("x", function(d) {return xScale(d['count'])+8;})  
+                .attr("y", function(d) {return yScale(d['fExp2013'])-8;})
                 .attr("height", function(d) {return yScale(d['fMean2013']) - yScale(d['fExp2013']);})
                 .attr('class', 'polygon')
-                .attr('width', 12)
+                .attr('width', 16)
                 .attr("fill", "#fd6925")
                 .attr('visibility', 'visible')
                 .attr("opacity", 0.45); 
@@ -640,11 +644,11 @@ function transitionDifference() {
                 .data(data)
                 .enter()
                 .append('rect')
-                .attr("x", function(d) {return xScale(d['count'])+6;})  
-                .attr("y", function(d) {return yScale(d['fMean2013'])-6;})
+                .attr("x", function(d) {return xScale(d['count'])+8;})  
+                .attr("y", function(d) {return yScale(d['fMean2013'])-8;})
                 .attr("height", function(d) {return ((h - pad + 7.5) - yScale(d['fMean2013']));})
                 .attr('class', 'bar')
-                .attr('width', 12)
+                .attr('width', 16)
                 .attr("fill", "#fd6925")
                 .attr('visibility', 'visible')
                 .attr("opacity", 0.75)
@@ -654,11 +658,11 @@ function transitionDifference() {
                 .data(data)
                 .enter()
                 .append('rect')
-                .attr("x", function(d) {return xScale(d['count'])-6;})  
-                .attr("y", function(d) {return yScale(d['mMean2013'])-6;})
+                .attr("x", function(d) {return xScale(d['count'])-8;})  
+                .attr("y", function(d) {return yScale(d['mMean2013'])-8;})
                 .attr("height", function(d) {return ((h - pad + 7.5) - yScale(d['mMean2013']));})
                 .attr('class', 'bar')
-                .attr('width', 12)
+                .attr('width', 16)
                 .attr("fill", "rgb(139,0,139)")
                 .attr('visibility', 'visible')
                 .attr("opacity", 0.75)
