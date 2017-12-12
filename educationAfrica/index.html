@@ -1,0 +1,947 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Cabin:600|Roboto|Roboto+Condensed|Cabin" rel="stylesheet">
+        <link rel='stylesheet' href='bootstrap.min.css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    
+    </head>
+    <style type = "text/css">
+    
+    .ecountryLabel {
+    font-family: sans-serif;
+    font-size: 1.2em;
+    }
+    
+    .mcountryLabel {
+    font-family: sans-serif;
+    font-size: 1.2em;
+    }
+    
+    @media (min-width: 1524px) {
+        
+                h1 {
+    width: 100%;
+    text-align: CENTER;
+    font-family: 'Cabin', sans-serif;
+    font-size: 3em;
+        }
+        
+    .explanation {
+        width: 92%;
+        text-align: left;
+        font-family: 'Cabin', sans-serif;
+    font-size: 1.3em;
+    padding: 0;
+    margin: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+     #plot {
+        width: 100%;
+        text-align: center;
+        padding-top: 2%;
+    }
+    
+   
+    
+    div.mtip {	
+    position: absolute;
+    top: 95%;
+    right: 9%;
+    text-align: center;
+    width: 83%;					
+    height: 7%;	
+    padding: .5%;
+   font: 1.3em Cabin, sans-serif;		
+    background: rgba(139,0,139,.3);	
+    border: 0px;		
+    border-radius: 8px;
+}
+
+div.ftip {	
+    position: absolute;	
+    top: 95%;
+    right: 9%;
+    text-align: center;			
+    width: 83%;					
+    height: 7%;	
+    padding: .5%;
+    font: 1.3em Cabin, sans-serif;		
+    background: rgba(253, 105, 37, .3);	
+    border: 0px;		
+    border-radius: 8px;
+}
+            } 
+        
+    @media (min-width: 768px) and (max-width: 1523px) {
+    
+    h1 {
+    width: 100%;
+    text-align: Center;
+    font-family: 'Cabin', sans-serif;
+    font-size: 2em;
+        }
+        
+    .explanation {
+        width: 92%;
+        text-align: left;
+        font-family: 'Cabin', sans-serif;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+     #plot {
+        width: 100%;
+        text-align: center;
+        padding-top: 2%;
+    }
+    
+    div.mtip {	
+    position: absolute;	
+    top: 89%;
+    right: 10%;
+    text-align: center;			
+    width: 81%;					
+    height: 9%;					
+    padding: 1%;				
+    font: 1em Cabin, sans-serif;		
+    background: rgba(139,0,139,.3);	
+    border: 0px;		
+    border-radius: 8px;
+}
+
+div.ftip {	
+    position: absolute;	
+    top: 89%;
+    right: 10%;
+    text-align: center;			
+    width: 81%;					
+    height: 9%;					
+    padding: 1%;				
+    font: 1em Cabin, sans-serif;		
+    background: rgba(253, 105, 37, .3);	
+    border: 0px;		
+    border-radius: 8px;
+}
+
+            }
+            
+    @media (max-width: 767px) {
+    
+    h1 {
+    width: 100%;
+    text-align: Center;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5em;
+        }
+        
+    .explanation {
+        width: 92%;
+        text-align: left;
+        font-family: 'Cabin', sans-serif;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+     #plot {
+        width: 100%;
+        text-align: center;
+        padding-top: 2%;
+    }
+    
+    }
+    
+    
+    body {
+            background-color: rgb(249,247,253);
+        }
+        
+        
+    #plot {
+        width: 100%;
+        text-align: center;
+        padding-top: 2%;
+    }
+    
+    div {
+        vertical-align: bottom;
+    }
+    
+    svg {
+            font-family: sans-serif;
+        }
+    
+        
+    .buttons {
+        width: 100%;
+        font-family: Cabin;
+        text-align: CENTER;
+        font-size: 1.1em;
+    }
+    
+    p {
+        font-family: Cabin;
+    }
+    
+    .x-axisBottom {
+        color: rgb(249,247,253);
+        opacity: .9;
+        font-size: 1em;
+    }
+    
+    .x-axisBottom .tick line {display: none;}
+    
+
+.fhighlight {
+    background-color: #fd6925;
+    color: snow;
+    opacity: .75;
+}
+
+.mhighlight {
+    background-color: rgb(139,0,139);
+    color: snow;
+     opacity: .75;
+}
+
+.yearLabel {
+    margin-left: 7%;
+    font-size: .9em;
+}
+
+
+.y-axis {
+    font-size: 1.2em;
+}
+
+span {
+    font-style: oblique;
+}
+
+
+.sortAsk {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Cabin;
+}
+/*.explainSort {*/
+/*    float: left;*/
+/*    text-align: CENTER;*/
+/*}*/
+  
+input {
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 4%;
+    margin: 2%;
+}
+
+form {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.explainSort {
+    display: inline;
+     margin-left: auto;
+    margin-right: auto;
+}
+
+#xLabel {
+    opacity: .99;
+    font-size: 1.2em;
+}
+
+
+    </style>
+    
+    
+    <body>
+        <div class='title'><h1>Gender Differences in Expected & Mean Years of Schooling in Sub-Saharan Africa</h1></div>
+     
+        <form>
+   
+  <div class="buttons">
+  <label><input type="button" name="mode" value="Mean Years of School" autofocus></label>
+  <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+  <label><input type="button" name="mode" value="Expected Years of School"></label>
+  <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+  <label><input type="button" name="mode" value="Combined Expected & Mean Years of School"  style="padding:2%"></label></br>
+<!--</div>-->
+ <label for="nSort" class="sortAsk" align:center><p class="explainSort">Sort countries (horizontal axis) by: </p><select id="xSort" name="sort"> 
+    <option value="count" selected="selected">Female Mean Years of Education</option>
+    <option value="count3">Male Mean Years of Education</option>
+    <option value="count2">Female Expected Years of Education</option>
+    <option value="count4">Male Expected Years of Education</option>
+    <option value="count5">Alpahbetical by Country</option>
+  </select></div></label>
+</form>
+        
+         <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id="plot"></div>
+         <script>
+            var pad = 80;
+            var w = screen.width*.93;
+            var h = screen.height*.65;
+            
+            var newCount = 'count';
+            
+            d3.csv("edSubSahAfrCont4.csv", function(error, data) {
+              if (error) throw error;
+             
+            var div = d3.select("#plot").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);  
+            
+            var svg = d3.select("#plot")
+            .append("svg")
+            .attr("height", h)
+            .attr("width", w);
+            
+
+            d3.select("#xSort").on("change", function() {
+                var sect = document.getElementById('xSort');
+                console.log(sect);
+                var section = sect.options[sect.selectedIndex].value;
+                newCount = section
+                console.log(newCount);
+  xChange(section);
+});
+            
+            function xChange(newValue) {
+                console.log(newValue);
+                
+    d3.selectAll('.maleSquare') // move the rectangles
+        .transition().duration(1000)
+        .attr('x',function (d) { return xScale(d[newValue])-8;});
+    
+    d3.selectAll('.femaleSquare') // move the rectangles
+        .transition().duration(1000)
+        .attr('x',function (d) { return xScale(d[newValue])+8;});
+        
+    d3.selectAll('.maleDif') // move the rectangles
+        .transition().duration(1000)
+        .attr('x',function (d) { return xScale(d[newValue])-8;});
+    
+    d3.selectAll('.femaleDif') // move the rectangles
+        .transition().duration(1000)
+        .attr('x',function (d) { return xScale(d[newValue])+8;});
+    
+     d3.selectAll('.mbar') // move the rectangles
+        .transition().duration(1000)
+        .attr('x',function (d) { return xScale(d[newValue])-8;});
+    
+    d3.selectAll('.fbar') // move the rectangles
+        .transition().duration(1000)
+        .attr('x',function (d) { return xScale(d[newValue])+8;});
+        
+    svg.selectAll('.mcountryLabel')
+        .data(data)
+        .transition()
+        .duration(1000)
+        .attr('transform', function(d, i) { return 'translate('+ (xScale(d[newValue])+15)  + " , "  + (yScale(d['mMean2013'])-20) + ') rotate(-90) '; })
+        .attr("fill", "black")
+        .attr('visibility', 'visible')
+        .attr('opacity', .45);
+        
+    
+    svg.selectAll('.ecountryLabel')
+        .data(data)
+        .transition()
+        .duration(1000)
+        .attr('transform', function(d, i) { return 'translate('+ (xScale(d[newValue])+15)  + " , "  + (yScale(d['mExp2013'])-20) + ') rotate(-90) '; })
+        .attr("fill", "black")
+        .attr('visibility', 'visible')
+        .attr('opacity', .45);
+    
+  }
+    
+        
+              
+            var xScale = d3.scaleLinear()
+            .domain([0, 32])  
+            .range([pad, w - pad]);
+            
+            
+            var yScale = d3.scaleLinear()
+            .domain([0, 14])
+            .range([h - pad, pad]);
+            
+            
+            var xAxis = d3.axisBottom(xScale);
+            var yAxis = d3.axisLeft(yScale);
+            
+            
+            var mSquare = svg.selectAll("rect")
+            .data(data)
+            .enter()
+            .append("rect")
+            .attr("class", "maleSquare")
+            .attr("x", function(d) {return xScale(d[newCount])-8;}) 
+                .attr("y", function(d) {return yScale(d['mMean2013'])-8;})
+                .attr("width", 16)
+                .attr("height", 16)
+                .attr("fill", "rgb(139,0,139)")
+                .attr('visibility', 'visible')
+                .on("mouseover", function(d) {		
+           div.transition()		
+                .duration(200)		
+                .style("opacity", .9);
+            div.html("In " + d.Country + ", the <span>mean</span> years of school for males who are 25 years and older is " + d.mMean2013 + " years. For females, the <span>mean</span> years of schooling is " + d.fMean2013 + " years.</br> For male children, the <span>expected</span> years of schooling is " + d.mExp2013 + " years. For female children, the <span>expected</span> years of schooling is " + d.fExp2013 +" years.")	
+                .attr("class", "mtip");		
+            })					
+        .on("mouseout", function(d) {		
+            div.transition()		
+                .duration(500)		
+                .style("opacity", 0);	
+        });
+                
+
+            
+            var fSquare = svg.selectAll("rect2")
+            .data(data)
+            .enter()
+            .append("rect")
+                .attr("class", "femaleSquare")
+                .attr("x", function(d) {return xScale(d[newCount])+8;}) 
+                .attr("y", function(d) {return yScale(d['fMean2013'])-8;})
+                .attr("width", 16)
+                .attr("height", 16)
+                .attr("fill", "#fd6925")
+                .attr('visibility', 'visible')
+                .on("mouseover", function(d) {		
+            div.transition()		
+                .duration(200)		
+                .style("opacity", .9);
+            div.html("In " + d.Country + ", the <span>mean</span> years of school for females who are 25 years and older is " + d.fMean2013 + " years. For males, the <span>mean</span> years of schooling is " + d.mMean2013 + " years.</br> For female children, the <span>expected</span> years of schooling is " + d.fExp2013 + " years. For male children, the <span>expected</span> years of schooling is " + d.mExp2013 +" years.")	
+                // .style("left", (.09*w)+"px")		
+                // .style("top", (.98*h)+"px")
+                .attr("class", "ftip");
+            })					
+        .on("mouseout", function(d) {		
+            div.transition()		
+                .duration(500)		
+                .style("opacity", 0);	
+        });
+                // .attr("opacity", 0.8);
+                // .on('click', function(){d3.selectAll('rect').attr('visibility','hidden'); svg.selectAll('.bar').attr('visibility', 'visible');});
+            
+
+            
+            var mDifference = svg.selectAll("mRectDif")
+                .data(data)
+                .enter()
+                .append('rect')
+                .attr("x", function(d) {return xScale(d[newCount])-8;}) 
+                .attr("y", function(d) {return yScale(d['mExp2013'])-8;})
+                .attr("height", function(d) {return yScale(d['mMean2013']) - yScale(d['mExp2013']);})
+                .attr('class', 'maleDif')
+                .attr('width', 16)
+                .attr("fill", "rgb(139,0,139)")
+                .attr('visibility', 'hidden')
+                .attr("opacity", 0)
+                .on("mouseover", function(d) {		
+            div.transition()		
+                .duration(200)		
+                .style("opacity", .9);
+             div.html("In " + d.Country + ", the <span>mean</span> years of school for males who are 25 years and older is " + d.mMean2013 + " years. For females, the <span>mean</span> years of schooling is " + d.fMean2013 + " years.</br> For male children, the <span>expected</span> years of schooling is " + d.mExp2013 + " years. For female children, the <span>expected</span> years of schooling is " + d.fExp2013 +" years.")	
+                // .style("left", (.09*w)+"px")		
+                // .style("top", (.98*h)+"px")
+                .attr("class", "mtip");	
+            })					
+        .on("mouseout", function(d) {		
+            div.transition()		
+                .duration(500)		
+                .style("opacity", 0);	
+        });
+            
+            var fDifference = svg.selectAll("fRectDif")
+                .data(data)
+                .enter()
+                .append('rect')
+                .attr("x", function(d) {return xScale(d[newCount])+8;}) 
+                .attr("y", function(d) {return yScale(d['fExp2013'])-8;})
+                .attr("height", function(d) {return yScale(d['fMean2013']) - yScale(d['fExp2013']);})
+                .attr('class', 'femaleDif')
+                .attr('width', 16)
+                .attr("fill", "#fd6925")
+                .attr('visibility', 'hidden')
+                .attr("opacity", 0)
+                .on("mouseover", function(d) {		
+            div.transition()		
+                .duration(200)		
+                .style("opacity", .9);
+                
+            div.html("In " + d.Country + ", the <span>mean</span> years of school for females who are 25 years and older is " + d.fMean2013 + " years. For males, the <span>mean</span> years of schooling is " + d.mMean2013 + " years.</br> For female children, the <span>expected</span> years of schooling is " + d.fExp2013 + " years. For male children, the <span>expected</span> years of schooling is " + d.mExp2013 +" years.")	
+                // .style("left", (.09*w)+"px")		
+                // .style("top", (.98*h)+"px")
+                .attr("class", "ftip");		
+            })					
+        .on("mouseout", function(d) {		
+            div.transition()		
+                .duration(500)		
+                .style("opacity", 0);	
+        });;
+            
+            var xLabel = svg.selectAll('text') 
+                .data(data)
+                .enter()
+                .append('text')
+                .text(function(d) { return d.Country; })
+                .attr('transform', function(d, i) { return 'translate('+ (xScale(d[newCount])+15)  + " , "  + (yScale(d['mMean2013'])-20) + ') rotate(-90) '; })
+                // .attr('transform', function(d, i) { return 'translate(' + (x(1)/2) + ', ' + (window.innerHeight-y(d.operatingExpenses)) + ')rotate(-90)'; });
+                .attr("fill", "black")
+                .attr('class', 'mcountryLabel')
+                .attr('visibility', 'visible')
+                .attr('opacity', .45);
+                
+            
+            var fBar = svg.selectAll('barRect')
+                .data(data)
+                .enter()
+                .append('rect')
+                .attr("x", function(d) {return xScale(d[newCount])+8;}) 
+                .attr("y", function(d) {return yScale(d['fMean2013'])-8;})
+                .attr("height", function(d) {return ((h - pad + 8) - yScale(d['fMean2013']));})
+                .attr('class', 'fbar')
+                .attr('width', 16)
+                .attr("fill", "#fd6925")
+                .attr('visibility', 'hidden')
+                .attr("opacity", 0.5)
+                .on("mouseover", function(d) {		
+            div.transition()		
+                .duration(200)		
+                .style("opacity", .9);
+            div.html("In " + d.Country + ", the <span>mean</span> years of school for females who are 25 years and older is " + d.fMean2013 + " years. For males, the <span>mean</span> years of schooling is " + d.mMean2013 + " years.</br> For female children, the <span>expected</span> years of schooling is " + d.fExp2013 + " years. For male children, the <span>expected</span> years of schooling is " + d.mExp2013 +" years.")		
+                // .style("left", (.09*w)+"px")		
+                // .style("top", (.98*h)+"px")
+                .attr("class", "ftip");	
+            })					
+        .on("mouseout", function(d) {		
+            div.transition()		
+                .duration(500)		
+                .style("opacity", 0);	
+        });
+        
+            var mBar = svg.selectAll('barRect')
+                .data(data)
+                .enter()
+                .append('rect')
+                .attr("x", function(d) {return xScale(d[newCount])-8;}) 
+                .attr("y", function(d) {return yScale(d['mMean2013'])-8;})
+                .attr("height", function(d) {return ((h - pad + 8) - yScale(d['mMean2013']));})
+                .attr('class', 'mbar')
+                .attr('width', 16)
+                .attr("fill", "rgb(139,0,139)")
+                .attr('visibility', 'hidden')
+                .attr("opacity", 0.5)
+                .on("mouseover", function(d) {		
+            div.transition()		
+                .duration(200)		
+                .style("opacity", .9);
+             div.html("In " + d.Country + ", the <span>mean</span> years of school for males who are 25 years and older is " + d.mMean2013 + " years. For females, the <span>mean</span> years of schooling is " + d.fMean2013 + " years.</br> For male children, the <span>expected</span> years of schooling is " + d.mExp2013 + " years. For female children, the <span>expected</span> years of schooling is " + d.fExp2013 +" years.")	
+                // .style("left", (.09*w)+"px")		
+                // .style("top", (.98*h)+"px")
+                .attr("class", "mtip");	
+            })					
+        .on("mouseout", function(d) {		
+            div.transition()		
+                .duration(500)		
+                .style("opacity", 0);	
+        });
+             
+            var bottomAxis = svg.append('g')
+                .attr("class", "x-axis")
+                .attr("transform", "translate(0," + (h - pad) + ")")
+                .attr('class', 'x-axisBottom')
+                .call(xAxis);
+                
+            bottomAxis.selectAll("text").remove();
+
+    
+
+            svg.append("g")
+                .attr("class", "y-axis")
+                .attr("transform", "translate(" + pad +", 0)")
+                .call(yAxis);
+                
+            
+            d3.select('.y-axis')
+                .append('text')
+                .attr("class", "axis-title")
+                .attr("transform", 'translate (0,'+h*.05+')')
+                .attr('fill','black')
+                .text("Years")
+                .attr("class", "yearLabel");
+            
+             d3.select('.x-axisBottom')
+                .append('text')
+                .attr("class", "axis-title")
+                .attr("transform", 'translate ('+w*.97+','+h*.03+')')
+                .attr('fill','black')
+                .text("Country")
+                .attr('opacity', .99)
+                .attr("id", "xLabel");
+
+
+            d3.selectAll('.mcountryLabel').on('click', function() {
+                 d3.select(this)
+                    .attr('opacity', .95)
+                    .attr('visibility', 'visible');
+            });
+            
+            d3.selectAll('.ecountryLabel').on('click', function() {
+                 d3.select(this)
+                    .attr('opacity', .95)
+                    .attr('visibility', 'visible');
+            });
+            
+            
+            d3.selectAll("input")
+                .on("click", changed);
+                
+            var timeout = d3.timeout(function() {
+                d3.select("input[value=\"Expected Years of School\"]")
+                .property("clicked", true)
+                .dispatch("change");
+            }, 1000000);
+            
+            function changed() {
+                timeout.stop();
+                if (this.value === "Expected Years of School") transitionGrouped();
+                else if (this.value === "Mean Years of School") transitionStacked();
+                else transitionDifference();
+            }
+            
+    function transitionGrouped() {
+                
+            var xScale = d3.scaleLinear()
+            .domain([0, 32])  
+            .range([pad, w - pad]);
+            
+            
+            var yScale = d3.scaleLinear()
+            .domain([0, 14])
+            .range([h - pad, pad]);
+            
+            
+          
+            
+            var xAxis = d3.axisBottom(xScale);
+            var yAxis = d3.axisLeft(yScale);
+            
+             svg.selectAll("rect.fbar").remove();
+             svg.selectAll("rect.mbar").remove();
+            
+           mSquare.transition()
+                .duration(1750)
+                // .attr("x", function(d) {return xScale(d[newCount])-8;})  
+                .attr("y", function(d) {return yScale(d['mExp2013'])-8;})
+                .attr("width", 16)
+                .attr("height", 16)
+                .attr("fill", "rgb(139,0,139)")
+                .attr('visibility', 'visible');
+                // .attr("opacity", 0.7);
+                // .on('click', function(){d3.selectAll('rect').attr('visibility','visible'); svg.selectAll('.bar').attr('visibility', 'hidden');});
+                
+            
+            fSquare.transition()
+                    .duration(1750)
+                    // .attr("x", function(d) {return xScale(d[newCount])+8;})  
+                    .attr("y", function(d) {return yScale(d['fExp2013'])-8;})
+                    .attr("width", 16)
+                    .attr("height", 16)
+                    .attr("fill", "#fd6925")
+                    .attr('visibility', 'visible');
+                    
+                    // .attr("opacity", 0.7);
+                    // .on('click', function(){d3.selectAll('rect').attr('visibility','visible'); svg.selectAll('.bar').attr('visibility', 'hidden');});
+                    
+                    
+            mDifference.transition()
+            .duration(1750)
+                // .attr("x", function(d) {return xScale(d[newCount])-8;})  
+                .attr("y", function(d) {return yScale(d['mExp2013'])-8;})
+                .attr("height", function(d) {return yScale(d['mMean2013']) - yScale(d['mExp2013']);})
+                .attr('class', 'maleDif')
+                .attr('width', 16)
+                .attr("fill", "rgb(139,0,139)")
+                .attr('visibility', 'visible')
+                .attr("opacity", 0.25);
+            
+            fDifference.transition()
+            .duration(1550)
+                // .attr("x", function(d) {return xScale(d[newCount])+8;})  
+                .attr("y", function(d) {return yScale(d['fExp2013'])-8;})
+                .attr("height", function(d) {return yScale(d['fMean2013']) - yScale(d['fExp2013']);})
+                .attr('class', 'femaleDif')
+                .attr('width', 16)
+                .attr("fill", "#fd6925")
+                .attr('visibility', 'visible')
+                .attr("opacity", 0.25); 
+            
+          
+                    
+            xLabel.transition()
+                  .duration(1550)
+                .attr('transform', function(d, i) { return 'translate('+ (xScale(d[newCount])+15)  + " , "  + (yScale(d['mExp2013'])-20) + ') rotate(-90) '; })
+                // .attr('transform', function(d, i) { return 'translate(' + (x(1)/2) + ', ' + (window.innerHeight-y(d.operatingExpenses)) + ')rotate(-90)'; });
+                .attr("fill", "black")
+                .attr('opacity', .35)
+                .attr('class', 'ecountryLabel')
+                .attr('visibility', 'visible')
+                .attr('opacity', .35);
+
+            
+
+            svg.append("g")
+                .attr("class", "y-axis")
+                .attr("transform", "translate(" + pad +", 0)")
+                .call(yAxis);
+
+
+}
+
+function transitionStacked() {
+                
+              var xScale = d3.scaleLinear()
+            .domain([0, 32])  
+            .range([pad, w - pad]);
+            
+            
+            var yScale = d3.scaleLinear()
+            .domain([0, 14])
+            .range([h - pad, pad]);
+            
+            var xAxis = d3.axisBottom(xScale);
+            var yAxis = d3.axisLeft(yScale);
+            
+            svg.selectAll("rect.fbar").remove();
+            svg.selectAll("rect.mbar").remove();
+            
+            mSquare.transition()
+                .duration(1550)
+                // .attr("x", function(d) {return xScale(d[newCount])-8;})  
+                .attr("y", function(d) {return yScale(d['mMean2013'])-8;})
+                .attr("width", 16)
+                .attr("height", 16)
+                .attr("fill", "rgb(139,0,139)")
+                .attr('visibility', 'visible')
+                // .attr("opacity", 0.7);
+                
+            
+            fSquare.transition()
+                    .duration(1550)
+                    // .attr("x", function(d) {return xScale(d[newCount])+8;})  
+                    .attr("y", function(d) {return yScale(d['fMean2013'])-8;})
+                    .attr("width", 16)
+                    .attr("height", 16)
+                    .attr("fill", "#fd6925")
+                    .attr('visibility', 'visible')
+                    // .attr("opacity", 0.7);
+                   
+            
+            mDifference.transition()
+            .duration(2750)
+                // .attr("x", function(d) {return xScale(d[newCount])-8;})  
+                .attr("y", function(d) {return yScale(d['mExp2013'])-8;})
+                .attr("height", function(d) {return yScale(d['mMean2013']) - yScale(d['mExp2013']);})
+                .attr('class', 'maleDif')
+                .attr('width', 16)
+                .attr("fill", "rgb(139,0,139)")
+                .attr('visibility', 'visible')
+                .attr("opacity", 0.25);
+            
+            fDifference.transition()
+            .duration(2750)
+                // .attr("x", function(d) {return xScale(d[newCount])+8;})  
+                .attr("y", function(d) {return yScale(d['fExp2013'])-8;})
+                .attr("height", function(d) {return yScale(d['fMean2013']) - yScale(d['fExp2013']);})
+                .attr('class', 'femaleDif')
+                .attr('width', 16)
+                .attr("fill", "#fd6925")
+                .attr('visibility', 'visible')
+                .attr("opacity", 0.25); 
+                    
+             xLabel.transition()
+                   .duration(1750)
+                // .data(data)
+                // .enter()
+                // .append('text')
+                // .text(function(d) { return d.Country; })
+                // // .attr('x',function(d) {return xScale(d[newCount])-7.5;})
+                // // .attr('y',function(d) {return yScale(d['mExp2013'])-40;})
+                .attr('transform', function(d, i) { return 'translate('+ (xScale(d[newCount])+15)  + " , "  + (yScale(d['mMean2013'])-20) + ') rotate(-90) '; })
+                // .attr('transform', function(d, i) { return 'translate(' + (x(1)/2) + ', ' + (window.innerHeight-y(d.operatingExpenses)) + ')rotate(-90)'; });
+                .attr("fill", 'black')
+                .attr('class', 'mcountryLabel')
+                .attr('visibility', 'visible')
+                .attr('opacity', .35);
+
+           
+    
+
+            svg.append("g")
+                .attr("class", "y-axis")
+                .attr("transform", "translate(" + pad +", 0)")
+                .call(yAxis);
+                }
+
+function transitionDifference() {
+ var xScale = d3.scaleLinear()
+            .domain([0, 32])  
+            .range([pad, w - pad]);
+            
+            
+            var yScale = d3.scaleLinear()
+            .domain([0, 14])
+            .range([h - pad, pad]);
+            
+            var xAxis = d3.axisBottom(xScale);
+            var yAxis = d3.axisLeft(yScale);
+            
+            
+            
+            mSquare.transition()
+                .duration(1550)
+                // .attr("x", function(d) {return xScale(d[newCount])-8;})  
+                .attr("y", function(d) {return yScale(d['mExp2013'])-8;})
+                .attr("width", 16)
+                .attr("height", 16)
+                .attr("fill", "rgb(139,0,139)")
+                .attr('visibility', 'visible');
+                // .attr("opacity", 0.7);
+                
+            
+            fSquare.transition()
+                    .duration(1550)
+                    // .attr("x", function(d) {return xScale(d[newCount])+8;})  
+                    .attr("y", function(d) {return yScale(d['fExp2013'])-8;})
+                    .attr("width", 16)
+                    .attr("height", 16)
+                    .attr("fill", "#fd6925")
+                    .attr('visibility', 'visible');
+                    // .attr("opacity", 0.7);
+                   
+            
+            // function transitionDifference() {mDifference.transition()
+            mDifference.transition()
+            .duration(2750)
+                // .attr("x", function(d) {return xScale(d[newCount])-8;})  
+                .attr("y", function(d) {return yScale(d['mExp2013'])-8;})
+                .attr("height", function(d) {return yScale(d['mMean2013']) - yScale(d['mExp2013']);})
+                .attr('class', 'maleDif')
+                .attr('width', 16)
+                .attr("fill", "rgb(139,0,139)")
+                .attr('visibility', 'visible')
+                .attr("opacity", 0.45);
+            
+            fDifference.transition()
+            .duration(2750)
+                // .attr("x", function(d) {return xScale(d[newCount])+8;})  
+                .attr("y", function(d) {return yScale(d['fExp2013'])-8;})
+                .attr("height", function(d) {return yScale(d['fMean2013']) - yScale(d['fExp2013']);})
+                .attr('class', 'femaleDif')
+                .attr('width', 16)
+                .attr("fill", "#fd6925")
+                .attr('visibility', 'visible')
+                .attr("opacity", 0.45); 
+                    
+             xLabel.transition()
+                   .duration(1750)
+                .attr('transform', function(d, i) { return 'translate('+ (xScale(d[newCount])+15)  + " , "  + (yScale(d['mExp2013'])-20) + ') rotate(-90) '; })
+                .attr("fill", 'black')
+                .attr('class', 'ecountryLabel')
+                .attr('visibility', 'visible')
+                .attr('opacity', .35);
+
+           fBar = svg.selectAll('barRect')
+                .data(data)
+                .enter()
+                .append('rect')
+                .attr("x", function(d) {return xScale(d[newCount])+8;})  
+                .attr("y", function(d) {return yScale(d['fMean2013'])-8;})
+                .attr("height", function(d) {return ((h - pad + 7.5) - yScale(d['fMean2013']));})
+                .attr('class', 'fbar')
+                .attr('width', 16)
+                .attr("fill", "#fd6925")
+                .attr('visibility', 'visible')
+                .attr("opacity", 0.75)
+                .on("mouseover", function(d) {		
+            div.transition()		
+                .duration(200)		
+                .style("opacity", .9);
+            div	.html("In " + d.Country + ", the <span>mean</span> years of school for females who are 25 years and older is " + d.fMean2013 + " years. For males, the <span>mean</span> years of schooling is " + d.mMean2013 + " years.</br> For female children, the <span>expected</span> years of schooling is " + d.fExp2013 + " years. For male children, the <span>expected</span> years of schooling is " + d.mExp2013 +" years.")		
+                // .style("left", (.09*w)+"px")		
+                // .style("top", (.98*h)+"px")
+                .attr("class", "ftip");	
+            })					
+        .on("mouseout", function(d) {		
+            div.transition()		
+                .duration(500)		
+                .style("opacity", 0);	
+        });
+                
+                
+            mBar = svg.selectAll('barRect')
+                .data(data)
+                .enter()
+                .append('rect')
+                .attr("x", function(d) {return xScale(d[newCount])-8;})  
+                .attr("y", function(d) {return yScale(d['mMean2013'])-8;})
+                .attr("height", function(d) {return ((h - pad + 7.5) - yScale(d['mMean2013']));})
+                .attr('class', 'mbar')
+                .attr('width', 16)
+                .attr("fill", "rgb(139,0,139)")
+                .attr('visibility', 'visible')
+                .attr("opacity", 0.75)
+                .on("mouseover", function(d) {		
+            div.transition()		
+                .duration(200)		
+                .style("opacity", .9);
+             div	.html("In " + d.Country + ", the <span>mean</span> years of school for males who are 25 years and older is " + d.mMean2013 + " years. For females, the <span>mean</span> years of schooling is " + d.fMean2013 + " years.</br> For male children, the <span>expected</span> years of schooling is " + d.mExp2013 + " years. For female children, the <span>expected</span> years of schooling is " + d.fExp2013 +" years.")	
+                // .style("left", (.09*w)+"px")		
+                // .style("top", (.98*h)+"px")
+                .attr("class", "mtip");	
+            })					
+        .on("mouseout", function(d) {		
+            div.transition()		
+                .duration(500)		
+                .style("opacity", 0);	
+        });
+
+    
+
+            svg.append("g")
+                .attr("class", "y-axis")
+                .attr("transform", "translate(" + pad +", 0)")
+                .call(yAxis);
+
+
+}
+  
+
+       
+             }); 
+             
+ 
+        </script>
+        
+    <div class="explanation" class='col-sm-12 col-md-12 col-lg-10 col-xl-10'><p>This project explores the differences between the expected years of schooling and the mean years of schooling based on gender from a 2013 United Nations Development Programme (UNDP) education report. The interactive tools above allow you to explore the data by displaying the differences in years of schooling (mean and expected) based on gender. The <a href='https://github.com/hubideal/major_student_one'>README file</a> provides variable definitions and further explanation of this project.  In the visualization above, orange represents <span class="fhighlight">female</span> years of schooling and purple represents <span class="mhighlight">male</span> years of schooling. Using your cursor, you can roll over the desplayed squares/rectangles to provide text that analyzes the differences for each country.</p></div>
+        
+    </body>
+    
+    
+    
+</html>
+
