@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Iowa & Wind</title>
+
+<link href="https://fonts.googleapis.com/css?family=ABeeZee:400i|Fira+Sans:500i|Inconsolata:700|News+Cycle:700|EB+Garamond|Prompt:600i" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+
+@media (min-width: 1524px) {
+    
+    body, html {
+    height: 102%;
+    width: 100%;
+}
+
+h1 {
+   font-family: 'News Cycle', sans-serif;
+    color: snow;
+    /*font-style:  italic;*/
+    opacity: .79;
+    width: 100%;
+    height: 100%;
+    font-size: 4.5em;
+}
+
+h2 {
+    font-family: 'News Cycle', sans-serif;
+    padding-top: 3%;
+    margin-top: 0px;
+    
+}
+h4{
+   font-family: 'Lato', sans-serif; 
+   font-size: 1.5em;
+   text-align: CENTER;
+   margin-left: 2%;
+   width: 29%;
+}
+
+table {
+     border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titleBanner {
+   position:absolute;
+   top:25%;
+   left:66%;
+   transform:translate(-50%,-50%);
+}
+
+.arrows {
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    transition-delay: 10s;
+}
+
+.whiteArrows {
+     width: 50%;
+    height: auto;
+}
+
+.parallax {
+    /* The image used */
+    /*background-image: url('images/Iowa&Wind.png');*/
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tornadovid{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.windTurbineVid {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#glacierPage {
+    background-color: snow;
+}
+
+.container {
+    height: 110%;
+}
+
+.loessContainer {
+    margin-top: -2%;
+  height: 137%;
+  width: 100%;
+}
+
+
+.resize {
+    width: 29%;
+    height: auto;
+    margin-top: 4%;
+    margin-left: 10%;
+}
+
+.resize2 {
+    width: 37%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resize3 {
+    width: 45%;
+    height: auto;
+}
+.resize4 {
+    width: 30%;
+    height: auto;
+}
+.resize5 {
+    width: 20%;
+    height: auto;
+}
+.resize6 {
+    width: 17%;
+    height: auto;
+}
+
+.resize7 {
+    display: block;
+    width: 37%;
+    height: auto;
+    margin-top: 7%;
+     margin-left: auto;
+    margin-right: auto;
+}
+
+.resize8 {
+    float: left;
+    padding-top: 2%;
+    width: 22%;
+    height: auto;
+    margin-left: 5%;
+}
+
+.glacier {
+    font-family: 'EB Garamond', serif;
+    height: 80%;
+}
+
+.vidbackground {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('images/Iowa&Wind.png');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("images/loessHills.jpg");
+    min-height: 100%;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("images/creek_rework.png");
+    min-height: 100%;
+}
+
+.containerVelocity {
+    height: 190%;
+    background: lightgray; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(snow, rgb(10,10,10)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(snow, rgb(10,10,10)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(snow, rgb(10,10,10)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(snow, rgb(10,10,10)); /* Standard syntax */
+}
+
+.containerTornado {
+    height: 100%;
+    background-color: rgb(0,0,0);
+}
+
+.textBoxG {
+    position: absolute;
+    left: 48%;
+    text-align: left;
+    width: 44%;
+    margin-top: 2%;
+    margin-right: 10%;
+    font-size: 2.3em;
+}
+
+.loessDescrip {
+    position: absolute;
+    padding: 1%;
+    margin-top: 35%;
+    width: 100%;
+    height: 31%;
+    background: rgba(220, 220, 220, .80);
+}
+
+.textLoess {
+    float: right;
+    font-family: 'EB Garamond', serif;
+    position: absolute;
+    left: 20%;
+    text-align: left;
+    width: 75%;
+    /*margin-right: 2%;*/
+    font-size:2.3em;
+}
+
+.loessHillsMap {
+    float: left;
+    position: relative;
+    margin-top: 2%;
+}
+
+.textVelocity {
+    font-family: 'EB Garamond', serif;
+    font-size: 2.3em;
+    left: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 85%;
+}
+
+
+.velocity {
+    position: relative;
+    color: rgb(255,102,51);
+    text-align: right;
+    right: 10%;
+    font-size: 4em;
+    height: 8%;
+    margin-top:0;
+    padding-top: 2%;
+}
+
+.windGraphLine{
+    width: 85%;
+    height: 23%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.velocityMap {
+    float: left;
+    position: absolute;
+    
+}
+.windVelocityText {
+    font-family: 'EB Garamond', serif;
+    /*float: right;*/
+    font-size: 2.3em;
+    margin-left: 39%;
+    width: 63%;
+    /*position: absolute;*/
+}
+
+.windMapLine{
+    position: relative;
+    /*margin-top: 20%;*/
+    /*height: 20%;*/
+    width: 85%;
+    height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    /*background: rgba(220, 220, 220, .40);*/
+}
+
+.windMap {
+    float: left;
+    position: absolute;
+}
+.avgWindTitle{
+    text-align: CENTER;
+    color: snow;
+}
+.iowaMapText {
+    font-family: 'EB Garamond', serif;
+    /*float: right;*/
+    position: absolute;
+    margin-left: 39%;
+    width: 63%;
+    font-size: 2.3em;
+    /*position: absolute;*/
+}
+
+
+.topography {
+    position: relative;
+    color: lightblue;
+    text-align: right;
+    right: 10%;
+    font-size: 4.2em;
+    height: 8%;
+    margin-top:0;
+    padding-top: 2%;
+}
+.Loess {
+    font-family: 'News Cycle', sans-serif;
+    position: relative;
+    color: darkgreen;
+    text-align: right;
+    right: 10%;
+    font-size: 3.2em;
+    height: 5%;
+    margin-top:20px;
+}
+
+.tornado {
+    position: relative;
+    color: rgb(225,92,63);
+    text-align: right;
+    right: 10%;
+    font-size: 4.2em;
+    height: 8%;
+    margin-top:0;
+    padding-top: 2%;
+}
+
+.containerTornado {
+     width: 100%;
+     height: 190%;
+}
+.tornadoInfo {
+    margin-top: 2%;
+}
+.tornadoText {
+    width: 85%;
+     color: snow;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    margin-bottom: 3%;
+    font-size: 2.3em;
+}
+.iowaWarnMap {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.transition {
+    width: 100%;
+    height: 10%;
+    background: lightgray; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(black, rgb(213, 235, 251)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, rgb(213, 235, 251)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black, rgb(213, 235, 251)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(black, rgb(213, 235, 251)); /* Standard syntax */
+    position: relative;
+
+}
+
+.containerEconomy {
+    height: 210%;
+     background: lightgray; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(213, 230, 255), rgb(214,203,185)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(213, 230, 255), rgb(214,203,185)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(213, 230, 255), rgb(214,203,185)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(213, 230, 255), rgb(214,203,185)); /* Standard syntax */
+}
+
+.EconomyTitle {
+     position: relative;
+    color: rgb(124,193,255);
+    text-align: right;
+    right: 10%;
+    font-size: 4.2em;
+    height: 6%;
+    margin-top: 1%;
+}
+
+
+.windFarmLine {
+    position: relative;
+    width: 100%;
+    height: 30%;
+}
+
+.windFarmText {
+    float: right;
+    padding-top: 1%;
+    margin-left: 33%;
+    width: 62%;
+    font-size: 2.3em;
+    font-family: 'EB Garamond', serif;
+    position: absolute;
+}
+
+.iowaWindFarmMap {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.windFarmText2 {
+    width:89%;
+    margin-left: 5%;
+    margin-right: auto;
+    padding-top: 6%;
+    font-family: 'EB Garamond', serif;
+    font-size: 2.3em;
+    position: relative;
+    float: left;
+    }
+    
+.windFarmText3 {
+    width:89%;
+    margin-left: 5%;
+    margin-right: auto;
+    padding-top: 1%;
+    font-family: 'EB Garamond', serif;
+    font-size: 2.3em;
+    position: relative;
+    float: left;
+    }
+    
+.Creek {
+    position: relative;
+    color: rgb(214,203,145);
+    text-align: right;
+    right: 10%;
+    font-size: 4em;
+    height: 8%;
+    margin-top:0;
+    padding-top: 2%;
+}
+
+.futureContainer {
+    /*margin-top: -2%;*/
+  height: 137%;
+  width: 100%;
+}
+
+.textFuture {
+    float: right;
+    font-family: 'EB Garamond', serif;
+    position: absolute;
+    left: 5%;
+    text-align: left;
+    width: 85%;
+    /*margin-right: 2%;*/
+    font-size: 2.3em;
+}
+
+.futureDescrip {
+    position: absolute;
+    padding: 1%;
+    margin-top: 45%;
+    width: 100%;
+    height: 27%;
+    background: rgba(220, 220, 220, .80);
+}
+    
+    
+}
+
+@media (min-width: 768px) and (max-width: 1523px) {
+    
+    body, html {
+    height: 102%;
+    width: 100%;
+}
+
+h1 {
+   font-family: 'News Cycle', sans-serif;
+    color: snow;
+    /*font-style:  italic;*/
+    opacity: .79;
+    width: 100%;
+    height: 100%;
+    font-size: 4.5em;
+}
+
+h2 {
+    font-family: 'News Cycle', sans-serif;
+    padding-top: 3%;
+    margin-top: 0px;
+    
+}
+h4{
+   font-family: 'Lato', sans-serif; 
+   font-size: 1.5em;
+   text-align: CENTER;
+   margin-left: 2%;
+   width: 29%;
+}
+
+table {
+     border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titleBanner {
+   position:absolute;
+   top:25%;
+   left:66%;
+   transform:translate(-50%,-50%);
+}
+
+.arrows {
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    transition-delay: 10s;
+}
+
+.whiteArrows {
+     width: 50%;
+    height: auto;
+}
+
+.parallax {
+    /* The image used */
+    /*background-image: url('images/Iowa&Wind.png');*/
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tornadovid{
+    position: absolute; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    
+    background-size: cover;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.windTurbineVid {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#glacierPage {
+    background-color: snow;
+}
+
+.container {
+    height: 110%;
+}
+
+.loessContainer {
+    margin-top: -2%;
+  height: 137%;
+  width: 100%;
+}
+
+
+.resize {
+    width: 29%;
+    height: auto;
+    margin-top: 4%;
+    margin-left: 10%;
+}
+
+.resize2 {
+    width: 32%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resize3 {
+    width: 45%;
+    height: auto;
+}
+.resize4 {
+    width: 20%;
+    height: auto;
+}
+.resize5 {
+    width: 20%;
+    height: auto;
+}
+.resize6 {
+    width: 17%;
+    height: auto;
+}
+
+.resize7 {
+    display: block;
+    width: 37%;
+    height: auto;
+    margin-top: 7%;
+     margin-left: auto;
+    margin-right: auto;
+}
+
+.resize8 {
+    float: left;
+    padding-top: 2%;
+    width: 22%;
+    height: auto;
+    margin-left: 5%;
+}
+
+.glacier {
+    font-family: 'EB Garamond', serif;
+    height: 80%;
+}
+
+.vidbackground {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('images/Iowa&Wind.png');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("images/loessHills.jpg");
+    min-height: 100%;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("images/creek_rework.png");
+    min-height: 100%;
+}
+
+.containerVelocity {
+    height: 190%;
+    background: lightgray; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(snow, rgb(10,10,10)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(snow, rgb(10,10,10)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(snow, rgb(10,10,10)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(snow, rgb(10,10,10)); /* Standard syntax */
+}
+
+.containerTornado {
+    height: 100%;
+    background-color: rgb(0,0,0);
+}
+
+.textBoxG {
+    position: absolute;
+    left: 48%;
+    text-align: left;
+    width: 44%;
+    margin-right: 10%;
+    font-size:1.7em;
+}
+
+.loessDescrip {
+    position: absolute;
+    padding: 1%;
+    margin-top: 35%;
+    width: 100%;
+    height: 37%;
+    background: rgba(220, 220, 220, .80);
+}
+
+.textLoess {
+    float: right;
+    font-family: 'EB Garamond', serif;
+    position: absolute;
+    left: 20%;
+    text-align: left;
+    width: 75%;
+    /*margin-right: 2%;*/
+    font-size:1.6em;
+}
+
+.loessHillsMap {
+    float: left;
+    position: relative;
+    margin-top: 2%;
+}
+
+.textVelocity {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.7em;
+    left: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 85%;
+}
+
+
+.velocity {
+    position: relative;
+    color: rgb(255,102,51);
+    text-align: right;
+    right: 10%;
+    font-size: 4em;
+    height: 8%;
+    margin-top:0;
+    padding-top: 2%;
+}
+
+.windGraphLine{
+    width: 85%;
+    height: 23%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.velocityMap {
+    float: left;
+    position: absolute;
+    
+}
+.windVelocityText {
+    font-family: 'EB Garamond', serif;
+    /*float: right;*/
+    font-size: 1.7em;
+    margin-left: 39%;
+    width: 63%;
+    /*position: absolute;*/
+}
+
+.windMapLine{
+    position: relative;
+    /*margin-top: 20%;*/
+    /*height: 20%;*/
+    width: 85%;
+    height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    /*background: rgba(220, 220, 220, .40);*/
+}
+
+.windMap {
+    float: left;
+    position: absolute;
+}
+.avgWindTitle{
+    text-align: CENTER;
+    color: snow;
+}
+.iowaMapText {
+    font-family: 'EB Garamond', serif;
+    /*float: right;*/
+    position: absolute;
+    margin-left: 39%;
+    width: 63%;
+    font-size: 1.7em;
+    /*position: absolute;*/
+}
+
+
+.topography {
+    position: relative;
+    color: lightblue;
+    text-align: right;
+    right: 10%;
+    font-size: 4.2em;
+    height: 8%;
+    margin-top:0;
+    padding-top: 2%;
+}
+.Loess {
+    font-family: 'News Cycle', sans-serif;
+    position: relative;
+    color: darkgreen;
+    text-align: right;
+    right: 10%;
+    font-size: 3.2em;
+    height: 5%;
+    margin-top:20px;
+}
+
+.tornado {
+    position: relative;
+    color: rgb(225,92,63);
+    text-align: right;
+    right: 10%;
+    font-size: 4.2em;
+    height: 8%;
+    margin-top:0;
+    padding-top: 2%;
+}
+
+.containerTornado {
+     width: 100%;
+     height: 190%;
+}
+.tornadoInfo {
+    margin-top: 2%;
+}
+.tornadoText {
+    width: 85%;
+     color: snow;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    margin-bottom: 3%;
+    font-size: 1.7em;
+}
+.iowaWarnMap {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.transition {
+    width: 100%;
+    height: 10%;
+    background: lightgray; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(black, rgb(213, 235, 251)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, rgb(213, 235, 251)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black, rgb(213, 235, 251)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(black, rgb(213, 235, 251)); /* Standard syntax */
+    position: relative;
+
+}
+
+.containerEconomy {
+    height: 210%;
+     background: lightgray; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(213, 230, 255), rgb(214,203,185)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(213, 230, 255), rgb(214,203,185)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(213, 230, 255), rgb(214,203,185)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(213, 230, 255), rgb(214,203,185)); /* Standard syntax */
+}
+
+.EconomyTitle {
+     position: relative;
+    color: rgb(124,193,255);
+    text-align: right;
+    right: 10%;
+    font-size: 4.2em;
+    height: 6%;
+    margin-top: 1%;
+}
+
+
+.windFarmLine {
+    position: relative;
+    width: 100%;
+    height: 30%;
+}
+
+.windFarmText {
+    float: right;
+    padding-top: 1%;
+    margin-left: 31%;
+    width: 62%;
+    font-size: 1.7em;
+    font-family: 'EB Garamond', serif;
+    position: absolute;
+}
+
+.iowaWindFarmMap {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.windFarmText2 {
+    width:89%;
+    margin-left: 5%;
+    margin-right: auto;
+    padding-top: 4%;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.7em;
+    position: relative;
+    float: left;
+    }
+    
+.windFarmText3 {
+    width:89%;
+    margin-left: 5%;
+    margin-right: auto;
+    padding-top: 1%;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.7em;
+    position: relative;
+    float: left;
+    }
+    
+.Creek {
+    position: relative;
+    color: rgb(214,203,145);
+    text-align: right;
+    right: 10%;
+    font-size: 4em;
+    height: 8%;
+    margin-top:0;
+    padding-top: 2%;
+}
+
+.futureContainer {
+    /*margin-top: -2%;*/
+  height: 137%;
+  width: 100%;
+}
+
+.textFuture {
+    float: right;
+    font-family: 'EB Garamond', serif;
+    position: absolute;
+    left: 5%;
+    text-align: left;
+    width: 85%;
+    /*margin-right: 2%;*/
+    font-size:1.6em;
+}
+
+.futureDescrip {
+    position: absolute;
+    padding: 1%;
+    margin-top: 45%;
+    width: 100%;
+    height: 27%;
+    background: rgba(220, 220, 220, .80);
+}
+    
+    
+}
+
+
+
+
+</style>
+
+<body>
+<div class='windTurbineVid' style="position: fixed; z-index: -99; width: 100%; height: 100%">
+  <iframe frameborder="0" height="100%" width="100%" class="vidbackground"
+    src="https://youtube.com/embed/RoyzTL1zDk0?autoplay=1&loop=1&playlist=RoyzTL1zDk0">
+  </iframe>
+  <div class="titleBanner"><h1><span class="title">Iowa Wind</span></h1></div>
+  <div class="arrows"><img src="images/arrowsDown.png" align="center" class="whiteArrows"></div>
+</div>
+<div class="parallax"></div>
+</div>
+
+<div class='container' style='background-color:snow;'id='glacierPage'><h2 class="topography"><span>Topography</span></h2>
+<div class="glacier">
+<div class='glacierImage'><img class="resize" src="images/iowaTopographyGlacier.png" alt="Glacier" align="left"></div>
+<div class="textBoxG">
+<p>To understand the impact of wind on the Iowa, start at the origin of the land's topography. Iowa's landscape was formed over one million years ago. The glaciers left behind a smooth landscape. A moraine of abundant grasslands and shallow wetlands.</p>
+<p>The Baxoje Tribe, the original inhabitants, named the terrain: IOWAY--'the beautiful land'.</p>
+<p>Glaciers created the black, rich dirt--an ideal combination of silt, clay, and sand.  The most fertile soil in the world. The topography of Iowa consists of a gently rolling plain that slopes from the highest point of 1,670 ft (509 m) in the northwest to the lowest point of 480 ft (146 m) in the southeast at the mouth of the Des Moines River. (city-data.com)</p>
+</div>
+</div>
+<div class="loessContainer">
+<div class="bgimg-2 w3-display-container opacity-min">
+    <div class="Loess"><h2><span class="title">Loess Hills</span></h2></div>
+    <div class="loessDescrip"><div class='loessHillsMap'><img class="resize6" src='images/LoessHillsMap.png'></div><div><p class='textLoess'>In westernmost Iowa, the Loess Hills rise 200 feet above the flat plains forming a narrow band running north-south 200 miles along the Missouri River. The steep angles and sharp bluffs on the western side of the Loess Hills are in sharp contrast to the flat rectangular cropfields of the Missouri River flood plain. The extreme thickness of the loess layers and the intricately carved terrain of the Loess Hills make them a rare geologic feature. Today we know that loess was eolian (deposited by the wind). During the Ice Age, glaciers ground underlying rock into a fine powderlike sediment called "glacial flour." As temperatures warmed, sediment eventually deposited on flood plains downstream, eventually creating the Loess Hills.</p></div>
+  </div>
+</div>
+</div>
+
+<!--<div class="parallax"></div>-->
+
+<div class='containerVelocity'><h2 class="velocity"><span>Velocity</span></h2>
+
+<div class="textVelocity" style="height:12%">
+<p>Wind is the flow of gases on a large scale. On the surface of the Earth, wind consists of the bulk movement of air.  Winds are commonly classified by their spatial scale, their speed, the types of forces that cause them, the regions in which they occur, and their effect. Winds have various aspects, an important one being its velocity (wind speed); another the density of the gas involved; another its energy content or wind energy.</p>
+</div>
+<div class = 'windGraphLine'>
+<div class='velocityMap'><h4>Wind Velocity in High Altitudes</h4><img class="resize4" src="images/velocityGraph.png" alt="Velocity Graph" align="left"></div>
+<div class='windVelocityText'><p>Like many surrounding midwestern states, Iowa has particularly higher speeds of wind because of its topography.  There is little friction to slow wind speeds, especially at the higher levels.  As noted in the map below, average wind speeds in Northwest Iowa can reach up to six meters per second.  These high altitude wind speeds make the state an excellent choice for wind farms across the northwestern part of the state which has seen a dramatic increase in wind energy production. </p></div>
+</div>
+
+<div class = 'windMapLine'>
+<div class='windMap'><h4 class='avgWindTitle'>Average Wind Velocity</h4><img class="resize2" src="images/IowaWindMap.png" alt="Wind Map" align="left"></div>
+<div class = 'iowaMapText'><p>Making up more than 35% of the state's generated electricity, Iowa is a leading U.S. state in wind power generation. The development of wind power in Iowa began with a state law, enacted in 1983, requiring investor owned utilities purchase 105 MW of power from wind generation. In 2016, over 20 billion kWh of electrical energy was generated by wind power. As of February 2016, Iowa had over 6,300 megawatts (MW) of capacity. By 2020 the percentage of wind generated electricity in Iowa could reach 40 percent.</p></div>
+</div>
+<!--<div class='USvelocityMap'><img class="resize5" src="images/30m_US_Wind.png" alt="US Wind Map" align="left"></div>-->
+
+</div>
+
+<!--<div class="parallax"></div>-->
+
+<div class='containerTornado'><h2 class="tornado"><span>Tornadoes</span></h2>
+
+<iframe width="1450" height="844" class='tornadovid' src="https://www.youtube.com/embed/gLOj8RgBTf8?autoplay=1&loop=1&playlist=7CeI1tB7S-0" frameborder="0" allowfullscreen></iframe>
+<div class='tornadoInfo'>
+<div class='tornadoText'><p>Tornadoes are vertical funnels of rapidly spinning air. Their winds may top 250 miles (400 kilometers) an hour and can clear a pathway a mile (1.6 kilometers) wide and 50 miles (80 kilometers) long (National Geographic).  Iowa is part of the area in the U.S. known as Tornado Alley. On average, Iowa experiences about eight tornadoes per year. The map below was created through the Iowa Environment Mesonet site hosted by Iowa State University.</p></div>
+<div class='iowaWarnMap'><img class="resize7" src="images/IowaWarningMap.png" alt="Warning Map" align="Center"></div>
+<div class='tornadoText'><p>As noted by National Geographic, a tornado forms when changes in wind speed and direction create a horizontal spinning effect within a storm cell. This effect is then tipped vertical by rising air moving up through the thunderclouds.</p></div>
+</div>
+
+</div>
+
+<div class='containerEconomy'>
+    <div class='transition'></div>
+    <h2 class="EconomyTitle"><span>Economy</span></h2>
+
+
+<div class = 'windFarmLine'>
+<div class='windFarmGraph'><img class="resize8" src="images/IowaGrowthChart.png" alt="Wind Farm Graph" align="left"></div>
+<div class='windFarmText'><p>Making up more than 35% of the state's generated electricity, Iowa is a leading U.S. state in wind power generation. The development of wind power in Iowa began with a state law, enacted in 1983, requiring investor owned utilities purchase 105 MW of power from wind generation. In 2016, over 20 billion kWh of electrical energy was generated by wind power. As of February 2016, Iowa had over 6,300 megawatts (MW) of capacity. By 2020 the percentage of wind generated electricity in Iowa could reach 40 percent. Wind has become one of Iowa's major resources.
+</p></div>
+<div class='windFarmText2'><p>According to the American Wind Energy Association, more than 36 percent of Iowa's in-state electricity production comes from wind, one of the fastest-growing energy sources in the country. The state is first in the nation in wind energy as a share of total electricity generated, second in installed wind capacity, and second in the amount of money landowners make in lease payments, at more than $10 million a year. Iowa's leadership in renewables dates back to 1983, when it became the first state to adopt a renewable portfolio standard. </p></div>
+<div class='windFarmText3'><p>As noted in an article from Slate's online magazine, there's a common theme in feel-good news stories about wind energy: a renewable energy source coming to the rescue of poor rural folk in the form of rent payments and tax revenues. But life on the ground around the 4,000 turbines in Iowa is complicated, and the experiences of the people living near them varies, usually depending on how close to turbines they live and work, the size of the wind farm, and who built it. The interactive mab belows identifies the locations of the largest wind farms in Iowa.</p></div>
+</div>
+<iframe width="600" height="400" class='iowaWindFarmMap' src="https://api.mapbox.com/styles/v1/hubideal/cjahkgqvd92nd2rn0amdwu4rz.html?fresh=true&title=true&access_token=pk.eyJ1IjoiaHViaWRlYWwiLCJhIjoiY2o5enltdnB4MnllNTJ2cG84dHR2bWtlbiJ9.Mc95MrGOBpLnzrMap4hrLw#6.43/41.844/-93.14"></iframe>
+
+<div class='windFarmText3'><p>From the outside, it looks like turbines are popping up in the middle of nowhere. But for those living in the country, the turbines loom over their properties, replacing their bucolic homes with an industrial energy landscape. And fields are their workplaces. A turbine doesn't affect just the few acres surrounding it: It has an impact on the entire farm it sits on, as well as neighboring farms.</p></div>
+ <div class="parallax"></div>
+</div>
+<div class="futureContainer">
+<div class="bgimg-3 w3-display-container opacity-min">
+    <div class="Creek"><h2><span class="title">Future</span></h2></div>
+    <div class="futureDescrip"><p class='textFuture'>In westernmost Iowa, the Loess Hills rise 200 feet above the flat plains forming a narrow band running north-south 200 miles along the Missouri River. The steep angles and sharp bluffs on the western side of the Loess Hills are in sharp contrast to the flat rectangular cropfields of the Missouri River flood plain.</p></div>
+</div>
+    
+</body>
+
+</html>

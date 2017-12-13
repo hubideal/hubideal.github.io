@@ -1,3 +1,0 @@
-A Pen created at CodePen.io. You can find this one at https://codepen.io/jcdilorenzo/pen/lFoip.
-
- Here is a neat javascript-free way to achieve parallax scrolling. The trick here is to use background-size:cover, give it a property of "fixed", use a large background image, and make the div size smaller than the size of the image. This makes the div scroll over the image. If you stack 3 divs using the same background image like I did here, it gives the illusion of parallax scrolling over a single image.

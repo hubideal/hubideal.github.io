@@ -52,6 +52,18 @@ table {
    transform:translate(-50%,-50%);
 }
 
+.arrows {
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    transition-delay: 10s;
+}
+
+.whiteArrows {
+     width: 50%;
+    height: auto;
+}
+
 .parallax {
     /* The image used */
     /*background-image: url('images/Iowa&Wind.png');*/
@@ -241,7 +253,7 @@ table {
 
 .velocity {
     position: relative;
-    color: darkblue;
+    color: rgb(255,102,51);
     text-align: right;
     right: 10%;
     font-size: 4em;
@@ -440,14 +452,35 @@ table {
     position: relative;
     float: left;
     }
-</style>
+    
+img {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
 
+img[data-src] {
+  opacity: 0;
+}
+
+</style>
+<script>
+
+[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
+  img.setAttribute('src', img.getAttribute('data-src'));
+  img.onload = function() {
+    img.removeAttribute('data-src');
+  };
+  console.log('waiting');
+});
+
+</script>
 <body>
 <div class='windTurbineVid' style="position: fixed; z-index: -99; width: 100%; height: 100%">
   <iframe frameborder="0" height="100%" width="100%" class="vidbackground"
     src="https://youtube.com/embed/RoyzTL1zDk0?autoplay=1&loop=1&playlist=RoyzTL1zDk0">
   </iframe>
   <div class="titleBanner"><h1><span class="title">Iowa Wind</span></h1></div>
+  <div class="arrows"><img src="images/arrowsDown.png" align="center" class="whiteArrows"></div>
 </div>
 <div class="parallax"></div>
 </div>
