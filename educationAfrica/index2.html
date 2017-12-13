@@ -10,7 +10,15 @@
     </head>
     <style type = "text/css">
     
+    .ecountryLabel {
+    font-family: sans-serif;
+    font-size: 1.2em;
+    }
     
+    .mcountryLabel {
+    font-family: sans-serif;
+    font-size: 1.2em;
+    }
     
     @media (min-width: 1524px) {
         
@@ -23,11 +31,12 @@
         }
         
     .explanation {
-        width: 85%;
+        width: 92%;
         text-align: left;
         font-family: 'Cabin', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.3em;
     padding: 0;
+    margin: 2%;
     margin-left: auto;
     margin-right: auto;
     }
@@ -35,50 +44,38 @@
      #plot {
         width: 100%;
         text-align: center;
+        padding-top: 2%;
     }
     
    
     
     div.mtip {	
     position: absolute;
-    top: 2%;
+    top: 95%;
     right: 9%;
     text-align: center;
     width: 83%;					
-    height: 9%;	
+    height: 7%;	
     padding: .5%;
    font: 1.3em Cabin, sans-serif;		
     background: rgba(139,0,139,.3);	
     border: 0px;		
-    border-radius: 1px;
+    border-radius: 2px;
 }
 
 div.ftip {	
     position: absolute;	
-    top: 2%;
+    top: 95%;
     right: 9%;
     text-align: center;			
     width: 83%;					
-    height: 9%;	
+    height: 7%;	
     padding: .5%;
     font: 1.3em Cabin, sans-serif;		
     background: rgba(253, 105, 37, .3);	
     border: 0px;		
-    border-radius: 1px;
+    border-radius: 2px;
 }
-
-.ecountryLabel {
-    font-family: sans-serif;
-    font-size: 1.2em;
-    z-index: 1;
-
-    }
-    
-    .mcountryLabel {
-    font-family: sans-serif;
-    font-size: 1.2em;
-    z-index: 1;
-    }
             } 
         
     @media (min-width: 768px) and (max-width: 1523px) {
@@ -91,10 +88,10 @@ div.ftip {
         }
         
     .explanation {
-        width: 87%;
+        width: 92%;
         text-align: left;
         font-family: 'Cabin', sans-serif;
-    font-size: .9em;
+    font-size: 1em;
     padding: 0;
     margin: 0;
     margin-left: auto;
@@ -104,16 +101,16 @@ div.ftip {
      #plot {
         width: 100%;
         text-align: center;
-
+        padding-top: 2%;
     }
     
     div.mtip {	
     position: absolute;	
-    top: 2%;
-    right: 7%;
+    top: 89%;
+    right: 10%;
     text-align: center;			
-    width: 85%;					
-    height: 11%;					
+    width: 81%;					
+    height: 9%;					
     padding: 1%;				
     font: 1em Cabin, sans-serif;		
     background: rgba(139,0,139,.3);	
@@ -122,29 +119,17 @@ div.ftip {
 
 div.ftip {	
     position: absolute;	
-    top: 2%;
-    right: 7%;
+    top: 89%;
+    right: 10%;
     text-align: center;			
-    width: 85%;					
-    height: 11%;					
+    width: 81%;					
+    height: 9%;					
     padding: 1%;				
     font: 1em Cabin, sans-serif;		
     background: rgba(253, 105, 37, .3);	
     border: 0px;		
 }
 
-.ecountryLabel {
-    font-family: sans-serif;
-    font-size: .8em;
-    z-index: 1;
-
-    }
-    
-    .mcountryLabel {
-    font-family: sans-serif;
-    font-size: .8em;
-    z-index: 1;
-    }
             }
             
     @media (max-width: 767px) {
@@ -160,7 +145,7 @@ div.ftip {
         width: 92%;
         text-align: left;
         font-family: 'Cabin', sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
     padding: 0;
     margin: 0;
     margin-left: auto;
@@ -171,18 +156,6 @@ div.ftip {
         width: 100%;
         text-align: center;
         padding-top: 2%;
-    }
-    .ecountryLabel {
-    font-family: sans-serif;
-    font-size: .6em;
-    z-index: 1;
-
-    }
-    
-    .mcountryLabel {
-    font-family: sans-serif;
-    font-size: .6em;
-    z-index: 1;
     }
     
     }
@@ -242,13 +215,13 @@ div.ftip {
 }
 
 .yearLabel {
-    margin-left: 9%;
-    font-size: .8em;
+    margin-left: 7%;
+    font-size: .9em;
 }
 
 
 .y-axis {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 span {
@@ -275,7 +248,7 @@ input {
 }
 
 form {
-    /*width: 70%;*/
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -304,13 +277,20 @@ form {
   <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
   <label><input type="button" name="mode" value="Expected Years of School"></label>
   <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
-  <label><input type="button" name="mode" value="Combined Expected & Mean Years of School"  style="padding:2%"></label>
+  <label><input type="button" name="mode" value="Combined Expected & Mean Years of School"  style="padding:2%"></label></br>
 <!--</div>-->
+ <label for="nSort" class="sortAsk" align:center><p class="explainSort">Sort countries (horizontal axis) by: </p><select id="xSort" name="sort"> 
+    <option value="count" selected="selected">Female Mean Years of Education</option>
+    <option value="count3">Male Mean Years of Education</option>
+    <option value="count2">Female Expected Years of Education</option>
+    <option value="count4">Male Expected Years of Education</option>
+    <option value="count5">Alphabetical by Country</option>
+  </select></div></label>
 </form>
         
          <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id="plot"></div>
          <script>
-            var pad = screen.width*.03;
+            var pad = 80;
             var w = screen.width*.93;
             var h = screen.height*.65;
             
@@ -714,7 +694,7 @@ form {
                     
             xLabel.transition()
                   .duration(1550)
-                .attr('transform', function(d, i) { return 'translate('+ (xScale(d[newCount])+15)  + " , "  + (yScale(d['mExp2013'])-8) + ') rotate(-90) '; })
+                .attr('transform', function(d, i) { return 'translate('+ (xScale(d[newCount])+15)  + " , "  + (yScale(d['mExp2013'])-20) + ') rotate(-90) '; })
                 // .attr('transform', function(d, i) { return 'translate(' + (x(1)/2) + ', ' + (window.innerHeight-y(d.operatingExpenses)) + ')rotate(-90)'; });
                 .attr("fill", "black")
                 .attr('opacity', .35)
@@ -879,7 +859,7 @@ function transitionDifference() {
                     
              xLabel.transition()
                    .duration(1750)
-                .attr('transform', function(d, i) { return 'translate('+ (xScale(d[newCount])+15)  + " , "  + (yScale(d['mExp2013'])-8) + ') rotate(-90) '; })
+                .attr('transform', function(d, i) { return 'translate('+ (xScale(d[newCount])+15)  + " , "  + (yScale(d['mExp2013'])-20) + ') rotate(-90) '; })
                 .attr("fill", 'black')
                 .attr('class', 'ecountryLabel')
                 .attr('visibility', 'visible')
@@ -956,18 +936,8 @@ function transitionDifference() {
              
  
         </script>
-        <div></div>
-        <form>
-            <label for="nSort" class="sortAsk" align:center><p class="explainSort">Sort countries by: </p><select id="xSort" name="sort"> 
-    <option value="count" selected="selected">Female Mean Years of Education</option>
-    <option value="count3">Male Mean Years of Education</option>
-    <option value="count2">Female Expected Years of Education</option>
-    <option value="count4">Male Expected Years of Education</option>
-    <option value="count5">Alphabetical by Country</option>
-  </select></div></label>
-        </form>
-    <div class="explanation" class='col-sm-12 col-md-12 col-lg-10 col-xl-10'>
-        <p>This project explores the differences between the expected years of schooling and the mean years of schooling based on gender from a 2013 United Nations Development Programme (UNDP) education report. The interactive tools above allow you to explore the data by displaying the differences in years of schooling (mean and expected) based on gender. The <a href='https://github.com/hubideal/major_student_one'>README file</a> provides variable definitions and further explanation of this project.  In the visualization above, orange represents <span class="fhighlight">female</span> years of schooling and purple represents <span class="mhighlight">male</span> years of schooling. Using your cursor, you can roll over the desplayed squares/rectangles to provide text that analyzes the differences for each country.</p></div>
+        
+    <div class="explanation" class='col-sm-12 col-md-12 col-lg-10 col-xl-10'><p>This project explores the differences between the expected years of schooling and the mean years of schooling based on gender from a 2013 United Nations Development Programme (UNDP) education report. The interactive tools above allow you to explore the data by displaying the differences in years of schooling (mean and expected) based on gender. The <a href='https://github.com/hubideal/major_student_one'>README file</a> provides variable definitions and further explanation of this project.  In the visualization above, orange represents <span class="fhighlight">female</span> years of schooling and purple represents <span class="mhighlight">male</span> years of schooling. Using your cursor, you can roll over the desplayed squares/rectangles to provide text that analyzes the differences for each country.</p></div>
         
     </body>
     
