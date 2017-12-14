@@ -16,6 +16,172 @@
 </head>
 
 <style>
+
+@media (min-width: 1524px) {
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: visible; /* Hidden by default */
+    width: 75%; /* Full width (cover the whole page) */
+    height: 70%; /* Full height (cover the whole page) */
+    top: 17%; 
+    left: 13%;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(15,15,15,.9); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+#example {
+    padding-top: 3%;
+    width: 25%;
+    margin-left: 55%;
+}
+
+    .explanationText {
+    color: snow;
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 7%;
+    width: 45%;
+    padding: 0%;
+    position: absolute;
+         }
+
+p {
+    font-family: 'Lato', sans-serif;
+  text-align: left;
+  font-size: 1.8em;
+  color: #fff;
+  padding-top: 1%;
+  padding-bottom: 0%;
+  margin: 1%;
+}
+button{
+    margin-top: 3%;
+    width: 8%;
+    height: 4%;
+    margin-right: 50%;
+      font-size: 2em;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+  text-align: CENTER;
+  font-size: 3em;
+  color: #fff;
+  padding-top: 1%;
+}
+
+ }
+ 
+ 
+ @media (min-width: 768px) and (max-width: 1523px) {
+     
+     #overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: visible; /* Hidden by default */
+    width: 80%; /* Full width (cover the whole page) */
+    height: 80%; /* Full height (cover the whole page) */
+    top: 17%; 
+    left: 10%;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(15,15,15,.9); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+#example {
+    padding-top: 3%;
+    width: 25%;
+    margin-left: 55%;
+}
+
+     .explanationText {
+    color: snow;
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 7%;
+    width: 45%;
+    padding: 0%;
+    position: absolute;
+         }
+
+p {
+    font-family: 'Lato', sans-serif;
+  text-align: left;
+  font-size: 1.1em;
+  color: #fff;
+  padding-top: 1%;
+  padding-bottom: 0%;
+  margin: 1%;
+}
+button{
+    margin-top: 3%;
+    width: 8%;
+    height: 4%;
+    margin-right: 50%;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+  text-align: CENTER;
+  font-size: 2em;
+  color: #fff;
+  padding-top: 1%;
+}
+
+}
+
+ @media (max-width: 767px) {
+     
+     #overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: visible; /* Hidden by default */
+    width: 80%; /* Full width (cover the whole page) */
+    height: 80%; /* Full height (cover the whole page) */
+    top: 17%; 
+    left: 10%;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(15,15,15,.9); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+#example {
+    padding-top: 3%;
+    width: 25%;
+    margin-left: 55%;
+}
+    
+p {
+    font-family: 'Lato', sans-serif;
+  text-align: left;
+  font-size: 1.2em;
+  color: #fff;
+  padding-top: 1%;
+  padding-bottom: 0%;
+  margin: 1%;
+}
+button{
+    margin-top: 3%;
+    width: 8%;
+    height: 4%;
+    margin-right: 50%;
+  
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+  text-align: CENTER;
+  font-size: 2em;
+  color: #fff;
+  padding-top: 1%;
+}
+
+}
+
+
 body {
   background: rgb(30, 30, 30);
   margin:0;
@@ -36,13 +202,6 @@ h1 {
   margin: 1%;
 }
 
-h2 {
-    font-family: 'Lato', sans-serif;
-  text-align: CENTER;
-  font-size: 2em;
-  color: #fff;
-  padding-top: 1%;
-}
 
 .description {
      font-family: 'Lato', sans-serif;
@@ -99,55 +258,16 @@ span {
 
 
 .city {
-                fill: rgb(255, 204, 51);
-                stroke: rgb(142, 142, 21);
-                stroke-width: 0.4;
+    fill: rgb(255, 204, 51);
+    stroke: rgb(142, 142, 21);
+    stroke-width: 0.4;
             }
 
-#overlay {
-    position: fixed; /* Sit on top of the page content */
-    display: visible; /* Hidden by default */
-    width: 80%; /* Full width (cover the whole page) */
-    height: 80%; /* Full height (cover the whole page) */
-    top: 12%; 
-    left: 10%;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(15,15,15,.9); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
-}
-#example {
-    padding-top: 3%;
-    width: 25%;
-    margin-left: 55%;
-}
 
-.explanationText {
-    color: snow;
-    text-align: left;
-    margin-top: 5%;
-    margin-left: 7%;
-    width: 45%;
-    padding: 0%;
-    position: absolute;
-}
-            
-p {
-    font-family: 'Lato', sans-serif;
-  text-align: left;
-  font-size: 1.2em;
-  color: #fff;
-  padding-top: 1%;
-  padding-bottom: 0%;
-  margin: 1%;
-}
 
-button{
-    margin-top: 3%;
-    width: 8%;
-    height: 4%;
-}
+
+
+
 </style>
 
 
@@ -184,7 +304,7 @@ function off() {
        var countrystrokecolor = d3.rgb("rgb(174, 114, 176)"); 
 
           var projection = d3.geo.orthographic()
-                            .scale(90)
+                            .scale(width*.24)
                             .translate([width*.5, height*.63])
                             .clipAngle(80) 
                           //.precision(0.2); 
@@ -336,7 +456,7 @@ function off() {
   
 
 <body style="text-align:center;">
-    <container id="overlay"><div class="explanation"><div><h2>Explanation of Project</h2></div><p class="explanationText">This project uses city quality of life indeces to help the user decide and choose the world's best city.  Fifteen cities were selected for this project based on three popular top ten lists: Conde Nast Traveler’s Top Ten Most Popular cities, Economist Intelligence Unit’s (EIU) Top Ten Livable Cities, and Pricewaterhouse Cooper’s Top Ten Cities of Opportunities. Once selected, eight indeces from Numbeo’s Quality of Life Quarterly Report and the United Nations were used to create the radar graph on the right.  To better understand and compare the data, the indeces were normalized from 1 to 100.  To enter the site, click on the enter button below.</p></div><div class=imageSq><img id="example" src="Lato/WorldCityExample.png"></div><button onclick="off()">Enter</button></container>
+    <container id="overlay"><div class="explanation"><div><h2>Explanation of Project</h2></div><p class="explanationText">This project visualizes city quality of life indeces to help the user decide and choose the world's best city.  Fifteen cities were selected for this project based on three popular top ten lists: Conde Nast Traveler’s Top Ten Most Popular cities, Economist Intelligence Unit’s (EIU) Top Ten Livable Cities, and Pricewaterhouse Cooper’s Top Ten Cities of Opportunities. Once selected, eight indeces from Numbeo’s Quality of Life Quarterly Report and the United Nations were used to create radar graphs for each city.  An example of the radar graph is on the right.  To better understand and compare the data, the indeces were normalized from 1 to 100.  High scores (closer to the edge of the circle) indicates higher quality of life.  To enter the site, click on the enter button below.</p></div><div class=imageSq><img id="example" src="Lato/WorldCityExample.png"></div><button onclick="off()">Enter</button></container>
   
   
   <div class="background">
