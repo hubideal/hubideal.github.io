@@ -290,10 +290,6 @@ form {
     font-size: .8em;
 }
 
-.genderkey {
-    text-align: right;
-    margin-right: 3%;
-}
 
     </style>
     
@@ -311,7 +307,6 @@ form {
   <label><input type="button" name="mode" value="Combined Expected & Mean Years of School"  style="padding:2%"></label>
 <!--</div>-->
 </form>
-<div class="genderkey"><span class="mhighlight">&nbsp male &nbsp</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="fhighlight">&nbsp female &nbsp</span></div>
         
          <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id="plot"></div>
          <script>
@@ -399,8 +394,8 @@ form {
             
             
             var yScale = d3.scaleLinear()
-            .domain([0, 15])
-            .range([h - pad, .85*pad]);
+            .domain([0, 14])
+            .range([h - pad, pad]);
             
             
             var xAxis = d3.axisBottom(xScale);
@@ -656,8 +651,8 @@ form {
             
             
             var yScale = d3.scaleLinear()
-            .domain([0, 15])
-            .range([h - pad, .85*pad]);
+            .domain([0, 14])
+            .range([h - pad, pad]);
             
             
           
@@ -745,8 +740,8 @@ function transitionStacked() {
             
             
             var yScale = d3.scaleLinear()
-            .domain([0, 15])
-            .range([h - pad, .85*pad]);
+            .domain([0, 14])
+            .range([h - pad, pad]);
             
             var xAxis = d3.axisBottom(xScale);
             var yAxis = d3.axisLeft(yScale);
@@ -829,8 +824,8 @@ function transitionDifference() {
             
             
             var yScale = d3.scaleLinear()
-            .domain([0, 15])
-           .range([h - pad, .85*pad]);
+            .domain([0, 14])
+            .range([h - pad, pad]);
             
             var xAxis = d3.axisBottom(xScale);
             var yAxis = d3.axisLeft(yScale);
@@ -972,7 +967,7 @@ function transitionDifference() {
   </select></div></label>
         </form>
     <div class="explanation" class='col-sm-12 col-md-12 col-lg-10 col-xl-10'>
-        <p>This project explores the differences between the expected years of schooling and the mean years of schooling based on gender from a 2013 United Nations Development Programme (UNDP) education report. In the visualization above, orange represents female years of schooling and purple represents male years of schooling. The interactive tools above allow you to explore the data by displaying the differences in years of schooling (mean and expected) based on gender. The <a href='https://github.com/hubideal/major_student_one'>README file</a> provides variable definitions and further explanation of this project. Using your cursor, you can roll over the desplayed squares/rectangles to provide text that analyzes the differences for each country.</p></div>
+        <p>This project explores the differences between the expected years of schooling and the mean years of schooling based on gender from a 2013 United Nations Development Programme (UNDP) education report. The interactive tools above allow you to explore the data by displaying the differences in years of schooling (mean and expected) based on gender. The <a href='https://github.com/hubideal/major_student_one'>README file</a> provides variable definitions and further explanation of this project.  In the visualization above, orange represents <span class="fhighlight">female</span> years of schooling and purple represents <span class="mhighlight">male</span> years of schooling. Using your cursor, you can roll over the desplayed squares/rectangles to provide text that analyzes the differences for each country.</p></div>
         
     </body>
     
