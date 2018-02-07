@@ -2,7 +2,7 @@
  "name": "The New School Entrepreneurship Genome",
  "children": [
   {
-   "name": "The New School",
+   "name": "The New School", "size": 2000,
    "children": [
     {"name": "Founder", "size": 246},
     {"name": "Owner", "size": 152},
@@ -39,7 +39,7 @@
     {"name": "Expert", "size": 8},
     {"name": "Operator", "size": 4},
     {"name": "Strategist", "size": 13},
-    {"name": "Parsons School of Design", 
+    {"name": "Parsons School of Design", "size": 1000, 
    "children": [
     {"name": "Founder", "size": 247},
     {"name": "Owner", "size": 244},
