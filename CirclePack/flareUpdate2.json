@@ -1,8 +1,8 @@
 {
- "name": "The New School Entrepreneurship Genome",
+ "name": " .",
  "children": [
   {
-   "name": "The New School", "size": 2000,
+   "name": " ", "size": 1974,
    "children": [
     {"name": "Founder", "size": 246},
     {"name": "Owner", "size": 152},
@@ -23,7 +23,6 @@
     {"name": "Executive", "size": 46},
     {"name": "CEO", "size": 49},
     {"name": "Engineer", "size": 6},
-    {"name": "Specialist", "size": 8},
     {"name": "Principal", "size": 10},
     {"name": "Manager", "size": 35},
     {"name": "President", "size": 45},
@@ -36,10 +35,9 @@
     {"name": "DJ", "size": 15},
     {"name": "Composer", "size": 5},
     {"name": "Attorney", "size": 4},
-    {"name": "Expert", "size": 8},
     {"name": "Operator", "size": 4},
     {"name": "Strategist", "size": 13},
-    {"name": "Parsons School of Design", "size": 1000, 
+    {"name": "Parsons School of Design", "size": 992, 
    "children": [
     {"name": "Founder", "size": 247},
     {"name": "Owner", "size": 244},
@@ -57,7 +55,6 @@
     {"name": "Executive", "size": 16},
     {"name": "CEO", "size": 54},
     {"name": "Engineer", "size": 4},
-    {"name": "Specialist", "size": 6},
     {"name": "Principal", "size": 16},
     {"name": "Manager", "size": 15},
     {"name": "President", "size": 26},
@@ -68,8 +65,7 @@
     {"name": "Author", "size": 7},
     {"name": "Musician", "size": 1},
     {"name": "DJ", "size": 16},
-    {"name": "Composer", "size": 1},
-    {"name": "Expert", "size": 9}
+    {"name": "Composer", "size": 1}
    ]
   }
    ]
