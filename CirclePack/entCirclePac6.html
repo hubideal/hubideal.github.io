@@ -1,13 +1,25 @@
 <!DOCTYPE html>
+<head>
 <meta charset="utf-8">
+
 <style>
-h2 {
-  font-family: sans-serif;
+h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+h5 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
 }
 
 h4 {
-  font-family: sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: absolute;
   left: 62%;
   top: 10%;
@@ -15,17 +27,22 @@ h4 {
   /*color: RGB(247, 247, 195);*/
   size: 2em;
 }
-/*body {*/
-/*  background: rgb(120, 48, 125);*/
-/*}*/
+body {
+  background: rgb(80,199,229);
+}
 #visual {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 80%;
   /*padding: 2%;*/
 }
-
+svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
 /*.label {*/
 /*  pointer-events: auto;*/
 /*}*/
@@ -43,38 +60,39 @@ h4 {
 }
 
 .node--leaf {
-  fill: white;
+  fill: #E17A91;
 }
 
 .label {
-  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  font: 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-anchor: middle;
-  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
 }
 
 </style>
+</head>
 <body>
-
-<div class='title'><h2>Titles of New School Alumni Who Identify as Entrepreneurs from LinkedIn Websites</h2></div>
+<div class='title'><h1>The New School Entrepreneur Genome Project</h1></div>
+<div class='title'><h3>Titles of New School Alumni Who Self Identify as Entrepreneurs </br>from The New School & Parsons LinkedIn Pages</h3></div>
 <div id='visual'>
-  <h4>The New School </br>Entrepreneur Genome</h4>
-<svg width="980" height="900"></svg>
+  <!--<h4>The New School</h4>-->
+<svg width="780" height="780"></svg>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 
 <script>
 
 var svg = d3.select("svg"),
-    margin = 10,
+    margin = 0,
     diameter = +svg.attr("width"),
     g = svg.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
 
-// var color = d3.scaleLinear()
-//     .domain([-1, 5])
-//     .range(["hsl(2,50%,70%)", "hsl(20,95%,90%)"])  //"hsl(152,80%,60%)", "hsl(228,30%,40%)"
-//     .interpolate(d3.interpolateHcl);
+var color = d3.scaleLinear()
+    .domain([-1, 1])
+    .range(["rgb(80,199,229)", "rgb(210,237,240)"])  //"hsl(152,80%,60%)", "hsl(228,30%,40%)"
+    .interpolate(d3.interpolateRgb);
 
-var color = d3.scaleSequential(d3.interpolateMagma)
-    .domain([-4, 4]);
+// var color = d3.scaleSequential(d3.interpolateMagma)
+//     .domain([-4, 4]);
 
 
 var pack = d3.pack()
@@ -158,4 +176,6 @@ d3.json("flareUpdate2.json", function(error, root) {
 
 </script>
 </div>
+<div class='numbers'><h5>3,104 New School Alumni and 6,785 Parsons alumni self identify as entrepreneurs on LinkedIn </br> This visual is a sample of 1,000 alumni from the The New School and Parsons LinkedIn pages </h5></div>
+
   </body> 
