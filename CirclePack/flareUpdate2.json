@@ -1,8 +1,8 @@
 {
- "name": ,
+ "name": "",
  "children": [
   {
-   "name": , "size": 1953,
+   "name": "", "size": 1953,
    "children": [
     {"name": "Founder", "size": 241},
     {"name": "Owner", "size": 149},
@@ -63,7 +63,7 @@
     {"name": "Professor", "size": 8},
     {"name": "Illustrator", "size": 10},
     {"name": "Author", "size": 7},
-    {"name": "DJ", "size": 16},
+    {"name": "DJ", "size": 16}
    ]
   }
    ]
