@@ -1,8 +1,8 @@
 {
- "name": "",
+ "name": " ",
  "children": [
   {
-   "name": "", "size": 1953,
+   "name": " ", "size": 1953,
    "children": [
     {"name": "Founder", "size": 241},
     {"name": "Owner", "size": 149},
@@ -37,7 +37,7 @@
     {"name": "Operator", "size": 4},
     {"name": "Contractor", "size": 6},
     {"name": "Strategist", "size": 13},
-    {"name": "", "size": 992, 
+    {"name": " ", "size": 992, 
    "children": [
     {"name": "Founder", "size": 247},
     {"name": "Owner", "size": 244},
