@@ -27,42 +27,25 @@ h4 {
   /*color: RGB(247, 247, 195);*/
   size: 2em;
 }
-
-span {
-  color: white;
-  padding: 1.5px;
-}
 /*body {*/
 /*  background: rgb(80,199,229);*/
 /*}*/
-#wrapper {
+#visual {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-}
-#visual {
-  /*display: block;*/
-  float: left;
-  margin-left: auto;
-  margin-right: auto;
-  width: 55%;
   /*padding: 2%;*/
 }
-
-.Parsons {
-  background: rgb(61, 144, 200);
-}
-
-.NewS {
-  background: rgb(112, 197, 226);
-}
-
 svg {
   display: block;
-  margin-left: 2%;
-  /*width: 65%;*/
+  margin-left: 10%;
+  margin-right: auto;
+  width: 65%;
 }
-
+/*.label {*/
+/*  pointer-events: auto;*/
+/*}*/
 .node--root {
   pointer-events: none;
 }
@@ -72,34 +55,35 @@ svg {
 }
 
 .node:hover {
-  stroke: #fff;
-  stroke-width: 3px;
+  stroke: #000;
+  stroke-width: 2px;
 }
 
 .node--leaf {
   fill: #D2EDF0;
 }
 
-.circleLabel {
-  font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+.label {
+  color: white;
+  font: 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
-  pointer-events: auto;
 }
-
 .tooltext {
   font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-align: center;
+  text-anchor: center;
 }
-
-#numbers {
+.numbers {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5%;
-  float: left;
+  width: 25%;
+  text-align: center;
   padding-left: 2em;
 }
-
-
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
 </style>
 </head>
 <body>
@@ -161,10 +145,10 @@ d3.json("flareUpdate2.json", function(error, root) {
   var text = g.selectAll("text")
     .data(nodes)
     .enter().append("text")
-    .attr("class", "circleLabel")
-    .style("fill-opacity", function(d) { return d.parent === node, root ? 1 : 0; })
-    .style("display", function(d) { return d.parent === node, root ? "inline" : "none"; })
-    .text(function(d) { return d.data.name;});
+      .attr("class", "label")
+      .style("fill-opacity", function(d) { return d.parent === node, root ? 1 : 0; })
+      .style("display", function(d) { return d.parent === node, root ? "inline" : "none"; })
+      .text(function(d) { return d.data.name;});
    
 
   var node = g.selectAll("circle,text");
@@ -174,7 +158,7 @@ d3.json("flareUpdate2.json", function(error, root) {
       .style("background", color(0))
       .on("click", function() { zoom(root); });
 
-  zoomTo([root.x, root.y, root.r * 2.3 + margin]);
+  zoomTo([root.x, root.y, root.r * 2.1 + margin]);
 
   function zoom(d) {
     var focus0 = focus; focus = d;
@@ -182,7 +166,7 @@ d3.json("flareUpdate2.json", function(error, root) {
     var transition = d3.transition()
         .duration(d3.event.altKey ? 7500 : 750)
         .tween("zoom", function(d) {
-          var i = d3.interpolateZoom(view, [focus.x, focus.y, focus.r * 2.3 + margin]);
+          var i = d3.interpolateZoom(view, [focus.x, focus.y, focus.r * 2.25 + margin]);
           return function(t) { zoomTo(i(t)); };
         });
 
@@ -208,6 +192,6 @@ d3.json("flareUpdate2.json", function(error, root) {
 
 </script>
 </div>
-<div id='numbers'><h5>3,104 New School Alumni and 6,785 Parsons alumni </br>self identify as entrepreneurs on LinkedIn. </br></br></br> This visualization is a sample of 1,953 alumni </br>from the <span class=NewS>The New School</span> and <span class=Parsons>Parsons</span> LinkedIn pages.</br></br></br>To zoom in, click on an inner circle.</br>To zoom out, click on an outer circle or edge.</br>Hover over the circles to display size.</h5></div>
+<div class='numbers'><h5>3,104 New School Alumni and 6,785 Parsons alumni </br>self identify as entrepreneurs on LinkedIn </br> This visual is a sample of 1,953 alumni </br>from the The New School and Parsons LinkedIn pages </h5></div>
 </div>
   </body> 

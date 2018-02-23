@@ -1,8 +1,8 @@
 {
- "name": " .",
+ "name": ,
  "children": [
   {
-   "name": " ", "size": 1953,
+   "name": , "size": 1953,
    "children": [
     {"name": "Founder", "size": 241},
     {"name": "Owner", "size": 149},
@@ -10,7 +10,6 @@
     {"name": "Artist", "size": 35},
     {"name": "Director", "size": 122},
     {"name": "Coach", "size": 24},
-    {"name": "Contractor", "size": 2},
     {"name": "Writer", "size": 51},
     {"name": "Consultant", "size": 41},
     {"name": "Editor", "size": 56},
@@ -31,11 +30,12 @@
     {"name": "Professor", "size": 13},
     {"name": "Illustrator", "size": 5},
     {"name": "Author", "size": 17},
-    {"name": "Musician", "size": 8},
+    {"name": "Musician", "size": 9},
     {"name": "DJ", "size": 15},
-    {"name": "Composer", "size": 5},
+    {"name": "Composer", "size": 6},
     {"name": "Attorney", "size": 4},
     {"name": "Operator", "size": 4},
+    {"name": "Contractor", "size": 6},
     {"name": "Strategist", "size": 13},
     {"name": "", "size": 992, 
    "children": [
@@ -63,9 +63,7 @@
     {"name": "Professor", "size": 8},
     {"name": "Illustrator", "size": 10},
     {"name": "Author", "size": 7},
-    {"name": "Musician", "size": 1},
-    {"name": "DJ", "size": 16},
-    {"name": "Composer", "size": 1}
+    {"name": "DJ", "size": 16}
    ]
   }
    ]
