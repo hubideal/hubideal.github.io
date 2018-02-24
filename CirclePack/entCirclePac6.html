@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <head>
 <meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 <style>
 h1 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-align: center;
-}
-
-h3 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-align: center;
-}
-
-h5 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: left;
 }
 
+h3 {
+  font-family: "Open Sans", Arial, sans-serif;
+  text-align: left;
+}
+
+h5 {
+  font-family: "Open Sans", Arial, sans-serif;
+  text-align: left;
+  
+}
+
 h4 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   position: absolute;
   left: 62%;
   top: 10%;
-  color: yellow;
   /*color: RGB(247, 247, 195);*/
   size: 2em;
 }
@@ -32,9 +33,12 @@ span {
   color: white;
   padding: 1.5px;
 }
-/*body {*/
-/*  background: rgb(80,199,229);*/
-/*}*/
+.title {
+  text-align: left;
+  margin-left: 10%;
+  
+}
+
 #wrapper {
   margin-left: auto;
   margin-right: auto;
@@ -43,9 +47,9 @@ span {
 #visual {
   /*display: block;*/
   float: left;
-  margin-left: auto;
+  margin-left: 8%;
   margin-right: auto;
-  width: 55%;
+  width: 60%;
   /*padding: 2%;*/
 }
 
@@ -60,7 +64,7 @@ span {
 svg {
   display: block;
   margin-left: 2%;
-  /*width: 65%;*/
+  width: 100%;
 }
 
 .node--root {
@@ -119,7 +123,7 @@ var svg = d3.select("svg"),
 
 var color = d3.scaleLinear()
     .domain([0, 1])
-    .range(["rgb(253,253,253)","rgb(80,199,229)"])  //"hsl(152,80%,60%)", "hsl(228,30%,40%)"
+    .range(["rgb(255,255,255)","rgb(80,199,229)"])  //"hsl(152,80%,60%)", "hsl(228,30%,40%)"
     .interpolate(d3.interpolateRgb);
 
 // var color = d3.scaleSequential(d3.interpolateMagma)
