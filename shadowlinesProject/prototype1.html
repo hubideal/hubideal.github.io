@@ -154,8 +154,8 @@ var w = (screen.width*1.2),
 var projection = d3.geo.mercator()
     // .mode("equidistant")
     // .origin([-98, 38])
-    // .scale(w/.5/ Math.PI)  //this works by the way
-      .scale(2300)
+    .scale(w/.3/ Math.PI)  //this works by the way
+      // .scale(2300)
       .translate([w/1.7, h]);
 
 var path = d3.geo.path()
