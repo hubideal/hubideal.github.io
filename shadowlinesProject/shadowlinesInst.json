@@ -1,0 +1,362 @@
+[
+ {
+   "iata": "01G",
+   "name": "Boston Children’s Museum",
+   "city": "Boston",
+   "state": "MA",
+   "country": "USA",
+   "latitude": 42.351622,
+   "longitude": -71.049764
+ },
+ {
+   "iata": "01J",
+   "name": "Peabody Essex",
+   "city": "Boston",
+   "state": "MA",
+   "country": "USA",
+   "latitude": 42.521667,
+   "longitude": -70.892222
+ },
+ {
+   "iata": "01M",
+   "name": "Harvard University: Peabody Museum",
+   "city": "Boston",
+   "state": "MA",
+   "country": "USA",
+   "latitude": 42.3736,
+   "longitude": -71.1097
+ },
+ {
+   "iata": "02A",
+   "name": "Abbe Museum",
+   "city": "Bar Harbor",
+   "state": "ME",
+   "country": "USA",
+   "latitude": 44.39,
+   "longitude": -68.204722
+ },
+ {
+   "iata": "02C",
+   "name": "University of Maine Hudson Museum",
+   "city": "Orono",
+   "state": "ME",
+   "country": "USA",
+   "latitude": 44.899652,
+   "longitude": -68.666262
+ },
+ {
+   "iata": "02G",
+   "name": "Maine State Museum",
+   "city": "Augusta",
+   "state": "ME",
+   "country": "USA",
+   "latitude": 44.3059,
+   "longitude": -69.7827
+ },
+ {
+   "iata": "03D",
+   "name": "Maine Historical Society",
+   "city": "Portland",
+   "state": "ME",
+   "country": "USA",
+   "latitude": 43.6568,
+   "longitude": -70.2603
+ },
+ {
+   "iata": "04M",
+   "name": "American Philosophical Society",
+   "city": "Philadelphia",
+   "state": "PA",
+   "country": "USA",
+   "latitude": 39.948753,
+   "longitude": -75.149839
+ },
+ {
+   "iata": "04Y",
+   "name": "Library of Congress",
+   "city": "Washington",
+   "state": "DC",
+   "country": "USA",
+   "latitude": 38.8869718,
+   "longitude": -77.0046631
+ },
+ {
+   "iata": "05C",
+   "name": "Smithsonian Institution: National Museum of Natural History",
+   "city": "Washington",
+   "state": "DC",
+   "country": "USA",
+   "latitude": 38.8913,
+   "longitude": -77.0261
+ },
+ {
+   "iata": "05F",
+   "name": "Smithsonian Institution: National Museum of the American Indian",
+   "city": "Washington",
+   "state": "DC",
+   "country": "USA",
+   "latitude": 38.8882,
+   "longitude": -77.0165
+ },
+ {
+   "iata": "05U",
+   "name": "Dartmouth College",
+   "city": "Hanover",
+   "state": "NH",
+   "country": "USA",
+   "latitude": 43.703333,
+   "longitude": -72.288333
+ },
+ {
+   "iata": "06A",
+   "name": "Smithsonian Institution: National Anthropological Archives",
+   "city": "Washington",
+   "state": "DC",
+   "country": "USA",
+   "latitude": 38.842917,
+   "longitude": -76.939766
+ },
+ {
+   "iata": "06C",
+   "name": "Canadian Museum of History",
+   "city": "Province",
+   "state": "QC",
+   "country": "USA",
+   "latitude": 45.429722,
+   "longitude": -75.708889
+ },
+ {
+   "iata": "06D",
+   "name": "University of Pennsylvania",
+   "city": "Philadelphia",
+   "state": "PA",
+   "country": "USA",
+   "latitude": 39.95,
+   "longitude": -75.19
+ },
+ {
+   "iata": "06M",
+   "name": "Denver Museum of Nature and Science",
+   "city": "Denver",
+   "state": "CO",
+   "country": "USA",
+   "latitude": 39.7475,
+   "longitude": -104.9425
+ },
+ {
+   "iata": "06N",
+   "name": "Field Museum of Natural History",
+   "city": "Chicago",
+   "state": "IL",
+   "country": "USA",
+   "latitude": 41.86611,
+   "longitude": -87.61694
+ },
+ {
+   "iata": "06U",
+   "name": "Heard Museum",
+   "city": "Phoenix",
+   "state": "AZ",
+   "country": "USA",
+   "latitude": 33.473542,
+   "longitude": -112.073694
+ },
+ {
+   "iata": "07C",
+   "name": "Davistown Museum (Maine)",
+   "city": "Davidstown",
+   "state": "ME",
+   "country": "USA",
+   "latitude": 44.389167,
+   "longitude": -69.302778
+ },
+ {
+   "iata": "07F",
+   "name": "Colby College Museum of Art",
+   "city": "Waterville",
+   "state": "ME",
+   "country": "USA",
+   "latitude": 44.564167,
+   "longitude": -69.663056
+ },
+ {
+   "iata": "07G",
+   "name": "Bates College",
+   "city": "Lewiston",
+   "state": "ME",
+   "country": "USA",
+   "latitude": 44.105556,
+   "longitude": -70.204167
+ },
+ {
+   "iata": "07K",
+   "name": "Bowdoin College",
+   "city": "Brunswick",
+   "state": "ME",
+   "country": "USA",
+   "latitude": 43.909,
+   "longitude": -69.963
+ },
+ {
+   "iata": "08A",
+   "name": "Dartmouth College Hood Museum of Art",
+   "city": "Hanover",
+   "state": "NH",
+   "country": "USA",
+   "latitude": 43.702222,
+   "longitude": -72.288056
+ },
+ {
+   "iata": "08D",
+   "name": "Fairbanks Museum and Planetarium",
+   "city": "St Johnsbury",
+   "state": "VT",
+   "country": "USA",
+   "latitude": 44.420167,
+   "longitude": -72.019833
+ },
+ {
+   "iata": "08K",
+   "name": "Florence Museum of Anthropology and Ethnology",
+   "city": "Florence",
+   "state": "IT",
+   "country": "ITA",
+   "latitude": 43.773083,
+   "longitude": 11.256222
+ },
+ {
+   "iata": "08M",
+   "name": "University of British Columbia",
+   "city": "Vancouver",
+   "state": "BC",
+   "country": "CAN",
+   "latitude": 49.261111,
+   "longitude": -123.253056
+ },
+ {
+   "iata": "0O3",
+   "name": "International FDR Park Campobello Canada",
+   "city": "Welshpool",
+   "state": "NB",
+   "country": "CAN",
+   "latitude": 44.874901,
+   "longitude": -66.959412
+ },
+ {
+   "iata": "0O4",
+   "name": "University of New Brunswick (Mi’kmaq-Wolastoqey Centre)",
+   "city": "Fredericton",
+   "state": "NB",
+   "country": "CAN",
+   "latitude": 45.961598,
+   "longitude": -66.639397
+ },
+ {
+   "iata": "0O5",
+   "name": "American Museum of Natural History",
+   "city": "New York",
+   "state": "NY",
+   "country": "USA",
+   "latitude": 38.8913,
+   "longitude": -77.0261
+ },
+ {
+   "iata": "0Q5",
+   "name": "Brooklyn Museum",
+   "city": "Brooklyn",
+   "state": "NY",
+   "country": "USA",
+   "latitude": 40.671306,
+   "longitude": -73.96375
+ },
+ {
+   "iata": "0Q6",
+   "name": "Penn Museum",
+   "city": "Philadelphia",
+   "state": "PA",
+   "country": "USA",
+   "latitude": 39.949313,
+   "longitude": -75.191346
+ },
+ {
+   "iata": "0R0",
+   "name": "University of California Phoebe A Hearst Museum of Anthropology",
+   "city": "Berkeley",
+   "state": "CA",
+   "country": "USA",
+   "latitude": 37.8694,
+   "longitude": -122.2551
+ },
+ {
+   "iata": "0R1",
+   "name": "Autry Museum of the American West",
+   "city": "Los Angeles",
+   "state": "CA",
+   "country": "USA",
+   "latitude": 34.0522,
+   "longitude": -118.2437
+ },
+ {
+   "iata": "0R5",
+   "name": "Humbolt University",
+   "city": "Berlin",
+   "state": "BE",
+   "country": "GER",
+   "latitude": 52.518056,
+   "longitude": 13.393333
+ },
+ {
+   "iata": "0R7",
+   "name": "The Metropolitan Museum of Art",
+   "city": "New York",
+   "state": "NY",
+   "country": "USA",
+   "latitude": 40.77891,
+   "longitude": -73.96367
+ },
+ {
+   "iata": "0S7",
+   "name": "California Indian Museum and Cultural Center",
+   "city": "Santa Rosa",
+   "state": "CA",
+   "country": "USA",
+   "latitude": 38.448611,
+   "longitude": -122.704722
+ },
+ {
+   "iata": "0S9",
+   "name": "Clarke Historical Museum",
+   "city": "Eureka",
+   "state": "CA",
+   "country": "USA",
+   "latitude": 40.803611,
+   "longitude": -124.166389
+ },
+ {
+   "iata": "00M",
+   "name": "Happy Camp",
+   "city": "SiskiyouHumboldt County",
+   "state": "CA",
+   "country": "USA",
+   "latitude": 41.791031,
+   "longitude": -123.380023
+ },
+ {
+   "iata": "00R",
+   "name": "Indian Township Reservation",
+   "city": "Princeton",
+   "state": "ME",
+   "country": "USA",
+   "latitude": 45.24047,
+   "longitude": -67.590582
+ },
+ {
+   "iata": "00V",
+   "name": "Penobscot Reservation",
+   "city": "Penobscot County",
+   "state": "ME",
+   "country": "USA",
+   "latitude": 44.950904,
+   "longitude": -68.652101
+ }
+]

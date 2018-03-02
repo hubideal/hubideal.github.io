@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <!--<link type="text/css" rel="stylesheet" href="style.css"/>-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.0/mapbox-gl.js'></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://unpkg.com/topojson-client@3"></script>
+    <!--<script type="text/javascript" src="d3/d3.csv.js"></script>-->
+    <script type="text/javascript" src="d3/d3.geo.js"></script>
+    <script type="text/javascript" src="d3/d3.geom.js"></script>
+    <script type="text/javascript"></script>
+    <style type="text/css">
+        html, body, #wrapper {
+            width: 90%;
+            height: 95%;
+            padding: 0;
+            margin: 0;
+        }
+        #map {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            /*margin: auto auto;*/
+            
+        }
+        
+        svg {
+            position: absolute;
+            width:100%;
+            height:100%;
+        }
+        hidden {
+            display: none;
+        }
+        #states path {
+  fill: #ccc;
+  stroke: #fff;
+}
+
+path.arc {
+  pointer-events: none;
+  fill: none;
+  stroke: #000;
+  display: none;
+}
+
+path.cell {
+  fill: none;
+  pointer-events: all;
+}
+
+circle {
+  fill: blue;
+  fill-opacity: .5;
+}
+
+#cells.voronoi path.cell {
+  stroke: brown;
+}
+
+#cells g:hover path.arc {
+  display: inherit;
+}
+       
+    </style>
+</head>
+<body>
+    
+    <div id='wrapper'>
+    <div id='map'></div>
+    </div>
+  
+    <script>
+     mapboxgl.accessToken = 'pk.eyJ1IjoiaHViaWRlYWwiLCJhIjoiY2o5enltdnB4MnllNTJ2cG84dHR2bWtlbiJ9.Mc95MrGOBpLnzrMap4hrLw';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/bright-v9',
+        center: [-89.8283, 40.2812], // 9.1021° N, 18.2812° E
+        zoom: 2
+        });
+    
+    d3.json('us-states.json', function(err, data) {
+       draw(data); 
+    });
+    
+    function draw(geojson) {
+        
+   
+    map.addControl(new mapboxgl.Navigation());
+    
+    var container = map.getCanvasContainer();
+    var svg = d3.select(container).append('svg');
+    
+    var transform = d3.geoTransform({point: projectPoint});
+    var path = d3.geoPath().projection(transform);
+    
+    var featureElement = svg.selectAll('path') 
+        .data(geojson.features)
+        .enter()
+        .append('path')
+        .attr('d', d3.geoPath().projection(transform))
+        .attr('stroke', 'none')
+        .attr('fill', 'lightgray')
+        .attr('fill-opacity', 0.5);
+    
+    var cells = svg.append("svg:g")
+    .attr("id", "cells");
+    
+    var circles = svg.append("svg:g")
+    .attr("id", "circles");
+    
+    var projection = d3.geo.mercator()
+    // .origin([-89, 40])
+    .scale(100)
+    // .translate([w/2, h/2]);
+
+var path = d3.geo.path()
+    .projection(projection);
+        
+d3.json("relationships.json", function(flights) {
+  var linksByOrigin = {},
+      countByAirport = {},
+      locationByAirport = {},
+      positions = [];
+
+  var arc = d3.geo.greatArc()
+      .source(function(d) { return locationByAirport[d.source]; })
+      .target(function(d) { return locationByAirport[d.target]; });
+
+  flights.forEach(function(flight) {
+    var origin = flight.origin,
+        destination = flight.destination,
+        links = linksByOrigin[origin] || (linksByOrigin[origin] = []);
+        console.log(links);
+    links.push({source: origin, target: destination});
+    countByAirport[origin] = (countByAirport[origin] || 0) + 1;
+    countByAirport[destination] = (countByAirport[destination] || 0) + 1;
+  });
+
+  d3.json("shadowlinesInst.json", function(airports) {
+
+    // Only consider airports with at least one flight.
+    airports = airports.filter(function(airport) {
+      if (countByAirport[airport.iata]) {
+        var location = [+airport.longitude, +airport.latitude];
+        locationByAirport[airport.iata] = location;
+        console.log(location[0], location[1]);
+        positions.push(projection(location));// positions.push(projection(location));
+        return true;
+      }
+    });
+
+    // Compute the Voronoi diagram of airports' projected positions.
+    var polygons = d3.geom.voronoi(positions);
+
+    var g = circles.selectAll("g")
+        .data(airports)
+        .enter().append("svg:g");
+
+    g.append("svg:path")
+        .attr("class", "cell")
+        .attr("d", function(d, i) { return "M" + polygons[i].join("L") + "Z"; });
+        // .on("mouseover", function(d, i) { d3.select("h2 span").text(d.name); });
+
+    g.selectAll("path.arc")
+        .data(function(d) { return linksByOrigin[d.iata] || []; })
+      .enter().append("svg:path")
+        .attr("class", "arc")
+        .attr("d", function(d) { return path(arc(d)); });
+
+    circles.selectAll("circle")
+        .data(airports)
+      .enter().append("svg:circle")
+        .attr("cx", function(d, i) { return positions[i][0]; })
+        .attr("cy", function(d, i) { return positions[i][1]; })
+        .attr("r", function(d, i) { return Math.log(countByAirport[d.iata]); })
+        .sort(function(a, b) { return countByAirport[b.iata] - countByAirport[a.iata]; });
+  });
+});
+    
+    function update() {
+        featureElement.attr('d', path);
+    }
+        
+            map.on("viewreset", update)
+            map.on("movestart", function(){
+            		svg.classed("hidden", true); // https://github.com/d3/d3-selection/blob/master/README.md#selection_classed
+            	});
+            map.on("rotate", function(){
+            		svg.classed("hidden", true);
+            	});
+            map.on("moveend", function(){
+            		update();
+            		svg.classed("hidden", false);  //classed is takes a class name and have it either true or false
+            	})
+            update();
+        
+    function projectPoint(lon, lat) {
+        var point = map.project(new mapboxgl.LngLat(lon, lat));
+        this.stream.point(point.x, point.y); //https://github.com/d3/d3-geo/blob/master/README.md#transforms
+    }
+
+  }
+  
+</script>
+
+
+  </body>
+</html>
