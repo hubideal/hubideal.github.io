@@ -261,6 +261,8 @@ var w = (screen.width*.5),
     h = (screen.height*.55);
     // scale0 = (w - 1) / 2 / Math.PI;
 
+console.log(w, h)
+
 // var projection = d3.geo.azimuthal()
 //     .mode("equidistant")
 //     .origin([-90, 58])
@@ -273,7 +275,8 @@ var projection = d3.geo.mercator()
     // .origin([-98, 38])
     .scale(2100)  //this works by the way
       // .scale(2300)
-      .translate([w*1.4, h]);
+      // .translate([w*1.4, h]);
+      .translate([1000, 500]);
 
 var path = d3.geo.path()
     .projection(projection);
