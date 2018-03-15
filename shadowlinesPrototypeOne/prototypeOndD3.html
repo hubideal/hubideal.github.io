@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--<link type="text/css" rel="stylesheet" href="style.css"/>-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="//d3js.org/d3.v3.min.js"></script>
+    <style type="text/css">
+    
+
+
+#states path {
+  fill: rgb(168, 200, 206);
+  stroke: #fff
+}
+
+svg.flare {
+    margin-left: 50%;
+    float: right;
+}
+
+
+path.cell {
+  fill: none;
+  pointer-events: all;
+}
+
+.circle {
+  fill: red;
+  fill-opacity: .7;
+  size: 2em;
+  
+}
+
+h4 {
+  font-size: 2.5em;
+  padding-left: 4%;
+  padding-top: 2%;
+}
+
+h5 {
+  padding-left: 4%;
+  position: relative;
+  color: white;
+}
+
+p {
+  padding-left: 4%;
+  padding-top: 1%;
+  font-size: 1em;
+}
+
+
+
+.mapWrapper {
+  background: #353535;
+  width: 50%;
+  float: left;
+}
+
+
+#cells.voronoi path.cell {
+  stroke: brown;
+}
+
+#cells {
+  display: inline;
+  visibility: hidden;
+}
+
+.circlePenobscot {
+  fill: #6A65D8;
+}
+
+.circlePassamaquoddy {
+  fill: rgb(234, 151, 80);
+}
+
+.circleKaruk {
+  fill: #0AA0F6;
+}
+
+
+#cells path.arc {
+  fill: none;
+  display: inherit;
+  visibility: hidden;
+  stroke: black;
+  stroke-width: 1px;
+  stroke-linecap: round;
+}
+
+#cells path.Penobscot {
+  fill: none;
+  display: inherit;
+  visibility: visible;
+  stroke: #6A65D8;
+  stroke-width: 1.25px;
+  stroke-linecap: round;
+}
+
+#cells path.Karuk {
+  fill: none;
+  display: inherit;
+  visibility: visible;
+  stroke: #0AA0F6;
+  stroke-width: 1.25px;
+  stroke-linecap: round;
+}
+
+#cells path.Passamaquoddy {
+  fill: none;
+  display: inherit;
+  visibility: visible;
+  stroke: rgb(234, 151, 80);
+  stroke-width: 1.25px;
+  stroke-linecap: round;
+}
+
+.buttons {
+  margin-left: 4%;
+  width: 100%;
+}
+
+label {
+  padding-right: 1em;
+}
+input {
+    background-color: grey;
+    border: none;
+    color: white;
+    /*padding: 4%;*/
+    /*margin: 2%;*/
+}
+
+#prototype {
+    margin: auto;
+    background: #353535;
+}
+
+.wrapper {
+    /*position: sticky;*/
+    margin-left: 50%;
+    margin-right: 5%;
+    background: #353535;
+    
+}
+
+.infoBox {
+  position: absolute;
+  margin-top: 2%;
+}
+
+.node circle2 {
+  fill: #999;
+}
+
+.node text {
+  font: 13px sans-serif;
+  color: black;
+}
+
+.node--internal circle2 {
+  fill: #555;
+}
+
+/*.node--internal text {*/
+/*  text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;*/
+/*}*/
+
+.flarelink {
+  opacity: 0;
+  fill: white;
+}
+
+.link {
+  fill: none;
+  stroke: #666;
+  stroke-opacity: 0.5;
+  stroke-width: .5px;
+}
+
+path.KarukFlare {
+  fill: none;
+  stroke: #0AA0F6;
+  stroke-opacity: .8;
+}
+
+path.PassamaquoddyFlare {
+  fill: none;
+  stroke: rgb(234, 151, 80);
+  stroke-opacity: .8;
+}
+
+path.PenobscotFlare {
+  fill: none;
+  stroke: #6A65D8;
+  stroke-opacity: .8;
+}
+            
+.node--internal text.KarukFlare {
+  fill: black;
+  font: 13px sans-serif;
+  opacity: 100;
+}
+
+.node--internal text.PassamaquoddyFlare {
+  fill: black;
+  font: 13px sans-serif;
+  opacity: 100;
+}
+
+.node--internal text.PenobscotFlare {
+  fill: black;
+  font: 13px sans-serif;
+  opacity: 100;
+}
+
+    </style>
+  </head>
+  <body>
+ 
+<h4>
+      <span class="shadowTitle"><b>Shadow Lines</b></span><br>
+      Prototype I
+    </h4>
+<div class="infoBox"><div class="buttons">
+  <label><input type="button" name="mode" value="Karuk Tribe"></label> 
+  <label><input type="button" name="mode" value="Penobscot Reservation"></label>
+  <label><input type="button" name="mode" value="Passamaquoddy Tribe"></label>
+</div>
+    <h5>
+      <span>Shadow Lines</span><br>
+    </h5></div>
+<div id="prototype"><div class="mapWrapper"><svg class="map"></svg></div>
+<div class="wrapper"><svg class="flare" width="600" height="800"></svg></div></div>
+
+
+<!--<div class="wrapper"><svg class="flare"></svg></div></div>-->
+
+    <!--<script src="https://d3js.org/d3.v3.min.js"></script>-->
+    
+    <!--<script type="text/javascript" src="d3/d3.js"></script>-->
+    <!--<script type="text/javascript" src="d3/d3.csv.js"></script>-->
+    <script src="https://d3js.org/topojson.v0.min.js"></script>
+    <script type="text/javascript" src="d3/d3.geo.js"></script>
+    <script type="text/javascript" src="d3/d3.geom.js"></script>
+    <script src="//d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript">
+
+
+
+var svg = d3.select("svg.flare"),
+    width = +svg.attr("width"),
+    height = +svg.attr("height"),
+    g = svg.append("g").attr("transform", "translate(80,0)");
+
+
+    
+
+var w = (screen.width*.5),
+    h = (screen.height*.55);
+    // scale0 = (w - 1) / 2 / Math.PI;
+
+// var projection = d3.geo.azimuthal()
+//     .mode("equidistant")
+//     .origin([-90, 58])
+//     .scale(550)
+//     .translate([380, 90]);
+// .translate([w/1.7, h]
+
+var projection = d3.geo.mercator()
+    // .mode("equidistant")
+    // .origin([-98, 38])
+    .scale(2100)  //this works by the way
+      // .scale(2300)
+      .translate([w*1.4, h]);
+
+var path = d3.geo.path()
+    .projection(projection);
+
+var svg = d3.select("div.mapWrapper").insert("svg", "h4")
+    .attr("width", w)
+    .attr("height", h);
+
+var states = svg.append("svg:g")
+    .attr("id", "states");
+
+var circles = svg.append("svg:g")
+    .attr("id", "circles");
+
+var cells = svg.append("svg:g")
+    .attr("id", "cells");
+
+
+d3.json("countries.geo.json", function(collection) {
+  states.selectAll("path")
+      .data(collection.features)
+    .enter().append("svg:path")
+      .attr("d", path);
+});
+
+d3.csv("relationships.csv", function(flights) {
+  var linksByOrigin = {},
+      countByAirport = {},
+      locationByAirport = {},
+      positions = [];
+
+  var arc = d3.geo.greatArc()
+      .source(function(d) { return locationByAirport[d.source]; })
+      .target(function(d) { return locationByAirport[d.target]; });
+      // .attr('visibility', "hidden");
+ 
+
+
+flights.forEach(function(flight) {
+    var origin = flight.origin,
+        destination = flight.destination,
+        links = linksByOrigin[origin] || (linksByOrigin[origin] = []);
+    links.push({source: origin, target: destination});
+    countByAirport[origin] = (countByAirport[origin] || 0) + 1;
+    countByAirport[destination] = (countByAirport[destination] || 0) + 1;
+  });
+
+  d3.csv("shadowlinesInst.csv", function(airports) {
+
+    // Only consider airports with at least one flight.
+    airports = airports.filter(function(airport) {
+      if (countByAirport[airport.iata]) {
+        var location = [+airport.longitude, +airport.latitude];
+        locationByAirport[airport.iata] = location;
+        positions.push(projection(location));
+        return true;
+      }
+    });
+
+    // Compute the Voronoi diagram of airports' projected positions.
+    var polygons = d3.geom.voronoi(positions);
+
+    var g = cells.selectAll("g")
+        .data(airports)
+      .enter().append("svg:g");
+      
+
+
+    g.append("svg:path")
+        .attr("class", "cell")
+        .attr("d", function(d, i) { return "M" + polygons[i].join("L") + "Z"; })
+        .on("mouseover", function(d, i) { d3.select("h5 span").text(d.name + ", " + d.city + ", " + d.state + "  " + d.country); });
+      
+
+    g.selectAll("path.arc")
+        .data(function(d) { return linksByOrigin[d.iata] || []; })
+        // .data(function(d) {return [{source: "00V", target: "01G"},{source: "00V", target: "01G"}, {source: "00V", target: "01J"},{source: "00V", target: "01M"}, {source: "00V", target: "02A"}, {source: "00V", target: "02C"}, {source: "00V", target: "02G"}, {source: "00V", target: "03D"}, {source: "00V", target: "04M"}, {source: "00V", target: "04Y"}, {source: "00V", target: "05C"}, {source: "00V", target: "05F"}, {source: "00V", target: "05U"}, {source: "00V", target: "06A"}, {source: "00V", target: "06C"}, {source: "00V", target: "06D"}, {source: "00V", target: "06M"}, {source: "00V", target: "06N"}, {source: "00V", target: "06U"}, {source: "00V", target: "07C"}, {source: "00V", target: "07F"}, {source: "00V", target: "07G"}, {source: "00V", target: "07K"}, {source: "00V", target: "08A"}, {source: "00V", target: "08D"}, {source: "00V", target: "08K"}, {source: "00V", target: "08M"}];})
+        .enter().append("svg:path")
+        .attr("class", "arc")
+        .style("oppacity", 1)
+        .attr("d", function(d) { return path(arc(d)); });
+        
+  
+
+    circles.selectAll("circle")
+        .data(airports)
+        .enter().append("svg:circle")
+        .attr("cx", function(d, i) { return positions[i][0]; })
+        .attr("cy", function(d, i) { return positions[i][1]; })
+        .attr("r", function(d, i) { return Math.log(countByAirport[d.iata]*10); })
+        .sort(function(a, b) { return countByAirport[b.iata] - countByAirport[a.iata]; })
+        .attr("class", function(c, i) {
+            console.log(c.iata)
+            if (c.iata == "00V") {return "circlePenobscot"}
+            else if (c.iata == "00R") {return "circlePassamaquoddy"}
+            else if (c.iata == "00M") {return "circleKaruk"}
+            else 	{ return "circle" }});
+
+    d3.selectAll("input")
+      .on('click', changed);
+    
+    
+    function changed() {
+                if (this.value === "Penobscot Reservation") transitionPenobscot();
+                else if (this.value === "Karuk Tribe") transitionKaruk();
+                else transitionPassamaquoddy();
+            }
+    
+   
+ d3.selectAll(".KarukFlare")
+    .attr("visibility", 'hidden');
+  
+  d3.selectAll(".PenobscotFlare")
+    .attr("visibility", 'hidden');
+    
+  d3.selectAll(".PassamaquoddyFlare")
+    .attr("visibility", 'hidden');
+
+
+
+function transitionPenobscot() {
+ 
+  g.selectAll("path.Karuk").transition().remove();
+  g.selectAll("path.Passamaquoddy").transition().remove();
+
+        
+  g.selectAll("path.arc")
+        // .data(function(d) { return linksByOrigin[d.iata] || []; })
+        .data(function(d) {return [{source: "00V", target: "01G"},{source: "00V", target: "01G"}, {source: "00V", target: "01J"},{source: "00V", target: "01M"}, {source: "00V", target: "02A"}, {source: "00V", target: "02C"}, {source: "00V", target: "02G"}, {source: "00V", target: "03D"}, {source: "00V", target: "04M"}, {source: "00V", target: "04Y"}, {source: "00V", target: "05C"}, {source: "00V", target: "05F"}, {source: "00V", target: "05U"}, {source: "00V", target: "06A"}, {source: "00V", target: "06C"}, {source: "00V", target: "06D"}, {source: "00V", target: "06M"}, {source: "00V", target: "06N"}, {source: "00V", target: "06U"}, {source: "00V", target: "07C"}, {source: "00V", target: "07F"}, {source: "00V", target: "07G"}, {source: "00V", target: "07K"}, {source: "00V", target: "08A"}, {source: "00V", target: "08D"}, {source: "00V", target: "08K"}, {source: "00V", target: "08M"}];})
+        .enter().append("svg:path")
+        .attr("class", "Penobscot")
+        .attr("d", function(d) { return path(arc(d)); });
+  
+  d3.selectAll(".KarukFlare")
+    .attr("visibility", 'hidden');
+  
+  d3.selectAll(".PenobscotFlare")
+    .attr("visibility", 'visibile');
+    
+  d3.selectAll(".PassamaquoddyFlare")
+    .attr("visibility", 'hidden');
+ 
+}
+
+function transitionKaruk() {
+
+  g.selectAll("path.Penobscot").transition().remove();
+  g.selectAll("path.Passamaquoddy").transition().remove();
+
+        
+  g.selectAll("path.arc")
+        // .data(function(d) { return linksByOrigin[d.iata] || []; })
+        .data(function(d) {return[{source: "00M", target: "0R1"}, {source: "00M", target: "0Q5"}, {source: "00M", target: "01M"}, {source: "00M", target: "01J"}, {source: "00M", target: "04Y"}, {source: "00M", target: "05F"}, {source: "00M", target: "05C"}, {source: "00M", target: "06A"}, {source: "00M", target: "0R1"}, {source: "00M", target: "0R5"}, {source: "00M", target: "06N"}, {source: "00M", target: "0R7"}, {source: "00M", target: "06D"}, {source: "00M", target: "0S7"}, {source: "00M", target: "0S9"}];})
+        .enter().append("svg:path")
+        .attr("class", "Karuk")
+        .attr("d", function(d) { return path(arc(d)); });
+  
+  d3.selectAll(".KarukFlare")
+    .attr("visibility", 'visibile');
+  
+  d3.selectAll(".PenobscotFlare")
+    .attr("visibility", 'hidden');
+    
+  d3.selectAll(".PassamaquoddyFlare")
+    .attr("visibility", 'hidden');
+
+}
+
+function transitionPassamaquoddy() {
+
+  g.selectAll("path.Penobscot").transition().remove();
+  g.selectAll("path.Karuk").transition().remove();
+  
+  g.selectAll("path.arc")
+        // .data(function(d) { return linksByOrigin[d.iata] || []; })
+        .data(function(d) {return[{source: "00R", target: "02A"}, {source: "00R", target: "02C"}, {source: "00R", target: "04M"}, {source: "00R", target: "0O3"}, {source: "00R", target: "01G"}, {source: "00R", target: "0O4"}, {source: "00R", target: "0O5"}, {source: "00R", target: "0Q5"}, {source: "00R", target: "0Q6"}, {source: "00R", target: "0R0"}];})
+        .enter().append("svg:path")
+        .attr("class", "Passamaquoddy")
+        .attr("d", function(d) { return path(arc(d)); });
+  
+  d3.selectAll(".KarukFlare")
+    .attr("visibility", 'hidden');
+  
+  d3.selectAll(".PenobscotFlare")
+    .attr("visibility", 'hidden');
+    
+  d3.selectAll(".PassamaquoddyFlare")
+    .attr("visibility", 'visibile');
+
+}
+     
+     
+ var zoom = d3.behavior.zoom()
+        .scaleExtent([.3, 10])
+        // .translateExtent([[0,0],[w,h]])
+        .on("zoom", zoomed);
+
+  function zoomed() {
+        states.attr("transform","translate("+ 
+            d3.event.translate.join(",")+")scale("+d3.event.scale+")");
+        circles.attr("transform","translate("+ 
+            d3.event.translate.join(",")+")scale("+d3.event.scale+")");
+        g.attr("transform","translate("+ 
+            d3.event.translate.join(",")+")scale("+d3.event.scale+")");
+            
+        states.selectAll("path")  
+            .attr("d", path.projection(projection)); 
+        circles.selectAll("path")  
+            .attr("d", path.projection(projection)); 
+        g.selectAll("path.arc")  
+            // .attr("d", path.projection(projection)); 
+            .data(function(d) { return linksByOrigin[d.iata] || []; })
+      .enter().append("svg.map:path")
+      // .translate([w / 2, h / 2])
+      // .scale(scale0)
+        // .scaleExtent([scale0, 8 * scale0])
+        .attr("class", "arc")
+        .attr("d", function(d) { return path(arc(d)); });
+  } 
+     
+
+ svg.call(zoom);
+
+
+
+  });
+  
+});
+
+
+
+var tree = d3.cluster()
+    .size([height, width-200]);
+
+var stratify = d3.stratify()
+    .parentId(function(d) { return d.id.substring(0, d.id.lastIndexOf(".")); });
+
+d3.csv("shadowFlare.csv", function(error, data) {
+  if (error) throw error;
+
+  var root = stratify(data)
+      .sort(function(a, b) { return (a.height - b.height) || a.id.localeCompare(b.id); })
+      // .attr("class", function(d, i) {
+      //       console.log(d.data.value)
+      //       if (d.data.value == "5") {return "KarukFlare"}
+      //       else if (d.data.value == "7") {return "PassamaquoddyFlare"}
+      //       else if (d.data.value == "9") {return "PenobscotFlare"}
+      //       });
+
+  tree(root);
+
+  var link = g.selectAll(".link")
+      .data(root.descendants().slice(4))
+    .enter().append("path")
+      .attr("class", "link")
+      .attr("class", function(d, i) {
+            console.log(d.data.value)
+            if (d.data.value == "5") {return "KarukFlare"}
+            else if (d.data.value == "7") {return "PassamaquoddyFlare"}
+            else if (d.data.value == "9") {return "PenobscotFlare"}
+            })
+      .attr("d", function(d) {
+        return "M" + (d.y -10)+ "," + d.x
+            + "C" + (d.parent.y + 50) + "," + d.x
+            + " " + (d.parent.y + 50) + "," + d.parent.x
+            + " " + d.parent.y + "," + d.parent.x;
+      });
+
+  var node = g.selectAll(".node")
+      .data(root.descendants())
+    .enter().append("g")
+      .attr("class", function(d) { return "node" + (d.children ? " node--internal" : " node--leaf"); })
+      .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; })
+      .attr("class", function(d, i) {
+            console.log(d.data.value)
+            if (d.data.value == "5") {return "KarukFlare"}
+            else if (d.data.value == "7") {return "PassamaquoddyFlare"}
+            else if (d.data.value == "9") {return "PenobscotFlare"}
+            })
+
+  node.append("circle")
+      .attr("class", function(d) {
+            if (d.data.value == '3') {return "flarelink"}
+            else if (d.data.value == "5") {return "KarukFlare"}
+            else if (d.data.value == "7") {return "PassamaquoddyFlare"}
+            else if (d.data.value == "9") {return "PenobscotFlare"}
+      })
+      .attr("r", 3.5);
+
+  node.append("text")
+      .attr("dy", -1)
+      .attr("x", function(d) { return d.children ? -4 : 4; })
+      .style("text-anchor", function(d) { return d.children ? "end" : "start"; })
+      .attr("class", function(d) {
+            if (d.data.value == '3') {return "flarelink"}
+            else if (d.data.value == "5") {return "KarukFlare"}
+            else if (d.data.value == "7") {return "PassamaquoddyFlare"}
+            else if (d.data.value == "9") {return "PenobscotFlare"}
+      })
+      .text(function(d) { return d.id.substring(d.id.lastIndexOf(".") + 1); });
+});
+
+
+    </script>
+    
+    
+  <!--<p>Click on the buttons above to interact with the map and highlight the location of artifacts from the Karuk, Penobscot, and Passamaquoddy Communities</p>-->
+  </body>
+</html>
+
+
