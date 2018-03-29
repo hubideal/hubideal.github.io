@@ -6,17 +6,17 @@
 <style>
 h1 {
   font-family: "Open Sans", sans-serif;
-  /*text-align: left;*/
+  text-align: left;
 }
 
 h3 {
   font-family: "Open Sans", Arial, sans-serif;
-  /*text-align: left;*/
+  text-align: left;
 }
 
 h5 {
   font-family: "Open Sans", Arial, sans-serif;
-  /*text-align: left;*/
+  text-align: left;
   
 }
 
@@ -34,7 +34,7 @@ span {
   padding: 1.5px;
 }
 .title {
-  /*text-align: left;*/
+  text-align: left;
   margin-left: 10%;
   
 }
@@ -47,7 +47,7 @@ span {
 #visual {
   /*display: block;*/
   float: left;
-  /*margin-left: 8%;*/
+  margin-left: 8%;
   margin-right: auto;
   width: 60%;
   /*padding: 2%;*/
@@ -62,7 +62,7 @@ span {
 }
 
 svg {
-  display: block;
+  display: inline-block;
   margin-left: 2%;
   width: 100%;
 }
@@ -84,14 +84,10 @@ svg {
   fill: #D2EDF0;
 }
 
-.circleLabel {
-  font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  pointer-events: auto;
-}
 
 .tooltext {
   font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /*text-align: center;*/
+  text-align: center;
 }
 
 #numbers {
@@ -100,6 +96,12 @@ svg {
   margin-top: 5%;
   /*float: left;*/
   padding-left: 2em;
+}
+
+text {
+  font: 24px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+  pointer-events: none;
 }
 
 
@@ -166,10 +168,10 @@ d3.json("flareUpdate2.json", function(error, root) {
     .data(nodes)
     .enter().append("text")
     .attr("class", "circleLabel")
-    .style("font-size", function(d) { return Math.min(2 * d.r, (2 * d.r - 8) / this.getComputedTextLength() * 24) + "px"; })
-    .attr("dy", ".35em")
+    .style("font-size", function(d) { return Math.min(.5*d.r, (.5*d.r) / this.getComputedTextLength()*24) + "px"; })
+    .attr("dy", ".5em")
     .style("fill-opacity", function(d) { return d.parent === node, root ? 1 : 0; })
-    .style("display", function(d) { return d.parent === node, root ? "inline" : "none"; })
+    .style("display", function(d) { return d.parent === node, root ? "inline-block" : "none"; })
     .text(function(d) { return d.data.name;});
    
 
@@ -188,24 +190,25 @@ d3.json("flareUpdate2.json", function(error, root) {
     var transition = d3.transition()
         .duration(d3.event.altKey ? 7500 : 750)
         .tween("zoom", function(d) {
-          var i = d3.interpolateZoom(view, [focus.x, focus.y, focus.r * 2.3 + margin]);
+          var i = d3.interpolateZoom(view, [focus.x, focus.y, focus.r * 2 + margin]);
           return function(t) { zoomTo(i(t)); };
         });
 
     transition.selectAll("text")
-        .filter(function(d) { return d.parent === focus || this.style.display === "inline"; })
-        .attr('text-align','center')
-        .style("font-size", function(d) { return Math.min(2 * d.r, (2 * d.r - 8) / this.getComputedTextLength() * 24) + "px"; })
-        .attr("dy", ".35em")
+        .filter(function(d) { return d.parent === focus || this.style.display === "inline-block"; })
+        // .attr('text-align','center')
+        .style("font-size", function(d) { return Math.min(1.25*d.r, (1.25*d.r) / this.getComputedTextLength() * 24) + "px"; })
+        .attr("dy", ".5em")
         .style("fill-opacity", function(d) { return d.parent === focus, node, root ? 1 : 0; })
-        .on("start", function(d) { if (d.parent === focus, node, root) this.style.display = "inline"; })
-        .on("end", function(d) { if (d.parent === focus, node, root) this.style.display = "inline"; });
+        .on("start", function(d) { if (d.parent === focus, node, root) this.style.display = "inline-block"; })
+        .on("end", function(d) { if (d.parent === focus, node, root) this.style.display = "inline-block"; });
   }
 
   function zoomTo(v) {
     var k = diameter / v[2]; view = v;
     node.attr("transform", function(d) { return "translate(" + (d.x - v[0]) * k + "," + (d.y - v[1]) * k + ")"; });
     circle.attr("r", function(d) { return d.r * k; });
+    return
   }
   
   function hovered(hover) {
