@@ -1,0 +1,1229 @@
+<!doctype html>
+<html lang="en" ng-app>
+  <head>
+    <title>Chat Example</title>
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans|Cabin:600|Roboto|Roboto+Condensed|Cabin" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+   integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+   crossorigin=""/>
+ <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+   integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+   crossorigin="">
+   <link rel="stylesheet" href="../css/styledLayerControl.css" />
+	<script src="../src/styledLayerControl.js"></script>
+     </script>
+</head>
+<style>
+  #mapid { height: 700px; }
+  
+  .leaflet-control-layers-toggle:after{ 
+    content:"Open"; 
+    color:#000 ;
+}
+
+span {
+    font-size: 1.2em;
+    font-family: 'Fira Sans', sans-serif;
+}
+.leaflet-control-layers-toggle{ 
+    width:auto;
+    background-position:5px 50% ;
+    padding:3px;
+    padding-left:36px;
+    text-decoration:none;
+    line-height:36px;
+
+}
+.leaflet-control-layers {
+    background: rgb(220, 220, 220);
+}
+
+body {
+        background: rgb(245, 245, 245);
+    }
+    h4 {
+    font-family: Roboto, sans-serif;
+  font-size: 2.5em;
+  color: rgb(40, 40, 50);
+  padding-left: 4%;
+  padding-top: .5%;
+  padding-bottom: .5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+    }
+
+    h5 {
+    font-family: Roboto, sans-serif;
+  padding-left: 4%;
+  padding-top: .5%;
+  padding-bottom: .5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  color: rgb(40, 40, 50);
+  position: relative;
+  font-size: 1em;
+    }
+
+</style>
+   
+<body>
+<h4>
+      <div class="shadowTitle"><b>Shadow Lines</b></div>
+      Prototype III
+    </h4>
+    <h5>
+      Click the icon on the right side to interact with the map.<br>
+    </h5></div>
+  
+    <div id="mapid"></div>
+     
+     <script>
+    var mymap = L.map('mapid').setView([30.2, -70.5], 3)
+ 
+var basicMap = L.tileLayer('https://api.mapbox.com/styles/v1/hubideal/cjfpk2jka43qg2smvpf8doroe/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaHViaWRlYWwiLCJhIjoiY2o5enltdnB4MnllNTJ2cG84dHR2bWtlbiJ9.Mc95MrGOBpLnzrMap4hrLw', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18,
+    minZoom: 3,
+    id: 'mapbox.shadowlinesBase',
+    accessToken: 'pk.eyJ1IjoiaHViaWRlYWwiLCJhIjoiY2o5enltdnB4MnllNTJ2cG84dHR2bWtlbiJ9.Mc95MrGOBpLnzrMap4hrLw'
+}).addTo(mymap);
+
+var darkMap = L.tileLayer('https://api.mapbox.com/styles/v1/hubideal/cjfzu9gv90aut2rqf1q6kzj5g/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaHViaWRlYWwiLCJhIjoiY2o5enltdnB4MnllNTJ2cG84dHR2bWtlbiJ9.Mc95MrGOBpLnzrMap4hrLw', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.shadowlinesBase',
+    accessToken: 'pk.eyJ1IjoiaHViaWRlYWwiLCJhIjoiY2o5enltdnB4MnllNTJ2cG84dHR2bWtlbiJ9.Mc95MrGOBpLnzrMap4hrLw'
+});
+
+var circlePen = L.circle([44.950904, -68.652101], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 30000,
+    class: 'circleT'
+}).bindPopup("Penobscot, Penobscot County, ME").addTo(mymap);
+
+var circlePas = L.circle([45.24047, -67.590582], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 30000,
+    class: 'circleT'
+}).bindPopup("Passamaquoddy, Indian Township, ME").addTo(mymap);
+
+var circleKar = L.circle([41.791031, -123.380023], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 30000,
+    class: 'circleT'
+}).bindPopup("Karuk, Happy Camp, CA").addTo(mymap);
+
+circleKar.on('mouseover', function (e) { this.openPopup(); });
+circleKar.on('mouseout', function (e) { this.closePopup();});
+circlePas.on('mouseover', function (e) { this.openPopup(); });
+circlePas.on('mouseout', function (e) { this.closePopup();});
+circlePen.on('mouseover', function (e) { this.openPopup(); });
+circlePen.on('mouseout', function (e) { this.closePopup();});
+
+
+var circleAbbe = L.circle([44.39, -68.204722], {
+    color: 'blue',
+    fillColor: 'blue',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Abbe Museum, Bar Harbor, ME").addTo(mymap);
+
+var circleMain = L.circle([44.899652, -68.666262], {
+    color: 'blue',
+    fillColor: 'blue',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("University of Maine Hudson Museum, Orono, ME").addTo(mymap);
+
+
+var circleAmPh = L.circle([39.948753, -75.149839], {
+    color: 'blue',
+    fillColor: 'blue',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("American Philosophical Society, Philadelphia, PA").addTo(mymap);
+
+var circleFDRP = L.circle([44.874901, -66.959412], {
+    color: 'blue',
+    fillColor: 'blue',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("International FDR Park Campobello Canada, Welshpool, Canada").addTo(mymap);
+
+var circleNBru = L.circle([45.961598, -66.639397], {
+    color: 'blue',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 1000
+}).bindPopup("University of New Brunswick, Fredericton, Canada").addTo(mymap);
+
+
+var circleAMNH = L.circle([38.8913, -77.0261], {
+    color: 'blue',
+    fillColor: 'blue',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("American Museum of Natural History, New York, NY").addTo(mymap);
+
+
+var circleBosC = L.circle([42.351622, -71.049764], {
+    color: 'blue',
+    fillColor: 'blue',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Boston Children's Museum, Boston, MA").addTo(mymap);
+
+var circleBRKN = L.circle([40.671306, -73.96375], {
+    color: 'blue',
+    fillColor: 'blue',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Brooklyn Museum, Brooklyn, NY").addTo(mymap);
+
+var circlePenn = L.circle([39.949313, -75.191346], {
+    color: 'blue',
+    fillColor: 'blue',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("University of Pennsylvania, Philadelphia, PA").addTo(mymap);
+
+var circleHear = L.circle([37.8694, -122.2551], {
+    color: 'blue',
+    fillColor: 'blue',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Heard Museum, Phoenix, AZ").addTo(mymap);
+
+
+var circleBosC2 =  L.circle([42.351622, -71.049764], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Boston Children's Museum, Boston, MA").addTo(mymap);
+
+var circleBosP =  L.circle([42.521667, -70.892222], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Peabody Essex, Boston, MA").addTo(mymap);
+
+var circleHarv2 =  L.circle([42.3736, -71.1097], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Harvard University: Peabody Museum, Boston, MA").addTo(mymap);
+
+var circleAbbe2 =  L.circle([44.39, -68.204722], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Abbe Museum, Bar Harbor, ME").addTo(mymap);
+
+var circleMHud =  L.circle([44.899652, -68.666262], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("University of Maine Hudson Museum, Orono, ME").addTo(mymap);
+
+var circleMStM =  L.circle([44.3059, -69.7827], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Maine State Museum, Augusta, ME").addTo(mymap);
+
+
+var circleMHis =  L.circle([43.6568, -70.2603], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Maine Historical Society, Portland, ME").addTo(mymap);
+
+
+var circleAmPh2 =  L.circle([39.948753, -75.149839], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("American Philosophical Society, Philadelphia, PA").addTo(mymap);
+
+var circleLibC2 =  L.circle([38.8869718, -77.0046631], {
+     color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Library of Congress, Washington, D.C.").addTo(mymap);
+
+var circleSMNH2 =  L.circle([38.8913, -77.0261], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Smithsonian Institution: National Museum of Natural History, Washington, D.C.").addTo(mymap);
+
+var circleSMAI =  L.circle([38.8882, -77.0165], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Smithsonian Institution: National Museum of the American Indian, Washington, D.C.").addTo(mymap);
+
+var circleDart =  L.circle([43.703333, -72.288333], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("University Dartmouth, Hanover, NH").addTo(mymap);
+
+var circleSNAA2 =  L.circle([38.842917, -76.939766], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Smithsonian Institution: National Anthropological Archives, Washington, D.C.").addTo(mymap);
+
+
+var circleCana =  L.circle([45.429722, -75.708889], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Canadian Museum of History, Province, Canada").addTo(mymap);
+
+
+var circleUPen2 =  L.circle([39.95, -75.19], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)3',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("University of Pennsylvania, Philadelphia, PA").addTo(mymap);
+
+var circleDenv =  L.circle([39.7475, -104.9425], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Denver Museum of Nature and Science, Denver, CO").addTo(mymap);
+
+var circleFiel2 =  L.circle([41.86611, -87.61694], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Field Museum of Natural History, Chicago, IL").addTo(mymap);
+
+var circleHear2 =  L.circle([33.473542, -112.073694], {
+    color:'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Heard Museum, Phoenix, AZ").addTo(mymap);
+
+var circleDavi =  L.circle([44.389167, -69.302778], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Davistown Museum (Maine), Davidstown, ME").addTo(mymap);
+
+
+var circleColb =  L.circle([44.564167, -69.663056], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Colby College Museum of Art, Waterville, ME").addTo(mymap);
+
+
+
+var circleBate =  L.circle([44.105556, -70.204167], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Bates College, Lewistown, ME").addTo(mymap);
+
+var circleBowd =  L.circle([43.909, -69.963], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Bowdoin College, Brunswick, ME").addTo(mymap);
+
+var circleHood =  L.circle([43.702222, -72.288056], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("University Dartmouth Hood Museum, Hanover, NH").addTo(mymap);
+
+var circleFair =  L.circle([44.420167, -72.019833], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Fairbanks Museum and Planetarium, St Johnsbury, VT").addTo(mymap);
+
+
+var circleFlor =  L.circle([43.773083, 11.256222], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Florence Museum of Anthropology and Ethnology, Florence, Italy").addTo(mymap);
+
+var circleUnBC =  L.circle([49.261111, -123.253056], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("University of British Columbia, Vancouver, Canada").addTo(mymap);
+
+var circleFDRP2 =  L.circle([44.874901, -66.959412], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("International FDR Park Campobello Canada, Welshpool, Canada").addTo(mymap);
+
+var circleNBru2 =  L.circle([45.961598, -66.639397], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("University of New Brunswick, Fredericton, Canada").addTo(mymap);
+
+var circleAMNH2 =  L.circle([38.8913, -77.0261], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("American Museum of Natural History, New York, NY").addTo(mymap);
+
+var circleBRKN3 =  L.circle([40.671306, -73.96375], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Brooklyn Museum, Brooklyn, NY").addTo(mymap);
+
+var circlePenn2 =  L.circle([39.949313, -75.191], {
+    color: 'rgb(255,99,71)',
+    fillColor: 'rgb(255,99,71)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("University of Pennsylvania, Philadelphia, PA").addTo(mymap);
+
+//Karuk Circles
+var circleAutr  = L.circle([34.0522, -118.2437], {
+    color: 'rgb(153,50,204)',
+    fillColor: 'rgb(153,50,204)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Autry Museum of the American West, Los Angeles, CA").addTo(mymap);
+
+var circleBRKN2 = L.circle([40.671306, -73.96375], {
+    color: 'rgb(153,50,204)',
+    fillColor: 'rgb(153,50,204)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Brooklyn Museum, Brooklyn, NY").addTo(mymap);
+
+var circleHarv  = L.circle([42.3736, -71.1097], {
+    color: 'rgb(153,50,204)',
+    fillColor: 'rgb(153,50,204)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Harvard University: Peabody Museum, Boston, MA").addTo(mymap);
+
+var circlePeab  = L.circle([42.521667, -70.892222], {
+    color: 'rgb(153,50,204)',
+    fillColor: 'rgb(153,50,204)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Harvard University: Peabody Museum, Boston, MA").addTo(mymap);
+
+var circleLibC  = L.circle([38.8869718, -77.0046631], {
+    color: 'rgb(153,50,204)',
+    fillColor: 'rgb(153,50,204)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Library of Congress, Washington, D.C.").addTo(mymap);
+
+var circleSANA  = L.circle([38.8882, -77.0165], {
+    color: 'rgb(153,50,204)',
+    fillColor: 'rgb(153,50,204)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Smithsonian Institution: National Anthropological Archives, Washington, D.C.").addTo(mymap);
+
+var circleSMNH  = L.circle([38.8913, -77.0261], {
+    color: 'rgb(153,50,204)',
+    fillColor: 'rgb(153,50,204)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Smithsonian Institution: National Museum of Natural History, Washington, D.C.").addTo(mymap);
+
+var circleSNAA  = L.circle([38.842917, -76.939766], {
+    color: 'rgb(153,50,204)',
+    fillColor: 'rgb(153,50,204)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Smithsonian Institution: National Anthropological Archives, Washington, D.C.").addTo(mymap);
+
+var circleFiel  = L.circle([41.86611, -87.61694], {
+    color: 'rgb(153,50,204)',
+    fillColor: 'rgb(153,50,204)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Field Museum of Natural History, Chicago, IL").addTo(mymap);
+
+var circleMMA   = L.circle([40.77891, -73.96367], {
+    color: 'rgb(153,50,204)',
+    fillColor: 'rgb(153,50,204)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Metropolitan Museum of Art, New York, NY").addTo(mymap);
+
+var circleUPen  = L.circle([39.95, -75.19], {
+    color: 'rgb(153,50,204)',
+    fillColor: 'rgb(153,50,204)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("University of Pennsylvania, Philadelphia, PA").addTo(mymap);
+
+var circleCalI  = L.circle([38.448611, -122.704722], {
+    color: 'rgb(153,50,204)',
+    fillColor: 'rgb(153,50,204)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("California Indian Museum and Cultural Center, Santa Rosa, CA").addTo(mymap);
+
+var circleClar  = L.circle([40.803611, -124.166389], {
+    color: 'rgb(153,50,204)',
+    fillColor: 'rgb(153,50,204)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Clarke Historical Museum, Eureka, CA").addTo(mymap);
+
+var circleHumb  = L.circle([52.518056, 13.393333], {
+    color: 'rgb(153,50,204)',
+    fillColor: 'rgb(153,50,204)',
+    fillOpacity: 0.5,
+    radius: 5000
+}).bindPopup("Humbolt University, Berlin, Germany").addTo(mymap);
+
+
+circleAbbe.on('mouseover', function (e) { this.openPopup();});
+circleMain.on('mouseover', function (e) { this.openPopup();});
+circleAmPh.on('mouseover', function (e) { this.openPopup();});
+circleFDRP.on('mouseover', function (e) { this.openPopup();});
+circleNBru.on('mouseover', function (e) { this.openPopup();});
+circleAMNH.on('mouseover', function (e) { this.openPopup();});
+circleBosC.on('mouseover', function (e) { this.openPopup();});
+circleBRKN.on('mouseover', function (e) { this.openPopup();});
+circlePenn.on('mouseover', function (e) { this.openPopup();});
+circleHear.on('mouseover', function (e) { this.openPopup();});
+circleAutr.on('mouseover', function (e) { this.openPopup();});
+circleBRKN2.on('mouseover', function (e) { this.openPopup();}); 
+circleHarv.on('mouseover', function (e) { this.openPopup();}); 
+circlePeab.on('mouseover', function (e) { this.openPopup();}); 
+circleLibC.on('mouseover', function (e) { this.openPopup();}); 
+circleSANA.on('mouseover', function (e) { this.openPopup();}); 
+circleSMNH.on('mouseover', function (e) { this.openPopup();}); 
+circleSNAA.on('mouseover', function (e) { this.openPopup();}); 
+circleFiel.on('mouseover', function (e) { this.openPopup();}); 
+circleMMA.on('mouseover', function (e) { this.openPopup();}); 
+circleUPen.on('mouseover', function (e) { this.openPopup();}); 
+circleCalI.on('mouseover', function (e) { this.openPopup();}); 
+circleClar.on('mouseover', function (e) { this.openPopup();}); 
+circleHumb.on('mouseover', function (e) { this.openPopup();}); 
+circleBosC2.on('mouseover', function (e) { this.openPopup();});
+circleBosP.on('mouseover', function (e) { this.openPopup();}); 
+circleHarv2.on('mouseover', function (e) { this.openPopup();});
+circleAbbe2.on('mouseover', function (e) { this.openPopup();});
+circleMHud.on('mouseover', function (e) { this.openPopup();});
+circleMStM.on('mouseover', function (e) { this.openPopup();}); 
+circleMHis.on('mouseover', function (e) { this.openPopup();}); 
+circleAmPh2.on('mouseover', function (e) { this.openPopup();});
+circleLibC2.on('mouseover', function (e) { this.openPopup();});
+circleSMNH2.on('mouseover', function (e) { this.openPopup();});
+circleSMAI.on('mouseover', function (e) { this.openPopup();}); 
+circleDart.on('mouseover', function (e) { this.openPopup();}); 
+circleSNAA2.on('mouseover', function (e) { this.openPopup();});
+circleCana.on('mouseover', function (e) { this.openPopup();}); 
+circleUPen2.on('mouseover', function (e) { this.openPopup();});
+circleDenv.on('mouseover', function (e) { this.openPopup();}); 
+circleFiel2.on('mouseover', function (e) { this.openPopup();});
+circleHear2.on('mouseover', function (e) { this.openPopup();});
+circleDavi.on('mouseover', function (e) { this.openPopup();}); 
+circleColb.on('mouseover', function (e) { this.openPopup();}); 
+circleBate.on('mouseover', function (e) { this.openPopup();}); 
+circleBowd.on('mouseover', function (e) { this.openPopup();}); 
+circleHood.on('mouseover', function (e) { this.openPopup();}); 
+circleFair.on('mouseover', function (e) { this.openPopup();}); 
+circleFlor.on('mouseover', function (e) { this.openPopup();}); 
+circleUnBC.on('mouseover', function (e) { this.openPopup();}); 
+circleFDRP2.on('mouseover', function (e) { this.openPopup();});
+circleNBru2.on('mouseover', function (e) { this.openPopup();});
+circleAMNH2.on('mouseover', function (e) { this.openPopup();});
+circleBRKN3.on('mouseover', function (e) { this.openPopup();});
+circlePenn2.on('mouseover', function (e) { this.openPopup();});
+circleAbbe.on('mouseout', function (e) { this.closePopup();});
+circleMain.on('mouseout', function (e) { this.closePopup();});
+circleAmPh.on('mouseout', function (e) { this.closePopup();});
+circleFDRP.on('mouseout', function (e) { this.closePopup();});
+circleNBru.on('mouseout', function (e) { this.closePopup();});
+circleAMNH.on('mouseout', function (e) { this.closePopup();});
+circleBosC.on('mouseout', function (e) { this.closePopup();});
+circleBRKN.on('mouseout', function (e) { this.closePopup();});
+circlePenn.on('mouseout', function (e) { this.closePopup();});
+circleHear.on('mouseout', function (e) { this.closePopup();});
+circleAutr.on('mouseout', function (e) { this.closePopup();});
+circleBRKN2.on('mouseout', function (e) { this.closePopup();}); 
+circleHarv.on('mouseout', function (e) { this.closePopup();}); 
+circlePeab.on('mouseout', function (e) { this.closePopup();}); 
+circleLibC.on('mouseout', function (e) { this.closePopup();}); 
+circleSANA.on('mouseout', function (e) { this.closePopup();}); 
+circleSMNH.on('mouseout', function (e) { this.closePopup();}); 
+circleSNAA.on('mouseout', function (e) { this.closePopup();}); 
+circleFiel.on('mouseout', function (e) { this.closePopup();}); 
+circleMMA.on('mouseout', function (e) { this.closePopup();}); 
+circleUPen.on('mouseout', function (e) { this.closePopup();}); 
+circleCalI.on('mouseout', function (e) { this.closePopup();}); 
+circleClar.on('mouseout', function (e) { this.closePopup();}); 
+circleHumb.on('mouseout', function (e) { this.closePopup();}); 
+circleBosC2.on('mouseout', function (e) { this.closePopup();});
+circleBosP.on('mouseout', function (e) { this.closePopup();}); 
+circleHarv2.on('mouseout', function (e) { this.closePopup();});
+circleAbbe2.on('mouseout', function (e) { this.closePopup();});
+circleMHud.on('mouseout', function (e) { this.closePopup();});
+circleMStM.on('mouseout', function (e) { this.closePopup();}); 
+circleMHis.on('mouseout', function (e) { this.closePopup();}); 
+circleAmPh2.on('mouseout', function (e) { this.closePopup();});
+circleLibC2.on('mouseout', function (e) { this.closePopup();});
+circleSMNH2.on('mouseout', function (e) { this.closePopup();});
+circleSMAI.on('mouseout', function (e) { this.closePopup();}); 
+circleDart.on('mouseout', function (e) { this.closePopup();}); 
+circleSNAA2.on('mouseout', function (e) { this.closePopup();});
+circleCana.on('mouseout', function (e) { this.closePopup();}); 
+circleUPen2.on('mouseout', function (e) { this.closePopup();});
+circleDenv.on('mouseout', function (e) { this.closePopup();}); 
+circleFiel2.on('mouseout', function (e) { this.closePopup();});
+circleHear2.on('mouseout', function (e) { this.closePopup();});
+circleDavi.on('mouseout', function (e) { this.closePopup();}); 
+circleColb.on('mouseout', function (e) { this.closePopup();}); 
+circleBate.on('mouseout', function (e) { this.closePopup();}); 
+circleBowd.on('mouseout', function (e) { this.closePopup();}); 
+circleHood.on('mouseout', function (e) { this.closePopup();}); 
+circleFair.on('mouseout', function (e) { this.closePopup();}); 
+circleFlor.on('mouseout', function (e) { this.closePopup();}); 
+circleUnBC.on('mouseout', function (e) { this.closePopup();}); 
+circleFDRP2.on('mouseout', function (e) { this.closePopup();});
+circleNBru2.on('mouseout', function (e) { this.closePopup();});
+circleAMNH2.on('mouseout', function (e) { this.closePopup();});
+circleBRKN3.on('mouseout', function (e) { this.closePopup();});
+circlePenn2.on('mouseout', function (e) { this.closePopup();});
+
+var pointPas = new L.LatLng(45.24047, -67.590582);
+var pointKar = new L.LatLng(41.791031, -123.380023);
+var pointPen = new L.LatLng(44.950904, -68.652101);
+
+// Passmaquoddy Institutions
+var pointAbbe = new L.LatLng(44.39, -68.204722);
+var pointMain = new L.LatLng(44.899652, -68.666262);
+var pointAmPh = new L.LatLng(39.948753, -75.149839);
+var pointFDRP = new L.LatLng(44.874901, -66.959412);
+var pointNBru = new L.LatLng(45.961598, -66.639397);
+var pointAMNH = new L.LatLng(38.8913, -77.0261);
+var pointBosC = new L.LatLng(42.351622, -71.049764);
+var pointBRKN = new L.LatLng(40.671306, -73.96375);
+var pointPenn = new L.LatLng(39.949313, -75.191346);
+var pointHear = new L.LatLng(37.8694, -122.2551);
+
+// Karuk Institutions
+var pointAutr = new L.LatLng(34.0522, -118.2437);
+var pointBRKN2 = new L.LatLng(40.671306, -73.96375);
+var pointHarv = new L.LatLng(42.3736, -71.1097);
+var pointPeab = new L.LatLng(42.521667, -70.892222);
+var pointLibC = new L.LatLng(38.8869718, -77.0046631);
+var pointSANA = new L.LatLng(38.8882, -77.0165);
+var pointSMNH = new L.LatLng(38.8913, -77.0261);
+var pointSNAA = new L.LatLng(38.842917, -76.939766);
+var pointFiel = new L.LatLng(41.86611, -87.61694);
+var pointMMA = new L.LatLng(40.77891, -73.96367);
+var pointUPen = new L.LatLng(39.95, -75.19);
+var pointCalI = new L.LatLng(38.448611, -122.704722);
+var pointClar = new L.LatLng(40.803611, -124.166389);
+var pointHumb = new L.LatLng(52.518056, 13.393333);
+
+
+// Penobscot Institutions
+var pointBosC2 = new L.LatLng(42.351622, -71.049764);
+var pointBosP = new L.LatLng(42.521667, -70.892222);
+var pointHarv2 = new L.LatLng(42.3736, -71.1097);
+var pointAbbe2 = new L.LatLng(44.39, -68.204722);
+var pointMHud = new L.LatLng(44.899652, -68.666262);
+var pointMStM = new L.LatLng(44.3059, -69.7827);
+var pointMHis = new L.LatLng(43.6568, -70.2603);
+var pointAmPh2 = new L.LatLng(39.948753, -75.149839);
+var pointLibC2 = new L.LatLng(38.8869718, -77.0046631);
+var pointSMNH2 = new L.LatLng(38.8913, -77.0261);
+var pointSMAI = new L.LatLng(38.8882, -77.0165);
+var pointDart = new L.LatLng(43.703333, -72.288333);
+var pointSNAA2 = new L.LatLng(38.842917, -76.939766);
+var pointCana = new L.LatLng(45.429722, -75.708889);
+var pointUPen2 = new L.LatLng(39.95, -75.19);
+var pointDenv = new L.LatLng(39.7475, -104.9425);
+var pointFiel2 = new L.LatLng(41.86611, -87.61694);
+var pointHear2 = new L.LatLng(33.473542, -112.073694);
+var pointDavi = new L.LatLng(44.389167, -69.302778);
+var pointColb = new L.LatLng(44.564167, -69.663056);
+var pointBate = new L.LatLng(44.105556, -70.204167);
+var pointBowd = new L.LatLng(43.909, -69.963);
+var pointHood = new L.LatLng(43.702222, -72.288056);
+var pointFair = new L.LatLng(44.420167, -72.019833);
+var pointFlor = new L.LatLng(43.773083, 11.256222);
+var pointUnBC = new L.LatLng(49.261111, -123.253056);
+var pointFDRP2 = new L.LatLng(44.874901, -66.959412);
+var pointNBru2 = new L.LatLng(45.961598, -66.639397);
+var pointAMNH2 = new L.LatLng(38.8913, -77.0261);
+var pointBRKN3 = new L.LatLng(40.671306, -73.96375);
+var pointPenn2 = new L.LatLng(39.949313, -75.191346);
+
+
+
+//Penobscott Lines
+var pointPeno1 = [pointPen, pointBosC2];
+var pointPeno2 = [pointPen, pointBosP];
+var pointPeno3 = [pointPen, pointHarv2];
+var pointPeno4 = [pointPen, pointAbbe2];
+var pointPeno5 = [pointPen, pointMHud];
+var pointPeno6 = [pointPen, pointMStM];
+var pointPeno7 = [pointPen, pointMHis];
+var pointPeno8 = [pointPen, pointAmPh2];
+var pointPeno9 = [pointPen, pointLibC2];
+var pointPeno10 = [pointPen, pointSMNH2];
+var pointPeno11 = [pointPen, pointSMAI];
+var pointPeno12 = [pointPen, pointDart];
+var pointPeno13 = [pointPen, pointSNAA2];
+var pointPeno14 = [pointPen, pointCana];
+var pointPeno15 = [pointPen, pointUPen2];
+var pointPeno16 = [pointPen, pointDenv];
+var pointPeno17 = [pointPen, pointFiel2];
+var pointPeno18 = [pointPen, pointHear2];
+var pointPeno19 = [pointPen, pointDavi];
+var pointPeno20 = [pointPen, pointColb];
+var pointPeno21 = [pointPen, pointBate];
+var pointPeno22 = [pointPen, pointBowd];
+var pointPeno23 = [pointPen, pointFair];
+var pointPeno24 = [pointPen, pointFlor];
+var pointPeno25 = [pointPen, pointUnBC];
+var pointPeno26 = [pointPen, pointFDRP2];
+var pointPeno27 = [pointPen, pointNBru2];
+var pointPeno28 = [pointPen, pointAMNH2];
+var pointPeno29 = [pointPen, pointBRKN3];
+var pointPeno30 = [pointPen, pointPenn2];
+
+var penopolyline1 = L.polyline(pointPeno1, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline2 = L.polyline(pointPeno2, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline3 = L.polyline(pointPeno3, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline4 = L.polyline(pointPeno4, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline5 = L.polyline(pointPeno5, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline5 = L.polyline(pointPeno5, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline6 = L.polyline(pointPeno6, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline7 = L.polyline(pointPeno7, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline8 = L.polyline(pointPeno8, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline9 = L.polyline(pointPeno9, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline10 = L.polyline(pointPeno10, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline11 = L.polyline(pointPeno11, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline12 = L.polyline(pointPeno12, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline13 = L.polyline(pointPeno13, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline14 = L.polyline(pointPeno14, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline15 = L.polyline(pointPeno15, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline16 = L.polyline(pointPeno16, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline17 = L.polyline(pointPeno17, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline18 = L.polyline(pointPeno18, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline19 = L.polyline(pointPeno19, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline20 = L.polyline(pointPeno20, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline21 = L.polyline(pointPeno21, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline22 = L.polyline(pointPeno22, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline23 = L.polyline(pointPeno23, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline24 = L.polyline(pointPeno24, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline25 = L.polyline(pointPeno25, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline26 = L.polyline(pointPeno26, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline27 = L.polyline(pointPeno27, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline28 = L.polyline(pointPeno28, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+
+var penopolyline29 = L.polyline(pointPeno29, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var penopolyline30 = L.polyline(pointPeno30, {
+    color: 'rgb(255,127,80)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+penopolyline1.addTo(mymap);    
+penopolyline2.addTo(mymap);    
+penopolyline3.addTo(mymap);
+penopolyline4.addTo(mymap);
+penopolyline5.addTo(mymap);
+penopolyline6.addTo(mymap);
+penopolyline7.addTo(mymap);
+penopolyline8.addTo(mymap);
+penopolyline9.addTo(mymap);
+penopolyline10.addTo(mymap);
+penopolyline11.addTo(mymap);
+penopolyline12.addTo(mymap);
+penopolyline13.addTo(mymap);
+penopolyline14.addTo(mymap);
+penopolyline15.addTo(mymap);
+penopolyline16.addTo(mymap);
+penopolyline17.addTo(mymap);
+penopolyline18.addTo(mymap);
+penopolyline19.addTo(mymap);
+penopolyline20.addTo(mymap);
+penopolyline21.addTo(mymap);
+penopolyline22.addTo(mymap);
+penopolyline23.addTo(mymap);
+penopolyline24.addTo(mymap);
+penopolyline25.addTo(mymap);
+penopolyline26.addTo(mymap);
+penopolyline27.addTo(mymap);
+penopolyline28.addTo(mymap);
+penopolyline29.addTo(mymap);
+penopolyline30.addTo(mymap);
+
+
+
+// Karuk Lines
+var pointKaru1 = [pointKar, pointAutr];
+var pointKaru2 = [pointKar, pointBRKN2];
+var pointKaru3 = [pointKar, pointHarv];
+var pointKaru4 = [pointKar, pointPeab]; 
+var pointKaru5 = [pointKar, pointLibC]; 
+var pointKaru6 = [pointKar, pointSANA]; 
+var pointKaru7 = [pointKar, pointSMNH]; 
+var pointKaru8 = [pointKar, pointSNAA]; 
+var pointKaru9 = [pointKar, pointFiel]; 
+var pointKaru10= [pointKar, pointMMA];
+var pointKaru11= [pointKar, pointUPen]; 
+var pointKaru12= [pointKar, pointCalI]; 
+var pointKaru13= [pointKar, pointClar];
+var pointKaru14= [pointKar, pointHumb];
+
+var karupolyline1  = L.polyline(pointKaru1, {
+    color: 'rgb(153,50,204)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var karupolyline2  = L.polyline(pointKaru2, {
+    color: 'rgb(153,50,204)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var karupolyline3  = L.polyline(pointKaru3, {
+    color: 'rgb(153,50,204)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var karupolyline4  = L.polyline(pointKaru4, {
+    color: 'rgb(153,50,204)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+var karupolyline5  = L.polyline(pointKaru5, {
+    color: 'rgb(153,50,204)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+var karupolyline6  = L.polyline(pointKaru6, {
+    color: 'rgb(153,50,204)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+var karupolyline7  = L.polyline(pointKaru7, {
+    color: 'rgb(153,50,204)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+var karupolyline8  = L.polyline(pointKaru8, {
+    color: 'rgb(153,50,204)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+var karupolyline9  = L.polyline(pointKaru9, {
+    color: 'rgb(153,50,204)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+var karupolyline10 = L.polyline(pointKaru10, {
+    color: 'rgb(153,50,204)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+var karupolyline11 = L.polyline(pointKaru11, {
+    color: 'rgb(153,50,204)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+var karupolyline12 = L.polyline(pointKaru12, {
+    color: 'rgb(153,50,204)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+var karupolyline13 = L.polyline(pointKaru13, {
+    color: 'rgb(153,50,204)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+var karupolyline14  = L.polyline(pointKaru14, {
+    color: 'rgb(153,50,204)',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+karupolyline1.addTo(mymap);
+karupolyline2.addTo(mymap);
+karupolyline3.addTo(mymap);
+karupolyline4.addTo(mymap);
+karupolyline5.addTo(mymap);
+karupolyline6.addTo(mymap);
+karupolyline7.addTo(mymap);
+karupolyline8.addTo(mymap);
+karupolyline9.addTo(mymap);
+karupolyline10.addTo(mymap);
+karupolyline11.addTo(mymap);
+karupolyline12.addTo(mymap);
+karupolyline13.addTo(mymap);
+karupolyline14.addTo(mymap);
+
+//Passmaquoddy Lines
+var pointPass1 = [pointPas, pointAbbe];
+var pointPass2 = [pointPas, pointMain];
+var pointPass3 = [pointPas, pointAmPh];
+var pointPass4 = [pointPas, pointFDRP];
+var pointPass5 = [pointPas, pointNBru];
+var pointPass6 = [pointPas, pointAMNH];
+var pointPass7 = [pointPas, pointBosC];
+var pointPass8 = [pointPas, pointBRKN];
+var pointPass9 = [pointPas, pointPenn];
+var pointPass10 = [pointPas, pointHear];
+
+
+var passpolyline1 = L.polyline(pointPass1, {
+    color: 'blue',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+var passpolyline2 = L.polyline(pointPass2, {
+    color: 'blue',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+var passpolyline3 = L.polyline(pointPass3, {
+    color: 'blue',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+var passpolyline4 = L.polyline(pointPass4, {
+    color: 'blue',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+var passpolyline5 = L.polyline(pointPass5, {
+    color: 'blue',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+var passpolyline6 = L.polyline(pointPass6, {
+    color: 'blue',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+var passpolyline7 = L.polyline(pointPass7, {
+    color: 'blue',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+var passpolyline8 = L.polyline(pointPass8, {
+    color: 'blue',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+var passpolyline9 = L.polyline(pointPass9, {
+    color: 'blue',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+var passpolyline10 = L.polyline(pointPass10, {
+    color: 'blue',
+    weight: 3,
+    opacity: 0.5,
+    smoothFactor: 1
+});
+
+passpolyline1.addTo(mymap);
+passpolyline2.addTo(mymap);    
+passpolyline3.addTo(mymap);    
+passpolyline4.addTo(mymap);
+passpolyline5.addTo(mymap);
+passpolyline6.addTo(mymap);
+passpolyline7.addTo(mymap);
+passpolyline8.addTo(mymap);
+passpolyline9.addTo(mymap);
+passpolyline10.addTo(mymap);
+
+//Adding Interactions
+
+var passlines = L.layerGroup([passpolyline1, passpolyline2, passpolyline3, passpolyline4, passpolyline5, passpolyline6, passpolyline7, passpolyline8, passpolyline9, passpolyline10, circleAbbe, circleMain, circleAmPh, circleFDRP, circleNBru, circleAMNH, circleBosC, circleBRKN, circlePenn, circleHear]);
+
+var karulines = L.layerGroup([karupolyline1, karupolyline2, karupolyline3, karupolyline4, karupolyline5, karupolyline6, karupolyline7, karupolyline8, karupolyline9, karupolyline10, karupolyline11, karupolyline12, karupolyline13, karupolyline14, circleAutr, circleBRKN2, circleHarv, circlePeab, circleLibC, circleSANA, circleSMNH, circleSNAA, circleFiel, circleMMA, circleHumb, circleUPen, circleCalI, circleClar]);
+
+var penolines = L.layerGroup([penopolyline1, penopolyline2, penopolyline3, penopolyline4, penopolyline5, penopolyline6, penopolyline7, penopolyline8, penopolyline9, penopolyline10, penopolyline11, penopolyline12, penopolyline13, penopolyline14, penopolyline15, penopolyline16, penopolyline17, penopolyline18, penopolyline19, penopolyline20, penopolyline21, penopolyline22, penopolyline23, penopolyline24, penopolyline25, penopolyline26, penopolyline27, penopolyline28, penopolyline29, penopolyline30, circleBosC2, circleBosP, circleHarv2, circleAbbe2 , circleMHud, circleMStM , circleMHis , circleAmPh2, circleLibC2, circleSMNH2, circleSMAI, circleDart, circleSNAA2, circleCana, circleUPen2, circleDenv, circleFiel2, circleHear2, circleDavi, circleColb, circleBate, circleBowd , circleHood, circleFair, circleFlor , circleUnBC, circleFDRP2, circleNBru2, circleAMNH2, circleBRKN3, circlePenn2]);
+
+var cities = L.layerGroup([circleKar, circlePas, circlePen]);
+
+//var lines = L.layerGroup([firstpolyline, secondpolyline]);
+
+var allMarks = L.layerGroup([passpolyline1, passpolyline2, passpolyline3, passpolyline4, passpolyline5, passpolyline6, passpolyline7, passpolyline8, passpolyline9, passpolyline10, circleAbbe, circleMain, circleAmPh, circleFDRP, circleNBru, circleAMNH, circleBosC, circleBRKN, circlePenn, circleHear, circleKar, circlePas, circlePen
+]);
+
+var baseMaps = {
+    "<span>Basic Map</span>": basicMap,
+    "<span>Black & Grey</span>": darkMap 
+};
+
+var overlayMaps = {
+    // "line": lines,
+    '<span>Passmaquoddy</span>': passlines,
+    '<span>Karuk</span>': karulines,
+    '<span>Penobscot</span>': penolines
+    };
+
+L.control.layers(baseMaps, overlayMaps).addTo(mymap);
+
+    </script> 
+</body>
+
+
+</html>
