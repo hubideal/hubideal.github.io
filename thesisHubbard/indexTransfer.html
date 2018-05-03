@@ -133,6 +133,22 @@ div.dvCluster {
 }
 
 
+/*.aside-2 {*/
+/*  background: rgb(42, 42, 42);*/
+/*  flex: .02;*/
+/*  flex-direction: column;*/
+/*  display: flex;  */
+/*  flex-flow: row wrap;*/
+  
+/*}*/
+
+
+
+/*#plot {*/
+/*        width: 70%;*/
+/*        text-align: center;*/
+/*    }*/
+
 article {
   display: flex;
   flex-direction: column;
@@ -156,11 +172,6 @@ article {
   display: none;
   font-size: 1.3em;
 }
-.oButton {
-  margin-left: 85%;
-  margin-top: 3%;
-  position: relative;
-}
 
 #overlay {
     font-family: 'Roboto', sans-serif;
@@ -173,7 +184,7 @@ article {
     left: 1%;
     right: 1%;
     bottom: 1%;
-    background-color: rgba(32, 32, 32,.99); /* Black background with opacity */
+    background-color: rgba(42, 42, 42,.98); /* Black background with opacity */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
   transition: .3s ease;
@@ -446,10 +457,10 @@ d3.selectAll("input")
     .on("click", changed);
     
 function changed() {
-    if (this.value === "Finding Patterns") newBoxSpiral();
+    if (this.value === "Box Plot") newBoxSpiral();
     else if (this.value === "About") infoBox();
-    else if (this.value === "Making New Patterns") NewDots();
-    else if (this.value === "Machine Learning") scatterPlot();
+    else if (this.value === "Spiral Plot") NewDots();
+    else if (this.value === "Scatter Plot") scatterPlot();
     else if (this.value === "Pedagogy Domain") Cluster5();
             }
 
@@ -594,75 +605,35 @@ svg.selectAll('text')
       
  svg.append("text")
         .attr("x", (width*.92))             
-        .attr("y", (margin.top / 2))
+        .attr("y", (margin.top / 1.75))
         .attr("text-anchor", "left")  
         .attr('class', "pedagogy")
         .style("font-size", "1.5em") 
         .style('opacity', 1)
         .style('fill', 'rgb(225,225,225)')
-        .transition()
-        .duration(3000)
         .text("PEDAGOGY");
 
 svg.append("text")
         .attr("x", (width*.38))             
-        .attr("y", (margin.top / 2))
+        .attr("y", (margin.top / 1.55))
         .attr("text-anchor", "left")  
-        .attr('class', "pedagogy")
+        .attr('class', "learning")
         .style("font-size", "1.5em") 
         .style('fill', 'rgb(225,225,225)')
         .style('opacity', 1)
-        .transition()
-        .duration(3000)
         .text("MATH");
 
 svg.append("text")
         .attr("x", (0))             
-        .attr("y", (margin.top*5.5))
+        .attr("y", (margin.top*6.5))
         .attr("text-anchor", "left")  
-        .attr('class', "pedagogy")
+        .attr('class', "learning")
         .style("font-size", "1.5em") 
         .style('fill', 'rgb(225,225,225)')
         .style('opacity', 1)
         .transition()
-        .duration(3000)
+        .duration(1000)
         .text("LEARNING");
-
-svg.append("text")
-        .attr("x", (width*.42))             
-        .attr("y", (margin.top*5.8))
-        .attr("text-anchor", "left")  
-        .attr('class', "pedagogy")
-        .style("font-size", "1.5em") 
-        .style('fill', 'rgb(225,225,225)')
-        .style('opacity', 1)
-        .transition()
-        .duration(3000)
-        .text("SCIENCE");
-
-svg.append("text")
-        .attr("x", (width*.95))             
-        .attr("y", (margin.top*5))
-        .attr("text-anchor", "left")  
-        .attr('class', "pedagogy")
-        .style("font-size", "1.5em") 
-        .style('fill', 'rgb(225,225,225)')
-        .style('opacity', 1)
-        .transition()
-        .duration(3000)
-        .text("LEADERSHIP");
-
-svg.append("text")
-        .attr("x", (width*.78))             
-        .attr("y", (margin.top*4.2))
-        .attr("text-anchor", "left")  
-        .attr('class', "pedagogy")
-        .style("font-size", "1.5em") 
-        .style('fill', 'rgb(225,225,225)')
-        .style('opacity', 1)
-        .transition()
-        .duration(3000)
-        .text("QUALITY");
   
   d3.selectAll("input")
     .on("mouseover", NewDots)
@@ -945,10 +916,7 @@ function withdrawSt() {
 });
 </script>
 <container id="overlay">
-  <button type="button" class="oButton" onclick="off()" aria-label="Close">
-  <span aria-hidden="true">&times;</span>
-</button>
-<div id="carouselExampleControls" class="carousel slide" data-interval="false" data-ride="carousel">
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
       <!--<div class='slide1'><h3>Patterns of Professional Identity in STEM Education</h3>-->
@@ -966,36 +934,41 @@ function withdrawSt() {
       <!--</div>-->
       <img class="d-block img-fluid" src="slide2PPISE.png" alt="Second slide">
     </div>
-    <div class="carousel-item"><img class="d-block img-fluid" src="slide3PPISE.png" alt="Third slide">
-      
-    </div>
-    <div class="carousel-item"><img class="d-block img-fluid" src="slide4PPISE.png" alt="Fourth slide">
-      
+    <div class="carousel-item">
+      <div class='slide3'><h3>Seven Patterns of Professional Identity</h3>
+      <p>Pedagogy</p>
+      <p>Science</p>
+      <p>Math</p>
+      <p>Quality</p>
+      <p>Learning</p>
+      <p>Networking</p>
+      <p>Leadership</p>
+      </div>
+      <!--<img class="d-block img-fluid" src="cuban_street.jpeg" alt="Third slide">-->
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
+  <!--<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">-->
+  <!--  <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+  <!--  <span class="sr-only">Previous</span>-->
+  <!--</a>-->
   <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
 </div>
-<!--<button class="oButton" onclick="off()">Enter</button>-->
-</container>
+<button class="oButton" onclick="off()">Enter</button></container>
 <div class="wrapper">
   <aside class = "aside-1">
   <h4 id="title">Patterns of Professional Identity <br> in STEM Education</h4>
   <div class="w3-sidebar w3-bar-block" style="width:25%"> 
     <div class="w3-bar-item w3-button">
-      <label><input type="button" name="mode" value="Finding Patterns" autofocus class='buttonStyle'></label>
+      <label><input type="button" name="mode" value="Box Plot" autofocus class='buttonStyle'></label>
     </div>
     <div class="w3-bar-item w3-button">
-      <label><input type="button" name="mode" value="Machine Learning" autofocus class='buttonStyle'></label>
+      <label><input type="button" name="mode" value="Scatter Plot" autofocus class='buttonStyle'></label>
     </div>
     <div class="w3-bar-item w3-button" class='buttonStyle'>
-    <label><input type="button" name="mode" value="Making New Patterns" autofocus class='buttonStyle'></label></a>
+    <label><input type="button" name="mode" value="Spiral Plot" autofocus class='buttonStyle'></label></a>
     </div>
     <div class="w3-bar-item w3-button" class='buttonStyle' class="dropdown">
       <label id='cl5button'><input type="button" name="mode" value="Pedagogy Domain" autofocus onclick="myFunction()" class="dropbtn" ></label>
@@ -1031,10 +1004,10 @@ function withdrawSt() {
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
  <script>
     $('#carouselExampleControls').on('slide.bs.carousel', function () {
- 
-  $('container').css('background-color','rgba(32, 32, 32,.99)');
+  console.log(this);
+  
+  $('container').css('background-color','rgba(42, 42, 42,.95)');
 });
-
   </script>
 </body>
 
