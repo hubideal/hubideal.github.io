@@ -147,6 +147,7 @@ article {
 }
 #aboutButton{
   background-color: rgb(42,42,42);
+  text-align: left;
   margin:0;
   padding:0;
 }
@@ -190,9 +191,10 @@ article {
 }
 .oButton {
   margin-left: 85%;
-  /*margin-top: 50%;*/
-  opacity: .3;
-  position: relative;
+  margin-top: 5%;
+  opacity: .2;
+  z-index: 3;
+  position: fixed;
 }
 #overlay {
     font-family: 'Roboto', sans-serif;
@@ -291,6 +293,7 @@ article {
       
       .carousel-item {
         /*width: 100px;*/
+        height: 50em;
         /*position: absolute;*/
         left: 20%;
       }
@@ -301,7 +304,7 @@ article {
        .carousel-item img {
         /*transform: translateX(10%);*/
         transform: translateY(10%);
-        height: 40em;
+        height: 42em;
       }
 .pedagogy {
   font-family: 'Roboto Slab', serif;
@@ -615,7 +618,7 @@ d3.selectAll("input")
     
 function changed() {
     if (this.value === "Finding Patterns") newBoxSpiral();
-    else if (this.value === "About     ") infoBox();
+    else if (this.value === "About") infoBox();
     else if (this.value === "Making New Patterns") NewDots();
     else if (this.value === "Machine Learning") scatterPlot();
     else if (this.value === "Pedagogy Pattern") Cluster5();
@@ -4335,7 +4338,11 @@ function engagement() {
 });
 </script>
 <container id="overlay">
+  <button type="button" class="oButton" onclick="off()" aria-label="Close">
+  <span aria-hidden="true">X</span>
+</button>
 <div id="carouselExampleControls" class="carousel slide" data-interval="false" data-ride="carousel">
+
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
       <!--<div class='slide1'><h3>Patterns of Professional Identity in STEM Education</h3>-->
@@ -4369,9 +4376,6 @@ function engagement() {
     <span class="sr-only">Next</span>
   </a>
 </div>
-<button type="button" class="oButton" onclick="off()" aria-label="Close">
-  <span aria-hidden="true">&times;</span>
-</button>
 </container>
 <div class="wrapper">
   <aside class = "aside-1">
@@ -4390,7 +4394,7 @@ function engagement() {
     
     <!--PedagogyButtons-->
     <div class="w3-bar-item w3-button" class='buttonStyle' class="dropdown">
-      <label id='cl5button'><input type="button" name="mode" value="Pedagogy Pattern" autofocus onclick="myFunction()" class="dropbtn" ></label>
+      <label id='cl5button'><input type="button" name="mode" value="Pedagogy Pattern" autofocus onmouseover="myFunction()" class="dropbtn" ></label>
       <div id="myDropdown" class="dropdown-content">
       <a><label><input name="years" value="Years Teaching" class="internalBtn"></label></a>
       <a><label><input name="gender" value="Gender" class="internalBtn"></label></a>
@@ -4401,7 +4405,7 @@ function engagement() {
     
     <!--MathButtons-->
     <div class="w3-bar-item w3-button" class='buttonStyle' class="dropdown">
-      <label id='cl0button'><input type="button" name="mode" value="Math Pattern" autofocus onclick="myFunction0()" class="dropbtn" ></label>
+      <label id='cl0button'><input type="button" name="mode" value="Math Pattern" autofocus onmouseover="myFunction0()" class="dropbtn" ></label>
       <div id="myDropdown0" class="dropdown-content">
       <a><label><input name="years" value="Years Teaching" class="internalBtn"></label></a>
       <a><label><input name="gender" value="Gender" class="internalBtn"></label></a>
@@ -4412,7 +4416,7 @@ function engagement() {
     
     <!--ScienceButtons-->
     <div class="w3-bar-item w3-button" class='buttonStyle' class="dropdown">
-      <label id='cl1button'><input type="button" name="mode" value="Science Pattern" autofocus onclick="myFunction1()" class="dropbtn" ></label>
+      <label id='cl1button'><input type="button" name="mode" value="Science Pattern" autofocus onmouseover="myFunction1()" class="dropbtn" ></label>
       <div id="myDropdown1" class="dropdown-content">
       <a><label><input name="years" value="Years Teaching" class="internalBtn"></label></a>
       <a><label><input name="gender" value="Gender" class="internalBtn"></label></a>
@@ -4423,7 +4427,7 @@ function engagement() {
     
     <!--NetworkButtons-->
     <div class="w3-bar-item w3-button" class='buttonStyle' class="dropdown">
-      <label id='cl6button'><input type="button" name="mode" value="Network Pattern" autofocus onclick="myFunction6()" class="dropbtn" ></label>
+      <label id='cl6button'><input type="button" name="mode" value="Network Pattern" autofocus onmouseover="myFunction6()" class="dropbtn" ></label>
       <div id="myDropdown6" class="dropdown-content">
       <a><label><input name="years" value="Years Teaching" class="internalBtn"></label></a>
       <a><label><input name="gender" value="Gender" class="internalBtn"></label></a>
@@ -4434,7 +4438,7 @@ function engagement() {
     
     <!--LearningButtons-->
     <div class="w3-bar-item w3-button" class='buttonStyle' class="dropdown">
-      <label id='cl4button'><input type="button" name="mode" value="Learning Pattern" autofocus onclick="myFunction4()" class="dropbtn" ></label>
+      <label id='cl4button'><input type="button" name="mode" value="Learning Pattern" autofocus onmouseover="myFunction4()" class="dropbtn" ></label>
       <div id="myDropdown4" class="dropdown-content">
       <a><label><input name="years" value="Years Teaching" class="internalBtn"></label></a>
       <a><label><input name="gender" value="Gender" class="internalBtn"></label></a>
@@ -4445,7 +4449,7 @@ function engagement() {
     
     <!--QualityButtons-->
     <div class="w3-bar-item w3-button" class='buttonStyle' class="dropdown">
-      <label id='cl2button'><input type="button" name="mode" value="Quality Pattern" autofocus onclick="myFunction2()" class="dropbtn" ></label>
+      <label id='cl2button'><input type="button" name="mode" value="Quality Pattern" autofocus onmouseover="myFunction2()" class="dropbtn" ></label>
       <div id="myDropdown2" class="dropdown-content">
       <a><label><input name="years" value="Years Teaching" class="internalBtn"></label></a>
       <a><label><input name="gender" value="Gender" class="internalBtn"></label></a>
@@ -4456,7 +4460,7 @@ function engagement() {
     
     <!--LeadershipButtons-->
     <div class="w3-bar-item w3-button" class='buttonStyle' class="dropdown">
-      <label id='cl3button'><input type="button" name="mode" value="Leadership Pattern" autofocus onclick="myFunction3()" class="dropbtn" ></label>
+      <label id='cl3button'><input type="button" name="mode" value="Leadership Pattern" autofocus onmouseover="myFunction3()" class="dropbtn" ></label>
       <div id="myDropdown3" class="dropdown-content">
       <a><label><input name="years" value="Years Teaching" class="internalBtn"></label></a>
       <a><label><input name="gender" value="Gender" class="internalBtn"></label></a>
@@ -4466,7 +4470,7 @@ function engagement() {
     </div>
     
     <div class="w3-bar-item w3-button" class='buttonStyle'>
-    <label><input type="button" name="mode" value="About     " autofocus class='buttonStyle' id="aboutButton"></label>
+    <label><input type="button" name="mode" value="About" autofocus class='buttonStyle' id="aboutButton"></label>
     </div>
     
     </div>
