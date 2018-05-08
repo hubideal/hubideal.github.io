@@ -205,7 +205,7 @@ article {
     left: 1%;
     right: 1%;
     bottom: 1%;
-    background-color: rgb(42, 42, 42); /* Black background with opacity */
+    background-color: rgba(32, 32, 32,.99); /* Black background with opacity */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
   transition: .3s ease;
@@ -242,20 +242,6 @@ article {
     top: 4.5%;
     left: 17%;
     width: 67%;
-    color: black;
-    font: 1.5em, 'Roboto', sans-serif;
-    font-weight: 400;
-    background: rgba(192, 192, 192,.9);
-    z-index: 3;
-    border: 1px;
-}
-
-.boxSpiralInfo {
-    position: absolute;
-    text-align: left;
-    top: 4.5%;
-    left: 87%;
-    width: 13%;
     color: black;
     font: 1.5em, 'Roboto', sans-serif;
     font-weight: 400;
@@ -632,12 +618,11 @@ var svg = d3.select("div.dvCluster").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-    
 var div = d3.select("#plot").append("div")
             .attr("class", ".textHere")
             .style("opacity", 0);  
             
-var dots = svg.selectAll('.dot')
+var dots = svg.selectAll()
       .data(data)
       .enter().append("rect")
       .attr("rx", 6)
@@ -649,12 +634,11 @@ var dots = svg.selectAll('.dot')
       .attr("class", "dot")
       .attr("id", function(d) { return "ClusterClass"+d.newClusters;})
       .style("fill", function(d) { return color(cValue(d));});	
-      
+    
       
 function infoBox() {
   on();
 }
-
 function scatterPlot() {
   
 scttrButton();
@@ -668,7 +652,7 @@ svg.selectAll('text')
   yScale.domain([d3.min(data, yScatter)-.6, d3.max(data, yScatter)]);
   
   
-  var scatterDot = d3.selectAll(".dot")
+  var scatterDot = d3.selectAll('.dot')
       .transition()
       .duration(2000)
       .attr("rx", 3)
@@ -756,7 +740,6 @@ svg.selectAll('text')
       .attr("y", yMend)
       .attr("width", 15)
       .attr("height", 15)
-      .attr("class", 'dot')
       .attr("id", function(d) { return "ClusterClass"+d.newClusters;})
       .style("opacity", 1)
       .style("fill", function(d) { return color(cValue(d));});
@@ -1621,7 +1604,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(117, 223, 233)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', 1);
       svg.append('rect')
         .attr("rx", 2)
@@ -1631,7 +1614,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(117, 223, 233)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .79);
       svg.append('rect')
         .attr("rx", 2)
@@ -1641,7 +1624,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(117, 223, 233)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .57);
       svg.append('rect')
         .attr("rx", 2)
@@ -1651,7 +1634,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(117, 223, 233)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .35);
       svg.append('rect')
         .attr("rx", 2)
@@ -1661,7 +1644,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(117, 223, 233)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .14);
     
       
@@ -1802,7 +1785,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(117, 223, 233)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', 1);
       svg.append('rect')
         .attr("rx", 2)
@@ -1812,7 +1795,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(117, 223, 233)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .8);
       svg.append('rect')
         .attr("rx", 2)
@@ -1822,7 +1805,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(117, 223, 233)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .6);
       svg.append('rect')
         .attr("rx", 2)
@@ -1832,7 +1815,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(117, 223, 233)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .4);
       svg.append('rect')
         .attr("rx", 2)
@@ -1842,7 +1825,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(117, 223, 233)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .2);
 }
 
@@ -2120,7 +2103,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(158, 58, 156)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', 1);
       svg.append('rect')
         .attr("rx", 2)
@@ -2130,7 +2113,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(158, 58, 156)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .79);
       svg.append('rect')
         .attr("rx", 2)
@@ -2140,7 +2123,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(158, 58, 156)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .57);
       svg.append('rect')
         .attr("rx", 2)
@@ -2150,7 +2133,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(158, 58, 156)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .35);
       svg.append('rect')
         .attr("rx", 2)
@@ -2160,7 +2143,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(158, 58, 156)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .14);
     
       
@@ -2301,7 +2284,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(158, 58, 156)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', 1);
       svg.append('rect')
         .attr("rx", 2)
@@ -2311,7 +2294,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(158, 58, 156)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .8);
       svg.append('rect')
         .attr("rx", 2)
@@ -2321,7 +2304,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(158, 58, 156)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .6);
       svg.append('rect')
         .attr("rx", 2)
@@ -2331,7 +2314,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(158, 58, 156)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .4);
       svg.append('rect')
         .attr("rx", 2)
@@ -2341,7 +2324,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(158, 58, 156)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .2);
 }
 
@@ -2618,7 +2601,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill","rgb(231, 224, 148)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', 1);
       svg.append('rect')
         .attr("rx", 2)
@@ -2628,7 +2611,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(231, 224, 148)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .79);
       svg.append('rect')
         .attr("rx", 2)
@@ -2638,7 +2621,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(231, 224, 148)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .57);
       svg.append('rect')
         .attr("rx", 2)
@@ -2648,7 +2631,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(231, 224, 148)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .35);
       svg.append('rect')
         .attr("rx", 2)
@@ -2658,7 +2641,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(231, 224, 148)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .14);
     
       
@@ -2799,7 +2782,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(231, 224, 148)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', 1);
       svg.append('rect')
         .attr("rx", 2)
@@ -2809,7 +2792,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(231, 224, 148)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .8);
       svg.append('rect')
         .attr("rx", 2)
@@ -2819,7 +2802,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(231, 224, 148)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .6);
       svg.append('rect')
         .attr("rx", 2)
@@ -2829,7 +2812,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(231, 224, 148)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .4);
       svg.append('rect')
         .attr("rx", 2)
@@ -2839,7 +2822,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(231, 224, 148)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .2);
 }
 
@@ -3111,7 +3094,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(177, 62, 36)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', 1);
       svg.append('rect')
         .attr("rx", 2)
@@ -3121,7 +3104,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(177, 62, 36)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .79);
       svg.append('rect')
         .attr("rx", 2)
@@ -3131,7 +3114,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(177, 62, 36)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .57);
       svg.append('rect')
         .attr("rx", 2)
@@ -3141,7 +3124,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(177, 62, 36)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .35);
       svg.append('rect')
         .attr("rx", 2)
@@ -3151,7 +3134,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(177, 62, 36)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .14);
     
       
@@ -3292,7 +3275,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(177, 62, 36)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', 1);
       svg.append('rect')
         .attr("rx", 2)
@@ -3302,7 +3285,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(177, 62, 36)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .8);
       svg.append('rect')
         .attr("rx", 2)
@@ -3312,7 +3295,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(177, 62, 36)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .6);
       svg.append('rect')
         .attr("rx", 2)
@@ -3322,7 +3305,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(177, 62, 36)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .4);
       svg.append('rect')
         .attr("rx", 2)
@@ -3332,7 +3315,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(177, 62, 36)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .2);
 }
 
@@ -3600,7 +3583,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(31, 92, 232)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', 1);
       svg.append('rect')
         .attr("rx", 2)
@@ -3610,7 +3593,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(31, 92, 232)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .79);
       svg.append('rect')
         .attr("rx", 2)
@@ -3620,7 +3603,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(31, 92, 232)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .57);
       svg.append('rect')
         .attr("rx", 2)
@@ -3630,7 +3613,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(31, 92, 232)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .35);
       svg.append('rect')
         .attr("rx", 2)
@@ -3640,7 +3623,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(31, 92, 232)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .14);
     
       
@@ -3781,7 +3764,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(31, 92, 232)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', 1);
       svg.append('rect')
         .attr("rx", 2)
@@ -3791,7 +3774,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(31, 92, 232)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .8);
       svg.append('rect')
         .attr("rx", 2)
@@ -3801,7 +3784,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(31, 92, 232)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .6);
       svg.append('rect')
         .attr("rx", 2)
@@ -3811,7 +3794,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(31, 92, 232)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .4);
       svg.append('rect')
         .attr("rx", 2)
@@ -3821,7 +3804,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(31, 92, 232)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .2);
 }
 
@@ -4100,7 +4083,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(210, 110, 50)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', 1);
       svg.append('rect')
         .attr("rx", 2)
@@ -4110,7 +4093,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(210, 110, 50)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .79);
       svg.append('rect')
         .attr("rx", 2)
@@ -4120,7 +4103,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(210, 110, 50)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .57);
       svg.append('rect')
         .attr("rx", 2)
@@ -4130,7 +4113,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill","rgb(210, 110, 50)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .35);
       svg.append('rect')
         .attr("rx", 2)
@@ -4140,7 +4123,7 @@ function yrsTeaching() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(210, 110, 50)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .14);
     
       
@@ -4281,7 +4264,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(210, 110, 50)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', 1);
       svg.append('rect')
         .attr("rx", 2)
@@ -4291,7 +4274,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(210, 110, 50)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .8);
       svg.append('rect')
         .attr("rx", 2)
@@ -4301,7 +4284,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(210, 110, 50)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .6);
       svg.append('rect')
         .attr("rx", 2)
@@ -4311,7 +4294,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(210, 110, 50)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .4);
       svg.append('rect')
         .attr("rx", 2)
@@ -4321,7 +4304,7 @@ function engagement() {
         .attr("width", 22)
         .attr("height", 22)
         .attr("class", "legendRec")
-        .style("fill", "rgb(210, 110, 50)")
+        .style("fill", "rgb(232, 83, 206)")
         .style('opacity', .2);
 }
 
@@ -4493,7 +4476,7 @@ function engagement() {
  <script>
     $('#carouselExampleControls').on('slide.bs.carousel', function () {
  
-  $('container').css('background-color','rgb(42, 42, 42)');
+  $('container').css('background-color','rgba(32, 32, 32,.99)');
 });
   </script>
 </body>
