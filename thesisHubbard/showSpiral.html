@@ -137,7 +137,7 @@ article {
 }
 
 #boxButton{
-  background-color: rgb(42,42,42);
+  background-color: rgb(82,82,82);
 }
 #spiralButton{
   background-color: rgb(42,42,42);
@@ -152,82 +152,39 @@ article {
 }
 
 #cl5button {
-  background-color: rgb(42,42,42);
   display: none;
   font-size: 1.1em;
-  padding:0;
-}
-
-#myDropdown5 {
-  display: none;
-  font-size: 1em;
   padding:0;
 }
 
 #cl0button {
-  background-color: rgb(42,42,42);
   display: none;
   font-size: 1.1em;
-  padding:0;
-}
-#myDropdown0 {
-  display: none;
-  font-size: 1em;
   padding:0;
 }
 #cl1button {
-  background-color: rgb(42,42,42);
   display: none;
   font-size: 1.1em;
-  padding:0;
-}
-#myDropdown1 {
-  display: none;
-  font-size: 1em;
   padding:0;
 }
 #cl2button {
-  background-color: rgb(42,42,42);
   display: none;
   font-size: 1.1em;
-  padding:0;
-}
-#myDropdown2 {
-  display: none;
-  font-size: 1em;
   padding:0;
 }
 #cl3button {
-  background-color: rgb(42,42,42);
   display: none;
   font-size: 1.1em;
-  padding:0;
-}
-#myDropdown3 {
-  display: none;
-  font-size: 1em;
   padding:0;
 }
 #cl4button {
-  background-color: rgb(42,42,42);
   display: none;
   font-size: 1.1em;
-  padding:0;
-}
-#myDropdown4 {
-  display: none;
-  font-size: 1em;
   padding:0;
 }
 #cl6button {
-  background-color: rgb(42,42,42);
   display: none;
   font-size: 1.1em;
-  padding:0;
-}
-#myDropdown6 {
-  display: none;
-  font-size: 1em;
   padding:0;
 }
 .oButton {
@@ -255,8 +212,7 @@ article {
     cursor: pointer; /* Add a pointer on hover */
   transition: .3s ease;
 }
-
-.patternButton {
+.dropbtn {
     background: rgb(42, 42, 42);
     color: white;
     border: none;
@@ -324,7 +280,7 @@ article {
     display: block;
 }
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: rgb(42, 42, 42)}
+.dropdown-content a:hover {background-color: rgb(92, 92, 92)}
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 /*.explanationText {*/
@@ -396,16 +352,16 @@ article {
   color: snow;
   border: none;
   text-align: left;
-  padding-left: 2.5em;
+  padding-left: 1.5em;
   padding-bottom: 0em;
   margin: 0;
 }
 .internalBtn:hover {
-  background: rgb(42, 42, 42);
+  background: rgb(42, 42, 2);
   color: grey;
   border: none;
   text-align: left;
-  padding-left: 2.5em;
+  padding-left: 1.5em;
   padding-bottom: 0em;
   margin: 0;
 }
@@ -458,7 +414,6 @@ article {
   fill: rgb(235,235,235);
   font-weight: 400;
 }
-
 /*label {*/
 /*  padding:0;*/
 /*  margin: 0;*/
@@ -490,107 +445,63 @@ function spiralButton() {
     document.getElementById("spiralButton").style.background = "rgb(82,82,82)";
     document.getElementById("boxButton").style.background = "rgb(42,42,42)";
     document.getElementById("mlButton").style.background = "rgb(42,42,42)";
-    document.getElementById("myDropdown5").style.display = "none";
-    document.getElementById("myDropdown0").style.display = "none";
-    document.getElementById("myDropdown1").style.display = "none";
-    document.getElementById("myDropdown2").style.display = "none";
-    document.getElementById("myDropdown3").style.display = "none";
-    document.getElementById("myDropdown4").style.display = "none";
-    document.getElementById("myDropdown6").style.display = "none";
 }
 function scttrButton() {
     document.getElementById("spiralButton").style.background = "rgb(42,42,42)"
     document.getElementById("boxButton").style.background = "rgb(42,42,42)"
     document.getElementById("mlButton").style.background = "rgb(82,82,82)"
-    document.getElementById("myDropdown5").style.display = "none";
-    document.getElementById("myDropdown0").style.display = "none";
-    document.getElementById("myDropdown1").style.display = "none";
-    document.getElementById("myDropdown2").style.display = "none";
-    document.getElementById("myDropdown3").style.display = "none";
-    document.getElementById("myDropdown4").style.display = "none";
-    document.getElementById("myDropdown6").style.display = "none";
 }
 
 function newBoxButton() {
-    document.getElementById("spiralButton").style.background = "rgb(42,42,42)";
-    document.getElementById("boxButton").style.background = "rgb(82,82,82)";
-    document.getElementById("mlButton").style.background = "rgb(42,42,42)";
-    document.getElementById("cl5button").style.background = "rgb(42,42,42)";
-    document.getElementById("cl0button").style.background = "rgb(42,42,42)";
-    document.getElementById("cl1button").style.background = "rgb(42,42,42)";
-    document.getElementById("cl2button").style.background = "rgb(42,42,42)";
-    document.getElementById("cl3button").style.background = "rgb(42,42,42)";
-    document.getElementById("cl4button").style.background = "rgb(42,42,42)";
-    document.getElementById("cl6button").style.background = "rgb(42,42,42)";
-    document.getElementById("myDropdown5").style.display = "none";
-    document.getElementById("myDropdown0").style.display = "none";
-    document.getElementById("myDropdown1").style.display = "none";
-    document.getElementById("myDropdown2").style.display = "none";
-    document.getElementById("myDropdown3").style.display = "none";
-    document.getElementById("myDropdown4").style.display = "none";
-    document.getElementById("myDropdown6").style.display = "none";
+    document.getElementById("spiralButton").style.background = "rgb(42,42,42)"
+    document.getElementById("boxButton").style.background = "rgb(82,82,82)"
+    document.getElementById("mlButton").style.background = "rgb(42,42,42)"
+    document.getElementById("cl5button").style.background = "rgb(42,42,42)"
+    document.getElementById("cl0button").style.background = "rgb(42,42,42)"
+    document.getElementById("cl1button").style.background = "rgb(42,42,42)"
+    document.getElementById("cl2button").style.background = "rgb(42,42,42)"
+    document.getElementById("cl3button").style.background = "rgb(42,42,42)"
+    document.getElementById("cl4button").style.background = "rgb(42,42,42)"
+    document.getElementById("cl6button").style.background = "rgb(42,42,42)"
 }
 
 function pedagogyButton() {
-    document.getElementById("spiralButton").style.background = "rgb(42,42,42)";
-    document.getElementById("boxButton").style.background = "rgb(42,42,42)";
-    document.getElementById("mlButton").style.background = "rgb(42,42,42)";
-    document.getElementById("cl5button").style.background = "rgb(82,82,82)";
-    document.getElementById("cl0button").style.background = "rgb(42,42,42)";
-    document.getElementById("cl1button").style.background = "rgb(42,42,42)";
-    document.getElementById("cl2button").style.background = "rgb(42,42,42)";
-    document.getElementById("cl3button").style.background = "rgb(42,42,42)";
-    document.getElementById("cl4button").style.background = "rgb(42,42,42)";
-    document.getElementById("cl6button").style.background = "rgb(42,42,42)";
-    document.getElementById("myDropdown5").style.display = "block";
-    document.getElementById("myDropdown0").style.display = "none";
-    document.getElementById("myDropdown1").style.display = "none";
-    document.getElementById("myDropdown2").style.display = "none";
-    document.getElementById("myDropdown3").style.display = "none";
-    document.getElementById("myDropdown4").style.display = "none";
-    document.getElementById("myDropdown6").style.display = "none";
-    
+    document.getElementById("spiralButton").style.background = "rgb(42,42,42)"
+    document.getElementById("boxButton").style.background = "rgb(42,42,42)"
+    document.getElementById("mlButton").style.background = "rgb(42,42,42)"
+    document.getElementById("cl5button").style.background = "rgb(82,82,82)"
+    document.getElementById("cl0button").style.background = "rgb(42,42,42)"
+    document.getElementById("cl1button").style.background = "rgb(42,42,42)"
+    document.getElementById("cl2button").style.background = "rgb(42,42,42)"
+    document.getElementById("cl3button").style.background = "rgb(42,42,42)"
+    document.getElementById("cl4button").style.background = "rgb(42,42,42)"
+    document.getElementById("cl6button").style.background = "rgb(42,42,42)"
 }
 
 function mathButton() {
-    document.getElementById("spiralButton").style.background = "rgb(42,42,42)";
-    document.getElementById("boxButton").style.background = "rgb(42,42,42)";
-    document.getElementById("mlButton").style.background = "rgb(42,42,42)";
-    document.getElementById("cl5button").style.background = "rgb(42,42,42)";
-    document.getElementById("cl0button").style.background = "rgb(82,82,82)";
-    document.getElementById("cl1button").style.background = "rgb(42,42,42)";
-    document.getElementById("cl2button").style.background = "rgb(42,42,42)";
-    document.getElementById("cl3button").style.background = "rgb(42,42,42)";
-    document.getElementById("cl4button").style.background = "rgb(42,42,42)";
-    document.getElementById("cl6button").style.background = "rgb(42,42,42)";
-    document.getElementById("myDropdown5").style.display = "none";
-    document.getElementById("myDropdown0").style.display = "block";
-    document.getElementById("myDropdown1").style.display = "none";
-    document.getElementById("myDropdown2").style.display = "none";
-    document.getElementById("myDropdown3").style.display = "none";
-    document.getElementById("myDropdown4").style.display = "none";
-    document.getElementById("myDropdown6").style.display = "none";
+    document.getElementById("spiralButton").style.background = "rgb(42,42,42)"
+    document.getElementById("boxButton").style.background = "rgb(42,42,42)"
+    document.getElementById("mlButton").style.background = "rgb(42,42,42)"
+    document.getElementById("cl5button").style.background = "rgb(42,42,42)"
+    document.getElementById("cl0button").style.background = "rgb(82,82,82)"
+    document.getElementById("cl1button").style.background = "rgb(42,42,42)"
+    document.getElementById("cl2button").style.background = "rgb(42,42,42)"
+    document.getElementById("cl3button").style.background = "rgb(42,42,42)"
+    document.getElementById("cl4button").style.background = "rgb(42,42,42)"
+    document.getElementById("cl6button").style.background = "rgb(42,42,42)"
 }
 function scienceButton() {
-    document.getElementById("spiralButton").style.background = "rgb(42,42,42)";
-    document.getElementById("boxButton").style.background = "rgb(42,42,42)";
-    document.getElementById("mlButton").style.background = "rgb(42,42,42)";
-    document.getElementById("cl5button").style.background = "rgb(42,42,42)";
-    document.getElementById("cl0button").style.background = "rgb(42,42,42)";
-    document.getElementById("cl1button").style.background = "rgb(82,82,82)";
-    document.getElementById("cl2button").style.background = "rgb(42,42,42)";
-    document.getElementById("cl3button").style.background = "rgb(42,42,42)";
-    document.getElementById("cl4button").style.background = "rgb(42,42,42)";
-    document.getElementById("cl6button").style.background = "rgb(42,42,42)";
-    document.getElementById("myDropdown5").style.display = "none";
-    document.getElementById("myDropdown0").style.display = "none";
-    document.getElementById("myDropdown1").style.display = "block";
-    document.getElementById("myDropdown2").style.display = "none";
-    document.getElementById("myDropdown3").style.display = "none";
-    document.getElementById("myDropdown4").style.display = "none";
-    document.getElementById("myDropdown6").style.display = "none";
+    document.getElementById("spiralButton").style.background = "rgb(42,42,42)"
+    document.getElementById("boxButton").style.background = "rgb(42,42,42)"
+    document.getElementById("mlButton").style.background = "rgb(42,42,42)"
+    document.getElementById("cl5button").style.background = "rgb(42,42,42)"
+    document.getElementById("cl0button").style.background = "rgb(42,42,42)"
+    document.getElementById("cl1button").style.background = "rgb(82,82,82)"
+    document.getElementById("cl2button").style.background = "rgb(42,42,42)"
+    document.getElementById("cl3button").style.background = "rgb(42,42,42)"
+    document.getElementById("cl4button").style.background = "rgb(42,42,42)"
+    document.getElementById("cl6button").style.background = "rgb(42,42,42)"
 }
-
 function networkButton() {
     document.getElementById("spiralButton").style.background = "rgb(42,42,42)"
     document.getElementById("boxButton").style.background = "rgb(42,42,42)"
@@ -602,13 +513,6 @@ function networkButton() {
     document.getElementById("cl3button").style.background = "rgb(42,42,42)"
     document.getElementById("cl4button").style.background = "rgb(42,42,42)"
     document.getElementById("cl6button").style.background = "rgb(82,82,82)"
-    document.getElementById("myDropdown5").style.display = "none"
-    document.getElementById("myDropdown0").style.display = "none"
-    document.getElementById("myDropdown1").style.display = "none"
-    document.getElementById("myDropdown2").style.display = "none"
-    document.getElementById("myDropdown3").style.display = "none"
-    document.getElementById("myDropdown4").style.display = "none"
-    document.getElementById("myDropdown6").style.display = "block"
 }
 function learningButton() {
     document.getElementById("spiralButton").style.background = "rgb(42,42,42)"
@@ -621,13 +525,6 @@ function learningButton() {
     document.getElementById("cl3button").style.background = "rgb(42,42,42)"
     document.getElementById("cl4button").style.background = "rgb(82,82,82)"
     document.getElementById("cl6button").style.background = "rgb(42,42,42)"
-    document.getElementById("myDropdown5").style.display = "none"
-    document.getElementById("myDropdown0").style.display = "none"
-    document.getElementById("myDropdown1").style.display = "none"
-    document.getElementById("myDropdown2").style.display = "none"
-    document.getElementById("myDropdown3").style.display = "none"
-    document.getElementById("myDropdown4").style.display = "block"
-    document.getElementById("myDropdown6").style.display = "none"
 }
 function qualityButton() {
     document.getElementById("spiralButton").style.background = "rgb(42,42,42)"
@@ -640,13 +537,6 @@ function qualityButton() {
     document.getElementById("cl3button").style.background = "rgb(42,42,42)"
     document.getElementById("cl4button").style.background = "rgb(42,42,42)"
     document.getElementById("cl6button").style.background = "rgb(42,42,42)"
-    document.getElementById("myDropdown5").style.display = "none"
-    document.getElementById("myDropdown0").style.display = "none"
-    document.getElementById("myDropdown1").style.display = "none"
-    document.getElementById("myDropdown2").style.display = "block"
-    document.getElementById("myDropdown3").style.display = "none"
-    document.getElementById("myDropdown4").style.display = "none"
-    document.getElementById("myDropdown6").style.display = "none"
 }
 function leadershipButton() {
     document.getElementById("spiralButton").style.background = "rgb(42,42,42)"
@@ -659,13 +549,6 @@ function leadershipButton() {
     document.getElementById("cl3button").style.background = "rgb(82,82,82)"
     document.getElementById("cl4button").style.background = "rgb(42,42,42)"
     document.getElementById("cl6button").style.background = "rgb(42,42,42)"
-    document.getElementById("myDropdown5").style.display = "none"
-    document.getElementById("myDropdown0").style.display = "none"
-    document.getElementById("myDropdown1").style.display = "none"
-    document.getElementById("myDropdown2").style.display = "none"
-    document.getElementById("myDropdown3").style.display = "block"
-    document.getElementById("myDropdown4").style.display = "none"
-    document.getElementById("myDropdown6").style.display = "none"
 }
 // function titleGone() {
 //     document.getElementById("title").style.opacity = 0;
@@ -705,41 +588,37 @@ window.onclick = function(event) {
     }
   }
 }
-var margin = {top: (screen.height)/10, right: (screen.width)/5.5, bottom: (screen.height)/10, left: (screen.width)/100},
+var margin = {top: (screen.height)/20, right: (screen.width)/5.5, bottom: (screen.height)/50, left: (screen.width)/100},
     width = .7*(screen.width - margin.left - margin.right),
     height = .8*(screen.height - margin.top - margin.bottom);
-var xValue = function(d) { return d.xVal;}, // data -> value
-    xEnd = function(d) { return d.sunflrx;},
-    xCluster = function(d) { return d.equalX0;},
-    xScatter = function(d) { return d.xs;},
+var xValue = function(d) { return d.equalX6;}, // data -> value
+    xEnd = function(d) { return d.equalX6;},
+    xCluster = function(d) { return d.equalX6;},
+    xScatter = function(d) { return d.equalX6;},
     xScale = d3.scaleLinear().range([0, width]), // value -> display
     xMap = function(d) { return xScale(xValue(d));},
     xMend = function(d) { return xScale(xEnd(d));},
     xPlot = function(d) { return xScale(xScatter(d));},
     xBig = function(d) { return xScale(xCluster(d));};
    
-var yValue = function(d) { return d["yVal"];},
-    yEnd = function(d) { return d['sunflry'];},
-    yCluster = function(d) { return d['equalY0'];},// data -> value
-    yScatter = function(d) { return d.ys;},
+var yValue = function(d) { return d["equalY6"];},
+    yEnd = function(d) { return d['equalY6'];},
+    yCluster = function(d) { return d['equalY6'];},// data -> value
+    yScatter = function(d) { return d.equalY6;},
     yScale = d3.scaleLinear().range([height, 0]), // value -> display
     yMap = function(d) { return yScale(yValue(d));},
     yMend = function(d) { return yScale(yEnd(d));},
     yPlot = function(d) { return yScale(yScatter(d));},
     yBig = function(d) { return yScale(yCluster(d));};// data -> display
 var cValue = function(d) { return d.newClusters;},
-     color = d3.scaleOrdinal(["rgb(117, 223, 233)", "rgb(158, 58, 156)","rgb(231, 224, 148)", "rgb(177, 62, 36)", "rgb(31, 92, 232)","rgb(232, 83, 206)", "rgb(210, 110, 50)"]);
+     color = d3.scaleOrdinal(["rgb(117, 223, 233)","rgb(177, 62, 36)", "rgb(210, 110, 50)","rgb(158, 58, 156)","rgb(231, 224, 148)","rgb(31, 92, 232)","rgb(232, 83, 206)"]);
     
 // load data
-d3.csv("visualDB.csv", function(error, data) {
+d3.csv("showSpiral.csv", function(error, data) {
   // change string (from CSV) into number format
   data.forEach(function(d) {
-    d.xVal = +d.xVal;
-    d["yVal"] = +d["yVal"];
-    d.sunflrx = +d.sunflrx;
-    d['sunflry'] = +d['sunflry'];
-    d.equalX0 = +d.equalX0;
-    d['equalY0'] = +d['equalY0'];
+    d.equalX6 = +d.equalX6;
+    d["equalY6"] = +d["equalY6"];
   });
             
 BoxSpiral();
@@ -760,8 +639,8 @@ function changed() {
     else if (this.value === "Learning Pattern") Cluster4();
     else if (this.value === "Network Pattern") Cluster6();
             }
-  xScale.domain([d3.min(data, xValue)-1.2, d3.max(data, xValue)+1.2]);
-  yScale.domain([d3.min(data, yValue)+.33, d3.max(data, yValue)+.33]);
+  xScale.domain([d3.min(data, xValue)-5.2, d3.max(data, xValue)+5.2]);
+  yScale.domain([d3.min(data, yValue)-2.33, d3.max(data, yValue)+2.33]);
 var svg = d3.select("div.dvCluster").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -797,8 +676,8 @@ svg.selectAll('text')
                 .duration(200)
                 .style('opacity', 0);
   
-  xScale.domain([d3.min(data, xScatter)-.8, d3.max(data, xScatter)]);
-  yScale.domain([d3.min(data, yScatter)-.6, d3.max(data, yScatter)]);
+  xScale.domain([d3.min(data, xScatter), d3.max(data, xScatter)]);
+  yScale.domain([d3.min(data, yScatter), d3.max(data, yScatter)]);
   
   
   var scatterDot = d3.selectAll(".dot")
@@ -831,15 +710,27 @@ function newBoxSpiral() {
                 .duration(200)
                 .style('opacity', 0);
                 
+ 
+                
+              // var boxbutton = d3.select("#box") 
+              // .on("click", function ()
+              // {
+              //   // this or variable
+              //   .style("background-color","blue");
+              // }
+  
   
   xScale.domain([d3.min(data, xValue)-1.2, d3.max(data, xValue)+1.2]);
   yScale.domain([d3.min(data, yValue)+.13, d3.max(data, yValue)+.33]);
   
       dots.transition()
       .duration(1000)
+      // .attr("rx", 6)
+      // .attr("ry", 6)
       .attr("cx", xMap)
       .attr("cy", yMap)
       .attr("r", 9)
+      // .attr("height", 25)
       .attr('class', 'dot')
       .style("opacity", 1)
       .style("fill", function(d) { return color(cValue(d));});
@@ -865,15 +756,18 @@ yScale.domain([d3.min(data, yEnd)*1.03, d3.max(data, yEnd)*1.03]);
    
  clusterShow();
 svg.selectAll('text')
+                // .transition()
+                // .duration(600)
                 .style('opacity', 0);
-                
-                
   var smallDot = d3.selectAll('.dot')
       .transition()
       .duration(2000)
+      // .attr("rx", 3)
+      // .attr("ry", 3)
       .attr("cx", xMend)
       .attr("cy", yMend)
       .attr("r", 9)
+      // .attr("height", 15)
       .attr("class", 'dot')
       .attr("id", function(d) { return "ClusterClass"+d.newClusters;})
       .style("opacity", 1)
@@ -975,9 +869,8 @@ pedagogyButton();
                 .style('z-index', -1)
                 .style('opacity', 0);
                 
-svg.selectAll('.legendRec')
+  svg.selectAll('.legendRec')
                 .style('opacity', 0);
-
   
 
  
@@ -1490,7 +1383,7 @@ function Cluster0() {
     
      d3.selectAll("#ClusterClass0")
       .on("mouseover", function(d) {
-            div.html('"'+d.words+'"')
+            div.html(d.words)
                 .attr("class", "boxDescription");
             div.transition()		
                 .duration(100)
@@ -1975,7 +1868,7 @@ function Cluster1() {
                 .duration(100)
                 .attr("text-anchor", "center") 
                 .style("opacity", 1);
-            div.html('"'+d.words+'"')	
+            div.html(d.words)	
                 .attr("class", "boxDescription");	
             })
       .on("mouseout", function(d) {		
@@ -2461,7 +2354,7 @@ function Cluster2() {
                 .duration(100)
                 .attr("text-anchor", "center") 
                 .style("opacity", 1);
-            div.html('"'+d.words+'"')	
+            div.html(d.words)	
                 .attr("class", "boxDescription");	
             })
       .on("mouseout", function(d) {		
@@ -2941,7 +2834,7 @@ function Cluster3() {
                 .duration(100)
                 .attr("text-anchor", "center") 
                 .style("opacity", 1);
-            div.html('"'+d.words+'"')	
+            div.html(d.words)	
                 .attr("class", "boxDescription");	
             })
       .on("mouseout", function(d) {		
@@ -3431,7 +3324,7 @@ function Cluster4() {
                 .duration(100)
                 .attr("text-anchor", "center") 
                 .style("opacity", 1);
-            div.html('"'+d.words+'"')	
+            div.html(d.words)	
                 .attr("class", "boxDescription");	
             })
         .on("mouseout", function(d) {		
@@ -3913,7 +3806,7 @@ function Cluster6() {
    
     d3.selectAll("#ClusterClass6")
       .on("mouseover", function(d) {
-            div.html('"'+d.words+'"')
+            div.html(d.words)
                 .attr("class", "boxDescription");
             div.transition()		
                 .duration(100)
@@ -4378,9 +4271,19 @@ function engagement() {
 
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
+      <!--<div class='slide1'><h3>Patterns of Professional Identity in STEM Education</h3>-->
+      <!--<p>How can we better retain math & science teachers?</p>-->
+      <!--<p>What motivates STEM educators?</p>-->
+      <!--<p>The purpose of this study is to explore professional identity of STEM teachers <br>to better understand their professional identity and career motivations.</p>-->
+      <!--</div>-->
       <img class="d-block img-fluid" src="slide1PPISE.png" alt="First slide">
     </div>
     <div class="carousel-item">
+      <!--<div class='slide2'><h3>Machine Learning</h3>-->
+      <!--<p>What is K-means clustering?</p>-->
+      <!--<p>What motivates STEM educators?</p>-->
+      <!--<p>The purpose of this study is to explore professional identity of STEM teachers <br>to better understand their professional identity and career motivations.</p>-->
+      <!--</div>-->
       <img class="d-block img-fluid" src="slide2PPISE.png" alt="Second slide">
     </div>
     <div class="carousel-item"><img class="d-block img-fluid" src="slide3PPISE.png" alt="Third slide">
@@ -4415,9 +4318,9 @@ function engagement() {
     </div>
     
     <!--PedagogyButtons-->
-    <div class="w3-bar-item w3-button" class='buttonStyle'>
-      <label id='cl5button'><input type="button" name="mode" value="Pedagogy Pattern" class="patternButton" ></label>
-      <div id="myDropdown5">
+    <div class="w3-bar-item w3-button" class='buttonStyle' class="dropdown">
+      <label id='cl5button'><input type="button" name="mode" value="Pedagogy Pattern"  autofocus onmouseover="myFunction()" class="dropbtn" ></label>
+      <div id="myDropdown" class="dropdown-content">
       <a><label><input name="years" value="Years Teaching" class="internalBtn"></label></a>
       <a><label><input name="gender" value="Gender" class="internalBtn"></label></a>
       <a><label><input name="withdraw" value="Withdraw" class="internalBtn"></label></a>
@@ -4426,9 +4329,9 @@ function engagement() {
     </div>
     
     <!--MathButtons-->
-    <div class="w3-bar-item w3-button" class='buttonStyle'> <!--class="dropdown">-->
-      <label id='cl0button'><input type="button" name="mode" value="Math Pattern" autofocus class="patternButton"></label>
-      <div id="myDropdown0">
+    <div class="w3-bar-item w3-button" class='buttonStyle' class="dropdown">
+      <label id='cl0button'><input type="button" name="mode" value="Math Pattern" autofocus onmouseover="myFunction0()" class="dropbtn" ></label>
+      <div id="myDropdown0" class="dropdown-content">
       <a><label><input name="years" value="Years Teaching" class="internalBtn"></label></a>
       <a><label><input name="gender" value="Gender" class="internalBtn"></label></a>
       <a><label><input name="withdraw" value="Withdraw" class="internalBtn"></label></a>
@@ -4437,9 +4340,9 @@ function engagement() {
     </div>
     
     <!--ScienceButtons-->
-    <div class="w3-bar-item w3-button" class='buttonStyle'> <!--class="dropdown">-->
-      <label id='cl1button'><input type="button" name="mode" value="Science Pattern" autofocus class="patternButton"></label>
-      <div id="myDropdown1">
+    <div class="w3-bar-item w3-button" class='buttonStyle' class="dropdown">
+      <label id='cl1button'><input type="button" name="mode" value="Science Pattern" autofocus onmouseover="myFunction1()" class="dropbtn" ></label>
+      <div id="myDropdown1" class="dropdown-content">
       <a><label><input name="years" value="Years Teaching" class="internalBtn"></label></a>
       <a><label><input name="gender" value="Gender" class="internalBtn"></label></a>
       <a><label><input name="withdraw" value="Withdraw" class="internalBtn"></label></a>
@@ -4448,9 +4351,9 @@ function engagement() {
     </div>
     
     <!--NetworkButtons-->
-    <div class="w3-bar-item w3-button" class='buttonStyle'> <!--class="dropdown">-->
-      <label id='cl6button'><input type="button" name="mode" value="Network Pattern" autofocus class="patternButton"></label>
-      <div id="myDropdown6">
+    <div class="w3-bar-item w3-button" class='buttonStyle' class="dropdown">
+      <label id='cl6button'><input type="button" name="mode" value="Network Pattern" autofocus onmouseover="myFunction6()" class="dropbtn" ></label>
+      <div id="myDropdown6" class="dropdown-content">
       <a><label><input name="years" value="Years Teaching" class="internalBtn"></label></a>
       <a><label><input name="gender" value="Gender" class="internalBtn"></label></a>
       <a><label><input name="withdraw" value="Withdraw" class="internalBtn"></label></a>
@@ -4459,9 +4362,9 @@ function engagement() {
     </div>
     
     <!--LearningButtons-->
-    <div class="w3-bar-item w3-button" class='buttonStyle'> <!--class="dropdown">-->
-      <label id='cl4button'><input type="button" name="mode" value="Learning Pattern" autofocus class="patternButton"></label> <!--onmouseover="myFunction4()" class="dropbtn" -->
-      <div id="myDropdown4">
+    <div class="w3-bar-item w3-button" class='buttonStyle' class="dropdown">
+      <label id='cl4button'><input type="button" name="mode" value="Learning Pattern" autofocus onmouseover="myFunction4()" class="dropbtn" ></label>
+      <div id="myDropdown4" class="dropdown-content">
       <a><label><input name="years" value="Years Teaching" class="internalBtn"></label></a>
       <a><label><input name="gender" value="Gender" class="internalBtn"></label></a>
       <a><label><input name="withdraw" value="Withdraw" class="internalBtn"></label></a>
@@ -4470,9 +4373,9 @@ function engagement() {
     </div>
     
     <!--QualityButtons-->
-    <div class="w3-bar-item w3-button" class='buttonStyle'><!--class="dropdown">-->
-      <label id='cl2button'><input type="button" name="mode" value="Quality Pattern" autofocus class="patternButton"></label> <!--onmouseover="myFunction4()" class="dropbtn" -->
-      <div id="myDropdown2">
+    <div class="w3-bar-item w3-button" class='buttonStyle' class="dropdown">
+      <label id='cl2button'><input type="button" name="mode" value="Quality Pattern" autofocus onmouseover="myFunction2()" class="dropbtn" ></label>
+      <div id="myDropdown2" class="dropdown-content">
       <a><label><input name="years" value="Years Teaching" class="internalBtn"></label></a>
       <a><label><input name="gender" value="Gender" class="internalBtn"></label></a>
       <a><label><input name="withdraw" value="Withdraw" class="internalBtn"></label></a>
@@ -4481,9 +4384,9 @@ function engagement() {
     </div>
     
     <!--LeadershipButtons-->
-    <div class="w3-bar-item w3-button" class='buttonStyle'>
-      <label id='cl3button'><input type="button" name="mode" value="Leadership Pattern" autofocus class="patternButton" ></label> <!--onmouseover="myFunction4()" class="dropbtn" -->
-      <div id="myDropdown3">
+    <div class="w3-bar-item w3-button" class='buttonStyle' class="dropdown">
+      <label id='cl3button'><input type="button" name="mode" value="Leadership Pattern" autofocus onmouseover="myFunction3()" class="dropbtn" ></label>
+      <div id="myDropdown3" class="dropdown-content">
       <a><label><input name="years" value="Years Teaching" class="internalBtn"></label></a>
       <a><label><input name="gender" value="Gender" class="internalBtn"></label></a>
       <a><label><input name="withdraw" value="Withdraw" class="internalBtn"></label></a>
