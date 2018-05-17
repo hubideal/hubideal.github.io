@@ -44,10 +44,10 @@ body {
   
 }
 .dot, .dot2, .ClusterClass0, .ClusterClass1, .ClusterClass2, .ClusterClass3, .ClusterClass4, .ClusterClass5, .ClusterClass6, .ClusterClass7, .ClusterClass8 {
-  stroke: rgb(42, 42, 42);
+  stroke: #2F4F4F;
 }
 #ClusterClass0, #ClusterClass1, #ClusterClass2, #ClusterClass3, #ClusterClass4, #ClusterClass5, #ClusterClass6, #ClusterClass7, #ClusterClass8 {
-  stroke: rgb(42, 42, 42);
+  stroke: #2F4F4F;
 }
 .tooltip {
   position: absolute;
@@ -149,7 +149,6 @@ article {
   background-color: rgb(42,42,42);
   text-align: left;
   padding:0px;
-  margin: 0px;
 }
 
 #cl5button {
@@ -345,7 +344,7 @@ article {
         /*width: 100px;*/
         height: 50em;
         /*position: absolute;*/
-        left: 30%;
+        left: 20%;
       }
       
       .carousel-item .carousel-caption {
@@ -354,7 +353,7 @@ article {
        .carousel-item img {
         /*transform: translateX(10%);*/
         transform: translateY(10%);
-        height: 50em;
+        height: 42em;
       }
 .pedagogy {
   font-family: 'Roboto Slab', serif;
@@ -750,7 +749,7 @@ d3.selectAll("input")
     
 function changed() {
     if (this.value === "Finding Patterns") newBoxSpiral();
-    else if (this.value === "About               ") infoBox();
+    else if (this.value === "About     ") infoBox();
     else if (this.value === "Making New Patterns") NewDots();
     else if (this.value === "Machine Learning") scatterPlot();
     else if (this.value === "Pedagogy Pattern") Cluster5();
@@ -988,14 +987,15 @@ svg.selectAll('.legendRec')
       .transition()
       .duration(2000)
       .style('opacity', function(d)  { if (d.newClusters != 5) {return 0};})
+      .style('z-index', function(d)  { if (d.newClusters != 5) {return -1};})
+      // .attr("rx", 3)
+      // .attr("ry", 3)
       .attr("cx", xBig)
       .attr("cy", yBig)
       .attr("r", 11)
+      // .attr("height", 22)
       .attr("id", function(d) { return "ClusterClass"+d.newClusters;})
-      .style('z-index', 3)
       .style("fill", function(d) { return color(cValue(d));});
-      
-  
     
     svg.selectAll("#ClusterClass5")
       .style('z-index', 3)
@@ -1183,8 +1183,10 @@ function yrsTeaching() {
      var yrTeachDot = d3.selectAll('#ClusterClass5')
       .transition()
       .duration(1000)
-      .attr('cx', xBig)
-      .attr("cy", yBig)
+      .attr("rx", 2)
+      .attr("ry", 2)
+      .attr('x', xBig)
+      .attr("y", yBig)
       .attr("width", 22)
       .attr("height", 22)
       .style("fill", function(d) { return color(cValue(d));})
@@ -3110,8 +3112,10 @@ function yrsTeaching() {
      var yrTeachDot = d3.selectAll('#ClusterClass3')
       .transition()
       .duration(1000)
-      .attr('cx', xBig)
-      .attr("cy", yBig)
+      .attr("rx", 2)
+      .attr("ry", 2)
+      .attr('x', xBig)
+      .attr("y", yBig)
       .attr("width", 22)
       .attr("height", 22)
       .style("fill", function(d) { return color(cValue(d));})
@@ -3595,8 +3599,10 @@ function yrsTeaching() {
      var yrTeachDot = d3.selectAll('#ClusterClass4')
       .transition()
       .duration(1000)
-      .attr('cx', xBig)
-      .attr("cy", yBig)
+      .attr("rx", 2)
+      .attr("ry", 2)
+      .attr('x', xBig)
+      .attr("y", yBig)
       .attr("width", 22)
       .attr("height", 22)
       .style("fill", function(d) { return color(cValue(d));})
@@ -4488,7 +4494,7 @@ function engagement() {
     </div>
     
     <div class="w3-bar-item w3-button" class='buttonStyle'>
-    <label><input type="button" name="mode" value="About               " autofocus class='buttonStyle' id="aboutButton"></label>
+    <label><input type="button" name="mode" value="About     " autofocus class='buttonStyle' id="aboutButton"></label>
     </div>
     
     </div>
