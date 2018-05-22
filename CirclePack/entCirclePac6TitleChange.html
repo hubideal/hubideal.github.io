@@ -80,6 +80,10 @@ svg {
   font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
   /*text-align: center;*/
 }
+.sizeText {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+}
 #numbers {
   margin-left: auto;
   margin-right: auto;
@@ -98,16 +102,30 @@ svg {
 <script src="https://d3js.org/d3.v4.min.js"></script>
 
 <script>
+ function sizeIn(d) {
+    return function(d) {
+      document.getElementById(d.data.name+d.data.size).style.visibility = 'visible';
+      document.getElementById(d.data.size+d.data.name).style.visibility = 'hidden';
+    };
+  }
+
+function sizeOut(d) {
+    return function(d) {
+      document.getElementById(d.data.name+d.data.size).style.visibility = 'hidden';
+      document.getElementById(d.data.size+d.data.name).style.visibility = 'visible';
+    };
+  }
+  
 var svg = d3.select("svg"),
     margin = 0,
     diameter = +svg.attr("width"),
     g = svg.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
+    
 var color = d3.scaleLinear()
     .domain([0, 1])
     .range(["rgb(255,255,255)","rgb(80,199,229)"])  //"hsl(152,80%,60%)", "hsl(228,30%,40%)"
     .interpolate(d3.interpolateRgb);
-// var color = d3.scaleSequential(d3.interpolateMagma)
-//     .domain([-4, 4]);
+
 var pack = d3.pack()
     .size([diameter - margin, diameter - margin])
     .padding(2);
@@ -115,9 +133,9 @@ var pack = d3.pack()
 var tooltip = d3.select("body")
 	.append("div")
 	.attr("class", "tooltext")
-	.style("position", "absolute")
-// 	.style("z-index", "10")
-	.style("visibility", "hidden");
+	.style("position", "absolute");
+	
+
 d3.json("flareLink.json", function(error, root) {
   if (error) throw error;
   root = d3.hierarchy(root)
@@ -133,9 +151,10 @@ d3.json("flareLink.json", function(error, root) {
       .attr('text-align','center')
       .style("fill", function(d) { return d.children ? color(d.depth) : "null"; })
       .on("click", function(d) { if (focus !== d) zoom(d), d3.event.stopPropagation(); })
-      .on("mouseover", function(d){return tooltip.text("size: " + d.data.size).style("visibility", "visible");})
-	    .on("mousemove", function(){return tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");})
-	    .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+      .on("mouseover", sizeIn(this.value))
+      .on("mouseout", sizeOut(this.value));
+     
+     
   var text = g.selectAll("text")
     .data(nodes)
     .enter().append("text")
@@ -143,8 +162,20 @@ d3.json("flareLink.json", function(error, root) {
     .style("font-size", function(d) { return Math.min(.5*d.r, (.5*d.r - 8) / this.getComputedTextLength() *48) + "px"; })
     .attr("dy", ".35em")
     .style("fill-opacity", function(d) { return d.parent === node, root ? 1 : 0; })
+    .attr("id", function(d) { return d.data.size+d.data.name})
     .style("display", function(d) { return d.parent === node, root ? "inline" : "none"; })
     .text(function(d) { return d.data.name;});
+  
+  var size = g.selectAll("size")
+    .data(nodes)
+    .enter().append("text")
+    .attr("class", "sizeText")
+    .style("font-size", function(d) { return Math.min(.5*d.r, (.5*d.r - 8) / this.getComputedTextLength() *48) + "px"; })
+    .attr("dy", ".35em")
+    .style("visibility", "hidden")
+    .attr('id', function(d) { return d.data.name+d.data.size})
+    .style("display", function(d) { return d.parent === node, root ? "inline" : "none"; })
+    .text(function(d) { return d.data.size;});
    
   var node = g.selectAll("circle,text");
     
@@ -179,6 +210,8 @@ d3.json("flareLink.json", function(error, root) {
   return function(d) {
 	d3.selectAll(d.ancestors().map(function(d) {}));
   };
+  
+
 }
 });
 </script>

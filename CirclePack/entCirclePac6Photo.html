@@ -8,15 +8,18 @@ h1 {
   font-family: "Open Sans", sans-serif;
   /*text-align: left;*/
 }
+
 h3 {
   font-family: "Open Sans", Arial, sans-serif;
   /*text-align: left;*/
 }
+
 h5 {
   font-family: "Open Sans", Arial, sans-serif;
   /*text-align: left;*/
   
 }
+
 h4 {
   font-family: "Open Sans", Arial, sans-serif;
   position: absolute;
@@ -25,15 +28,20 @@ h4 {
   /*color: RGB(247, 247, 195);*/
   size: 2em;
 }
+
 span {
   color: white;
   padding: 1.5px;
 }
+
+
+
 .title {
   /*text-align: left;*/
-  margin-left: 10%;
+  margin-left: 8%;
   
 }
+
 #wrapper {
   margin-left: auto;
   margin-right: auto;
@@ -47,46 +55,58 @@ span {
   width: 60%;
   /*padding: 2%;*/
 }
+
 .Parsons {
   background: rgb(61, 144, 200);
 }
+
 .NewS {
   background: rgb(112, 197, 226);
 }
+
 svg {
   display: block;
-  margin-left: 2%;
+  margin-left: 4%;
   width: 100%;
 }
+
 .node--root {
   pointer-events: none;
 }
+
 .node {
   cursor: pointer;
 }
+
 .node:hover {
   stroke: #fff;
   stroke-width: 3px;
 }
+
 .node--leaf {
   fill: #D2EDF0;
 }
+
 .circleLabel {
   font: 8px "Helvetica Neue", Helvetica, Arial, sans-serif;
    text-anchor: middle;
   pointer-events: auto;
 }
+
 .tooltext {
   font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
   /*text-align: center;*/
 }
+
 #numbers {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5%;
+  margin-top: 0%;
   /*float: left;*/
-  padding-left: 2em;
+  padding-left: 20em;
 }
+
+
 </style>
 </head>
 <body>
@@ -98,16 +118,21 @@ svg {
 <script src="https://d3js.org/d3.v4.min.js"></script>
 
 <script>
+
 var svg = d3.select("svg"),
     margin = 0,
     diameter = +svg.attr("width"),
     g = svg.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
+
 var color = d3.scaleLinear()
     .domain([0, 1])
     .range(["rgb(255,255,255)","rgb(80,199,229)"])  //"hsl(152,80%,60%)", "hsl(228,30%,40%)"
     .interpolate(d3.interpolateRgb);
+
 // var color = d3.scaleSequential(d3.interpolateMagma)
 //     .domain([-4, 4]);
+
+
 var pack = d3.pack()
     .size([diameter - margin, diameter - margin])
     .padding(2);
@@ -118,14 +143,18 @@ var tooltip = d3.select("body")
 	.style("position", "absolute")
 // 	.style("z-index", "10")
 	.style("visibility", "hidden");
-d3.json("flareLink.json", function(error, root) {
+
+d3.json("flareUpdate2.json", function(error, root) {
   if (error) throw error;
+
   root = d3.hierarchy(root)
       .sum(function(d) { return d.size; })
       .sort(function(a, b) { return b.value - a.value; });
+
   var focus = root,
       nodes = pack(root).descendants(),
       view;
+
   var circle = g.selectAll("circle")
     .data(nodes)
     .enter().append("circle")
@@ -136,6 +165,7 @@ d3.json("flareLink.json", function(error, root) {
       .on("mouseover", function(d){return tooltip.text("size: " + d.data.size).style("visibility", "visible");})
 	    .on("mousemove", function(){return tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");})
 	    .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+
   var text = g.selectAll("text")
     .data(nodes)
     .enter().append("text")
@@ -146,20 +176,26 @@ d3.json("flareLink.json", function(error, root) {
     .style("display", function(d) { return d.parent === node, root ? "inline" : "none"; })
     .text(function(d) { return d.data.name;});
    
+
   var node = g.selectAll("circle,text");
     
+
   svg
       .style("background", color(0))
       .on("click", function() { zoom(root); });
+
   zoomTo([root.x, root.y, root.r * 2.3 + margin]);
+
   function zoom(d) {
     var focus0 = focus; focus = d;
+
     var transition = d3.transition()
         .duration(d3.event.altKey ? 7500 : 750)
         .tween("zoom", function(d) {
           var i = d3.interpolateZoom(view, [focus.x, focus.y, focus.r * 2.3 + margin]);
           return function(t) { zoomTo(i(t)); };
         });
+
     transition.selectAll("text")
         .filter(function(d) { return d.parent === focus || this.style.display === "inline"; })
         .attr('text-align','middle')
@@ -169,6 +205,7 @@ d3.json("flareLink.json", function(error, root) {
         .on("start", function(d) { if (d.parent === focus, node, root) this.style.display = "inline"; })
         .on("end", function(d) { if (d.parent === focus, node, root) this.style.display = "inline"; });
   }
+
   function zoomTo(v) {
     var k = diameter / v[2]; view = v;
     node.attr("transform", function(d) { return "translate(" + (d.x - v[0]) * k + "," + (d.y - v[1]) * k + ")"; });
@@ -181,6 +218,7 @@ d3.json("flareLink.json", function(error, root) {
   };
 }
 });
+
 </script>
 </div>
 <div id='numbers'><h5>3,104 New School Alumni and 6,785 Parsons alumni </br>self identify as entrepreneurs on LinkedIn. </br></br></br> This visualization is a sample of 1,953 alumni </br>from the <span class=NewS>The New School</span> and <span class=Parsons>Parsons</span> LinkedIn pages.</br></br></br>To zoom in, click on an inner circle.</br>To zoom out, click on an outer circle or edge.</br>Hover over the circles to display size.</h5></div>

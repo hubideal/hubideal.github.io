@@ -2,7 +2,7 @@
  "name": " ",
  "children": [
   {
-   "name": " ", "size": 1953,
+   "name": " ", "size": "",
    "children": [
     {"name": "Founder", "size": 241},
     {"name": "Owner", "size": 149},
@@ -37,19 +37,19 @@
     {"name": "Operator", "size": 4},
     {"name": "Contractor", "size": 6},
     {"name": "Strategist", "size": 13},
-    {"name": " ", "size": 992, 
+    {"name": " ", "size": "", 
    "children": [
     {"name": "Founder", "size": 247},
     {"name": "Owner", "size": 244},
     {"name": "Producer", "size": 7},
-    {"name": "Artist", "size": 35},
+    {"name": "Artist", "size": 37},
     {"name": "Director", "size": 143},
     {"name": "Coach", "size": 5},
     {"name": "Writer", "size": 11},
     {"name": "Consultant", "size": 30},
     {"name": "Editor", "size": 8},
     {"name": "Advisor", "size": 4},
-    {"name": "Faculty", "size": 8},
+    {"name": "Faculty", "size": 6},
     {"name": "Designer", "size": 183},
     {"name": "Strategist", "size": 12},
     {"name": "Executive", "size": 16},
