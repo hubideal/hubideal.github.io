@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:400,400i,500,500i,600,700|IBM+Plex+Sans:400,400i,500,500i,600,700|IBM+Plex+Serif:300,400,400i,500,600,600i,700" rel="stylesheet">
+<style>
+body {
+background: linear-gradient(to right, rgba(110,193,242,.4), rgba(110,193,242,1), rgba(110,193,242,1), rgba(110,193,242,1));
+}
+
+.node {
+  cursor: pointer;
+}
+
+h2 {
+  font: 3.5em 'IBM Plex Serif', sans-serif;
+  font-weight: 300;
+  padding: 0em;
+  margin-top: 0em;
+  margin-bottom:-.1em;
+  margin-left: 1em;
+}
+h4 {
+  font: 2em 'IBM Plex Serif', sans-serif;
+  font-weight: 400;
+  padding-top: .3em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  margin-left: 1.8em;
+}
+
+.node:hover {
+  stroke: #999;
+  stroke-width: 1px;
+}
+
+.boxDescription {
+    position: absolute;
+    text-align: left;
+    top: 80%;
+    margin-left: 4%;
+    width: 35%;
+    color: black;
+    font: 14px 'IBM Plex Sans', sans-serif; 
+    font-size: 1em;
+    font-weight: 400;
+    z-index: 3;
+}
+
+/*.textHere {*/
+/*    position: absolute;	*/
+/*    right: 20%;*/
+/*    text-align: left;			*/
+/*    font-family: sans-serif;*/
+/*    color: white;*/
+/*    font: 2em;*/
+/*    z-index: 2;*/
+/*    border: 0px;*/
+/*}*/
+
+.blockDiv {
+  margin-left: 1em;
+  width: 30em;
+  height: 50em;
+  margin-top: 1.5em;
+}
+.introduction {
+  margin-left: 12%;
+  margin-top: 1.5em;
+  
+  font: .8em 'IBM Plex Sans', sans-serif;
+}
+
+div {
+  margin-left: 2em;
+  float: left;
+}
+.label {
+  font: 14px 'IBM Plex Sans', sans-serif; 
+  font-weight: 600;
+  text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+#HBCU, #HSI, #PBI, #AANAPISI {
+  font: 40px 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+}
+#TCU, #AANH, #NASNTI {
+   font: 25px 'IBM Plex Sans', sans-serif; 
+   font-weight: 600;
+}
+#Associate, #Baccalaureate, #Master, #Doctoral  {
+    font: 20px 'IBM Plex Sans', sans-serif; 
+    font-weight: 600;
+}
+.legend {
+  font: .8em 'IBM Plex Sans', sans-serif;
+   margin-left: 10%;
+   list-style-type: none;
+}
+
+.node--leaf {
+  fill: snow;
+}
+
+a {
+  color: navy;
+}
+
+.label,
+.node--root,
+.node--leaf {
+  pointer-events: all;
+  font-weight: 400;
+  font-size: .8em;
+}
+
+</style>
+<div class="blockDiv" id="plot"><h2>Minority</h2><h2>Serving</h2><h2>Institutions</h2><h4>in the United States</h4><p class="introduction">As the U.S. population becomes more racially and ethnically diverse, Minority Serving Institutions (MSI's) will continue to play an important and unique role in our higher education system.  This data visualization project identifies the different types of MSI’s in the U.S. including Puerto Rico.   The institutions are organized by Carnegie Classifications (2015/Basic), and the circle size represent the enrollment (full-time equivalent) of each institution. Click on any circle to zoom in and out. Sources: <a href= "https://nces.ed.gov/ipeds/">IPEDS</a>, <a href= "https://www.hacu.net/hacu/default.asp">HACU</a>, <a href= "https://cmsi.gse.upenn.edu/">Penn GSE CMSI</a></p>
+<ul class="legend">
+<li>HBCU – <a href= "https://sites.ed.gov/whhbcu/one-hundred-and-five-historically-black-colleges-and-universities/">Historically Black Colleges and Universities</a></li>      
+<li>HSI – <a href= "https://www.hacu.net/hacu/HSI_Definition.asp">Hispanic Serving Institutions</a></li> 
+<li>AANAPISI – <a href= "https://www2.ed.gov/programs/aanapi/eligibility.html?exp=0">Asian American Native American Pacific Islander</a></li>
+<li>TCU – <a href= "https://sites.ed.gov/whiaiane/tribes-tcus/tribal-colleges-and-universities/">Tribal Colleges and Universities</a></li>
+<li>PBI – <a href= "https://www2.ed.gov/programs/pbihea/eligibility.html">Predominantly Black Institutions</a></li>
+<li>NASNTI – <a href= "https://www2.ed.gov/about/offices/list/ocr/edlite-minorityinst-list-pg9.html">Native American-Serving Nontribal Institutions</a></li>
+<li>ANNH – <a href= "https://www2.ed.gov/programs/iduesannh/index.html">Alaska Native and Hawaiian Native Serving Institutions</a></li>   
+</ul>
+</div><div class="imageDiv"><svg width="800" height="800"></svg></div>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+var svg = d3.select("svg"),
+    margin = 10,
+    diameter = +svg.attr("width"),
+    g = svg.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
+
+var color = d3.scaleLinear()
+    .domain([-1, 4])
+    // .range(["hsl(140,94%,94%)", "hsl(142,98%,48%)"])
+    .range(["rgb(110,193,242)", "rgb(220,234,242)"])
+    .interpolate(d3.interpolateHcl);
+
+var div = d3.select("#plot").append("div")
+            .attr("class", ".textHere")
+            .style("opacity", 0);
+
+var pack = d3.pack()
+    .size([diameter - margin, diameter - margin])
+    .padding(2);
+
+d3.json("msiDatabaseFull2.json", function(error, root) {
+  if (error) throw error;
+
+  root = d3.hierarchy(root)
+      .sum(function(d) { return d.FTE; })
+      .sort(function(a, b) { return b.value - a.value; });
+
+  var focus = root,
+      nodes = pack(root).descendants(),
+      view;
+
+   var circle = g.selectAll("circle")
+    .data(nodes)
+    .enter().append("circle")
+      .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
+      .style("fill", function(d) { return d.children ? color(d.depth) : null; })
+      .on("click", function(d) { if (focus !== d) zoom(d), d3.event.stopPropagation(); });
+      
+      
+  // var text = g.selectAll("text")
+  //   .data(nodes)
+  //   .enter().append("text")
+  //     .attr("class", "label")
+  //     .attr("id", function(d) { return d.data.Name;})
+  //     .style("fill-opacity", function(d) { return d.parent === root ? 1 : .5; })
+  //     // .style("display", function(d) { return d.parent === root ? "inline" : "none"; })
+  //     .style("display", function(d) { return d.parent === root ? "inline" : "none"; })
+  //     .text(function(d) { return d.data.Name; });
+  
+  
+  var text = g.selectAll("text")
+      .data(nodes)
+      .enter().append("text")
+      .attr("class", "label")
+      .attr("id", function(d) { return d.data.Name;})
+      .style("fill-opacity", function(d) { return d.parent === root ? 1 : 0; })
+      .style("display", function(d) { return d.parent === root ? "inline" : "none"; })
+      .text(function(d) { return d.data.Name; });      
+  
+  
+
+  var node = g.selectAll("circle,text");
+
+  svg
+      .style("background", color(-1))
+      .on("click", function() { zoom(root); });
+  
+  
+d3.selectAll(".node--leaf")
+      .on("mouseover", function(d) {
+            div.html("<b>" + d.data.Name2 + "</b> <br> " + 'Enrollment: ' + d.data.FTE + " <br> " + "State/Province: " + d.data.State + " <br> " + "Carnegie -- " + d.data.Carnegie)
+                .attr("class", "boxDescription");
+            div.transition()		
+                .duration(100)
+                .attr("text-anchor", "center") 
+                .style("opacity", 1);
+                // .html(function(d) { if (d.newClusters == 6) d.words})
+      })
+      .on("mouseout", function(d) {		
+            div.transition()		
+                .duration(2000)		
+                .style("opacity", 0);
+    
+        })
+    
+      
+
+  zoomTo([root.x, root.y, root.r * 2.1 + margin]);
+
+ function zoom(d) {
+    var focus0 = focus; focus = d;
+
+    var transition = d3.transition()
+        .duration(d3.event.altKey ? 7500 : 750)
+        .tween("zoom", function(d) {
+          var i = d3.interpolateZoom(view, [focus.x, focus.y, focus.r * 2 + margin]);
+          return function(t) { zoomTo(i(t)); };
+        });
+
+    transition.selectAll("text")
+      .filter(function(d) { return d.parent === focus || this.style.display === "inline"; })
+        .style("fill-opacity", function(d) { return d.parent === focus ? 1 : 0; })
+        .on("start", function(d) { if (d.parent === focus) this.style.display = "inline"; })
+        .on("end", function(d) { if (d.parent !== focus) this.style.display = "none"; });
+  }
+
+  function zoomTo(v) {
+    var k = diameter / v[2]; view = v;
+    node.attr("transform", function(d) { return "translate(" + (d.x - v[0]) * k + "," + (d.y - v[1]) * k + ")"; });
+    circle.attr("r", function(d) { return d.r * k; });
+  }
+});
+
+</script>

@@ -1,0 +1,214 @@
+{
+ "Name": "AANAPISI",
+ "children": [
+  {
+   "Name": "Associate",
+   "children": [
+      {
+      "Name": "High Career & Tech", 
+      "children": [
+{"Name": "Merritt College","FTE": 2963,"Control": "Public","State": "California","Lat":37.789088,"Long":-122.167335,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Renton Technical College","FTE": 2213,"Control": "Public","State": "Washington","Lat":47.489206,"Long":-122.176303,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Long Beach City College","FTE": 14391,"Control": "Public","State": "California","Lat":33.831741,"Long":-118.135819,"Carnegie": "Associate's Colleges: High Career & Technical-High Traditional"},
+{"Name": "Saint Paul College","FTE": 4022,"Control": "Public","State": "Minnesota","Lat":44.9492,"Long":-93.109664,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Los Angeles ORT College-Los Angeles Campus","FTE": 324,"Control": "Private not-for-profit","State": "California","Lat":34.063876,"Long":-118.369383,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"}
+]
+},
+{
+      "Name": "High Transfer", 
+      "children": [
+{"Name": "College of Alameda","FTE": 2766,"Control": "Public","State": "California","Lat":37.78239,"Long":-122.279261,"Carnegie": "Associate's Colleges: High Transfer-High Nontraditional"},
+{"Name": "Foothill College","FTE": 9156,"Control": "Public","State": "California","Lat":37.361655,"Long":-122.127964,"Carnegie": "Associate's Colleges: High Transfer-High Nontraditional"},
+{"Name": "Mission College","FTE": 3868,"Control": "Public","State": "California","Lat":37.391323,"Long":-121.982174,"Carnegie": "Associate's Colleges: High Transfer-High Nontraditional"},
+{"Name": "Berkeley City College","FTE": 3220,"Control": "Public","State": "California","Lat":37.87047,"Long":-122.269793,"Carnegie": "Associate's Colleges: High Transfer-High Nontraditional"},
+{"Name": "Brookhaven College","FTE": 5791,"Control": "Public","State": "Texas","Lat":32.928237,"Long":-96.85016,"Carnegie": "Associate's Colleges: High Transfer-High Nontraditional"},
+{"Name": "North Lake College","FTE": 5197,"Control": "Public","State": "Texas","Lat":32.871878,"Long":-96.967106,"Carnegie": "Associate's Colleges: High Transfer-High Nontraditional"},
+{"Name": "Richland College","FTE": 9100,"Control": "Public","State": "Texas","Lat":32.922141,"Long":-96.730505,"Carnegie": "Associate's Colleges: High Transfer-High Nontraditional"},
+{"Name": "Pierce College-Fort Steilacoom","FTE": 4072,"Control": "Public","State": "Washington","Lat":47.172082,"Long":-122.570935,"Carnegie": "Associate's Colleges: High Transfer-High Nontraditional"},
+{"Name": "American River College","FTE": 14657,"Control": "Public","State": "California","Lat":38.649734,"Long":-121.346012,"Carnegie": "Associate's Colleges: High Transfer-High Traditional"},
+{"Name": "Evergreen Valley College","FTE": 4782,"Control": "Public","State": "California","Lat":37.301736,"Long":-121.766686,"Carnegie": "Associate's Colleges: High Transfer-High Traditional"},
+{"Name": "Fullerton College","FTE": 12951,"Control": "Public","State": "California","Lat":33.876794,"Long":-117.916986,"Carnegie": "Associate's Colleges: High Transfer-High Traditional"},
+{"Name": "Golden West College","FTE": 6481,"Control": "Public","State": "California","Lat":33.733775,"Long":-118.003036,"Carnegie": "Associate's Colleges: High Transfer-High Traditional"},
+{"Name": "Irvine Valley College","FTE": 8129,"Control": "Public","State": "California","Lat":33.675079,"Long":-117.778575,"Carnegie": "Associate's Colleges: High Transfer-High Traditional"},
+{"Name": "Orange Coast College","FTE": 12983,"Control": "Public","State": "California","Lat":33.670171,"Long":-117.911401,"Carnegie": "Associate's Colleges: High Transfer-High Traditional"},
+{"Name": "Yuba College","FTE": 3651,"Control": "Public","State": "California","Lat":39.125995,"Long":-121.539316,"Carnegie": "Associate's Colleges: High Transfer-High Traditional"},
+{"Name": "CUNY Queensborough Community College","FTE": 11275,"Control": "Public","State": "New York","Lat":40.754858,"Long":-73.754548,"Carnegie": "Associate's Colleges: High Transfer-High Traditional"},
+{"Name": "Solano Community College","FTE": 5275,"Control": "Public","State": "California","Lat":38.235881,"Long":-122.122368,"Carnegie": "Associate's Colleges: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Middlesex Community College","FTE": 1566,"Control": "Public","State": "Connecticut","Lat":41.539516,"Long":-72.611838,"Carnegie": "Associate's Colleges: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Montgomery College","FTE": 13671,"Control": "Public","State": "Maryland","Lat":39.098656,"Long":-77.15929,"Carnegie": "Associate's Colleges: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Bunker Hill Community College","FTE": 7298,"Control": "Public","State": "Massachusetts","Lat":42.374806,"Long":-71.069263,"Carnegie": "Associate's Colleges: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "North Hennepin Community College","FTE": 3636,"Control": "Public","State": "Minnesota","Lat":45.107408,"Long":-93.373662,"Carnegie": "Associate's Colleges: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Middlesex County College","FTE": 7391,"Control": "Public","State": "New Jersey","Lat":40.504728,"Long":-74.366544,"Carnegie": "Associate's Colleges: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "CUNY Kingsborough Community College","FTE": 11246,"Control": "Public","State": "New York","Lat":40.576446,"Long":-73.934779,"Carnegie": "Associate's Colleges: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Northern Virginia Community College","FTE": 28746,"Control": "Public","State": "Virginia","Lat":38.834039,"Long":-77.236679,"Carnegie": "Associate's Colleges: High Transfer-Mixed Traditional/Nontraditional"}
+]
+},
+{
+      "Name": "Mixed Transfer/Career", 
+      "children": [
+{"Name": "Laney College","FTE": 5028,"Control": "Public","State": "California","Lat":37.796205,"Long":-122.262434,"Carnegie": "Associate's Colleges: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "Los Angeles City College","FTE": 8709,"Control": "Public","State": "California","Lat":34.087301,"Long":-118.292169,"Carnegie": "Associate's Colleges: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "College of DuPage","FTE": 15013,"Control": "Public","State": "Illinois","Lat":41.841577,"Long":-88.071635,"Carnegie": "Associate's Colleges: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "Oakton Community College","FTE": 4895,"Control": "Public","State": "Illinois","Lat":42.061893,"Long":-87.880644,"Carnegie": "Associate's Colleges: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "Edmonds Community College","FTE": 5276,"Control": "Public","State": "Washington","Lat":47.816742,"Long":-122.327483,"Carnegie": "Associate's Colleges: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "Shoreline Community College","FTE": 3906,"Control": "Public","State": "Washington","Lat":47.748592,"Long":-122.358555,"Carnegie": "Associate's Colleges: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "Kauai Community College","FTE": 750,"Control": "Public","State": "Hawaii","Lat":21.969509,"Long":-159.395966,"Carnegie": "Associate's Colleges: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Hawaii Community College","FTE": 1761,"Control": "Public","State": "Hawaii","Lat":19.704756,"Long":-155.069653,"Carnegie": "Associate's Colleges: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Cosumnes River College","FTE": 7002,"Control": "Public","State": "California","Lat":38.453836,"Long":-121.422971,"Carnegie": "Associate's Colleges: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Cypress College","FTE": 8837,"Control": "Public","State": "California","Lat":33.827625,"Long":-118.023889,"Carnegie": "Associate's Colleges: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Merced College","FTE": 6748,"Control": "Public","State": "California","Lat":37.335348,"Long":-120.476726,"Carnegie": "Associate's Colleges: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Mt San Antonio College","FTE": 16649,"Control": "Public","State": "California","Lat":34.043786,"Long":-117.8437,"Carnegie": "Associate's Colleges: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Century College","FTE": 5373,"Control": "Public","State": "Minnesota","Lat":45.041816,"Long":-92.982109,"Carnegie": "Associate's Colleges: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "City College of San Francisco","FTE": 10723,"Control": "Public","State": "California","Lat":37.725953,"Long":-122.451155,"Carnegie": "Associate's Colleges: Mixed Transfer/Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Wharton County Junior College","FTE": 4275,"Control": "Public","State": "Texas","Lat":29.324294,"Long":-96.085199,"Carnegie": "Associate's Colleges: Mixed Transfer/Career & Technical-Mixed Traditional/Nontraditional"}
+]
+}
+]
+},
+  {
+   "Name": "Baccalaureate",
+   "children": [
+      {
+      "Name": "Arts & Sciences", 
+      "children": [
+{"Name": "East-West University","FTE": 510,"Control": "Private not-for-profit","State": "Illinois","Lat":41.871309,"Long":-87.624793,"Carnegie": "Baccalaureate Colleges: Arts & Sciences Focus"},
+{"Name": "Pacific Union College","FTE": 1347,"Control": "Private not-for-profit","State": "California","Lat":38.570585,"Long":-122.440308,"Carnegie": "Baccalaureate Colleges: Arts & Sciences Focus"}
+]
+},
+{
+      "Name": "Diverse Fields", 
+      "children": [
+{"Name": "Pacific Rim Christian University","FTE": 105,"Control": "Private not-for-profit","State": "Hawaii","Lat":21.328198,"Long":-157.888379,"Carnegie": "Baccalaureate Colleges: Diverse Fields"},
+{"Name": "Pennsylvania State University-Penn State Abington","FTE": 3469,"Control": "Public","State": "Pennsylvania","Lat":40.11683,"Long":-75.109083,"Carnegie": "Baccalaureate Colleges: Diverse Fields"},
+{"Name": "Nevada State College","FTE": 2430,"Control": "Public","State": "Nevada","Lat":35.987249,"Long":-114.938929,"Carnegie": "Baccalaureate Colleges: Diverse Fields"}
+]
+}
+]
+},
+  {
+   "Name": "Baccalaureate/Associate",
+   "children": [
+{"Name": "College of Southern Nevada","FTE": 18991,"Control": "Public","State": "Nevada","Lat":36.158443,"Long":-115.233784,"Carnegie": "Baccalaureate/Associate's Colleges: Associate's Dominant"},
+{"Name": "Bellevue College","FTE": 9602,"Control": "Public","State": "Washington","Lat":47.584778,"Long":-122.149955,"Carnegie": "Baccalaureate/Associate's Colleges: Associate's Dominant"},
+{"Name": "Highline College","FTE": 4992,"Control": "Public","State": "Washington","Lat":47.388331,"Long":-122.302593,"Carnegie": "Baccalaureate/Associate's Colleges: Associate's Dominant"},
+{"Name": "South Seattle College","FTE": 3812,"Control": "Public","State": "Washington","Lat":47.5475,"Long":-122.352672,"Carnegie": "Baccalaureate/Associate's Colleges: Associate's Dominant"},
+{"Name": "Seattle Central College","FTE": 4819,"Control": "Public","State": "Washington","Lat":47.616675,"Long":-122.321472,"Carnegie": "Baccalaureate/Associate's Colleges: Associate's Dominant"},
+{"Name": "California College San Diego","FTE": 368,"Control": "Private not-for-profit","State": "California","Lat":33.138303,"Long":-117.160658,"Carnegie": "Baccalaureate/Associate's Colleges: Associate's Dominant"},
+{"Name": "Remington College-Honolulu Campus","FTE": 405,"Control": "Private not-for-profit","State": "Hawaii","Lat":21.309273,"Long":-157.860023,"Carnegie": "Baccalaureate/Associate's Colleges: Mixed Baccalaureate/Associate's"},
+{"Name": "Skyline College-Roanoke","FTE": ,"Control": "Private for-profit","State": "Virginia","Lat":37.319719,"Long":-79.959442,"Carnegie": "Baccalaureate/Associate's Colleges: Mixed Baccalaureate/Associate's"}
+]
+},
+  {
+   "Name": "Doctoral",
+      "children": [
+      {
+      "Name": "Higher Research", 
+      "children": [
+{"Name": "San Diego State University","FTE": 31668,"Control": "Public","State": "California","Lat":32.77525,"Long":-117.071228,"Carnegie": "Doctoral Universities: Higher Research Activity"},
+{"Name": "University of Maryland-Baltimore County","FTE": 11801,"Control": "Public","State": "Maryland","Lat":39.256686,"Long":-76.711607,"Carnegie": "Doctoral Universities: Higher Research Activity"},
+{"Name": "University of Massachusetts-Boston","FTE": 13084,"Control": "Public","State": "Massachusetts","Lat":42.312881,"Long":-71.036865,"Carnegie": "Doctoral Universities: Higher Research Activity"},
+{"Name": "University of Nevada-Las Vegas","FTE": 24308,"Control": "Public","State": "Nevada","Lat":36.106994,"Long":-115.141153,"Carnegie": "Doctoral Universities: Higher Research Activity"},
+{"Name": "Rutgers University-Newark","FTE": 9976,"Control": "Public","State": "New Jersey","Lat":40.741303,"Long":-74.175294,"Carnegie": "Doctoral Universities: Higher Research Activity"},
+{"Name": "University of California-Merced","FTE": 7291,"Control": "Public","State": "California","Lat":37.366237,"Long":-120.424944,"Carnegie": "Doctoral Universities: Higher Research Activity"}
+]
+},
+{
+      "Name": "Highest Research", 
+      "children": [
+{"Name": "University of Hawaii at Manoa","FTE": 15276,"Control": "Public","State": "Hawaii","Lat":21.298598,"Long":-157.818979,"Carnegie": "Doctoral Universities: Highest Research Activity"},
+{"Name": "University of California-Irvine","FTE": 32279,"Control": "Public","State": "California","Lat":33.648434,"Long":-117.841248,"Carnegie": "Doctoral Universities: Highest Research Activity"},
+{"Name": "University of Illinois at Chicago","FTE": 26237,"Control": "Public","State": "Illinois","Lat":41.872651,"Long":-87.651145,"Carnegie": "Doctoral Universities: Highest Research Activity"},
+{"Name": "University of Maryland-College Park","FTE": 36211,"Control": "Public","State": "Maryland","Lat":38.988178,"Long":-76.944721,"Carnegie": "Doctoral Universities: Highest Research Activity"},
+{"Name": "University of Minnesota-Twin Cities","FTE": 43965,"Control": "Public","State": "Minnesota","Lat":44.977886,"Long":-93.235352,"Carnegie": "Doctoral Universities: Highest Research Activity"},
+{"Name": "University of Houston","FTE": 36425,"Control": "Public","State": "Texas","Lat":29.720393,"Long":-95.343537,"Carnegie": "Doctoral Universities: Highest Research Activity"}
+]
+},
+{
+      "Name": "Moderate Research", 
+      "children": [
+{"Name": "Azusa Pacific University","FTE": 8319,"Control": "Private not-for-profit","State": "California","Lat":34.130865,"Long":-117.88795,"Carnegie": "Doctoral Universities: Moderate Research Activity"},
+{"Name": "California State University-Fresno","FTE": 22303,"Control": "Public","State": "California","Lat":36.814477,"Long":-119.748258,"Carnegie": "Doctoral Universities: Moderate Research Activity"},
+{"Name": "University of the Pacific","FTE": 5644,"Control": "Private not-for-profit","State": "California","Lat":37.981424,"Long":-121.312301,"Carnegie": "Doctoral Universities: Moderate Research Activity"},
+{"Name": "San Francisco State University","FTE": 25637,"Control": "Public","State": "California","Lat":37.721345,"Long":-122.477905,"Carnegie": "Doctoral Universities: Moderate Research Activity"},
+{"Name": "University of San Francisco","FTE": 10345,"Control": "Private not-for-profit","State": "California","Lat":37.775564,"Long":-122.450977,"Carnegie": "Doctoral Universities: Moderate Research Activity"},
+{"Name": "St John's University-New York","FTE": 16839,"Control": "Private not-for-profit","State": "New York","Lat":40.722523,"Long":-73.796104,"Carnegie": "Doctoral Universities: Moderate Research Activity"}
+]
+}
+]
+},
+{
+   "Name": "Master",
+   "children": [
+      {
+      "Name": "Larger Programs",
+      "children": [
+{"Name": "California State University-Stanislaus","FTE": 8678,"Control": "Public","State": "California","Lat":37.52577,"Long":-120.852511,"Carnegie": "Master's Colleges & Universities: Larger Programs"},
+{"Name": "California State Polytechnic University-Pomona","FTE": 23187,"Control": "Public","State": "California","Lat":34.054273,"Long":-117.819019,"Carnegie": "Master's Colleges & Universities: Larger Programs"},
+{"Name": "California State University-East Bay","FTE": 13976,"Control": "Public","State": "California","Lat":37.65707,"Long":-122.058073,"Carnegie": "Master's Colleges & Universities: Larger Programs"},
+{"Name": "California State University-Los Angeles","FTE": 24386,"Control": "Public","State": "California","Lat":34.066927,"Long":-118.168965,"Carnegie": "Master's Colleges & Universities: Larger Programs"},
+{"Name": "California State University-Sacramento","FTE": 27070,"Control": "Public","State": "California","Lat":38.55745,"Long":-121.42194,"Carnegie": "Master's Colleges & Universities: Larger Programs"},
+{"Name": "National University","FTE": 11920,"Control": "Private not-for-profit","State": "California","Lat":32.909469,"Long":-117.244243,"Carnegie": "Master's Colleges & Universities: Larger Programs"},
+{"Name": "Notre Dame de Namur University","FTE": 1255,"Control": "Private not-for-profit","State": "California","Lat":37.517501,"Long":-122.284618,"Carnegie": "Master's Colleges & Universities: Larger Programs"},
+{"Name": "Saint Mary's College of California","FTE": 3445,"Control": "Private not-for-profit","State": "California","Lat":37.840731,"Long":-122.109031,"Carnegie": "Master's Colleges & Universities: Larger Programs"},
+{"Name": "Metropolitan State University","FTE": 5169,"Control": "Public","State": "Minnesota","Lat":44.957256,"Long":-93.074361,"Carnegie": "Master's Colleges & Universities: Larger Programs"},
+{"Name": "St Catherine University","FTE": 3515,"Control": "Private not-for-profit","State": "Minnesota","Lat":44.924542,"Long":-93.181925,"Carnegie": "Master's Colleges & Universities: Larger Programs"},
+{"Name": "CUNY Bernard M Baruch College","FTE": 14393,"Control": "Public","State": "New York","Lat":40.740238,"Long":-73.983417,"Carnegie": "Master's Colleges & Universities: Larger Programs"},
+{"Name": "CUNY Brooklyn College","FTE": 13425,"Control": "Public","State": "New York","Lat":40.631912,"Long":-73.95312,"Carnegie": "Master's Colleges & Universities: Larger Programs"},
+{"Name": "College of Staten Island CUNY","FTE": 11261,"Control": "Public","State": "New York","Lat":40.601831,"Long":-74.14849,"Carnegie": "Master's Colleges & Universities: Larger Programs"},
+{"Name": "CUNY City College","FTE": 12662,"Control": "Public","State": "New York","Lat":40.819794,"Long":-73.95055,"Carnegie": "Master's Colleges & Universities: Larger Programs"},
+{"Name": "CUNY Hunter College","FTE": 17248,"Control": "Public","State": "New York","Lat":40.768669,"Long":-73.964795,"Carnegie": "Master's Colleges & Universities: Larger Programs"},
+{"Name": "CUNY Queens College","FTE": 15057,"Control": "Public","State": "New York","Lat":40.735182,"Long":-73.816098,"Carnegie": "Master's Colleges & Universities: Larger Programs"},
+{"Name": "LIU Brooklyn","FTE": 6449,"Control": "Private not-for-profit","State": "New York","Lat":40.690134,"Long":-73.980872,"Carnegie": "Master's Colleges & Universities: Larger Programs"},
+{"Name": "New York Institute of Technology","FTE": 6833,"Control": "Private not-for-profit","State": "New York","Lat":40.812447,"Long":-73.6078,"Carnegie": "Master's Colleges & Universities: Larger Programs"},
+{"Name": "Pacific University","FTE": 3758,"Control": "Private not-for-profit","State": "Oregon","Lat":45.521394,"Long":-123.108777,"Carnegie": "Master's Colleges & Universities: Larger Programs"},
+{"Name": "University of Washington-Bothell Campus","FTE": 5172,"Control": "Public","State": "Washington","Lat":47.760718,"Long":-122.191454,"Carnegie": "Master's Colleges & Universities: Larger Programs"},
+{"Name": "University of Washington-Tacoma Campus","FTE": 4473,"Control": "Public","State": "Washington","Lat":47.244594,"Long":-122.438541,"Carnegie": "Master's Colleges & Universities: Larger Programs"},
+]
+},
+{
+      "Name": "Medium Programs",
+      "children": [
+{"Name": "Holy Names University","FTE": 677,"Control": "Private not-for-profit","State": "California","Lat":37.802654,"Long":-122.18717,"Carnegie": "Master's Colleges & Universities: Medium Programs"},
+{"Name": "Mount Saint Mary's University","FTE": 3026,"Control": "Private not-for-profit","State": "California","Lat":34.082112,"Long":-118.480471,"Carnegie": "Master's Colleges & Universities: Medium Programs"},
+]
+},
+{
+      "Name": "Small Programs",
+      "children": [
+{"Name": "University of Hawaii at Hilo","FTE": 3180,"Control": "Public","State": "Hawaii","Lat":19.701854,"Long":-155.081329,"Carnegie": "Master's Colleges & Universities: Small Programs"},
+{"Name": "SUNY College at Old Westbury","FTE": 4039,"Control": "Public","State": "New York","Lat":40.799021,"Long":-73.571907,"Carnegie": "Master's Colleges & Universities: Small Programs"}
+]
+},
+  {
+   "Name": "N/A",
+      "children": [
+{"Name": "CBD College","FTE": 521,"Control": "Private not-for-profit","State": "California","Lat":34.06231,"Long":-118.306221,"Carnegie": "Not applicable, not in Carnegie universe (not accredited or nondegree-granting)"},
+{"Name": "Homestead Schools","FTE": 79,"Control": "Private not-for-profit","State": "California","Lat":33.808573,"Long":-118.350152,"Carnegie": "Not applicable, not in Carnegie universe (not accredited or nondegree-granting)"},
+]
+},
+{
+   "Name": "Special Focus",
+   "children": [
+   {
+      "Name": "Other Health Prof.",
+      "children": [
+{"Name": "Palo Alto University","FTE": 980,"Control": "Private not-for-profit","State": "California","Lat":37.383251,"Long":-122.186022,"Carnegie": "Special Focus Four-Year: Other Health Professions Schools"},
+{"Name": "Samuel Merritt University","FTE": 1590,"Control": "Private not-for-profit","State": "California","Lat":37.82029,"Long":-122.266331,"Carnegie": "Special Focus Four-Year: Other Health Professions Schools"},
+{"Name": "University of the Sciences","FTE": 2389,"Control": "Private not-for-profit","State": "Pennsylvania","Lat":39.946552,"Long":-75.208241,"Carnegie": "Special Focus Four-Year: Other Health Professions Schools"},
+{"Name": "The University of Texas MD Anderson Cancer Center","FTE": 321,"Control": "Public","State": "Texas","Lat":29.705395,"Long":-95.40079,"Carnegie": "Special Focus Four-Year: Other Health Professions Schools"}
+]
+},
+ {
+      "Name": "Other",
+      "children": [
+{"Name": "Coleman University","FTE": 351,"Control": "Private not-for-profit","State": "California","Lat":32.821962,"Long":-117.136493,"Carnegie": "Special Focus Four-Year: Other Technology-Related Schools"},
+{"Name": "Otis College of Art and Design","FTE": 1066,"Control": "Private not-for-profit","State": "California","Lat":33.956607,"Long":-118.416615,"Carnegie": "Special Focus Four-Year: Arts, Music & Design Schools"},
+{"Name": "Lincoln University","FTE": 766,"Control": "Private not-for-profit","State": "California","Lat":37.804788,"Long":-122.269745,"Carnegie": "Special Focus Four-Year: Business & Management Schools"},
+{"Name": "Urban College of Boston","FTE": 365,"Control": "Private not-for-profit","State": "Massachusetts","Lat":42.352944,"Long":-71.064378,"Carnegie": "Special Focus Two-Year: Other Fields"},
+{"Name": "Beulah Heights University","FTE": 297,"Control": "Private not-for-profit","State": "Georgia","Lat":33.737022,"Long":-84.358086,"Carnegie": "Special Focus Four-Year: Faith-Related Institutions"}
+]
+}
+]
+}
+]
+}

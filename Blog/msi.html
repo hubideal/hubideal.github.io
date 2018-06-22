@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+<style>
+h1 {
+  font-family: "Open Sans", sans-serif;
+  /*text-align: left;*/
+}
+h3 {
+  font-family: "Open Sans", Arial, sans-serif;
+  /*text-align: left;*/
+}
+h5 {
+  font-family: "Open Sans", Arial, sans-serif;
+  /*text-align: left;*/
+  
+}
+h4 {
+  font-family: "Open Sans", Arial, sans-serif;
+  position: absolute;
+  left: 62%;
+  top: 10%;
+  /*color: RGB(247, 247, 195);*/
+  size: 2em;
+}
+span {
+  color: white;
+  padding: 1.5px;
+}
+.title {
+  /*text-align: left;*/
+  margin-left: 10%;
+  
+}
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+#visual {
+  /*display: block;*/
+  float: left;
+  /*margin-left: 8%;*/
+  margin-right: auto;
+  width: 100%;
+  /*padding: 2%;*/
+}
+.Parsons {
+  background: rgb(61, 144, 200);
+}
+.New {
+  background: rgb(112, 197, 226);
+}
+svg {
+  display: block;
+  margin-left: 2%;
+  width: 100%;
+}
+
+.label,
+.node--root,
+.node--leaf {
+  pointer-events: none;
+}
+
+.node {
+  cursor: pointer;
+}
+.node:hover {
+  stroke: #fff;
+  stroke-width: 3px;
+}
+.node--leaf {
+  fill: #D2EDF0;
+}
+.circleLabel {
+  font: 8px "Helvetica Neue", Helvetica, Arial, sans-serif;
+   text-anchor: middle;
+  pointer-events: auto;
+}
+.tooltext {
+  font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*text-align: center;*/
+}
+#numbers {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  /*float: left;*/
+  padding-left: 2em;
+}
+</style>
+</head>
+<body>
+<div id="wrapper"><div id='visual'>
+  <!--<h4>The New School</h4>-->
+<svg width="1000" height="800"></svg>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+<script>
+var svg = d3.select("svg"),
+    margin = 0,
+    diameter = +svg.attr("width"),
+    g = svg.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
+var color = d3.scaleLinear()
+    .domain([0, 1])
+    .range(["rgb(255,255,255)","rgb(80,199,229)"])  //"hsl(152,80%,60%)", "hsl(228,30%,40%)"
+    .interpolate(d3.interpolateRgb);
+// var color = d3.scaleSequential(d3.interpolateMagma)
+//     .domain([-4, 4]);
+var pack = d3.pack()
+    .size([diameter - margin, diameter - margin])
+    .padding(2);
+    
+var tooltip = d3.select("body")
+	.append("div")
+	.attr("class", "tooltext")
+	.style("position", "absolute")
+// 	.style("z-index", "10")
+	.style("visibility", "hidden");
+d3.json("msiHSI.json", function(error, root) {
+  if (error) throw error;
+  root = d3.hierarchy(root)
+      .sum(function(d) { return d.FTE; })
+      .sort(function(a, b) { return b.value - a.value; });
+  var focus = root,
+      nodes = pack(root).descendants(),
+      view;
+  var circle = g.selectAll("circle")
+    .data(nodes)
+    .enter().append("circle")
+      .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
+      .attr('text-align','center')
+      .style("fill", function(d) { return d.children ? color(d.depth) : "null"; })
+      .on("click", function(d) { if (focus !== d) zoom(d), d3.event.stopPropagation(); })
+      .on("mouseover", function(d){return tooltip.text("size: " + d.data.FTE).style("visibility", "visible");})
+	    .on("mousemove", function(){return tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");})
+	    .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+  var text = g.selectAll("text")
+    .data(nodes)
+    .enter().append("text")
+    .attr("class", "circleLabel")
+    .style("font-size", function(d) { return Math.min(d.r*.2, (d.r*.3) / this.getComputedTextLength()*10) + "px"; })
+    .attr("dy", ".35em")
+    .style("fill-opacity", function(d) { return d.parent === node, root ? 1 : 0; })
+    .style("display", function(d) { return d.parent === node, root ? "inline" : "none"; })
+    .text(function(d) { return d.data.Name;});
+   
+  var node = g.selectAll("circle,text");
+    
+  svg
+      .style("background", color(0))
+      .on("click", function() { zoom(root); });
+  zoomTo([root.x, root.y, root.r * 2.3 + margin]);
+  function zoom(d) {
+    var focus0 = focus; focus = d;
+    var transition = d3.transition()
+        .duration(d3.event.altKey ? 7500 : 750)
+        .tween("zoom", function(d) {
+          var i = d3.interpolateZoom(view, [focus.x, focus.y, focus.r * 2.3 + margin]);
+          return function(t) { zoomTo(i(t)); };
+        });
+    transition.selectAll("text")
+        .filter(function(d) { return d.parent === focus || this.style.display === "inline"; })
+        .attr('text-align','middle')
+        .style("font-size", function(d) { return Math.min(d.r*.1, (d.r*.1)/ this.getComputedTextLength() * 10) + "px"; })
+        .attr("dy", ".35em")
+        .style("fill-opacity", function(d) { return d.parent === focus, node, root ? 1 : 0; })
+        .on("start", function(d) { if (d.parent === focus, node, root) this.style.display = "inline"; })
+        .on("end", function(d) { if (d.parent === focus, node, root) this.style.display = "inline"; });
+  }
+  function zoomTo(v) {
+    var k = diameter / v[2]; view = v;
+    node.attr("transform", function(d) { return "translate(" + (d.x - v[0]) * k + "," + (d.y - v[1]) * k + ")"; });
+    circle.attr("r", function(d) { return d.r * k; });
+  }
+  
+  function hovered(hover) {
+  return function(d) {
+	d3.selectAll(d.ancestors().map(function(d) {}));
+  };
+}
+});
+</script>
+</div>
+  </body> 

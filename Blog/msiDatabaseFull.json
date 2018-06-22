@@ -1,0 +1,901 @@
+{"Name": "",
+ "children": [
+
+{
+ "Name": "HBCU",
+ "children": [
+  {
+   "Name": "Associate",
+   "children": [
+      {
+      "Name": "High Career & Tech", 
+      "children": [
+{"Name": "St Philip's Col.","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Col.s: High Career & Technical-High Nontraditional"},
+{"Name": "J F Drake State Community & Technical Col.","FTE": 581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Col.s: High Career & Technical-High Nontraditional"},
+{"Name": "Denmark Technical Col.","FTE": 465,"Control": "Public","State": "South Carolina","Lat":33.313355,"Long":-81.123629,"Carnegie": "Associate's Col.s: High Career & Technical-High Traditional"},
+{"Name": "Gadsden State C.C.","FTE": 3385,"Control": "Public","State": "Alabama","Lat":33.991866,"Long":-85.991299,"Carnegie": "Associate's Col.s: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Bishop State C.C.","FTE": 2052,"Control": "Public","State": "Alabama","Lat":30.693972,"Long":-88.056982,"Carnegie": "Associate's Col.s: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Shelton State C.C.","FTE": 3026,"Control": "Public","State": "Alabama","Lat":33.120531,"Long":-87.56148,"Carnegie": "Associate's Col.s: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "H Councill Trenholm State C.C.","FTE": 1053,"Control": "Public","State": "Alabama","Lat":32.350109,"Long":-86.343057,"Carnegie": "Associate's Col.s: High Career & Technical-Mixed Traditional/Nontraditional"}
+]
+},
+{
+      "Name": "High Transfer", 
+      "children": [
+{"Name": "Shorter Col.","FTE": 423,"Control": "Private not-for-profit","State": "Arkansas","Lat":34.75933,"Long":-92.261331,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"}
+]
+},
+{
+      "Name": "Mixed Transfer/Career", 
+      "children": [
+{"Name": "Southern Univ. at Shreveport","FTE": 2258,"Control": "Public","State": "Louisiana","Lat":32.545632,"Long":-93.834559,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Coahoma C.C.","FTE": 1735,"Control": "Public","State": "Mississippi","Lat":34.255626,"Long":-90.570304,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Lawson State C.C.-Birmingham Campus","FTE": 2176,"Control": "Public","State": "Alabama","Lat":33.451673,"Long":-86.890234,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-Mixed Traditional/Nontraditional"}
+]
+}
+]
+},
+  {
+   "Name": "Baccalaureate",
+   "children": [
+      {
+      "Name": "Arts & Sciences", 
+      "children": [
+{"Name": "Stillman Col.","FTE": 598,"Control": "Private not-for-profit","State": "Alabama","Lat":33.199228,"Long":-87.585242,"Carnegie": "Baccalaureate Col.s: Arts & Sciences Focus"},
+{"Name": "Phil&er Smith Col.","FTE": 741,"Control": "Private not-for-profit","State": "Arkansas","Lat":34.737131,"Long":-92.283015,"Carnegie": "Baccalaureate Col.s: Arts & Sciences Focus"},
+{"Name": "Bethune-Cookman Univ.","FTE": 3780,"Control": "Private not-for-profit","State": "Florida","Lat":29.210193,"Long":-81.031429,"Carnegie": "Baccalaureate Col.s: Arts & Sciences Focus"},
+{"Name": "Morehouse Col.","FTE": 2055,"Control": "Private not-for-profit","State": "Georgia","Lat":33.74793,"Long":-84.415156,"Carnegie": "Baccalaureate Col.s: Arts & Sciences Focus"},
+{"Name": "Paine Col.","FTE": 433,"Control": "Private not-for-profit","State": "Georgia","Lat":33.469545,"Long":-81.993225,"Carnegie": "Baccalaureate Col.s: Arts & Sciences Focus"},
+{"Name": "Spelman Col.","FTE": 2086,"Control": "Private not-for-profit","State": "Georgia","Lat":33.745279,"Long":-84.411527,"Carnegie": "Baccalaureate Col.s: Arts & Sciences Focus"},
+{"Name": "Dillard Univ.","FTE": 1211,"Control": "Private not-for-profit","State": "Louisiana","Lat":29.996587,"Long":-90.06464,"Carnegie": "Baccalaureate Col.s: Arts & Sciences Focus"},
+{"Name": "Tougaloo Col.","FTE": 839,"Control": "Private not-for-profit","State": "Mississippi","Lat":32.403014,"Long":-90.16076,"Carnegie": "Baccalaureate Col.s: Arts & Sciences Focus"},
+{"Name": "Johnson C Smith Univ.","FTE": 1402,"Control": "Private not-for-profit","State": "North Carolina","Lat":35.243384,"Long":-80.854842,"Carnegie": "Baccalaureate Col.s: Arts & Sciences Focus"},
+{"Name": "Cheyney Univ. of Pennsylvania","FTE": 705,"Control": "Public","State": "Pennsylvania","Lat":39.932293,"Long":-75.529378,"Carnegie": "Baccalaureate Col.s: Arts & Sciences Focus"},
+{"Name": "Allen Univ.","FTE": 585,"Control": "Private not-for-profit","State": "South Carolina","Lat":34.010348,"Long":-81.020045,"Carnegie": "Baccalaureate Col.s: Arts & Sciences Focus"},
+{"Name": "Claflin Univ.","FTE": 1949,"Control": "Private not-for-profit","State": "South Carolina","Lat":33.498444,"Long":-80.854319,"Carnegie": "Baccalaureate Col.s: Arts & Sciences Focus"},
+{"Name": "Fisk Univ.","FTE": 747,"Control": "Private not-for-profit","State": "Tennessee","Lat":36.16912,"Long":-86.805671,"Carnegie": "Baccalaureate Col.s: Arts & Sciences Focus"},
+{"Name": "Virginia Union Univ.","FTE": 1748,"Control": "Private not-for-profit","State": "Virginia","Lat":37.561864,"Long":-77.450954,"Carnegie": "Baccalaureate Col.s: Arts & Sciences Focus"},
+{"Name": "West Virginia State Univ.","FTE": 2508,"Control": "Public","State": "West Virginia","Lat":38.380541,"Long":-81.765034,"Carnegie": "Baccalaureate Col.s: Arts & Sciences Focus"}
+]
+},
+{
+      "Name": "Diverse Fields", 
+      "children": [
+{"Name": "Concordia Col. Alabama","FTE": 319,"Control": "Private not-for-profit","State": "Alabama","Lat":32.42443,"Long":-87.023531,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Miles Col.","FTE": 1790,"Control": "Private not-for-profit","State": "Alabama","Lat":33.481306,"Long":-86.908605,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Oakwood Univ.","FTE": 1717,"Control": "Private not-for-profit","State": "Alabama","Lat":34.756344,"Long":-86.652705,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Talladega Col.","FTE": 644,"Control": "Private not-for-profit","State": "Alabama","Lat":33.433472,"Long":-86.112704,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Univ. of Arkansas at Pine Bluff","FTE": 2650,"Control": "Public","State": "Arkansas","Lat":34.244031,"Long":-92.018683,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Edward Waters Col.","FTE": 1751,"Control": "Private not-for-profit","State": "Florida","Lat":30.34513,"Long":-81.684817,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Florida Memorial Univ.","FTE": 1283,"Control": "Private not-for-profit","State": "Florida","Lat":25.917854,"Long":-80.270672,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Kentucky State Univ.","FTE": 1379,"Control": "Public","State": "Kentucky","Lat":38.201056,"Long":-84.855488,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Rust Col.","FTE": 924,"Control": "Private not-for-profit","State": "Mississippi","Lat":34.776862,"Long":-89.446999,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Harris-Stowe State Univ.","FTE": 1282,"Control": "Public","State": "Missouri","Lat":38.631744,"Long":-90.224288,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Bennett Col.","FTE": 423,"Control": "Private not-for-profit","State": "North Carolina","Lat":36.067531,"Long":-79.77998,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Livingstone Col.","FTE": 1194,"Control": "Private not-for-profit","State": "North Carolina","Lat":35.670743,"Long":-80.484459,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Saint Augustine's Univ.","FTE": 929,"Control": "Private not-for-profit","State": "North Carolina","Lat":35.785032,"Long":-78.621806,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Shaw Univ.","FTE": 1743,"Control": "Private not-for-profit","State": "North Carolina","Lat":35.771181,"Long":-78.637693,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Central State Univ.","FTE": 1657,"Control": "Public","State": "Ohio","Lat":39.716465,"Long":-83.876795,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Wilberforce Univ.","FTE": 559,"Control": "Private not-for-profit","State": "Ohio","Lat":39.707993,"Long":-83.879358,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Benedict Col.","FTE": 2262,"Control": "Private not-for-profit","State": "South Carolina","Lat":34.011285,"Long":-81.021412,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Morris Col.","FTE": 742,"Control": "Private not-for-profit","State": "South Carolina","Lat":33.938707,"Long":-80.346346,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Voorhees Col.","FTE": 410,"Control": "Private not-for-profit","State": "South Carolina","Lat":33.307199,"Long":-81.127863,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Lane Col.","FTE": 1384,"Control": "Private not-for-profit","State": "Tennessee","Lat":35.628197,"Long":-88.806832,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Le Moyne-Owen Col.","FTE": 891,"Control": "Private not-for-profit","State": "Tennessee","Lat":35.118641,"Long":-90.034101,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Huston-Tillotson Univ.","FTE": 958,"Control": "Private not-for-profit","State": "Texas","Lat":30.264672,"Long":-97.721698,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Jarvis Christian Col.","FTE": 844,"Control": "Private not-for-profit","State": "Texas","Lat":32.587942,"Long":-95.181513,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Paul Quinn Col.","FTE": 417,"Control": "Private not-for-profit","State": "Texas","Lat":32.677195,"Long":-96.755864,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Texas Col.","FTE": 936,"Control": "Private not-for-profit","State": "Texas","Lat":32.374185,"Long":-95.312259,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Wiley Col.","FTE": 1202,"Control": "Private not-for-profit","State": "Texas","Lat":32.537646,"Long":-94.376821,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Bluefield State Col.","FTE": 1216,"Control": "Public","State": "West Virginia","Lat":37.26688,"Long":-81.235428,"Carnegie": "Baccalaureate Col.s: Diverse Fields"}
+]
+}
+]
+},
+{
+   "Name": "Baccalaureate/Associate",
+   "children": [
+{"Name": "Southwestern Christian Col.","FTE": 143,"Control": "Private not-for-profit","State": "Texas","Lat":32.735778,"Long":-96.286747,"Carnegie": "Baccalaureate/Associate's Col.s: Associate's Dominant"},
+{"Name": "Arkansas Baptist Col.","FTE": 802,"Control": "Private not-for-profit","State": "Arkansas","Lat":34.734751,"Long":-92.290555,"Carnegie": "Baccalaureate/Associate's Col.s: Mixed Baccalaureate/Associate's"},
+{"Name": "Clinton Col.","FTE": 200,"Control": "Private not-for-profit","State": "South Carolina","Lat":34.913721,"Long":-81.043469,"Carnegie": "Baccalaureate/Associate's Col.s: Mixed Baccalaureate/Associate's"}
+]
+},
+{
+   "Name": "Doctoral",
+   "children": [
+      {
+      "Name": "Higher Research",
+      "children": [
+{"Name": "Howard Univ.","FTE": 8471,"Control": "Private not-for-profit","State": "District of Columbia","Lat":38.920739,"Long":-77.019478,"Carnegie": "Doctoral Universities: Higher Research Activity"},
+{"Name": "Florida Ag. & Mech. Univ.","FTE": 8761,"Control": "Public","State": "Florida","Lat":30.428504,"Long":-84.290226,"Carnegie": "Doctoral Universities: Higher Research Activity"},
+{"Name": "Clark Atlanta Univ.","FTE": 3676,"Control": "Private not-for-profit","State": "Georgia","Lat":33.747628,"Long":-84.412584,"Carnegie": "Doctoral Universities: Higher Research Activity"},
+{"Name": "Jackson State Univ.","FTE": 8272,"Control": "Public","State": "Mississippi","Lat":32.296781,"Long":-90.20663,"Carnegie": "Doctoral Universities: Higher Research Activity"},
+{"Name": "North Carolina A & T State Univ.","FTE": 10239,"Control": "Public","State": "North Carolina","Lat":36.076737,"Long":-79.770152,"Carnegie": "Doctoral Universities: Higher Research Activity"}
+]
+},
+   {
+      "Name": "Moderate Research",
+      "children": [
+{"Name": "Univ. of Maryl& Eastern Shore","FTE": 3543,"Control": "Public","State": "Maryl&","Lat":38.207386,"Long":-75.686852,"Carnegie": "Doctoral Universities: Moderate Research Activity"},
+{"Name": "Morgan State Univ.","FTE": 7107,"Control": "Public","State": "Maryl&","Lat":39.344235,"Long":-76.584238,"Carnegie": "Doctoral Universities: Moderate Research Activity"},
+{"Name": "Tennessee State Univ.","FTE": 7306,"Control": "Public","State": "Tennessee","Lat":36.16899,"Long":-86.82937,"Carnegie": "Doctoral Universities: Moderate Research Activity"},
+{"Name": "Prairie View A & M Univ.","FTE": 7952,"Control": "Public","State": "Texas","Lat":30.092425,"Long":-95.989475,"Carnegie": "Doctoral Universities: Moderate Research Activity"},
+{"Name": "Texas Southern Univ.","FTE": 8004,"Control": "Public","State": "Texas","Lat":29.722468,"Long":-95.361961,"Carnegie": "Doctoral Universities: Moderate Research Activity"}
+]
+}
+]
+},
+{
+   "Name": "Master",
+   "children": [
+      {
+      "Name": "Larger Programs",
+      "children": [
+{"Name": "Alabama A & M Univ.","FTE": 5354,"Control": "Public","State": "Alabama","Lat":34.783368,"Long":-86.568502,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Grambling State Univ.","FTE": 4250,"Control": "Public","State": "Louisiana","Lat":32.522702,"Long":-92.717367,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Southern Univ. & A & M Col.","FTE": 5242,"Control": "Public","State": "Louisiana","Lat":30.524558,"Long":-91.190105,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Bowie State Univ.","FTE": 4860,"Control": "Public","State": "Maryl&","Lat":39.018185,"Long":-76.759721,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "North Carolina Central Univ.","FTE": 7210,"Control": "Public","State": "North Carolina","Lat":35.974237,"Long":-78.898602,"Carnegie": "Master's Col.s & Universities: Larger Programs"}
+]
+},
+{
+      "Name": "Medium Programs",
+      "children": [
+{"Name": "Alabama State Univ.","FTE": 4935,"Control": "Public","State": "Alabama","Lat":32.364317,"Long":-86.295677,"Carnegie": "Master's Col.s & Universities: Medium Programs"},
+{"Name": "Delaware State Univ.","FTE": 4060,"Control": "Public","State": "Delaware","Lat":39.187173,"Long":-75.54053,"Carnegie": "Master's Col.s & Universities: Medium Programs"},
+{"Name": "Albany State Univ.","FTE": 2654,"Control": "Public","State": "Georgia","Lat":31.56928,"Long":-84.141825,"Carnegie": "Master's Col.s & Universities: Medium Programs"},
+{"Name": "Southern Univ. at New Orleans","FTE": 1988,"Control": "Public","State": "Louisiana","Lat":30.02669,"Long":-90.044379,"Carnegie": "Master's Col.s & Universities: Medium Programs"},
+{"Name": "Alcorn State Univ.","FTE": 3026,"Control": "Public","State": "Mississippi","Lat":31.877216,"Long":-91.142854,"Carnegie": "Master's Col.s & Universities: Medium Programs"},
+{"Name": "Fayetteville State Univ.","FTE": 5191,"Control": "Public","State": "North Carolina","Lat":35.073641,"Long":-78.891696,"Carnegie": "Master's Col.s & Universities: Medium Programs"},
+{"Name": "Winston-Salem State Univ.","FTE": 4696,"Control": "Public","State": "North Carolina","Lat":36.089197,"Long":-80.224905,"Carnegie": "Master's Col.s & Universities: Medium Programs"},
+{"Name": "Langston Univ.","FTE": 2151,"Control": "Public","State": "Oklahoma","Lat":35.943982,"Long":-97.260317,"Carnegie": "Master's Col.s & Universities: Medium Programs"},
+{"Name": "Lincoln Univ.","FTE": 1949,"Control": "Public","State": "Pennsylvania","Lat":39.807725,"Long":-75.928273,"Carnegie": "Master's Col.s & Universities: Medium Programs"},
+{"Name": "South Carolina State Univ.","FTE": 2652,"Control": "Public","State": "South Carolina","Lat":33.497439,"Long":-80.851185,"Carnegie": "Master's Col.s & Universities: Medium Programs"},
+{"Name": "Hampton Univ.","FTE": 4409,"Control": "Private not-for-profit","State": "Virginia","Lat":37.019944,"Long":-76.339161,"Carnegie": "Master's Col.s & Universities: Medium Programs"},
+{"Name": "Norfolk State Univ.","FTE": 4829,"Control": "Public","State": "Virginia","Lat":36.848262,"Long":-76.26393,"Carnegie": "Master's Col.s & Universities: Medium Programs"},
+{"Name": "Virginia State Univ.","FTE": 4396,"Control": "Public","State": "Virginia","Lat":37.236453,"Long":-77.419886,"Carnegie": "Master's Col.s & Universities: Medium Programs"}
+]
+},
+{
+      "Name": "Small Programs",
+      "children": [
+{"Name": "Tuskegee Univ.","FTE": 2789,"Control": "Private not-for-profit","State": "Alabama","Lat":32.4309,"Long":-85.708492,"Carnegie": "Master's Col.s & Universities: Small Programs"},
+{"Name": "Univ. of the District of Columbia","FTE": 2966,"Control": "Public","State": "District of Columbia","Lat":38.943819,"Long":-77.066247,"Carnegie": "Master's Col.s & Universities: Small Programs"},
+{"Name": "Fort Valley State Univ.","FTE": 2378,"Control": "Public","State": "Georgia","Lat":32.538163,"Long":-83.895548,"Carnegie": "Master's Col.s & Universities: Small Programs"},
+{"Name": "Savannah State Univ.","FTE": 4534,"Control": "Public","State": "Georgia","Lat":32.024781,"Long":-81.063377,"Carnegie": "Master's Col.s & Universities: Small Programs"},
+{"Name": "Xavier Univ. of Louisiana","FTE": 2898,"Control": "Private not-for-profit","State": "Louisiana","Lat":29.964162,"Long":-90.107307,"Carnegie": "Master's Col.s & Universities: Small Programs"},
+{"Name": "Coppin State Univ.","FTE": 2379,"Control": "Public","State": "Maryl&","Lat":39.310786,"Long":-76.658547,"Carnegie": "Master's Col.s & Universities: Small Programs"},
+{"Name": "Mississippi Valley State Univ.","FTE": 2109,"Control": "Public","State": "Mississippi","Lat":33.514142,"Long":-90.341274,"Carnegie": "Master's Col.s & Universities: Small Programs"},
+{"Name": "Lincoln Univ.","FTE": 2236,"Control": "Public","State": "Missouri","Lat":38.564409,"Long":-92.168509,"Carnegie": "Master's Col.s & Universities: Small Programs"},
+{"Name": "Elizabeth City State Univ.","FTE": 1267,"Control": "Public","State": "North Carolina","Lat":36.277978,"Long":-76.214041,"Carnegie": "Master's Col.s & Universities: Small Programs"}
+]
+}
+]
+},
+{
+   "Name": "Special Focus",
+   "children": [
+      {
+      "Name": "Faith-Related",
+      "children": [
+{"Name": "Selma Univ.","FTE": 168,"Control": "Private not-for-profit","State": "Alabama","Lat":32.420358,"Long":-87.033826,"Carnegie": "Special Focus Four-Year: Faith-Related Institutions"},
+{"Name": "Interdenominational Theological Center","FTE": 174,"Control": "Private not-for-profit","State": "Georgia","Lat":33.752338,"Long":-84.409207,"Carnegie": "Special Focus Four-Year: Faith-Related Institutions"},
+{"Name": "American Baptist Col.","FTE": 118,"Control": "Private not-for-profit","State": "Tennessee","Lat":36.201155,"Long":-86.789301,"Carnegie": "Special Focus Four-Year: Faith-Related Institutions"},
+{"Name": "Virginia Univ. of Lynchburg","FTE": 312,"Control": "Private not-for-profit","State": "Virginia","Lat":37.395135,"Long":-79.151518,"Carnegie": "Special Focus Four-Year: Faith-Related Institutions"},
+{"Name": "Simmons Col. of Kentucky","FTE": 150,"Control": "Private not-for-profit","State": "Kentucky","Lat":38.239519,"Long":-85.764811,"Carnegie": "Special Focus Four-Year: Faith-Related Institutions"}
+]
+},
+{
+      "Name": "Med Schools",
+      "children": [
+{"Name": "Morehouse School of Medicine","FTE": 465,"Control": "Private not-for-profit","State": "Georgia","Lat":33.742888,"Long":-84.41186,"Carnegie": "Special Focus Four-Year: Medical Schools & Centers"},
+{"Name": "Meharry Medical Col.","FTE": 831,"Control": "Private not-for-profit","State": "Tennessee","Lat":36.165458,"Long":-86.807371,"Carnegie": "Special Focus Four-Year: Medical Schools & Centers"}
+]
+}
+]
+}
+]
+},
+
+{
+ "Name": "Tribal Colls.",
+ "children": [
+{"Name": "Dine Col.","FTE": 1080,"Control": "Public","State": "Arizona","Lat":36.293328,"Long":-109.21684,"Carnegie": "Tribal Col.s"},
+{"Name": "Haskell Indian Nations Univ.","FTE": 800,"Control": "Public","State": "Kansas","Lat":38.937786,"Long":-95.232513,"Carnegie": "Tribal Col.s"},
+{"Name": "Blackfeet C.C.","FTE": 383,"Control": "Private not-for-profit","State": "Montana","Lat":48.551927,"Long":-113.009387,"Carnegie": "Tribal Col.s"},
+{"Name": "Chief Dull Knife Col.","FTE": 116,"Control": "Public","State": "Montana","Lat":45.625568,"Long":-106.664593,"Carnegie": "Tribal Col.s"},
+{"Name": "Aaniiih Nakoda Col.","FTE": 126,"Control": "Public","State": "Montana","Lat":48.484196,"Long":-108.757816,"Carnegie": "Tribal Col.s"},
+{"Name": "Fort Peck C.C.","FTE": 267,"Control": "Public","State": "Montana","Lat":48.113569,"Long":-105.193021,"Carnegie": "Tribal Col.s"},
+{"Name": "Little Big Horn Col.","FTE": 184,"Control": "Public","State": "Montana","Lat":45.603781,"Long":-107.455421,"Carnegie": "Tribal Col.s"},
+{"Name": "Salish Kootenai Col.","FTE": 755,"Control": "Private not-for-profit","State": "Montana","Lat":47.598592,"Long":-114.111635,"Carnegie": "Tribal Col.s"},
+{"Name": "Nebraska Indian C.C.","FTE": 85,"Control": "Public","State": "Nebraska","Lat":42.11677,"Long":-96.35176,"Carnegie": "Tribal Col.s"},
+{"Name": "Navajo Technical Univ.","FTE": 1291,"Control": "Public","State": "New Mexico","Lat":35.687431,"Long":-108.149392,"Carnegie": "Tribal Col.s"},
+{"Name": "Institute of American Indian & Alaska Native Culture & Arts Development","FTE": 413,"Control": "Public","State": "New Mexico","Lat":35.586563,"Long":-106.010015,"Carnegie": "Tribal Col.s"},
+{"Name": "Southwestern Indian Polytechnic Institute","FTE": 332,"Control": "Public","State": "New Mexico","Lat":35.176084,"Long":-106.664475,"Carnegie": "Tribal Col.s"},
+{"Name": "Nueta Hidatsa Sahnish Col.","FTE": 217,"Control": "Public","State": "North Dakota","Lat":47.983311,"Long":-102.472814,"Carnegie": "Tribal Col.s"},
+{"Name": "Cankdeska Cikana C.C.","FTE": 122,"Control": "Public","State": "North Dakota","Lat":47.978122,"Long":-98.990801,"Carnegie": "Tribal Col.s"},
+{"Name": "Sitting Bull Col.","FTE": 244,"Control": "Public","State": "North Dakota","Lat":46.085288,"Long":-100.674735,"Carnegie": "Tribal Col.s"},
+{"Name": "Turtle Mountain C.C.","FTE": 529,"Control": "Private not-for-profit","State": "North Dakota","Lat":48.883758,"Long":-99.750836,"Carnegie": "Tribal Col.s"},
+{"Name": "United Tribes Technical Col.","FTE": 446,"Control": "Private not-for-profit","State": "North Dakota","Lat":46.768773,"Long":-100.760705,"Carnegie": "Tribal Col.s"},
+{"Name": "Oglala Lakota Col.","FTE": 985,"Control": "Public","State": "South Dakota","Lat":43.366813,"Long":-102.240331,"Carnegie": "Tribal Col.s"},
+{"Name": "Sinte Gleska Univ.","FTE": 388,"Control": "Private not-for-profit","State": "South Dakota","Lat":43.298878,"Long":-100.622549,"Carnegie": "Tribal Col.s"},
+{"Name": "Sisseton Wahpeton Col.","FTE": 108,"Control": "Public","State": "South Dakota","Lat":45.562731,"Long":-97.060835,"Carnegie": "Tribal Col.s"},
+{"Name": "Lac Courte Oreilles Ojibwa C.C.","FTE": 167,"Control": "Public","State": "Wisconsin","Lat":45.941852,"Long":-91.363574,"Carnegie": "Tribal Col.s"},
+{"Name": "Stone Child Col.","FTE": 292,"Control": "Public","State": "Montana","Lat":48.289808,"Long":-109.870182,"Carnegie": "Tribal Col.s"},
+{"Name": "Bay Mills C.C.","FTE": 292,"Control": "Public","State": "Michigan","Lat":46.454584,"Long":-84.607089,"Carnegie": "Tribal Col.s"},
+{"Name": "Fond du Lac Tribal & C.C.","FTE": 1151,"Control": "Public","State": "Minnesota","Lat":46.688825,"Long":-92.444128,"Carnegie": "Tribal Col.s"},
+{"Name": "Northwest Indian Col.","FTE": 496,"Control": "Public","State": "Washington","Lat":48.794131,"Long":-122.614656,"Carnegie": "Tribal Col.s"},
+{"Name": "Col. of Menominee Nation","FTE": 231,"Control": "Private not-for-profit","State": "Wisconsin","Lat":44.859044,"Long":-88.625628,"Carnegie": "Tribal Col.s"},
+{"Name": "Leech Lake Tribal Col.","FTE": 243,"Control": "Public","State": "Minnesota","Lat":47.396282,"Long":-94.653182,"Carnegie": "Tribal Col.s"},
+{"Name": "Little Priest Tribal Col.","FTE": 104,"Control": "Private not-for-profit","State": "Nebraska","Lat":42.232399,"Long":-96.470766,"Carnegie": "Tribal Col.s"},
+{"Name": "Ilisagvik Col.","FTE": 77,"Control": "Public","State": "Alaska","Lat":71.324702,"Long":-156.679486,"Carnegie": "Tribal Col.s"},
+{"Name": "White Earth Tribal & C.C.","FTE": 69,"Control": "Private not-for-profit","State": "Minnesota","Lat":47.3175,"Long":-95.953099,"Carnegie": "Tribal Col.s"},
+{"Name": "Saginaw Chippewa Tribal Col.","FTE": 85,"Control": "Public","State": "Michigan","Lat":43.607105,"Long":-84.732485,"Carnegie": "Tribal Col.s"},
+{"Name": "Tohono O'Odham C.C.","FTE": 161,"Control": "Public","State": "Arizona","Lat":31.989869,"Long":-111.715445,"Carnegie": "Tribal Col.s"},
+{"Name": "Keweenaw Bay Ojibwa C.C.","FTE": 69,"Control": "Public","State": "Michigan","Lat":46.780701,"Long":-88.50791,"Carnegie": "Tribal Col.s"},
+{"Name": "Col. of the Muscogee Nation","FTE": 185,"Control": "Public","State": "Oklahoma","Lat":35.635288,"Long":-95.936439,"Carnegie": "Tribal Col.s"},
+{"Name": "Comanche Nation Col.","FTE": 24,"Control": "Public","State": "Oklahoma","Lat":34.5896,"Long":-98.400831,"Carnegie": "Tribal Col.s"}
+]
+},
+
+{
+ "Name": "HSI",
+ "children": [
+{
+   "Name": "Associate",
+   "children": [
+      {
+      "Name": "High Career & Tech",
+      "children": [
+{"Name": "Cochise County C.C. District","FTE": 2526,"Control": "Public","State": "Arizona","Lat":31.365757,"Long":-109.690422,"Carnegie": "Associate's Col.s: High Career & Technical-High Nontraditional"},
+{"Name": "GateWay C.C.","FTE": 2565,"Control": "Public","State": "Arizona","Lat":33.449686,"Long":-111.997077,"Carnegie": "Associate's Col.s: High Career & Technical-High Nontraditional"},
+{"Name": "Merritt Col.","FTE": 2963,"Control": "Public","State": "California","Lat":37.789088,"Long":-122.167335,"Carnegie": "Associate's Col.s: High Career & Technical-High Nontraditional"},
+{"Name": "Pueblo C.C.","FTE": 3378,"Control": "Public","State": "Colorado","Lat":38.263458,"Long":-104.636396,"Carnegie": "Associate's Col.s: High Career & Technical-High Nontraditional"},
+{"Name": "C.C. of Chicago-Malcolm X Col.","FTE": 3796,"Control": "Public","State": "Illinois","Lat":41.878092,"Long":-87.675321,"Carnegie": "Associate's Col.s: High Career & Technical-High Nontraditional"},
+{"Name": "C.C. of Chicago-Richard J Daley Col.","FTE": 4456,"Control": "Public","State": "Illinois","Lat":41.755955,"Long":-87.723981,"Carnegie": "Associate's Col.s: High Career & Technical-High Nontraditional"},
+{"Name": "Elgin C.C.","FTE": 5457,"Control": "Public","State": "Illinois","Lat":42.018066,"Long":-88.32194,"Carnegie": "Associate's Col.s: High Career & Technical-High Nontraditional"},
+{"Name": "Col. of Lake County","FTE": 7830,"Control": "Public","State": "Illinois","Lat":42.354164,"Long":-88.012291,"Carnegie": "Associate's Col.s: High Career & Technical-High Nontraditional"},
+{"Name": "Clovis C.C.","FTE": 1611,"Control": "Public","State": "New Mexico","Lat":34.402483,"Long":-103.165886,"Carnegie": "Associate's Col.s: High Career & Technical-High Nontraditional"},
+{"Name": "Eastern New Mexico Univ.-Roswell Campus","FTE": 1693,"Control": "Public", "State": "New Mexico","Lat":33.3139,"Long":-104.524336,"Carnegie": "Associate's Col.s: High Career & Technical-High Nontraditional"},
+{"Name": "Frank Phillips Col.","FTE": 928,"Control": "Public","State": "Texas","Lat":35.655151,"Long":-101.405653,"Carnegie": "Associate's Col.s: High Career & Technical-High Nontraditional"},
+{"Name": "Remington Col.-Fort Worth Campus","FTE": 532,"Control": "Private not-for-profit","State": "Texas","Lat":32.775981,"Long":-97.213562,"Carnegie": "Associate's Col.s: High Career & Technical-High Nontraditional"},
+{"Name": "Remington Col.-Houston Campus","FTE": 80,"Control": "Private not-for-profit","State": "Texas","Lat":29.729924,"Long":-95.57818,"Carnegie": "Associate's Col.s: High Career & Technical-High Nontraditional"},
+{"Name": "Eastern New Mexico Univ.-Ruidoso Campus","FTE": 300,"Control": "Public","State": "New Mexico","Lat":33.346376,"Long":-105.677273,"Carnegie": "Associate's Col.s: High Career & Technical-High Nontraditional"},
+{"Name": "East San Gabriel Valley Regional Occupational Program","FTE": 129,"Control": "Public","State": "California","Lat":34.077138,"Long":-117.937111,"Carnegie": "Associate's Col.s: High Career & Technical-High Nontraditional"},
+{"Name": "Everest Col.-Dallas","FTE": 86,"Control": "Private not-for-profit","State": "Texas","Lat":32.840012,"Long":-96.774825,"Carnegie": "Associate's Col.s: High Career & Technical-High Nontraditional"},
+{"Name": "Long Beach City Col.","FTE": 14391,"Control": "Public","State": "California","Lat":33.831741,"Long":-118.135819,"Carnegie": "Associate's Col.s: High Career & Technical-High Traditional"},
+{"Name": "San Jose City Col.","FTE": 4040,"Control": "Public","State": "California","Lat":37.316293,"Long":-121.929747,"Carnegie": "Associate's Col.s: High Career & Technical-High Traditional"},
+{"Name": "MacCormac Col.","FTE": 140,"Control": "Private not-for-profit","State": "Illinois","Lat":41.881898,"Long":-87.626657,"Carnegie": "Associate's Col.s: High Career & Technical-High Traditional"},
+{"Name": "Mesal&s C.C.","FTE": 430,"Control": "Public","State": "New Mexico","Lat":35.170332,"Long":-103.736303,"Carnegie": "Associate's Col.s: High Career & Technical-High Traditional"},
+{"Name": "Coastal Bend Col.","FTE": 2577,"Control": "Public","State": "Texas","Lat":28.435194,"Long":-97.755896,"Carnegie": "Associate's Col.s: High Career & Technical-High Traditional"},
+{"Name": "Lee Col.","FTE": 3312,"Control": "Public","State": "Texas","Lat":29.731654,"Long":-94.976724,"Carnegie": "Associate's Col.s: High Career & Technical-High Traditional"},
+{"Name": "Southwest Collegiate Institute for the Deaf","FTE": 97,"Control": "Public","State": "Texas","Lat":32.227753,"Long":-101.503419,"Carnegie": "Associate's Col.s: High Career & Technical-High Traditional"},
+{"Name": "Cossatot C.C. of the Univ. of Arkansas","FTE": 880,"Control": "Public","State": "Arkansas","Lat":34.043389,"Long":-94.3673,"Carnegie": "Associate's Col.s: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Los Angeles Trade Technical Col.","FTE": 7174,"Control": "Public","State": "California","Lat":34.031907,"Long":-118.269447,"Carnegie": "Associate's Col.s: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Aims C.C.","FTE": 3211,"Control": "Public","State": "Colorado","Lat":40.409037,"Long":-104.764335,"Carnegie": "Associate's Col.s: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Trinidad State Junior Col.","FTE": 1045,"Control": "Public","State": "Colorado","Lat":37.172939,"Long":-104.512184,"Carnegie": "Associate's Col.s: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "City Col.-Altamonte Springs","FTE": 231,"Control": "Private not-for-profit","State": "Florida","Lat":28.66349,"Long":-81.402351,"Carnegie": "Associate's Col.s: High Career & Technical-Mixed Traditional/Nontraditional"}
+]
+},
+{
+      "Name": "High Transfer",
+      "children": [
+{"Name": "Barstow C.C.","FTE": 1893,"Control": "Public","State": "California","Lat":34.871451,"Long":-117.02523,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "Col. of the Canyons","FTE": 10923,"Control": "Public","State": "California","Lat":34.403121,"Long":-118.569524,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "Coastline C.C.","FTE": 4653,"Control": "Public","State": "California","Lat":33.715634,"Long":-117.929143,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "El Camino Col.-Compton Center","FTE": 3675,"Control": "Public","State": "California","Lat":33.876665,"Long":-118.209186,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "Contra Costa Col.","FTE": 3373,"Control": "Public","State": "California","Lat":37.968623,"Long":-122.342386,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "Foothill Col.","FTE": 9156,"Control": "Public","State": "California","Lat":37.361655,"Long":-122.127964,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "Gavilan Col.","FTE": 3175,"Control": "Public","State": "California","Lat":36.973274,"Long":-121.568174,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "Lake Tahoe C.C.","FTE": 1152,"Control": "Public","State": "California","Lat":38.926864,"Long":-119.971631,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "Los Angeles Southwest Col.","FTE": 3257,"Control": "Public","State": "California","Lat":33.929586,"Long":-118.304674,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "Mendocino Col.","FTE": 2174,"Control": "Public","State": "California","Lat":39.19119,"Long":-123.22903,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "Mission Col.","FTE": 3868,"Control": "Public","State": "California","Lat":37.391323,"Long":-121.982174,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "Monterey Peninsula Col.","FTE": 4213,"Control": "Public","State": "California","Lat":36.590826,"Long":-121.885774,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "Taft Col.","FTE": 2827,"Control": "Public","State": "California","Lat":35.149343,"Long":-119.459751,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "Berkeley City Col.","FTE": 3220,"Control": "Public","State": "California","Lat":37.87047,"Long":-122.269793,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "West Valley Col.","FTE": 4540,"Control": "Public","State": "California","Lat":37.263133,"Long":-122.009701,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "New Mexico Junior Col.","FTE": 1309,"Control": "Public","State": "New Mexico","Lat":32.757596,"Long":-103.182466,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "Univ. of New Mexico-Los Alamos Campus","FTE": 489,"Control": "Public","State": "New Mexico","Lat":35.886391,"Long":-106.316369,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "New Mexico State Univ.-Alamogordo","FTE": 887,"Control": "Public","State": "New Mexico","Lat":32.921532,"Long":-105.927508,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "New Mexico State Univ.-Carlsbad","FTE": 948,"Control": "Public","State": "New Mexico","Lat":32.442028,"Long":-104.265536,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "Univ. of New Mexico-Valencia County Campus","FTE": 1178,"Control": "Public","State": "New Mexico","Lat":34.728683,"Long":-106.705371,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "Univ. of New Mexico-Taos Campus","FTE": 830,"Control": "Public","State": "New Mexico","Lat":36.348861,"Long":-105.651709,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "Blue Mountain C.C.","FTE": 1112,"Control": "Public","State": "Oregon","Lat":45.677313,"Long":-118.816944,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "Chemeketa C.C.","FTE": 6878,"Control": "Public","State": "Oregon","Lat":44.978206,"Long":-122.977179,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "Brookhaven Col.","FTE": 5791,"Control": "Public","State": "Texas","Lat":32.928237,"Long":-96.85016,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "Jacksonville Col.-Main Campus","FTE": 381,"Control": "Private not-for-profit","State": "Texas","Lat":31.966072,"Long":-95.281249,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "Mountain View Col.","FTE": 4417,"Control": "Public","State": "Texas","Lat":32.726573,"Long":-96.903798,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "North Lake Col.","FTE": 5197,"Control": "Public","State": "Texas","Lat":32.871878,"Long":-96.967106,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "Richl& Col.","FTE": 9100,"Control": "Public","State": "Texas","Lat":32.922141,"Long":-96.730505,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "Palo Alto Col.","FTE": 4218,"Control": "Public","State": "Texas","Lat":29.322925,"Long":-98.546713,"Carnegie": "Associate's Col.s: High Transfer-High Nontraditional"},
+{"Name": "Antelope Valley Col.","FTE": 8148,"Control": "Public","State": "California","Lat":34.676207,"Long":-118.186166,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Chabot Col.","FTE": 7237,"Control": "Public","State": "California","Lat":37.642513,"Long":-122.106969,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Citrus Col.","FTE": 7729,"Control": "Public","State": "California","Lat":34.135487,"Long":-117.885266,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Col. of the Desert","FTE": 6308,"Control": "Public","State": "California","Lat":33.732484,"Long":-116.38761,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "East Los Angeles Col.","FTE": 17619,"Control": "Public","State": "California","Lat":34.039205,"Long":-118.148384,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "El Camino C.C. District","FTE": 13469,"Control": "Public","State": "California","Lat":33.885586,"Long":-118.326623,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Evergreen Valley Col.","FTE": 4782,"Control": "Public","State": "California","Lat":37.301736,"Long":-121.766686,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Fullerton Col.","FTE": 12951,"Control": "Public","State": "California","Lat":33.876794,"Long":-117.916986,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Golden West Col.","FTE": 6481,"Control": "Public","State": "California","Lat":33.733775,"Long":-118.003036,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Grossmont Col.","FTE": 10474,"Control": "Public","State": "California","Lat":32.816077,"Long":-117.007292,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Hartnell Col.","FTE": 6445,"Control": "Public","State": "California","Lat":36.673052,"Long":-121.668763,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Imperial Valley Col.","FTE": 5128,"Control": "Public","State": "California","Lat":32.827563,"Long":-115.503903,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Irvine Valley Col.","FTE": 8129,"Control": "Public","State": "California","Lat":33.675079,"Long":-117.778575,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Los Angeles Harbor Col.","FTE": 4846,"Control": "Public","State": "California","Lat":33.784201,"Long":-118.28186,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Los Angeles Pierce Col.","FTE": 10485,"Control": "Public","State": "California","Lat":34.183949,"Long":-118.575071,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Los Angeles Mission Col.","FTE": 5127,"Control": "Public","State": "California","Lat":34.314944,"Long":-118.419087,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "MiraCosta Col.","FTE": 8401,"Control": "Public","State": "California","Lat":33.191231,"Long":-117.302283,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Moorpark Col.","FTE": 8483,"Control": "Public","State": "California","Lat":34.300018,"Long":-118.836624,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Mt San Jacinto C.C. District","FTE": 9041,"Control": "Public","State": "California","Lat":33.807364,"Long":-116.970063,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Napa Valley Col.","FTE": 3523,"Control": "Public","State": "California","Lat":38.274081,"Long":-122.274381,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Orange Coast Col.","FTE": 12983,"Control": "Public","State": "California","Lat":33.670171,"Long":-117.911401,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Palomar Col.","FTE": 12893,"Control": "Public","State": "California","Lat":33.15019,"Long":-117.181718,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Pasadena City Col.","FTE": 16111,"Control": "Public","State": "California","Lat":34.144552,"Long":-118.118196,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Porterville Col.","FTE": 2596,"Control": "Public","State": "California","Lat":36.049256,"Long":-119.014368,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Sacramento City Col.","FTE": 11043,"Control": "Public","State": "California","Lat":38.541883,"Long":-121.49166,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "San Diego Mesa Col.","FTE": 12984,"Control": "Public","State": "California","Lat":32.803825,"Long":-117.169165,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "San Joaquin Delta Col.","FTE": 10491,"Control": "Public","State": "California","Lat":37.994643,"Long":-121.317226,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Santa Barbara City Col.","FTE": 9888,"Control": "Public","State": "California","Lat":34.406788,"Long":-119.698045,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Santa Monica Col.","FTE": 19183,"Control": "Public","State": "California","Lat":34.018968,"Long":-118.470431,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Sierra Col.","FTE": 10293,"Control": "Public","State": "California","Lat":38.792758,"Long":-121.212646,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Southwestern Col.","FTE": 11206,"Control": "Public","State": "California","Lat":32.641567,"Long":-116.997215,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Ventura Col.","FTE": 7172,"Control": "Public","State": "California","Lat":34.277035,"Long":-119.230659,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Victor Valley Col.","FTE": 6743,"Control": "Public","State": "California","Lat":34.472231,"Long":-117.261456,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Yuba Col.","FTE": 3651,"Control": "Public","State": "California","Lat":39.125995,"Long":-121.539316,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Housatonic C.C.","FTE": 2900,"Control": "Public","State": "Connecticut","Lat":41.175228,"Long":-73.191003,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Hillsborough C.C.","FTE": 16342,"Control": "Public","State": "Florida","Lat":27.934513,"Long":-82.456919,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Holyoke C.C.","FTE": 3687,"Control": "Public","State": "Massachusetts","Lat":42.195503,"Long":-72.650683,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Northern Essex C.C.","FTE": 3381,"Control": "Public","State": "Massachusetts","Lat":42.796148,"Long":-71.047475,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Springfield Technical C.C.","FTE": 3447,"Control": "Public","State": "Massachusetts","Lat":42.108393,"Long":-72.581598,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Cumberl& County Col.","FTE": 2206,"Control": "Public","State": "New Jersey","Lat":39.438417,"Long":-75.054685,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Essex County Col.","FTE": 6453,"Control": "Public","State": "New Jersey","Lat":40.738444,"Long":-74.178234,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Hudson County C.C.","FTE": 6256,"Control": "Public","State": "New Jersey","Lat":40.730559,"Long":-74.062861,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Passaic County C.C.","FTE": 4837,"Control": "Public","State": "New Jersey","Lat":40.918449,"Long":-74.168778,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Union County Col.","FTE": 6375,"Control": "Public","State": "New Jersey","Lat":40.667835,"Long":-74.319784,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "CUNY Borough of Manhattan C.C.","FTE": 21063,"Control": "Public","State": "New York","Lat":40.71879,"Long":-74.011826,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "CUNY Bronx C.C.","FTE": 8294,"Control": "Public","State": "New York","Lat":40.858112,"Long":-73.912043,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "CUNY Hostos C.C.","FTE": 5140,"Control": "Public","State": "New York","Lat":40.817601,"Long":-73.927363,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "CUNY LaGuardia C.C.","FTE": 13607,"Control": "Public","State": "New York","Lat":40.7445,"Long":-73.935057,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "CUNY Queensborough C.C.","FTE": 11275,"Control": "Public","State": "New York","Lat":40.754858,"Long":-73.754548,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Nassau C.C.","FTE": 14700,"Control": "Public","State": "New York","Lat":40.728872,"Long":-73.595286,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Orange County C.C.","FTE": 4421,"Control": "Public","State": "New York","Lat":41.439476,"Long":-74.426885,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "El Paso C.C.","FTE": 15787,"Control": "Public","State": "Texas","Lat":31.77234,"Long":-106.371671,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Houston C.C.","FTE": 30052,"Control": "Public","State": "Texas","Lat":29.737303,"Long":-95.376524,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Southwest Texas Junior Col.","FTE": 3456,"Control": "Public","State": "Texas","Lat":29.219676,"Long":-99.741245,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Temple Col.","FTE": 2688,"Control": "Public","State": "Texas","Lat":31.070607,"Long":-97.351031,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Las Positas Col.","FTE": 5020,"Control": "Public","State": "California","Lat":37.710873,"Long":-121.80058,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Copper Mountain C.C.","FTE": 938,"Control": "Public","State": "California","Lat":34.140464,"Long":-116.213939,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Northwest Vista Col.","FTE": 8425,"Control": "Public","State": "Texas","Lat":29.471082,"Long":-98.708405,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Community Christian Col.","FTE": 43,"Control": "Private not-for-profit","State": "California","Lat":34.082673,"Long":-117.139951,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "West Hills Col.-Lemoore","FTE": 2257,"Control": "Public","State": "California","Lat":36.292431,"Long":-119.823866,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Woodl& C.C.","FTE": 1829,"Control": "Public","State": "California","Lat":38.660562,"Long":-121.734242,"Carnegie": "Associate's Col.s: High Transfer-High Traditional"},
+{"Name": "Glendale C.C.","FTE": 10556,"Control": "Public","State": "Arizona","Lat":33.570226,"Long":-112.190735,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Phoenix Col.","FTE": 5894,"Control": "Public","State": "Arizona","Lat":33.481361,"Long":-112.088293,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Pima C.C.","FTE": 13517,"Control": "Public","State": "Arizona","Lat":32.222125,"Long":-110.886659,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "South Mountain C.C.","FTE": 2208,"Control": "Public","State": "Arizona","Lat":33.382406,"Long":-112.032635,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Allan Hancock Col.","FTE": 6224,"Control": "Public","State": "California","Lat":34.942979,"Long":-120.421486,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Cuesta Col.","FTE": 5764,"Control": "Public","State": "California","Lat":35.331276,"Long":-120.742235,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Cuyamaca Col.","FTE": 4827,"Control": "Public","State": "California","Lat":32.743072,"Long":-116.941044,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "De Anza Col.","FTE": 14474,"Control": "Public","State": "California","Lat":37.319176,"Long":-122.045365,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Los Angeles Valley Col.","FTE": 9001,"Control": "Public","State": "California","Lat":34.176406,"Long":-118.421446,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Col. of Marin","FTE": 2769,"Control": "Public","State": "California","Lat":37.955014,"Long":-122.549936,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Santa Ana Col.","FTE": 14474,"Control": "Public","State": "California","Lat":33.759203,"Long":-117.888384,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Saddleback Col.","FTE": 10520,"Control": "Public","State": "California","Lat":33.551925,"Long":-117.664876,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Col. of San Mateo","FTE": 4678,"Control": "Public","State": "California","Lat":37.534357,"Long":-122.336078,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Solano C.C.","FTE": 5275,"Control": "Public","State": "California","Lat":38.235881,"Long":-122.122368,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Capital C.C.","FTE": 1566,"Control": "Public","State": "Connecticut","Lat":41.768397,"Long":-72.672734,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Norwalk C.C.","FTE": 3261,"Control": "Public","State": "Connecticut","Lat":41.102574,"Long":-73.450965,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Gateway C.C.","FTE": 3805,"Control": "Public","State": "Connecticut","Lat":41.303785,"Long":-72.927682,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "C.C. of Chicago-Harold Washington Col.","FTE": 6156,"Control": "Public","State": "Illinois","Lat":41.886067,"Long":-87.626596,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Middlesex County Col.","FTE": 7391,"Control": "Public","State": "New Jersey","Lat":40.504728,"Long":-74.366544,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "New Mexico State Univ.-Dona Ana","FTE": 5230,"Control": "Public","State": "New Mexico","Lat":32.35342,"Long":-106.737291,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "SUNY Westchester C.C.","FTE": 8943,"Control": "Public","State": "New York","Lat":41.068458,"Long":-73.789669,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Reading Area C.C.","FTE": 2025,"Control": "Public","State": "Pennsylvania","Lat":40.334861,"Long":-75.935086,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Lone Star Col. System","FTE": 37242,"Control": "Public","State": "Texas","Lat":30.188408,"Long":-95.490077,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "San Antonio Col.","FTE": 8742,"Control": "Public","State": "Texas","Lat":29.44634,"Long":-98.497647,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Tarrant County Col. District","FTE": 27152,"Control": "Public","State": "Texas","Lat":32.747501,"Long":-97.327948,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Estrella Mountain C.C.","FTE": 5212,"Control": "Public","State": "Arizona","Lat":33.480722,"Long":-112.343158,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Santiago Canyon Col.","FTE": 5917,"Control": "Public","State": "California","Lat":33.796591,"Long":-117.768053,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"},
+{"Name": "Norco Col.","FTE": 4842,"Control": "Public","State": "California","Lat":33.91675,"Long":-117.568201,"Carnegie": "Associate's Col.s: High Transfer-Mixed Traditional/Nontraditional"}
+]
+},
+{
+      "Name": "Mixed Transfer/Career & Tech",
+      "children": [
+{"Name": "Central Arizona Col.","FTE": 3095,"Control": "Public","State": "Arizona","Lat":32.957092,"Long":-111.652501,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "Canada Col.","FTE": 2889,"Control": "Public","State": "California","Lat":37.447365,"Long":-122.265549,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "Cerro Coso C.C.","FTE": 2298,"Control": "Public","State": "California","Lat":35.567763,"Long":-117.667706,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "Los Angeles City Col.","FTE": 8709,"Control": "Public","State": "California","Lat":34.087301,"Long":-118.292169,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "Skyline Col.","FTE": 5337,"Control": "Public","State": "California","Lat":37.630543,"Long":-122.465978,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "C.C. of Aurora","FTE": 3454,"Control": "Public","State": "Colorado","Lat":39.71788,"Long":-104.802673,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "Otero Junior Col.","FTE": 915,"Control": "Public","State": "Colorado","Lat":37.971184,"Long":-103.544779,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "C.C. of Chicago-Harry S Truman Col.","FTE": 4290,"Control": "Public","State": "Illinois","Lat":41.964502,"Long":-87.659107,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "C.C. of Chicago-Wilbur Wright Col.","FTE": 5672,"Control": "Public","State": "Illinois","Lat":41.958774,"Long":-87.787868,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "Joliet Junior Col.","FTE": 8572,"Control": "Public","State": "Illinois","Lat":41.500535,"Long":-88.180985,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "Morton Col.","FTE": 2371,"Control": "Public","State": "Illinois","Lat":41.824303,"Long":-87.762306,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "Triton Col.","FTE": 5987,"Control": "Public","State": "Illinois","Lat":41.916082,"Long":-87.841056,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "Waubonsee C.C.","FTE": 5480,"Control": "Public","State": "Illinois","Lat":41.795955,"Long":-88.459925,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "William Rainey Harper Col.","FTE": 7960,"Control": "Public","State": "Illinois","Lat":42.081356,"Long":-88.069391,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "Dodge City C.C.","FTE": 1237,"Control": "Public","State": "Kansas","Lat":37.777838,"Long":-100.037275,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "New Mexico State Univ.-Grants","FTE": 439,"Control": "Public","State": "New Mexico","Lat":35.164437,"Long":-107.843417,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "Santa Fe C.C.","FTE": 2457,"Control": "Public","State": "New Mexico","Lat":35.605871,"Long":-105.998054,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "Treasure Valley C.C.","FTE": 1267,"Control": "Public","State": "Oregon","Lat":44.019376,"Long":-116.972693,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "Austin C.C. District","FTE": 20029,"Control": "Public","State": "Texas","Lat":30.322744,"Long":-97.712505,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "Cedar Valley Col.","FTE": 3266,"Control": "Public","State": "Texas","Lat":32.625686,"Long":-96.763421,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "Eastfield Col.","FTE": 6948,"Control": "Public","State": "Texas","Lat":32.815679,"Long":-96.65947,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "El Centro Col.","FTE": 4538,"Control": "Public","State": "Texas","Lat":32.779817,"Long":-96.805361,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "Galveston Col.","FTE": 1114,"Control": "Public","State": "Texas","Lat":29.284212,"Long":-94.80854,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "Western Texas Col.","FTE": 1096,"Control": "Public","State": "Texas","Lat":32.678458,"Long":-100.914945,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "Luna C.C.","FTE": 727,"Control": "Public","State": "New Mexico","Lat":35.616303,"Long":-105.250865,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "Columbia Gorge C.C.","FTE": 531,"Control": "Public","State": "Oregon","Lat":45.590724,"Long":-121.190197,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Nontraditional"},
+{"Name": "Bakersfield Col.","FTE": 13103,"Control": "Public","State": "California","Lat":35.4108,"Long":-118.973491,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Butte Col.","FTE": 7239,"Control": "Public","State": "California","Lat":39.649116,"Long":-121.644691,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Cabrillo Col.","FTE": 6825,"Control": "Public","State": "California","Lat":36.9891,"Long":-121.927926,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Cerritos Col.","FTE": 11537,"Control": "Public","State": "California","Lat":33.88584,"Long":-118.097263,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Cosumnes River Col.","FTE": 7002,"Control": "Public","State": "California","Lat":38.453836,"Long":-121.422971,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Crafton Hills Col.","FTE": 3318,"Control": "Public","State": "California","Lat":34.039178,"Long":-117.101173,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Cypress Col.","FTE": 8837,"Control": "Public","State": "California","Lat":33.827625,"Long":-118.023889,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Fresno City Col.","FTE": 12561,"Control": "Public","State": "California","Lat":36.767516,"Long":-119.795129,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Glendale C.C.","FTE": 9594,"Control": "Public","State": "California","Lat":34.166422,"Long":-118.228251,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Reedley Col.","FTE": 5533,"Control": "Public","State": "California","Lat":36.605968,"Long":-119.45993,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Los Medanos Col.","FTE": 4875,"Control": "Public","State": "California","Lat":38.005552,"Long":-121.861122,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Merced Col.","FTE": 6748,"Control": "Public","State": "California","Lat":37.335348,"Long":-120.476726,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Modesto Junior Col.","FTE": 10627,"Control": "Public","State": "California","Lat":37.652042,"Long":-121.009723,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Mt San Antonio Col.","FTE": 16649,"Control": "Public","State": "California","Lat":34.043786,"Long":-117.8437,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Oxnard Col.","FTE": 3634,"Control": "Public","State": "California","Lat":34.164899,"Long":-119.15549,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "San Diego City Col.","FTE": 7910,"Control": "Public","State": "California","Lat":32.718855,"Long":-117.151641,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Santa Rosa Junior Col.","FTE": 11462,"Control": "Public","State": "California","Lat":38.45416,"Long":-122.720689,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Col. of the Sequoias","FTE": 7336,"Control": "Public","State": "California","Lat":36.322957,"Long":-119.314775,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "San Bernardino Valley Col.","FTE": 6886,"Control": "Public","State": "California","Lat":34.088717,"Long":-117.313814,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Naugatuck Valley C.C.","FTE": 3715,"Control": "Public","State": "Connecticut","Lat":41.549564,"Long":-73.071209,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Seward County C.C.","FTE": 1198,"Control": "Public","State": "Kansas","Lat":37.059807,"Long":-100.917695,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Amarillo Col.","FTE": 5496,"Control": "Public","State": "Texas","Lat":35.18841,"Long":-101.847104,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Del Mar Col.","FTE": 5906,"Control": "Public","State": "Texas","Lat":27.763623,"Long":-97.407627,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Laredo C.C.","FTE": 4802,"Control": "Public","State": "Texas","Lat":27.506477,"Long":-99.520772,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Col. of the Mainl&","FTE": 1953,"Control": "Public","State": "Texas","Lat":29.395514,"Long":-94.999739,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Victoria Col.","FTE": 2042,"Control": "Public","State": "Texas","Lat":28.816451,"Long":-96.979234,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-High Traditional"},
+{"Name": "Arizona Western Col.","FTE": 4173,"Control": "Public","State": "Arizona","Lat":32.689306,"Long":-114.495968,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Palo Verde Col.","FTE": 1785,"Control": "Public","State": "California","Lat":33.661538,"Long":-114.651698,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Rio Hondo Col.","FTE": 10149,"Control": "Public","State": "California","Lat":34.019878,"Long":-118.033329,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Riverside City Col.","FTE": 10171,"Control": "Public","State": "California","Lat":33.971481,"Long":-117.38054,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "San Diego Miramar Col.","FTE": 6584,"Control": "Public","State": "California","Lat":32.909546,"Long":-117.120888,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "West Hills Col.-Coalinga","FTE": 1848,"Control": "Public","State": "California","Lat":36.147891,"Long":-120.356747,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "West Los Angeles Col.","FTE": 6724,"Control": "Public","State": "California","Lat":34.005578,"Long":-118.387578,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "C.C. of Denver","FTE": 4606,"Control": "Public","State": "Colorado","Lat":39.74142,"Long":-105.003007,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Garden City C.C.","FTE": 1437,"Control": "Public","State": "Kansas","Lat":37.970979,"Long":-100.847357,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Truckee Meadows C.C.","FTE": 5539,"Control": "Public","State": "Nevada","Lat":39.572159,"Long":-119.795319,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Central New Mexico C.C.","FTE": 13039,"Control": "Public","State": "New Mexico","Lat":35.07599,"Long":-106.624957,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Alvin C.C.","FTE": 2817,"Control": "Public","State": "Texas","Lat":29.396581,"Long":-95.241078,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "McLennan C.C.","FTE": 5260,"Control": "Public","State": "Texas","Lat":31.590003,"Long":-97.17287,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Northeast Texas C.C.","FTE": 1975,"Control": "Public","State": "Texas","Lat":33.104937,"Long":-94.881862,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Odessa Col.","FTE": 3414,"Control": "Public","State": "Texas","Lat":31.866295,"Long":-102.381919,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "San Jacinto C.C.","FTE": 14119,"Control": "Public","State": "Texas","Lat":29.660335,"Long":-95.115941,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "South Plains Col.","FTE": 6204,"Control": "Public","State": "Texas","Lat":33.575904,"Long":-102.365075,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Wharton County Junior Col.","FTE": 4275,"Control": "Public","State": "Texas","Lat":29.324294,"Long":-96.085199,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Big Bend C.C.","FTE": 1729,"Control": "Public","State": "Washington","Lat":47.183651,"Long":-119.325678,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Wenatchee Valley Col.","FTE": 2793,"Control": "Public","State": "Washington","Lat":47.430931,"Long":-120.334813,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Moreno Valley Col.","FTE": 4340,"Control": "Public","State": "California","Lat":33.88744,"Long":-117.20271,"Carnegie": "Associate's Col.s: Mixed Transfer/Career & Technical-Mixed Traditional/Nontraditional"}
+]
+},
+{
+      "Name": "Private Not-For-Profit",
+      "children": [
+{"Name": "Humacao C.C.","FTE": 439,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.148274,"Long":-65.826857,"Carnegie": "Associate's--Private Not-for-profit"},
+{"Name": "Dewey Univ.-Hato Rey","FTE": 19,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.417714,"Long":-66.04283,"Carnegie": "Associate's--Private Not-for-profit"},
+{"Name": "Atenas Col.","FTE": 865,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.429776,"Long":-66.488422,"Carnegie": "Associate's--Private Not-for-profit 4-year Primarily Associate's"}
+]
+},
+{
+      "Name": "Public Rural Serving",
+      "children": [
+{"Name": "Instituto Tecnologico de Puerto Rico-Recinto de Manati","FTE": 615,"Control": "Public","State": "Puerto Rico","Lat":18.432962,"Long":-66.472476,"Carnegie": "Associate's--Public Rural-serving Small"},
+{"Name": "Instituto Tecnologico de Puerto Rico-Recinto de Guayama","FTE": 721,"Control": "Public","State": "Puerto Rico","Lat":17.977897,"Long":-66.118728,"Carnegie": "Associate's--Public Rural-serving Small"},
+{"Name": "Instituto Tecnologico de Puerto Rico-Recinto de Ponce","FTE": 670,"Control": "Public","State": "Puerto Rico","Lat":17.999381,"Long":-66.629804,"Carnegie": "Associate's--Public Rural-serving Small"},
+{"Name": "Instituto Tecnologico de Puerto Rico-Recinto de San Juan","FTE": 691,"Control": "Public","State": "Puerto Rico","Lat":18.411097,"Long":-66.016003,"Carnegie": "Associate's--Public Suburban-serving Single Campus"}
+]
+}
+]
+},
+
+{
+   "Name": "Baccalaureate",
+   "children": [
+{
+      "Name": "Diverse Fields",
+      "children": [
+{"Name": "American Univ. of Puerto Rico","FTE": 572,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.407058,"Long":-66.186631,"Carnegie": "Baccalaureate Col.s--Diverse Fields"},
+{"Name": "American Univ. of Puerto Rico","FTE": 727,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.434072,"Long":-66.478655,"Carnegie": "Baccalaureate Col.s--Diverse Fields"},
+{"Name": "Universidad Adventista de las Antillas","FTE": 1254,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.205329,"Long":-67.112632,"Carnegie": "Baccalaureate Col.s--Diverse Fields"},
+{"Name": "Atlantic Univ. Col.","FTE": 1275,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.357395,"Long":-66.111714,"Carnegie": "Baccalaureate Col.s--Diverse Fields"},
+{"Name": "EDP Univ. of Puerto Rico Inc-San Sebastian","FTE": 891,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.334858,"Long":-66.990909,"Carnegie": "Baccalaureate Col.s--Diverse Fields"},
+{"Name": "Inter American Univ. of Puerto Rico-Ponce","FTE": 4820,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.007388,"Long":-66.578498,"Carnegie": "Baccalaureate Col.s--Diverse Fields"},
+{"Name": "Inter American Univ. of Puerto Rico-Fajardo","FTE": 1988,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.329222,"Long":-65.648052,"Carnegie": "Baccalaureate Col.s--Diverse Fields"},
+{"Name": "Inter American Univ. of Puerto Rico-Guayama","FTE": 1695,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":17.96635,"Long":-66.108164,"Carnegie": "Baccalaureate Col.s--Diverse Fields"},
+{"Name": "Inter American Univ. of Puerto Rico-Bayamon","FTE": 4093,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.351631,"Long":-66.182473,"Carnegie": "Baccalaureate Col.s--Diverse Fields"},
+{"Name": "Univ. of Puerto Rico-Aguadilla","FTE": 3250,"Control": "Public","State": "Puerto Rico","Lat":18.498652,"Long":-67.13793,"Carnegie": "Baccalaureate Col.s--Diverse Fields"},
+{"Name": "Univ. of Puerto Rico-Arecibo","FTE": 3976,"Control": "Public","State": "Puerto Rico","Lat":18.469199,"Long":-66.74114,"Carnegie": "Baccalaureate Col.s--Diverse Fields"},
+{"Name": "Univ. of Puerto Rico-Bayamon","FTE": 4554,"Control": "Public","State": "Puerto Rico","Lat":18.371398,"Long":-66.143541,"Carnegie": "Baccalaureate Col.s--Diverse Fields"},
+{"Name": "Univ. of Puerto Rico-Carolina","FTE": 3487,"Control": "Public","State": "Puerto Rico","Lat":18.391471,"Long":-65.989694,"Carnegie": "Baccalaureate Col.s--Diverse Fields"},
+{"Name": "Univ. of Puerto Rico-Cayey","FTE": 3600,"Control": "Public","State": "Puerto Rico","Lat":18.11882,"Long":-66.162066,"Carnegie": "Baccalaureate Col.s--Diverse Fields"},
+{"Name": "Univ. of Puerto Rico-Humacao","FTE": 3847,"Control": "Public","State": "Puerto Rico","Lat":18.146589,"Long":-65.838602,"Carnegie": "Baccalaureate Col.s--Diverse Fields"},
+{"Name": "Univ. of Puerto Rico-Utuado","FTE": 1412,"Control": "Public","State": "Puerto Rico","Lat":18.254577,"Long":-66.721667,"Carnegie": "Baccalaureate Col.s--Diverse Fields"},
+{"Name": "Univ. of Puerto Rico-Ponce","FTE": 3493,"Control": "Public","State": "Puerto Rico","Lat":17.993314,"Long":-66.606215,"Carnegie": "Baccalaureate Col.s--Diverse Fields"},
+{"Name": "Pontifical Catholic Univ. of Puerto Rico-Mayaguez","FTE": 1437,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.182375,"Long":-67.145695,"Carnegie": "Baccalaureate Col.s--Diverse Fields"},
+{"Name": "EDP Univ. of Puerto Rico Inc-San Juan","FTE": 1316,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.415375,"Long":-66.055403,"Carnegie": "Baccalaureate Col.s--Diverse Fields"},
+{"Name": "Inter American Univ. of Puerto Rico-Barranquitas","FTE": 1846,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.182777,"Long":-66.303153,"Carnegie": "Baccalaureate Col.s--Diverse Fields"},
+{"Name": "San Diego Christian Col.","FTE": 604,"Control": "Private not-for-profit","State": "California","Lat":32.842404,"Long":-116.978112,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Humphreys Univ.-Stockton & Modesto Campuses","FTE": 386,"Control": "Private not-for-profit","State": "California","Lat":38.011051,"Long":-121.316401,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Marymount California Univ.","FTE": 936,"Control": "Private not-for-profit","State": "California","Lat":33.73463,"Long":-118.333404,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Trinity International Univ.-Florida","FTE": 157,"Control": "Private not-for-profit","State": "Florida","Lat":26.099656,"Long":-80.257156,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "CUNY New York City Col. of Technology","FTE": 13483,"Control": "Public","State": "New York","Lat":40.695483,"Long":-73.987856,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "CUNY York Col.","FTE": 6452,"Control": "Public","State": "New York","Lat":40.702661,"Long":-73.794586,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Warner Pacific Col.","FTE": 470,"Control": "Private not-for-profit","State": "Oregon","Lat":45.50632,"Long":-122.594221,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "McMurry Univ.","FTE": 988,"Control": "Private not-for-profit","State": "Texas","Lat":32.429776,"Long":-99.748682,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Southwestern Adventist Univ.","FTE": 726,"Control": "Private not-for-profit","State": "Texas","Lat":32.397136,"Long":-97.328511,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Texas Lutheran Univ.","FTE": 1252,"Control": "Private not-for-profit","State": "Texas","Lat":29.573274,"Long":-97.984601,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Nevada State Col.","FTE": 2430,"Control": "Public","State": "Nevada","Lat":35.987249,"Long":-114.938929,"Carnegie": "Baccalaureate Col.s: Diverse Fields"},
+{"Name": "Univ. of the West","FTE": 287,"Control": "Private not-for-profit","State": "California","Lat":34.045985,"Long":-118.082964,"Carnegie": "Baccalaureate Col.s: Diverse Fields"}
+]
+},
+{
+      "Name": "Arts & Sciences",
+      "children": [
+{"Name": "Whittier Col.","FTE": 1957,"Control": "Private not-for-profit","State": "California","Lat":33.977625,"Long":-118.028402,"Carnegie": "Baccalaureate Col.s: Arts & Sciences Focus"},
+{"Name": "Bloomfield Col.","FTE": 1873,"Control": "Private not-for-profit","State": "New Jersey","Lat":40.794218,"Long":-74.19593,"Carnegie": "Baccalaureate Col.s: Arts & Sciences Focus"},
+{"Name": "Schreiner Univ.","FTE": 1200,"Control": "Private not-for-profit","State": "Texas","Lat":30.03108,"Long":-99.131076,"Carnegie": "Baccalaureate Col.s: Arts & Sciences Focus"},
+{"Name": "Antioch Univ.-Santa Barbara","FTE": 283,"Control": "Private not-for-profit","State": "California","Lat":34.419203,"Long":-119.6958,"Carnegie": "Baccalaureate Col.s: Arts & Sciences Focus"},
+{"Name": "Providence Christian Col.","FTE": 163,"Control": "Private not-for-profit","State": "California","Lat":34.172467,"Long":-118.118842,"Carnegie": "Baccalaureate Col.s: Arts & Sciences Focus"}
+]
+}
+]
+},
+
+{
+   "Name": "Baccalaureate/Associate",
+   "children": [
+{"Name": "Colegio Universitario de San Juan","FTE": 1382,"Control": "Public","State": "Puerto Rico","Lat":18.428528,"Long":-66.066529,"Carnegie": "Baccalaureate/Associate's Col.s"},
+{"Name": "Broward Col.","FTE": 25324,"Control": "Public","State": "Florida","Lat":26.119422,"Long":-80.14183,"Carnegie": "Baccalaureate/Associate's Col.s: Associate's Dominant"},
+{"Name": "Miami Dade Col.","FTE": 34848,"Control": "Public","State": "Florida","Lat":25.777717,"Long":-80.190856,"Carnegie": "Baccalaureate/Associate's Col.s: Associate's Dominant"},
+{"Name": "Palm Beach State Col.","FTE": 17178,"Control": "Public","State": "Florida","Lat":26.61256,"Long":-80.08653,"Carnegie": "Baccalaureate/Associate's Col.s: Associate's Dominant"},
+{"Name": "South Florida State Col.","FTE": 1662,"Control": "Public","State": "Florida","Lat":27.569553,"Long":-81.508387,"Carnegie": "Baccalaureate/Associate's Col.s: Associate's Dominant"},
+{"Name": "Valencia Col.","FTE": 27612,"Control": "Public","State": "Florida","Lat":28.520898,"Long":-81.471466,"Carnegie": "Baccalaureate/Associate's Col.s: Associate's Dominant"},
+{"Name": "Col. of Southern Nevada","FTE": 18991,"Control": "Public","State": "Nevada","Lat":36.158443,"Long":-115.233784,"Carnegie": "Baccalaureate/Associate's Col.s: Associate's Dominant"},
+{"Name": "Remington Col.-Dallas Campus","FTE": 927,"Control": "Private not-for-profit","State": "Texas","Lat":32.8606,"Long":-96.654112,"Carnegie": "Baccalaureate/Associate's Col.s: Associate's Dominant"},
+{"Name": "Brazosport Col.","FTE": 2239,"Control": "Public","State": "Texas","Lat":29.04836,"Long":-95.409004,"Carnegie": "Baccalaureate/Associate's Col.s: Associate's Dominant"},
+{"Name": "Hallmark Univ.","FTE": 928,"Control": "Private not-for-profit","State": "Texas","Lat":29.538447,"Long":-98.568626,"Carnegie": "Baccalaureate/Associate's Col.s: Associate's Dominant"},
+{"Name": "Midl& Col.","FTE": 3228,"Control": "Public","State": "Texas","Lat":32.028578,"Long":-102.10539,"Carnegie": "Baccalaureate/Associate's Col.s: Associate's Dominant"},
+{"Name": "Columbia Basin Col.","FTE": 4762,"Control": "Public","State": "Washington","Lat":46.251547,"Long":-119.118609,"Carnegie": "Baccalaureate/Associate's Col.s: Associate's Dominant"},
+{"Name": "Yakima Valley Col.","FTE": 3375,"Control": "Public","State": "Washington","Lat":46.586098,"Long":-120.528525,"Carnegie": "Baccalaureate/Associate's Col.s: Associate's Dominant"},
+{"Name": "California Col. San Diego","FTE": 368,"Control": "Private not-for-profit","State": "California","Lat":33.138303,"Long":-117.160658,"Carnegie": "Baccalaureate/Associate's Col.s: Associate's Dominant"},
+{"Name": "Florida SouthWestern State Col.","FTE": 10127,"Control": "Public","State": "Florida","Lat":26.554737,"Long":-81.887375,"Carnegie": "Baccalaureate/Associate's Col.s: Mixed Baccalaureate/Associate's"},
+{"Name": "Saint Augustine Col.","FTE": 1185,"Control": "Private not-for-profit","State": "Illinois","Lat":41.972414,"Long":-87.662806,"Carnegie": "Baccalaureate/Associate's Col.s: Mixed Baccalaureate/Associate's"},
+{"Name": "Donnelly Col.","FTE": 335,"Control": "Private not-for-profit","State": "Kansas","Lat":39.112227,"Long":-94.65103,"Carnegie": "Baccalaureate/Associate's Col.s: Mixed Baccalaureate/Associate's"},
+{"Name": "Everest Col.-Springfield","FTE": 55,"Control": "Private not-for-profit","State": "Missouri","Lat":37.18165,"Long":-93.304743,"Carnegie": "Baccalaureate/Associate's Col.s: Mixed Baccalaureate/Associate's"},
+{"Name": "Northern New Mexico Col.","FTE": 735,"Control": "Public","State": "New Mexico","Lat":36.004073,"Long":-106.084395,"Carnegie": "Baccalaureate/Associate's Col.s: Mixed Baccalaureate/Associate's"},
+{"Name": "Vaughn Col. of Aeronautics & Technology","FTE": 1382,"Control": "Private not-for-profit","State": "New York","Lat":40.768348,"Long":-73.881721,"Carnegie": "Baccalaureate/Associate's Col.s: Mixed Baccalaureate/Associate's"},
+{"Name": "Boricua Col.","FTE": 1008,"Control": "Private not-for-profit","State": "New York","Lat":40.833434,"Long":-73.9458,"Carnegie": "Baccalaureate/Associate's Col.s: Mixed Baccalaureate/Associate's"},
+{"Name": "City Col.-Miami","FTE": 221,"Control": "Private not-for-profit","State": "Florida","Lat":25.683673,"Long":-80.316377,"Carnegie": "Baccalaureate/Associate's Col.s: Mixed Baccalaureate/Associate's"},
+{"Name": "Azusa Pacific Univ. Col.","FTE": 1123,"Control": "Private not-for-profit","State": "California","Lat":34.110723,"Long":-117.827484,"Carnegie": "Baccalaureate/Associate's Col.s: Mixed Baccalaureate/Associate's"}
+]
+},
+
+{
+   "Name": "Doctoral",
+   "children": [
+{"Name": "San Diego State Univ.","FTE": 31668,"Control": "Public","State": "California","Lat":32.77525,"Long":-117.071228,"Carnegie": "Doctoral Universities: Higher Research Activity"},
+{"Name": "Florida Atlantic Univ.","FTE": 23166,"Control": "Public","State": "Florida","Lat":26.372421,"Long":-80.102978,"Carnegie": "Doctoral Universities: Higher Research Activity"},
+{"Name": "Nova Southeastern Univ.","FTE": 16664,"Control": "Private not-for-profit","State": "Florida","Lat":26.079337,"Long":-80.24248,"Carnegie": "Doctoral Universities: Higher Research Activity"},
+{"Name": "Univ. of Nevada-Las Vegas","FTE": 24308,"Control": "Public","State": "Nevada","Lat":36.106994,"Long":-115.141153,"Carnegie": "Doctoral Universities: Higher Research Activity"},
+{"Name": "Rutgers Univ.-Newark","FTE": 9976,"Control": "Public","State": "New Jersey","Lat":40.741303,"Long":-74.175294,"Carnegie": "Doctoral Universities: Higher Research Activity"},
+{"Name": "New Mexico State Univ.-Main Campus","FTE": 12721,"Control": "Public","State": "New Mexico","Lat":32.281568,"Long":-106.752069,"Carnegie": "Doctoral Universities: Higher Research Activity"},
+{"Name": "Texas State Univ.","FTE": 33992,"Control": "Public","State": "Texas","Lat":29.889202,"Long":-97.936392,"Carnegie": "Doctoral Universities: Higher Research Activity"},
+{"Name": "The Univ. of Texas at El Paso","FTE": 18324,"Control": "Public","State": "Texas","Lat":31.771697,"Long":-106.50356,"Carnegie": "Doctoral Universities: Higher Research Activity"},
+{"Name": "The Univ. of Texas at San Antonio","FTE": 24785,"Control": "Public","State": "Texas","Lat":29.582418,"Long":-98.621386,"Carnegie": "Doctoral Universities: Higher Research Activity"},
+{"Name": "Univ. of California-Merced","FTE": 7291,"Control": "Public","State": "California","Lat":37.366237,"Long":-120.424944,"Carnegie": "Doctoral Universities: Higher Research Activity"},
+{"Name": "Univ. of Arizona","FTE": 38815,"Control": "Public","State": "Arizona","Lat":32.232672,"Long":-110.950815,"Carnegie": "Doctoral Universities: Highest Research Activity"},
+{"Name": "Univ. of California-Irvine","FTE": 32279,"Control": "Public","State": "California","Lat":33.648434,"Long":-117.841248,"Carnegie": "Doctoral Universities: Highest Research Activity"},
+{"Name": "Univ. of California-Riverside","FTE": 22451,"Control": "Public","State": "California","Lat":33.97588,"Long":-117.331098,"Carnegie": "Doctoral Universities: Highest Research Activity"},
+{"Name": "Univ. of California-Santa Barbara","FTE": 24015,"Control": "Public","State": "California","Lat":34.416297,"Long":-119.846426,"Carnegie": "Doctoral Universities: Highest Research Activity"},
+{"Name": "Univ. of California-Santa Cruz","FTE": 18461,"Control": "Public","State": "California","Lat":36.995584,"Long":-122.058801,"Carnegie": "Doctoral Universities: Highest Research Activity"},
+{"Name": "Florida International Univ.","FTE": 41668,"Control": "Public","State": "Florida","Lat":25.757111,"Long":-80.377591,"Carnegie": "Doctoral Universities: Highest Research Activity"},
+{"Name": "Univ. of Illinois at Chicago","FTE": 26237,"Control": "Public","State": "Illinois","Lat":41.872651,"Long":-87.651145,"Carnegie": "Doctoral Universities: Highest Research Activity"},
+{"Name": "Univ. of New Mexico-Main Campus","FTE": 22339,"Control": "Public","State": "New Mexico","Lat":35.083868,"Long":-106.620155,"Carnegie": "Doctoral Universities: Highest Research Activity"},
+{"Name": "CUNY Graduate School & Univ. Center","FTE": 5272,"Control": "Public","State": "New York","Lat":40.748503,"Long":-73.983575,"Carnegie": "Doctoral Universities: Highest Research Activity"},
+{"Name": "Univ. of Houston","FTE": 36425,"Control": "Public","State": "Texas","Lat":29.720393,"Long":-95.343537,"Carnegie": "Doctoral Universities: Highest Research Activity"},
+{"Name": "The Univ. of Texas at Arlington","FTE": 30735,"Control": "Public","State": "Texas","Lat":32.728437,"Long":-97.115087,"Carnegie": "Doctoral Universities: Highest Research Activity"},
+{"Name": "Azusa Pacific Univ.","FTE": 8319,"Control": "Private not-for-profit","State": "California","Lat":34.130865,"Long":-117.88795,"Carnegie": "Doctoral Universities: Moderate Research Activity"},
+{"Name": "California State Univ.-Fresno","FTE": 22303,"Control": "Public","State": "California","Lat":36.814477,"Long":-119.748258,"Carnegie": "Doctoral Universities: Moderate Research Activity"},
+{"Name": "California State Univ.-Fullerton","FTE": 34365,"Control": "Public","State": "California","Lat":33.883627,"Long":-117.885349,"Carnegie": "Doctoral Universities: Moderate Research Activity"},
+{"Name": "Univ. of La Verne","FTE": 6499,"Control": "Private not-for-profit","State": "California","Lat":34.10086,"Long":-117.772634,"Carnegie": "Doctoral Universities: Moderate Research Activity"},
+{"Name": "Barry Univ.","FTE": 5950,"Control": "Private not-for-profit","State": "Florida","Lat":25.878865,"Long":-80.196136,"Carnegie": "Doctoral Universities: Moderate Research Activity"},
+{"Name": "National Louis Univ.","FTE": 2983,"Control": "Private not-for-profit","State": "Illinois","Lat":41.879826,"Long":-87.624805,"Carnegie": "Doctoral Universities: Moderate Research Activity"},
+{"Name": "Montclair State Univ.","FTE": 18146,"Control": "Public","State": "New Jersey","Lat":40.859233,"Long":-74.199455,"Carnegie": "Doctoral Universities: Moderate Research Activity"},
+{"Name": "Texas A & M Univ.-Corpus Christi","FTE": 10207,"Control": "Public","State": "Texas","Lat":27.713723,"Long":-97.32395,"Carnegie": "Doctoral Universities: Moderate Research Activity"},
+{"Name": "The Univ. of Texas Rio Gr&e Valley","FTE": 22380,"Control": "Public","State": "Texas","Lat":26.306629,"Long":-98.172112,"Carnegie": "Doctoral Universities: Moderate Research Activity"},
+{"Name": "Texas A & M Univ.-Kingsville","FTE": 7741,"Control": "Public","State": "Texas","Lat":27.524852,"Long":-97.882342,"Carnegie": "Doctoral Universities: Moderate Research Activity"},
+{"Name": "Texas Woman's Univ.","FTE": 11580,"Control": "Public","State": "Texas","Lat":33.227002,"Long":-97.129088,"Carnegie": "Doctoral Universities: Moderate Research Activity"},
+{"Name": "Arizona State Univ.-Downtown Phoenix","FTE": 10776,"Control": "Public","State": "Arizona","Lat":33.45343,"Long":-112.073221,"Carnegie": "Doctoral Universities: Moderate Research Activity"},
+{"Name": "Pontifical Catholic Univ. of Puerto Rico-Ponce","FTE": 6566,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.00165,"Long":-66.617138,"Carnegie": "Doctoral/Research Universities"},
+{"Name": "Inter American Univ. of Puerto Rico-Metro","FTE": 7716,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.368988,"Long":-66.077711,"Carnegie": "Doctoral/Research Universities"},
+{"Name": "Univ. of Puerto Rico-Mayaguez","FTE": 12679,"Control": "Public","State": "Puerto Rico","Lat":18.211142,"Long":-67.139172,"Carnegie": "Doctoral/Research Universities"},
+{"Name": "Universidad Del Turabo","FTE": 13842,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.239647,"Long":-66.006259,"Carnegie": "Doctoral/Research Universities"}
+]
+},
+
+{
+   "Name": "Master",
+   "children": [
+      {
+      "Name": "Larger Programs",
+      "children": [
+{"Name": "California Lutheran Univ.","FTE": 3917,"Control": "Private not-for-profit","State": "California","Lat":34.225551,"Long":-118.879467,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "California State Univ.-Bakersfield","FTE": 8463,"Control": "Public","State": "California","Lat":35.350005,"Long":-119.104711,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "California State Univ.-Stanislaus","FTE": 8678,"Control": "Public","State": "California","Lat":37.52577,"Long":-120.852511,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "California State Univ.-San Bernardino","FTE": 18770,"Control": "Public","State": "California","Lat":34.182987,"Long":-117.322508,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "California State Polytechnic Univ.-Pomona","FTE": 23187,"Control": "Public","State": "California","Lat":34.054273,"Long":-117.819019,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "California State Univ.-Chico","FTE": 16618,"Control": "Public","State": "California","Lat":39.729712,"Long":-121.844859,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "California State Univ.-Dominguez Hills","FTE": 12164,"Control": "Public","State": "California","Lat":33.86524,"Long":-118.259316,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "California State Univ.-East Bay","FTE": 13976,"Control": "Public","State": "California","Lat":37.65707,"Long":-122.058073,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "California State Univ.-Long Beach","FTE": 33705,"Control": "Public","State": "California","Lat":33.782818,"Long":-118.11204,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "California State Univ.-Los Angeles","FTE": 24386,"Control": "Public","State": "California","Lat":34.066927,"Long":-118.168965,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "California State Univ.-Northridge","FTE": 34665,"Control": "Public","State": "California","Lat":34.23671,"Long":-118.526817,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "California State Univ.-Sacramento","FTE": 27070,"Control": "Public","State": "California","Lat":38.55745,"Long":-121.42194,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Fresno Pacific Univ.","FTE": 2928,"Control": "Private not-for-profit","State": "California","Lat":36.725279,"Long":-119.731953,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Mills Col.","FTE": 1231,"Control": "Private not-for-profit","State": "California","Lat":37.782639,"Long":-122.18789,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Middlebury Institute of International Studies at Monterey","FTE": 722,"Control": "Private not-for-profit","State": "California","Lat":36.599827,"Long":-121.896813,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "National Univ.","FTE": 11920,"Control": "Private not-for-profit","State": "California","Lat":32.909469,"Long":-117.244243,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Notre Dame de Namur Univ.","FTE": 1255,"Control": "Private not-for-profit","State": "California","Lat":37.517501,"Long":-122.284618,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Univ. of Redl&s","FTE": 4426,"Control": "Private not-for-profit","State": "California","Lat":34.063571,"Long":-117.163847,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "San Jose State Univ.","FTE": 27995,"Control": "Public","State": "California","Lat":37.336569,"Long":-121.880621,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Saint Mary's Col. of California","FTE": 3445,"Control": "Private not-for-profit","State": "California","Lat":37.840731,"Long":-122.109031,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Sonoma State Univ.","FTE": 8631,"Control": "Public","State": "California","Lat":38.341023,"Long":-122.673261,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Adams State Univ.","FTE": 2528,"Control": "Public","State": "Colorado","Lat":37.473636,"Long":-105.879642,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Keiser Univ.-Ft Lauderdale","FTE": 15180,"Control": "Private not-for-profit","State": "Florida","Lat":26.185869,"Long":-80.163959,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "St Thomas Univ.","FTE": 3184,"Control": "Private not-for-profit","State": "Florida","Lat":25.920915,"Long":-80.256265,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Aurora Univ.","FTE": 4623,"Control": "Private not-for-profit","State": "Illinois","Lat":41.754465,"Long":-88.349469,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Concordia Univ.-Chicago","FTE": 3163,"Control": "Private not-for-profit","State": "Illinois","Lat":41.898574,"Long":-87.810009,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Northeastern Illinois Univ.","FTE": 6573,"Control": "Public","State": "Illinois","Lat":41.980567,"Long":-87.72013,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Robert Morris Univ. Illinois","FTE": 2445,"Control": "Private not-for-profit","State": "Illinois","Lat":41.876278,"Long":-87.627068,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Dominican Univ.","FTE": 2880,"Control": "Private not-for-profit","State": "Illinois","Lat":41.902834,"Long":-87.821872,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Saint Xavier Univ.","FTE": 3224,"Control": "Private not-for-profit","State": "Illinois","Lat":41.707763,"Long":-87.713507,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Cambridge Col.","FTE": 1381,"Control": "Private not-for-profit","State": "Massachusetts","Lat":42.369193,"Long":-71.11084,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Fairleigh Dickinson Univ.-Metropolitan Campus","FTE": 5276,"Control": "Private not-for-profit","State": "New Jersey","Lat":40.896162,"Long":-74.030023,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "New Jersey City Univ.","FTE": 6668,"Control": "Public","State": "New Jersey","Lat":40.709937,"Long":-74.08727,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Kean Univ.","FTE": 11683,"Control": "Public","State": "New Jersey","Lat":40.679429,"Long":-74.234668,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Saint Peter's Univ.","FTE": 3026,"Control": "Private not-for-profit","State": "New Jersey","Lat":40.727105,"Long":-74.071541,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "William Paterson Univ. of New Jersey","FTE": 8888,"Control": "Public","State": "New Jersey","Lat":40.946256,"Long":-74.199465,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "New Mexico Highl&s Univ.","FTE": 2558,"Control": "Public","State": "New Mexico","Lat":35.596233,"Long":-105.219197,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Col. of Staten Isl& CUNY","FTE": 11261,"Control": "Public","State": "New York","Lat":40.601831,"Long":-74.14849,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "CUNY City Col.","FTE": 12662,"Control": "Public","State": "New York","Lat":40.819794,"Long":-73.95055,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "CUNY Hunter Col.","FTE": 17248,"Control": "Public","State": "New York","Lat":40.768669,"Long":-73.964795,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "CUNY John Jay Col. of Criminal Justice","FTE": 11837,"Control": "Public","State": "New York","Lat":40.770351,"Long":-73.98841,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "CUNY Lehman Col.","FTE": 9381,"Control": "Public","State": "New York","Lat":40.873928,"Long":-73.894627,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "CUNY Queens Col.","FTE": 15057,"Control": "Public","State": "New York","Lat":40.735182,"Long":-73.816098,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Mercy Col.","FTE": 7909,"Control": "Private not-for-profit","State": "New York","Lat":41.021436,"Long":-73.874571,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Nyack Col.","FTE": 1976,"Control": "Private not-for-profit","State": "New York","Lat":41.086425,"Long":-73.931106,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Angelo State Univ.","FTE": 7392,"Control": "Public","State": "Texas","Lat":31.44145,"Long":-100.466495,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Concordia Univ.-Texas","FTE": 1886,"Control": "Private not-for-profit","State": "Texas","Lat":30.420952,"Long":-97.836247,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Univ. of Houston-Clear Lake","FTE": 6059,"Control": "Public","State": "Texas","Lat":29.582523,"Long":-95.098129,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Univ. of Houston-Victoria","FTE": 2908,"Control": "Public","State": "Texas","Lat":28.816438,"Long":-96.978193,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Univ. of the Incarnate Word","FTE": 7008,"Control": "Private not-for-profit","State": "Texas","Lat":29.468052,"Long":-98.467709,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Texas A & M International Univ.","FTE": 5978,"Control": "Public","State": "Texas","Lat":27.573504,"Long":-99.435225,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Our Lady of the Lake Univ.","FTE": 2951,"Control": "Private not-for-profit","State": "Texas","Lat":29.425611,"Long":-98.54395,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Saint Edward's Univ.","FTE": 4111,"Control": "Private not-for-profit","State": "Texas","Lat":30.229844,"Long":-97.75763,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Univ. of St Thomas","FTE": 2324,"Control": "Private not-for-profit","State": "Texas","Lat":29.738113,"Long":-95.394178,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "St. Mary's Univ.","FTE": 3314,"Control": "Private not-for-profit","State": "Texas","Lat":29.451793,"Long":-98.564307,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Sul Ross State Univ.","FTE": 2083,"Control": "Public","State": "Texas","Lat":30.363139,"Long":-103.651469,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Texas Wesleyan Univ.","FTE": 2098,"Control": "Private not-for-profit","State": "Texas","Lat":32.733314,"Long":-97.279631,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Wayl& Baptist Univ.","FTE": 2680,"Control": "Private not-for-profit","State": "Texas","Lat":34.186673,"Long":-101.729564,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "West Texas A & M Univ.","FTE": 7655,"Control": "Public","State": "Texas","Lat":34.981996,"Long":-101.9158,"Carnegie": "Master's Col.s & Universities: Larger Programs"},
+{"Name": "Universidad Metropolitana","FTE": 11448,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.387183,"Long":-66.061647,"Carnegie": "Master's Col.s & Universities (larger programs)"},
+{"Name": "Universidad Del Este","FTE": 9901,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.414805,"Long":-65.983869,"Carnegie": "Master's Col.s & Universities (larger programs)"}
+]
+},
+{
+      "Name": "Medium Programs",
+      "children": [
+{"Name": "Holy Names Univ.","FTE": 677,"Control": "Private not-for-profit","State": "California","Lat":37.802654,"Long":-122.18717,"Carnegie": "Master's Col.s & Universities: Medium Programs"},
+{"Name": "Humboldt State Univ.","FTE": 8129,"Control": "Public","State": "California","Lat":40.8741,"Long":-124.0814,"Carnegie": "Master's Col.s & Universities: Medium Programs"},
+{"Name": "Mount Saint Mary's Univ.","FTE": 3026,"Control": "Private not-for-profit","State": "California","Lat":34.082112,"Long":-118.480471,"Carnegie": "Master's Col.s & Universities: Medium Programs"},
+{"Name": "Woodbury Univ.","FTE": 1187,"Control": "Private not-for-profit","State": "California","Lat":34.208011,"Long":-118.341147,"Carnegie": "Master's Col.s & Universities: Medium Programs"},
+{"Name": "Colorado State Univ.-Pueblo","FTE": 5335,"Control": "Public","State": "Colorado","Lat":38.309219,"Long":-104.579846,"Carnegie": "Master's Col.s & Universities: Medium Programs"},
+{"Name": "Eastern New Mexico Univ.-Main Campus","FTE": 4102,"Control": "Public","State": "New Mexico","Lat":34.175592,"Long":-103.34819,"Carnegie": "Master's Col.s & Universities: Medium Programs"},
+{"Name": "Univ. of the Southwest","FTE": 720,"Control": "Private not-for-profit","State": "New Mexico","Lat":32.775496,"Long":-103.186948,"Carnegie": "Master's Col.s & Universities: Medium Programs"},
+{"Name": "Western New Mexico Univ.","FTE": 2356,"Control": "Public","State": "New Mexico","Lat":32.776962,"Long":-108.284768,"Carnegie": "Master's Col.s & Universities: Medium Programs"},
+{"Name": "Houston Baptist Univ.","FTE": 2779,"Control": "Private not-for-profit","State": "Texas","Lat":29.694414,"Long":-95.515978,"Carnegie": "Master's Col.s & Universities: Medium Programs"},
+{"Name": "The Univ. of Texas of the Permian Basin","FTE": 4071,"Control": "Public","State": "Texas","Lat":31.889509,"Long":-102.329634,"Carnegie": "Master's Col.s & Universities: Medium Programs"},
+{"Name": "California State Univ.-San Marcos","FTE": 11767,"Control": "Public","State": "California","Lat":33.130569,"Long":-117.159013,"Carnegie": "Master's Col.s & Universities: Medium Programs"},
+{"Name": "Arizona State Univ.-West","FTE": 3205,"Control": "Public","State": "Arizona","Lat":33.60726,"Long":-112.160021,"Carnegie": "Master's Col.s & Universities: Medium Programs"},
+{"Name": "California State Univ.-Monterey Bay","FTE": 6851,"Control": "Public","State": "California","Lat":36.653724,"Long":-121.799216,"Carnegie": "Master's Col.s & Universities: Medium Programs"},
+{"Name": "Universidad Central de Bayamon","FTE": 1381,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.398864,"Long":-66.180773,"Carnegie": "Master's Col.s & Universities (medium programs)"},
+{"Name": "Caribbean Univ.-Bayamon","FTE": 1359,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.383136,"Long":-66.168315,"Carnegie": "Master's Col.s & Universities (medium programs)"},
+{"Name": "Inter American Univ. of Puerto Rico-San German","FTE": 4335,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.08353,"Long":-67.05082,"Carnegie": "Master's Col.s & Universities (medium programs)"},
+{"Name": "Universidad del Sagrado Corazon","FTE": 4119,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.441166,"Long":-66.059617,"Carnegie": "Master's Col.s & Universities (medium programs)"}
+]
+},
+{
+      "Name": "Small Programs",
+      "children": [
+{"Name": "La Sierra Univ.","FTE": 2198,"Control": "Private not-for-profit","State": "California","Lat":33.910704,"Long":-117.500054,"Carnegie": "Master's Col.s & Universities: Small Programs"},
+{"Name": "Vanguard Univ. of Southern California","FTE": 1772,"Control": "Private not-for-profit","State": "California","Lat":33.662686,"Long":-117.900911,"Carnegie": "Master's Col.s & Universities: Small Programs"},
+{"Name": "Calumet Col. of Saint Joseph","FTE": 739,"Control": "Private not-for-profit","State": "Indiana","Lat":41.670925,"Long":-87.492987,"Carnegie": "Master's Col.s & Universities: Small Programs"},
+{"Name": "Felician Univ.","FTE": 1687,"Control": "Private not-for-profit","State": "New Jersey","Lat":40.867272,"Long":-74.096452,"Carnegie": "Master's Col.s & Universities: Small Programs"},
+{"Name": "New Mexico Institute of Mining & Technology","FTE": 1836,"Control": "Public","State": "New Mexico","Lat":34.066035,"Long":-106.907491,"Carnegie": "Master's Col.s & Universities: Small Programs"},
+{"Name": "Dominican Col. of Blauvelt","FTE": 1717,"Control": "Private not-for-profit","State": "New York","Lat":41.054111,"Long":-73.95234,"Carnegie": "Master's Col.s & Universities: Small Programs"},
+{"Name": "Col. of Mount Saint Vincent","FTE": 1743,"Control": "Private not-for-profit","State": "New York","Lat":40.912814,"Long":-73.907019,"Carnegie": "Master's Col.s & Universities: Small Programs"},
+{"Name": "Univ. of Houston-Downtown","FTE": 9523,"Control": "Public","State": "Texas","Lat":29.763831,"Long":-95.35953,"Carnegie": "Master's Col.s & Universities: Small Programs"},
+{"Name": "Heritage Univ.","FTE": 998,"Control": "Private not-for-profit","State": "Washington","Lat":46.374571,"Long":-120.395287,"Carnegie": "Master's Col.s & Universities: Small Programs"},
+{"Name": "Hodges Univ.","FTE": 1207,"Control": "Private not-for-profit","State": "Florida","Lat":26.277222,"Long":-81.741241,"Carnegie": "Master's Col.s & Universities: Small Programs"},
+{"Name": "California State Univ.-Channel Isl&s","FTE": 5962,"Control": "Public","State": "California","Lat":34.162949,"Long":-119.04356,"Carnegie": "Master's Col.s & Universities: Small Programs"},
+{"Name": "Univ. of North Texas at Dallas","FTE": 2292,"Control": "Public","State": "Texas","Lat":32.65708,"Long":-96.801901,"Carnegie": "Master's Col.s & Universities: Small Programs"},
+{"Name": "Caribbean Univ.-Carolina","FTE": 349,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.380193,"Long":-65.960036,"Carnegie": "Master's Col.s & Universities (smaller programs)"},
+{"Name": "Pontifical Catholic Univ. of Puerto Rico-Arecibo","FTE": 927,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.446006,"Long":-66.679114,"Carnegie": "Master's Col.s & Universities (smaller programs)"},
+{"Name": "Inter American Univ. of Puerto Rico-Aguadilla","FTE": 3814,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.467886,"Long":-67.121671,"Carnegie": "Master's Col.s & Universities (smaller programs)"},
+{"Name": "Inter American Univ. of Puerto Rico-Arecibo","FTE": 3930,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.47509,"Long":-66.75901,"Carnegie": "Master's Col.s & Universities (smaller programs)"},
+{"Name": "Caribbean Univ.-Ponce","FTE": 853,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.006633,"Long":-66.59425,"Carnegie": "Master's Col.s & Universities (smaller programs)"},
+{"Name": "Caribbean Univ.-Vega Baja","FTE": 316,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.444882,"Long":-66.40315,"Carnegie": "Master's Col.s & Universities (smaller programs)"}
+]
+},
+{
+      "Name": "Med Schools",
+      "children": [
+{"Name": "Univ. of Puerto Rico-Medical Sciences","FTE": 2195,"Control": "Public","State": "Puerto Rico","Lat":18.396548,"Long":-66.074894,"Carnegie": "Medical schools & medical centers"},
+{"Name": "San Juan Bautista School of Medicine","FTE": 325,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.220528,"Long":-66.050389,"Carnegie": "Medical schools & medical centers"}
+]
+}
+]
+}, 
+
+{
+   "Name": "N/A",
+   "children": [
+{"Name": "Everest Institute-Southfield","FTE": 577,"Control": "Private not-for-profit","State": "Michigan","Lat":42.447485,"Long":-83.260486,"Carnegie": "Not applicable, not in Carnegie universe (not accredited or nondegree-granting)"},
+{"Name": "Texas Southmost Col.","FTE": 2789,"Control": "Public","State": "Texas","Lat":25.899628,"Long":-97.492241,"Carnegie": "Not applicable, not in Carnegie universe (not accredited or nondegree-granting)"},
+{"Name": "Perry Technical Institute","FTE": 837,"Control": "Private not-for-profit","State": "Washington","Lat":46.571492,"Long":-120.537976,"Carnegie": "Not applicable, not in Carnegie universe (not accredited or nondegree-granting)"},
+{"Name": "Hacienda La Puente Adult Education","FTE": 2902,"Control": "Public","State": "California","Lat":34.044112,"Long":-117.979559,"Carnegie": "Not applicable, not in Carnegie universe (not accredited or nondegree-granting)"},
+{"Name": "Univ. of Connecticut-Stamford","FTE": 1320,"Control": "Public","State": "Connecticut","Lat":41.056081,"Long":-73.542206,"Carnegie": "Not applicable, not in Carnegie universe (not accredited or nondegree-granting)"},
+{"Name": "CBD Col.","FTE": 521,"Control": "Private not-for-profit","State": "California","Lat":34.06231,"Long":-118.306221,"Carnegie": "Not applicable, not in Carnegie universe (not accredited or nondegree-granting)"},
+{"Name": "Texas A&M Univ.-San Antonio","FTE": 3748,"Control": "Public","State": "Texas","Lat":29.304762,"Long":-98.52417,"Carnegie": "Not applicable, not in Carnegie universe (not accredited or nondegree-granting)"},
+{"Name": "Stella & Charles Guttman C.C.","FTE": 891,"Control": "Public","State": "New York","Lat":40.75281,"Long":-73.984131,"Carnegie": "Not applicable, not in Carnegie universe (not accredited or nondegree-granting)"},
+{"Name": "Univ. of Arizona-South","FTE": 309,"Control": "Public","State": "Arizona","Lat":31.567832,"Long":-110.245117,"Carnegie": "Not applicable, not in Carnegie universe (not accredited or nondegree-granting)"},
+{"Name": "Texas State Technical Col.","FTE": 7963,"Control": "Public","State": "Texas","Lat":31.639295,"Long":-97.08471,"Carnegie": "Not applicable, not in Carnegie universe (not accredited or nondegree-granting)"},
+{"Name": "Northwest Suburban Col.","FTE": 66,"Control": "Private not-for-profit","State": "Illinois","Lat":42.05259,"Long":-88.004121,"Carnegie": "Not applicable, not in Carnegie universe (not accredited or nondegree-granting)"},
+{"Name": "Trinity Col. of Puerto Rico","FTE": 173,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":17.981978,"Long":-66.620076,"Carnegie": "Not applicable, not in Carnegie universe (not accredited or nondegree-granting)"},
+{"Name": "Dewey Univ.-Carolina","FTE": 464,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.376596,"Long":-65.958397,"Carnegie": "Not applicable, not in Carnegie universe (not accredited or nondegree-granting)"},
+{"Name": "Dewey Univ.-Bayamon","FTE": 242,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.40658,"Long":-66.197364,"Carnegie": "Not applicable, not in Carnegie universe (not accredited or nondegree-granting)"},
+{"Name": "Monteclaro Escuela de Hoteleria y Artes Culinarias","FTE": 10,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.3699,"Long":-65.780411,"Carnegie": "Not applicable, not in Carnegie universe (not accredited or nondegree-granting)"},
+{"Name": "Dewey Univ.-Juana Diaz","FTE": 275,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.057023,"Long":-66.509285,"Carnegie": "Not applicable, not in Carnegie universe (not accredited or nondegree-granting)"},
+{"Name": "Dewey Univ.-Fajardo","FTE": 162,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.329214,"Long":-65.650722,"Carnegie": "Not applicable, not in Carnegie universe (not accredited or nondegree-granting)"},
+{"Name": "Dewey Univ.-Manati","FTE": 534,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.433307,"Long":-66.487333,"Carnegie": "Not applicable, not in Carnegie universe (not accredited or nondegree-granting)"},
+{"Name": "Dewey Univ.-Mayaguez","FTE": 197,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.22556,"Long":-67.169584,"Carnegie": "Not applicable, not in Carnegie universe (not accredited or nondegree-granting)"}
+]
+},
+
+{
+   "Name": "Health",
+   "children": [
+{"Name": "Carlos Albizu Univ.-San Juan","FTE": 1274,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.466573,"Long":-66.113908,"Carnegie": "Other health professions schools"}
+]
+},
+
+{
+   "Name": "Research",
+   "children": [
+{"Name": "Univ. of Puerto Rico-Rio Piedras","FTE": 15584,"Control": "Public","State": "Puerto Rico","Lat":18.402826,"Long":-66.050009,"Carnegie": "Research Universities (high research activity)"}
+]
+},
+
+{
+   "Name": "Art, Music, & Design",
+   "children": [
+{"Name": "Puerto Rico Conservatory of Music","FTE": 372,"Control": "Public","State": "Puerto Rico","Lat":18.454016,"Long":-66.078811,"Carnegie": "Schools of art, music, & design"},
+{"Name": "Escuela de Artes Plasticas y Diseno de Puerto Rico","FTE": 471,"Control": "Public","State": "Puerto Rico","Lat":18.46778,"Long":-66.121348,"Carnegie": "Schools of art, music, & design"}
+]
+},
+
+{
+   "Name": "Engineering",
+   "children": [
+{"Name": "Universidad Politecnica de Puerto Rico","FTE": 2902,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.422195,"Long":-66.056084,"Carnegie": "Schools of engineering"}
+]
+},
+
+{
+   "Name": "Special Focus",
+   "children": [
+      {
+      "Name": "Four Yr.-Arts, Music & Design",
+      "children": [
+{"Name": "American Academy of Art","FTE": 248,"Control": "Private not-for-profit","State": "Illinois","Lat":41.877824,"Long":-87.624396,"Carnegie": "Special Focus Four-Year: Arts, Music & Design Schools"},
+{"Name": "American Musical & Dramatic Academy","FTE": 1565,"Control": "Private not-for-profit","State": "New York","Lat":40.772275,"Long":-73.987549,"Carnegie": "Special Focus Four-Year: Arts, Music & Design Schools"}
+]
+},
+      {
+      "Name": "Four Yr.-Business",
+      "children": [
+{"Name": "Polytechnic Univ. of Puerto Rico-Miami","FTE": 95,"Control": "Private not-for-profit","State": "Florida","Lat":25.809154,"Long":-80.328852,"Carnegie": "Special Focus Four-Year: Business & Management Schools"},
+{"Name": "Polytechnic Univ. of Puerto Rico-Orl&o","FTE": 87,"Control": "Private not-for-profit","State": "Florida","Lat":28.55158,"Long":-81.253943,"Carnegie": "Special Focus Four-Year: Business & Management Schools"}
+]
+},
+      {
+      "Name": "Four Yr. Faith-Related",
+      "children": [
+{"Name": "California Christian Col.","FTE": 14,"Control": "Private not-for-profit","State": "California","Lat":36.749366,"Long":-119.711123,"Carnegie": "Special Focus Four-Year: Faith-Related Institutions"},
+{"Name": "Life Pacific Col.","FTE": 564,"Control": "Private not-for-profit","State": "California","Lat":34.098705,"Long":-117.829388,"Carnegie": "Special Focus Four-Year: Faith-Related Institutions"},
+{"Name": "Saint John Vianney Col. Seminary","FTE": 82,"Control": "Private not-for-profit","State": "Florida","Lat":25.742579,"Long":-80.337411,"Carnegie": "Special Focus Four-Year: Faith-Related Institutions"},
+{"Name": "Saint Joseph Seminary Col.","FTE": 151,"Control": "Private not-for-profit","State": "Louisiana","Lat":30.526778,"Long":-90.113621,"Carnegie": "Special Focus Four-Year: Faith-Related Institutions"},
+{"Name": "Mount Angel Seminary","FTE": 178,"Control": "Private not-for-profit","State": "Oregon","Lat":45.057871,"Long":-122.775405,"Carnegie": "Special Focus Four-Year: Faith-Related Institutions"},
+{"Name": "Pentecostal Theological Seminary","FTE": 234,"Control": "Private not-for-profit","State": "Tennessee","Lat":35.162528,"Long":-84.868326,"Carnegie": "Special Focus Four-Year: Faith-Related Institutions"},
+{"Name": "Col. of Biblical Studies-Houston","FTE": 218,"Control": "Private not-for-profit","State": "Texas","Lat":29.716681,"Long":-95.506566,"Carnegie": "Special Focus Four-Year: Faith-Related Institutions"},
+{"Name": "Pillar Col.","FTE": 466,"Control": "Private not-for-profit","State": "New Jersey","Lat":40.738539,"Long":-74.169153,"Carnegie": "Special Focus Four-Year: Faith-Related Institutions"},
+{"Name": "Baptist Univ. of the Americas","FTE": 185,"Control": "Private not-for-profit","State": "Texas","Lat":29.34998,"Long":-98.546081,"Carnegie": "Special Focus Four-Year: Faith-Related Institutions"}
+]
+},
+      {
+      "Name": "Law",
+      "children": [
+{"Name": "South Texas Col. of Law Houston","FTE": 822,"Control": "Private not-for-profit","State": "Texas","Lat":29.753391,"Long":-95.364882,"Carnegie": "Special Focus Four-Year: Law Schools"}
+]
+},
+      {
+      "Name": "Med. Schools",
+      "children": [
+{"Name": "Loma Linda Univ.","FTE": 3958,"Control": "Private not-for-profit","State": "California","Lat":34.051241,"Long":-117.260605,"Carnegie": "Special Focus Four-Year: Medical Schools & Centers"},
+{"Name": "The Univ. of Texas Health Science Center at San Antonio","FTE": 2990,"Control": "Public","State": "Texas","Lat":29.504716,"Long":-98.57606,"Carnegie": "Special Focus Four-Year: Medical Schools & Centers"},
+{"Name": "The Univ. of Texas Health Science Center at Houston","FTE": 3921,"Control": "Public","State": "Texas","Lat":29.702873,"Long":-95.403183,"Carnegie": "Special Focus Four-Year: Medical Schools & Centers"}
+]
+},
+      {
+      "Name": "Four Yr. Other Health Prof.",
+      "children": [
+{"Name": "Col.America-Denver","FTE": 201,"Control": "Private not-for-profit","State": "Colorado","Lat":39.691571,"Long":-104.941168,"Carnegie": "Special Focus Four-Year: Other Health Professions Schools"},
+{"Name": "Carlos Albizu Univ.-Miami","FTE": 856,"Control": "Private not-for-profit","State": "Florida","Lat":25.795162,"Long":-80.355002,"Carnegie": "Special Focus Four-Year: Other Health Professions Schools"},
+{"Name": "Adventist Univ. of Health Sciences","FTE": 1222,"Control": "Private not-for-profit","State": "Florida","Lat":28.576142,"Long":-81.367687,"Carnegie": "Special Focus Four-Year: Other Health Professions Schools"},
+{"Name": "The Univ. of Texas MD &erson Cancer Center","FTE": 321,"Control": "Public","State": "Texas","Lat":29.705395,"Long":-95.40079,"Carnegie": "Special Focus Four-Year: Other Health Professions Schools"},
+{"Name": "Atlantic Institute of Oriental Medicine","FTE": 144,"Control": "Private not-for-profit","State": "Florida","Lat":26.121964,"Long":-80.142235,"Carnegie": "Special Focus Four-Year: Other Health Professions Schools"},
+{"Name": "Col.America-Phoenix","FTE": 580,"Control": "Private not-for-profit","State": "Arizona","Lat":33.57415,"Long":-112.119891,"Carnegie": "Special Focus Four-Year: Other Health Professions Schools"},
+{"Name": "California Col. San Diego","FTE": 975,"Control": "Private not-for-profit","State": "California","Lat":32.835221,"Long":-117.166966,"Carnegie": "Special Focus Four-Year: Other Health Professions Schools"}
+]
+},
+      {
+      "Name": "Other Focus",
+      "children": [
+{"Name": "Pacific Oaks Col.","FTE": 498,"Control": "Private not-for-profit","State": "California","Lat":34.153382,"Long":-118.151323,"Carnegie": "Special Focus Four-Year: Other Special Focus Institutions"},
+{"Name": "Benjamin Franklin Institute of Technology","FTE": 485,"Control": "Public","State": "Massachusetts","Lat":42.346023,"Long":-71.070231,"Carnegie": "Special Focus Four-Year: Other Technology-Related Schools"}
+]
+},
+      {
+      "Name": "Two Yr. Health Prof.",
+      "children": [
+{"Name": "Casa Loma Col.-Van Nuys","FTE": 226,"Control": "Private not-for-profit","State": "California","Lat":34.192829,"Long":-118.457781,"Carnegie": "Special Focus Two-Year: Health Professions"},
+{"Name": "Los Angeles County Col. of Nursing & Allied Health","FTE": 67,"Control": "Public","State": "California","Lat":34.061605,"Long":-118.211418,"Carnegie": "Special Focus Two-Year: Health Professions"},
+{"Name": "Cochran School of Nursing","FTE": 46,"Control": "Private not-for-profit","State": "New York","Lat":40.968797,"Long":-73.88629,"Carnegie": "Special Focus Two-Year: Health Professions"},
+{"Name": "Lamar State Col.-Port Arthur","FTE": 1233,"Control": "Public","State": "Texas","Lat":29.880903,"Long":-93.925514,"Carnegie": "Special Focus Two-Year: Health Professions"},
+{"Name": "SABER Col.","FTE": 553,"Control": "Private not-for-profit","State": "Florida","Lat":25.771518,"Long":-80.261299,"Carnegie": "Special Focus Two-Year: Health Professions"},
+{"Name": "City Col.-Hollywood","FTE": 200,"Control": "Private not-for-profit","State": "Florida","Lat":26.02521,"Long":-80.219891,"Carnegie": "Special Focus Two-Year: Health Professions"}
+]
+},
+      {
+      "Name": "Two Yr. Other Fields",
+      "children": [
+{"Name": "Urban Col. of Boston","FTE": 365,"Control": "Private not-for-profit","State": "Massachusetts","Lat":42.352944,"Long":-71.064378,"Carnegie": "Special Focus Two-Year: Other Fields"},
+{"Name": "Everest Col.-Arlington","FTE": 275,"Control": "Private not-for-profit","State": "Texas","Lat":32.74426,"Long":-97.067951,"Carnegie": "Special Focus Two-Year: Other Fields"},
+{"Name": "Remington Col.-North Houston Campus","FTE": 563,"Control": "Private not-for-profit","State": "Texas","Lat":29.946669,"Long":-95.424917,"Carnegie": "Special Focus Two-Year: Other Fields"},
+{"Name": "Everest Col.-Fort Worth South","FTE": 238,"Control": "Private not-for-profit","State": "Texas","Lat":32.68499,"Long":-97.322091,"Carnegie": "Special Focus Two-Year: Other Fields"}
+]
+}
+]
+},
+
+{
+   "Name": "Seminaries",
+   "children": [
+{"Name": "Universidad Teologica del Caribe","FTE": 225,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.373928,"Long":-66.010617,"Carnegie": "Theological seminaries, Bible Col.s, & other faith-related institutions"},
+{"Name": "Universidad Pentecostal Mizpa","FTE": 254,"Control": "Private not-for-profit","State": "Puerto Rico","Lat":18.358258,"Long":-66.085117,"Carnegie": "Theological seminaries, Bible Col.s, & other faith-related institutions"}
+]
+}
+]
+}
+]
+}
