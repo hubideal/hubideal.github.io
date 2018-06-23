@@ -60,15 +60,15 @@ h4 {
   margin-left: 1em;
   /*width: 30em;*/
   /*height: 50em;*/
-  width: 33%;
+  width: 42%;
   height: 100%;
   margin-top: 1.5em;
 }
 .introduction {
-  margin-left: 12%;
+  margin-left: 10%;
   margin-top: 1.5em;
   
-  font: .8em 'IBM Plex Sans', sans-serif;
+  font: .9em 'IBM Plex Sans', sans-serif;
 }
 
 div {
@@ -95,7 +95,7 @@ div {
     font-weight: 600;
 }
 .legend {
-  font: .8em 'IBM Plex Sans', sans-serif;
+  font: .9em 'IBM Plex Sans', sans-serif;
    margin-left: 10%;
    list-style-type: none;
 }
@@ -127,12 +127,17 @@ a {
 <li>NASNTI – <a href= "https://www2.ed.gov/about/offices/list/ocr/edlite-minorityinst-list-pg9.html">Native American-Serving Nontribal Institutions</a></li>
 <li>ANNH – <a href= "https://www2.ed.gov/programs/iduesannh/index.html">Alaska Native and Hawaiian Native Serving Institutions</a></li>   
 </ul>
-</div><div class="imageDiv"><svg width="800" height="800"></svg></div>
+</div><div class="imageDiv"><svg></svg></div>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
 
-var svg = d3.select("svg"),
-    margin = 10,
+var width = .5*screen.width, height = width;
+
+
+var svg = d3.select("svg")
+    .attr("width", width)
+    .attr("height", height);
+var margin = 10,
     diameter = +svg.attr("width"),
     g = svg.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
 
