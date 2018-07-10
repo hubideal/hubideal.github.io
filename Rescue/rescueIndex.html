@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+</head>
+<meta charset="UTF-8">
+<style>
+
+t2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2em;
+}
+
+t3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5em;
+}
+p {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1em;
+}
+
+.intro {
+  margin-left: 3em;
+  margin-right: 10em;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+
+.node circle {
+  fill: #fff;
+  stroke: purple;
+  stroke-width: 3px;
+}
+
+.node text {
+  font: .95em sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 2px;
+}
+
+</style>
+
+<body>
+<div class="intro"><div class="title1"><t2>Health Needs and Priorities of Syrian Refugees Living in Jordan</t2></div>
+<div class="title2"><t3>Perspectives from Refugees and Health Care Providers</t3></div>
+<div><p>This visualization summarizes qualitative research from the article <a href="http://applications.emro.who.int/emhj/v24/03/EMHJ_2018_24_3_243_253.pdf?ua=1">"Health needs and priorities of Syrian refugees in camps and urban settings in Jordan: perspectives of refugees and health care providers"</a> (Al-Rousan, Schwabkey, Jirmanus, & Nelson, 2018).  The study was completed in 2017, before changes were made to the healthcare subsidy for Syrian refugees.</p></div></div>
+
+<!-- load the d3.js library -->	
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+var treeData =
+  {"Name": "Health Needs & Priorities",
+ "children": [
+
+{
+ "Name": "Service Providers",
+ "children": [
+  {
+   "Name": "Health Problems",
+      "children": [
+      {"Name": "Refugees primarily seek care for acute conditions (respiratory illness, fever, diarrhoea & injuries)"},
+      {"Name": "High prevalence of chronic conditions."},
+      {"Name": "High smoking prevalence."},
+      {"Name": "Lack of health literacy."},
+      {"Name": "Stigma around receiving mental health care."},
+      {"Name": "Lack of necessary documentation such as marriage and birth certificates."}
+  ] }, 
+  {
+      "Name": "Strengths of Healthcare", 
+      "children": [
+{"Name": "Providing free/subsidized care to Syrian refugees - Update: Revoked in 2018"},
+{"Name": "Hospitality towards Syrian refugees"},
+{"Name": "Dedication to providing quality health care to Syrian refugees and Jordanian citizens"}
+]
+},
+  {
+      "Name": "Weaknesses of Healthcare", 
+      "children": [
+{"Name": "Lack of electronic health information systems, especially in primary care"},
+{"Name": "Limited mental health care services"},
+{"Name": "Insufficient ed programs targeting chronic disease prevention, smoking, domestic violence & mental health"},
+{"Name": "Provider burn-out due to long work hours and staffing shortages"},
+{"Name": "Lack of community health outreach programs"}
+]
+},
+{
+      "Name": "Priorities", 
+      "children": [
+{"Name": "Increase health education programs to address chronic disease prevention and smoking"},
+{"Name": "Increase programs to target mental health and mitigate stigma"},
+{"Name": "Increase health programs to address domestic violence"},
+{"Name": "Increase the number of female antenatal providers to encourage use by Syrian refugees"}
+]
+}
+]
+},
+{
+   "Name": "Urban Syrian Refugees",
+   "children": [
+{
+   "Name": "Health Problems",
+      "children": [
+{"Name": "Limited health care access, especially secondary and tertiary care due to high costs and location"},
+{"Name": "Chronic conditions perceived as more prevalent since displacement, esp. cardiovascular, diabetes, hypertension, cancer & kidney diseases"},
+{"Name": "Mental illness, such as post-traumatic stress disorder and depression, are increasing in young adults"},
+{"Name": "Lack of legal work opportunities, high costs, & health care contribute to psychological distress & domestic violence"},
+{"Name": "Poor housing conditions and poor water quality cause illness"}     
+  ] 
+  }, 
+{
+      "Name": "Strengths of Healthcare", 
+      "children": [
+{"Name": "Iris scan technology is a convenient way to access cash assistance"}
+]
+},
+{
+      "Name": "Weaknesses of Healthcare", 
+      "children": [
+{"Name": "Cost is the primary barrier to health care access"},
+{"Name": "High health care costs drive refugees to seek care in pharmacies instead of clinics"},
+{"Name": "Discrimination in the health care setting and inhumane treatment from health care providers"},
+{"Name": "Physicians perform insufficient physical examinations and do not spend enough time with patients"},
+{"Name": "Legal status makes access to health services a challenge"},
+{"Name": "Lack of birth certificates and changing UNHCR policies complicate health care access"},
+{"Name": "Lack of access to dental care"},
+{"Name": "Lack of female antenatal care providers"},
+{"Name": "Hospitals that provide 24/7 emergency care are located far away"},
+{"Name": "Current policies do not allow donation of blood among Syrians"},
+{"Name": "Thalassemia patients cannot access blood transfusions"},
+{"Name": "Current policies do not allow Syrian health care providers to work while in Jordan"}
+]
+}, 
+{
+      "Name": "Priorities", 
+      "children": [
+{"Name": "Increase the quant. & qual. of food coupons & ensure that they are accepted at stores accessible to refugees"},
+{"Name": "Revisit cash assistance criteria"},
+{"Name": "Train health care providers to care for the vulnerable refugee population"},
+{"Name": "Provide adequate care and health education for chronic conditions"},
+{"Name": "Increase numbers of female physicians caring for Syrian refugee women"},
+{"Name": "Increase legal work opportunities, & facilitate registration of marriage & births in order to improve quality of life"}
+]
+}
+]
+},
+{
+   "Name": "Syrian Refugees in Camps",
+   "children": [
+  {
+   "Name": "Health Problems",
+      "children": [
+      {"Name": "Poor living conditions exacerbate respiratory illness"},
+      {"Name": "High costs of basic foods and unregulated stores in camps"},
+      {"Name": "Lack of transportation to health clinics inside the camp"},
+      {"Name": "Insecurity in the camps Sexual abuse Child marriage as a response to poverty and lack of security"},
+      {"Name": "Sexual abuse"},
+      {"Name": "Child marriage as a response to poverty and lack of security"}
+  ] }, 
+  {
+      "Name": "Strengths of Healthcare", 
+      "children": [
+{"Name": "Availability of primary health care facilities and small hospitals inside the camp"},
+{"Name": "Recreational activities for children, such as after-school sports and art programmes"},
+{"Name": "Mental health clinics run by International Medical Corps and other international organizations; vaccination awareness campaigns"},
+{"Name": "Home visits by field officers for chronic diseases"}
+]
+},
+  {
+      "Name": "Weaknesses of Healthcare", 
+      "children": [
+{"Name": "Periodic lack of essential medicines for chronic diseases, such as high blood pressure and diabetes"},
+{"Name": "Long waiting times due to limited staffing in camp clinics"},
+{"Name": "Discrimination and inhumane attitude of health care providers"}
+]
+}, 
+{
+      "Name": "Priorities", 
+      "children": [
+{"Name": "Syrian physicians should be employed in the camps"},
+{"Name": "Provide transportation to hospitals and health clinics inside the camp"},
+{"Name": "Regulate food and grocery stores inside the camp"}
+]
+}
+]
+}
+]
+};
+
+// Set the dimensions and margins of the diagram
+var margin = {top: 10, right: 90, bottom: 30, left: 200},
+    width = screen.width - margin.left - margin.right,
+    height = screen.height - margin.top - margin.bottom;
+
+// append the svg object to the body of the page
+// appends a 'group' element to 'svg'
+// moves the 'group' element to the top left margin
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.right + margin.left)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate("
+          + margin.left + "," + margin.top + ")");
+
+var i = 0,
+    duration = 750,
+    root;
+
+// declares a tree layout and assigns the size
+var treemap = d3.tree().size([height, width]);
+
+// Assigns parent, children, height, depth
+root = d3.hierarchy(treeData, function(d) { return d.children; });
+root.x0 = height / 2;
+root.y0 = 0;
+
+// Collapse after the second level
+root.children.forEach(collapse);
+
+update(root);
+
+// Collapse the node and all it's children
+function collapse(d) {
+  if(d.children) {
+    d._children = d.children
+    d._children.forEach(collapse)
+    d.children = null
+  }
+}
+
+function update(source) {
+
+  // Assigns the x and y position for the nodes
+  var treeData = treemap(root);
+
+  // Compute the new tree layout.
+  var nodes = treeData.descendants(),
+      links = treeData.descendants().slice(1);
+
+  // Normalize for fixed-depth.
+  nodes.forEach(function(d){ d.y = d.depth * 170});
+
+  // ****************** Nodes section ***************************
+
+  // Update the nodes...
+  var node = svg.selectAll('g.node')
+      .data(nodes, function(d) {return d.id || (d.id = ++i); });
+
+  // Enter any new modes at the parent's previous position.
+  var nodeEnter = node.enter().append('g')
+      .attr('class', 'node')
+      .attr("transform", function(d) {
+        return "translate(" + source.y0 + "," + source.x0 + ")";
+    })
+    .on('click', click);
+
+  // Add Circle for the nodes
+  nodeEnter.append('circle')
+      .attr('class', 'node')
+      .attr('r', 1e-5)
+      .style("fill", function(d) {
+          return d._children ? "violet" : "#fff";
+      });
+
+  // Add labels for the nodes
+  nodeEnter.append('text')
+      .attr("dy", "-.2em")
+      .attr("x", function(d) {
+          return d.children || d._children ? -13 : 13;
+      })
+      .attr("text-anchor", function(d) {
+          return d.children || d._children ? "end" : "start";
+      })
+      .text(function(d) { return d.data.Name; });
+
+  // UPDATE
+  var nodeUpdate = nodeEnter.merge(node);
+
+  // Transition to the proper position for the node
+  nodeUpdate.transition()
+    .duration(duration)
+    .attr("transform", function(d) { 
+        return "translate(" + d.y + "," + d.x + ")";
+     });
+
+  // Update the node attributes and style
+  nodeUpdate.select('circle.node')
+    .attr('r', 10)
+    .style("fill", function(d) {
+        return d._children ? "violet" : "#fff";
+    })
+    .attr('cursor', 'pointer');
+
+
+  // Remove any exiting nodes
+  var nodeExit = node.exit().transition()
+      .duration(duration)
+      .attr("transform", function(d) {
+          return "translate(" + source.y + "," + source.x + ")";
+      })
+      .remove();
+
+  // On exit reduce the node circles size to 0
+  nodeExit.select('circle')
+    .attr('r', 1e-6);
+
+  // On exit reduce the opacity of text labels
+  nodeExit.select('text')
+    .style('fill-opacity', 1e-6);
+
+  // ****************** links section ***************************
+
+  // Update the links...
+  var link = svg.selectAll('path.link')
+      .data(links, function(d) { return d.id; });
+
+  // Enter any new links at the parent's previous position.
+  var linkEnter = link.enter().insert('path', "g")
+      .attr("class", "link")
+      .attr('d', function(d){
+        var o = {x: source.x0, y: source.y0}
+        return diagonal(o, o)
+      });
+
+  // UPDATE
+  var linkUpdate = linkEnter.merge(link);
+
+  // Transition back to the parent element position
+  linkUpdate.transition()
+      .duration(duration)
+      .attr('d', function(d){ return diagonal(d, d.parent) });
+
+  // Remove any exiting links
+  var linkExit = link.exit().transition()
+      .duration(duration)
+      .attr('d', function(d) {
+        var o = {x: source.x, y: source.y}
+        return diagonal(o, o)
+      })
+      .remove();
+
+  // Store the old positions for transition.
+  nodes.forEach(function(d){
+    d.x0 = d.x;
+    d.y0 = d.y;
+  });
+
+  // Creates a curved (diagonal) path from parent to the child nodes
+  function diagonal(s, d) {
+
+    path = `M ${s.y} ${s.x}
+            C ${(s.y + d.y) / 2} ${s.x},
+              ${(s.y + d.y) / 2} ${d.x},
+              ${d.y} ${d.x}`
+
+    return path
+  }
+
+  // Toggle children on click.
+  function click(d) {
+    if (d.children) {
+        d._children = d.children;
+        d.children = null;
+      } else {
+        d.children = d._children;
+        d._children = null;
+      }
+    update(d);
+  }
+}
+
+</script>
+</body>
