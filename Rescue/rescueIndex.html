@@ -21,11 +21,12 @@ p {
 
 .intro {
   margin-left: 3em;
-  margin-right: 10em;
+  margin-right: 20%;
 }
 
 body {
   background-color: lightgrey;
+  width: 120%;
 }
 
 
@@ -45,6 +46,9 @@ body {
   stroke: #eee;
   stroke-width: 2px;
 }
+.newdiv {
+  width: 110%;
+}
 
 </style>
 
@@ -52,7 +56,7 @@ body {
 <div class="intro"><div class="title1"><t2>Health Needs and Priorities of Syrian Refugees Living in Jordan</t2></div>
 <div class="title2"><t3>Perspectives from Refugees and Health Care Providers</t3></div>
 <div><p>This visualization summarizes qualitative research from the article <a href="http://applications.emro.who.int/emhj/v24/03/EMHJ_2018_24_3_243_253.pdf?ua=1">"Health needs and priorities of Syrian refugees in camps and urban settings in Jordan: perspectives of refugees and health care providers"</a> (Al-Rousan, Schwabkey, Jirmanus, & Nelson, 2018).  The study was completed in 2017, before changes were made to the healthcare subsidy for Syrian refugees.  The study provides perspectives of health needs from three different groups: service providers, Syrian refugees living in urban areas, and Syrian refugees living in camps.</p></div></div>
-
+<div class="newdiv"></div>
 <!-- load the d3.js library -->	
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
@@ -196,14 +200,14 @@ var treeData =
 };
 
 // Set the dimensions and margins of the diagram
-var margin = {top: 10, right: 90, bottom: 30, left: 200},
+var margin = {top: 10, right: 20, bottom: 30, left: 200},
     width = screen.width - margin.left - margin.right,
     height = screen.height - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 // appends a 'group' element to 'svg'
 // moves the 'group' element to the top left margin
-var svg = d3.select("body").append("svg")
+var svg = d3.select(".newdiv").append("svg")
     .attr("width", width + margin.right + margin.left)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
