@@ -29,12 +29,12 @@
   
 <script>
 
-var mymap = L.map('mapid').setView([34.5, 38], 7); //creating the map
+var mymap = L.map('mapid').setView([34.5, 38], 6); //creating the map
 
 var basicMap = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaHViaWRlYWwiLCJhIjoiY2o5enltdnB4MnllNTJ2cG84dHR2bWtlbiJ9.Mc95MrGOBpLnzrMap4hrLw', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
     maxZoom: 18,
-    minZoom: 7,
+    minZoom: 5,
     id: 'mapbox.shadowlinesBase',
     accessToken: 'pk.eyJ1IjoiaHViaWRlYWwiLCJhIjoiY2o5enltdnB4MnllNTJ2cG84dHR2bWtlbiJ9.Mc95MrGOBpLnzrMap4hrLw'
 }).addTo(mymap); //loading image layer
