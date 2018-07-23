@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--p5js download: https://p5js.org/download/-->
+    <!--Content Delivery Network (CDN): https://cdnjs.com/libraries/p5.js-->
+    <title>Image PopUp</title>
+    <!--p5 core library, minified-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.13/p5.min.js" type="text/javascript"></script>
+    <!--p5 interaction with the DOM-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.13/addons/p5.dom.min.js" type="text/javascript"></script>
+<style>
+body {
+  font-family: Arial, sans-serif;
+}
+
+.popup {
+    position: relative;
+    display: absolute;
+    cursor: pointer;
+    opacity: .95;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.popup2 {
+    position: relative;
+    display: absolute;
+    cursor: pointer;
+    opacity: .95;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.popup3 {
+    position: relative;
+    display: absolute;
+    cursor: pointer;
+    opacity: .95;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.popup4 {
+    position: relative;
+    display: absolute;
+    cursor: pointer;
+    opacity: .95;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.title {
+    margin-left: 8%;
+    margin-top: 3%;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 40%;
+    background-color: #555;
+    opacity: .95;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    top: 3%;
+    left: 50%;
+    /*margin-left: -80px;*/
+}
+
+.popuptext2 {
+    visibility: hidden;
+    width: 40%;
+    background-color: #196419;
+    opacity: .95;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    margin-top: 4%;
+    left: 50%;
+    /*margin-left: -80px;*/
+}
+.popuptext4 {
+    visibility: hidden;
+    width: 40%;
+    background-color: #720c8e;
+    opacity: .95;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    margin-top: 8%;
+    left: 50%;
+    /*margin-left: -80px;*/
+}
+.popuptext3 {
+    visibility: hidden;
+    width: 40%;
+    background-color: #1f1584;
+    opacity: .95;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    margin-top: 12%;
+    left: 50%;
+    /*margin-left: -80px;*/
+}
+
+p {
+    text-align: left;
+    margin-left: 3em;
+    font-size: 1.5em;
+}
+/* Popup arrow */
+/*.popup .popuptext::after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: 80%;*/
+/*    left: 20%;*/
+/*    margin-left: -5px;*/
+/*    border-width: 5px;*/
+/*    border-style: solid;*/
+/*    border-color: #555 transparent transparent transparent;*/
+/*}*/
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+.popup2 .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+.popup3 .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+.popup4 .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+.boyIcon {
+    width: 25%;
+    height: 25%;
+    display: block;
+    margin-left: 5%;
+}
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+
+</style>
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+
+function myFunction2() {
+    var popup2 = document.getElementById("myPopup2");
+    popup2.classList.toggle("show");
+}
+
+function myFunction3() {
+    var popup3 = document.getElementById("myPopup3");
+    popup3.classList.toggle("show");
+}
+
+function myFunction4() {
+    var popup4 = document.getElementById("myPopup4");
+    popup4.classList.toggle("show");
+}
+</script>
+    <script>
+      var img;  // Declare variable 'img'.
+
+
+function setup() {
+    var canvas = createCanvas(1020, 1000);
+
+  img = loadImage("CathyBlack.png");  // Load the image
+  img2 = loadImage("michaelGreen.png");
+  img3 = loadImage("ShaggyBlue.png");
+  img4 = loadImage("MaryPurple.png");
+}
+
+function draw() {
+  // Displays the image at its actual size at point (0,0)
+  image(img, 180, 100, img.width/3, img.height/3);
+  image(img2, 400, 150, img2.width/3, img2.height/3);
+  image(img3, 300, 400, img3.width/3, img3.height/3);
+  image(img4, 75, 300, img4.width/3, img4.height/3);
+  // Displays the image at point (0, height/2) at half size
+//   image(img, 0, height/2, img.width/2, img.height/2);
+}
+
+function mouseClicked() {
+    
+    if (mouseX > 180 & mouseX < 380 & mouseY > 100 & mouseY< 300) {
+        myFunction();
+    }
+    if (mouseX > 400 & mouseX < 600 & mouseY > 150 & mouseY< 350) {
+        myFunction2()
+    }
+    if (mouseX > 300 & mouseX < 500 & mouseY > 400 & mouseY< 600) {
+        myFunction3()
+    }
+    if (mouseX > 75 & mouseX < 275 & mouseY > 300 & mouseY< 500) {
+        myFunction4()
+    }
+}
+    
+    </script>
+  </head>
+  <body>
+      <h1 class="title">Prototype of Case Study Visual</h1>
+<div class="popup" onclick="myFunction()">
+  <span class="popuptext" id="myPopup"><h2><b>Name</b></h2><p></br>
+  <b>Healthcare Priorities</b></br>
+  </br>
+  - Increase in health care resources for women, </br>children antenatal, and vulnerable populations
+</br>
+</br>
+ - Decrease costs including transportation, </br>
+ insurance, pharmaceuticals, appointments
+ </br>
+ </br>
+ <p>Son</p>
+ <img src="boyIcon.png" alt="attempt" class="boyIcon">
+</br></p></span>
+</div>
+
+<div class="popup2" onclick="myFunction2()">
+  <span class="popuptext2" id="myPopup2"><h2><b>Name</b></h2><p></br>
+  <b>Healthcare Priorities</b></br>
+  </br>
+  - Treatment of chronic diseases:  </br>diabetes, heart disease, oral health, tobacco use
+</br>
+</br>
+ - Decrease costs including transportation, </br>
+ insurance, pharmaceuticals, appointments
+ </br>
+ </p></span>
+</div>
+
+<div class="popup4" onclick="myFunction4()">
+  <span class="popuptext4" id="myPopup4" ><h2><b>Name</b></h2><p></br>
+  <b>Healthcare Priorities</b></br>
+  </br>
+  - Health education:  community outreach, chronic disease prevention, </br>
+  provider education, domestic violence
+</br>
+ </p></span>
+</div>
+
+<div class="popup3" onclick="myFunction3()">
+  <span class="popuptext3" id="myPopup3"><h2><b>Name</b></h2><p></br>
+  <b>Healthcare Priorities</b></br>
+  </br>
+  - Mental Health
+</br>
+</br>
+-Finding employment
+</br>
+</br>
+ </p></span>
+</div>
+
+
+
+  </body>
+</html>
+
