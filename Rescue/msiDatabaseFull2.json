@@ -1,0 +1,160 @@
+{"Name": "",
+ "children": [
+{
+ "Name": "COSTS",
+ "children": [
+  {
+   "Name": "Funds for diagnosis,\r but not treatment",
+ "children": [
+{"Name": "Quote","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Quote","FTE": 581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Quote","FTE": 465,"Control": "Public","State": "South Carolina","Lat":33.313355,"Long":-81.123629,"Carnegie": "Associate's Colleges: High Career & Technical-High Traditional"},
+{"Name": "Quote","FTE": 3385,"Control": "Public","State": "Alabama","Lat":33.991866,"Long":-85.991299,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 2052,"Control": "Public","State": "Alabama","Lat":30.693972,"Long":-88.056982,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 3026,"Control": "Public","State": "Alabama","Lat":33.120531,"Long":-87.56148,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 1053,"Control": "Public","State": "Alabama","Lat":32.350109,"Long":-86.343057,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"}
+]
+},
+ {
+   "Name": "Cost vs. quality",
+ "children": [
+{"Name": "Self Care",
+ "children": [
+  {"Name": "Chronice illness maintenance","FTE": 581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Educate wellness","FTE": 465,"Control": "Public","State": "South Carolina","Lat":33.313355,"Long":-81.123629,"Carnegie": "Associate's Colleges: High Career & Technical-High Traditional"},
+{"Name": "Exercise to improve health","FTE": 3385,"Control": "Public","State": "Alabama","Lat":33.991866,"Long":-85.991299,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Praying/Meditation","FTE": 2385,"Control": "Public","State": "Alabama","Lat":33.991866,"Long":-85.991299,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Eating well","FTE": 5385,"Control": "Public","State": "Alabama","Lat":33.991866,"Long":-85.991299,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Attend workshops & lectures","FTE": 7385,"Control": "Public","State": "Alabama","Lat":33.991866,"Long":-85.991299,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Social networks","FTE": 2385,"Control": "Public","State": "Alabama","Lat":33.991866,"Long":-85.991299,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"}
+  ]},
+{"Name": "Avoid doctor unless urgent","FTE": 581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Use Pharmacies","FTE": 465,"Control": "Public","State": "South Carolina","Lat":33.313355,"Long":-81.123629,"Carnegie": "Associate's Colleges: High Career & Technical-High Traditional"},
+{"Name": "Transportation","FTE": 3385,"Control": "Public","State": "Alabama","Lat":33.991866,"Long":-85.991299,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Medications","FTE": 2052,"Control": "Public","State": "Alabama","Lat":30.693972,"Long":-88.056982,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Emergency Care","FTE": 3026,"Control": "Public","State": "Alabama","Lat":33.120531,"Long":-87.56148,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 1053,"Control": "Public","State": "Alabama","Lat":32.350109,"Long":-86.343057,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"}
+]
+},
+{
+   "Name": "Chronic illness",
+ "children": [
+{"Name": "Quote","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Quote","FTE": 581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Quote","FTE": 465,"Control": "Public","State": "South Carolina","Lat":33.313355,"Long":-81.123629,"Carnegie": "Associate's Colleges: High Career & Technical-High Traditional"},
+{"Name": "Quote","FTE": 3385,"Control": "Public","State": "Alabama","Lat":33.991866,"Long":-85.991299,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 2052,"Control": "Public","State": "Alabama","Lat":30.693972,"Long":-88.056982,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 3026,"Control": "Public","State": "Alabama","Lat":33.120531,"Long":-87.56148,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 1053,"Control": "Public","State": "Alabama","Lat":32.350109,"Long":-86.343057,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"}
+]
+},
+{
+   "Name": "Pharmacies",
+ "children": [
+{"Name": "Quote","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Quote","FTE": 581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Quote","FTE": 465,"Control": "Public","State": "South Carolina","Lat":33.313355,"Long":-81.123629,"Carnegie": "Associate's Colleges: High Career & Technical-High Traditional"},
+{"Name": "Quote","FTE": 3385,"Control": "Public","State": "Alabama","Lat":33.991866,"Long":-85.991299,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 2052,"Control": "Public","State": "Alabama","Lat":30.693972,"Long":-88.056982,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 3026,"Control": "Public","State": "Alabama","Lat":33.120531,"Long":-87.56148,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 1053,"Control": "Public","State": "Alabama","Lat":32.350109,"Long":-86.343057,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"}
+]
+},
+{
+   "Name": "Healthcare vs. other expenses",
+ "children": [
+{"Name": "Quote","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Quote","FTE": 581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Quote","FTE": 465,"Control": "Public","State": "South Carolina","Lat":33.313355,"Long":-81.123629,"Carnegie": "Associate's Colleges: High Career & Technical-High Traditional"},
+{"Name": "Quote","FTE": 3385,"Control": "Public","State": "Alabama","Lat":33.991866,"Long":-85.991299,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 2052,"Control": "Public","State": "Alabama","Lat":30.693972,"Long":-88.056982,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 3026,"Control": "Public","State": "Alabama","Lat":33.120531,"Long":-87.56148,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 1053,"Control": "Public","State": "Alabama","Lat":32.350109,"Long":-86.343057,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"}
+]
+}
+]
+},
+{
+ "Name": "TRUST",
+ "children": [
+  {
+   "Name": "Refugees perceive appointments are not thorough",
+ "children": [
+{"Name": "Quote","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Quote","FTE": 581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Quote","FTE": 465,"Control": "Public","State": "South Carolina","Lat":33.313355,"Long":-81.123629,"Carnegie": "Associate's Colleges: High Career & Technical-High Traditional"},
+{"Name": "Quote","FTE": 3385,"Control": "Public","State": "Alabama","Lat":33.991866,"Long":-85.991299,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 2052,"Control": "Public","State": "Alabama","Lat":30.693972,"Long":-88.056982,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 3026,"Control": "Public","State": "Alabama","Lat":33.120531,"Long":-87.56148,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 1053,"Control": "Public","State": "Alabama","Lat":32.350109,"Long":-86.343057,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"}
+]
+},
+ {
+   "Name": "Funding comes in, but they don't receive it",
+ "children": [
+{"Name": "Quote","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Quote","FTE": 581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Quote","FTE": 465,"Control": "Public","State": "South Carolina","Lat":33.313355,"Long":-81.123629,"Carnegie": "Associate's Colleges: High Career & Technical-High Traditional"},
+{"Name": "Quote","FTE": 3385,"Control": "Public","State": "Alabama","Lat":33.991866,"Long":-85.991299,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 2052,"Control": "Public","State": "Alabama","Lat":30.693972,"Long":-88.056982,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 3026,"Control": "Public","State": "Alabama","Lat":33.120531,"Long":-87.56148,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 1053,"Control": "Public","State": "Alabama","Lat":32.350109,"Long":-86.343057,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"}
+]
+},
+{
+   "Name": "Inconsistent clincial experiences",
+ "children": [
+{"Name": "Legal status makes access to health services a challenge","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Hospitals that provide 24/7 emergency care are located far away","FTE": 581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Quote","FTE": 465,"Control": "Public","State": "South Carolina","Lat":33.313355,"Long":-81.123629,"Carnegie": "Associate's Colleges: High Career & Technical-High Traditional"},
+{"Name": "Quote","FTE": 3385,"Control": "Public","State": "Alabama","Lat":33.991866,"Long":-85.991299,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 2052,"Control": "Public","State": "Alabama","Lat":30.693972,"Long":-88.056982,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 3026,"Control": "Public","State": "Alabama","Lat":33.120531,"Long":-87.56148,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 1053,"Control": "Public","State": "Alabama","Lat":32.350109,"Long":-86.343057,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"}
+]
+}
+]
+},
+{
+ "Name": "COORDINATION",
+ "children": [
+  {
+   "Name": "Closed clinics",
+ "children": [
+{"Name": "Quote","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Quote","FTE": 581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Quote","FTE": 465,"Control": "Public","State": "South Carolina","Lat":33.313355,"Long":-81.123629,"Carnegie": "Associate's Colleges: High Career & Technical-High Traditional"},
+{"Name": "Quote","FTE": 3385,"Control": "Public","State": "Alabama","Lat":33.991866,"Long":-85.991299,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 2052,"Control": "Public","State": "Alabama","Lat":30.693972,"Long":-88.056982,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 3026,"Control": "Public","State": "Alabama","Lat":33.120531,"Long":-87.56148,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 1053,"Control": "Public","State": "Alabama","Lat":32.350109,"Long":-86.343057,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"}
+]
+},
+ {
+   "Name": "Dependent on word of mouth",
+ "children": [
+{"Name": "Quote","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Quote","FTE": 581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Quote","FTE": 465,"Control": "Public","State": "South Carolina","Lat":33.313355,"Long":-81.123629,"Carnegie": "Associate's Colleges: High Career & Technical-High Traditional"},
+{"Name": "Quote","FTE": 3385,"Control": "Public","State": "Alabama","Lat":33.991866,"Long":-85.991299,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 2052,"Control": "Public","State": "Alabama","Lat":30.693972,"Long":-88.056982,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 3026,"Control": "Public","State": "Alabama","Lat":33.120531,"Long":-87.56148,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 1053,"Control": "Public","State": "Alabama","Lat":32.350109,"Long":-86.343057,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"}
+]
+},
+{
+   "Name": "Jumping from clinic to clinic",
+ "children": [
+{"Name": "Quote","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Quote","FTE": 581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Quote","FTE": 465,"Control": "Public","State": "South Carolina","Lat":33.313355,"Long":-81.123629,"Carnegie": "Associate's Colleges: High Career & Technical-High Traditional"},
+{"Name": "Quote","FTE": 3385,"Control": "Public","State": "Alabama","Lat":33.991866,"Long":-85.991299,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 2052,"Control": "Public","State": "Alabama","Lat":30.693972,"Long":-88.056982,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 3026,"Control": "Public","State": "Alabama","Lat":33.120531,"Long":-87.56148,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Quote","FTE": 1053,"Control": "Public","State": "Alabama","Lat":32.350109,"Long":-86.343057,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"}
+]
+}
+]
+}
+]
+}
