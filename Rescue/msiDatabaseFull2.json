@@ -79,7 +79,7 @@
  "Name": "TRUST",
  "children": [
   {
-   "Name": "Perception of examinations as not thorough",
+   "Name": "Perception of exam as not thorough",
  "children": [
 {"Name": "Insufficient physical examinations ","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
 {"Name": "Do not spend enough time","FTE": 5081,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
@@ -98,7 +98,7 @@
 ]
 },
 {
-   "Name": "Inconsistent clincial experiences",
+   "Name": "Inconsistent experiences",
  "children": [
 {"Name": "Legal status concerns","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
 {"Name": "24/7 emergency care located far away","FTE": 581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
@@ -116,25 +116,21 @@
  "children": [
 {"Name": "Closed due to lack of funding","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
 {"Name": "Transportation cost increase","FTE": 3581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
-{"Name": "Inconsistent schedules","FTE": 465,"Control": "Public","State": "South Carolina","Lat":33.313355,"Long":-81.123629,"Carnegie": "Associate's Colleges: High Career & Technical-High Traditional"},
-{"Name": "","FTE": 3385,"Control": "Public","State": "Alabama","Lat":33.991866,"Long":-85.991299,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
-{"Name": "Quote","FTE": 2052,"Control": "Public","State": "Alabama","Lat":30.693972,"Long":-88.056982,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
-{"Name": "Quote","FTE": 3026,"Control": "Public","State": "Alabama","Lat":33.120531,"Long":-87.56148,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
-{"Name": "Quote","FTE": 1053,"Control": "Public","State": "Alabama","Lat":32.350109,"Long":-86.343057,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"}
+{"Name": "Inconsistent schedules","FTE": 4065,"Control": "Public","State": "South Carolina","Lat":33.313355,"Long":-81.123629,"Carnegie": "Associate's Colleges: High Career & Technical-High Traditional"}
 ]
 },
  {
    "Name": "Dependent on word of mouth",
  "children": [
 {"Name": "Lack of trust in websites","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
-{"Name": "Inconsistent schedules","FTE": 581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
-{"Name": "Social media","FTE": 465,"Control": "Public","State": "South Carolina","Lat":33.313355,"Long":-81.123629,"Carnegie": "Associate's Colleges: High Career & Technical-High Traditional"},
+{"Name": "Inconsistent schedules","FTE": 5081,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Social media","FTE": 4065,"Control": "Public","State": "South Carolina","Lat":33.313355,"Long":-81.123629,"Carnegie": "Associate's Colleges: High Career & Technical-High Traditional"},
 {"Name": "Mobile phone use","FTE": 3385,"Control": "Public","State": "Alabama","Lat":33.991866,"Long":-85.991299,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
 {"Name": "Communication efforts","FTE": 2052,"Control": "Public","State": "Alabama","Lat":30.693972,"Long":-88.056982,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"}
 ]
 },
 {
-   "Name": "Jumping from clinic to clinic",
+   "Name": "Jumping between clinics",
  "children": [
 {"Name": "Transportation cost","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
 {"Name": "Chronic conditions","FTE": 581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
