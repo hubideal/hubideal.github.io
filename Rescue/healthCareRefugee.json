@@ -45,15 +45,30 @@
 {
    "Name": "Chronic conditions",
  "children": [
-{"Name": "Expense of healthy lifestyle","FTE": 5828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
-{"Name": "Dialysis","FTE": 581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
-{"Name": "Chronic illness awareness","FTE": 1965,"Control": "Public","State": "South Carolina","Lat":33.313355,"Long":-81.123629,"Carnegie": "Associate's Colleges: High Career & Technical-High Traditional"},
-{"Name": "Role of humanitarian clinics","FTE": 3385,"Control": "Public","State": "Alabama","Lat":33.991866,"Long":-85.991299,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "A healthy lifestyle can be expensive for refugees","FTE": 5828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Dialysis", "children": [
+{"Name": "Since removal of subsidies, dialysis programs have uncertain futures","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Dialysis patients do not feel like a priorty","FTE": 3581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Cost of a dialysis treatment in Jordan is roughly $65 per session ","FTE": 3581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"}
+]},
+{"Name": "Chronic illness awareness", "children": [
+{"Name": "Healthcare providers request increase in education and awareness","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Education on nutrition and healthy diets has become a need","FTE": 3581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Reducing stress and mental health is also related to awareness of chronic illnesses","FTE": 3581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"}
+]},
+{"Name": "Role of humanitarian clinics", "children": [
+{"Name": "Refugees often mention that they use humanitarian clinics for chronic health maintenance","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Lack of funding places these clinics in jeopardy","FTE": 3581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"}
+]},
 {"Name": "Medication costs","FTE": 1052,"Control": "Public","State": "Alabama","Lat":30.693972,"Long":-88.056982,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
 {"Name": "Self-management education","FTE": 4026,"Control": "Public","State": "Alabama","Lat":33.120531,"Long":-87.56148,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
 {"Name": "Mental health","FTE": 2026,"Control": "Public","State": "Alabama","Lat":33.120531,"Long":-87.56148,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
 {"Name": "Blood transfusions - thalassemia","FTE": 3026,"Control": "Public","State": "Alabama","Lat":33.120531,"Long":-87.56148,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
-{"Name": "Increased illness since displacement","FTE": 7026,"Control": "Public","State": "Alabama","Lat":33.120531,"Long":-87.56148,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"}
+{"Name": "Increased illness since displacement", "children": [
+{"Name": "Reports of increased cases of stress and stress related illnesss","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Cases of chronic illness have increased","FTE": 3581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Need for education on stress management and mental health","FTE": 3581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"}
+]  }
 ]
 },
 {
