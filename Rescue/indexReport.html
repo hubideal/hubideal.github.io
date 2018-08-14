@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<style>
+
+ h4 {
+    font-family: Roboto, sans-serif;
+  font-size: 3em;
+  color: rgb(40, 40, 50);
+  padding-left: 4%;
+  padding-top: .5%;
+  padding-bottom: .5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+    }
+
+    h5 {
+    font-family: Roboto, sans-serif;
+  padding-left: 4%;
+  padding-top: .5%;
+  padding-bottom: .5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  color: rgb(40, 40, 50);
+  position: relative;
+  font-size: 1.25em;
+    }
+
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 3px;
+}
+
+.node text {
+  font: 12px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2px;
+}
+
+</style>
+
+<body>
+<h4>
+      <div class="siteTitle"><b>Decision Tree</b></div>
+    </h4>
+    <h5>
+      Healthcare seeking behavior of urban Syrian refugees<br>
+    </h5>
+<!-- load the d3.js library -->	
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+var treeData =
+{"Name": "Key Messages",
+ "children": [
+{
+ "Name": "COSTS",
+ "children": [
+  {
+   "Name": "Lack of funds for healthcare",
+ "children": [
+{"Name": "Maintenance of chronic illness", "children": [
+{"Name": "Refugees often go to humanitarian clinics for health maintenance","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Since the removal of subsidies, news reports indicate that those with chronic illness hit hardest the most","FTE": 3581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"}
+]},
+{"Name": "Treatment & hospitalization", "children": [
+{"Name": "failure to cover the costs of treating certain health conditions.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Conducting all tests or follow-up medical treatment necessary even if he had to incur the full costs of the treatment and diagnosis and was unable to find an entity to provide free treatment or financial support covering the costs of treatment.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "He took some painkillers, but after the pain increased, they were instructed to hospitalize him through Jordan Health Aid Society, but since they live outside the camp, they were not covered.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "He asked me to undergo tomography, but I cannot cover the cost of that.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "In some cases, lack of free medication was a major problem, which sometimes forced users to overlook the disease and not take any medications.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Could not afford the treatment/medication.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "If only, there is treatment and coverage for the cost of delivery and childbirth.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Some of them did not complete their treatment, because of their inability to cover the costs of treatment.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "She went to a health center that provides free medical services where she was examined but did not get the medication. Instead, the doctor wrote her a prescription to buy the medications herself from outside the center. This happened after she waited a long time to be seen by the doctor, and travelled a long distance in public transportation. Now, she has to go and buy the very expensive medicine, which she cannot afford. So she returned home in a state of severe depression.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "The lack of medications at health care centers forces the users sometimes to personally cover the expenses.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "In some cases, lack of free medication was a major problem, which sometimes forced users to overlook the disease and not take any medications.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Could not afford the treatment/medication.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "After the diagnosis, they don’t receive any treatment or the medication is not prescribed to them, and even if they were given a prescription, the medication is not available in the center, and they have to buy it from private pharmacies outside the governmental center.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]},
+{"Name": "Emergency procedures", "children": [
+{"Name": "I wish there was Health care can be provided to children and for emergency conditions.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "They show clear interest in the health of their children. They want to receive the best care, and they possess some knowledge and information that are useful when dealing with emergency cases.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Emergency situation is a very difficult experience, starting with finding the right place for treatment, securing the money in a hurry, to dealing with the problem of no doctors in a certain shift.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]}
+]
+},
+ {
+   "Name": "Cost vs. quality",
+ "children": [
+{"Name": "Self Care",
+ "children": [
+{"Name": "Chronic illness maintenance","FTE": 2581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Need for more wellness education","FTE": 465,"Control": "Public","State": "South Carolina","Lat":33.313355,"Long":-81.123629,"Carnegie": "Associate's Colleges: High Career & Technical-High Traditional"},
+{"Name": "Exercise and stress reduction", "children": [
+{"Name": "Stay away from ready-made food and canned foods.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Reduce the meals.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Pay attention to the quality of the food they consume, and refrain from eating canned and ready-made food.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Another participant mentioned, as all other participants in the session agreed with her, that she knows the importance of eating fruit, especially apples, in the morning, but they cannot keep on doing this, because they cannot purchase apples regularly.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Most refugees resort to good healthy habits that reduce their risk of disease.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]},
+{"Name": "Praying/Meditation","FTE": 2385,"Control": "Public","State": "Alabama","Lat":33.991866,"Long":-85.991299,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Nutrition and food quality", "children": [
+{"Name": "Stay away from ready-made food and canned foods.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Reduce the meals.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Pay attention to the quality of the food they consume, and refrain from eating canned and ready-made food.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Another participant mentioned, as all other participants in the session agreed with her, that she knows the importance of eating fruit, especially apples, in the morning, but they cannot keep on doing this, because they cannot purchase apples regularly.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Most refugees resort to good healthy habits that reduce their risk of disease.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]},
+{"Name": "Attend workshops & lectures", "children": [
+{"Name": "All participants confirmed that they receive healthcare information by attending health awareness and education sessions.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "People were very interested in attending awareness and health education lectures, as they consider them to be a source of learning that could help them avoid diseases.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]},
+{"Name": "Water", "children": [
+{"Name": "Drink plenty of water to keep your body clean from the inside.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Drink hot water in the morning.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "The participants mentioned that they drink bottled water.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]},
+{"Name": "No focus on self care", "children": [
+{"Name": "They do not follow any self-care system or use alternative medicine before going to the doctor.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]},
+{"Name": "Alternative medicine", "children": [
+{"Name": "Not relying on an herbal-based medication system or alternative medicine.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "They use herbs, pain killers and children's hypothermia drugs are always available at home.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Drink herbs all the time.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Drink herbs constantly.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "And when they have a simple illness or health condition, they resort to painkillers or alternative natural treatments.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]},
+{"Name": "Other", "children": [
+{"Name": "Wake up early.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "look for accommodation in a well-ventilated house to avoid mold.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]}
+]},
+{"Name": "Avoid going to the doctor unless urgent", "children": [
+{"Name": "Relying on self-care if one of their children is exposed to certain symptoms.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Practice self-care principles so they also do this so they don’t need to go to the doctor.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "They only go to the doctor when their health severely deteriorates.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]},
+{"Name": "Preference for private hospitals over free healthcare facilities", "children": [
+{"Name": "We receive the services from the Emirati hospital and other places.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "They suffer from long waiting times because of the pressure on the Emirati Hospital.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "The group agreed that the Emirati Hospital provides good service.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "They prefer going to a private doctor and bearing the costs of treatment, thus saving time, effort, and travel costs.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "After the pain persisted for 3 months, she decided to visit the Emirati Hospital.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "They did an ECHO scan at the Emirati Hospital.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "While comparing services in the private and the public sector, it was clear that the services of the private sector are the best.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "One woman cited a popular proverb, which translates to “If it’s free, it’s worthless!", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Another said: “If you have money, then you are a Pasha ‘Sir’”.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Informal care, private clinic, pharmacies.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "If we have difficulty dealing with the health situation, we have to go to private and expensive clinics.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "They said that they seek treatment at a private clinic where they can run all necessary tests. However, they have to pay for all that despite the fact that they do not always have the funds to do so.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Some people have experienced the feeling of comfort and justice, while others discovered that going to an organization or center that provide free care is a bad idea, so they decided to resort to centers or clinics and defray the services themselves.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "We talked about how to access and obtain health care services and how each of them decided to go to the doctor. They responded by stating that after a great deal of pain, disease, and developing symptoms, they finally decided to seek treatment at private centers or clinics.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "They all regret going to organizations and government centers, because they do not receive services there.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "After the session, I noticed that most people have a very negative impression formed around the treatment provided at the free health service centers. They believe these services are useless and hard to access.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "They prefer to go to a private doctor and pay for the service although it constitutes a burden. They simply do this because they are convinced of the inefficiency of free service centers.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]},
+{"Name": "Pharmacies are used as direct providers","FTE": 4650,"Control": "Public","State": "South Carolina","Lat":33.313355,"Long":-81.123629,"Carnegie": "Associate's Colleges: High Career & Technical-High Traditional"},
+{"Name": "Transportation is a major concern of refugees", "children": [
+{"Name": "In the event that a free service is available in another governorate, they can handle the burden and transportation costs if the service was good.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Most of the places of medical service providers are confined to Irbid, his city of residence.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "However, he does not mind incurring the costs and burden of moving to another governorate for medical treatment if it is free, and if the service is excellent.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "However, if the service is not free or requires a small fee, he prefers to go to a private clinic in the same area, and save effort and the cost of transportation.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Access to the health care centers is challenging if they are remote or in an area not well-served by public transportation, as users tend to avoid being exploited by taxi drivers.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "The length of the procedures in government hospitals was also discussed, in addition to fatigue and the burden of transportation.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},  
+{"Name": "The burdens of transportation was mentioned. Some even said that they move from one place to another to another to reduce the cost of treatment and shorten the waiting time for services in nearby centers.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "I wish there were healthcare locations in vital areas with easy and accessible transportations.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "When we are in a very critical health situation, the first thing we can think of is where to go? Who will help us? Are there organizations close by, so we do not have endure troubles in transportation?", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "All of the women have had difficulty accessing to health services because of transportation and its cost.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "One of the women visited the Emirati hospital in Mafraq to receive treatment, but regretted her decision because she had difficulty in accessing and obtaining the health services there.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Some go to organizations believing that they will find treatment, but they find nothing and have to endure the cost of transportation.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]},
+{"Name": "Medications were discussed as too expensive in the focus groups", "FTE": 2052,"Control": "Public","State": "Alabama","Lat":30.693972,"Long":-88.056982,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Emergency care","FTE": 1026,"Control": "Public","State": "Alabama","Lat":33.120531,"Long":-87.56148,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Cost is a major hurdle to quality healthcare", "children": [
+{"Name": "Poor economic situation is the biggest challenge faced by families.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Cost is a major obstacle to receiving excellent service in the private sector.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Poor financial conditions are a major obstacle to receiving better service and securing treatment.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "It was mentioned that lack of money is the biggest obstacle to receiving good services.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "All of the interviewees have the same problem, but in different ways. They cannot find treatment, and there is no one who can cover the expenses of their treatment. No organization can afford to fully cover the cost of their treatment. All of the interviewees are forced to pay a lot of money to receive health care services.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "If there is an organization that helps us by providing health care services, we ask ourselves:  Is there a full insurance?", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]}
+]
+},
+{
+   "Name": "Chronic conditions",
+ "children": [
+{"Name": "A healthy lifestyle can be expensive for refugees","FTE": 5828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Dialysis", "children": [
+{"Name": "Since removal of subsidies, dialysis programs have uncertain futures","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Dialysis patients do not feel like a priorty","FTE": 3581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Cost of a dialysis treatment in Jordan is roughly $65 per session ","FTE": 3581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"}
+]},
+{"Name": "Chronic illness awareness", "children": [
+{"Name": "Healthcare providers request increase in education and awareness","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Education on nutrition and healthy diets has become a need","FTE": 3581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Reducing stress and mental health is also related to awareness of chronic illnesses","FTE": 3581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"}
+]},
+{"Name": "Role of humanitarian clinics", "children": [
+{"Name": "Refugees often mention that they use humanitarian clinics for chronic health maintenance","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Lack of funding places these clinics in jeopardy","FTE": 3581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"}
+]},
+{"Name": "Medication & treatment costs of chronic diseases", "children": [
+{"Name": "His battle with chronic diseases:  He is interested in centers that provide periodic care and follow-up, and is keen to get periodic treatment monthly.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "The brother suffered from severe pain in his stomach, abdomen, and digestive system.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "He undergoes dialysis twice a week in Amman. Expenses are fully covered by Sams, because Jordan Health Aid Society does not cover them. Often they receive free medication.  They later discovered that he has low platelets levels and requires blood transfusion.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Also, she suffers from blood clots under the skin and body, in addition to diabetes and hypertension. She said she does not want anything, no money or anything, besides a safe place that meets her medical needs.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]},
+{"Name": "Self-management education","FTE": 4026,"Control": "Public","State": "Alabama","Lat":33.120531,"Long":-87.56148,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Mental health","FTE": 2026,"Control": "Public","State": "Alabama","Lat":33.120531,"Long":-87.56148,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Blood transfusions - thalassemia","FTE": 3026,"Control": "Public","State": "Alabama","Lat":33.120531,"Long":-87.56148,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Increased illness since displacement", "children": [
+{"Name": "Reports of increased cases of stress and stress related illnesss","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Cases of chronic illness have increased","FTE": 3581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Need for education on stress management and mental health","FTE": 3581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"}
+]  }
+]
+},
+{
+   "Name": "Pharmacies",
+ "children": [
+{"Name": "'Known' pharmacies","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Expanding role","FTE": 965,"Control": "Public","State": "South Carolina","Lat":33.313355,"Long":-81.123629,"Carnegie": "Associate's Colleges: High Career & Technical-High Traditional"},
+{"Name": "Direct patient care",
+ "children": [
+{"Name": "They depend on the pharmacist’s diagnosis in order to prescribe medications without a doctor.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "With severe abdominal pain, she was new in the area and she relied on painkillers/herbs, which were very costly.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Informal care, private clinic, pharmacies.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "One participant confirmed that her family always rely on the use of painkillers in the event of a headache or any other sort of pain, and do not go to the doctor unless their health deteriorated. They used to go to the pharmacy and purchase painkillers.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Some of them go to pharmacies to buy medicine. They explain the symptoms to the pharmacist who then prescribes medications based on their description of the symptoms.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]
+},
+{"Name": "Perscriptions",
+ "children": [
+{"Name": "High costs","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Lack of supply","FTE": 1581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Provided by pharmacists","FTE": 3965,"Control": "Public","State": "South Carolina","Lat":33.313355,"Long":-81.123629,"Carnegie": "Associate's Colleges: High Career & Technical-High Traditional"}
+]
+},
+{"Name": "Use of pain killers","FTE": 1026,"Control": "Public","State": "Alabama","Lat":33.120531,"Long":-87.56148,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"}
+]
+},
+{"Name": "Children's healthcare",
+ "children": [
+{"Name": "Parents chose free clinics due to costs", "children": [
+{"Name": "Emphasis was placed on care provided by UNHCR centers or free centers, due to the presence of large number of children.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]},
+{"Name": "Reliance on alternative and self care forms of healthcare", "children": [
+{"Name": "They do not resort to the doctor immediately (they use herbs, pain killers and children's hypothermia drugs are always available at home).", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]},
+{"Name": "Waiting in line", "children": [
+{"Name": "the poor waiting experience in some places has been a source of complain, especially with the existence of children.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Waiting in line at the Emirati Hospital after waking up very early.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "I always stand in line, but my children have the experience and intelligence to find what is appropriate for me so I do not wait long.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]},
+{"Name": "Mobility and transportation", "children": [
+{"Name": "Mobility is a burden with more than one child.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "The presence of a number of children makes them always vulnerable to emergencies.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "They are totally unable to go to another governorate to receive treatment even if the service was free of charge, because they have children who cannot be left at home or be taken on a treatment trip that might last a full day.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]},
+{"Name": "Overall concern about children’s healthcare", "children": [
+{"Name": "I wish there was Health care can be provided to children and for emergency conditions.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "They show clear interest in the health of their children. They want to receive the best care, and they possess some knowledge and information that are useful when dealing with emergency cases.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]}
+]},
+{
+   "Name": "Healthcare vs. other expenses",
+ "children": [
+{"Name": "Rent","FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Poor housing conditions","FTE": 581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Poor quality of food","FTE": 465,"Control": "Public","State": "South Carolina","Lat":33.313355,"Long":-81.123629,"Carnegie": "Associate's Colleges: High Career & Technical-High Traditional"},
+{"Name": "Food vouchers","FTE": 3385,"Control": "Public","State": "Alabama","Lat":33.991866,"Long":-85.991299,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Unemployment","FTE": 2052,"Control": "Public","State": "Alabama","Lat":30.693972,"Long":-88.056982,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Some had to sell their furniture to fund the treatment, some borrowed money, and some of them admit the patient under false information in order to save his/her life.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Poor water quality","FTE": 1053,"Control": "Public","State": "Alabama","Lat":32.350109,"Long":-86.343057,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"}
+]
+}
+]
+},
+{
+ "Name": "TRUST",
+ "children": [
+  {
+   "Name": "Perception of lack of quality at free clinics",
+ "children": [
+{"Name": "Complaints focused on the ineffectiveness of (free) health services.", "children": [
+{"Name": "Complaints of poor diagnoses by the health providers.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Lack of treatment from free health services.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Focus on the weakness of free health services and inaccurate diagnosis.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Bad diagnoses and mismanagement were reported at free health centers.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Over-crowding (too many patients) were reported at free centers as well.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Malpractices.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Long waiting times and having to wait for free service hoping that they would turn out to be good.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "The doctor only gave me painkillers.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "At Zarqa, he underwent a gastroscopy, because of the severe internal bleeding in the stomach. The suffering and pain lasted for 2 months before they discovered that he is suffering from renal failure and requires dialysis.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "If only, there is a treatment center for burns and cosmetic treatment.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "If there is an organization that helps us by providing health care services, we ask ourselves: Will I be treated badly?", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "They wish they could find a place with adequate health services, since they pay a lot only to receive treatment.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "They pointed out that they have already paid a minimum of 4 JDs for the doctor, at this point so they deserve to be examined and given treatment. They have had suffered a lot because of the lack of care displayed at these centers. Officials deal with them as mere papers and IDs.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "One participant reported that she had to take her sick child to a center that provides free services. The girl did not get a good treatment, examination, or medication, and thus did not get better.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "All of the women agreed that the services they received did not meet all their needs, and that they had to pay large amounts of money in exchange of these services.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]},
+{"Name": "Lack of attention spent on patients", "children": [
+{"Name": "Carelessness by employees.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "They stressed that doctors show no interest in the patient's health condition, unless the service center is not free.8213866785.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "After arriving at the center, they enter and endure bad reception. They stand in line to register their names, and then go to accounting to pay for the diagnosis. Afterwards, they wait until their turn comes and then wait in hours and after all this trouble, they see the doctor, who without any examinations, talks to them and provides the diagnosis.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]},
+{"Name": "Perceptions of discrimination","FTE": 3385,"Control": "Public","State": "Alabama","Lat":33.991866,"Long":-85.991299,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Lack of female antenatal providers","FTE": 2052,"Control": "Public","State": "Alabama","Lat":30.693972,"Long":-88.056982,"Carnegie": "Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional"},
+{"Name": "Increase numbers of female physicians", "children": [
+{"Name": "Refugees and providers have both expressed the need for more female physicians", "FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "More women go to private facilities than public because less female physicians at public","FTE": 3581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"}
+]}
+]
+},
+ {
+   "Name": "Lack of transparency",
+ "children": [
+{"Name": "Questions about funding", "children": [
+{"Name": "Refugees were pessimistic that oversees funding was going directly to healthcare", "FTE": 4828,"Control": "Public","State": "Texas","Lat":29.41456,"Long":-98.452987,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"},
+{"Name": "Refugees expressed frustration about the lack of tranparency","FTE": 3581,"Control": "Public","State": "Alabama","Lat":34.772116,"Long":-86.573817,"Carnegie": "Associate's Colleges: High Career & Technical-High Nontraditional"}
+]},
+{"Name": "Perceptions of favoritism", "children": [
+{"Name": "Perceptions of nepotism and favoritism.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Some people get full medication attention and get treated well, while others do not enjoy this advantage?  We, as refugees, suffer from the effects of nepotism and favoritism.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "When I asked them about the organizations, and the difference between IRC and other organizations. Some said that they never heard of IRC. Others said that IRC appoints people who do not do their jobs well and treat people badly. They also said that the employees are Syrian who only help their relatives. They wish IRC would take care of this problem, because it distorts IRC’s image. Others wish IRC would open a department to provide healthcare services, respond to all their health needs, and cover the expenses and the cost of treatment and emergency operations for them and their children.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]},
+{"Name": "Financial transparency", "children": [
+{"Name": "Financial exploitation (transportation/taxi).", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "We need medical security, because we are afraid aid might be cut off just like the case with Jordan Health Aid Society.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]},
+{"Name": "Perceptions of healthcare providers lacking credibility", "children": [
+{"Name": "Lack of credibility in dealing with healthcare clinics.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "I cannot describe how frustration they are at government centers and the places where the health services are located, because they have suffered a lot and they don’t trust them anymore.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]}
+]
+},
+{
+   "Name": "Inconsistent experiences",
+ "children": [
+{"Name": "His evaluation of the experience varies depending on where he received the treatment.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Experience and evaluation of health care delivery locations vary depending on the location.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "She summed it up by saying that the service depends on the doctor.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]
+},
+{"Name": "Positive experiences", "children": [
+{"Name": "In some cases, doctors showed distinctive treatment. Some would follow the patient's condition after some time and ensure his/her safety. When she mentioned this incident, I felt that it had touched her and gave her a sense of importance and appreciation.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "One woman spoke of a humanitarian service she received from a Chief Practitioner. She encountered a problem and he treated her humanely, neglecting the routine procedures and treating her daughter. She summed it up by saying that the service depends on the doctor.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Doctors treat me just fine, and the treatment itself is excellent. I hope all organizations treat people that way I am treated.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]},
+{"Name": "Pharmacists as trusted healthcare providers", "children": [
+{"Name": "The participants stressed that there is no free health service center makes them feel safe. Instead, they prefer to go to a nearby or trusted pharmacist.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "They always help family members and friends in any medical condition by taking them to this trusted pharmacist.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "She took the child to a well-known pharmacist in the area where she lives who diagnosed the condition and gave her a different drug. The child’s health improved because of this new drug, which deepened the family’s trust in this pharmacist.  The pharmacist was kind and sympathetic and showed compassion with the child’s condition.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]},
+{"Name": "Perception of poor quality leads to lack of treatment and follow-up", "children": [
+{"Name": "The treatment journey is a tiring one.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Most people do not follow up or return for treatment, because of the bad first experience.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "TRUST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]}
+]
+},
+{
+ "Name": "COORDINATION",
+ "children": [
+  {
+   "Name": "Closed clinics",
+ "children": [
+{"Name": "If there is an organization that helps us by providing health care services, we ask ourselves : Will my journey to the location be a waste of time?", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "They think this is much better to go to a private clinic than standing in a long queue or being told that there are no doctors.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]
+},
+ {
+   "Name": "Dependent on word of mouth",
+ "children": [
+{"Name": "When they decided to go to government centers or private clinics, some of the women were showing symptoms, like headache, dizziness, general weakness, and other symptoms of multiple communicable and non-communicable diseases. Some of them had a chronic disease before they came to Jordan. However, when they arrived, they began asking about the location of centers offering medical and health services. They asked the neighbors and acquaintances in the area where they live. Some discovered that the location of these services is far away from their homes and had to go by a private car at their own expense and pay a lot for transportation. Some had centers close to their homes, but preferred to go with someone to guide them to the location.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "They depend on asking relatives and friends and the experience of others in knowing centers and services.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Depending on people networks for information.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "She inquired, and through friends and acquaintances, was able to find healtcare services.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "They also go to any place they hear about to get the service and make sure it is actually existent.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "They depend on the information provided by others to help them.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "That they do not trust online information except in rare cases when information is confirmed by a friend or family member.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]
+},
+{
+   "Name": "Jumping between clinics",
+ "children": [
+{"Name": "From Emirati they were transferred to Mafraq Governmental Hospital, which, in turn, transferred them to Zarqa.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "She was transferred to the governmental, then to Zarqa Governmental Hospital.  She was admitted to the hospital after long procedures and paperwork, then she underwent an appendectomy.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "The doctor then asks them to go to the hospital and transfers them to the private clinics.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]
+},
+{
+   "Name": "Wait times at clinics",
+ "children": [
+{"Name": "The poor waiting experience in some places has been a source of complain, especially with the existence of children.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "I woke up at 5:30 am to book to get in line early after some friends recommended I do so.  It was very tiring.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "Zarqa hospital admitted them after paying a small sum. Then after 5 hours of waiting for approvals. He received treatment for 9 days.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "It may take months to get an appointment at some centers.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "If there is an organization that helps us by providing health care services, we ask ourselves: Will there be a queue?", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "At Emirati, she also had to wait for over 6 hours in a queue.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]
+},
+{
+   "Name": "Records",
+ "children": [
+{"Name": "The participants have also disclosed that they do not have IDs or health insurance.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"},
+{"Name": "On the contrary, they feel humiliated and treated as papers and IDs.", "FTE": 3581,"Control": "rgb(240, 0, 70)", "State": "COST","Lat":34.772116,"Long":-86.573817,"Carnegie": "Comments"}
+]
+}
+]
+}
+]
+};
+
+// Set the dimensions and margins of the diagram
+var margin = {top: 20, right: 10, bottom: 30, left: 150},
+    width = screen.width*2 - margin.left - margin.right,
+    height = screen.height - margin.top - margin.bottom;
+
+// append the svg object to the body of the page
+// appends a 'group' element to 'svg'
+// moves the 'group' element to the top left margin
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.right + margin.left)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate("
+          + margin.left + "," + margin.top + ")");
+
+var i = 0,
+    duration = 750,
+    root;
+
+// declares a tree layout and assigns the size
+var treemap = d3.tree().size([height, width]);
+
+// Assigns parent, children, height, depth
+root = d3.hierarchy(treeData, function(d) { return d.children; });
+root.x0 = height/8;
+root.y0 = 0;
+
+// Collapse after the second level
+root.children.forEach(collapse);
+
+update(root);
+
+// Collapse the node and all it's children
+function collapse(d) {
+  if(d.children) {
+    d._children = d.children
+    d._children.forEach(collapse)
+    d.children = null
+  }
+}
+
+function update(source) {
+
+  // Assigns the x and y position for the nodes
+  var treeData = treemap(root);
+
+  // Compute the new tree layout.
+  var nodes = treeData.descendants(),
+      links = treeData.descendants().slice(1);
+
+  // Normalize for fixed-depth.
+  nodes.forEach(function(d){ d.y = d.depth * 300});
+
+  // ****************** Nodes section ***************************
+
+  // Update the nodes...
+  var node = svg.selectAll('g.node')
+      .data(nodes, function(d) {return d.id || (d.id = ++i); });
+
+  // Enter any new modes at the parent's previous position.
+  var nodeEnter = node.enter().append('g')
+      .attr('class', 'node')
+      .attr("transform", function(d) {
+        return "translate(" + source.y0 + "," + source.x0 + ")";
+    })
+    .on('click', click);
+
+  // Add Circle for the nodes
+  nodeEnter.append('circle')
+      .attr('class', 'node')
+      .attr('r', 1e-6)
+      .style("fill", function(d) {
+          return d._children ? "lightsteelblue" : "#fff";
+      });
+
+  // Add labels for the nodes
+  nodeEnter.append('text')
+      .attr("dy", ".35em")
+      .attr("x", function(d) {
+          return d.children || d._children ? -13 : 13;
+      })
+      .attr("text-anchor", function(d) {
+          return d.children || d._children ? "end" : "start";
+      })
+      .text(function(d) { return d.data.Name; });
+
+  // UPDATE
+  var nodeUpdate = nodeEnter.merge(node);
+
+  // Transition to the proper position for the node
+  nodeUpdate.transition()
+    .duration(duration)
+    .attr("transform", function(d) { 
+        return "translate(" + d.y + "," + d.x + ")";
+     });
+
+  // Update the node attributes and style
+  nodeUpdate.select('circle.node')
+    .attr('r', 10)
+    .style("fill", function(d) {
+        return d._children ? "lightsteelblue" : "#fff";
+    })
+    .attr('cursor', 'pointer');
+
+
+  // Remove any exiting nodes
+  var nodeExit = node.exit().transition()
+      .duration(duration)
+      .attr("transform", function(d) {
+          return "translate(" + source.y + "," + source.x + ")";
+      })
+      .remove();
+
+  // On exit reduce the node circles size to 0
+  nodeExit.select('circle')
+    .attr('r', 1e-6);
+
+  // On exit reduce the opacity of text labels
+  nodeExit.select('text')
+    .style('fill-opacity', 1e-6);
+
+  // ****************** links section ***************************
+
+  // Update the links...
+  var link = svg.selectAll('path.link')
+      .data(links, function(d) { return d.id; });
+
+  // Enter any new links at the parent's previous position.
+  var linkEnter = link.enter().insert('path', "g")
+      .attr("class", "link")
+      .attr('d', function(d){
+        var o = {x: source.x0, y: source.y0}
+        return diagonal(o, o)
+      });
+
+  // UPDATE
+  var linkUpdate = linkEnter.merge(link);
+
+  // Transition back to the parent element position
+  linkUpdate.transition()
+      .duration(duration)
+      .attr('d', function(d){ return diagonal(d, d.parent) });
+
+  // Remove any exiting links
+  var linkExit = link.exit().transition()
+      .duration(duration)
+      .attr('d', function(d) {
+        var o = {x: source.x, y: source.y}
+        return diagonal(o, o)
+      })
+      .remove();
+
+  // Store the old positions for transition.
+  nodes.forEach(function(d){
+    d.x0 = d.x;
+    d.y0 = d.y;
+  });
+
+  // Creates a curved (diagonal) path from parent to the child nodes
+  function diagonal(s, d) {
+
+    path = `M ${s.y} ${s.x}
+            C ${(s.y + d.y) / 2} ${s.x},
+              ${(s.y + d.y) / 2} ${d.x},
+              ${d.y} ${d.x}`
+
+    return path
+  }
+
+  // Toggle children on click.
+  function click(d) {
+    if (d.children) {
+        d._children = d.children;
+        d.children = null;
+      } else {
+        d.children = d._children;
+        d._children = null;
+      }
+    update(d);
+  }
+}
+
+</script>
+</body>
