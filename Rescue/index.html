@@ -356,6 +356,9 @@ svg {
     <div class="carousel-item">
       <img class="d-block img-fluid" src="wadiChallenge.png" alt="Second slide">
     </div>
+    <div class="carousel-item">
+      <img class="d-block img-fluid" src="wadiMethod.png" alt="Third slide">
+    </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -413,7 +416,7 @@ var pack = d3.pack()
     .size([diameter - margin, diameter - margin])
     .padding(2);
 
-d3.json("msiDatabaseFull2.json", function(error, root) {
+d3.json("cpShort.json", function(error, root) {
   if (error) throw error;
 
   root = d3.hierarchy(root)
