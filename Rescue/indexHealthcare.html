@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<meta charset='utf-8'>
+<html>
+  <head>
+    <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+  </head>
+  <style>
+  
+span {
+  background: yellow;
+}
+    .axis path,
+.axis line {
+  fill: none;
+	stroke: black;
+	shape-rendering: crispEdges;
+}
+.axis text {
+	font-family: sans-serif;
+	font-size: 11px;
+}
+.clusterZero {
+  fill: "#e6194b"
+}
+.clusterOne {
+  fill: "#ffe119"
+}
+.clusterTwo {
+  fill: "#0082c8"
+}
+.clusterThree {
+  fill: "#f58231"
+}
+.clusterFour {
+  fill: "#911eb4"
+}
+.clusterFive {
+  fill: "#46f0f0"
+}
+.clusterSix {
+  fill: "#f032e6"
+}
+.clusterSeven {
+  fill: "#d2f53c"
+}
+.clusterEight {
+  fill: "#fabebe"
+}
+.clusterNine {
+  fill: "#008080"
+}
+.clusterTen {
+  fill: "#008080"
+}
+div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 500px;					
+    height: 110px;					
+    padding: 10px;				
+    font: 16px sans-serif;		
+    background: rgba(155,155,155,.5);	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+
+
+  </style>
+  <body>
+    <script>
+      
+      d3.csv('healthcsvforvisualFINAL.csv', function (data) {
+  // Variables
+  var body = d3.select('body')
+	var margin = { top: 100, right: 100, bottom: 100, left: 50 }
+	var h = screen.height - margin.top - margin.bottom
+	var w = screen.width - margin.left - margin.right
+	var formatPercent = d3.format('.2%')
+	var div = d3.select("body").append("div")	
+    .attr("class", "tooltip")				
+    .style("opacity", 0);
+	// Scales
+
+  var xScale = d3.scaleLinear()
+    .domain([
+    	d3.min([0,d3.min(data,function (d) { return d.xs })-1]),
+    	d3.max([0,d3.max(data,function (d) { return d.xs })+1])
+    	])
+    .range([0,w])
+  var yScale = d3.scaleLinear()
+    .domain([
+    	d3.min([0,d3.min(data,function (d) { return d.ys })-1]),
+    	d3.max([0,d3.max(data,function (d) { return d.ys })+1])
+    	])
+    .range([h,0])
+	// SVG
+	var svgContainer = body.append('svg')
+	    .attr('height',h + margin.top + margin.bottom)
+	    .attr('width',w + margin.left + margin.right)
+	  .append('g')
+	    .attr('transform','translate(' + margin.left + ',' + margin.top + ')')
+	    
+var cValue = function(d) { return d.newClusters;}
+var color = d3.scaleOrdinal(["rgb(230, 25, 75)", "rgb(60, 180, 75)", "rgb(255, 225, 25)", "rgb(0, 130, 200)", "rgb(245, 130, 48)", "rgb(145, 30, 180)", "rgb(70, 240, 240)", "rgb(240, 50, 230)", "rgb(210, 245, 60)", "rgb(250, 190, 190)", "rgb(0, 128, 128)"]);
+	// X-axis
+// 	var xAxis = d3.svg.axis()
+// 	  .scale(xScale)
+// 	  .tickFormat(formatPercent)
+// 	  .ticks(5)
+// 	  .orient('bottom')
+  // Y-axis
+// 	var yAxis = d3.svg.axis()
+// 	  .scale(yScale)
+// 	  .tickFormat(formatPercent)
+// 	  .ticks(5)
+// 	  .orient('left')
+  // Circles
+  var circles = svgContainer.selectAll('circle')
+      .data(data)
+      .enter()
+    .append('circle')
+      .attr('cx',function (d) { return xScale(d.xs) })
+      .attr('cy',function (d) { return yScale(d.ys) })
+      .attr('r','10')
+      .attr('stroke','black')
+      .attr('stroke-width',1)
+      // .style("fill", function(d) { return color(cValue(d));})
+      .style("fill", function(d) { return color(cValue(d));})
+      .attr('class',function (d) { return d.colorStyle})
+      .on('mouseover', function (d) {
+        d3.selectAll("." + this.getAttribute('class'))
+          .transition()
+          .duration(500)
+          .attr('r',20)
+          .attr('stroke-width',1);
+        div.transition(d)		
+                .duration(500)		
+                .style("opacity", .9);		
+            div	.html("<b>Sentence:  </b>" + d.Sentence + "<br><br>  <b>Cluster: </b>" + d.newClusters)
+                .style("left", w*.05+"px")		
+                .style("top", h*.05+"px");
+      })
+      .on('mouseout', function (d) {
+        d3.selectAll("." + this.getAttribute('class'))
+          .transition()
+          .duration(500)
+          .attr('r',10)
+          .attr('stroke-width',1);
+    div.transition(d)		
+                .duration(200)
+                .style("opacity", 0);
+     div	.html("<b>Sentence:  </b>" + d.Sentence + "<br><br>  <b>Cluster: </b>" + d.newClusters)
+                .style("left", w*.05 +"px")		
+                .style("top", h*.05+"px")
+                .style("opacity", 0);
+      });
+      
+// var text = svgContainer.selectAll("text")
+//                       .remove()
+//                       .data(data)
+//                       .enter()
+//                       .append("text")
+
+
+
+// var textLabels = text
+//                 .attr("x", function(d) { return xScale(d.xs); })
+//                 .attr("y", function(d) { return yScale(d.ys); })
+//                 .text( function (d) { return d.Title; })
+//                 .attr("font-family", "sans-serif")
+//                 .attr("font-size", "10px")
+//                 .attr('text-anchor', 'middle')
+//                 .attr("fill", "black")
+//                 .attr("opacity", 0)
+//                 .attr("id", function (d) { return d.colorStyle + d.ID;})
+//                 .on("click", 
+//                 function() {
+//                   d3.select(this.text).style("opacity", 1);
+                   
+//                 });
+
+
+// svg.selectAll("text")
+// .data(data)
+//       .attr("x", function (d) { return xScale(d.xs) })             
+// 	    .attr("y", function (d) { return yScale(d.ys)-10 })
+//   .append("text")
+// 	.attr("class", "title")
+// 	.attr("opacity", 1)
+//   .attr("id", function (d) { return d.colorStyle + d.ID;})
+// 	.style("fill", "black")
+// 	.text(function (d) { return d.Title;})
+// 	.attr('text-anchor', 'middle');
+
+
+})
+    </script>
+  </body>
+</html>

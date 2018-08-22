@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<meta charset='utf-8'>
+<html>
+  <head>
+    <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i|Noto+Serif:400,400i,700,700i" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.13/p5.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.13/addons/p5.dom.min.js" type="text/javascript"></script>
+    <link rel='stylesheet' href='bootstrap.min.css'>
+        <link rel='stylesheet' href='bootstrap.bundle.min.js'>
+  </head>
+  <style>
+  
+span {
+  background: yellow;
+
+}
+    .axis path,
+.axis line {
+  fill: none;
+	stroke: black;
+	shape-rendering: crispEdges;
+}
+.axis text {
+	font-family: sans-serif;
+	font-size: 11px;
+}
+.clusterZero {
+  fill: "#e6194b"
+}
+.clusterOne {
+  fill: "#ffe119"
+}
+.clusterTwo {
+  fill: "#0082c8"
+}
+.clusterThree {
+  fill: "#f58231"
+}
+.clusterFour {
+  fill: "#911eb4"
+}
+.clusterFive {
+  fill: "#46f0f0"
+}
+.clusterSix {
+  fill: "#f032e6"
+}
+.clusterSeven {
+  fill: "#d2f53c"
+}
+.clusterEight {
+  fill: "#fabebe"
+}
+.clusterNine {
+  fill: "#008080"
+}
+.clusterTen {
+  fill: "#008080"
+}
+div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 500px;					
+    height: 110px;					
+    padding: 10px;				
+    font: 16px sans-serif;		
+    background: rgba(155,155,155,.5);	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+
+.carousel-control-prev, .carousel-control-next {
+        /*height: 100px;*/
+        /*width: 100px;*/
+        /*outline: black;*/
+        background-size: 100%, 100%;
+        /*border-radius: 50%;*/
+        /*border: 1px solid black;*/
+        background-image: none;
+        background-color: rgba(250, 250, 250, .95); 
+      }
+      
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: black;
+  background-color: rgba(250, 250, 250, .95); 
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: black;
+  background-color: rgba(250, 250, 250, .95); 
+}
+
+      
+      .carousel-item {
+        /*width: 100px;*/
+        height: 40em;
+        /*position: absolute;*/
+        left: 17%;
+        background-color: rgba(250, 250, 250, .95); 
+      }
+      
+      .carousel-item .carousel-caption {
+        left: -50%;
+        background-color: rgba(250, 250, 250, .95); 
+      }
+       .carousel-item img {
+        /*transform: translateX(10%);*/
+        transform: translateY(1%);
+        height: 40em;
+        background-color: rgba(250, 250, 250, .95); 
+      }
+      
+      
+.carousel-control-prev-icon {
+  color: black;
+  background-color: rgba(250, 250, 250, .95); 
+}
+
+.sr-only{
+  color: black;
+}
+
+.slide1 {
+  margin-top: 15%;
+  padding-left: 12%;
+  width: 60%;
+}
+.slide2 {
+  margin-top: 15%;
+  padding-left: 12%;
+  width: 60%;
+}
+.slide3 {
+  margin-top: 15%;
+  padding-left: 12%;
+  width: 60%;
+}
+
+#overlay {
+    font-family: 'Roboto', sans-serif;
+    /*color: black;*/
+    position: fixed; /* Sit on top of the page content */
+    display: visible; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 1%; 
+    left: 1%;
+    right: 1%;
+    bottom: 1%;
+    background-color: rgba(250, 250, 250, .95); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  transition: .3s ease;
+}
+
+.oButton {
+  margin-left: 85%;
+  margin-top: 5%;
+  background: rgba(250,250,250, .95);
+  opacity: 1;
+  z-index: 3;
+  position: fixed;
+  border: none;
+}
+/*svg {*/
+/*  margin-top: 5%;*/
+/*}*/
+
+
+  </style>
+  <body>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <container id="overlay">
+  <button type="button" class="oButton" onclick="off()" aria-label="Close">
+  <svg viewPort="0 0 12 12" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+    <line x1="1" y1="20" 
+          x2="20" y2="1" 
+          stroke="grey" 
+          stroke-width="4"/>
+    <line x1="1" y1="1" 
+          x2="20" y2="20" 
+          stroke="grey" 
+          stroke-width="4"/>
+</svg>
+</button>
+<div id="carouselExampleControls" class="carousel slide" data-interval="false" data-ride="carousel">
+
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <img class="d-block img-fluid" src="scatterPlotOne.png" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block img-fluid" src="scatterPlotTwo.png" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block img-fluid" src="scatterPlotThree.png" alt="Third slide">
+    </div>
+  </div>
+  <!--<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">-->
+  <!--  <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+  <!--  <span class="sr-only">Previous</span>-->
+  <!--</a>-->
+  <!--<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">-->
+  <!--  <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+  <!--  <span class="sr-only">Next</span>-->
+  <!--</a>-->
+  
+   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" ></span>
+    <!--<span class="sr-only">Previous</span>-->
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <!--<span class="sr-only">Next</span>-->
+  </a>
+  
+  
+</div>
+</container>
+    
+    
+    <script>
+      function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
+
+      d3.csv('healthcsvforvisualFINAL.csv', function (data) {
+  // Variables
+  var body = d3.select('body')
+	var margin = { top: 150, right: 150, bottom: 150, left: 50 }
+	var h = screen.height - margin.top - margin.bottom
+	var w = screen.width - margin.left - margin.right
+	var formatPercent = d3.format('.2%')
+	var div = d3.select("body").append("div")	
+    .attr("class", "tooltip")				
+    .style("opacity", 0);
+	// Scales
+
+  var xScale = d3.scaleLinear()
+    .domain([
+    	d3.min([0,d3.min(data,function (d) { return d.xs })-1]),
+    	d3.max([0,d3.max(data,function (d) { return d.xs })+1])
+    	])
+    .range([0,w])
+  var yScale = d3.scaleLinear()
+    .domain([
+    	d3.min([0,d3.min(data,function (d) { return d.ys })-1]),
+    	d3.max([0,d3.max(data,function (d) { return d.ys })+1])
+    	])
+    .range([h,0])
+	// SVG
+	var svgContainer = body.append('svg')
+	    .attr('height',h + margin.top + margin.bottom)
+	    .attr('width',w + margin.left + margin.right)
+	  .append('g')
+	    .attr('transform','translate(' + margin.left + ',' + margin.top + ')')
+	    
+var cValue = function(d) { return d.newClusters;}
+var color = d3.scaleOrdinal(["rgb(230, 25, 75)", "rgb(60, 180, 75)", "rgb(255, 225, 25)", "rgb(0, 130, 200)", "rgb(245, 130, 48)", "rgb(145, 30, 180)", "rgb(70, 240, 240)", "rgb(240, 50, 230)", "rgb(210, 245, 60)", "rgb(250, 190, 190)", "rgb(0, 128, 128)"]);
+	// X-axis
+// 	var xAxis = d3.svg.axis()
+// 	  .scale(xScale)
+// 	  .tickFormat(formatPercent)
+// 	  .ticks(5)
+// 	  .orient('bottom')
+  // Y-axis
+// 	var yAxis = d3.svg.axis()
+// 	  .scale(yScale)
+// 	  .tickFormat(formatPercent)
+// 	  .ticks(5)
+// 	  .orient('left')
+  // Circles
+  var circles = svgContainer.selectAll('circle')
+      .data(data)
+      .enter()
+    .append('circle')
+      .attr('cx',function (d) { return xScale(d.xs) })
+      .attr('cy',function (d) { return yScale(d.ys) })
+      .attr('r','10')
+      .attr('stroke','black')
+      .attr('stroke-width',1)
+      // .style("fill", function(d) { return color(cValue(d));})
+      .style("fill", function(d) { return color(cValue(d));})
+      .attr('class',function (d) { return d.colorStyle})
+      .on('mouseover', function (d) {
+        d3.selectAll("." + this.getAttribute('class'))
+          .transition()
+          .duration(500)
+          .attr('r',20)
+          .attr('stroke-width',1);
+        div.transition(d)		
+                .duration(500)		
+                .style("opacity", .9);		
+            div	.html("<b>Sentence:  </b>" + d.Sentence + "<br><br>  <b>Cluster: </b>" + d.newClusters)
+                .style("left", w*.05+"px")		
+                .style("top", h*.05+"px");
+      })
+      .on('mouseout', function (d) {
+        d3.selectAll("." + this.getAttribute('class'))
+          .transition()
+          .duration(500)
+          .attr('r',10)
+          .attr('stroke-width',1);
+    div.transition(d)		
+                .duration(200)
+                .style("opacity", 0);
+     div	.html("<b>Sentence:  </b>" + d.Sentence + "<br><br>  <b>Cluster: </b>" + d.newClusters)
+                .style("left", w*.05 +"px")		
+                .style("top", h*.05+"px")
+                .style("opacity", 0);
+      });
+      
+// var text = svgContainer.selectAll("text")
+//                       .remove()
+//                       .data(data)
+//                       .enter()
+//                       .append("text")
+
+
+
+// var textLabels = text
+//                 .attr("x", function(d) { return xScale(d.xs); })
+//                 .attr("y", function(d) { return yScale(d.ys); })
+//                 .text( function (d) { return d.Title; })
+//                 .attr("font-family", "sans-serif")
+//                 .attr("font-size", "10px")
+//                 .attr('text-anchor', 'middle')
+//                 .attr("fill", "black")
+//                 .attr("opacity", 0)
+//                 .attr("id", function (d) { return d.colorStyle + d.ID;})
+//                 .on("click", 
+//                 function() {
+//                   d3.select(this.text).style("opacity", 1);
+                   
+//                 });
+
+
+// svg.selectAll("text")
+// .data(data)
+//       .attr("x", function (d) { return xScale(d.xs) })             
+// 	    .attr("y", function (d) { return yScale(d.ys)-10 })
+//   .append("text")
+// 	.attr("class", "title")
+// 	.attr("opacity", 1)
+//   .attr("id", function (d) { return d.colorStyle + d.ID;})
+// 	.style("fill", "black")
+// 	.text(function (d) { return d.Title;})
+// 	.attr('text-anchor', 'middle');
+
+
+})
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+ <script>
+    $('#carouselExampleControls').on('slide.bs.carousel', function () {
+ 
+  $('container').css('background-color','rgba(250, 250, 250, .95)');
+});
+  </script>
+  </body>
+</html>
