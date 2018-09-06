@@ -1,0 +1,686 @@
+{
+    "ditems": [
+        {
+            "type": "ditem",
+            "name": "High Cost of Healthcare",
+            "description": "bug",
+            "ditem": 1,
+            "date": "2012-05-05 23:50:11",
+            "slug": "ditem-one-reverend-john-fife",
+            "links": [
+                "Treatment",
+                "Medication",
+                "Cover",
+                "Costs",
+                "Health",
+                "Free",
+                "Medication",
+                "Centers"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Emergency Procedures",
+            "description": "bug",
+            "ditem": 2,
+            "date": "2012-05-09 15:53:27",
+            "slug": "ditem-two-dr-max-more",
+            "links": [
+                "Emergency",
+                "Health",
+                "Care",
+                "Children",
+                "Dealing"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Selfcare",
+            "description": "bug",
+            "ditem": 3,
+            "date": "2012-05-14 01:10:12",
+            "slug": "ditem-three-peter-warren",
+            "links": [
+                "Food",
+                "Readymade",
+                "Canned",
+                "Reduce",
+                "Eating"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Educational Workshops",
+            "description": "bug",
+            "ditem": 4,
+            "date": "2012-05-20 15:39:43",
+            "slug": "ditem-four-dr-colin-camerer",
+            "links": [
+                "Attending",
+                "Health",
+                "Awareness",
+                "Education"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Selfcare-Hydration",
+            "description": "bug",
+            "ditem": 5,
+            "date": "2012-05-24 10:32:01",
+            "slug": "ditem-five-andrew-keen",
+            "links": [
+                "Drink",
+                "Water"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "bug",
+            "description": "<p class='description'>Description: </br> Comments:  Several participants mentioned in their focus group that they used sources of alternative medicine (especially drinking herbs) as a form of health and selfcare.</br> <span>'Not relying on an herbal-based medication system or alternative medicine.'</br>'They use herbs, pain killers and children's hypothermia drugs are always available at home.'</br>'Drink herbs all the time.'</br>'Drink herbs constantly.'</br>'And when they have a simple illness or health condition, they resort to painkillers or alternative natural treatments.'</span></p>",
+            "ditem": 6,
+            "date": "2012-05-27 16:57:17",
+            "slug": "ditem-six-jan-lundberg",
+            "links": [
+                "Herbs",
+                "Alternative",
+                "Drink"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Avoid Medical Services",
+            "description": "bug",
+            "ditem": 7,
+            "date": "2012-05-30 17:13:06",
+            "slug": "ditem-seven-alexander-rose",
+            "links": [
+                "Doctors",
+                "Selfcare"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Private Over Public",
+            "description": "bug",
+            "ditem": 8,
+            "date": "2012-06-04 23:02:41",
+            "slug": "ditem-eight-dr-chris-mckay",
+            "links": [
+                "Services",
+                "Private",
+                "Emarati",
+                "Hospital",
+                "Centers"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Cost: Healthcare Hurdle",
+            "description": "bug",
+            "ditem": 9,
+            "date": "2012-06-11 15:03:52",
+            "slug": "ditem-nine-dr-timothy-morton",
+            "links": [
+                "Treatment",
+                "Services",
+                "Obstacle",
+                "Receiving",
+                "Money"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Costs of Chronic Disease",
+            "description": "bug",
+            "ditem": 10,
+            "date": "2012-06-18 20:11:47",
+            "slug": "ditem-ten-dr-lisa-petrides",
+            "links": [
+                "Periodic",
+                "Diabetes",
+                "Blood",
+                "Steve",
+                "Individualist"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Pharmacy-Direct Service",
+            "description": "bug",
+            "ditem": 11,
+            "date": "2012-06-25 14:16:37",
+            "slug": "ditem-eleven-gabriel-stempinski",
+            "links": [
+                "Medications",
+                "Doctors",
+                "Pain",
+                "Pharmacies",
+                "Painkillers",
+                "Symptoms"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Child Healthcare",
+            "description": "bug",
+            "ditem": 12,
+            "date": "2012-07-04 18:53:18",
+            "slug": "ditem-twelve-ariel-waldman",
+            "links": [
+                "Children",
+                "Care",
+                "Provided",
+                "Centers",
+                "Free",
+                "Home",
+                "Wait"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Poor Quality @ Clinics",
+            "description": "bug",
+            "ditem": 13,
+            "date": "2012-07-04 18:53:18",
+            "slug": "ditem-twelve-ariel-waldman",
+            "links": [
+                "Services",
+                "Free",
+                "Health",
+                "Treatment",
+                "Reported",
+                "Centers"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Lack of Attention",
+            "description": "bug",
+            "ditem": 14,
+            "date": "2012-07-04 18:53:18",
+            "slug": "ditem-twelve-ariel-waldman",
+            "links": [
+                "Wait",
+                "Centers",
+                "Diagnosis"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Lack of Transparency",
+            "description": "bug",
+            "ditem": 15,
+            "date": "2012-07-04 18:53:18",
+            "slug": "ditem-twelve-ariel-waldman",
+            "links": [
+                "Healthcare",
+                "People",
+                "Others",
+                "Frustration",
+                "Lack",
+                "Nepotism",
+                "Favoritism"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Inconsistency @ Clinics",
+            "description": "bug",
+            "ditem": 16,
+            "date": "2012-07-04 18:53:18",
+            "slug": "ditem-twelve-ariel-waldman",
+            "links": [
+                "Evaluation",
+                "Experience",
+                "Depending"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Positive Comments",
+            "description": "bug",
+            "ditem": 17,
+            "date": "2012-07-04 18:53:18",
+            "slug": "ditem-twelve-ariel-waldman",
+            "links": [
+                "Doctors",
+                "Treatment",
+                "Services"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Pharmacist Trusted",
+            "description": "<p class='description'>Description: Syrian refugees from the focus group discussed the importance of pharmacies as a healthcare service.  Several participants discussed that pharmacists became trusted healthcare providers for refugees.  They were perceived as a higher quality and lower cost option in certain circumstances.</br> Sentences:  </br> <span>'The participants stressed that there is no free health service center makes them feel safe. Instead, they prefer to go to a nearby or trusted pharmacist.'</br>'They always help family members and friends in any medical condition by taking them to this trusted pharmacist.'</br>'She took the child to a well-known pharmacist in the area where she lives who diagnosed the condition and gave her a different drug. The child’s health improved because of this new drug, which deepened the family’s trust in this pharmacist.  The pharmacist was kind and sympathetic and showed compassion with the child’s condition.'</span></p>",
+            "ditem": 18,
+            "date": "2012-07-04 18:53:18",
+            "slug": "ditem-twelve-ariel-waldman",
+            "links": [
+                "Pharmacist",
+                "Condition",
+                "Health",
+                "Trusted",
+                "Drugs",
+                "Children"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Word of Mouth",
+            "description": "<p class='description'>Description: Many refugees discussed the importance of word of mouth as an important communication tool in navigating the healthcare system.  They ususally did not trust websites and were concerned of health centers closing.  Therefore they often relied on friends and family members to find healthcare centers. </br> Sentences:  </br> <span>'If there is an organization that helps us by providing health care services, we ask ourselves : Will my journey to the location be a waste of time?'</br>'They think this is much better to go to a private clinic than standing in a long queue or being told that there are no doctors.'</br>'When they decided to go to government centers or private clinics, some of the women were showing symptoms, like headache, dizziness, general weakness, and other symptoms of multiple communicable and non-communicable diseases. Some of them had a chronic disease before they came to Jordan. However, when they arrived, they began asking about the location of centers offering medical and health services. They asked the neighbors and acquaintances in the area where they live. Some discovered that the location of these services is far away from their homes and had to go by a private car at their own expense and pay a lot for transportation. Some had centers close to their homes, but preferred to go with someone to guide them to the location.'</br>'They depend on asking relatives and friends and the experience of others in knowing centers and services.'</br>'Depending on people networks for information.'</br>'She inquired, and through friends and acquaintances, was able to find healtcare services.'</br>'They also go to any place they hear about to get the service and make sure it is actually existent.'</br>'They depend on the information provided by others to help them'</br>'That they do not trust online information except in rare cases when information is confirmed by a friend or family member.'</span></p>",
+            "ditem": 19,
+            "date": "2012-07-04 18:53:18",
+            "slug": "ditem-twelve-ariel-waldman",
+            "links": [
+                "Services",
+                "Location",
+                "Centers",
+                "Information",
+                "Private"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Lack of Coordination",
+            "description": "<p class='description'>Description: Many refugees discussed the frustration of being bounced around between clinics--both free and private clinics.  </br> Sentences:  </br> <span>'From Emirati they were transferred to Mafraq Governmental Hospital, which, in turn, transferred them to Zarqa.'</br>'She was transferred to the governmental, then to Zarqa Governmental Hospital.  She was admitted to the hospital after long procedures and paperwork, then she underwent an appendectomy.'</br>'The doctor then asks them to go to the hospital and transfers them to the private clinics.'</br>'The poor waiting experience in some places has been a source of complain, especially with the existence of children.'</br>'I woke up at 5:30 am to book to get in line early after some friends recommended I do so.  It was very tiring.'</br>'Zarqa hospital admitted them after paying a small sum. Then after 5 hours of waiting for approvals. He received treatment for 9 days.'</br>'It may take months to get an appointment at some centers.'</br>'If there is an organization that helps us by providing health care services, we ask ourselves: Will there be a queue?'</br>'At Emirati, she also had to wait for over 6 hours in a queue.'</span></p>",
+            "ditem": 20,
+            "date": "2012-07-04 18:53:18",
+            "slug": "ditem-twelve-ariel-waldman",
+            "links": [
+                "Hospital",
+                "Transfer",
+                "Governmental",
+                "Zarqa",
+                "Emirati"
+            ]
+        }
+    ],
+    "themes": [
+        {
+            "type": "theme",
+            "name": "Pharmacies",
+            "description": "",
+            "slug": "pharmacies-2"
+        },
+        {
+            "type": "theme",
+            "name": "Painkillers",
+            "description": "",
+            "slug": "painkillers-2"
+        },
+        {
+            "type": "theme",
+            "name": "Periodic",
+            "description": "",
+            "slug": "periodic-2"
+        },
+        {
+            "type": "theme",
+            "name": "Health",
+            "description": "",
+            "slug": "health-2"
+        },
+        {
+            "type": "theme",
+            "name": "Blood",
+            "description": "",
+            "slug": "blood-2"
+        },
+        {
+            "type": "theme",
+            "name": "Food",
+            "description": "",
+            "slug": "food-2"
+        },
+        {
+            "type": "theme",
+            "name": "Ready-made",
+            "description": "",
+            "slug": "Ready-made-2"
+        },
+        {
+            "type": "theme",
+            "name": "Reduce",
+            "description": "",
+            "slug": "reduce-2"
+        },
+        {
+            "type": "theme",
+            "name": "Eating",
+            "description": "",
+            "slug": "exhausting-2"
+        },
+        {
+            "type": "theme",
+            "name": "Treatment",
+            "description": "",
+            "slug": "treatment-2"
+        },
+        {
+            "type": "theme",
+            "name": "Obstacle",
+            "description": "",
+            "slug": "obstacle-2"
+        },
+        {
+            "type": "theme",
+            "name": "Receiving",
+            "description": "",
+            "slug": "receiving-2"
+        }, 
+        {
+            "type": "theme",
+            "name": "Cover",
+            "description": "",
+            "slug": "cover-2"
+        }, 
+        {
+            "type": "theme",
+            "name": "Costs",
+            "description": "",
+            "slug": "costs-2"
+        },
+        {
+            "type": "theme",
+            "name": "Emergency",
+            "description": "",
+            "slug": "emergency-2"
+        }, 
+         {
+            "type": "theme",
+            "name": "Attending",
+            "description": "",
+            "slug": "attending-2"
+        }, 
+         {
+            "type": "theme",
+            "name": "Awareness",
+            "description": "",
+            "slug": "awareness-2"
+        },
+         {
+            "type": "theme",
+            "name": "Education",
+            "description": "",
+            "slug": "education-2"
+        }, 
+         {
+            "type": "theme",
+            "name": "Drink",
+            "description": "",
+            "slug": "drink-2"
+        }, 
+         {
+            "type": "theme",
+            "name": "Water",
+            "description": "",
+            "slug": "water-2"
+        }, 
+         {
+            "type": "theme",
+            "name": "Herbs",
+            "description": "",
+            "slug": "herbs-2"
+        }, 
+         {
+            "type": "theme",
+            "name": "Alternative",
+            "description": "",
+            "slug": "alternative-2"
+        }, 
+         {
+            "type": "theme",
+            "name": "Services",
+            "description": "",
+            "slug": "services-2"
+        }, 
+         {
+            "type": "theme",
+            "name": "Private",
+            "description": "",
+            "slug": "private-2"
+        }, 
+         {
+            "type": "theme",
+            "name": "Emarati",
+            "description": "",
+            "slug": "emarati-2"
+        }, 
+        {
+            "type": "theme",
+            "name": "Hospital",
+            "description": "",
+            "slug": "hospital-2"
+        },
+         {
+            "type": "theme",
+            "name": "Money",
+            "description": "",
+            "slug": "money-2"
+        },
+         {
+            "type": "theme",
+            "name": "Diabetes",
+            "description": "",
+            "slug": "diabetes-2"
+        },
+        {
+            "type": "theme",
+            "name": "Symptoms",
+            "description": "",
+            "slug": "symptoms-2"
+        },
+        {
+            "type": "theme",
+            "name": "Wait",
+            "description": "",
+            "slug": "wait-2"
+        }
+    ],
+    "perspectives": [
+        {
+            "type": "perspective",
+            "name": "Children",
+            "description": "",
+            "slug": "children-2",
+            "count": "9"
+        },
+        {
+           "type": "perspective",
+            "name": "Care",
+            "description": "",
+            "slug": "care-2",
+            "count": "9"
+        },
+        {
+            "type": "perspective",
+            "name": "Provided",
+            "description": "",
+            "slug": "provided-2",
+            "count": "9"
+        },
+        {
+           "type": "perspective",
+            "name": "Centers",
+            "description": "",
+            "slug": "centers-2",
+            "count": "9"
+        },
+        {
+            "type": "perspective",
+            "name": "Free",
+            "description": "",
+            "slug": "free-2",
+            "count": "9"
+        },
+        {
+            "type": "perspective",
+            "name": "Home",
+            "description": "",
+            "slug": "home-2",
+            "count": "9"
+        },
+        {
+            "type": "perspective",
+            "name": "Medications",
+            "description": "",
+            "slug": "medications-2",
+            "count": "9"
+        },
+        {
+            "type": "perspective",
+            "name": "Doctors",
+            "description": "",
+            "slug": "doctors-2",
+            "count": "9"
+        },
+        {
+            "type": "perspective",
+            "name": "Pain",
+            "description": "",
+            "slug": "pain-2",
+            "count": "9"
+        },
+        {
+            "type": "perspective",
+            "name": "Reported",
+            "description": "To varying degrees, these conversations treat human life as having <a href=\"http://en.wikipedia.org/wiki/Biocentrism_%28ethics%29\">similar or equal moral weight</a> to other life. We are also including broader-than-life value sources like <a href=\"http://en.wikipedia.org/wiki/Ecocentrism\">ecocentrism</a> in this category. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#anthropocentric\">anthropocentric</a>.",
+            "slug": "reported",
+            "count": "9"
+        },
+        {
+            "type": "perspective",
+            "name": "Diagnosis",
+            "description": "To varying degrees, these conversations treat human life as having <a href=\"http://en.wikipedia.org/wiki/Anthropocentrism\">greater moral weight</a> than other life. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#biocentric\">biocentric</a>.",
+            "slug": "diagnosis",
+            "count": "0"
+        },
+        {
+            "type": "perspective",
+            "name": "People",
+            "description": "Every society attempts to balance individual freedom with collective good. These ditems feature conversations that suggest we have slid too far towards individualism and need to move towards the group. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#individualist\">individualist</a>.",
+            "slug": "people", 
+            "count": "0"
+        },
+        {
+            "type": "perspective",
+            "name": "Others",
+            "description": "Every society attempts to balance personal freedom with collective good. These ditems feature conversations that suggest we have slid too far towards collectivism and need to push towards individualism. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#collectivist\">collectivist</a>.",
+            "slug": "others",
+            "count": "9"
+        },
+        {
+            "type": "perspective",
+            "name": "Frustration",
+            "description": "These ditems feature interviewees who feel the problems they are discussing can be better addressed through centralized systems than localized ones. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#localized\">localized</a>.",
+            "slug": "frustration",
+            "count": "11"
+        },
+        {
+            "type": "perspective",
+            "name": "Lack",
+            "description": "These ditems feature interviewees who feel the problems they are discussing can be better addressed through localized systems than centralized ones. Antonym: <a>centralized</a>.",
+            "slug": "lack",
+            "count": "22"
+        },
+        {
+            "type": "perspective",
+            "name": "Nepotism",
+            "description": "These conversations contain suggestions that reality is composed of <a href=\"http://plato.stanford.edu/entries/dualism/\">more than physical material</a>, whether mind, soul, spirit, etc. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#physicalist\">physicalist</a>.",
+            "slug": "nepotism",
+            "count": "17"
+        },
+        {
+            "type": "perspective",
+            "name": "Favoritism",
+            "description": "These conversations contain suggestions that reality is composed entirely of <a href=\"http://plato.stanford.edu/entries/physicalism/\">physical elements</a>, typically (but not inherently) knowable and measurable. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#dualist\">dualist</a>.",
+            "slug": "favoritism-2",
+            "count": "15"
+        },
+        {
+            "type": "perspective",
+            "name": "Evaluation",
+            "description": "These conversations include a diverse array of thinkers who seem to suggest that there is an ultimately <a href=\"http://en.wikipedia.org/wiki/Objectivity_%28philosophy%29\">knowable reality</a> unaffected by our perception. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#subjectivist\">subjectivist</a>.",
+            "slug": "evaluation",
+            "count": "17"
+        },
+        {
+            "type": "perspective",
+            "name": "Experience",
+            "description": "These conversations include a diverse array of thinkers who seem to suggest that <a href=\"http://en.wikipedia.org/wiki/Subjectivist\">each person experiences an independent reality</a> and that an external, objective reality is either unknowable or nonexistent. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#objectivist\">objectivist</a>.",
+            "slug": "experience",
+            "count": "16"
+        },
+        {
+            "type": "perspective",
+            "name": "Depending",
+            "description": "Episodes in this category include perspectives ranging from strict <a href=\"http://plato.stanford.edu/entries/determinism-causal/\">determinism</a> to determinism tempered by free will. Determinism is a broad category and includes the sense that human actions are largely shaped by the <a href=\"http://en.wikipedia.org/wiki/Environmental_determinism\">environment</a>, <a href=\"http://en.wikipedia.org/wiki/Technological_determinism\">technology</a>, a divine plan, etc. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#free-will\">free will</a>.",
+            "slug": "depending",
+            "count": "3"
+        },
+        {
+            "type": "perspective",
+            "name": "Pharmacist",
+            "description": "Episodes in this category include lean towards attributing human behavior to <a href=\"http://plato.stanford.edu/entries/freewill/\">free will</a>. Human agency may be influenced by larger systems (environmental, technological, atomic, divine), but it is not a prisoner to them. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#determinism\">determinism</a>.",
+            "slug": "pharmacist",
+            "count": "25"
+        },
+        {
+            "type": "perspective",
+            "name": "Condition",
+            "description": "Personal identity over time stems from <a href=\"http://plato.stanford.edu/entries/identity-personal/#SomApp\">physical continuity</a>. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#psychological-continuity\">psychological continuity</a>.",
+            "slug": "condition",
+            "count": "6"
+        },
+        {
+            "type": "perspective",
+            "name": "Trusted",
+            "description": "Personal identity over time stems from <a href=\"http://plato.stanford.edu/entries/identity-personal/#PsyApp\">psychological continuity</a>. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#biological-continuity\">biological continuity</a>.",
+            "slug": "trusted",
+            "count": "4"
+        },
+        {
+            "type": "perspective",
+            "name": "Drugs",
+            "description": "Value is assigned to by humans to non-human things, whether animals, plants, or inanimate objects. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#intrinsic\">intrinsic</a>.",
+            "slug": "drugs",
+            "count": "8"
+        },
+        {
+            "type": "perspective",
+            "name": "Transfer",
+            "description": "Value is intrinsic to things, whether people, animals, or inanimate objects. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#extrinsic\">extrinsic</a>.",
+            "slug": "transfer",
+            "count": "12"
+        },
+        {
+            "type": "perspective",
+            "name": "Location",
+            "description": "Value is intrinsic to things, whether people, animals, or inanimate objects. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#extrinsic\">extrinsic</a>.",
+            "slug": "location",
+            "count": "12"
+        },
+        {
+            "type": "perspective",
+            "name": "Information",
+            "description": "Value is intrinsic to things, whether people, animals, or inanimate objects. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#extrinsic\">extrinsic</a>.",
+            "slug": "information",
+            "count": "12"
+        },
+        {
+            "type": "perspective",
+            "name": "Governmental",
+            "description": "Value is intrinsic to things, whether people, animals, or inanimate objects. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#extrinsic\">extrinsic</a>.",
+            "slug": "governmental",
+            "count": "12"
+        },
+        {
+            "type": "perspective",
+            "name":  "Zarqa",
+            "description": "Value is intrinsic to things, whether people, animals, or inanimate objects. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#extrinsic\">extrinsic</a>.",
+            "slug": "zarqa",
+            "count": "12"
+        }
+    ]
+}

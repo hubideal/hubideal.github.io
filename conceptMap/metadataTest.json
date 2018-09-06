@@ -1,0 +1,686 @@
+{
+    "ditems": [
+        {
+            "type": "ditem",
+            "name": "High Cost of Healthcare",
+            "description": "<p class='description'>Description: The majority of comments from the focus groups highlighted the high cost associated with healthcare for urban Syrian refugees living in Jordan (especially for hospitalization and treatment).</br> Comments:  </br> <span>'failure to cover the costs of treating certain health conditions.'</br>'Conducting all tests or follow-up medical treatment necessary even if he had to incur the full costs of the treatment and diagnosis and was unable to find an entity to provide free treatment or financial support covering the costs of treatment.'</br>'He took some painkillers, but after the pain increased, they were instructed to hospitalize him through Jordan Health Aid Society, but since they live outside the camp, they were not covered.'</br>'He asked me to undergo tomography, but I cannot cover the cost of that.'</br>'In some cases, lack of free medication was a major problem, which sometimes forced users to overlook the disease and not take any medications.'</br>'Could not afford the treatment/medication.'</br>'If only, there is treatment and coverage for the cost of delivery and childbirth.'</br>'Some of them did not complete their treatment, because of their inability to cover the costs of treatment.'</br>'She went to a health center that provides free medical services where she was examined but did not get the medication. Instead, the doctor wrote her a prescription to buy the medications herself from outside the center. This happened after she waited a long time to be seen by the doctor, and travelled a long distance in public transportation. Now, she has to go and buy the very expensive medicine, which she cannot afford. So she returned home in a state of severe depression.'</br>'The lack of medications at health care centers forces the users sometimes to personally cover the expenses.'</br>'In some cases, lack of free medication was a major problem, which sometimes forced users to overlook the disease and not take any medications.'</br>'Could not afford the treatment/medication.'</br>'After the diagnosis, they don’t receive any treatment or the medication is not prescribed to them, and even if they were given a prescription, the medication is not available in the center, and they have to buy it from private pharmacies outside the governmental center.'</span></p>",
+            "ditem": 1,
+            "date": "2012-05-05 23:50:11",
+            "slug": "hubideal.github.io/conceptMap/high-cost-health.html",
+            "links": [
+                "Treatment",
+                "Medication",
+                "Cover",
+                "Costs",
+                "Health",
+                "Free",
+                "Medication",
+                "Centers"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Emergency Procedures",
+            "description": "<p class='description'>Description: Many participants expressed concern about the high costs of emergency procedures.</br> Comments:  </br> <span>'I wish there was Health care can be provided to children and for emergency conditions.'</br>'They show clear interest in the health of their children. They want to receive the best care, and they possess some knowledge and information that are useful when dealing with emergency cases.'</br>'Emergency situation is a very difficult experience, starting with finding the right place for treatment, securing the money in a hurry, to dealing with the problem of no doctors in a certain shift.'</span></p>",
+            "ditem": 2,
+            "date": "2012-05-09 15:53:27",
+            "slug": "hubideal.github.io/conceptMap/emergency-procedures.html",
+            "links": [
+                "Emergency",
+                "Health",
+                "Care",
+                "Children",
+                "Dealing"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Selfcare",
+            "description": "<p class='description'>Description: As part of their healthcare seeking behavior, focus group participants discussed the need for eating healthy, exercise, and reducing stress.</br> Comments:  </br> <span>'Stay away from ready-made food and canned foods.'</br>'Reduce the meals.'</br>'Pay attention to the quality of the food they consume, and refrain from eating canned and ready-made food.'</br>'Another participant mentioned, as all other participants in the session agreed with her, that she knows the importance of eating fruit, especially apples, in the morning, but they cannot keep on doing this, because they cannot purchase apples regularly.'</br>'Most refugees resort to good healthy habits that reduce their risk of disease.'</span></p>",
+            "ditem": 3,
+            "date": "2012-05-14 01:10:12",
+            "slug": "hubideal.github.io/conceptMap/selfcare.html",
+            "links": [
+                "Food",
+                "Readymade",
+                "Canned",
+                "Reduce",
+                "Eating"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Educational Workshops",
+            "description": "<p class='description'>Description: Health awareness and educational workshops were another form of healthcare seeking behavior mentioned by Syrian refugees in the focus groups.</br> Comments:  </br> <span>'All participants confirmed that they receive healthcare information by attending health awareness and education sessions.'</br>'People were very interested in attending awareness and health education lectures, as they consider them to be a source of learning that could help them avoid diseases.'</span></p>",
+            "ditem": 4,
+            "date": "2012-05-20 15:39:43",
+            "slug": "hubideal.github.io/conceptMap/educational-workshop.html",
+            "links": [
+                "Attending",
+                "Health",
+                "Awareness",
+                "Education"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Selfcare-Hydration",
+            "description": "<p class='description'>Description: Water and staying hydrated was another key healthcare message from participants that related to selfcare.</br> Comments:  </br> <span>'Drink plenty of water to keep your body clean from the inside.'</br>'Drink hot water in the morning.'</br>'The participants mentioned that they drink bottled water.'</span></p>",
+            "ditem": 5,
+            "date": "2012-05-24 10:32:01",
+            "slug": "hubideal.github.io/conceptMap/selfcare-hydration.html",
+            "links": [
+                "Drink",
+                "Water"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Alternative Medicine",
+            "description": "<p class='description'>Description: </br> Comments:  Several participants mentioned in their focus group that they used sources of alternative medicine (especially drinking herbs) as a form of health and selfcare.</br> <span>'Not relying on an herbal-based medication system or alternative medicine.'</br>'They use herbs, pain killers and children's hypothermia drugs are always available at home.'</br>'Drink herbs all the time.'</br>'Drink herbs constantly.'</br>'And when they have a simple illness or health condition, they resort to painkillers or alternative natural treatments.'</span></p>",
+            "ditem": 6,
+            "date": "2012-05-27 16:57:17",
+            "slug": "hubideal.github.io/conceptMap/alternative-medicine.html",
+            "links": [
+                "Herbs",
+                "Alternative",
+                "Drink"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Avoid Medical Services",
+            "description": "<p class='description'>Description: Several participants in the focus groups commented that they often rely on selfcare to avoid seeing the doctor and incurring further healthcare costs.</br> Comments:  </br> <span>'Relying on self-care if one of their children is exposed to certain symptoms.'</br>'Practice self-care principles so they also do this so they don’t need to go to the doctor.'</br>'They only go to the doctor when their health severely deteriorates.'</span></p>",
+            "ditem": 7,
+            "date": "2012-05-30 17:13:06",
+            "slug": "hubideal.github.io/conceptMap/avoid-doctors.html",
+            "links": [
+                "Doctors",
+                "Selfcare"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Private Over Public",
+            "description": "<p class='description'>Description: Most of the participants from the focus group expressed their preference to go to private clinics over free clinics, however costs were a major obstacle.  The free clinics were perceived as lower quality.</br> Comments:  </br> <span>'We receive the services from the Emirati hospital and other places.'</br>'They suffer from long waiting times because of the pressure on the Emirati Hospital.'</br>'The group agreed that the Emirati Hospital provides good service.'</br>'They prefer going to a private doctor and bearing the costs of treatment, thus saving time, effort, and travel costs.'</br>'After the pain persisted for 3 months, she decided to visit the Emirati Hospital.'</br>'They did an ECHO scan at the Emirati Hospital.'</br>'While comparing services in the private and the public sector, it was clear that the services of the private sector are the best.'</br>'One woman cited a popular proverb, which translates to 'If it’s free, it’s worthless!'</br>'Another said: “If you have money, then you are a Pasha ‘Sir’”.'</br>'Informal care, private clinic, pharmacies.'</br>'If we have difficulty dealing with the health situation, we have to go to private and expensive clinics.'</br>'They said that they seek treatment at a private clinic where they can run all necessary tests. However, they have to pay for all that despite the fact that they do not always have the funds to do so.'</br>'Some people have experienced the feeling of comfort and justice, while others discovered that going to an organization or center that provide free care is a bad idea, so they decided to resort to centers or clinics and defray the services themselves.'</br>'We talked about how to access and obtain health care services and how each of them decided to go to the doctor. They responded by stating that after a great deal of pain, disease, and developing symptoms, they finally decided to seek treatment at private centers or clinics.'</br>'They all regret going to organizations and government centers, because they do not receive services there.'</br>'After the session, I noticed that most people have a very negative impression formed around the treatment provided at the free health service centers. They believe these services are useless and hard to access.'</br>'They prefer to go to a private doctor and pay for the service although it constitutes a burden. They simply do this because they are convinced of the inefficiency of free service centers.'</span></p>",
+            "ditem": 8,
+            "date": "2012-06-04 23:02:41",
+            "slug": "hubideal.github.io/conceptMap/private-public.html",
+            "links": [
+                "Services",
+                "Private",
+                "Emarati",
+                "Hospital",
+                "Centers"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Cost: Healthcare Hurdle",
+            "description": "<p class='description'>Description: Costs and poor economic situations were seen by the participants as a major obstacle to quality healthcare.</br> Comments:  </br> <span>'Poor economic situation is the biggest challenge faced by families.'</br>'Cost is a major obstacle to receiving excellent service in the private sector.'</br>'Poor financial conditions are a major obstacle to receiving better service and securing treatment.'</br>'It was mentioned that lack of money is the biggest obstacle to receiving good services.'</br>'All of the interviewees have the same problem, but in different ways. They cannot find treatment, and there is no one who can cover the expenses of their treatment. No organization can afford to fully cover the cost of their treatment. All of the interviewees are forced to pay a lot of money to receive health care services.'</br>'If there is an organization that helps us by providing health care services, we ask ourselves:  Is there a full insurance?'</br>'Some had to sell their furniture to fund the treatment, some borrowed money, and some of them admit the patient under false information in order to save his/her life.'</span></p>",
+            "ditem": 9,
+            "date": "2012-06-11 15:03:52",
+            "slug": "hubideal.github.io/conceptMap/cost-healthcare-hurdle.html",
+            "links": [
+                "Treatment",
+                "Services",
+                "Obstacle",
+                "Receiving",
+                "Money"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Costs of Chronic Disease",
+            "description": "<p class='description'>Description: For participants living with chronic disease or who have family members with a chronic disease, participants discussed the high cost of health maintenance and struggle to navigate a fragmented healthcare system. </br> Comments:  </br> <span>'His battle with chronic diseases:  He is interested in centers that provide periodic care and follow-up, and is keen to get periodic treatment monthly.'</br>'The brother suffered from severe pain in his stomach, abdomen, and digestive system.'</br>'He undergoes dialysis twice a week in Amman. Expenses are fully covered by Sams, because Jordan Health Aid Society does not cover them. Often they receive free medication.  They later discovered that he has low platelets levels and requires blood transfusion.'</br>'Also, she suffers from blood clots under the skin and body, in addition to diabetes and hypertension. She said she does not want anything, no money or anything, besides a safe place that meets her medical needs.'</span></p>",
+            "ditem": 10,
+            "date": "2012-06-18 20:11:47",
+            "slug": "hubideal.github.io/conceptMap/cost-chronic-disease.html",
+            "links": [
+                "Periodic",
+                "Diabetes",
+                "Blood",
+                "Steve",
+                "Individualist"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Pharmacy-Direct Service",
+            "description": "<p class='description'>Description: Participants from the focus groups discussed how pharmacists were often used as direct providers to lower healthcare costs, quicker service, and perceived better quality.</br> Comments:  </br> <span>'They depend on the pharmacist’s diagnosis in order to prescribe medications without a doctor.'</br>'With severe abdominal pain, she was new in the area and she relied on painkillers/herbs, which were very costly.'</br>'Informal care, private clinic, pharmacies.'</br>'One participant confirmed that her family always rely on the use of painkillers in the event of a headache or any other sort of pain, and do not go to the doctor unless their health deteriorated. They used to go to the pharmacy and purchase painkillers.'</br>'Some of them go to pharmacies to buy medicine. They explain the symptoms to the pharmacist who then prescribes medications based on their description of the symptoms.'</span></p>",
+            "ditem": 11,
+            "date": "2012-06-25 14:16:37",
+            "slug": "hubideal.github.io/conceptMap/pharmacy-direct-service.html",
+            "links": [
+                "Medications",
+                "Doctors",
+                "Pain",
+                "Pharmacies",
+                "Painkillers",
+                "Symptoms"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Child Healthcare",
+            "description": "<p class='description'>Description: Child healthcare was a particular concern from the focus group participants.  To lower costs, many families used free clinics as a main healthcare provider.  However, long waits and transportation was often very difficult when children were involved.  Free clinics were the lower cost option but families were concerned about their quality, long waits, and transportation costs.</br> Comments:  </br> <span>'Emphasis was placed on care provided by UNHCR centers or free centers, due to the presence of large number of children.'</br>'They do not resort to the doctor immediately (they use herbs, pain killers and children's hypothermia drugs are always available at home).'</br>'the poor waiting experience in some places has been a source of complain, especially with the existence of children.'</br>'Waiting in line at the Emirati Hospital after waking up very early.'</br>'I always stand in line, but my children have the experience and intelligence to find what is appropriate for me so I do not wait long.'</br>'Mobility is a burden with more than one child.'</br>'The presence of a number of children makes them always vulnerable to emergencies.'</br>'They are totally unable to go to another governorate to receive treatment even if the service was free of charge, because they have children who cannot be left at home or be taken on a treatment trip that might last a full day.'</br>'I wish there was Health care can be provided to children and for emergency conditions.'</br>'They show clear interest in the health of their children. They want to receive the best care, and they possess some knowledge and information that are useful when dealing with emergency cases.'</span></p>",
+            "ditem": 12,
+            "date": "2012-07-04 18:53:18",
+            "slug": "hubideal.github.io/conceptMap/child-healthcare.html",
+            "links": [
+                "Children",
+                "Care",
+                "Provided",
+                "Centers",
+                "Free",
+                "Home",
+                "Wait"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Poor Quality @ Clinics",
+            "description": "<p class='description'>Description: Many focus group participants had complaints about the poor quality of service at the 'free' clinics.</br> Comments:  </br> <span>'Complaints focused on the ineffectiveness of (free) health services.'</br>'Complaints of poor diagnoses by the health providers.'</br>'Lack of treatment from free health services.'</br>'Focus on the weakness of free health services and inaccurate diagnosis.'</br>'Bad diagnoses and mismanagement were reported at free health centers.'</br>'Over-crowding (too many patients) were reported at free centers as well.'</br>'Long waiting times and having to wait for free service hoping that they would turn out to be good.'</br>'The doctor only gave me painkillers'</br>'At Zarqa, he underwent a gastroscopy, because of the severe internal bleeding in the stomach. The suffering and pain lasted for 2 months before they discovered that he is suffering from renal failure and requires dialysis.'</br>'If only, there is a treatment center for burns and cosmetic treatment.'</br>'If there is an organization that helps us by providing health care services, we ask ourselves: Will I be treated badly?'</br>'They wish they could find a place with adequate health services, since they pay a lot only to receive treatment.'</br>'They pointed out that they have already paid a minimum of 4 JDs for the doctor, at this point so they deserve to be examined and given treatment. They have had suffered a lot because of the lack of care displayed at these centers. Officials deal with them as mere papers and IDs.'</br>'One participant reported that she had to take her sick child to a center that provides free services. The girl did not get a good treatment, examination, or medication, and thus did not get better.'</br>'All of the women agreed that the services they received did not meet all their needs, and that they had to pay large amounts of money in exchange of these services.'</span></p>",
+            "ditem": 13,
+            "date": "2012-07-04 18:53:18",
+            "slug": "hubideal.github.io/conceptMap/poor-quality-clinics.html",
+            "links": [
+                "Services",
+                "Free",
+                "Health",
+                "Treatment",
+                "Reported",
+                "Centers"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Lack of Attention",
+            "description": "<p class='description'>Description: In addition to their concern about quality at free clinics, participants also expressed concern about the lack of attention at clinics from healthcare providers</br> Comments:  </br> <span>'Carelessness by employees.'</br>'They stressed that doctors show no interest in the patient's health condition, unless the service center is not free.'</br>'After arriving at the center, they enter and endure bad reception. They stand in line to register their names, and then go to accounting to pay for the diagnosis. Afterwards, they wait until their turn comes and then wait in hours and after all this trouble, they see the doctor, who without any examinations, talks to them and provides the diagnosis.'</span></p>",
+            "ditem": 14,
+            "date": "2012-07-04 18:53:18",
+            "slug": "hubideal.github.io/conceptMap/lack-attention.html",
+            "links": [
+                "Wait",
+                "Centers",
+                "Diagnosis"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Lack of Transparency",
+            "description": "<p class='description'>Description: Many participants from the focus groups expressed concern about favoritism, nepotism, and lack of transparency at the free clinics.</br> Comments:  </br> <span>'Refugees were pessimistic that oversees funding was going directly to healthcare'</br>'Refugees expressed frustration about the lack of tranparency'</br>'Perceptions of nepotism and favoritism.'</br>'Some people get full medication attention and get treated well, while others do not enjoy this advantage?  We, as refugees, suffer from the effects of nepotism and favoritism.'</br>'When I asked them about the organizations, and the difference between IRC and other organizations. Some said that they never heard of IRC. Others said that IRC appoints people who do not do their jobs well and treat people badly. They also said that the employees are Syrian who only help their relatives. They wish IRC would take care of this problem, because it distorts IRC’s image. Others wish IRC would open a department to provide healthcare services, respond to all their health needs, and cover the expenses and the cost of treatment and emergency operations for them and their children.'</br>'Financial exploitation (transportation/taxi).'</br>'We need medical security, because we are afraid aid might be cut off just like the case with Jordan Health Aid Society.'</br>'Lack of credibility in dealing with healthcare clinics.'</br>'I cannot describe how frustration they are at government centers and the places where the health services are located, because they have suffered a lot and they don’t trust them anymore.'</span></p>",
+            "ditem": 15,
+            "date": "2012-07-04 18:53:18",
+            "slug": "hubideal.github.io/conceptMap/lack-transparency.html",
+            "links": [
+                "Healthcare",
+                "People",
+                "Others",
+                "Frustration",
+                "Lack",
+                "Nepotism",
+                "Favoritism"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Inconsistency @ Clinics",
+            "description": "<p class='description'>Description: Participants commented on the lack of consistency between and within clinics.  Participants viewed quality based on the location or on the doctor.</br> Comments:  </br> <span>'His evaluation of the experience varies depending on where he received the treatment.'</br>'Experience and evaluation of health care delivery locations vary depending on the location.'</br>'She summed it up by saying that the service depends on the doctor.'</span></br>",
+            "ditem": 16,
+            "date": "2012-07-04 18:53:18",
+            "slug": "hubideal.github.io/conceptMap/inconsistency-clinic.html",
+            "links": [
+                "Evaluation",
+                "Experience",
+                "Depending"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Positive Comments",
+            "description": "<p class='description'>Description: The sentences from this section focus on positive comments about Jordan's healthcare system for Syrian refugees. </br>  Sentences:  </br> <span>'In some cases, doctors showed distinctive treatment. Some would follow the patient's condition after some time and ensure his/her safety. When she mentioned this incident, I felt that it had touched her and gave her a sense of importance and appreciation.' </br> 'One woman spoke of a humanitarian service she received from a Chief Practitioner. She encountered a problem and he treated her humanely, neglecting the routine procedures and treating her daughter. She summed it up by saying that the service depends on the doctor.'</br>'Doctors treat me just fine, and the treatment itself is excellent. I hope all organizations treat people that way I am treated.'</span></p>",
+            "ditem": 17,
+            "date": "2012-07-04 18:53:18",
+            "slug": "hubideal.github.io/conceptMap/positve-comments.html",
+            "links": [
+                "Doctors",
+                "Treatment",
+                "Services"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Pharmacist Trusted",
+            "description": "<p class='description'>Description: Syrian refugees from the focus group discussed the importance of pharmacies as a healthcare service.  Several participants discussed that pharmacists became trusted healthcare providers for refugees.  They were perceived as a higher quality and lower cost option in certain circumstances.</br> Sentences:  </br> <span>'The participants stressed that there is no free health service center makes them feel safe. Instead, they prefer to go to a nearby or trusted pharmacist.'</br>'They always help family members and friends in any medical condition by taking them to this trusted pharmacist.'</br>'She took the child to a well-known pharmacist in the area where she lives who diagnosed the condition and gave her a different drug. The child’s health improved because of this new drug, which deepened the family’s trust in this pharmacist.  The pharmacist was kind and sympathetic and showed compassion with the child’s condition.'</span></p>",
+            "ditem": 18,
+            "date": "2012-07-04 18:53:18",
+            "slug": "hubideal.github.io/conceptMap/pharmacist-trusted.html",
+            "links": [
+                "Pharmacist",
+                "Condition",
+                "Health",
+                "Trusted",
+                "Drugs",
+                "Children"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Word of Mouth",
+            "description": "<p class='description'>Description: Many refugees discussed the importance of word of mouth as an important communication tool in navigating the healthcare system.  They ususally did not trust websites and were concerned of health centers closing.  Therefore they often relied on friends and family members to find healthcare centers. </br> Sentences:  </br> <span>'If there is an organization that helps us by providing health care services, we ask ourselves : Will my journey to the location be a waste of time?'</br>'They think this is much better to go to a private clinic than standing in a long queue or being told that there are no doctors.'</br>'When they decided to go to government centers or private clinics, some of the women were showing symptoms, like headache, dizziness, general weakness, and other symptoms of multiple communicable and non-communicable diseases. Some of them had a chronic disease before they came to Jordan. However, when they arrived, they began asking about the location of centers offering medical and health services. They asked the neighbors and acquaintances in the area where they live. Some discovered that the location of these services is far away from their homes and had to go by a private car at their own expense and pay a lot for transportation. Some had centers close to their homes, but preferred to go with someone to guide them to the location.'</br>'They depend on asking relatives and friends and the experience of others in knowing centers and services.'</br>'Depending on people networks for information.'</br>'She inquired, and through friends and acquaintances, was able to find healtcare services.'</br>'They also go to any place they hear about to get the service and make sure it is actually existent.'</br>'They depend on the information provided by others to help them'</br>'That they do not trust online information except in rare cases when information is confirmed by a friend or family member.'</span></p>",
+            "ditem": 19,
+            "date": "2012-07-04 18:53:18",
+            "slug": "hubideal.github.io/conceptMap/word-mouth.html",
+            "links": [
+                "Services",
+                "Location",
+                "Centers",
+                "Information",
+                "Private"
+            ]
+        },
+        {
+            "type": "ditem",
+            "name": "Lack of Coordination",
+            "description": "<p class='description'>Description: Many refugees discussed the frustration of being bounced around between clinics--both free and private clinics.  </br> Sentences:  </br> <span>'From Emirati they were transferred to Mafraq Governmental Hospital, which, in turn, transferred them to Zarqa.'</br>'She was transferred to the governmental, then to Zarqa Governmental Hospital.  She was admitted to the hospital after long procedures and paperwork, then she underwent an appendectomy.'</br>'The doctor then asks them to go to the hospital and transfers them to the private clinics.'</br>'The poor waiting experience in some places has been a source of complain, especially with the existence of children.'</br>'I woke up at 5:30 am to book to get in line early after some friends recommended I do so.  It was very tiring.'</br>'Zarqa hospital admitted them after paying a small sum. Then after 5 hours of waiting for approvals. He received treatment for 9 days.'</br>'It may take months to get an appointment at some centers.'</br>'If there is an organization that helps us by providing health care services, we ask ourselves: Will there be a queue?'</br>'At Emirati, she also had to wait for over 6 hours in a queue.'</span></p>",
+            "ditem": 20,
+            "date": "2012-07-04 18:53:18",
+            "slug": "hubideal.github.io/conceptMap/lack-coordination.html",
+            "links": [
+                "Hospital",
+                "Transfer",
+                "Governmental",
+                "Zarqa",
+                "Emirati"
+            ]
+        }
+    ],
+    "themes": [
+        {
+            "type": "theme",
+            "name": "Pharmacies",
+            "description": "",
+            "slug": "pharmacies-2"
+        },
+        {
+            "type": "theme",
+            "name": "Painkillers",
+            "description": "",
+            "slug": "painkillers-2"
+        },
+        {
+            "type": "theme",
+            "name": "Periodic",
+            "description": "",
+            "slug": "periodic-2"
+        },
+        {
+            "type": "theme",
+            "name": "Health",
+            "description": "",
+            "slug": "health-2"
+        },
+        {
+            "type": "theme",
+            "name": "Blood",
+            "description": "",
+            "slug": "blood-2"
+        },
+        {
+            "type": "theme",
+            "name": "Food",
+            "description": "",
+            "slug": "food-2"
+        },
+        {
+            "type": "theme",
+            "name": "Ready-made",
+            "description": "",
+            "slug": "Ready-made-2"
+        },
+        {
+            "type": "theme",
+            "name": "Reduce",
+            "description": "",
+            "slug": "reduce-2"
+        },
+        {
+            "type": "theme",
+            "name": "Eating",
+            "description": "",
+            "slug": "exhausting-2"
+        },
+        {
+            "type": "theme",
+            "name": "Treatment",
+            "description": "",
+            "slug": "treatment-2"
+        },
+        {
+            "type": "theme",
+            "name": "Obstacle",
+            "description": "",
+            "slug": "obstacle-2"
+        },
+        {
+            "type": "theme",
+            "name": "Receiving",
+            "description": "",
+            "slug": "receiving-2"
+        }, 
+        {
+            "type": "theme",
+            "name": "Cover",
+            "description": "",
+            "slug": "cover-2"
+        }, 
+        {
+            "type": "theme",
+            "name": "Costs",
+            "description": "",
+            "slug": "costs-2"
+        },
+        {
+            "type": "theme",
+            "name": "Emergency",
+            "description": "",
+            "slug": "emergency-2"
+        }, 
+         {
+            "type": "theme",
+            "name": "Attending",
+            "description": "",
+            "slug": "attending-2"
+        }, 
+         {
+            "type": "theme",
+            "name": "Awareness",
+            "description": "",
+            "slug": "awareness-2"
+        },
+         {
+            "type": "theme",
+            "name": "Education",
+            "description": "",
+            "slug": "education-2"
+        }, 
+         {
+            "type": "theme",
+            "name": "Drink",
+            "description": "",
+            "slug": "drink-2"
+        }, 
+         {
+            "type": "theme",
+            "name": "Water",
+            "description": "",
+            "slug": "water-2"
+        }, 
+         {
+            "type": "theme",
+            "name": "Herbs",
+            "description": "",
+            "slug": "herbs-2"
+        }, 
+         {
+            "type": "theme",
+            "name": "Alternative",
+            "description": "",
+            "slug": "alternative-2"
+        }, 
+         {
+            "type": "theme",
+            "name": "Services",
+            "description": "",
+            "slug": "services-2"
+        }, 
+         {
+            "type": "theme",
+            "name": "Private",
+            "description": "",
+            "slug": "private-2"
+        }, 
+         {
+            "type": "theme",
+            "name": "Emarati",
+            "description": "",
+            "slug": "emarati-2"
+        }, 
+        {
+            "type": "theme",
+            "name": "Hospital",
+            "description": "",
+            "slug": "hospital-2"
+        },
+         {
+            "type": "theme",
+            "name": "Money",
+            "description": "",
+            "slug": "money-2"
+        },
+         {
+            "type": "theme",
+            "name": "Diabetes",
+            "description": "",
+            "slug": "diabetes-2"
+        },
+        {
+            "type": "theme",
+            "name": "Symptoms",
+            "description": "",
+            "slug": "symptoms-2"
+        },
+        {
+            "type": "theme",
+            "name": "Wait",
+            "description": "",
+            "slug": "wait-2"
+        }
+    ],
+    "perspectives": [
+        {
+            "type": "perspective",
+            "name": "Children",
+            "description": "",
+            "slug": "children-2",
+            "count": "9"
+        },
+        {
+           "type": "perspective",
+            "name": "Care",
+            "description": "",
+            "slug": "care-2",
+            "count": "9"
+        },
+        {
+            "type": "perspective",
+            "name": "Provided",
+            "description": "",
+            "slug": "provided-2",
+            "count": "9"
+        },
+        {
+           "type": "perspective",
+            "name": "Centers",
+            "description": "",
+            "slug": "centers-2",
+            "count": "9"
+        },
+        {
+            "type": "perspective",
+            "name": "Free",
+            "description": "",
+            "slug": "free-2",
+            "count": "9"
+        },
+        {
+            "type": "perspective",
+            "name": "Home",
+            "description": "",
+            "slug": "home-2",
+            "count": "9"
+        },
+        {
+            "type": "perspective",
+            "name": "Medications",
+            "description": "",
+            "slug": "medications-2",
+            "count": "9"
+        },
+        {
+            "type": "perspective",
+            "name": "Doctors",
+            "description": "",
+            "slug": "doctors-2",
+            "count": "9"
+        },
+        {
+            "type": "perspective",
+            "name": "Pain",
+            "description": "",
+            "slug": "pain-2",
+            "count": "9"
+        },
+        {
+            "type": "perspective",
+            "name": "Reported",
+            "description": "To varying degrees, these conversations treat human life as having <a href=\"http://en.wikipedia.org/wiki/Biocentrism_%28ethics%29\">similar or equal moral weight</a> to other life. We are also including broader-than-life value sources like <a href=\"http://en.wikipedia.org/wiki/Ecocentrism\">ecocentrism</a> in this category. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#anthropocentric\">anthropocentric</a>.",
+            "slug": "reported",
+            "count": "9"
+        },
+        {
+            "type": "perspective",
+            "name": "Diagnosis",
+            "description": "To varying degrees, these conversations treat human life as having <a href=\"http://en.wikipedia.org/wiki/Anthropocentrism\">greater moral weight</a> than other life. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#biocentric\">biocentric</a>.",
+            "slug": "diagnosis",
+            "count": "0"
+        },
+        {
+            "type": "perspective",
+            "name": "People",
+            "description": "Every society attempts to balance individual freedom with collective good. These ditems feature conversations that suggest we have slid too far towards individualism and need to move towards the group. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#individualist\">individualist</a>.",
+            "slug": "people", 
+            "count": "0"
+        },
+        {
+            "type": "perspective",
+            "name": "Others",
+            "description": "Every society attempts to balance personal freedom with collective good. These ditems feature conversations that suggest we have slid too far towards collectivism and need to push towards individualism. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#collectivist\">collectivist</a>.",
+            "slug": "others",
+            "count": "9"
+        },
+        {
+            "type": "perspective",
+            "name": "Frustration",
+            "description": "These ditems feature interviewees who feel the problems they are discussing can be better addressed through centralized systems than localized ones. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#localized\">localized</a>.",
+            "slug": "frustration",
+            "count": "11"
+        },
+        {
+            "type": "perspective",
+            "name": "Lack",
+            "description": "These ditems feature interviewees who feel the problems they are discussing can be better addressed through localized systems than centralized ones. Antonym: <a>centralized</a>.",
+            "slug": "lack",
+            "count": "22"
+        },
+        {
+            "type": "perspective",
+            "name": "Nepotism",
+            "description": "These conversations contain suggestions that reality is composed of <a href=\"http://plato.stanford.edu/entries/dualism/\">more than physical material</a>, whether mind, soul, spirit, etc. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#physicalist\">physicalist</a>.",
+            "slug": "nepotism",
+            "count": "17"
+        },
+        {
+            "type": "perspective",
+            "name": "Favoritism",
+            "description": "These conversations contain suggestions that reality is composed entirely of <a href=\"http://plato.stanford.edu/entries/physicalism/\">physical elements</a>, typically (but not inherently) knowable and measurable. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#dualist\">dualist</a>.",
+            "slug": "favoritism-2",
+            "count": "15"
+        },
+        {
+            "type": "perspective",
+            "name": "Evaluation",
+            "description": "These conversations include a diverse array of thinkers who seem to suggest that there is an ultimately <a href=\"http://en.wikipedia.org/wiki/Objectivity_%28philosophy%29\">knowable reality</a> unaffected by our perception. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#subjectivist\">subjectivist</a>.",
+            "slug": "evaluation",
+            "count": "17"
+        },
+        {
+            "type": "perspective",
+            "name": "Experience",
+            "description": "These conversations include a diverse array of thinkers who seem to suggest that <a href=\"http://en.wikipedia.org/wiki/Subjectivist\">each person experiences an independent reality</a> and that an external, objective reality is either unknowable or nonexistent. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#objectivist\">objectivist</a>.",
+            "slug": "experience",
+            "count": "16"
+        },
+        {
+            "type": "perspective",
+            "name": "Depending",
+            "description": "Episodes in this category include perspectives ranging from strict <a href=\"http://plato.stanford.edu/entries/determinism-causal/\">determinism</a> to determinism tempered by free will. Determinism is a broad category and includes the sense that human actions are largely shaped by the <a href=\"http://en.wikipedia.org/wiki/Environmental_determinism\">environment</a>, <a href=\"http://en.wikipedia.org/wiki/Technological_determinism\">technology</a>, a divine plan, etc. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#free-will\">free will</a>.",
+            "slug": "depending",
+            "count": "3"
+        },
+        {
+            "type": "perspective",
+            "name": "Pharmacist",
+            "description": "Episodes in this category include lean towards attributing human behavior to <a href=\"http://plato.stanford.edu/entries/freewill/\">free will</a>. Human agency may be influenced by larger systems (environmental, technological, atomic, divine), but it is not a prisoner to them. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#determinism\">determinism</a>.",
+            "slug": "pharmacist",
+            "count": "25"
+        },
+        {
+            "type": "perspective",
+            "name": "Condition",
+            "description": "Personal identity over time stems from <a href=\"http://plato.stanford.edu/entries/identity-personal/#SomApp\">physical continuity</a>. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#psychological-continuity\">psychological continuity</a>.",
+            "slug": "condition",
+            "count": "6"
+        },
+        {
+            "type": "perspective",
+            "name": "Trusted",
+            "description": "Personal identity over time stems from <a href=\"http://plato.stanford.edu/entries/identity-personal/#PsyApp\">psychological continuity</a>. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#biological-continuity\">biological continuity</a>.",
+            "slug": "trusted",
+            "count": "4"
+        },
+        {
+            "type": "perspective",
+            "name": "Drugs",
+            "description": "Value is assigned to by humans to non-human things, whether animals, plants, or inanimate objects. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#intrinsic\">intrinsic</a>.",
+            "slug": "drugs",
+            "count": "8"
+        },
+        {
+            "type": "perspective",
+            "name": "Transfer",
+            "description": "Value is intrinsic to things, whether people, animals, or inanimate objects. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#extrinsic\">extrinsic</a>.",
+            "slug": "transfer",
+            "count": "12"
+        },
+        {
+            "type": "perspective",
+            "name": "Location",
+            "description": "Value is intrinsic to things, whether people, animals, or inanimate objects. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#extrinsic\">extrinsic</a>.",
+            "slug": "location",
+            "count": "12"
+        },
+        {
+            "type": "perspective",
+            "name": "Information",
+            "description": "Value is intrinsic to things, whether people, animals, or inanimate objects. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#extrinsic\">extrinsic</a>.",
+            "slug": "information",
+            "count": "12"
+        },
+        {
+            "type": "perspective",
+            "name": "Governmental",
+            "description": "Value is intrinsic to things, whether people, animals, or inanimate objects. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#extrinsic\">extrinsic</a>.",
+            "slug": "governmental",
+            "count": "12"
+        },
+        {
+            "type": "perspective",
+            "name":  "Zarqa",
+            "description": "Value is intrinsic to things, whether people, animals, or inanimate objects. Antonym: <a href=\"http://www.findtheconversation.com/concept-map/#extrinsic\">extrinsic</a>.",
+            "slug": "zarqa",
+            "count": "12"
+        }
+    ]
+}
