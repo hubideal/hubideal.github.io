@@ -242,11 +242,11 @@ function display(){
           var boxX = box_xCoor[index];
           var boxY = box_yCoor[index];
           var boxYT = box_yCoor[index]+1;
-          fill(index*1.05);
+          fill(0, 0, index*1.05);
           strokeWeight(.5);
           stroke(200);
           rect(boxX*column, boxY*row, column, row);
-          fill(255);
+          fill(250);
           strokeWeight();
           textAlign(CENTER);
           text(element.wordText, (boxX*column)+(.5*column), (boxYT*row)-(.4*row));
@@ -272,11 +272,11 @@ function mousePressed()  {
           var boxX = box_xCoor[index];
           var boxY = box_yCoor[index];
           var boxYT = box_yCoor[index]+1;
-          fill(index*1.05);
+          fill(0, 0, index*1.05);
           strokeWeight(.5);
           stroke(200);
           rect(boxX*column, boxY*row, column, row);
-          fill(255);
+          fill(250);
           strokeWeight();
           textAlign(CENTER);
           text(element.wordText, (boxX*column)+(.5*column), (boxYT*row)-(.2*row));
