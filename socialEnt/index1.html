@@ -96,10 +96,10 @@ body {
 	    .attr('height',h + margin.top + margin.bottom)
 	    .attr('width',w + margin.left + margin.right)
 	  .append('g')
-	    .attr('transform','translate(' + margin.left + ',' + margin.top + ')')
+	    .attr('transform','translate(' + margin.left + ',' + margin.top + ')');
 	    
 var cValue = function(d) { return d.newClusters;}
-var color = d3.scaleOrdinal(["rgb(230, 25, 75)", "rgb(60, 180, 75)", "rgb(255, 225, 25)", "rgb(0, 130, 200)", "rgb(245, 130, 48)", "rgb(145, 30, 180)", "rgb(70, 240, 240)", "rgb(240, 50, 230)", "rgb(210, 245, 60)", "rgb(250, 190, 190)", "rgb(0, 128, 128)"]);
+var color = d3.scaleOrdinal(["rgb(210, 245, 60)", "rgb(245, 130, 48)", "rgb(255, 225, 25)", "rgb(0, 130, 200)", "rgb(240, 50, 230)", "rgb(230, 25, 75)", "rgb(145, 30, 180)", "rgb(250, 190, 190)", "rgb(60, 180, 75)", "rgb(70, 240, 240)"]);
 	// X-axis
 // 	var xAxis = d3.svg.axis()
 // 	  .scale(xScale)
@@ -113,6 +113,101 @@ var color = d3.scaleOrdinal(["rgb(230, 25, 75)", "rgb(60, 180, 75)", "rgb(255, 2
 // 	  .ticks(5)
 // 	  .orient('left')
   // Circles
+  
+  var g = svgContainer.append("g")
+  
+  var squareZero = svgContainer.selectAll('g')
+    .append('rect')
+      .attr('x', 10)
+      .attr('y', 10)
+      .attr('width', w*.1)
+      .attr('height', h*.05)
+      .attr('stroke','black')
+      .attr('stroke-width',.25)
+      .style("fill", "red")
+      // .style("fill", function(d) { return color(cValue(d));})
+      // .style("fill", "rgb(210, 245, 60)")
+      .attr('class',"square")
+      .on('mouseover', function (d) {
+        d3.selectAll('circle')
+          .attr('opacity', '.2');
+        d3.selectAll(".clusterZero")
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '15')
+          .attr('stroke-width',1);
+      })
+      .on('mouseout', function (d) {
+        // d3.selectAll(".clusterZero")
+        d3.selectAll('circle')
+          .transition()
+          .attr('opacity','1')
+          .attr('r', '12')
+          .attr('stroke-width',1);
+      });
+  var squareOne = svgContainer.selectAll('g')
+    .append('rect')
+      .attr('x', 10)
+      .attr('y', 100)
+      .attr('width', w*.1)
+      .attr('height', h*.05)
+      .attr('stroke','black')
+      .attr('stroke-width',1)
+      .style("fill", "rgb(210, 245, 60)")
+      // .style("fill", function(d) { return color(cValue(d));})
+      // .style("fill", "rgb(245, 130, 48)")
+      .attr('class',"square")
+      .on('mouseover', function (d) {
+        d3.selectAll('circle')
+          .attr('opacity', '.2');
+        d3.selectAll(".clusterOne")
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '15')
+          .attr('stroke-width',1);
+      })
+      .on('mouseout', function (d) {
+        // d3.selectAll(".clusterZero")
+        d3.selectAll('circle')
+          .transition()
+          .attr('opacity','1')
+          .attr('r', '12')
+          .attr('stroke-width',1);
+      });
+  
+  var squareTwo = svgContainer.selectAll('g')
+    .append('rect')
+      .attr('x', 10)
+      .attr('y', 200)
+      .attr('width', w*.1)
+      .attr('height', h*.05)
+      .attr('stroke','black')
+      .attr('stroke-width',1)
+      .style("fill", "rgb(255, 225, 25)")
+      // .style("fill", function(d) { return color(cValue(d));})
+      // .style("fill", "rgb(245, 130, 48)")
+      .attr('class',"square")
+      .on('mouseover', function (d) {
+        d3.selectAll('circle')
+          .attr('opacity', '.2');
+        d3.selectAll(".clusterOne")
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '15')
+          .attr('stroke-width',1);
+      })
+      .on('mouseout', function (d) {
+        // d3.selectAll(".clusterZero")
+        d3.selectAll('circle')
+          .transition()
+          .attr('opacity','1')
+          .attr('r', '12')
+          .attr('stroke-width',1);
+      });
+  
   var circles = svgContainer.selectAll('circle')
       .data(data)
       .enter()
@@ -126,14 +221,14 @@ var color = d3.scaleOrdinal(["rgb(230, 25, 75)", "rgb(60, 180, 75)", "rgb(255, 2
       .style("fill", function(d) { return color(cValue(d));})
       .attr('class',function (d) { return d.colorStyle})
       .on('mouseover', function (d) {
-        d3.selectAll('circle')
-          .attr('opacity', '.2');
-        d3.selectAll("." + this.getAttribute('class'))
-          .transition()
-          .duration(500)
-          .attr('opacity','1')
-          .attr('r', '15')
-          .attr('stroke-width',1);
+        // d3.selectAll('circle')
+        //   .attr('opacity', '.2');
+        // d3.selectAll("." + this.getAttribute('class'))
+        //   .transition()
+        //   .duration(500)
+        //   .attr('opacity','1')
+        //   .attr('r', '15')
+        //   .attr('stroke-width',1);
         div.transition(d)		
                 .duration(500)		
                 .style("opacity", .9);		
@@ -143,12 +238,12 @@ var color = d3.scaleOrdinal(["rgb(230, 25, 75)", "rgb(60, 180, 75)", "rgb(255, 2
       })
       .on('mouseout', function (d) {
         // d3.selectAll("." + this.getAttribute('class'))
-        d3.selectAll('circle')
-          .transition()
-          .duration(500)
-          .attr('opacity','1')
-          .attr('r', '12')
-          .attr('stroke-width',1);
+        // d3.selectAll('circle')
+        //   .transition()
+        //   .duration(500)
+        //   .attr('opacity','1')
+        //   .attr('r', '12')
+        //   .attr('stroke-width',1);
     div.transition(d)		
                 .duration(200)
                 .style("opacity", 0);
@@ -194,6 +289,7 @@ var color = d3.scaleOrdinal(["rgb(230, 25, 75)", "rgb(60, 180, 75)", "rgb(255, 2
 // 	.style("fill", "black")
 // 	.text(function (d) { return d.Title;})
 // 	.attr('text-anchor', 'middle');
+
 
 
 })
