@@ -1,0 +1,234 @@
+ID,Issue ,Title,Authors ,Year:VolumeIssue,Exemplar,Number_tool,PrimaryTool  ,ToolNumber,PrimaryTask,Method_x,"List Items Progressive (Linear)? 0=N/A, 1=NO, 2=YES","Useful? 0= N/A, 1=NOT, 2=MODERATE, 3=VERY, 4=OUTLIER",newClusters,xs,ys
+0,Summer 2012,A Big Deal for Conservation,Larry Linden; Steve McCormick; Ivan Barkhorn; Roger Ullman; Guillermo Castilleja; Dan Winterson; Lee Green;,"2012: 10, 3",EXEMPLAR,4,Design,3,Collect,Reporting,2,4,1,-0.24800192625921502,0.14931087282345837
+1,Winter 2011,Collective Impact,John Kania; Mark Kramer;,"2011: 9, 1",EXEMPLAR,3,Design,3,Combine,Case Study,2,3,0,-0.35975244755124,-0.15668573492336077
+2,Spring 2009,Creating Social Value,Philip Auerswald;,"2009: 7, 2",EXEMPLAR,1,Explore,1,Call,Logic,0,0,2,0.5001731033458425,0.2725043285815052
+3,Spring 2007,Luck of the Draw,Kevin Bolduc; Phil Buchanan; Ellie Buteau;,"2007: 5, 2",,2,Explore,1,Call,Interviews,1,3,1,-0.6741360788299885,0.05564166924325599
+4,Winter 2003,Partnerships for Learning,Ted London; Dennis Rondinelli;,"2003: 1, 3",,1,Finance,2,Prospect,Interviews,0,0,9,0.1515251678400853,-0.46315499729734777
+5,Fall 2006,Reshaping Social Entrepeneurship,Paul C Light;,"2006: 4, 3",EXEMPLAR,1,Explore,1,Call,Reporting,0,0,0,-0.22758090092878278,-0.4123824179907424
+6,Spring 2007,Social Entrepeneurship: The Case for Definition,Roger L Martin; Sally Osberg;,"2007: 5, 2",EXEMPLAR,1,Explore,1,Call,Case Study,2,2,6,0.20562053356505622,0.04814947149128442
+7,Spring 2003,Sparking Nonprofit Innovation,Robert I Sutton;,"2003: 1, 1",EXEMPLAR,1,Explore,1,Call,Reporting,1,2,4,0.0007817882569951737,-0.47708915547246317
+8,Winter 2015,The Dawn of System Leadership,Peter Senge; Hal Hamilton; John Kania;,"2015: 13, 1",EXEMPLAR,1,Explore,1,Map,Logic,1,2,5,0.16315396673760296,0.21035209952032655
+9,Spring 2006,The Hidden Cost of Paradise,Mark Dowie;,"2006: 4, 1",,1,Advocacy,4,Frame,Reporting,0,0,3,-0.10235118291600331,0.16722165532320518
+10,Summer 2006,The Leadership Deficit,Thomas J Tierney;,"2006: 4, 2",EXEMPLAR,3,Explore,1,Map,Logic,2,2,0,-0.21790660291084396,-0.4653756653579233
+11,Winter 2009,The New Volunteer Workforce,David Eisner; Robert T. Grimm Jr; Shannon Maynard; Susannah Washburn;,"2009: 7, 1",EXEMPLAR,7,Explore,1,Call,Logic,2,2,2,0.14805684880567657,-0.0598754409881551
+12,Fall 2017,The Promise of Skills-Based Volunteering,Christine Letts; Danielle Holly,"2017: 15, 4",EXEMPLAR,1,Explore,1,Call,Case Study,,,0,-0.021645119433124055,-0.4746637648627357
+13,Summer 2015,The Time Bank Solution,Edgar S Cahn; Christine Gray;,"2015: 13, 3",,2,Design,3,Collect,Logic,0,0,2,0.19492426056045134,0.3007317796350875
+14,Summer 2015,The Wall Street Takeover of Nonprofit Boards,Garry W Jenkins;,"2015: 13, 3",EXEMPLAR,1,Explore,1,Map,Case Study,0,0,0,-0.1767863834215816,-0.4592412454249596
+15,Winter 2003,To the Rescue,Roger Martin;,"2003: 1, 3",EXEMPLAR,1,Explore,1,Map,Case study,2,2,0,0.013266474005257285,-0.22032102392470426
+16,Fall 2010,Turning Values into Action,Mary C Gentile;,"2010: 8, 4",EXEMPLAR,1,Explore,1,Call,Logic,2,3,2,-0.48398342535504785,0.4712238545281926
+17,Summer 2013,Unleashing Breakthrough Innovation in Government,Nikhil R Sahni; Maxwell Wessel; Clayton M Christensen;,"2013: 11, 3",,7,Explore,1,Call,Case study,2,3,4,0.1917761877139381,0.5575922887719101
+18,Fall 2013,When Good is Not Good Enough,Bill Shore; Darell Hammond; Amy Celep;,"2013: 11, 4",EXEMPLAR,2,Explore,1,Call,Case Study,2,1,0,-0.1459462468530823,-0.2197121404161515
+19,Winter 2005,A Failure of Philanthropy,Robert Reich;,"2005: 3, 4",EXEMPLAR,1,Explore,1,Map,Logic,0,0,1,-0.2997674161802216,0.009023883728478206
+20,Winter 2013,A Revolution Begins in Teacher Prep,Jonathan Schorr;,"2013: 11, 1",,2,Explore,1,Map,Reporting,0,0,7,-0.29877284086170486,0.5014202809210313
+21,Fall 2010,Beyond the Poverty Line,Rourke L O'Brien; David S Pedulla;,"2010: 8, 4",,1,Explore,1,Map,Logic,0,0,3,-0.06113651579400832,0.2670098355139349
+22,Fall 2012,Broader Evidence for Bigger Impact,Lisbeth B Schorr;,"2012: 10, 4",EXEMPLAR,1,Explore,1,Map,Logic,2,2,7,-0.22989066541833486,0.33502129685197285
+23,Winter 2018,Can Measures Change the World?,Christopher Nelson; Anita Chandra; Carolyn Miller;,"2018: 16,1",EXEMPLAR,2,Explore,1,Map,Reporting,,,5,-0.24496191047906057,0.5807062220444199
+24,Winter 2007,Capitalizing on Convergence,James E Austin; Roberto Gutiérrez; Enrique Ogliastri; Ezequiel Reficco;,"2007: 5, 1",,1,Finance,2,Prospect,Survey,0,0,0,-0.027687361751804015,-0.35577442429198725
+25,Summer 2017,Caught in a Fake Debate,Annie Duflo; Heidi McAnnally-Linz,"2017: 15, 3",EXEMPLAR,2,Explore,1,Map,Reporting,1,1,4,-0.0708413237065268,0.4462628125571357
+26,Fall 2011,Circles of Change,Tracy A Thompson;,"2011: 9, 4",,1,Explore,1,Map,Logic,2,2,7,-0.2807125731239621,0.34516118420806874
+27,Fall 2017,Do Benefit Corporations Respect Human Rights?,Joanne Bauer; Elizabeth Umlas,"2017: 15, 4",EXEMPLAR,1,Finance,2,Prospect,Case Study,,,9,0.5097970274965176,-0.34725314854333583
+28,Summer 2009,Ethics and Nonprofits,Deborah L Rhode; Amanda K Packel;,"2009: 7, 3",EXEMPLAR,1,Explore,1,Map,Logic,2,2,2,0.13076242819127767,-0.11469074750847201
+29,Spring 2005,Failing to Govern,Michael Klausner; Jonathan Small;,"2005: 3, 1",,1,Explore,1,Map,Logic,0,0,0,-0.07031124502502852,-0.5129905788905307
+30,Spring 2011,For Love or Lucre,Jim Fruchterman;,"2011: 9, 2",EXEMPLAR,2,Explore,1,Map,Logic,0,0,0,-0.09335062292650424,-0.3797404861353252
+31,Fall 2014,Global Problem Solving Without the Globaloney,Pankaj Ghemawat;,"2014: 12, 4",,1,Explore,1,Map,Interviews,1,3,3,0.2111797552128984,0.2071489599996542
+32,Winter 2010,Helping the Poor Save More,Dean Karlan;,"2010: 8, 1",EXEMPLAR,1,Design,3,Combine,Logic,0,0,6,0.3797995844279602,0.24535151680036615
+33,Winter 2008,In Microfinance Clients Must Come First,Srikant M Datar; Marc J Epstein; Kristi Yuthas;,"2008: 6, 1",,1,Finance,2,Invest,Case Study,0,0,5,0.007787459737160792,0.3389412727868556
+34,Summer 2010,Measuring Social Value,Geoff Mulgan;,"2010: 8, 3",EXEMPLAR,4,Explore,1,Map,Logic,1,4,2,-0.3354815693309291,0.3212337455715557
+35,Spring 2014,Meeting the Challenges of Global Health,Lyn Denend; Amy Lockwood; Michele Barry; Stefanos Zenios;,"2014: 12, 2",,1,Explore,1,Map,Case study,1,2,5,0.014835247448662962,0.5731036590175482
+36,Summer 2007,Microfinance Misses Its Mark,Aneel Karnani;,"2007: 5, 3",,1,Finance,2,Prospect,Reporting,0,0,3,0.21065626078486901,0.1757724909367603
+37,Summer 2009,Mission-Driven Governance,Raymond Fisman; Rakesh Khurana; Edward Martenson;,"2009: 7, 3",,1,Explore,1,Map,Case Study,2,3,3,-0.5486597645738411,-0.2366943047716501
+38,Spring 2009,Offsetting Green Guilt,Matthew J Kotchen;,"2009: 7, 2",,1,Finance,2,Prospect,Reporting,0,0,6,0.6407750513209244,0.047183953080094806
+39,Spring 2011,Picking Green Tech's Winners and Losers,"Clayton M Christensen; Suman ""Shuman"" Talukdar; Richard Alton; Michael B Horn;","2011: 9, 2",,1,Explore,1,Map,Logic,0,0,6,0.3952857703664184,0.14961457925240712
+40,Spring 2005,Putting People First,Jeffrey Pfeffer;,"2005: 3, 1",EXEMPLAR,1,Explore,1,Map,Case Study,1,3,9,0.1704902469551519,-0.31487717706932494
+41,Winter 2005,Rethinking Self-Esteem,Roy Baumeister;,"2005: 3, 4",EXEMPLAR,1,Design,3,Collect,Reporting,0,0,5,-0.38427367194768486,-0.12172514017023205
+42,Winter 2009,Romanticizing the Poor,Aneel Karnani;,"2009: 7, 1",EXEMPLAR,1,Explore,1,Map,Reporting,0,0,6,0.3959733746071363,-0.009268153643374168
+43,Summer 2011,The Challenge of Organizational Learning,Katie Smith Milway; Amy Saxton;,"2011: 9, 3",,3,Explore,1,Map,Interviews,2,3,0,-0.17293620180402747,-0.18765971761325195
+44,Summer 2017,The Generalizability Puzzle,Mary Ann Bates; Rachel Glennerster,"2017: 15, 3",EXEMPLAR,2,Explore,1,Map,Reporting,1,3,5,-0.16574170983102313,0.455772618585404
+45,Fall 2011,The Missing Link in School Reform,Carrie R Leana;,"2011: 9, 4",,1,Explore,1,Map,Interviews,0,0,7,-0.4159856886930703,0.44995146909908823
+46,Fall 2015,The New Face of Corporate Activism,Gerald F Davis; Christopher J White;,"2015: 13, 4",EXEMPLAR,1,Finance,2,Prospect,Logic,2,3,9,0.5312882301438505,-0.2954735946822698
+47,Winter 2016,The Power of Lean Data,Sasha Dichter; Tom Adams; Alnoor Ebrahim;,"2016: 14, 1",EXEMPLAR,2,Explore,1,Map,Case Study,2,4,6,0.3210282091608052,-0.06437170468925528
+48,Spring 2010,The Power of Theories of Change,Paul Brest;,"2010: 8, 2",EXEMPLAR,4,Finance,2,Invest,Case Study,0,0,1,-0.44102371894404924,0.19083350444954209
+49,Spring 2005,The Reality Underneath the Buzz of Partnerships,Francie Ostrower;,"2005: 3, 1",EXEMPLAR,2,Explore,1,Map,Logic,2,1,1,-0.5901865084540553,-0.020263602561518605
+50,Spring 2016,The Risky Rhetoric of Female Risk Aversion,Sarah Kaplan; Natssia Walley;,"2016: 14, 2",,1,Explore,1,Call,Case Study,1,3,8,0.43671991868246823,0.06304212916407648
+51,Fall 2004,The Tempered Radicals,Debra E Meyerson;,"2004: 2, 2",,1,Explore,1,Map,Interviews,2,2,9,0.51388771739207,-0.3288082546123876
+52,Summer 2004,The Working Poor,David K Shipler;,"2004: 2, 1",,6,Explore,1,Map,Interviews,0,0,3,0.153212715543083,0.12529444160536518
+53,Fall 2005,The Workings of Class,Adrie Kusserow;,"2005: 3, 3",,1,Explore,1,Map,Case Study,0,0,7,-0.3784090672789068,0.4749595564518734
+54,Spring 2016,There is No Such Thing as a Green Product,Trevor Zink; Roland Guyer;,"2016: 14, 2",,1,Finance,2,Prospect,Theory,0,0,6,0.6914365181790042,0.22184169822010158
+55,Summer 2016,Using Data for Action and for Impact,Jim Fruchterman;,"2016: 14, 3",EXEMPLAR,2,Explore,1,Map,Reporting,0,0,0,-0.3556575548454857,-0.20536747548739512
+56,Summer 2004,Why Measure?,Katie Cunningham; Marc Ricks;,"2004: 2, 1",,2,Explore,1,Map,Interviews,0,0,0,-0.22758643110423954,-0.4109674776558744
+57,Spring 2006,Act on Facts Not Faith,Jeffrey Pfeffer; Robert I Sutton;,"2006: 4, 1",EXEMPLAR,1,Explore,1,Map,Case Study,1,2,0,0.12449599018894972,-0.3764041390845081
+58,Summer 2006,What Business Execs Dont Know but should About Nonprofits,Les Silverman; Lynn Taliento;,"2006: 4, 2",,3,Explore,1,Map,Interviews,1,1,0,-0.19396813694315138,-0.5016061284554285
+59,Spring 2012,A Decade of Outcome-Oriented Philanthropy,Paul Brest;,"2012: 10, 2",EXEMPLAR,4,Finance,2,Invest,Case Study,0,0,1,-0.43817983509518377,-0.009215259954299731
+60,Fall 2014,A New Vision for Funding Science,Sarah Kearney; Fiona Murray; Matthew Nordan;,"2014: 12, 4",EXEMPLAR,2,Finance,2,Invest,Case Study,1,4,8,-0.375569290966815,0.07820516115378671
+61,Winter 2017,Across the Returns Continuum,Matt Bannick; Paula Goldman; Michael Kubzansky; Yasemin Saltuk,"2017: 15, 1",EXEMPLAR,4,Finance,2,Invest,Reporting,0,0,8,0.3657476480237002,-0.05825226253780793
+62,Winter 2009,Calculated Impact,Paul Brest; Hal Harvey; Kelvin Low;,"2009: 7, 1",,4,Finance,2,Invest,Case Study,0,0,8,-0.40818850493116293,0.15120329299458815
+63,Fall 2015,Can We Measure Media Impact? Reading Between the Lines,Chip Giller; Katharine Wroth;,"2015: 13, 4",,2,Deliver,5,Disrupt,Reporting,0,0,1,-0.2931226311597635,0.13769375120913185
+64,Fall 2015,Can We Measure Media Impact? Surveying the Field,Anya Schiffrin; Ethan Zuckerman;,"2015: 13, 4",EXEMPLAR,1,Advocacy,4,Frame,Reporting,0,0,1,-0.29312263121005694,0.13769375073135612
+65,Fall 2009,Catalytic Philanthropy,Mark R Kramer;,"2009: 7, 4",EXEMPLAR,3,Finance,2,Invest,Case Study,1,2,1,-0.23148403538025383,0.1040884299089625
+66,Summer 2014,Creative Financing for Social Enterprise,Dana Brakman Reiser; Steven A Dean;,"2014: 12, 3",,1,Finance,2,Invest,Logic,0,0,9,0.3052816134688221,-0.2123451887610989
+67,Spring 2015,Disruption for Good,Laura Arrillaga-Andreessen;,"2015: 13, 2",,4,Advocacy,4,Frame,Logic,0,0,0,-0.21141771161964007,-0.27327084099046084
+68,Spring 2003,Filling the Performance Gap,Christine W Letts; William P Ryan;,"2003: 1, 1",,1,Finance,2,Invest,Interviews,2,2,0,-0.293306515302381,-0.3281255508656604
+69,Spring 2003,Going Head to Head,David P Baron;,"2003: 1, 1",EXEMPLAR,1,Finance,2,Invest,Case Study,0,0,9,0.5747223806538991,-0.20862295912993042
+70,Spring 2013,High Stakes Donor Collaborations,Willa Seldon; Thomas J Tierney; Gihani Fernando;,"2013: 11, 2",EXEMPLAR,3,Finance,2,Invest,Case Study,2,3,1,-0.537020838612638,0.08052426635330424
+71,Fall 2016,How Grantmaking Can Create Adaptive Organizations,Douglas Easterling;,"2016: 14, 4",,1,Finance,2,Invest,Logic,2,3,1,-0.6413377403208835,0.11636298029900596
+72,Spring 2004,Investing in Society,William F Meehan; Derek Kilmer; Maisie O'Flanagan;,"2004: 1, 4",,3,Finance,2,Invest,Case Study,2,2,0,-0.13691491665366703,-0.2959843208158057
+73,Winter 2004,Leading Boldly,Ronald A Heifetz; John V Kania; Mark R Kramer;,"2004: 2, 3",EXEMPLAR,1,Finance,2,Invest,Case Study,1,3,1,-0.6454781234920369,0.09201657611758984
+74,Spring 2011,Letting Go,Kristi Kimball; Malka Kopell;,"2011: 9, 2",EXEMPLAR,4,Finance,2,Invest,Reporting,0,0,1,-0.4715187231396668,0.11934887514677237
+75,Winter 2016,Making Big Bets for Social Change,William Foster; Gail Perreault; Alison Powell; Chris Addy;,"2016: 14, 1",EXEMPLAR,3,Finance,2,Invest,Case Study,2,2,1,-0.5223807087986904,-0.016477517905662906
+76,Summer 2004,Money Talk,John Healy; Paul Brest; Robert Joss; Michael Klausner;,"2004: 2, 1",,4,Explore,1,Call,Interviews,0,0,1,-0.5658032501006942,0.013293012862349945
+77,Fall 2008,Money to Grow On,William Foster;,"2008: 6, 4",,3,Finance,2,Invest,Case Study,2,4,0,-0.2533669212979865,-0.35751038478416214
+78,Summer 2005,Philanthropy Inc.,Keith Epstein;,"2005: 3, 2",,6,Finance,2,Invest,Reporting,0,0,9,0.3363292887679328,-0.35826761024612996
+79,Fall 2007,Private Equity Public Good,Beth Sirull;,"2007: 5, 4",,2,Finance,2,Prospect,Reporting,0,0,8,0.3868986998937856,-0.5363646497947928
+80,Summer 2008,Reimagining Microfinance,Alex Counts;,"2008: 6, 3",EXEMPLAR,4,Finance,2,Invest,Logic,0,0,6,0.1290678683795914,0.10402574613201768
+81,Winter 2003,Smart Money,Paul Brest;,"2003: 1, 3",EXEMPLAR,4,Finance,2,Invest,Logic,1,2,1,-0.47538569123297375,-0.11023438100937266
+82,Summer 2003,Strategic Alliances,James Austin;,"2003: 1, 2",EXEMPLAR,1,Finance,2,Invest,Reporting,0,0,0,0.045252050683110175,-0.45560404705623914
+83,Summer 2017,The Chinese Collectivist Model of Charity,Christopher Marquis; Qi Li; Kunyuan Qiao;,"2017: 15, 3",EXEMPLAR,1,Finance,2,Invest,Interviews,,,3,-0.023031466419594665,0.09156379823963647
+84,Summer 2008,The Equity Capital Gap,Clara Miller;,"2008: 6, 3",,4,Finance,2,Invest,Logic,0,0,0,-0.19638148907901662,-0.4663157596857397
+85,Winter 2018,The Investment Gap That Threatens the Planet,Scott P. Burger; Fiona Murray; Sarah Kearney; and Liquian Ma;,"2018: 16,1",,1,Finance,2,Invest,Reporting,,,8,0.22703464358792716,0.3405234604468051
+86,Fall 2007,The Power of Strategic Mission Investing,Mark R Kramer; Sarah E Cooch;,"2007: 5, 4",EXEMPLAR,3,Finance,2,Invest,Case Study,0,0,8,-0.5688913942149791,0.05915451169616165
+87,Summer 2005,The Ratings Game,Stephanie Lowell; Brian Trelstad; Bill Meehan;,"2005: 3, 2",EXEMPLAR,3,Finance,2,Invest,Case Study,0,0,0,-0.18867866992060367,-0.4080819332002918
+88,Fall 2014,The Rise of Gender Capitalism,Sarah Kaplan; Jackie VanderBrug;,"2014: 12, 4",,1,Finance,2,Invest,Logic,1,3,8,0.3858278764141403,0.03301823661453273
+89,Winter 2012,The Rise of Social Capital Market Intermediaries,Bill Meehan; Kim Jonker;,"2012: 10, 1",EXEMPLAR,3,Finance,2,Invest,Reporting,0,0,0,-0.06421700187262591,-0.2221961748982785
+90,Winter 2017,Toward the Efficient Impact Frontier,Michael McCreless;,"2017: 15, 1",EXEMPLAR,2,Finance,2,Invest,Case Study,0,0,8,-0.6114612703659883,-0.1437429921263229
+91,Spring 2003,When Time Isn't Money,Michael Klausner; Jonathan Small;,"2003: 1, 1",,1,Finance,2,Invest,Logic,0,0,1,-0.4830330034356717,0.08685807688158488
+92,Summer 2003,Where Money Meets Mission,Jed Emerson;,"2003: 1, 2",EXEMPLAR,4,Finance,2,Invest,Reporting,2,4,1,-0.4717137048713533,0.04763379372389526
+93,Summer 2010,A Good Business for Poor People,Lisa Jones Christensen; David Lehr; Jason Fairbourne;,"2010: 8, 3",,1,Finance,2,Prospect,Case Study,0,0,6,0.4870594884135599,0.031690241253462356
+94,Summer 2007,A New Era for Business,Scott C Beardsley; Sheila Bonini; Lenny Mendonca; Jeremy Oppenheim;,"2007: 5, 3",,3,Finance,2,Prospect,Reporting,1,2,9,0.5840488192517793,-0.2321104235116614
+95,Fall 2006,A New Take on Tithing,Claude Rosenberg; Tim Stone;,"2006: 4, 3",EXEMPLAR,2,Finance,2,Prospect,Logic,0,0,8,0.16087586160082046,0.23877514527702917
+96,Spring 2011,A New Type of Hybrid,Allen R Bromberger;,"2011: 9, 2",EXEMPLAR,7,Finance,2,Prospect,Logic,0,0,0,-0.06219384605645388,-0.464270540793618
+97,Summer 2005,Block by Block,Ricardo Sandoval;,"2005: 3, 2",,6,Finance,2,Prospect,Reporting,0,0,6,0.5821077961759759,-0.15479994270220213
+98,Spring 2006,Changing the Game,Mark Kramer; John Kania;,"2006: 4, 1",,3,Finance,2,Prospect,Case Study,2,2,9,0.19133324847952407,-0.4477928092618154
+99,Winter 2012,Connecting Heart to Head,Ram Nidumolu; Kevin Kramer; Jochen Zeitz;,"2012: 10, 1",,3,Finance,2,Prospect,Case Study,2,2,6,0.42879357175099897,0.019506896459474052
+100,Spring 2006,Crisis Mentality,Keith Epstein;,"2006: 4, 1",,6,Finance,2,Prospect,Reporting,0,0,5,-0.3112235736398932,0.41287118525789496
+101,Summer 2005,Developing Native Capability,Stuart L Hart; Ted London;,"2005: 3, 2",,1,Finance,2,Prospect,Reporting,0,0,6,0.4468651444536896,-0.04069542092625536
+102,Spring 2015,Empowering Women at the Grassroots,Marissa Wesely; Dina Dublon;,"2015: 13, 2",,1,Finance,2,Prospect,Case Study,1,2,9,0.36953083461277764,-0.21080989791201044
+103,Fall 2011,Finding Your Funding Model,Peter Kim; Gail Perreault; William Foster;,"2011: 9, 4",,3,Finance,2,Prospect,Case Study,2,2,0,-0.40251886785967006,-0.46835568565129054
+104,Winter 2008,Getting Human Rights Right,Jenik Radon; Margo Tatgenhorst Drakos; Tarek Farouk Maassarani;,"2008: 6, 1",EXEMPLAR,7,Finance,2,Prospect,Reporting,2,2,9,0.4300965653360559,-0.33928291993335213
+105,Winter 2012,Giving 2.0: Getting Together to Give,Laura Arrillaga-Andreessen;,"2012: 10, 1",EXEMPLAR,4,Finance,2,Prospect,Reporting,0,0,0,-0.19256029004799818,-0.23254424611941904
+106,Summer 2012,In Search of the Hybrid Ideal,Julie Battilana; Matthew Lee; John Walker; Cheryl Dorsey;,"2012: 10, 3",EXEMPLAR,1,Finance,2,Prospect,Logic,2,2,0,-0.008340249007117813,-0.2720266152728745
+107,Winter 2014,Inside the Buy-One Give-One Model,Christopher Marquis; Andrew Park;,"2014: 12, 1",EXEMPLAR,1,Finance,2,Prospect,Reporting,2,1,6,0.6129386573259373,-0.01809534040534732
+108,Spring 2016,New Approaches to Ed-Tech Funding,Julie Petersen; Shauntel Poulson;,"2016: 14, 2",,3,Finance,2,Prospect,Case Study,0,0,1,-0.3677276235859439,0.15930549665263097
+109,Spring 2012,Private Schools for the Poor,Josh Kwan;,"2012: 10, 2",,4,Finance,2,Prospect,Reporting,0,0,7,-0.22022523826317048,0.36832962427321153
+110,Fall 2009,Public-Private Alliances Transform Aid,Andrew S Natsios;,"2009: 7, 4",,1,Finance,2,Prospect,Case Study,1,2,3,0.2963734488038588,-0.14393190679748605
+111,Fall 2011,Sourcing Locally for Impact,Ethan B Kapstein; René Kim;,"2011: 9, 4",,1,Finance,2,Prospect,Case Study,0,0,9,0.43886811561466793,-0.2218589580985427
+112,Spring 2009,Ten Nonprofit Funding Models,William Landes Foster; Peter Kim; Barbara Christiansen;,"2009: 7, 2",,3,Finance,2,Prospect,Comparative case study,0,0,3,-0.021526262873751496,0.18857029870705344
+113,Winter 2016,The Emergence of Subversive Charities in China,Christopher Marquis; Yanhua Zhou; Zoe Yang;,"2016: 14, 1",EXEMPLAR,1,Finance,2,Prospect,Interviews,0,0,3,0.44835970134684255,0.36705103102117737
+114,Spring 2008,The Funding Gap,Michael Chertok; Jeff Hamaoui: Eliot Jamison;,"2008: 6, 2",EXEMPLAR ,4,Finance,2,Prospect,Reporting,0,0,8,-0.3140762687664169,-0.19779945477807231
+115,Summer 2013,The Growth of European Venture Philanthropy,Lenora Buckland; Lisa Hehenberger; Michael Hay;,"2013: 11, 3",,3,Finance,2,Prospect,Reporting,0,0,1,-0.22527145316080785,0.028677586737325275
+116,Summer 2009,The Hidden Costs of Cause Marketing,Angela M Eikenberry;,"2009: 7, 3",EXEMPLAR,1,Finance,2,Prospect,Theory,0,0,6,0.5274120467148193,-0.03837115593282625
+117,Fall 2005,The Myth of CSR,Deborah Doane;,"2005: 3, 3",EXEMPLAR,3,Finance,2,Invest,Reporting,0,0,9,0.5019056799356071,-0.311162826812331
+118,Spring 2018,The Next Phase of Business Sustainability,Andrew J. Hoffman;,"2018: 16,2",,1,Finance,2,Prospect,Reporting,,,6,0.431974816956712,-0.07615150631465531
+119,Fall 2006,The Other CSR,Timothy M Devinney; Patrice Auger; Giana Eckhardt; Thomas Birtchnell;,"2006: 4, 3",EXEMPLAR,1,Finance,2,Prospect,Logic,2,3,6,0.6470819396973362,0.1609050641568479
+120,Winter 2014,The Paradox of Fair Trade,Manel Modelo;,"2014: 12, 1",,2,Finance,2,Prospect,Logic,0,0,6,0.4666372184331599,0.13863612741179934
+121,Winter 2013,The Permanent Disruption of Social Media,Julie Dixon; Denie Keyes;,"2013: 11, 1",EXEMPLAR,1,Finance,2,Prospect,Interviews,0,0,2,0.32358357057598636,0.2775000514672556
+122,Winter 2004,The Pitfalls of Profits,Burton A Weisbrod;,"2004: 2, 3",,1,Finance,2,Prospect,Case Study,0,0,0,-0.2027286935759454,-0.5431404530044479
+123,Spring 2012,The Social Enterprise Emerges in China,Meng Zhao;,"2012: 10, 2",,1,Finance,2,Prospect,Interviews,0,0,0,-0.19096915944904336,-0.2946835065582498
+124,Fall 2012,The Truth About Ben and Jerry's,Antony Page; Robert A Katz;,"2012: 10, 4",,1,Finance,2,Prospect,Logic,0,0,9,0.5340537281707599,-0.43820837948762775
+125,Summer 2010,Thinking Straight About Sustainability,Marc J Epstein;,"2010: 8, 3",EXEMPLAR,1,Finance,2,Prospect,Interviews,0,0,9,0.4808495230155312,-0.2649258983170562
+126,Summer 2003,Debunking Charitable Choice ,Mark Chaves;,"2003: 1, 2",,1,Advocacy,4,Ratify,Reporting,0,0,3,-0.39110751986140246,-0.268939113855439
+127,Summer 2014,Big Data for Social Innovation,Kevin C Desouza; Kendra L Smith;,"2014: 12, 3",EXEMPLAR,1,Design,3,Collect,Logic,2,3,3,0.014698158678287367,0.13982794181286626
+128,Summer 2013,Bottom-Up Solutions to Mitigating Climate Change,Jessica Seddon; Veerabhadran Ramanathan;,"2013: 11, 3",,2,Design,3,Collect,Case Study,0,0,4,-0.01900587489043262,0.442780493812286
+129,Winter 2015,Bridge-Building for Social Transformation,L. David Brown;,"2015: 13, 1",,3,Explore,1,Map,Case study,2,3,4,-0.1320720997466636,0.29089266200810476
+130,Spring 2015,Co-Creation in Government,Francis Gouillart; Tina Hallett;,"2015: 13, 2",EXEMPLAR,3,Design,3,Collect,Case Study,2,3,3,0.21709594962952694,-0.04083226684612485
+131,Fall 2006,Drowning in Data,Alana Conner Snibbe;,"2006: 4, 3",EXEMPLAR,6,Explore,1,Map,Reporting,1,3,0,-0.22187992603197515,-0.20584167191918348
+132,Fall 2012,Innovation Is Not the Holy Grail,Christian Seelos; Johanna Mair;,"2012: 10, 4",EXEMPLAR,1,Explore,1,Call,Reporting,1,4,4,0.15972569945989112,0.6768959410394594
+133,Winter 2013,Learning from Coca-Cola,Prashant Yadav; Orla Stapleton; Luk Van Wassenhove;,"2013: 11, 1",EXEMPLAR,1,Design,3,Combine,Case study,0,0,5,-0.11653970944464491,0.6237600806271351
+134,Spring 2013,Listening to Those Who Matter Most the Beneficiaries,Fay Twersky; Phil Buchanan; Valerie Threlfall;,"2013: 11, 2",EXEMPLAR,4,Design,3,Collect,Case Study,0,0,1,-0.33552751340478704,-0.08268219136711911
+135,Summer 2009,Platforms for Collaboration,Satish Nambisan;,"2009: 7, 3",EXEMPLAR,1,Design,3,Collect,Case Study,1,2,4,0.12865388020129703,0.4870439277417479
+136,Fall 2008,Rediscovering Social Innovation,James A Phills Jr; Kriss Deiglmeier; Dale T Miller;,"2008: 6, 4",EXEMPLAR,1,Explore,1,Call,Reporting,0,0,4,0.10713756372514449,0.48727970026274736
+137,Winter 2014,Social Innovation from the Inside Out,Warren Nilsson; Tana Paddock;,"2014: 12, 1",EXEMPLAR,1,Design,3,Collect,Logic,2,3,4,0.14512350972134405,0.654665561259314
+138,Spring 2010,The Case for Stakeholder Engagement,Kathleen P Enright; Courtney Bourns;,"2010: 8, 2",,2,Design,3,Collect,Case Study,2,2,1,-0.5621647934696732,0.0198222116823838
+139,Summer 2016,The Future of Prize Philanthropy,Reyna Reed Wasson;,"2016: 14, 3",EXEMPLAR,3,Design,3,Collect,Reporting,0,0,1,-0.12880682538774466,0.11011520551786677
+140,Spring 2015,Using Economic Forces to Conserve Nature,John Reid; Aaron Bruner; Alfonso Malky;,"2015: 13, 2",EXEMPLAR,2,Design,3,Collect,Logic,0,0,3,0.5676232608703061,0.1863525577038771
+141,Spring 2013,China's Quest to Adopt Electric Vehicles,Christopher Marquis; Hongyu Zhang; Lixuan Zhou;,"2013: 11, 2",,1,Design,3,Combine,Case Study,0,0,3,0.3968145861024931,0.33955696011997943
+142,Summer 2017,Creating Breakout Innovation,Joanna Levitt Cea; Jess Rimington,"2017: 15, 3",,1,Design,3,Combine,Logic,1,2,4,0.11589990988375047,0.615654211735806
+143,Summer 2006,Creating Social Change: 10 Innovative Technologies,John Voelcker;,"2006: 4, 2",EXEMPLAR,6,Design,3,Combine,Reporting,0,0,3,0.21178379826100066,0.1072084740619207
+144,Winter 2008,Cultivate Your Ecosystem,Paul N Bloom; J Gregory Dees;,"2008: 6, 1",EXEMPLAR,1,Advocacy,4,Frame,Case Study,0,0,6,0.330471161523617,0.020175335590798645
+145,Winter 2018,Design Thinking for Higher Education,"Clark Gilbert, Michael Crow; Derrick Anderson;","2018: 16,1",,3,Design,3,Combine,Reporting,,,7,0.026719901051534163,0.49017012725964443
+146,Winter 2010,Design Thinking for Social Innovation,Tim Brown; Jocelyn Wyatt;,"2010: 8, 1",EXEMPLAR,3,Design,3,Combine,Logic,2,4,4,0.17993535709984249,0.4572631599219876
+147,Winter 2016,Leading Change Through Adaptive Design,Maya Bernstein; Marty Linsky;,"2016: 14, 1",EXEMPLAR,3,Design,3,Combine,Case Study,0,0,4,0.03137626901367181,0.4237885508861152
+148,Summer 2012,Realigning Health with Care,Rebecca Onie; Paul Farmer; Heidi Behforouz;,"2012: 10, 3",EXEMPLAR,1,Design,3,Combine,Logic,0,0,5,-0.24115534200607075,0.6295111653774609
+149,Spring 2017,The New Science of Designing for Humans,Piyush Tantia,"2017: 15, 2",EXEMPLAR,5,Design,3,Combine,Logic,1,2,4,0.11992450360472023,0.43288812002345883
+150,Spring 2004,The Path of Change,Jerry Porras; Tom Vander Ark;,"2004: 1, 4",,1,Design,3,Combine,Interviews,0,0,2,0.29482272415012045,0.409884785840001
+151,Summer 2015,The Promise of Lean Experimentation,Peter Murray; Steve Ma;,"2015: 13, 3",EXEMPLAR,3,Design,3,Combine,Case Study,2,4,0,0.019890607053550672,-0.12407543758362861
+152,Fall 2016,When Innovation Goes Wrong,Christian Seelos; Johanna Mair;,"2016: 14, 4",EXEMPLAR,1,Design,3,Combine,Logic,1,1,4,0.13409450710276485,0.6703919448761145
+153,Spring 2013,Assessing Advocacy,Ivan Barkhorn; Nathan Huttner; Jason Blau;,"2013: 11, 2",,3,Advocacy,4,Frame,Case Study,2,3,8,-0.42172200122404346,0.07003586885039655
+154,Spring 2004,Best of Breed,Philip Kotler; Nancy Lee;,"2004: 1, 4",EXEMPLAR,1,Advocacy,4,Frame,Case study,0,0,6,0.5256439691179441,-0.161043814963916
+155,Fall 2012,Climate Science as Culture War,Andrew J Hoffman;,"2012: 10, 4",EXEMPLAR,1,Advocacy,4,Frame,Logic,2,2,2,0.2663315609307412,0.32661272776965833
+156,Fall 2008,Cultivating the Green Consumer,Sheila Bonini; Jeremy Oppenheim;,"2008: 6, 4",,3,Finance,2,Prospect,Interviews,2,1,6,0.5706906570258025,0.08072487510289723
+157,Spring 2017,Data Disrupts Corruption,Carlos Santos; Ben Roseth;,"2017: 15, 2",EXEMPLAR,7,Advocacy,4,Frame,Logic,1,2,3,0.4368615196246775,0.2864845441866614
+158,Winter 2014,Lessons in Forging Global Change,Karliner; Cohen; Orris;,"2014: 12, 1",,2,Advocacy,4,Frame,Reporting,2,4,5,-0.24933802948036182,0.6275037121937987
+159,Winter 2003,Loud and Clear,Chip Heath;,"2003: 1, 3",EXEMPLAR,1,Advocacy,4,Frame,Reporting,2,2,0,-0.19173730768409294,-0.36095752316839375
+160,Summer 2004,Making Change,Mayer N Zald;,"2004: 2, 1",,1,Advocacy,4,Frame,Case Study,0,0,1,-0.22592881657262864,-0.058209027718780566
+161,Winter 2007,Networks for Good Works,Joel M Podolny;,"2007: 5, 1",EXEMPLAR,1,Advocacy,4,Frame,Case study,0,0,2,0.05352678394014655,0.2265805969405843
+162,Winter 2007,One Buyer at a Time,James T Riordan;,"2007: 5, 1",,5,Finance,2,Prospect,Case study,0,0,6,0.5588847428015089,-0.05298325015339161
+163,Winter 2017,Selling Social Change,Taz Hussein; Matt Plummer;,"2017: 15, 1",,3,Advocacy,4,Frame,Theory,2,1,0,-0.07207874427448425,-0.3662491517777653
+164,Spring 2009,Shades of Green,Andrew J Hoffman;,"2009: 7, 2",,1,Advocacy,4,Frame,Interviews,1,2,9,0.4476949933718338,-0.48310400293953165
+165,Spring 2017,Stop Raising Awareness Already,Ann Christiano; Annie Neimand,"2017: 15, 2",,1,Advocacy,4,Frame,Logic,2,2,5,0.051874515824351944,0.297934022626478
+166,Spring 2018,The Civic Science Imperative,Elizabeth Good Christopherson; Bietram A. Schuefele; Brooke Smith;,"2018: 16,2",,4,Advocacy,4,Frame,Logic,1,2,2,-0.25392542254207096,0.011418717858611567
+167,Winter 2011,The Dragonfly Effect,Jennifer Aaker; Andy Smith;,"2011: 9, 1",EXEMPLAR,1,Advocacy,4,Frame,Logic,2,1,6,0.030647990153753517,0.05233671512625069
+168,Winter 2007,The Power of Brands,Adrian Sargeant; John B Ford;,"2007: 5, 1",,1,Advocacy,4,Frame,Reporting,2,2,0,-0.212977986209807,-0.5344364703620358
+169,Summer 2003,The Power of Persuasion,Robert B Cialdini;,"2003: 1, 2",EXEMPLAR,1,Advocacy,4,Frame,Interviews,2,3,0,-0.14666074307389051,-0.28925876316734334
+170,Spring 2005,War of Ideas,Andrew Rich;,"2005: 3, 1",,1,Advocacy,4,Ratify,Interviews,0,0,1,-0.6616792829862718,0.10135646058798611
+171,Fall 2016,A New Model for Citizen Engagement,Myung Lee; Peter Levine;,"2016: 14, 4",EXEMPLAR,2,Advocacy,4,Ratify,Logic,2,2,3,-0.00027297982842682005,0.24102616729985368
+172,Summer 2011,Achieving Sustainability Through Integrated Reporting,Robert G Eccles; Daniela Saltzman;,"2011: 9, 3",,1,Advocacy,4,Ratify,Case study,0,0,9,0.5533977402947936,-0.24352143222742595
+173,Fall 2004,An Accidental Good,Doug Guthrie;,"2004: 2, 2",,1,Advocacy,4,Ratify,Case study,0,0,9,0.3625663226249156,-0.394890905462735
+174,Winter 2010,An Ounce of Advocacy,Alyssa Battistoni;,"2010: 8, 1",EXEMPLAR,3,Advocacy,4,Ratify,Case Study,0,0,3,0.20286189264716423,-0.220972352260161
+175,Winter 2004,Are You Giving Away the Store?,Margaret A Neale;,"2004: 2, 3",,1,Advocacy,4,Ratify,Logic,2,2,2,0.2984072631482666,0.1482808720883005
+176,Spring 2016,Community Engagement Matters,Melody Barnes; Paul Schmitz;,"2016: 14, 2",EXEMPLAR,2,Advocacy,4,Ratify,Case Study,1,4,7,-0.3925728059653648,0.29687872478463817
+177,Fall 2007,Harnessing Purity and Pragmatism,Alana Conner; Keith Epstein;,"2007: 5, 4",,6,Advocacy,4,Ratify,Reporting,0,0,0,-0.026754504272004133,-0.34914267779172925
+178,Fall 2005,Imagining a Democracy,Mark McNamara;,"2005: 3, 3",EXEMPLAR,6,Advocacy,4,Ratify,Reporting,0,0,3,-0.2114484760918226,0.2972454505427174
+179,Spring 2007,Learn to Love Lobbying,Fraser Nelson; David W Brady; Alana Conner Snibbe;,"2007: 5, 2",EXEMPLAR,7,Advocacy,4,Ratify,Interviews,1,1,0,-0.15899110329633656,-0.4929129805727826
+180,Winter 2009,Lobbying for Good,Kyle Peterson; Marc Pfitzer;,"2009: 7, 1",EXEMPLAR,3,Advocacy,4,Ratify,Case Study,0,0,9,0.488815854993402,-0.2546301835124442
+181,Winter 2011,Microfinance Needs Regulation,Aneel Karnani;,"2011: 9, 1",EXEMPLAR,1,Advocacy,4,Ratify,Logic,0,0,3,0.41679398494148795,0.2069698432062909
+182,Summer 2008,Microloan Sharks,Jonathan C Lewis;,"2008: 6, 3",EXEMPLAR,2,Advocacy,4,Ratify,Reporting,0,0,8,0.25658884909352364,0.19787125589948273
+183,Summer 2014,Philanthropy in a Time of Polarization,Steven Teles; Heather Hurlburt; Mark Schmitt;,"2014: 12, 3",EXEMPLAR,1,Advocacy,4,Ratify,Reporting,2,1,1,-0.4887928341347843,0.1199341551974765
+184,Winter 2017,The Curb-Cut Effect,Angla Glover Blackwell;,"2017: 15, 1",EXEMPLAR,2,Advocacy,4,Ratify,Reporting,0,0,3,0.1005581758989916,0.30719704701470074
+185,Summer 2011,The Elusive Craft of Evaluating Advocacy,Steven Teles; Mark Schmitt;,"2011: 9, 3",,1,Advocacy,4,Ratify,Reporting,0,0,1,-0.3033134954202491,0.2223626873549338
+186,Spring 2010,The Ingredients of Growth,David H Brady; Michael Spence;,"2010: 8, 2",,1,Advocacy,4,Ratify,Case Study,0,0,3,0.41355957214589634,0.27198300061629505
+187,Winter 2008,The Responsibility Paradox,Gerald F Davis; Marina VN Whitman; Mayer Zald;,"2008: 6, 1",,1,Finance,2,Prospect,Reporting,0,0,9,0.5133643923600579,-0.3824088723762266
+188,Summer 2015,Time for the Plural Sector,Henry Mintzberg;,"2015: 13, 3",EXEMPLAR,1,Advocacy,4,Ratify,Logic,0,0,3,0.4623995590406794,0.5237573047457823
+189,Fall 2010,What Civil Society Needs,Bruce Sievers;,"2010: 8, 4",EXEMPLAR,4,Advocacy,4,Ratify,Reporting,0,0,1,-0.3600334771723026,0.08314315333977414
+190,Summer 2008,Achieving Breakthrough Performance,Mark Gottfredson; Steve Schaubert; Elisabeth Babcock;,"2008: 6, 3",EXEMPLAR,3,Deliver,5,Scale,Case Study,1,2,0,-0.016225292375729682,-0.3166946874873769
+191,Winter 2013,Closing the Pioneer Gap,Sasha Dichter; Robert Katz; Harvey Koh; Ashish Karamchandani;,"2013: 11, 1",EXEMPLAR,2,Deliver,5,Scale,Interviews,1,1,8,0.3577778834899545,-0.10669993388450062
+192,Fall 2007,Creating High-Impact Nonprofits,Heather McLeod Grant; Leslie R Crutchfield;,"2007: 5, 4",EXEMPLAR,1,Deliver,5,Disrupt,Logic,1,3,0,-0.19242759998679843,-0.456591008238166
+193,Fall 2008,Dialing for Development,David Lehr;,"2008: 6, 4",,2,Deliver,5,Scale,Reporting,0,0,6,0.10078387999282822,-0.017946901599070073
+194,Winter 2011,Disseminating Orphan Innovations,Susan H Evans; Peter Clarke;,"2011: 9, 1",EXEMPLAR,1,Deliver,5,Disrupt,Case Study,2,3,4,0.09338397211205639,0.6600953177691489
+195,Spring 2017,Embedding Education in Everyday Life,Guy Stuart; Jorrit de Jong; Linda Kaboolian,"2017: 15, 2",,1,Deliver,5,Scale,Reporting,1,2,7,-0.47678461101049446,0.5620572973485928
+196,Spring 2018,Four Strategies for Large Systems Change,Steve Waddell;,"2018: 16,2",EXEMPLAR,1,Deliver,5,Scale,Logic,1,1,2,0.3176438942473701,0.18908926908221751
+197,Fall 2010,Freeing the Social Entrepreneur,Chantal Laurie Below; Kimberly Dasher Tripp;,"2010: 8, 4",EXEMPLAR,2,Deliver,5,Scale,Interviews,2,2,1,-0.1811092884387165,-0.09135436389597369
+198,Summer 2007,Go Ahead--Pop the Question,Kevin T Kirkpatrick;,"2007: 5, 3",EXEMPLAR,3,Deliver,5,Scale,Reporting,0,0,0,-0.24010526267545476,-0.5110879562595014
+199,Spring 2003,Going to Scale,Jeffrey L Bradach;,"2003: 1, 1",EXEMPLAR,3,Deliver,5,Scale,Case Study,1,1,2,0.03953748638436267,-0.2661451990763601
+200,Winter 2018,How Field Catalysts Galvanize Social Change,Taz Hussein; Matt Plummer; Bill Breen;,"2018: 16,1",,3,Deliver,5,Scale,Case Study,,,5,-0.15313822019346693,0.08754978912353911
+201,Spring 2007,How Nonprofits Get Really Big,William Foster; Gail Fine;,"2007: 5, 2",EXEMPLAR,3,Deliver,5,Scale,Case Study,2,2,0,-0.013903815633755735,-0.399774787768285
+202,Summer 2011,Local Empowerment Through Rapid Results,Nadim Matta; Peter Morgan;,"2011: 9, 3",,3,Deliver,5,Scale,Case study,0,0,5,-0.17977007370081538,0.555560575605016
+203,Spring 2010,Merging Wisely,David La Piana;,"2010: 8, 2",EXEMPLAR,3,Deliver,5,Scale,Logic,0,0,0,-0.16658214188767279,-0.48253629423408345
+204,Fall 2017,Scaling Science,John Gargaini; Robert McClean;,"2017: 15, 4",,3,Deliver,5,Scale,Logic,,,4,0.0706164386566863,0.6194278757325039
+205,Spring 2004,Scaling Social Impact,Gregory Dees; Beth Battle Anderson;,"2004: 1, 4",EXEMPLAR,1,Deliver,5,Scale,Case Study,2,2,4,0.06332905262117385,0.5637708490125307
+206,Winter 2015,The Hidden Pitfalls of Inclusive Innovation,Raghav Narsalay; Leandro Pongeluppe; David Light;,"2015: 13, 1",,3,Explore,1,Map,Case Study,1,2,9,0.4903434081819774,-0.11407143093549996
+207,Spring 2008,The Networked Nonprofit,Jane Wei-Skillern; Sonia Marciano;,"2008: 6, 2",EXEMPLAR,1,Deliver,5,Scale,Logic,0,0,0,-0.17502505325719972,-0.4175701818798037
+208,Spring 2014,The Re-Emerging Art of Funding Innovation,Gabriel Kasper; Justin Marcoux;,"2014: 12, 2",EXEMPLAR,3,Deliver,5,Scale,Case Study,1,4,4,-0.030244946160551484,0.6781694715374769
+209,Fall 2013,The Secret of Scale,Peter Murray;,"2013: 11, 4",EXEMPLAR,3,Deliver,5,Scale,Case Study,1,2,5,-0.06836786012398158,0.32849111741719367
+210,Summer 2007,Uniting for Survival,Don Haider;,"2007: 5, 3",,1,Deliver,5,Scale,Case Study,0,0,0,-0.328474743702908,-0.33595894227927103
+211,Winter 2015,What's Your Endgame?,Alice Gugelev; Andrew Stern;,"2015: 13, 1",,3,Deliver,5,Scale,Reporting,2,2,0,-0.25751802097086535,-0.46948347674980245
+212,Spring 2014,Why Nonprofit Mergers Continue to Lag,Katie Smith Milway; Maria Orozco; Cristina Botero;,"2014: 12, 2",,3,Deliver,5,Scale,Logic,1,1,0,-0.21521311884314767,-0.4496359103923268
+213,Summer 2013,Why Nonprofits Should Operate Commuter Trains,Rohit T Aggarwala;,"2013: 11, 3",,4,Deliver,5,Scale,Case Study,0,0,0,-0.17720385988406878,-0.4138768665460178
+214,Summer 2010,Working Wikily,Diana Scearce; Gabriel Kasper; Heather McLeod Grant;,"2010: 8, 3",EXEMPLAR,3,Design,3,Collect,Logic,2,3,1,-0.39774732559106335,-0.03544851487724391
+215,Summer 2007,Before You Say I Do,Denise L Gammal;,"2007: 5, 3",,1,Deliver,5,Scale,Interviews,0,0,0,-0.2140941803476923,-0.41539077942304004
+216,Summer 2017,A Revamped ACLU Takes on Today's Fights,Anthony Romero; Geri Rozanski;,"2017: 15, 3",EXEMPLAR,2,Deliver,5,Disrupt,Case Study,1,2,8,-0.37167636380604524,-0.004202595727360748
+217,Winter 2010,Endowment for a Rainy Day,Burton A Weisbrod; Evelyn D Asch;,"2010: 8, 1",EXEMPLAR,1,Deliver,5,Disrupt,Case Study,0,0,3,0.3305533035459951,0.4168913263006577
+218,Fall 2016,Engaging Employees to Create a Sustainable Business,Paul Polman; CB Bhattacharya;,"2016: 14, 4",,7,Deliver,5,Disrupt,Reporting,2,4,9,0.5740337114385697,-0.26296684523193026
+219,Winter 2012,Five Ways to Navigate the Fiscal Crisis,Daniel Stid; Willa Seldon;,"2012: 10, 1",,3,Deliver,5,Disrupt,Interviews,1,3,0,-0.10452842247182967,-0.46012060912490815
+220,Summer 2012,Local Forces for Good,Leslie R Crutchfield; Heather McLeod-Grant;,"2012: 10, 3",EXEMPLAR,3,Deliver,5,Disrupt,Case study,1,2,0,-0.21799181985653124,-0.5104801984255921
+221,Spring 2018,Making Founder Successions Work,Jari Tuomala; Donald Yeh; Katie Smith Milway;,"2018: 16,2",EXEMPLAR,3,Deliver,5,Disrupt,Interviews,2,2,0,-0.11821624128681868,-0.22779555645324906
+222,Spring 2008,More Bang for the Buck,Alex Neuhoff; Robert Searle;,"2008: 6, 2",,3,Deliver,5,Disrupt,Case study,2,2,0,0.07534607551448431,-0.5485801402850753
+223,Spring 2014,Programs Aren't Everything,Lehn M Benjamin; David C Campbell;,"2014: 12, 2",,1,Deliver,5,Disrupt,Case Study,1,2,0,-0.24025013829060884,-0.5513708598540165
+224,Fall 2009,Recreating Fine Arts Institutions,Diane E Ragsdale;,"2009: 7, 4",EXEMPLAR,4,Deliver,5,Disrupt,Case Study,2,3,6,0.2608297706801603,0.08192431367740924
+225,Winter 2005,Reversing Burnout,Christina Maslach; Michael P Leiter;,"2005: 3, 4",EXEMPLAR,1,Deliver,5,Disrupt,Interviews,0,0,0,-0.1132124967895271,-0.3268438057207333
+226,Fall 2013,The Future of Health Care Access,John A MacDonald; Anita M McGahan; Will Mitchell;,"2013: 11, 4",EXEMPLAR,1,Design,3,Collect,Case Study,0,0,5,-0.2390275455238934,0.6022608344630597
+227,Fall 2014,The Next Stage of Financial Inclusion,Dean Karlan;,"2014: 12, 4",EXEMPLAR,1,Deliver,5,Disrupt,Case Study,0,0,6,0.1153392070487898,0.009705533203234099
+228,Fall 2009,The Nonprofit Starvation Cycle,Ann Goggins Gregory; Don Howard;,"2009: 7, 4",EXEMPLAR,3,Deliver,5,Disrupt,Logic,0,0,3,0.21788338544019012,0.3818789270229211
+229,Spring 2012,The Role of Brand in the Nonprofit Sector,Nathalie Kylander; Christopher Stone;,"2012: 10, 2",EXEMPLAR,1,Deliver,5,Disrupt,Interviews,2,3,0,-0.19122244383511466,-0.44623998141121957
+230,Fall 2004,The Sound of No Music,James A Phills Jr;,"2004: 2, 2",,1,Explore,1,Call,Case Study,2,2,0,-0.06924712544272436,-0.4040152800606847
+231,Winter 2013,Using National Networks to Tackle Chronic Disease,Taz Hussein; Michaela Kerrissey;,"2013: 11, 1",,3,Deliver,5,Disrupt,Interviews,2,3,5,-0.35094134548824446,0.4267037317976446
+232,Fall 2004,Zeroing in on Impact,Susan Colby; Nan Stone; Paul Carttar;,"2004: 2, 2",,3,Deliver,5,Disrupt,Case Study,0,0,0,-0.38372745837169964,-0.34550608881327816
