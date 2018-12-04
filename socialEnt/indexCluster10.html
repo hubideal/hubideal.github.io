@@ -17,28 +17,29 @@
 	font-size: 11px;
 }
 .clusterFive {
-  fill: "#e6194b"
+  fill: "#f032e6";
 }
 .clusterEight {
   fill: "#ffe119"
 }
 .clusterTwo {
-  fill: "#0082c8"
+  fill: "#e6194b";
 }
 .clusterThree {
-  fill: "#f58231"
+  fill: "#d2f53c";
 }
 .clusterOne {
-  fill: "#911eb4"
+    fill: "#f58231"
 }
 .clusterSix {
-  fill: "#46f0f0"
+    fill: "#0082c8";
 }
 .clusterNine {
-  fill: "#f032e6"
+
+  fill: "#e6194b";
 }
 .clusterFour {
-  fill: "#d2f53c"
+    fill: "#46f0f0";
 }
 .clusterZero {
   fill: "#fabebe"
@@ -156,7 +157,7 @@ var color = d3.scaleOrdinal(["rgb(255, 225, 25)","rgb(60, 240, 240)","rgb(240, 5
       });
         
 
-  var squareZero = svgContainer.selectAll('g')
+  var squareSeven = svgContainer.selectAll('g')
     .append('rect')
       .attr('x', 10)
       .attr('y', 75)
@@ -173,7 +174,7 @@ var color = d3.scaleOrdinal(["rgb(255, 225, 25)","rgb(60, 240, 240)","rgb(240, 5
         if(toggleSelected == true) {
                d3.selectAll('circle')
           .attr('opacity', '.2');
-        d3.selectAll(".clusterZero")
+        d3.selectAll(".clusterSeven")
           .transition()
           .duration(500)
           .attr('opacity','1')
@@ -192,7 +193,7 @@ var color = d3.scaleOrdinal(["rgb(255, 225, 25)","rgb(60, 240, 240)","rgb(240, 5
            }
       });
       
-       var squareOne = svgContainer.selectAll('g')
+       var squareThree = svgContainer.selectAll('g')
     .append('rect')
       .attr('x', 10)
       .attr('y', 140)
@@ -209,7 +210,7 @@ var color = d3.scaleOrdinal(["rgb(255, 225, 25)","rgb(60, 240, 240)","rgb(240, 5
         if(toggleSelected == true) {
                d3.selectAll('circle')
           .attr('opacity', '.2');
-        d3.selectAll(".clusterOne")
+        d3.selectAll(".clusterThree")
           .transition()
           .duration(500)
           .attr('opacity','1')
@@ -228,7 +229,7 @@ var color = d3.scaleOrdinal(["rgb(255, 225, 25)","rgb(60, 240, 240)","rgb(240, 5
            }
       });
       
-   var squareTwo = svgContainer.selectAll('g')
+   var squareFive = svgContainer.selectAll('g')
     .append('rect')
       .attr('x', 10)
       .attr('y', 205)
@@ -243,7 +244,7 @@ var color = d3.scaleOrdinal(["rgb(255, 225, 25)","rgb(60, 240, 240)","rgb(240, 5
         if(toggleSelected == true) {
                d3.selectAll('circle')
           .attr('opacity', '.2');
-        d3.selectAll(".clusterTwo")
+        d3.selectAll(".clusterFive")
           .transition()
           .duration(500)
           .attr('opacity','1')
@@ -262,7 +263,7 @@ var color = d3.scaleOrdinal(["rgb(255, 225, 25)","rgb(60, 240, 240)","rgb(240, 5
            }
       });
       
-  var squareFour = svgContainer.selectAll('g')
+  var squareSix = svgContainer.selectAll('g')
     .append('rect')
       .attr('x', 10)
       .attr('y', 270)
@@ -279,7 +280,7 @@ var color = d3.scaleOrdinal(["rgb(255, 225, 25)","rgb(60, 240, 240)","rgb(240, 5
         if(toggleSelected == true) {
                d3.selectAll('circle')
           .attr('opacity', '.2');
-        d3.selectAll(".clusterFour")
+        d3.selectAll(".clusterSix")
           .transition()
           .duration(500)
           .attr('opacity','1')
@@ -299,7 +300,7 @@ var color = d3.scaleOrdinal(["rgb(255, 225, 25)","rgb(60, 240, 240)","rgb(240, 5
       });
   
   
-  var squareSix = svgContainer.selectAll('g')
+  var squareTwo = svgContainer.selectAll('g')
     .append('rect')
       .attr('x', 10)
       .attr('y', 335)
@@ -316,7 +317,7 @@ var color = d3.scaleOrdinal(["rgb(255, 225, 25)","rgb(60, 240, 240)","rgb(240, 5
         if(toggleSelected == true) {
                d3.selectAll('circle')
           .attr('opacity', '.2');
-        d3.selectAll(".clusterSix")
+        d3.selectAll(".clusterTwo")
           .transition()
           .duration(500)
           .attr('opacity','1')
@@ -366,7 +367,7 @@ var color = d3.scaleOrdinal(["rgb(255, 225, 25)","rgb(60, 240, 240)","rgb(240, 5
   //         .attr('stroke-width',1);
   //     });
       
-      var squareSeven = svgContainer.selectAll('g')
+      var squareZero = svgContainer.selectAll('g')
     .append('rect')
       .attr('x', 10)
       .attr('y', 400)
@@ -382,7 +383,7 @@ var color = d3.scaleOrdinal(["rgb(255, 225, 25)","rgb(60, 240, 240)","rgb(240, 5
         if(toggleSelected == true) {
                d3.selectAll('circle')
           .attr('opacity', '.2');
-        d3.selectAll(".clusterSeven")
+        d3.selectAll(".clusterZero")
           .transition()
           .duration(500)
           .attr('opacity','1')
@@ -401,7 +402,7 @@ var color = d3.scaleOrdinal(["rgb(255, 225, 25)","rgb(60, 240, 240)","rgb(240, 5
            }
       });
       
-      var squareThree = svgContainer.selectAll('g')
+      var squareFour = svgContainer.selectAll('g')
     .append('rect')
       .attr('x', 10)
       .attr('y', 465)
@@ -417,7 +418,7 @@ var color = d3.scaleOrdinal(["rgb(255, 225, 25)","rgb(60, 240, 240)","rgb(240, 5
         if(toggleSelected == true) {
                d3.selectAll('circle')
           .attr('opacity', '.2');
-        d3.selectAll(".clusterThree")
+        d3.selectAll(".clusterFour")
           .transition()
           .duration(500)
           .attr('opacity','1')
@@ -437,7 +438,7 @@ var color = d3.scaleOrdinal(["rgb(255, 225, 25)","rgb(60, 240, 240)","rgb(240, 5
       });
       
       
-var squareEight = svgContainer.selectAll('g')
+var squareOne = svgContainer.selectAll('g')
     .append('rect')
       .attr('x', 10)
       .attr('y', 530)
@@ -454,7 +455,7 @@ var squareEight = svgContainer.selectAll('g')
         if(toggleSelected == true) {
                d3.selectAll('circle')
           .attr('opacity', '.2');
-        d3.selectAll(".clusterEight")
+        d3.selectAll(".clusterOne")
           .transition()
           .duration(500)
           .attr('opacity','1')
@@ -473,14 +474,7 @@ var squareEight = svgContainer.selectAll('g')
            }
       });
       
-squareEight.append("text")
-    .attr('x', 10)
-    .attr('y', 530)
-    .attr("dy", ".35em")
-    .attr("text-anchor", "middle")
-    .style('class', ".textCluster")
-    .attr("fill", "black")
-    .text("Cluster Eight");
+
   
     // g.append("text")
     // .attr("x", 10 + (w*.1)/2)
@@ -509,7 +503,7 @@ squareEight.append("text")
     //       .attr('stroke-width',1);
     //   });
       
-      var squareNine = svgContainer.selectAll('g')
+      var squareEight = svgContainer.selectAll('g')
     .append('rect')
       .attr('x', 10)
       .attr('y', 595)
@@ -526,7 +520,7 @@ squareEight.append("text")
         if(toggleSelected == true) {
                d3.selectAll('circle')
           .attr('opacity', '.2');
-        d3.selectAll(".clusterNine")
+        d3.selectAll(".clusterEight")
           .transition()
           .duration(500)
           .attr('opacity','1')
