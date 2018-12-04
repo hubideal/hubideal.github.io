@@ -17,28 +17,29 @@
 	font-size: 11px;
 }
 .clusterFive {
-  fill: "#e6194b"
+  fill: "#f032e6";
 }
 .clusterEight {
   fill: "#ffe119"
 }
 .clusterTwo {
-  fill: "#0082c8"
+  fill: "#e6194b";
 }
 .clusterThree {
-  fill: "#f58231"
+  fill: "#d2f53c";
 }
 .clusterOne {
-  fill: "#911eb4"
+    fill: "#f58231"
 }
 .clusterSix {
-  fill: "#46f0f0"
+    fill: "#0082c8";
 }
 .clusterNine {
-  fill: "#f032e6"
+
+  fill: "#e6194b";
 }
 .clusterFour {
-  fill: "#d2f53c"
+    fill: "#46f0f0";
 }
 .clusterZero {
   fill: "#fabebe"
@@ -119,10 +120,10 @@ var color = d3.scaleOrdinal(["rgb(255, 225, 25)","rgb(60, 240, 240)","rgb(240, 5
   var toggleSelected = true
   var g = svgContainer.append("g")
   
-  var squareThree = svgContainer.selectAll('g')
+  var squareNine = svgContainer.selectAll('g')
     .append('rect')
       .attr('x', 10)
-      .attr('y', -30)
+      .attr('y', 10)
       .attr('width', w*.1)
       .attr('height', h*.05)
       .attr('stroke','black')
@@ -136,7 +137,7 @@ var color = d3.scaleOrdinal(["rgb(255, 225, 25)","rgb(60, 240, 240)","rgb(240, 5
         if(toggleSelected == true) {
                d3.selectAll('circle')
           .attr('opacity', '.2');
-        d3.selectAll(".clusterThree")
+        d3.selectAll(".clusterNine")
           .transition()
           .duration(500)
           .attr('opacity','1')
@@ -156,10 +157,10 @@ var color = d3.scaleOrdinal(["rgb(255, 225, 25)","rgb(60, 240, 240)","rgb(240, 5
       });
         
 
-  var squareEight = svgContainer.selectAll('g')
+  var squareSeven = svgContainer.selectAll('g')
     .append('rect')
       .attr('x', 10)
-      .attr('y', 35)
+      .attr('y', 75)
       .attr('width', w*.1)
       .attr('height', h*.05)
       .attr('stroke','black')
@@ -169,42 +170,6 @@ var color = d3.scaleOrdinal(["rgb(255, 225, 25)","rgb(60, 240, 240)","rgb(240, 5
       // .style("fill", "rgb(245, 130, 48)")
       .attr('class',"square")
        .on('click', function (d) {
-        
-        if(toggleSelected == true) {
-               d3.selectAll('circle')
-          .attr('opacity', '.2');
-        d3.selectAll(".clusterEight")
-          .transition()
-          .duration(500)
-          .attr('opacity','1')
-          .attr('r', '15')
-          .attr('stroke-width',.45);
-          toggleSelected = false;
-           } 
-           else {
-          d3.selectAll('circle')
-          .transition()
-          .duration(500)
-          .attr('opacity','1')
-          .attr('r', '12')
-          .attr('stroke-width',1);
-               toggleSelected = true;
-           }
-      });
-      
-       var squareSeven = svgContainer.selectAll('g')
-    .append('rect')
-      .attr('x', 10)
-      .attr('y', 100)
-      .attr('width', w*.1)
-      .attr('height', h*.05)
-      .attr('stroke','black')
-      .attr('stroke-width',.45)
-      .style("fill", "rgb(60, 180, 75)")
-      // .style("fill", function(d) { return color(cValue(d));})
-      // .style("fill", "rgb(245, 130, 48)")
-      .attr('class',"square")
-         .on('click', function (d) {
         
         if(toggleSelected == true) {
                d3.selectAll('circle')
@@ -228,22 +193,24 @@ var color = d3.scaleOrdinal(["rgb(255, 225, 25)","rgb(60, 240, 240)","rgb(240, 5
            }
       });
       
-   var squareSix = svgContainer.selectAll('g')
+       var squareThree = svgContainer.selectAll('g')
     .append('rect')
       .attr('x', 10)
-      .attr('y', 165)
+      .attr('y', 140)
       .attr('width', w*.1)
       .attr('height', h*.05)
       .attr('stroke','black')
       .attr('stroke-width',.45)
-      .style("fill", "rgb(230, 25, 75")
+      .style("fill", "rgb(60, 180, 75)")
       // .style("fill", function(d) { return color(cValue(d));})
       // .style("fill", "rgb(245, 130, 48)")
-      .attr('class',"square").on('click', function (d) {
+      .attr('class',"square")
+         .on('click', function (d) {
+        
         if(toggleSelected == true) {
                d3.selectAll('circle')
           .attr('opacity', '.2');
-        d3.selectAll(".clusterSix")
+        d3.selectAll(".clusterThree")
           .transition()
           .duration(500)
           .attr('opacity','1')
@@ -262,10 +229,44 @@ var color = d3.scaleOrdinal(["rgb(255, 225, 25)","rgb(60, 240, 240)","rgb(240, 5
            }
       });
       
-  var squareFour = svgContainer.selectAll('g')
+   var squareFive = svgContainer.selectAll('g')
     .append('rect')
       .attr('x', 10)
-      .attr('y', 230)
+      .attr('y', 205)
+      .attr('width', w*.1)
+      .attr('height', h*.05)
+      .attr('stroke','black')
+      .attr('stroke-width',.45)
+      .style("fill", "rgb(230, 25, 75")
+      // .style("fill", function(d) { return color(cValue(d));})
+      // .style("fill", "rgb(245, 130, 48)")
+      .attr('class',"square").on('click', function (d) {
+        if(toggleSelected == true) {
+               d3.selectAll('circle')
+          .attr('opacity', '.2');
+        d3.selectAll(".clusterFive")
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '15')
+          .attr('stroke-width',.45);
+          toggleSelected = false;
+           } 
+           else {
+          d3.selectAll('circle')
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '12')
+          .attr('stroke-width',1);
+               toggleSelected = true;
+           }
+      });
+      
+  var squareSix = svgContainer.selectAll('g')
+    .append('rect')
+      .attr('x', 10)
+      .attr('y', 270)
       .attr('width', w*.1)
       .attr('height', h*.05)
       .attr('stroke','black')
@@ -279,7 +280,7 @@ var color = d3.scaleOrdinal(["rgb(255, 225, 25)","rgb(60, 240, 240)","rgb(240, 5
         if(toggleSelected == true) {
                d3.selectAll('circle')
           .attr('opacity', '.2');
-        d3.selectAll(".clusterFour")
+        d3.selectAll(".clusterSix")
           .transition()
           .duration(500)
           .attr('opacity','1')
@@ -302,7 +303,7 @@ var color = d3.scaleOrdinal(["rgb(255, 225, 25)","rgb(60, 240, 240)","rgb(240, 5
   var squareTwo = svgContainer.selectAll('g')
     .append('rect')
       .attr('x', 10)
-      .attr('y', 295)
+      .attr('y', 335)
       .attr('width', w*.1)
       .attr('height', h*.05)
       .attr('stroke','black')
@@ -366,87 +367,15 @@ var color = d3.scaleOrdinal(["rgb(255, 225, 25)","rgb(60, 240, 240)","rgb(240, 5
   //         .attr('stroke-width',1);
   //     });
       
-      var squareOne = svgContainer.selectAll('g')
+      var squareZero = svgContainer.selectAll('g')
     .append('rect')
       .attr('x', 10)
-      .attr('y', 360)
+      .attr('y', 400)
       .attr('width', w*.1)
       .attr('height', h*.05)
       .attr('stroke','black')
       .attr('stroke-width',.45)
       .style("fill", "rgb(60, 240, 240)")
-      // .style("fill", function(d) { return color(cValue(d));})
-      // .style("fill", "rgb(210, 245, 60)")
-      .attr('class',"square")
-      .on('click', function (d) {
-        if(toggleSelected == true) {
-               d3.selectAll('circle')
-          .attr('opacity', '.2');
-        d3.selectAll(".clusterOne")
-          .transition()
-          .duration(500)
-          .attr('opacity','1')
-          .attr('r', '15')
-          .attr('stroke-width',.45);
-          toggleSelected = false;
-           } 
-           else {
-          d3.selectAll('circle')
-          .transition()
-          .duration(500)
-          .attr('opacity','1')
-          .attr('r', '12')
-          .attr('stroke-width',1);
-               toggleSelected = true;
-           }
-      });
-      
-      var squareFive = svgContainer.selectAll('g')
-    .append('rect')
-      .attr('x', 10)
-      .attr('y', 425)
-      .attr('width', w*.1)
-      .attr('height', h*.05)
-      .attr('stroke','black')
-      .attr('stroke-width',.45)
-      .style("fill", "rgb(210, 245, 60)")
-      // .style("fill", function(d) { return color(cValue(d));})
-      // .style("fill", "rgb(210, 245, 60)")
-      .attr('class',"square")
-      .on('click', function (d) {
-        if(toggleSelected == true) {
-               d3.selectAll('circle')
-          .attr('opacity', '.2');
-        d3.selectAll(".clusterFive")
-          .transition()
-          .duration(500)
-          .attr('opacity','1')
-          .attr('r', '15')
-          .attr('stroke-width',.45);
-          toggleSelected = false;
-           } 
-           else {
-          d3.selectAll('circle')
-          .transition()
-          .duration(500)
-          .attr('opacity','1')
-          .attr('r', '12')
-          .attr('stroke-width',1);
-               toggleSelected = true;
-           }
-      });
-      
-      
-var squareZero = svgContainer.selectAll('g')
-    .append('rect')
-      .attr('x', 10)
-      .attr('y', 490)
-      .attr('width', w*.1)
-      .attr('height', h*.05)
-      .attr('stroke','black')
-      .attr('stroke-width',.45)
-      .style("fill", "rgb(255, 225, 25)")
-      // .style("fill", "rgb(250, 190, 190)")
       // .style("fill", function(d) { return color(cValue(d));})
       // .style("fill", "rgb(210, 245, 60)")
       .attr('class',"square")
@@ -473,14 +402,79 @@ var squareZero = svgContainer.selectAll('g')
            }
       });
       
-// squareNine.append("text")
-//     .attr('x', 10)
-//     .attr('y', 530)
-//     .attr("dy", ".35em")
-//     .attr("text-anchor", "middle")
-//     .style('class', ".textCluster")
-//     .attr("fill", "black")
-//     .text("Cluster Eight");
+      var squareFour = svgContainer.selectAll('g')
+    .append('rect')
+      .attr('x', 10)
+      .attr('y', 465)
+      .attr('width', w*.1)
+      .attr('height', h*.05)
+      .attr('stroke','black')
+      .attr('stroke-width',.45)
+      .style("fill", "rgb(210, 245, 60)")
+      // .style("fill", function(d) { return color(cValue(d));})
+      // .style("fill", "rgb(210, 245, 60)")
+      .attr('class',"square")
+      .on('click', function (d) {
+        if(toggleSelected == true) {
+               d3.selectAll('circle')
+          .attr('opacity', '.2');
+        d3.selectAll(".clusterFour")
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '15')
+          .attr('stroke-width',.45);
+          toggleSelected = false;
+           } 
+           else {
+          d3.selectAll('circle')
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '12')
+          .attr('stroke-width',1);
+               toggleSelected = true;
+           }
+      });
+      
+      
+var squareOne = svgContainer.selectAll('g')
+    .append('rect')
+      .attr('x', 10)
+      .attr('y', 530)
+      .attr('width', w*.1)
+      .attr('height', h*.05)
+      .attr('stroke','black')
+      .attr('stroke-width',.45)
+      .style("fill", "rgb(255, 225, 25)")
+      // .style("fill", "rgb(250, 190, 190)")
+      // .style("fill", function(d) { return color(cValue(d));})
+      // .style("fill", "rgb(210, 245, 60)")
+      .attr('class',"square")
+      .on('click', function (d) {
+        if(toggleSelected == true) {
+               d3.selectAll('circle')
+          .attr('opacity', '.2');
+        d3.selectAll(".clusterOne")
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '15')
+          .attr('stroke-width',.45);
+          toggleSelected = false;
+           } 
+           else {
+          d3.selectAll('circle')
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '12')
+          .attr('stroke-width',1);
+               toggleSelected = true;
+           }
+      });
+      
+
   
     // g.append("text")
     // .attr("x", 10 + (w*.1)/2)
@@ -509,10 +503,10 @@ var squareZero = svgContainer.selectAll('g')
     //       .attr('stroke-width',1);
     //   });
       
-      var squareNine = svgContainer.selectAll('g')
+      var squareEight = svgContainer.selectAll('g')
     .append('rect')
       .attr('x', 10)
-      .attr('y', 555)
+      .attr('y', 595)
       .attr('width', w*.1)
       .attr('height', h*.05)
       .attr('stroke','black')
@@ -526,7 +520,7 @@ var squareZero = svgContainer.selectAll('g')
         if(toggleSelected == true) {
                d3.selectAll('circle')
           .attr('opacity', '.2');
-        d3.selectAll(".clusterNine")
+        d3.selectAll(".clusterEight")
           .transition()
           .duration(500)
           .attr('opacity','1')
