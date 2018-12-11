@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif+TC:700" rel="stylesheet">
 <style>
 body{
     background-color:#ECD9AD;
+}
+.title {
+  font-family: 'Noto Serif TC', serif;
+  font-size:3em;
+  margin-left: 3.3em;
+}
+svg {
+  padding-top:1em;
+  margin-left: 7.3em;
 }
 .yAxis {
     opacity:.3;
 }
 .viewPercent {
-    margin-left: 2.5em;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10em;
+    font-family: 'Noto Sans', sans-serif;
+}
+.shortDesc {
+  width: 67em;
+  margin-left:9em;
+  font-size:1.05em;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 
 </style>
-
+<p class="title">Jordan's Refugees & Populations of Concern</p>
+<p class="shortDesc">The Hashemite Kingdom of Jordan has always played an important role in receiving refugees—especially from neighboring countries. The visualization below allows the user to explore both the population size and percentages of these populations (horizontal axis) for the eleven countries representing the largest migration from 1991-2016. Clicking on the legend boxes and the checkbox below allows the user to change the country and population vs. percentage views. Data to complete this visualization was obtained from the <a href="https://data.humdata.org/group/jor">Humanitarian Data Exchange</a>.</p>
 <svg></svg>
 <p class="viewPercent"> <input type="checkbox" id="myCheckbox">  View in percentage </p>
 <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -25,7 +42,7 @@ body{
 var dataFile = 'jordanRefugeeWideYear.csv'
 
 d3.csv(dataFile, function(error, data){
-    var input = {'data': data, 'width': 1000, 'height': 700},
+    var input = {'data': data, 'width': 1100, 'height': 600},
         canvas = setUpSvgCanvas(input);
 
     drawBars(input, canvas); 
@@ -123,7 +140,7 @@ function initialize(params) {
         .attr('x', width  - 150)
         .attr('y', function(d, i) { return 20 * (clusterNames.length - 1 - i) ;})
         .text(function(d) {return d;})
-        .attr('dy', '.95em')
+        .attr('dy', '.9em')
         .style('text-anchor', 'start');
 
     // initialize checkbox options
@@ -344,7 +361,7 @@ function initializeAxis(svg, x, y, height, width){
 
 function setUpSvgCanvas(input) {
     // Set up the svg canvas
-    var margin = {top: 20, right: 150, bottom: 20, left: 50},
+    var margin = {top: 20, right: 165, bottom: 20, left: 50},
         width = input.width - margin.left -margin.right,
         height = input.height - margin.top -margin.bottom;
 
