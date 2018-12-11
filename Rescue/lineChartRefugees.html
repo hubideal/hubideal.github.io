@@ -42,7 +42,7 @@ svg {
 var dataFile = 'jordanRefugeeWideYear.csv'
 
 d3.csv(dataFile, function(error, data){
-    var input = {'data': data, 'width': 1100, 'height': 600},
+    var input = {'data': data, 'width': 1100, 'height': 500},
         canvas = setUpSvgCanvas(input);
 
     drawBars(input, canvas); 
