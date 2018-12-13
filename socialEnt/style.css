@@ -3,6 +3,12 @@ body {
     font-family:"Lucida Grande","Droid Sans",Arial,Helvetica,sans-serif;
     background: #808080 url(https://dl.dropboxusercontent.com/u/91579606/bg.gif) repeat;
 }
+p {
+   font-family:"Lucida Grande","Droid Sans",Arial,Helvetica,sans-serif; 
+   color: snow;
+   font-weight: bolder;
+   margin-left:22px;
+}
 h4 {
   margin-top: -8px;
 }

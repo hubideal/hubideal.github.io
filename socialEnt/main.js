@@ -74,6 +74,7 @@ d3.csv("words10clusters0.csv", function(data) {
       .transition()
       .duration(time1)
       .attr("transform", "translate(" + [d.x, d.y] + ")rotate(" + (show ? 0 : d.rotate) + ")scale(" + (+!show || 3) + ")");
+    //  .attr("transform", "translate(30,50)rotate(" + (show ? 0 : d.rotate) + ")scale(" + (+!show || 1) + ")");
     //   .each("end", function() { 
     //     show && setTimeout(function() { 
     //       alert("tag: " + d.word);
