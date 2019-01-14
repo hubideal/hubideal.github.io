@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<meta charset='utf-8'>
+<html>
+  <head>
+    <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+  </head>
+  <style>
+ 
+    .axis path,
+.axis line {
+  fill: none;
+	stroke: black;
+	shape-rendering: crispEdges;
+}
+.axis text {
+	font-family: sans-serif;
+	font-size: 11px;
+}
+.clusterFive {
+  fill: "#e6194b"
+}
+.clusterEight {
+  fill: "#ffe119"
+}
+.clusterTwo {
+  fill: "#0082c8"
+}
+.clusterThree {
+  fill: "#f58231"
+}
+.clusterOne {
+  fill: "#911eb4"
+}
+.clusterSix {
+  fill: "#46f0f0"
+}
+.clusterNine {
+  fill: "#f032e6"
+}
+.clusterFour {
+  fill: "#d2f53c"
+}
+.clusterZero {
+  fill: "#fabebe"
+}
+.clusterSeven {
+  fill: "#008080"
+}
+div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 300px;					
+    height: 280px;					
+    padding: 10px;				
+    font: 16px sans-serif;		
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+body {
+  background: #E9E0D0;
+}
+.textCluster {
+  font-size: 3em;
+  font-family: Arial, sans-serif;
+}
+.titleDiv {
+  font-size: 3em;
+  font-family: 'Arimo', sans-serif;
+  padding-left: 1.25em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+}
+
+  </style>
+  <body>
+    <div class="titleDiv">
+      <p><b>Clustering the <i>Stanford Social Inovation Review</i></b></p>
+    </div>
+    
+    <script>
+      d3.csv('ClusterTenFinalJan3.csv', function (data) {
+  // Variables
+  var body = d3.select('body')
+	var margin = { top: 100, right: 100, bottom: 100, left: 50 }
+	var h = screen.height - margin.top - margin.bottom
+	var w = screen.width - margin.left - margin.right
+	var formatPercent = d3.format('.2%')
+	var div = d3.select("body").append("div")	
+    .attr("class", "tooltip")				
+    .style("opacity", 0);
+	// Scales
+
+  var xScale = d3.scaleLinear()
+    .domain([
+    	d3.min([0,d3.min(data,function (d) { return d.xs })-1]),
+    	d3.max([0,d3.max(data,function (d) { return d.xs })+1])
+    	])
+    .range([0,w])
+  var yScale = d3.scaleLinear()
+    .domain([
+    	d3.min([0,d3.min(data,function (d) { return d.ys })-1]),
+    	d3.max([0,d3.max(data,function (d) { return d.ys })+1])
+    	])
+    .range([h,0])
+	// SVG
+	var svgContainer = body.append('svg')
+	    .attr('height',h + margin.top + margin.bottom)
+	    .attr('width',w + margin.left + margin.right)
+	  .append('g')
+	    .attr('transform','translate(' + margin.left + ',' + margin.top + ')');
+	    
+var cValue = function(d) { return d.newClusters;}
+var color = d3.scaleOrdinal(["rgb(255, 225, 25)","rgb(60, 240, 240)","rgb(240, 50, 230)","rgb(145, 30, 180)","rgb(245, 130, 48)","rgb(210, 245, 60)","rgb(240, 25, 75)","rgb(60, 180, 75)","rgb(0, 130, 200)", "rgb(200, 200, 250)"]);
+	// X-axis
+// 	var xAxis = d3.svg.axis()
+// 	  .scale(xScale)
+// 	  .tickFormat(formatPercent)
+// 	  .ticks(5)
+// 	  .orient('bottom')
+  // Y-axis
+// 	var yAxis = d3.svg.axis()
+// 	  .scale(yScale)
+// 	  .tickFormat(formatPercent)
+// 	  .ticks(5)
+// 	  .orient('left')
+  // Circles
+  var toggleSelected = true
+  var g = svgContainer.append("g")
+  
+  var squareThree = svgContainer.selectAll('g')
+    .append('rect')
+      .attr('x', 10)
+      .attr('y', -30)
+      .attr('width', w*.1)
+      .attr('height', h*.05)
+      .attr('stroke','black')
+      .attr('stroke-width',1)
+      .style("fill", "rgb(145, 30, 180)")
+      // .style("fill", function(d) { return color(cValue(d));})
+      // .style("fill", "rgb(210, 245, 60)")
+      .attr('class',"square")
+      .on('click', function (d) {
+        
+        if(toggleSelected == true) {
+               d3.selectAll('circle')
+          .attr('opacity', '.2');
+        d3.selectAll(".clusterThree")
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '15')
+          .attr('stroke-width',.45);
+          toggleSelected = false;
+          div.html("<b>Cluster Three</b>")
+                .transition()
+                .duration(500)
+                .style("left", w*.75+"px")		
+                .style("top", h*.35+"px")
+                .style("opacity", 1);
+           } 
+           else {
+          d3.selectAll('circle')
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '12')
+          .attr('stroke-width',1);
+               toggleSelected = true;
+           }
+      });
+        
+
+  var squareEight = svgContainer.selectAll('g')
+    .append('rect')
+      .attr('x', 10)
+      .attr('y', 35)
+      .attr('width', w*.1)
+      .attr('height', h*.05)
+      .attr('stroke','black')
+      .attr('stroke-width',.45)
+      .style("fill", "rgb(0, 130, 200)")
+      // .style("fill", function(d) { return color(cValue(d));})
+      // .style("fill", "rgb(245, 130, 48)")
+      .attr('class',"square")
+       .on('click', function (d) {
+        
+        if(toggleSelected == true) {
+               d3.selectAll('circle')
+          .attr('opacity', '.2');
+        d3.selectAll(".clusterEight")
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '15')
+          .attr('stroke-width',.45);
+          toggleSelected = false;
+          div.transition(d)		
+                .duration(200)
+                .style("opacity", 0);
+     
+     div.html("<b>Cluster Eight</b>")
+                .transition()
+                .duration(500)
+                .style("left", w*.75+"px")		
+                .style("top", h*.35+"px")
+                .style("opacity", 1);
+           } 
+           else {
+          d3.selectAll('circle')
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '12')
+          .attr('stroke-width',1);
+               toggleSelected = true;
+           }
+      });
+      
+       var squareSeven = svgContainer.selectAll('g')
+    .append('rect')
+      .attr('x', 10)
+      .attr('y', 100)
+      .attr('width', w*.1)
+      .attr('height', h*.05)
+      .attr('stroke','black')
+      .attr('stroke-width',.45)
+      .style("fill", "rgb(60, 180, 75)")
+      // .style("fill", function(d) { return color(cValue(d));})
+      // .style("fill", "rgb(245, 130, 48)")
+      .attr('class',"square")
+         .on('click', function (d) {
+        
+        if(toggleSelected == true) {
+               d3.selectAll('circle')
+          .attr('opacity', '.2');
+        d3.selectAll(".clusterSeven")
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '15')
+          .attr('stroke-width',.45);
+          toggleSelected = false;
+        div.html("<b>Cluster Seven</b>")
+                .transition()
+                .duration(500)
+                .style("left", w*.75+"px")		
+                .style("top", h*.35+"px")
+                .style("opacity", 1);
+           } 
+           else {
+          d3.selectAll('circle')
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '12')
+          .attr('stroke-width',1);
+               toggleSelected = true;
+           }
+      });
+      
+   var squareSix = svgContainer.selectAll('g')
+    .append('rect')
+      .attr('x', 10)
+      .attr('y', 165)
+      .attr('width', w*.1)
+      .attr('height', h*.05)
+      .attr('stroke','black')
+      .attr('stroke-width',.45)
+      .style("fill", "rgb(230, 25, 75")
+      // .style("fill", function(d) { return color(cValue(d));})
+      // .style("fill", "rgb(245, 130, 48)")
+      .attr('class',"square").on('click', function (d) {
+        if(toggleSelected == true) {
+               d3.selectAll('circle')
+          .attr('opacity', '.2');
+        d3.selectAll(".clusterSix")
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '15')
+          .attr('stroke-width',.45);
+          toggleSelected = false;
+          div.html("<b>Cluster Six</b>")
+                .transition()
+                .duration(500)
+                .style("left", w*.75+"px")		
+                .style("top", h*.35+"px")
+                .style("opacity", 1);
+           } 
+           else {
+          d3.selectAll('circle')
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '12')
+          .attr('stroke-width',1);
+               toggleSelected = true;
+           }
+      });
+      
+  var squareFour = svgContainer.selectAll('g')
+    .append('rect')
+      .attr('x', 10)
+      .attr('y', 230)
+      .attr('width', w*.1)
+      .attr('height', h*.05)
+      .attr('stroke','black')
+      .attr('stroke-width',.45)
+      .style("fill", "rgb(240,110,40)")
+      // .style("fill", function(d) { return color(cValue(d));})
+      // .style("fill", "rgb(245, 130, 48)")
+      .attr('class',"square")
+      .on('click', function (d) {
+        
+        if(toggleSelected == true) {
+               d3.selectAll('circle')
+          .attr('opacity', '.2');
+        d3.selectAll(".clusterFour")
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '15')
+          .attr('stroke-width',.45);
+          toggleSelected = false;
+          div.html("<b>Cluster Four</b>")
+                .transition()
+                .duration(500)
+                .style("left", w*.75+"px")		
+                .style("top", h*.35+"px")
+                .style("opacity", 1);
+           } 
+           
+           else {
+          d3.selectAll('circle')
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '12')
+          .attr('stroke-width',1);
+               toggleSelected = true;
+           }
+      });
+  
+  
+  var squareTwo = svgContainer.selectAll('g')
+    .append('rect')
+      .attr('x', 10)
+      .attr('y', 295)
+      .attr('width', w*.1)
+      .attr('height', h*.05)
+      .attr('stroke','black')
+      .attr('stroke-width',.45)
+      .style("fill", "rgb(240, 50, 230)")
+      // .style("fill", function(d) { return color(cValue(d));})
+      // .style("fill", "rgb(245, 130, 48)")
+      .attr('class',"square")
+      .on('click', function (d) {
+        
+        if(toggleSelected == true) {
+               d3.selectAll('circle')
+          .attr('opacity', '.2');
+        d3.selectAll(".clusterTwo")
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '15')
+          .attr('stroke-width',.45);
+          toggleSelected = false;
+          div.html("<b>Cluster Two</b>")
+                .transition()
+                .duration(500)
+                .style("left", w*.75+"px")		
+                .style("top", h*.35+"px")
+                .style("opacity", 1);
+           } 
+           else {
+          d3.selectAll('circle')
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '12')
+          .attr('stroke-width',1);
+               toggleSelected = true;
+           }
+      });
+  
+  // var squareNine = svgContainer.selectAll('g')
+  //   .append('rect')
+  //     .attr('x', 10)
+  //     .attr('y', 400)
+  //     .attr('width', w*.1)
+  //     .attr('height', h*.05)
+  //     .attr('stroke','black')
+  //     .attr('stroke-width',.45)
+  //     .style("fill", "rgb(70, 240, 240)")
+  //     // .style("fill", function(d) { return color(cValue(d));})
+  //     // .style("fill", "rgb(245, 130, 48)")
+  //     .attr('class',"square")
+  //     .on('mouseover', function (d) {
+  //       d3.selectAll('circle')
+  //         .attr('opacity', '.2');
+  //       d3.selectAll(".clusterNine")
+  //         .transition()
+  //         .duration(300)
+  //         .attr('opacity','1')
+  //         .attr('r', '15')
+  //         .attr('stroke-width',1);
+  //     })
+  //     .on('mouseout', function (d) {
+  //       // d3.selectAll(".clusterZero")
+  //       d3.selectAll('circle')
+  //         .transition()
+  //         .attr('opacity','1')
+  //         .attr('r', '12')
+  //         .attr('stroke-width',1);
+  //     });
+      
+      var squareOne = svgContainer.selectAll('g')
+    .append('rect')
+      .attr('x', 10)
+      .attr('y', 360)
+      .attr('width', w*.1)
+      .attr('height', h*.05)
+      .attr('stroke','black')
+      .attr('stroke-width',.45)
+      .style("fill", "rgb(60, 240, 240)")
+      // .style("fill", function(d) { return color(cValue(d));})
+      // .style("fill", "rgb(210, 245, 60)")
+      .attr('class',"square")
+      .on('click', function (d) {
+        if(toggleSelected == true) {
+               d3.selectAll('circle')
+          .attr('opacity', '.2');
+        d3.selectAll(".clusterOne")
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '15')
+          .attr('stroke-width',.45);
+          toggleSelected = false;
+          div.html("<b>Cluster One</b>")
+                .transition()
+                .duration(500)
+                .style("left", w*.75+"px")		
+                .style("top", h*.35+"px")
+                .style("opacity", 1);
+           } 
+           else {
+          d3.selectAll('circle')
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '12')
+          .attr('stroke-width',1);
+               toggleSelected = true;
+           }
+      });
+      
+      var squareFive = svgContainer.selectAll('g')
+    .append('rect')
+      .attr('x', 10)
+      .attr('y', 425)
+      .attr('width', w*.1)
+      .attr('height', h*.05)
+      .attr('stroke','black')
+      .attr('stroke-width',.45)
+      .style("fill", "rgb(210, 245, 60)")
+      // .style("fill", function(d) { return color(cValue(d));})
+      // .style("fill", "rgb(210, 245, 60)")
+      .attr('class',"square")
+      .on('click', function (d) {
+        if(toggleSelected == true) {
+               d3.selectAll('circle')
+          .attr('opacity', '.2');
+        d3.selectAll(".clusterFive")
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '15')
+          .attr('stroke-width',.45);
+          toggleSelected = false;
+          div.html("<b>Cluster Five</b>")
+                .transition()
+                .duration(500)
+                .style("left", w*.75+"px")		
+                .style("top", h*.35+"px")
+                .style("opacity", 1);
+           } 
+           else {
+          d3.selectAll('circle')
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '12')
+          .attr('stroke-width',1);
+               toggleSelected = true;
+           }
+      });
+      
+      
+var squareZero = svgContainer.selectAll('g')
+    .append('rect')
+      .attr('x', 10)
+      .attr('y', 490)
+      .attr('width', w*.1)
+      .attr('height', h*.05)
+      .attr('stroke','black')
+      .attr('stroke-width',.45)
+      .style("fill", "rgb(255, 225, 25)")
+      // .style("fill", "rgb(250, 190, 190)")
+      // .style("fill", function(d) { return color(cValue(d));})
+      // .style("fill", "rgb(210, 245, 60)")
+      .attr('class',"square")
+      .on('click', function (d) {
+        if(toggleSelected == true) {
+               d3.selectAll('circle')
+          .attr('opacity', '.2');
+        d3.selectAll(".clusterZero")
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '15')
+          .attr('stroke-width',.45);
+          toggleSelected = false;
+          div.html("<b>Cluster Zero</b>")
+                .transition()
+                .duration(500)
+                .style("left", w*.75+"px")		
+                .style("top", h*.35+"px")
+                .style("opacity", 1);
+           } 
+           else {
+          d3.selectAll('circle')
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '12')
+          .attr('stroke-width',1);
+               toggleSelected = true;
+           }
+      });
+      
+// squareNine.append("text")
+//     .attr('x', 10)
+//     .attr('y', 530)
+//     .attr("dy", ".35em")
+//     .attr("text-anchor", "middle")
+//     .style('class', ".textCluster")
+//     .attr("fill", "black")
+//     .text("Cluster Eight");
+  
+    // g.append("text")
+    // .attr("x", 10 + (w*.1)/2)
+    // .attr("y", 25)
+    // .attr("dy", ".35em")
+    // .attr("text-anchor", "middle")
+    // .style('class', ".textCluster")
+    // .text("Cluster Six")
+    // .on('mouseover', function (d) {
+    //     d3.selectAll('circle')
+    //       .attr('opacity', '.2');
+    //     d3.selectAll(".clusterSix")
+    //       .transition()
+    //       .duration(500)
+    //       .attr('opacity','1')
+    //       .attr('r', '15')
+    //       .attr('stroke-width',.45);
+    //   })
+    //   .on('mouseout', function (d) {
+    //     // d3.selectAll(".clusterZero")
+    //     d3.selectAll('circle')
+    //       .transition()
+    //       .duration(500)
+    //       .attr('opacity','1')
+    //       .attr('r', '12')
+    //       .attr('stroke-width',1);
+    //   });
+      
+      var squareNine = svgContainer.selectAll('g')
+    .append('rect')
+      .attr('x', 10)
+      .attr('y', 555)
+      .attr('width', w*.1)
+      .attr('height', h*.05)
+      .attr('stroke','black')
+      .attr('stroke-width',.45)
+      .style("fill", "rgb(200, 200, 250)")
+      // .style("fill", "rgb(250, 190, 190)")
+      // .style("fill", function(d) { return color(cValue(d));})
+      // .style("fill", "rgb(210, 245, 60)")
+      .attr('class',"square")
+      .on('click', function (d) {
+        if(toggleSelected == true) {
+               d3.selectAll('circle')
+          .attr('opacity', '.2');
+        d3.selectAll(".clusterNine")
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '15')
+          .attr('stroke-width',.45);
+          toggleSelected = false;
+          div.html("<b>Cluster Nine</b>")
+                .transition()
+                .duration(500)
+                .style("left", w*.75+"px")		
+                .style("top", h*.35+"px")
+                .style("opacity", 1);
+           } 
+           else {
+          d3.selectAll('circle')
+          .transition()
+          .duration(500)
+          .attr('opacity','1')
+          .attr('r', '12')
+          .attr('stroke-width',1);
+               toggleSelected = true;
+           }
+      });
+      
+
+      
+      
+      
+      
+  var circles = svgContainer.selectAll('circle')
+      .data(data)
+      .enter()
+    .append('circle')
+      .attr('cx',function (d) { return xScale(d.xs) })
+      .attr('cy',function (d) { return yScale(d.ys) })
+      .attr('r','12')
+      .attr('stroke','grey')
+      .attr('stroke-width',.75)
+      // .style("fill", function(d) { return color(cValue(d));})
+      .style("fill", function(d) { return color(cValue(d));})
+      .attr('class',function (d) { return d.colorStyle})
+      .on('mouseover', function (d) {
+        // d3.selectAll('circle')
+        //   .attr('opacity', '.2');
+        // d3.selectAll("." + this.getAttribute('class'))
+        //   .transition()
+        //   .duration(500)
+        //   .attr('opacity','1')
+        //   .attr('r', '15')
+        //   .attr('stroke-width',1);
+        div.transition(d)		
+                .duration(500)		
+                .style("opacity", .9);		
+            div.html("<b>Title:  </b>" + d.Title + "<br><br>  <b>Cluster: </b>" + d.newClusters)
+                .style("left", w*.15+"px")		
+                .style("top", h*.25+"px");
+      })
+      .on('mouseout', function (d) {
+        // d3.selectAll("." + this.getAttribute('class'))
+        // d3.selectAll('circle')
+        //   .transition()
+        //   .duration(500)
+        //   .attr('opacity','1')
+        //   .attr('r', '12')
+        //   .attr('stroke-width',1);
+    div.transition(d)		
+                .duration(200)
+                .style("opacity", 0);
+     div.html("<b>Title:  </b>" + d.Title + "<br><br>  <b>Cluster: </b>" + d.newClusters)
+                .style("left", w*.25+"px")		
+                .style("top", h*.15+"px")
+                .style("opacity", 1);
+      });
+
+// squareFive.on("click", function() {
+//   console.log("hello");
+//           d3.selectAll('circle')
+//           .attr('opacity', '.2');
+//         d3.selectAll(this)
+//           .selectAll(this.class)
+//           .transition()
+//           .duration(300)
+//           .attr('opacity','1')
+//           .attr('r', '15')
+//           .attr('stroke-width',1);
+//         })
+
+      
+// var text = svgContainer.selectAll("text")
+//                       .remove()
+//                       .data(data)
+//                       .enter()
+//                       .append("text")
+
+
+
+// var textLabels = text
+//                 .attr("x", function(d) { return xScale(d.xs); })
+//                 .attr("y", function(d) { return yScale(d.ys); })
+//                 .text( function (d) { return d.Title; })
+//                 .attr("font-family", "sans-serif")
+//                 .attr("font-size", "10px")
+//                 .attr('text-anchor', 'middle')
+//                 .attr("fill", "black")
+//                 .attr("opacity", 0)
+//                 .attr("id", function (d) { return d.colorStyle + d.ID;})
+//                 .on("click", 
+//                 function() {
+//                   d3.select(this.text).style("opacity", 1);
+                   
+//                 });
+
+
+// svg.selectAll("text")
+// .data(data)
+//       .attr("x", function (d) { return xScale(d.xs) })             
+// 	    .attr("y", function (d) { return yScale(d.ys)-10 })
+//   .append("text")
+// 	.attr("class", "title")
+// 	.attr("opacity", 1)
+//   .attr("id", function (d) { return d.colorStyle + d.ID;})
+// 	.style("fill", "black")
+// 	.text(function (d) { return d.Title;})
+// 	.attr('text-anchor', 'middle');
+
+
+
+})
+    </script>
+  </body>
+</html>

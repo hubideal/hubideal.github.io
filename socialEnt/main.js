@@ -15,8 +15,8 @@ d3.csv("words10clusters0.csv", function(data) {
 
   //sorts the array by the most repeated word
   jsu.sortBy(data, { prop: "freq", desc: true });
-  var w = 1294, h = 712,
-    maxFont = 76,
+  var w = 1294, h = 812,
+    maxFont = 100,
     maxSize = data[14].freq || 1,
     sizeOffset = maxFont / maxSize;
 
@@ -29,7 +29,7 @@ d3.csv("words10clusters0.csv", function(data) {
     //.text(function (d) { return d.text; })
     .font("Impact")
     .fontSize(function (d) {
-        return Math.max(10, Math.min(d.freq * sizeOffset, maxFont));
+        return Math.max(100, Math.min(d.freq * sizeOffset, maxFont));
     })
     .on("end", onDraw);
   layout.start();

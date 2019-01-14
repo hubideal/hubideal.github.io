@@ -21,7 +21,7 @@
       var board = zeroArray((size[0] >> 5) * size[1]),
           bounds = null,
           n = words.length,
-          i = -1,
+          i = -2,
           tags = [],
           data = words.map(function(d, i) {
             d.text = text.call(this, d, i);
