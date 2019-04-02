@@ -102,8 +102,8 @@ var skillData = d3.csv('skillsDataSet.csv');
     
     var colorScaleS = d3
     .scaleOrdinal()
-    .domain([ 'software','computer','nurses', 'physician', 'scientist', 'postsecondary', 'managers', 'accountants', 'ceo','cashiers', 'other'])
-    .range(["#6B7CF2", "#21D177", "#F7594C", "#F2BC02","#999", '#A882CC', '#6063ED', '#87D8F7', '#9B9EA0', "#F7594C",'#fff']);
+    .domain([ 'software','computer','nurses', 'physician', 'scientist', 'postsecondary', 'managers', 'accountants', 'ceo','cashiers', 'other', 'na'])
+    .range(["#6B7CF2", "#21D177", "#F7594C", "#F2BC02","#999", '#A882CC', '#6063ED', '#87D8F7', '#9B9EA0', "#F7594C",'#fff','#fff']);
     
     
 
@@ -308,7 +308,6 @@ function changed() {
 	.attr('ry', '2')
     .attr('class', 'groundsq')
     .attr('fill', d => colorScaleG(d.degtext));
-    svg.on("click", sideChange);
     
     
     svg.append("text")
@@ -372,7 +371,7 @@ function changed() {
         .attr("y", (margin.top*33))
         .attr("text-anchor", "middle")  
         .attr('class', "domQuote")
-        .attr('fill', "#6B7CF2")
+        .attr('fill', "#21D177")
         .text("Business");
         
     svg.append("text")
@@ -380,7 +379,7 @@ function changed() {
         .attr("y", (margin.top*34))
         .attr("text-anchor", "middle")  
         .attr('class', "domQuote")
-        .attr('fill', "#F7594C")
+        .attr('fill', "#F2BC02")
         .text("Social Sciences");
         
    svg.append("text")
@@ -388,7 +387,7 @@ function changed() {
         .attr("y", (margin.top*35))
         .attr("text-anchor", "middle")  
         .attr('class', "domQuote")
-        .attr('fill', "#999")
+        .attr('fill', '#6063ED')
         .text("Education");
         
    svg.append("text")
@@ -396,25 +395,24 @@ function changed() {
         .attr("y", (margin.top*36))
         .attr("text-anchor", "middle")  
         .attr('class', "domQuote")
-        .attr('fill', '#A882CC')
+        .attr('fill', '#999')
         .text("Other");
+        
+    svg.on("click", sideChange);
 
 }
 
 
 function sideChange() {
   
-  svg.selectAll('text')
-                .transition()
-                .duration(200)
-                .style('opacity', 0);
+svg.selectAll("text").style('opacity', 0);
 
 	svg.selectAll("rect")
 	.transition()
 	.ease(d3.easeExp)
     .duration(2000)
     .delay(function(d){return Math.random()*1000;})
-    .attr("x", function(d) { return xNew(d.sideCcol); })
+    .attr("x", function(d) { return xNew(d.sideCcol)+100; })
 	.attr("y", function(d) { return yNew(d.sideCrow); })
     .attr('height', '12')
 	.attr('width', '12')
@@ -423,6 +421,102 @@ function sideChange() {
     .attr('class', 'sidesq')
     // .attr('fill', "#555");
     .attr('fill', d => colorScaleS(d.proftext));
+    
+    svg.append("text")
+        .attr("x", (width*.01))             
+        .attr("y", (margin.top*3))
+        .attr("text-anchor", "left")  
+        .attr('class', "domQuote")
+        .attr('fill', "#444444")
+        .text("In Demand Professions");
+    
+    svg.append("text")
+        .attr("x", (width*.01))             
+        .attr("y", (margin.top*5.5))
+        .attr("text-anchor", "left")  
+        .attr('class', "domQuote")
+        .attr('fill', "#6B7CF2")
+        .text("Software Developers");
+        
+    svg.append("text")
+        .attr("x", (width*.01))             
+        .attr("y", (margin.top*8))
+        .attr("text-anchor", "left")  
+        .attr('class', "domQuote")
+        .attr('fill', "#21D177")
+        .text("Computer Scientists");
+        
+   svg.append("text")
+        .attr("x", (width*.01))             
+        .attr("y", (margin.top*10.7))
+        .attr("text-anchor", "left")  
+        .attr('class', "domQuote")
+        .attr('fill', "#F7594C")
+        .text("Nurses");
+        
+   svg.append("text")
+        .attr("x", (width*.01))             
+        .attr("y", (margin.top*13.4))
+        .attr("text-anchor", "left")  
+        .attr('class', "domQuote")
+        .attr('fill', "#F2BC02")
+        .text("Physicians");
+        
+   svg.append("text")
+        .attr("x", (width*.01))             
+        .attr("y", (margin.top*16.1))
+        .attr("text-anchor", "left")  
+        .attr('class', "domQuote")
+        .attr('fill', '#999')
+        .text("Physical Scientists");
+  
+    svg.append("text")
+        .attr("x", (width*.01))             
+        .attr("y", (margin.top*19.2))
+        .attr("text-anchor", "left")  
+        .attr('class', "domQuote")
+        .attr('fill', "#444444")
+        .text("Other Fields");
+    
+    svg.append("text")
+        .attr("x", (width*.01))             
+        .attr("y", (margin.top*21.5))
+        .attr("text-anchor", "left")  
+        .attr('class', "domQuote")
+        .attr('fill', '#A882CC')
+        .text("Postsecondary Faculty");
+        
+    svg.append("text")
+        .attr("x", (width*.01))             
+        .attr("y", (margin.top*24.4))
+        .attr("text-anchor", "left")  
+        .attr('class', "domQuote")
+        .attr('fill', '#6063ED')
+        .text("Managers");
+        
+   svg.append("text")
+        .attr("x", (width*.01))             
+        .attr("y", (margin.top*27.1))
+        .attr("text-anchor", "left")  
+        .attr('class', "domQuote")
+        .attr('fill', '#87D8F7')
+        .text("Accountants");
+        
+   svg.append("text")
+        .attr("x", (width*.01))             
+        .attr("y", (margin.top*29.7))
+        .attr("text-anchor", "left")  
+        .attr('class', "domQuote")
+        .attr('fill', '#999')
+        .text("CEOs");
+    
+    svg.append("text")
+        .attr("x", (width*.01))             
+        .attr("y", (margin.top*32.4))
+        .attr("text-anchor", "left")  
+        .attr('class', "domQuote")
+        .attr('fill', "#F7594C")
+        .text("Cashiers");
     
 }
 
@@ -437,4 +531,3 @@ function sideChange() {
  
 </script>
 </body>
-
