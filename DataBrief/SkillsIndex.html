@@ -1,533 +1,773 @@
 <!DOCTYPE html>
-<meta charset='utf-8'>
-<html>
-  <head>
-    <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
   <style>
+    body { 
+      margin:0;
+      position:fixed;
+      top:0;
+      right:0;
+      bottom:0;
+      left:0;
+    	font-family: sans-serif;
+   
+    }
 
-div {
-	margin-left: 250px;
-}
-#svg {
-	width: 1200px;
-	height: 800px;
-}
- 
-body {
-  background: #fff;
-}
+    
+    .domQuote{
+      text-align: center;
+      font-size: 38px;
+    }
+    
+    .degree{
+      text-align: center;
+      font-size: 14px;
+    }
+    
+    .professions{
+      text-align: center;
+      font-size: 14px;
+    }
+    
+    .button {
+      min-width: 130px;
+      padding: 4px 5px;
+      cursor: pointer;
+      text-align: center;
+      font-size: 13px;
+      border: 1px solid #e0e0e0;
+      text-decoration: none;
+    }
 
-.domQuote {
-   font-family: arial;
-   color: blue;
- }
- 
+    .button.active {
+      background: #000;
+      color: #fff;
+    }
   </style>
-  <body>
-  	<div width="960" height="600"></div>
-    <script>
+</head>
+
+<body>
+  <!--<div id="toolbar">-->
+  <!--    <button id="all" class="button active">All</button>-->
+  <!--    <button id="Education" class="button">By Education</button>-->
+  <!--    <button id="STEM" class="button">By STEM</button>-->
+  <!--    <button id="FieldNew" class="button">By Field</button>-->
+  <!--    <button id="profession" class="button">By Profession</button>-->
+  <!--    <button id="professionExtra" class="button">Zoom</button>-->
+  <!--  </div>-->
+  <script>
+    console.clear()
+    var w = screen.width, h = screen.height;
+    var yRow = h/20
+    var xCol = w/16
+    
+    var radius = 5;
+    var radius2 = 420;
+    // var color = d3.scaleOrdinal(d3.schemeCategory20c);
+    //var color = d3.scaleOrdinal(d3.schemeCategory20b);
+    var color = d3.scaleOrdinal(d3.schemeBlues);
+    var color2 = d3.interpolate('#6B7CF2', '#6B7CF2')
+    var color3 = d3.scaleOrdinal()
+         .domain(['0', '1', '2', '3', '4'])
+         .range(['#C0EAF9' , '#8ADCFC', '#6263F1', '#5553bc','#39377E']);
+    var color4 = d3.scaleOrdinal()
+         .domain(['1', '2', '0'])
+         .range(["#f1bd03", "#6a7ef5", "#999999"]);
+    var color5 = d3.scaleOrdinal()
+         .domain(['0','1', '2', '3', '4', '5', '6', '7', '8', '9', '10'])
+         .range(['#E8EDED', "#39377E", '#6263F1', '#8ADCFC','#6a7ef5', "#BCE5ED",'#a0a1a5',"#943CAA",'#A882CC','#FF704F', '#F2BC02','#FFDB21', '#F4F721' ]);
+    var color6 = d3.scaleOrdinal()
+         .domain(['0','1', '2', '3', '4', '5', '6', '7', '8', '9', '10'])
+         .range(['#999999',"#943CAA",'#6a7ef5','#9B9EA0' ,'#F2BC02', '#21D177', '#a0a1a5','#8ADCFC' ,'#6B7CF2', '#FF704F','#38387C', '#FFDB21']);
+    var color7 = d3.scaleOrdinal()
+         .domain(['0', '1', '2'])
+         .range(["#21D177", "#F7594C", "#F2BC02"]);
+    //var centerScale = d3.scalePoint().padding(1).range([0, (w/Math.cos(1000)/Math.PI)]);
+    var centerScale = d3.scalePoint().padding(1).range([50, w/2]);
+    var centerScaleH = d3.scalePoint().padding(1).range([50, h/2]);
+    var forceStrength = .09;
+    var angle = 0;
+    // var t = d3.transition()
+    // .duration(10);
+    
+    var svg = d3.select("body").append("svg")
+      .attr("width", w)
+      .attr("height", h)
   
-  //    d3.csv('socialVisualDB.csv', function (data) {
-  // Variables
-var width = 960,
-    height = 600,
-    margin = 10;
-
-
-
-//2
-// var container2 = d3.select('body');
-// var graphic2 = container2.select('.scroll__figure2');
-// var chart2 = graphic2.select('.figure__chart2');
-// var text2 = container2.select('.scroll__text2');
-// var step2 = text2.selectAll('.step2');
-
-// initialize the scrollama
-// var scroller2 = scrollama();
-
-
-
-// var body = d3.select('body')
-
-var svg = d3.select('div')
-		  .append("svg")
-		  .attr("id", "svg");
-
-
-var skillData = d3.csv('skillsDataSet.csv');
-
-	Promise.all([skillData]).then(change);
-
-	function change(data) {
-	  var skillDV = data['0'];
-	  //var col = [...new Set(skillDV.map(d => d.barCol))];
-	  //var row = [...new Set(skillDV.map(d => d.barRow))];
-	  var margin = {top: 20, right: 20, bottom: 20, left: 40};
-	  // var widthDiv;
-	  var rad;
-	  var widthSplit;
-
-	  
-
-	  // var margin = 10;
-	  // var marginTop = 100;
-	  
-	  var x = d3.scaleLinear()
-    .domain([0, 150])
-    .range([0, width]);
-
-		var y = d3.scaleLinear()
-    .domain([0, 210])
-    .range([height, 0]);
     
-    var xNew = d3.scaleLinear()
-    .domain([10, 130])
-    .range([0, width*.5]);
+    var circleID = "all";
 
-	var yNew = d3.scaleLinear()
-    .domain([0, 190])
-    .range([height*1.15, 10]);
+    var simulation = d3.forceSimulation()
+            .force("collide",d3.forceCollide( function(d){
+              	return d.r }).iterations(20) 
+            )
+            .force("charge", d3.forceManyBody().strength(-4))
+         
+            .force("y", d3.forceY().y(h/2))
+            .force("x", d3.forceX().x(w/2))
     
+    d3.csv("dataNew.csv", function(data){
+      
+      data.forEach(function(d){
+        d.r = radius;
+        d.x = w/3;
+        d.y = h/3;
+      })
     
-    var colorScale = d3
-    .scaleOrdinal()
-    .domain(['BA', 'MAplus', 'NoHS', 'HS', 'SomeC'])
-    .range(["#6B7CF2", "#21D177", "#999", "#F2BC02", "#F7594C"]);
-    
-    var colorScaleG = d3
-    .scaleOrdinal()
-    .domain(['engineering', 'business', 'computer', 'socsci', 'med', 'bio', 'ed', 'phySci','other', 'na'])
-    .range(["#6B7CF2", "#21D177", "#F7594C", "#F2BC02","#999", '#A882CC', '#6063ED', '#87D8F7', '#9B9EA0', '#fff']);
-    
-    var colorScaleS = d3
-    .scaleOrdinal()
-    .domain([ 'software','computer','nurses', 'physician', 'scientist', 'postsecondary', 'managers', 'accountants', 'ceo','cashiers', 'other', 'na'])
-    .range(["#6B7CF2", "#21D177", "#F7594C", "#F2BC02","#999", '#A882CC', '#6063ED', '#87D8F7', '#9B9EA0', "#F7594C",'#fff','#fff']);
-    
-    
-
-var points = svg.selectAll("dot")
-							.data(skillDV)
-function set () {
-	points
-	.enter()
-	.append("rect")
-	.attr("x", function(d) { return x(d.boxCol); })
-	.attr("y", function(d) { return y(d.boxRow); })
-	.attr('height', '10')
-	.attr('width', '10')
-	.attr('rx', '2')
-	.attr('ry', '2')
-	.attr('fill', d => colorScale(d.education))
-	.attr('class', 'boxDot')
-	.attr('id', d => d.edtext);
-	svg.on("click", legendReveal);
-	
-	
-}
-
-set();
-
-
-
-function legendReveal() {
-  
-  	svg.selectAll("#BA")
-	.transition()
-	.ease(d3.easeExp)
-    .duration(1000)
-    .attr("x", function(d) { return x(d.boxCol)+5; })
-	.attr("y", function(d) { return y(d.boxRow-25); })
-    .attr('height', '10')
-	.attr('width', '10')
-	.attr('rx', '2')
-	.attr('ry', '2');
-	
-  svg.selectAll("#SomeC")
-	.transition()
-	.ease(d3.easeExp)
-    .duration(1000)
-    .attr("x", function(d) { return x(d.boxCol)+10; })
-	.attr("y", function(d) { return y(d.boxRow-50); })
-    .attr('height', '10')
-	.attr('width', '10')
-	.attr('rx', '2')
-	.attr('ry', '2');
-	
-	 svg.selectAll("#HS")
-	.transition()
-	.ease(d3.easeExp)
-    .duration(1000)
-    .attr("x", function(d) { return x(d.boxCol)+15; })
-	.attr("y", function(d) { return y(d.boxRow-75); })
-    .attr('height', '10')
-	.attr('width', '10')
-	.attr('rx', '2')
-	.attr('ry', '2');
-	
-		 svg.selectAll("#NoHS")
-	.transition()
-	.ease(d3.easeExp)
-    .duration(1000)
-    .attr("x", function(d) { return x(d.boxCol)+20; })
-	.attr("y", function(d) { return y(d.boxRow-100); })
-    .attr('height', '10')
-	.attr('width', '10')
-	.attr('rx', '2')
-	.attr('ry', '2');
-  
-  svg.append("text")
-        .attr("x", (width*.08))             
-        .attr("y", (margin.top*8))
+      
+      var circles = svg.selectAll("circle")
+                        .data(data, function(d){ return d.ID ;})
+                        .enter()
+                        .append("circle")
+                        .attr("cx", function(d){ return  d.ID; })
+				                .attr("cy", function(d){ return 250; })
+                        .style("fill", function(d){ return color(d.ID);})
+      	                .style("stroke", function(d){ return color(d.ID); })
+      	                .style("stroke-width", .25)
+      	                .style("pointer-events", "all")
+      var clusters = circles
+      
+      
+      function ticked(data) {
+        
+        
+        function all(){
+            svg.selectAll('circle')
+              // .transition()
+              // .duration(10)
+              .attr("r", function(d){ return d.r; })
+              .attr("cx", function(d){ return d.x;})
+              .attr("cy", function(d){ return d.y-h/10; })
+              .style("fill", function(d){ return color2(d.ID);})
+              .style("stroke", function(d){ return color2(d.ID); });
+              
+              svg.append("text")
+        .attr("x", w/3)             
+        .attr("y", h/10)
         .attr("text-anchor", "center")  
         .attr('class', "domQuote")
+        .attr('fill', '#111111')
+        .text('Recent Immigrants, 2017');
+        
+        
+      
+              
+              svg.on('click', function() {
+                d3.event.stopPropagation();
+                splitBubbles("Education");
+                
+                
+              })
+        }
+        
+        
+            
+          function Education() {
+          circleID = "Education"
+          
+          d3.selectAll("text").remove();
+                
+          svg.selectAll('circle')
+              .transition()
+              .duration(100)
+              .attr("cx", function(d){ return d.x+270; })
+              .attr("cy", function(d){ return d.y; })
+              .style("fill", function(d){ return color3(d.Education);})
+              .style("stroke", function(d){ return color3(d.Education); });
+          
+           svg.append("text")
+        .attr("x", w/3)             
+        .attr("y", h/10)
+        .attr("text-anchor", "center")  
+        .attr('class', "domQuote")
+        .attr('fill', '#111111')
+        .text('Recent Immigrants by Degree');
+        
+        svg.append("text")
+        .attr("x", w/4.75)             
+        .attr("y", h/2)
+        .attr("text-anchor", "center")  
+        .attr('class', "degree")
+        .attr('fill', '#39377E')
+        .text('Masters Degree');
+        
+        svg.append("text")
+        .attr("x", w/3.25)             
+        .attr("y", h/2)
+        .attr("text-anchor", "center")  
+        .attr('class', "degree")
+        .attr('fill', '#5553bc')
+        .text('Bachelors Degree');
+        
+        svg.append("text")
+        .attr("x", w/2.5)             
+        .attr("y", h/2)
+        .attr("text-anchor", "center")  
+        .attr('class', "degree")
+        .attr('fill', '#6263F1')
+        .text('Some College');
+        
+        svg.append("text")
+        .attr("x", w/2.1)             
+        .attr("y", h/2)
+        .attr("text-anchor", "center")  
+        .attr('class', "degree")
+        .attr('fill', '#C0EAF9')
+        .text('High School Degree');
+        
+        svg.append("text")
+        .attr("x", w/1.7)             
+        .attr("y", h/2)
+        .attr("text-anchor", "center")  
+        .attr('class', "degree")
+        .attr('fill', '#d7f2f2')
+        .text('No Degree');
+          
+          svg.on('click', function() {
+               
+                splitBubbles("STEM");
+        
+        })
+        }
+        
+        function STEM() {
+           d3.selectAll("text").remove();
+           circleID = "STEM"
+           svg.selectAll('circle')
+              .transition()
+              .duration(100)
+              // .attr("cx", function(d){ if (d.STEM != "0") {return d.x+w/4;} else {return 0;} })
+              // .attr("cy", function(d){ if (d.STEM != "0") {return d.y;} else {return 0;} })
+              .attr("cx", function(d){  return d.x+w/8;})
+              .attr("cy", function(d){ return d.y;})
+              .attr('opacity', function(d){ if (d.STEM == "0") {return .5;} })
+              .style("fill", function(d){ return color4(d.STEM);})
+              .style("stroke", function(d){ return color4(d.STEM); });
+          svg.on('click', function() {
+                d3.event.stopPropagation();
+                splitBubbles("FieldNew");
+        })
+         svg.append("text")
+        .attr("x", w/3)             
+        .attr("y", h/10)
+        .attr("text-anchor", "center")  
+        .attr('class', "domQuote")
+        .attr('fill', '#111111')
+        .text('STEM Degrees');
+        
+        svg.append("text")
+        .attr("x", w/4.2)             
+        .attr("y", h/2)
+        .attr("text-anchor", "center")  
+        .attr('class', "degree")
+        .attr('fill', "#6a7ef5")
+        .text('STEM');
+        
+        svg.append("text")
+        .attr("x", w/3)             
+        .attr("y", h/2)
+        .attr("text-anchor", "center")  
+        .attr('class', "degree")
+        .attr('fill', "#f1bd03")
+        .text('Non STEM Degrees');
+        
+        svg.append("text")
+        .attr("x", w/2)             
+        .attr("y", h/2)
+        .attr("text-anchor", "center")  
+        .attr('class', "degree")
+        .attr('fill', '#999999')
+        .text('No College Degree');
+        
+        
+        
+        }
+        
+        function FieldNew() {
+           d3.selectAll("text").remove();
+          circleID == "FieldNew"
+           svg.selectAll('circle')
+              .transition()
+              .duration(100)
+              .style('opacity', '1')
+              .attr("cx", function(d){ 
+                  if (d.FieldNew == "0") {return d.ID*3-4*xCol;}
+                  //else if (d.FieldNew == '7'||d.FieldNew == '8'||d.FieldNew == '9'||d.FieldNew == '10'){return (d.x)*(d.FieldNew/5) - 4*xCol }
+                  else if (d.FieldNew == '7'||d.FieldNew == '8'||d.FieldNew == '9'||d.FieldNew == '10'){return (d.x + (xCol*d.FieldNew+xCol)) - w/2 }
+                  else {return d.x + (xCol*d.FieldNew+xCol);}
+                  
+              })
+              .attr("cy", function(d){ 
+                  if (d.FieldNew == "0") {return h/2.75;} 
+                  // else if (d.FieldNew == '1'||d.FieldNew == '2'||d.FieldNew == '3'||d.FieldNew == '4'||d.FieldNew == '5'||d.FieldNew == '6'){return (d.y-100);}
+                  else {return (d.y);}
+                 
+              })
+              .style("fill", function(d){ return color5(d.FieldNew);})
+              .style("stroke", function(d){ return color5(d.FieldNew); });
+              
+              
+                              svg.append("text")
+        .attr("x", w/7)             
+        .attr("y", h/10)
+        .attr("text-anchor", "center")  
+        .attr('class', "professions")
+        .attr('fill',  "#39377E")
+        .text('Engineering');
+        
+        svg.append("text")
+        .attr("x", w/4)             
+        .attr("y", h/12)
+        .attr("text-anchor", "center")  
+        .attr('class', "professions")
+        .attr('fill', '#6263F1' )
+        .text('Medical & Health');
+          
+        
+        
+        svg.append("text")
+        .attr("x", w/2.8)             
+        .attr("y", h/10)
+        .attr("text-anchor", "center")  
+        .attr('class', "professions")
+        .attr('fill', '#8ADCFC')
+        .text('Biology & Life Sciences');
+        
+        
+        svg.append("text")
+        .attr("x", w/2.2)             
+        .attr("y", h/12)
+        .attr("text-anchor", "center")  
+        .attr('class', "professions")
+        .attr('fill','#6a7ef5')
+        .text('Physical Sciences');
+        
+        svg.append("text")
+        .attr("x", w/1.76)             
+        .attr("y", h/10)
+        .attr("text-anchor", "center")  
+        .attr('class', "professions")
+        .attr('fill', "#BCE5ED")
+        .text('Computer Sciences');
+        
+         svg.append("text")
+        .attr("x", w/1.47)             
+        .attr("y", h/12)
+        .attr("text-anchor", "center")  
+        .attr('class', "professions")
+        .attr('fill','#a0a1a5')
+        .text('Other STEM');
+        
+        
+        svg.append("text")
+        .attr("x", w/3.75)             
+        .attr("y", h/1.5)
+        .attr("text-anchor", "center")  
+        .attr('class', "professions")
+        .attr('fill',"#943CAA")
+        .text('Business');
+        
+        svg.append("text")
+        .attr("x", w/2.65)             
+        .attr("y", h/1.6)
+        .attr("text-anchor", "center")  
+        .attr('class', "professions")
+        .attr('fill','#A882CC')
+        .text('Social Sciences');
+        
+       
+          
+        
+        svg.append("text")
+        .attr("x", w/2.1)             
+        .attr("y", h/1.5)
+        .attr("text-anchor", "center")  
+        .attr('class', "professions")
+        .attr('fill','#FF704F')
+        .text('Education');
+        
+        
+        
+        svg.append("text")
+        .attr("x", w/1.7)             
+        .attr("y", h/1.6)
+        .attr("text-anchor", "center")  
+        .attr('class', "professions")
+        .attr('fill','#FFDB21')
+        .text('Non-STEM');
+                
+                
+            
+            svg.on('click', function() {
+                d3.event.stopPropagation();
+                splitBubbles("profession");
+                
+
+        })
+        }
+        
+
+              
+        function profession(){
+           d3.selectAll("text").remove();
+          circleID == "profession"
+            svg.selectAll('circle')
+              .style('opacity', "1")
+              .transition()
+              .duration(75)
+              .attr("cx", function(d){ if (d.profession == "11") {return d.x}
+                                        else {return d.x + w/5}
+              })
+              .attr("cy", function(d){ return d.y;})
+              .style("fill", function(d){ return color6(d.profession);})
+              .style("opacity",function(d){ if (d.profession == "0") {return '0';} else {return '1';}})
+              .style("stroke", function(d){ return color6(d.profession); });
+              
+            svg.on('click', function() {
+                d3.event.stopPropagation();
+                splitBubbles("professionExtra");
+        })
+        
+        svg.append("text")
+        .attr("x", w/5)             
+        .attr("y", h/14)
+        .attr("text-anchor", "center")  
+        .attr('class', "professions")
+        .attr('fill', "#943CAA")
+        .text('Software Developers');
+        
+        svg.append("text")
+        .attr("x", w/3.55)             
+        .attr("y", h/19)
+        .attr("text-anchor", "center")  
+        .attr('class', "professions")
+        .attr('fill', '#9B9EA0' )
+        .text('Physical Scientists');
+          
+        
+        
+        svg.append("text")
+        .attr("x", w/2.8)             
+        .attr("y", h/14)
+        .attr("text-anchor", "center")  
+        .attr('class', "professions")
         .attr('fill', '#21D177')
-        .text('Graduate Degree');
-
+        .text('Computer Scientists');
         
-    svg.append("text")
-        .attr("x", (width*.245))             
-        .attr("y", (margin.top*11.53))
+        
+        svg.append("text")
+        .attr("x", w/2.25)             
+        .attr("y", h/19)
         .attr("text-anchor", "center")  
-        .attr('class', "domQuote")
+        .attr('class', "professions")
+        .attr('fill', '#8ADCFC')
+        .text('Physcians');
+        
+        svg.append("text")
+        .attr("x", w/1.9)             
+        .attr("y", h/14)
+        .attr("text-anchor", "center")  
+        .attr('class', "professions")
+        .attr('fill', '#FF704F')
+        .text('Nurses');
+        
+        
+        
+        svg.append("text")
+        .attr("x", w/4.05)             
+        .attr("y", h/1.7)
+        .attr("text-anchor", "center")  
+        .attr('class', "professions")
+        .attr('fill', '#6a7ef5')
+        .text('Cashiers');
+        
+        svg.append("text")
+        .attr("x", w/3)             
+        .attr("y", h/1.6)
+        .attr("text-anchor", "center")  
+        .attr('class', "professions")
+        .attr('fill','#F2BC02')
+        .text('Managers');
+        
+        svg.append("text")
+        .attr("x", w/1.9)             
+        .attr("y", h/3.5)
+        .attr("text-anchor", "center")  
+        .attr('class', "professions")
+        .attr('fill', '#FFDB21')
+        .text('Other Professions');
+          
+        
+        svg.append("text")
+        .attr("x", w/2.5)             
+        .attr("y", h/1.7)
+        .attr("text-anchor", "center")  
+        .attr('class', "professions")
+        .attr('fill', '#a0a1a5')
+        .text('Accountants');
+        
+        
+        svg.append("text")
+        .attr("x", w/2)             
+        .attr("y", h/1.6)
+        .attr("text-anchor", "center")  
+        .attr('class', "professions")
         .attr('fill', '#6B7CF2')
-        .text("Bachelor's Degree");
-    
-    // svg.append("text")
-    //     .attr("x", (width*.26))             
-    //     .attr("y", (margin.top*7.5))
-    //     .attr("text-anchor", "center")  
-    //     .attr('class', "domQuote")
-    //     .attr('fill', '#888888')
-    //     .text('150,291');
+        .text('CEOs');
         
-    // svg.append("text")
-    //     .attr("x", (width*.26))             
-    //     .attr("y", (margin.top*6.5))
-    //     .attr("text-anchor", "center")  
-    //     .attr('class', "domQuote")
-    //     .attr('fill', '#888888')
-    //     .text("Bachelor's Degree");
-    
-    // svg.append("text")
-    //     .attr("x", (width*.26))             
-    //     .attr("y", (margin.top*7.5))
-    //     .attr("text-anchor", "center")  
-    //     .attr('class', "domQuote")
-    //     .attr('fill', '#888888')
-    //     .text('150,291');
-        
-    svg.append("text")
-        .attr("x", (width*.45))             
-        .attr("y", (margin.top*15.1))
+        svg.append("text")
+        .attr("x", w/1.8)             
+        .attr("y", h/1.7)
         .attr("text-anchor", "center")  
-        .attr('class', "domQuote")
-        .attr('fill', "#F7594C")
-        .text("SomeCollege");
-    
-    // svg.append("text")
-    //     .attr("x", (width*.45))             
-    //     .attr("y", (margin.top*7.5))
-    //     .attr("text-anchor", "center")  
-    //     .attr('class', "domQuote")
-    //     .attr('fill', '#888888')
-    //     .text('64,319');
+        .attr('class', "professions")
+        .attr('fill', '#38387C')
+        .text('Postsecondary Educator');
         
-    svg.append("text")
-        // .duration(100) 
-        .attr("x", (width*.55))             
-        .attr("y", (margin.top*18.65))
+        
+        }
+        
+
+          function professionExtra(){
+             d3.selectAll("text").remove();
+            circleID == "professionExtra";
+            svg.selectAll('circle')
+              .style("opacity",function(d){ if (d.professionExtra == "0") {return 0;} else {return 1;}})
+              .transition()
+              .duration(125)
+              .attr('class', "profession")
+              .attr("r", function(d){ return d.r; },)
+              .attr("cx", function(d){return d.x + w/4;})
+              .attr("cy", function(d) {return d.y;})
+              .style("fill", function(d){ return color6(d.profession);})
+              .style("stroke", function(d){ return color6(d.profession); });
+              
+              svg.on('click', function() {
+                circleID == "professionExtra2";
+                 splitBubbles("professionExtra2");
+              });
+        }
+        
+         function professionExtra2() {
+           circleID == "professionExtra2";
+           svg.selectAll('circle')
+              .style("opacity",function(d){ if (d.professionExtra == "0") {return 0;} else {return 1;}})
+              .transition()
+              .duration(120)
+              .attr('class', "profession")
+              .attr("r", function(d){ return d.r; },)
+              .attr("cx", function(d){
+                if (d.professionExtra2 == '1' && d.profession =='10') {return d.x + w/2.25;} 
+                else if (d.professionExtra2 == "0" && d.postsecondary =='0') {return 0;} 
+                else if (d.professionExtra2 == "1" && d.postsecondary =='0'){return d.x + w/4;}
+                else 
+                {return d.x + w/4;}
+              })
+              .attr("cy", function(d) {return d.y;})
+              .style("fill", function(d){ return color6(d.profession);})
+              .style("stroke", function(d){ return color6(d.profession); });
+        
+        svg.append("text")
+        .attr("x", w/1.75)             
+        .attr("y", h/3)
         .attr("text-anchor", "center")  
-        .attr('class', "domQuote")
-        .attr('fill', "#F2BC02")
-        .text("High School");
+        .attr('class', "degree")
+        .attr('fill', '#38387C')
+        .text('Postsecondary Educators');           
+           
+           
+      } 
+        
+        if (circleID == "Education") {Education();}
+        else if (circleID == "STEM") {STEM();}
+        else if (circleID == "FieldNew") {FieldNew();}
+        else if (circleID == "profession") {profession();}
+        else if (circleID == "professionExtra") {professionExtra();}
+        else if (circleID == "professionExtra2") {professionExtra2();}
+          else {all();}
+      
+      }
+      
+
+      simulation
+            .nodes(data)
+            .on("tick", ticked);
+      
+      	               
+     
+      
+      
+      
+      function groupBubbles() {
+        hideTitles();
+
+        // @v4 Reset the 'x' force to draw the bubbles to the center.
+        simulation.force('x', d3.forceX().strength(forceStrength).x(w/2))
+        simulation.force('y', d3.forceY().strength(forceStrength).y(h/2));
+
+        // @v4 We can reset the alpha value and restart the simulation
+        simulation.alpha(3).restart();
+      }
+      
+      
+      
+      function splitBubbles(byVar) {
+        
+        circleID = byVar
+
+        centerScale.domain(data.map(function(d){ return d[byVar] 
+          
+        })
+        );
+        
+        
+        // @v4 Reset the 'x' force to draw the bubbles to their year centers
+        simulation.force('x', d3.forceX().strength(forceStrength).x(function(d){ 
+          if (circleID=="profession") {return centerScale(d[byVar]);}
+        	else {return centerScale(d[byVar]);}}
+        ));
+        
+        simulation.force('y', d3.forceY().strength(forceStrength).y(function(d){ 
+          
+        	if (circleID == "Education"){
+        	 if (d.Education =="0") {
+        	   return 400;
+        	 }
+        	 else if (d.Education =="1") {
+        	   return 375;
+        	 }
+        	 else if (d.Education =="2") {
+        	   return 350;
+        	 }
+        	 else if (d.Education =="3") {
+        	   return 325;
+        	 }
+        	 else if (d.Education =="4") {
+        	   return 300;
+        	 }
+        	}
+        	 
+        	 
+        else if (circleID == "STEM"){
+        	  
+        	   return 375;
+      
+        }
+        	
+        
+      else if (circleID == "FieldNew"){
+        	 if (d.FieldNew =="1") {
+        	   return h/5;
+        	 }
+        	 else if (d.FieldNew =="1") {
+        	   return h/5;
+        	 }
+        	 else if (d.FieldNew =="2") {
+        	   return h/5;
+        	 }
+        	 else if (d.FieldNew =="3") {
+        	   return h/5;
+        	 }
+        	 else if (d.FieldNew=="4") {
+        	   return h/5;
+        	 }
+        	 else if (d.FieldNew =="5") {
+        	   return h/5;
+        	 }
+        	 else if (d.FieldNew =="6") {
+        	   return h/5;
+        	 }
+        	 else if (d.FieldNew =="7") {
+        	   return h/2;
+        	 }
+        	 else if (d.FieldNew =="8") {
+        	   return h/2;
+        	 }
+        	 else if (d.FieldNew =="9") {
+        	   return h/2;
+        	 }
+        	 else if (d.FieldNew =="10") {
+        	   return h/2;
+        	 }
+        	 else {return 0;}
+        
+        }
+        	
+        	
+        else if (circleID == "profession"){
+        	 if (d.profession =="1") {
+        	   return h/7;
+        	 }
+        	 else if (d.profession =="2") {
+        	   return h-(h/2);
+        	 }
+        	  else if (d.profession =="3") {
+        	   return h/7;
+        	 }
+        	  else if (d.profession =="4") {
+        	   return h-(h/2);
+        	 }
+        	  else if (d.profession =="5") {
+        	   return h/7;
+        	 }
+        	  else if (d.profession =="6") {
+        	   return h-(h/2);
+        	 }
+        	 else if (d.profession =="7") {
+        	   return  h/7;
+        	 }
+        	 else if (d.profession =="8") {
+        	   return h-(h/2);
+        	 }
+        	 else if (d.profession =="9") {
+        	   return h/7;
+        	 }
+        	 else if (d.profession =="10") {
+        	   return h-(h/2)-20;
+        	 }
+        	 else if (d.profession=="0") {
+        	    return h/2;
+        	  }
+        	 else if (d.profession=="11") {
+        	    return h/3;
+        	  }
+        	  else {return 0;}
+        		}
+        
+        else if (circleID == "professionExtra"){
+        	 if (d.professionExtra =="1") {
+        	   return h/3;
+        	 }
+        	 else if (d.professionExtra =="1"){return 0;}
+        	 else {return 0;}
+        }
+        
+        else if (circleID == "professionExtra2"){
+        	 if (d.professionExtra =="1") {
+        	   return h/3;
+        	 }
+        	 else if (d.professionExtra =="1"){return 0;}
+        	 else {return 0;}
+        }
+        
+        else {
+        	  
+        	   return 375;
+      
+        }
+        	
     
-    // svg.append("text")
-    //     .attr("x", (width*.55))             
-    //     .attr("y", (margin.top*7.5))
-    //     .attr("text-anchor", "center")  
-    //     .attr('class', "domQuote")
-    //     .attr('fill', '#888888')
-    //     .text('81,622');
-        
-    svg.append("text")
-        .attr("x", (width*.66))             
-        .attr("y", (margin.top*22.2))
-        .attr("text-anchor", "center")  
-        .attr('class', "domQuote")
-        .attr('fill', "#999")
-        .text("NoDegree");
+        }));
+
+        // @v4 We can reset the alpha value and restart the simulation
+        simulation.alpha(1).restart();
+      }
+      
+      
+      
+      
+      
+    })
     
-    // svg.append("text")
-    //     .attr("x", (width*.65))             
-    //     .attr("y", (margin.top*7.5))
-    //     .attr("text-anchor", "center")  
-    //     .attr('class', "domQuote")
-    //     .attr('fill', '#888888')
-    //     .text('90,260');
-    
-    svg.on("click", changed);
-}
-
-//   .style('fill',function(d) {
-//     if (d.education == "BA") {return "#6B7CF2"} 
-//     else if (d.education == "MAplus") {
-//         return "#F7594C"
-//      } else if (d.education == "NoHS") {
-//       	return "#F8F8F8"
-//       } else if (d.education == "NoHS") {
-//       	return "#F5F5F5"
-//     } else if (d.education == "NoHS") {
-//       	return "#F3F3F3"}
-// });
-  
-
-
-	// var node = svg2.selectAll('circle')
- //   .data(skillDV)
- //   .append('circle')
-
-function changed() {
-  
-  svg.selectAll('text')
-                .transition()
-                .duration(200)
-                .style('opacity', 0);
-
-	svg.selectAll(".boxDot")
-	.transition()
-	.ease(d3.easeExp)
-    .duration(2000)
-    .delay(function(d){return Math.random()*1000;})
-    .attr("x", function(d) { return x(d.groundCol); })
-	.attr("y", function(d) { return y(d.groundRow); })
-    .attr('height', '10')
-	.attr('width', '10')
-	.attr('rx', '2')
-	.attr('ry', '2')
-    .attr('class', 'groundsq')
-    .attr('fill', d => colorScaleG(d.degtext));
-    
-    
-    svg.append("text")
-        .attr("x", (width*.23))             
-        .attr("y", (margin.top*32))
-        .attr("text-anchor", "middle")  
-        .attr('class', "domQuote")
-        .attr('fill', "#444444")
-        .text("STEM Degrees");
-    
-    svg.append("text")
-        .attr("x", (width*.23))             
-        .attr("y", (margin.top*33))
-        .attr("text-anchor", "middle")  
-        .attr('class', "domQuote")
-        .attr('fill', "#6B7CF2")
-        .text("Engineering");
-        
-    svg.append("text")
-        .attr("x", (width*.23))             
-        .attr("y", (margin.top*34))
-        .attr("text-anchor", "middle")  
-        .attr('class', "domQuote")
-        .attr('fill', "#F7594C")
-        .text("Computer Sciences");
-        
-   svg.append("text")
-        .attr("x", (width*.23))             
-        .attr("y", (margin.top*35))
-        .attr("text-anchor", "middle")  
-        .attr('class', "domQuote")
-        .attr('fill', "#999")
-        .text("Medicine and Health");
-        
-   svg.append("text")
-        .attr("x", (width*.23))             
-        .attr("y", (margin.top*36))
-        .attr("text-anchor", "middle")  
-        .attr('class', "domQuote")
-        .attr('fill', '#A882CC')
-        .text("Biology and Life Sciences");
-        
-   svg.append("text")
-        .attr("x", (width*.23))             
-        .attr("y", (margin.top*37))
-        .attr("text-anchor", "middle")  
-        .attr('class', "domQuote")
-        .attr('fill', '#87D8F7')
-        .text("Physical Sciences");
-  
-    svg.append("text")
-        .attr("x", (width*.6))             
-        .attr("y", (margin.top*32))
-        .attr("text-anchor", "middle")  
-        .attr('class', "domQuote")
-        .attr('fill', "#444444")
-        .text("Non-STEM Degrees");
-    
-    svg.append("text")
-        .attr("x", (width*.6))             
-        .attr("y", (margin.top*33))
-        .attr("text-anchor", "middle")  
-        .attr('class', "domQuote")
-        .attr('fill', "#21D177")
-        .text("Business");
-        
-    svg.append("text")
-        .attr("x", (width*.6))             
-        .attr("y", (margin.top*34))
-        .attr("text-anchor", "middle")  
-        .attr('class', "domQuote")
-        .attr('fill', "#F2BC02")
-        .text("Social Sciences");
-        
-   svg.append("text")
-        .attr("x", (width*.6))             
-        .attr("y", (margin.top*35))
-        .attr("text-anchor", "middle")  
-        .attr('class', "domQuote")
-        .attr('fill', '#6063ED')
-        .text("Education");
-        
-   svg.append("text")
-        .attr("x", (width*.6))             
-        .attr("y", (margin.top*36))
-        .attr("text-anchor", "middle")  
-        .attr('class', "domQuote")
-        .attr('fill', '#999')
-        .text("Other");
-        
-    svg.on("click", sideChange);
-
-}
-
-
-function sideChange() {
-  
-svg.selectAll("text").style('opacity', 0);
-
-	svg.selectAll("rect")
-	.transition()
-	.ease(d3.easeExp)
-    .duration(2000)
-    .delay(function(d){return Math.random()*1000;})
-    .attr("x", function(d) { return xNew(d.sideCcol)+100; })
-	.attr("y", function(d) { return yNew(d.sideCrow); })
-    .attr('height', '12')
-	.attr('width', '12')
-	.attr('rx', '2')
-	.attr('ry', '2')
-    .attr('class', 'sidesq')
-    // .attr('fill', "#555");
-    .attr('fill', d => colorScaleS(d.proftext));
-    
-    svg.append("text")
-        .attr("x", (width*.01))             
-        .attr("y", (margin.top*3))
-        .attr("text-anchor", "left")  
-        .attr('class', "domQuote")
-        .attr('fill', "#444444")
-        .text("In Demand Professions");
-    
-    svg.append("text")
-        .attr("x", (width*.01))             
-        .attr("y", (margin.top*5.5))
-        .attr("text-anchor", "left")  
-        .attr('class', "domQuote")
-        .attr('fill', "#6B7CF2")
-        .text("Software Developers");
-        
-    svg.append("text")
-        .attr("x", (width*.01))             
-        .attr("y", (margin.top*8))
-        .attr("text-anchor", "left")  
-        .attr('class', "domQuote")
-        .attr('fill', "#21D177")
-        .text("Computer Scientists");
-        
-   svg.append("text")
-        .attr("x", (width*.01))             
-        .attr("y", (margin.top*10.7))
-        .attr("text-anchor", "left")  
-        .attr('class', "domQuote")
-        .attr('fill', "#F7594C")
-        .text("Nurses");
-        
-   svg.append("text")
-        .attr("x", (width*.01))             
-        .attr("y", (margin.top*13.4))
-        .attr("text-anchor", "left")  
-        .attr('class', "domQuote")
-        .attr('fill', "#F2BC02")
-        .text("Physicians");
-        
-   svg.append("text")
-        .attr("x", (width*.01))             
-        .attr("y", (margin.top*16.1))
-        .attr("text-anchor", "left")  
-        .attr('class', "domQuote")
-        .attr('fill', '#999')
-        .text("Physical Scientists");
-  
-    svg.append("text")
-        .attr("x", (width*.01))             
-        .attr("y", (margin.top*19.2))
-        .attr("text-anchor", "left")  
-        .attr('class', "domQuote")
-        .attr('fill', "#444444")
-        .text("Other Fields");
-    
-    svg.append("text")
-        .attr("x", (width*.01))             
-        .attr("y", (margin.top*21.5))
-        .attr("text-anchor", "left")  
-        .attr('class', "domQuote")
-        .attr('fill', '#A882CC')
-        .text("Postsecondary Faculty");
-        
-    svg.append("text")
-        .attr("x", (width*.01))             
-        .attr("y", (margin.top*24.4))
-        .attr("text-anchor", "left")  
-        .attr('class', "domQuote")
-        .attr('fill', '#6063ED')
-        .text("Managers");
-        
-   svg.append("text")
-        .attr("x", (width*.01))             
-        .attr("y", (margin.top*27.1))
-        .attr("text-anchor", "left")  
-        .attr('class', "domQuote")
-        .attr('fill', '#87D8F7')
-        .text("Accountants");
-        
-   svg.append("text")
-        .attr("x", (width*.01))             
-        .attr("y", (margin.top*29.7))
-        .attr("text-anchor", "left")  
-        .attr('class', "domQuote")
-        .attr('fill', '#999')
-        .text("CEOs");
-    
-    svg.append("text")
-        .attr("x", (width*.01))             
-        .attr("y", (margin.top*32.4))
-        .attr("text-anchor", "left")  
-        .attr('class', "domQuote")
-        .attr('fill', "#F7594C")
-        .text("Cashiers");
-    
-}
-
-
-
-	}
-
-  
-
-
-// kick thin
- 
-</script>
+  </script>
 </body>
