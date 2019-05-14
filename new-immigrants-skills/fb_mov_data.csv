@@ -1,0 +1,81 @@
+﻿GEOID,geolabel,state,party,pviScore,mov_2016,mov_vs_FB18,mov_vs_FB20,mov_vs_FB22,mov_vs_FB24,poe_2018,poe_2020,pct_change16_20
+0401,Congressional District1 Arizona,Arizona,D,R+2,16812,11321,8490,-3983,-16964,0.042,0.045,0.432
+0402,Congressional District2 Arizona,Arizona,R,R+1,37105,31766,28113,19618,11337,0.086,0.092,0.217
+0409,Congressional District9 Arizona,Arizona,D,D+4,48144,42761,37801,28845,20245,0.080,0.085,0.250
+0649,Congressional District49 California,California,R,R+1,5328,-8594,-21861,-49257,-75772,0.169,0.190,0.359
+0610,Congressional District10 California,California,R,EVEN,10013,2131,-4897,-17119,-28863,0.165,0.174,0.209
+0625,Congressional District25 California,California,R,EVEN,17472,11296,7581,-537,-8473,0.180,0.180,0.117
+0621,Congressional District21 California,California,R,D+5,18838,13720,9129,1604,-5628,0.164,0.172,0.179
+0607,Congressional District7 California,California,D,D+3 ,6008,3676,1879,-751,-3337,0.162,0.162,0.049
+0639,Congressional District39 California,California,R,EVEN,37256,30829,23572,15654,8012,0.320,0.332,0.092
+0636,Congressional District36 California,California,D,D+2,49203,42244,37197,26773,16658,0.143,0.147,0.185
+0645,Congressional District45 California,California,D,R+3,52215,44663,37415,27623,18178,0.255,0.262,0.115
+0603,Congressional District3 California,California,D,D+5,36079,33705,30265,27385,24617,0.136,0.139,0.087
+0648,Congressional District48 California,California,R,R+4,48271,47216,46753,45659,44569,0.209,0.207,0.014
+0806,Congressional District6 Colorado,Colorado,R,D+2 ,31310,29566,27723,25645,23628,0.086,0.085,0.076
+0905,Congressional District5 Connecticut,Connecticut,D,D+2 ,47946,47822,43289,43143,43008,0.103,0.110,0.086
+0902,Congressional District2 Connecticut,Connecticut,D,D+3 ,95997,99071,100284,102129,104191,0.045,0.043,-0.153
+1227,Congressional District27 Florida,Florida,R,0,28215,17344,5566,-8108,-21288,0.504,0.505,0.102
+1207,Congressional District7 Florida,Florida,D,0,10346,5156,-775,-8642,-16106,0.102,0.108,0.201
+1225,Congressional District25 Florida,Florida,R,0,62740,47313,27713,6490,-13669,0.560,0.592,0.150
+1213,Congressional District13 Florida,Florida,D,0,13407,10329,6358,2244,-1672,0.094,0.098,0.135
+1218,Congressional District18 Florida,Florida,R,0,39683,34799,30820,24138,17678,0.116,0.119,0.140
+1209,Congressional District9 Florida,Florida,D,0,50682,45768,48422,42811,36970,0.120,0.108,0.033
+1712,Congressional District12 Illinois,Illinois,R,R+5 ,45479,44772,43759,42706,41718,0.018,0.020,0.196
+1714,Congressional District14 Illinois,Illinois,R,R+5,63600,59706,55103,49173,43559,0.086,0.093,0.205
+1706,Congressional District6 Illinois,Illinois,R,R+2,65723,60963,56966,50553,44355,0.135,0.141,0.133
+1713,Congressional District13 Illinois,Illinois,R,R+3,60859,60957,61343,61430,61521,0.020,0.019,-0.044
+1717,Congressional District17 Illinois,Illinois,D,D+3,57605,58915,60440,60957,61711,0.019,0.016,-0.258
+1901,Congressional District1 Iowa,Iowa,R,D+1,29826,28816,26875,25275,23806,0.023,0.026,0.241
+1902,Congressional District2 Iowa,Iowa,D,D+1,27273,27637,27594,27930,28265,0.021,0.021,-0.025
+1903,Congressional District3 Iowa,Iowa,R,R+1,53484,51957,50411,48319,46313,0.037,0.039,0.144
+2003,Congressional District3 Kansas,Kansas,R,R+4,35869,30867,25350,15784,6659,0.066,0.075,0.346
+2302,Congressional District2 Maine,Maine,R,R+2,34423,34429,33848,33855,33861,0.019,0.020,0.059
+2509,Congressional District9 Massachusetts,Massachusetts,D,D+4,82712,82871,84209,84354,84505,0.062,0.058,-0.041
+2611,Congressional District11 Michigan,Michigan,R,R+4 ,56834,55208,53748,51867,50028,0.097,0.098,0.061
+2603,Congressional District6 Michigan,Michigan,R,R+4,72991,69416,66547,58329,50080,0.032,0.037,0.462
+2609,Congressional District9 Michigan,Michigan,D,D+4,70713,66786,63771,58289,52980,0.092,0.096,0.149
+2608,Congressional District8 Michigan,Michigan,R,R+4,61842,61777,60622,60551,60482,0.046,0.047,0.048
+2605,Congressional District5 Michigan,Michigan,D,D+5,83168,82795,83169,82778,82370,0.016,0.015,0.000
+2702,Congressional District2 Minnesota,Minnesota,R,R+2,6959,3606,356,-4861,-9851,0.067,0.072,0.212
+2708,Congressional District8 Minnesota,Minnesota,D,R+4,2011,1397,371,-603,-1504,0.014,0.016,0.238
+2701,Congressional District1 Minnesota,Minnesota,D,R+5,2549,2489,2771,2712,2652,0.029,0.029,-0.015
+2703,Congressional District3 Minnesota,Minnesota,R,D+1,53837,50236,47296,42194,37266,0.088,0.093,0.158
+3102,Congressional District2 Nebraska,Nebraska,R,R+4,5552,3535,2643,-378,-3368,0.040,0.040,0.177
+3204,Congressional District4 Nevada,Nevada,D,D+3,10460,6366,3225,-2331,-7716,0.114,0.117,0.135
+3203,Congressional District3 Nevada,Nevada,D,R+2,3927,3757,2260,2083,1909,0.147,0.143,0.019
+3301,Congressional District1 New Hampshire,New Hampshire,D,R+2,4817,3938,4440,3479,2489,0.034,0.033,0.021
+3302,Congressional District2 New Hampshire,New Hampshire,D,D+2,15426,13285,11996,8861,5795,0.043,0.045,0.170
+3405,Congressional District5 New Jersey,New Jersey,D,R+3,10220,1094,-6199,-19383,-32122,0.197,0.208,0.168
+3407,Congressional District7 New Jersey,New Jersey,R,R+3,37959,30315,24165,13072,2356,0.173,0.188,0.170
+3402,Congressional District2 New Jersey,New Jersey,R,R+1,63090,57944,54107,45757,37646,0.083,0.090,0.230
+3411,Congressional District11 New Jersey,New Jersey,R,R+3,68420,63963,61572,56144,50809,0.165,0.169,0.081
+3403,Congressional District3 New Jersey,New Jersey,R,R+2,62310,60736,57281,55279,53394,0.079,0.085,0.116
+3603,Congressional District3 New York,New York,D,D+1,14292,7518,4041,-4519,-12928,0.208,0.210,0.097
+3602,Congressional District2 New York,New York,R,R+3,68272,56121,46104,23213,893,0.157,0.174,0.324
+3611,Congressional District11 New York,New York,R,R+3,56300,47855,38257,27154,16517,0.305,0.323,0.125
+3618,Congressional District18 New York,New York,D,R+1,28089,25899,23101,20372,17751,0.099,0.102,0.099
+3604,Congressional District4 New York,New York,D,D+4,54975,48208,40410,31094,22210,0.207,0.220,0.149
+3619,Congressional District19 New York,New York,R,R+2,26502,26460,25442,25397,25353,0.048,0.051,0.040
+3624,Congressional District24 New York,New York,R,D+3,61604,59098,57116,53220,49453,0.045,0.049,0.207
+3601,Congressional District1 New York,New York,R,R+5,53042,54200,54306,55377,56452,0.090,0.089,-0.026
+3901,Congressional District1 Ohio,Ohio,R,R+5,66004,62363,58173,50841,43847,0.044,0.051,0.383
+3910,Congressional District10 Ohio,Ohio,R,R+4,104309,101323,97893,92157,86703,0.039,0.045,0.350
+3914,Congressional District14 Ohio,Ohio,R,R+5,87071,87802,89621,90133,90718,0.034,0.031,-0.134
+4105,Congressional District5 Oregon,Oregon,D,EVEN,34566,32515,29745,26987,24367,0.059,0.061,0.139
+4104,Congressional District4 Oregon,Oregon,D,EVEN,61171,60084,59260,57809,56401,0.026,0.026,0.127
+4217,Congressional District17 Pennsylvania,Pennsylvania,D,R+1,22047,20382,19047,16815,14654,0.045,0.048,0.130
+4208,Congressional District8 Pennsylvania,Pennsylvania,R,R+2,34036,30527,25521,20271,15346,0.086,0.095,0.199
+4216,Congressional District16 Pennsylvania,Pennsylvania,R,R+5,34729,35101,35028,35384,35739,0.041,0.041,-0.013
+4207,Congressional District7 Pennsylvania,Pennsylvania,R,R+1,71506,65720,61377,50770,40384,0.073,0.082,0.304
+4206,Congressional District6 Pennsylvania,Pennsylvania,R,R+2,51871,52240,52654,52994,53341,0.044,0.042,-0.032
+4215,Congressional District15 Pennsylvania,Pennsylvania,R,R+4,64329,63880,62386,61877,61388,0.060,0.063,0.059
+4823,Congressional District23 Texas,Texas,R,R+1,3767,1561,-1509,-4281,-6934,0.104,0.105,0.104
+4832,Congressional District32 Texas,Texas,R,R+5,118915,110031,100307,84925,70307,0.154,0.171,0.280
+5110,Congressional District10 Virginia,Virginia,R,0,22042,8979,-1236,-22767,-43639,0.197,0.208,0.240
+5102,Congressional District2 Virginia,Virginia,R,0,65607,64250,62257,60601,59011,0.068,0.071,0.090
+5310,Congressional District10 Washington,Washington,D,D+5,47044,43724,40852,36154,31627,0.076,0.078,0.158
+5303,Congressional District3 Washington,Washington,R,R+4,68098,65459,60719,56679,52944,0.067,0.074,0.218
+5308,Congressional District8 Washington,Washington,R,EVEN,58461,57801,56438,55708,54997,0.086,0.086,0.045
+5501,Congressional District1 Wisconsin,Wisconsin,R,R+5,123206,124613,125666,126566,127579,0.029,0.027,-0.145
+5503,Congressional District3 Wisconsin,Wisconsin,D,EVEN,257000,254845,253363,248741,244091,0.020,0.022,0.404

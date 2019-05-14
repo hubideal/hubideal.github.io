@@ -1,0 +1,321 @@
+﻿uid,GEOID,geolabel,state,year,party,pviScore,mov_2016,mov_vs_FB,poe_2018,poe_2020,pct_change16_20
+1,2708,Congressional District8 Minnesota,Minnesota,2018,D,R+4,2011,1397,0.014,0.016,0.238
+2,2605,Congressional District5 Michigan,Michigan,2018,D,D+5,83168,82795,0.016,0.015,0.000
+3,1712,Congressional District12 Illinois,Illinois,2018,R,R+5 ,45479,44772,0.018,0.020,0.196
+4,1717,Congressional District17 Illinois,Illinois,2018,D,D+3,57605,58915,0.019,0.016,-0.258
+5,2302,Congressional District2 Maine,Maine,2018,R,R+2,34423,34429,0.019,0.020,0.059
+6,1713,Congressional District13 Illinois,Illinois,2018,R,R+3,60859,60957,0.020,0.019,-0.044
+7,5503,Congressional District3 Wisconsin,Wisconsin,2018,D,EVEN,257000,254845,0.020,0.022,0.404
+8,1902,Congressional District2 Iowa,Iowa,2018,D,D+1,27273,27637,0.021,0.021,-0.025
+9,1901,Congressional District1 Iowa,Iowa,2018,R,D+1,29826,28816,0.023,0.026,0.241
+10,4104,Congressional District4 Oregon,Oregon,2018,D,EVEN,61171,60084,0.026,0.026,0.127
+11,5501,Congressional District1 Wisconsin,Wisconsin,2018,R,R+5,123206,124613,0.029,0.027,-0.145
+12,2701,Congressional District1 Minnesota,Minnesota,2018,D,R+5,2549,2489,0.029,0.029,-0.015
+13,2603,Congressional District6 Michigan,Michigan,2018,R,R+4,72991,69416,0.032,0.037,0.462
+14,3914,Congressional District14 Ohio,Ohio,2018,R,R+5,87071,87802,0.034,0.031,-0.134
+15,3301,Congressional District1 New Hampshire,New Hampshire,2018,D,R+2,4817,3938,0.034,0.033,0.021
+16,1903,Congressional District3 Iowa,Iowa,2018,R,R+1,53484,51957,0.037,0.039,0.144
+17,3910,Congressional District10 Ohio,Ohio,2018,R,R+4,104309,101323,0.039,0.045,0.350
+18,3102,Congressional District2 Nebraska,Nebraska,2018,R,R+4,5552,3535,0.040,0.040,0.177
+19,4216,Congressional District16 Pennsylvania,Pennsylvania,2018,R,R+5,34729,35101,0.041,0.041,-0.013
+20,0401,Congressional District1 Arizona,Arizona,2018,D,R+2,16812,11321,0.042,0.045,0.432
+21,3302,Congressional District2 New Hampshire,New Hampshire,2018,D,D+2,15426,13285,0.043,0.045,0.170
+22,4206,Congressional District6 Pennsylvania,Pennsylvania,2018,R,R+2,51871,52240,0.044,0.042,-0.032
+23,3901,Congressional District1 Ohio,Ohio,2018,R,R+5,66004,62363,0.044,0.051,0.383
+24,0902,Congressional District2 Connecticut,Connecticut,2018,D,D+3 ,95997,99071,0.045,0.043,-0.153
+25,4217,Congressional District17 Pennsylvania,Pennsylvania,2018,D,R+1,22047,20382,0.045,0.048,0.130
+26,3624,Congressional District24 New York,New York,2018,R,D+3,61604,59098,0.045,0.049,0.207
+27,2608,Congressional District8 Michigan,Michigan,2018,R,R+4,61842,61777,0.046,0.047,0.048
+28,3619,Congressional District19 New York,New York,2018,R,R+2,26502,26460,0.048,0.051,0.040
+29,4105,Congressional District5 Oregon,Oregon,2018,D,EVEN,34566,32515,0.059,0.061,0.139
+30,4215,Congressional District15 Pennsylvania,Pennsylvania,2018,R,R+4,64329,63880,0.060,0.063,0.059
+31,2509,Congressional District9 Massachusetts,Massachusetts,2018,D,D+4,82712,82871,0.062,0.058,-0.041
+32,2003,Congressional District3 Kansas,Kansas,2018,R,R+4,35869,30867,0.066,0.075,0.346
+33,2702,Congressional District2 Minnesota,Minnesota,2018,R,R+2,6959,3606,0.067,0.072,0.212
+34,5303,Congressional District3 Washington,Washington,2018,R,R+4,68098,65459,0.067,0.074,0.218
+35,5102,Congressional District2 Virginia,Virginia,2018,R,0,65607,64250,0.068,0.071,0.090
+36,4207,Congressional District7 Pennsylvania,Pennsylvania,2018,R,R+1,71506,65720,0.073,0.082,0.304
+37,5310,Congressional District10 Washington,Washington,2018,D,D+5,47044,43724,0.076,0.078,0.158
+38,3403,Congressional District3 New Jersey,New Jersey,2018,R,R+2,62310,60736,0.079,0.085,0.116
+39,0409,Congressional District9 Arizona,Arizona,2018,D,D+4,48144,42761,0.080,0.085,0.250
+40,3402,Congressional District2 New Jersey,New Jersey,2018,R,R+1,63090,57944,0.083,0.090,0.230
+41,5308,Congressional District8 Washington,Washington,2018,R,EVEN,58461,57801,0.086,0.086,0.045
+42,0806,Congressional District6 Colorado,Colorado,2018,R,D+2 ,31310,29566,0.086,0.085,0.076
+43,4208,Congressional District8 Pennsylvania,Pennsylvania,2018,R,R+2,34036,30527,0.086,0.095,0.199
+44,1714,Congressional District14 Illinois,Illinois,2018,R,R+5,63600,59706,0.086,0.093,0.205
+45,0402,Congressional District2 Arizona,Arizona,2018,R,R+1,37105,31766,0.086,0.092,0.217
+46,2703,Congressional District3 Minnesota,Minnesota,2018,R,D+1,53837,50236,0.088,0.093,0.158
+47,3601,Congressional District1 New York,New York,2018,R,R+5,53042,54200,0.090,0.089,-0.026
+48,2609,Congressional District9 Michigan,Michigan,2018,D,D+4,70713,66786,0.092,0.096,0.149
+49,1213,Congressional District13 Florida,Florida,2018,D,0,13407,10329,0.094,0.098,0.135
+50,2611,Congressional District11 Michigan,Michigan,2018,R,R+4 ,56834,55208,0.097,0.098,0.061
+51,3618,Congressional District18 New York,New York,2018,D,R+1,28089,25899,0.099,0.102,0.099
+52,1207,Congressional District7 Florida,Florida,2018,D,0,10346,5156,0.102,0.108,0.201
+53,0905,Congressional District5 Connecticut,Connecticut,2018,D,D+2 ,47946,47822,0.103,0.110,0.086
+54,4823,Congressional District23 Texas,Texas,2018,R,R+1,3767,1561,0.104,0.105,0.104
+55,3204,Congressional District4 Nevada,Nevada,2018,D,D+3,10460,6366,0.114,0.117,0.135
+56,1218,Congressional District18 Florida,Florida,2018,R,0,39683,34799,0.116,0.119,0.140
+57,1209,Congressional District9 Florida,Florida,2018,D,0,50682,45768,0.120,0.108,0.033
+58,1706,Congressional District6 Illinois,Illinois,2018,R,R+2,65723,60963,0.135,0.141,0.133
+59,0603,Congressional District3 California,California,2018,D,D+5,36079,33705,0.136,0.139,0.087
+60,0636,Congressional District36 California,California,2018,D,D+2,49203,42244,0.143,0.147,0.185
+61,3203,Congressional District3 Nevada,Nevada,2018,D,R+2,3927,3757,0.147,0.143,0.019
+62,4832,Congressional District32 Texas,Texas,2018,R,R+5,118915,110031,0.154,0.171,0.280
+63,3602,Congressional District2 New York,New York,2018,R,R+3,68272,56121,0.157,0.174,0.324
+64,0607,Congressional District7 California,California,2018,D,D+3 ,6008,3676,0.162,0.162,0.049
+65,0621,Congressional District21 California,California,2018,R,D+5,18838,13720,0.164,0.172,0.179
+66,3411,Congressional District11 New Jersey,New Jersey,2018,R,R+3,68420,63963,0.165,0.169,0.081
+67,0610,Congressional District10 California,California,2018,R,EVEN,10013,2131,0.165,0.174,0.209
+68,0649,Congressional District49 California,California,2018,R,R+1,5328,-8594,0.169,0.190,0.359
+69,3407,Congressional District7 New Jersey,New Jersey,2018,R,R+3,37959,30315,0.173,0.188,0.170
+70,0625,Congressional District25 California,California,2018,R,EVEN,17472,11296,0.180,0.180,0.117
+71,3405,Congressional District5 New Jersey,New Jersey,2018,D,R+3,10220,1094,0.197,0.208,0.168
+72,5110,Congressional District10 Virginia,Virginia,2018,R,0,22042,8979,0.197,0.208,0.240
+73,3604,Congressional District4 New York,New York,2018,D,D+4,54975,48208,0.207,0.220,0.149
+74,3603,Congressional District3 New York,New York,2018,D,D+1,14292,7518,0.208,0.210,0.097
+75,0648,Congressional District48 California,California,2018,R,R+4,48271,47216,0.209,0.207,0.014
+76,0645,Congressional District45 California,California,2018,D,R+3,52215,44663,0.255,0.262,0.115
+77,3611,Congressional District11 New York,New York,2018,R,R+3,56300,47855,0.305,0.323,0.125
+78,0639,Congressional District39 California,California,2018,R,EVEN,37256,30829,0.320,0.332,0.092
+79,1227,Congressional District27 Florida,Florida,2018,R,0,28215,17344,0.504,0.505,0.102
+80,1225,Congressional District25 Florida,Florida,2018,R,0,62740,47313,0.560,0.592,0.150
+81,2708,Congressional District8 Minnesota,Minnesota,2020,D,R+4,2011,371,0.014,0.016,0.238
+82,2605,Congressional District5 Michigan,Michigan,2020,D,D+5,83168,83169,0.016,0.015,0.000
+83,1712,Congressional District12 Illinois,Illinois,2020,R,R+5 ,45479,43759,0.018,0.020,0.196
+84,1717,Congressional District17 Illinois,Illinois,2020,D,D+3,57605,60440,0.019,0.016,-0.258
+85,2302,Congressional District2 Maine,Maine,2020,R,R+2,34423,33848,0.019,0.020,0.059
+86,1713,Congressional District13 Illinois,Illinois,2020,R,R+3,60859,61343,0.020,0.019,-0.044
+87,5503,Congressional District3 Wisconsin,Wisconsin,2020,D,EVEN,257000,253363,0.020,0.022,0.404
+88,1902,Congressional District2 Iowa,Iowa,2020,D,D+1,27273,27594,0.021,0.021,-0.025
+89,1901,Congressional District1 Iowa,Iowa,2020,R,D+1,29826,26875,0.023,0.026,0.241
+90,4104,Congressional District4 Oregon,Oregon,2020,D,EVEN,61171,59260,0.026,0.026,0.127
+91,5501,Congressional District1 Wisconsin,Wisconsin,2020,R,R+5,123206,125666,0.029,0.027,-0.145
+92,2701,Congressional District1 Minnesota,Minnesota,2020,D,R+5,2549,2771,0.029,0.029,-0.015
+93,2603,Congressional District6 Michigan,Michigan,2020,R,R+4,72991,66547,0.032,0.037,0.462
+94,3914,Congressional District14 Ohio,Ohio,2020,R,R+5,87071,89621,0.034,0.031,-0.134
+95,3301,Congressional District1 New Hampshire,New Hampshire,2020,D,R+2,4817,4440,0.034,0.033,0.021
+96,1903,Congressional District3 Iowa,Iowa,2020,R,R+1,53484,50411,0.037,0.039,0.144
+97,3910,Congressional District10 Ohio,Ohio,2020,R,R+4,104309,97893,0.039,0.045,0.350
+98,3102,Congressional District2 Nebraska,Nebraska,2020,R,R+4,5552,2643,0.040,0.040,0.177
+99,4216,Congressional District16 Pennsylvania,Pennsylvania,2020,R,R+5,34729,35028,0.041,0.041,-0.013
+100,0401,Congressional District1 Arizona,Arizona,2020,D,R+2,16812,8490,0.042,0.045,0.432
+101,3302,Congressional District2 New Hampshire,New Hampshire,2020,D,D+2,15426,11996,0.043,0.045,0.170
+102,4206,Congressional District6 Pennsylvania,Pennsylvania,2020,R,R+2,51871,52654,0.044,0.042,-0.032
+103,3901,Congressional District1 Ohio,Ohio,2020,R,R+5,66004,58173,0.044,0.051,0.383
+104,0902,Congressional District2 Connecticut,Connecticut,2020,D,D+3 ,95997,100284,0.045,0.043,-0.153
+105,4217,Congressional District17 Pennsylvania,Pennsylvania,2020,D,R+1,22047,19047,0.045,0.048,0.130
+106,3624,Congressional District24 New York,New York,2020,R,D+3,61604,57116,0.045,0.049,0.207
+107,2608,Congressional District8 Michigan,Michigan,2020,R,R+4,61842,60622,0.046,0.047,0.048
+108,3619,Congressional District19 New York,New York,2020,R,R+2,26502,25442,0.048,0.051,0.040
+109,4105,Congressional District5 Oregon,Oregon,2020,D,EVEN,34566,29745,0.059,0.061,0.139
+110,4215,Congressional District15 Pennsylvania,Pennsylvania,2020,R,R+4,64329,62386,0.060,0.063,0.059
+111,2509,Congressional District9 Massachusetts,Massachusetts,2020,D,D+4,82712,84209,0.062,0.058,-0.041
+112,2003,Congressional District3 Kansas,Kansas,2020,R,R+4,35869,25350,0.066,0.075,0.346
+113,2702,Congressional District2 Minnesota,Minnesota,2020,R,R+2,6959,356,0.067,0.072,0.212
+114,5303,Congressional District3 Washington,Washington,2020,R,R+4,68098,60719,0.067,0.074,0.218
+115,5102,Congressional District2 Virginia,Virginia,2020,R,0,65607,62257,0.068,0.071,0.090
+116,4207,Congressional District7 Pennsylvania,Pennsylvania,2020,R,R+1,71506,61377,0.073,0.082,0.304
+117,5310,Congressional District10 Washington,Washington,2020,D,D+5,47044,40852,0.076,0.078,0.158
+118,3403,Congressional District3 New Jersey,New Jersey,2020,R,R+2,62310,57281,0.079,0.085,0.116
+119,0409,Congressional District9 Arizona,Arizona,2020,D,D+4,48144,37801,0.080,0.085,0.250
+120,3402,Congressional District2 New Jersey,New Jersey,2020,R,R+1,63090,54107,0.083,0.090,0.230
+121,5308,Congressional District8 Washington,Washington,2020,R,EVEN,58461,56438,0.086,0.086,0.045
+122,0806,Congressional District6 Colorado,Colorado,2020,R,D+2 ,31310,27723,0.086,0.085,0.076
+123,4208,Congressional District8 Pennsylvania,Pennsylvania,2020,R,R+2,34036,25521,0.086,0.095,0.199
+124,1714,Congressional District14 Illinois,Illinois,2020,R,R+5,63600,55103,0.086,0.093,0.205
+125,0402,Congressional District2 Arizona,Arizona,2020,R,R+1,37105,28113,0.086,0.092,0.217
+126,2703,Congressional District3 Minnesota,Minnesota,2020,R,D+1,53837,47296,0.088,0.093,0.158
+127,3601,Congressional District1 New York,New York,2020,R,R+5,53042,54306,0.090,0.089,-0.026
+128,2609,Congressional District9 Michigan,Michigan,2020,D,D+4,70713,63771,0.092,0.096,0.149
+129,1213,Congressional District13 Florida,Florida,2020,D,0,13407,6358,0.094,0.098,0.135
+130,2611,Congressional District11 Michigan,Michigan,2020,R,R+4 ,56834,53748,0.097,0.098,0.061
+131,3618,Congressional District18 New York,New York,2020,D,R+1,28089,23101,0.099,0.102,0.099
+132,1207,Congressional District7 Florida,Florida,2020,D,0,10346,-775,0.102,0.108,0.201
+133,0905,Congressional District5 Connecticut,Connecticut,2020,D,D+2 ,47946,43289,0.103,0.110,0.086
+134,4823,Congressional District23 Texas,Texas,2020,R,R+1,3767,-1509,0.104,0.105,0.104
+135,3204,Congressional District4 Nevada,Nevada,2020,D,D+3,10460,3225,0.114,0.117,0.135
+136,1218,Congressional District18 Florida,Florida,2020,R,0,39683,30820,0.116,0.119,0.140
+137,1209,Congressional District9 Florida,Florida,2020,D,0,50682,48422,0.120,0.108,0.033
+138,1706,Congressional District6 Illinois,Illinois,2020,R,R+2,65723,56966,0.135,0.141,0.133
+139,0603,Congressional District3 California,California,2020,D,D+5,36079,30265,0.136,0.139,0.087
+140,0636,Congressional District36 California,California,2020,D,D+2,49203,37197,0.143,0.147,0.185
+141,3203,Congressional District3 Nevada,Nevada,2020,D,R+2,3927,2260,0.147,0.143,0.019
+142,4832,Congressional District32 Texas,Texas,2020,R,R+5,118915,100307,0.154,0.171,0.280
+143,3602,Congressional District2 New York,New York,2020,R,R+3,68272,46104,0.157,0.174,0.324
+144,0607,Congressional District7 California,California,2020,D,D+3 ,6008,1879,0.162,0.162,0.049
+145,0621,Congressional District21 California,California,2020,R,D+5,18838,9129,0.164,0.172,0.179
+146,3411,Congressional District11 New Jersey,New Jersey,2020,R,R+3,68420,61572,0.165,0.169,0.081
+147,0610,Congressional District10 California,California,2020,R,EVEN,10013,-4897,0.165,0.174,0.209
+148,0649,Congressional District49 California,California,2020,R,R+1,5328,-21861,0.169,0.190,0.359
+149,3407,Congressional District7 New Jersey,New Jersey,2020,R,R+3,37959,24165,0.173,0.188,0.170
+150,0625,Congressional District25 California,California,2020,R,EVEN,17472,7581,0.180,0.180,0.117
+151,3405,Congressional District5 New Jersey,New Jersey,2020,D,R+3,10220,-6199,0.197,0.208,0.168
+152,5110,Congressional District10 Virginia,Virginia,2020,R,0,22042,-1236,0.197,0.208,0.240
+153,3604,Congressional District4 New York,New York,2020,D,D+4,54975,40410,0.207,0.220,0.149
+154,3603,Congressional District3 New York,New York,2020,D,D+1,14292,4041,0.208,0.210,0.097
+155,0648,Congressional District48 California,California,2020,R,R+4,48271,46753,0.209,0.207,0.014
+156,0645,Congressional District45 California,California,2020,D,R+3,52215,37415,0.255,0.262,0.115
+157,3611,Congressional District11 New York,New York,2020,R,R+3,56300,38257,0.305,0.323,0.125
+158,0639,Congressional District39 California,California,2020,R,EVEN,37256,23572,0.320,0.332,0.092
+159,1227,Congressional District27 Florida,Florida,2020,R,0,28215,5566,0.504,0.505,0.102
+160,1225,Congressional District25 Florida,Florida,2020,R,0,62740,27713,0.560,0.592,0.150
+161,2708,Congressional District8 Minnesota,Minnesota,2022,D,R+4,2011,-603,0.014,0.016,0.238
+162,2605,Congressional District5 Michigan,Michigan,2022,D,D+5,83168,82778,0.016,0.015,0.000
+163,1712,Congressional District12 Illinois,Illinois,2022,R,R+5 ,45479,42706,0.018,0.020,0.196
+164,1717,Congressional District17 Illinois,Illinois,2022,D,D+3,57605,60957,0.019,0.016,-0.258
+165,2302,Congressional District2 Maine,Maine,2022,R,R+2,34423,33855,0.019,0.020,0.059
+166,1713,Congressional District13 Illinois,Illinois,2022,R,R+3,60859,61430,0.020,0.019,-0.044
+167,5503,Congressional District3 Wisconsin,Wisconsin,2022,D,EVEN,257000,248741,0.020,0.022,0.404
+168,1902,Congressional District2 Iowa,Iowa,2022,D,D+1,27273,27930,0.021,0.021,-0.025
+169,1901,Congressional District1 Iowa,Iowa,2022,R,D+1,29826,25275,0.023,0.026,0.241
+170,4104,Congressional District4 Oregon,Oregon,2022,D,EVEN,61171,57809,0.026,0.026,0.127
+171,5501,Congressional District1 Wisconsin,Wisconsin,2022,R,R+5,123206,126566,0.029,0.027,-0.145
+172,2701,Congressional District1 Minnesota,Minnesota,2022,D,R+5,2549,2712,0.029,0.029,-0.015
+173,2603,Congressional District6 Michigan,Michigan,2022,R,R+4,72991,58329,0.032,0.037,0.462
+174,3914,Congressional District14 Ohio,Ohio,2022,R,R+5,87071,90133,0.034,0.031,-0.134
+175,3301,Congressional District1 New Hampshire,New Hampshire,2022,D,R+2,4817,3479,0.034,0.033,0.021
+176,1903,Congressional District3 Iowa,Iowa,2022,R,R+1,53484,48319,0.037,0.039,0.144
+177,3910,Congressional District10 Ohio,Ohio,2022,R,R+4,104309,92157,0.039,0.045,0.350
+178,3102,Congressional District2 Nebraska,Nebraska,2022,R,R+4,5552,-378,0.040,0.040,0.177
+179,4216,Congressional District16 Pennsylvania,Pennsylvania,2022,R,R+5,34729,35384,0.041,0.041,-0.013
+180,0401,Congressional District1 Arizona,Arizona,2022,D,R+2,16812,-3983,0.042,0.045,0.432
+181,3302,Congressional District2 New Hampshire,New Hampshire,2022,D,D+2,15426,8861,0.043,0.045,0.170
+182,4206,Congressional District6 Pennsylvania,Pennsylvania,2022,R,R+2,51871,52994,0.044,0.042,-0.032
+183,3901,Congressional District1 Ohio,Ohio,2022,R,R+5,66004,50841,0.044,0.051,0.383
+184,0902,Congressional District2 Connecticut,Connecticut,2022,D,D+3 ,95997,102129,0.045,0.043,-0.153
+185,4217,Congressional District17 Pennsylvania,Pennsylvania,2022,D,R+1,22047,16815,0.045,0.048,0.130
+186,3624,Congressional District24 New York,New York,2022,R,D+3,61604,53220,0.045,0.049,0.207
+187,2608,Congressional District8 Michigan,Michigan,2022,R,R+4,61842,60551,0.046,0.047,0.048
+188,3619,Congressional District19 New York,New York,2022,R,R+2,26502,25397,0.048,0.051,0.040
+189,4105,Congressional District5 Oregon,Oregon,2022,D,EVEN,34566,26987,0.059,0.061,0.139
+190,4215,Congressional District15 Pennsylvania,Pennsylvania,2022,R,R+4,64329,61877,0.060,0.063,0.059
+191,2509,Congressional District9 Massachusetts,Massachusetts,2022,D,D+4,82712,84354,0.062,0.058,-0.041
+192,2003,Congressional District3 Kansas,Kansas,2022,R,R+4,35869,15784,0.066,0.075,0.346
+193,2702,Congressional District2 Minnesota,Minnesota,2022,R,R+2,6959,-4861,0.067,0.072,0.212
+194,5303,Congressional District3 Washington,Washington,2022,R,R+4,68098,56679,0.067,0.074,0.218
+195,5102,Congressional District2 Virginia,Virginia,2022,R,0,65607,60601,0.068,0.071,0.090
+196,4207,Congressional District7 Pennsylvania,Pennsylvania,2022,R,R+1,71506,50770,0.073,0.082,0.304
+197,5310,Congressional District10 Washington,Washington,2022,D,D+5,47044,36154,0.076,0.078,0.158
+198,3403,Congressional District3 New Jersey,New Jersey,2022,R,R+2,62310,55279,0.079,0.085,0.116
+199,0409,Congressional District9 Arizona,Arizona,2022,D,D+4,48144,28845,0.080,0.085,0.250
+200,3402,Congressional District2 New Jersey,New Jersey,2022,R,R+1,63090,45757,0.083,0.090,0.230
+201,5308,Congressional District8 Washington,Washington,2022,R,EVEN,58461,55708,0.086,0.086,0.045
+202,0806,Congressional District6 Colorado,Colorado,2022,R,D+2 ,31310,25645,0.086,0.085,0.076
+203,4208,Congressional District8 Pennsylvania,Pennsylvania,2022,R,R+2,34036,20271,0.086,0.095,0.199
+204,1714,Congressional District14 Illinois,Illinois,2022,R,R+5,63600,49173,0.086,0.093,0.205
+205,0402,Congressional District2 Arizona,Arizona,2022,R,R+1,37105,19618,0.086,0.092,0.217
+206,2703,Congressional District3 Minnesota,Minnesota,2022,R,D+1,53837,42194,0.088,0.093,0.158
+207,3601,Congressional District1 New York,New York,2022,R,R+5,53042,55377,0.090,0.089,-0.026
+208,2609,Congressional District9 Michigan,Michigan,2022,D,D+4,70713,58289,0.092,0.096,0.149
+209,1213,Congressional District13 Florida,Florida,2022,D,0,13407,2244,0.094,0.098,0.135
+210,2611,Congressional District11 Michigan,Michigan,2022,R,R+4 ,56834,51867,0.097,0.098,0.061
+211,3618,Congressional District18 New York,New York,2022,D,R+1,28089,20372,0.099,0.102,0.099
+212,1207,Congressional District7 Florida,Florida,2022,D,0,10346,-8642,0.102,0.108,0.201
+213,0905,Congressional District5 Connecticut,Connecticut,2022,D,D+2 ,47946,43143,0.103,0.110,0.086
+214,4823,Congressional District23 Texas,Texas,2022,R,R+1,3767,-4281,0.104,0.105,0.104
+215,3204,Congressional District4 Nevada,Nevada,2022,D,D+3,10460,-2331,0.114,0.117,0.135
+216,1218,Congressional District18 Florida,Florida,2022,R,0,39683,24138,0.116,0.119,0.140
+217,1209,Congressional District9 Florida,Florida,2022,D,0,50682,42811,0.120,0.108,0.033
+218,1706,Congressional District6 Illinois,Illinois,2022,R,R+2,65723,50553,0.135,0.141,0.133
+219,0603,Congressional District3 California,California,2022,D,D+5,36079,27385,0.136,0.139,0.087
+220,0636,Congressional District36 California,California,2022,D,D+2,49203,26773,0.143,0.147,0.185
+221,3203,Congressional District3 Nevada,Nevada,2022,D,R+2,3927,2083,0.147,0.143,0.019
+222,4832,Congressional District32 Texas,Texas,2022,R,R+5,118915,84925,0.154,0.171,0.280
+223,3602,Congressional District2 New York,New York,2022,R,R+3,68272,23213,0.157,0.174,0.324
+224,0607,Congressional District7 California,California,2022,D,D+3 ,6008,-751,0.162,0.162,0.049
+225,0621,Congressional District21 California,California,2022,R,D+5,18838,1604,0.164,0.172,0.179
+226,3411,Congressional District11 New Jersey,New Jersey,2022,R,R+3,68420,56144,0.165,0.169,0.081
+227,0610,Congressional District10 California,California,2022,R,EVEN,10013,-17119,0.165,0.174,0.209
+228,0649,Congressional District49 California,California,2022,R,R+1,5328,-49257,0.169,0.190,0.359
+229,3407,Congressional District7 New Jersey,New Jersey,2022,R,R+3,37959,13072,0.173,0.188,0.170
+230,0625,Congressional District25 California,California,2022,R,EVEN,17472,-537,0.180,0.180,0.117
+231,3405,Congressional District5 New Jersey,New Jersey,2022,D,R+3,10220,-19383,0.197,0.208,0.168
+232,5110,Congressional District10 Virginia,Virginia,2022,R,0,22042,-22767,0.197,0.208,0.240
+233,3604,Congressional District4 New York,New York,2022,D,D+4,54975,31094,0.207,0.220,0.149
+234,3603,Congressional District3 New York,New York,2022,D,D+1,14292,-4519,0.208,0.210,0.097
+235,0648,Congressional District48 California,California,2022,R,R+4,48271,45659,0.209,0.207,0.014
+236,0645,Congressional District45 California,California,2022,D,R+3,52215,27623,0.255,0.262,0.115
+237,3611,Congressional District11 New York,New York,2022,R,R+3,56300,27154,0.305,0.323,0.125
+238,0639,Congressional District39 California,California,2022,R,EVEN,37256,15654,0.320,0.332,0.092
+239,1227,Congressional District27 Florida,Florida,2022,R,0,28215,-8108,0.504,0.505,0.102
+240,1225,Congressional District25 Florida,Florida,2022,R,0,62740,6490,0.560,0.592,0.150
+241,2708,Congressional District8 Minnesota,Minnesota,2024,D,R+4,2011,-1504,0.014,0.016,0.238
+242,2605,Congressional District5 Michigan,Michigan,2024,D,D+5,83168,82370,0.016,0.015,0.000
+243,1712,Congressional District12 Illinois,Illinois,2024,R,R+5 ,45479,41718,0.018,0.020,0.196
+244,1717,Congressional District17 Illinois,Illinois,2024,D,D+3,57605,61711,0.019,0.016,-0.258
+245,2302,Congressional District2 Maine,Maine,2024,R,R+2,34423,33861,0.019,0.020,0.059
+246,1713,Congressional District13 Illinois,Illinois,2024,R,R+3,60859,61521,0.020,0.019,-0.044
+247,5503,Congressional District3 Wisconsin,Wisconsin,2024,D,EVEN,257000,244091,0.020,0.022,0.404
+248,1902,Congressional District2 Iowa,Iowa,2024,D,D+1,27273,28265,0.021,0.021,-0.025
+249,1901,Congressional District1 Iowa,Iowa,2024,R,D+1,29826,23806,0.023,0.026,0.241
+250,4104,Congressional District4 Oregon,Oregon,2024,D,EVEN,61171,56401,0.026,0.026,0.127
+251,5501,Congressional District1 Wisconsin,Wisconsin,2024,R,R+5,123206,127579,0.029,0.027,-0.145
+252,2701,Congressional District1 Minnesota,Minnesota,2024,D,R+5,2549,2652,0.029,0.029,-0.015
+253,2603,Congressional District6 Michigan,Michigan,2024,R,R+4,72991,50080,0.032,0.037,0.462
+254,3914,Congressional District14 Ohio,Ohio,2024,R,R+5,87071,90718,0.034,0.031,-0.134
+255,3301,Congressional District1 New Hampshire,New Hampshire,2024,D,R+2,4817,2489,0.034,0.033,0.021
+256,1903,Congressional District3 Iowa,Iowa,2024,R,R+1,53484,46313,0.037,0.039,0.144
+257,3910,Congressional District10 Ohio,Ohio,2024,R,R+4,104309,86703,0.039,0.045,0.350
+258,3102,Congressional District2 Nebraska,Nebraska,2024,R,R+4,5552,-3368,0.040,0.040,0.177
+259,4216,Congressional District16 Pennsylvania,Pennsylvania,2024,R,R+5,34729,35739,0.041,0.041,-0.013
+260,0401,Congressional District1 Arizona,Arizona,2024,D,R+2,16812,-16964,0.042,0.045,0.432
+261,3302,Congressional District2 New Hampshire,New Hampshire,2024,D,D+2,15426,5795,0.043,0.045,0.170
+262,4206,Congressional District6 Pennsylvania,Pennsylvania,2024,R,R+2,51871,53341,0.044,0.042,-0.032
+263,3901,Congressional District1 Ohio,Ohio,2024,R,R+5,66004,43847,0.044,0.051,0.383
+264,0902,Congressional District2 Connecticut,Connecticut,2024,D,D+3 ,95997,104191,0.045,0.043,-0.153
+265,4217,Congressional District17 Pennsylvania,Pennsylvania,2024,D,R+1,22047,14654,0.045,0.048,0.130
+266,3624,Congressional District24 New York,New York,2024,R,D+3,61604,49453,0.045,0.049,0.207
+267,2608,Congressional District8 Michigan,Michigan,2024,R,R+4,61842,60482,0.046,0.047,0.048
+268,3619,Congressional District19 New York,New York,2024,R,R+2,26502,25353,0.048,0.051,0.040
+269,4105,Congressional District5 Oregon,Oregon,2024,D,EVEN,34566,24367,0.059,0.061,0.139
+270,4215,Congressional District15 Pennsylvania,Pennsylvania,2024,R,R+4,64329,61388,0.060,0.063,0.059
+271,2509,Congressional District9 Massachusetts,Massachusetts,2024,D,D+4,82712,84505,0.062,0.058,-0.041
+272,2003,Congressional District3 Kansas,Kansas,2024,R,R+4,35869,6659,0.066,0.075,0.346
+273,2702,Congressional District2 Minnesota,Minnesota,2024,R,R+2,6959,-9851,0.067,0.072,0.212
+274,5303,Congressional District3 Washington,Washington,2024,R,R+4,68098,52944,0.067,0.074,0.218
+275,5102,Congressional District2 Virginia,Virginia,2024,R,0,65607,59011,0.068,0.071,0.090
+276,4207,Congressional District7 Pennsylvania,Pennsylvania,2024,R,R+1,71506,40384,0.073,0.082,0.304
+277,5310,Congressional District10 Washington,Washington,2024,D,D+5,47044,31627,0.076,0.078,0.158
+278,3403,Congressional District3 New Jersey,New Jersey,2024,R,R+2,62310,53394,0.079,0.085,0.116
+279,0409,Congressional District9 Arizona,Arizona,2024,D,D+4,48144,20245,0.080,0.085,0.250
+280,3402,Congressional District2 New Jersey,New Jersey,2024,R,R+1,63090,37646,0.083,0.090,0.230
+281,5308,Congressional District8 Washington,Washington,2024,R,EVEN,58461,54997,0.086,0.086,0.045
+282,0806,Congressional District6 Colorado,Colorado,2024,R,D+2 ,31310,23628,0.086,0.085,0.076
+283,4208,Congressional District8 Pennsylvania,Pennsylvania,2024,R,R+2,34036,15346,0.086,0.095,0.199
+284,1714,Congressional District14 Illinois,Illinois,2024,R,R+5,63600,43559,0.086,0.093,0.205
+285,0402,Congressional District2 Arizona,Arizona,2024,R,R+1,37105,11337,0.086,0.092,0.217
+286,2703,Congressional District3 Minnesota,Minnesota,2024,R,D+1,53837,37266,0.088,0.093,0.158
+287,3601,Congressional District1 New York,New York,2024,R,R+5,53042,56452,0.090,0.089,-0.026
+288,2609,Congressional District9 Michigan,Michigan,2024,D,D+4,70713,52980,0.092,0.096,0.149
+289,1213,Congressional District13 Florida,Florida,2024,D,0,13407,-1672,0.094,0.098,0.135
+290,2611,Congressional District11 Michigan,Michigan,2024,R,R+4 ,56834,50028,0.097,0.098,0.061
+291,3618,Congressional District18 New York,New York,2024,D,R+1,28089,17751,0.099,0.102,0.099
+292,1207,Congressional District7 Florida,Florida,2024,D,0,10346,-16106,0.102,0.108,0.201
+293,0905,Congressional District5 Connecticut,Connecticut,2024,D,D+2 ,47946,43008,0.103,0.110,0.086
+294,4823,Congressional District23 Texas,Texas,2024,R,R+1,3767,-6934,0.104,0.105,0.104
+295,3204,Congressional District4 Nevada,Nevada,2024,D,D+3,10460,-7716,0.114,0.117,0.135
+296,1218,Congressional District18 Florida,Florida,2024,R,0,39683,17678,0.116,0.119,0.140
+297,1209,Congressional District9 Florida,Florida,2024,D,0,50682,36970,0.120,0.108,0.033
+298,1706,Congressional District6 Illinois,Illinois,2024,R,R+2,65723,44355,0.135,0.141,0.133
+299,0603,Congressional District3 California,California,2024,D,D+5,36079,24617,0.136,0.139,0.087
+300,0636,Congressional District36 California,California,2024,D,D+2,49203,16658,0.143,0.147,0.185
+301,3203,Congressional District3 Nevada,Nevada,2024,D,R+2,3927,1909,0.147,0.143,0.019
+302,4832,Congressional District32 Texas,Texas,2024,R,R+5,118915,70307,0.154,0.171,0.280
+303,3602,Congressional District2 New York,New York,2024,R,R+3,68272,893,0.157,0.174,0.324
+304,0607,Congressional District7 California,California,2024,D,D+3 ,6008,-3337,0.162,0.162,0.049
+305,0621,Congressional District21 California,California,2024,R,D+5,18838,-5628,0.164,0.172,0.179
+306,3411,Congressional District11 New Jersey,New Jersey,2024,R,R+3,68420,50809,0.165,0.169,0.081
+307,0610,Congressional District10 California,California,2024,R,EVEN,10013,-28863,0.165,0.174,0.209
+308,0649,Congressional District49 California,California,2024,R,R+1,5328,-75772,0.169,0.190,0.359
+309,3407,Congressional District7 New Jersey,New Jersey,2024,R,R+3,37959,2356,0.173,0.188,0.170
+310,0625,Congressional District25 California,California,2024,R,EVEN,17472,-8473,0.180,0.180,0.117
+311,3405,Congressional District5 New Jersey,New Jersey,2024,D,R+3,10220,-32122,0.197,0.208,0.168
+312,5110,Congressional District10 Virginia,Virginia,2024,R,0,22042,-43639,0.197,0.208,0.240
+313,3604,Congressional District4 New York,New York,2024,D,D+4,54975,22210,0.207,0.220,0.149
+314,3603,Congressional District3 New York,New York,2024,D,D+1,14292,-12928,0.208,0.210,0.097
+315,0648,Congressional District48 California,California,2024,R,R+4,48271,44569,0.209,0.207,0.014
+316,0645,Congressional District45 California,California,2024,D,R+3,52215,18178,0.255,0.262,0.115
+317,3611,Congressional District11 New York,New York,2024,R,R+3,56300,16517,0.305,0.323,0.125
+318,0639,Congressional District39 California,California,2024,R,EVEN,37256,8012,0.320,0.332,0.092
+319,1227,Congressional District27 Florida,Florida,2024,R,0,28215,-21288,0.504,0.505,0.102
+320,1225,Congressional District25 Florida,Florida,2024,R,0,62740,-13669,0.560,0.592,0.150
