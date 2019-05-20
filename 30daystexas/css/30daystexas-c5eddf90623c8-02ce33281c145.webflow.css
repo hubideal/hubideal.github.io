@@ -1,0 +1,2973 @@
+.title-page {
+  height: 4000px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 21%;
+  padding-bottom: 0%;
+  background-color: #f8f8f8;
+  -webkit-transform: perspective(0px);
+  transform: perspective(0px);
+  -webkit-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+}
+
+.heading {
+  position: relative;
+  padding-top: 6px;
+  padding-bottom: 32px;
+  float: none;
+  -webkit-transform: translate(-10px, 90px);
+  -ms-transform: translate(-10px, 90px);
+  transform: translate(-10px, 90px);
+  font-size: 60px;
+  text-align: left;
+}
+
+.body {
+  height: 3400vh;
+  background-color: #fff;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.div-block {
+  background-color: #87cad8;
+}
+
+.daytitle {
+  text-align: center;
+}
+
+.largeimage {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: auto;
+  bottom: auto;
+  width: 100%;
+  margin: 10% auto auto;
+  padding-left: 0%;
+  background-color: #87cad8;
+  box-shadow: 1px 1px 3px 1px #000;
+  -webkit-transform: translate3d(24px, 19px, 10px);
+  transform: translate3d(24px, 19px, 10px);
+  text-align: center;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.container {
+  position: relative;
+  display: block;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  background-color: #87cad8;
+  -webkit-transform: rotateX(-34deg) rotateY(0deg) rotateZ(0deg);
+  transform: rotateX(-34deg) rotateY(0deg) rotateZ(0deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.image-2 {
+  width: 25%;
+}
+
+.imagesmall {
+  position: absolute;
+  width: 35%;
+  margin-top: 50%;
+  margin-left: 10%;
+  box-shadow: 1px 1px 3px 2px #000;
+}
+
+.titlethirty {
+  position: relative;
+  float: none;
+}
+
+.image-3 {
+  max-width: 25%;
+}
+
+.heading-2 {
+  position: relative;
+  display: block;
+  margin-top: 35px;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-perspective-origin: 100% 50%;
+  perspective-origin: 100% 50%;
+  -webkit-transform: perspective(0px) translate(-71px, -95px);
+  transform: perspective(0px) translate(-71px, -95px);
+  -webkit-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  font-size: 75px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.image-4 {
+  position: relative;
+  left: 30%;
+  top: 0px;
+  right: 50%;
+  bottom: 0px;
+  display: inline-block;
+  float: none;
+  clear: none;
+  -webkit-transform: translate(-24px, 0px);
+  -ms-transform: translate(-24px, 0px);
+  transform: translate(-24px, 0px);
+  text-align: left;
+}
+
+.bold-text {
+  position: relative;
+  margin-left: 3px;
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+
+.texaswrapper {
+  position: relative;
+  left: 0%;
+  top: auto;
+  right: auto;
+  bottom: 0%;
+  margin-top: 0px;
+  -webkit-transform: translate(0px, -114px);
+  -ms-transform: translate(0px, -114px);
+  transform: translate(0px, -114px);
+}
+
+.heading-3 {
+  position: relative;
+}
+
+.thirtydays {
+  -webkit-transform: translate(0px, 62px);
+  -ms-transform: translate(0px, 62px);
+  transform: translate(0px, 62px);
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  font-size: 60px;
+}
+
+.titepage {
+  position: relative;
+  display: block;
+  overflow: visible;
+  height: 80em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(66%, rgba(255, 254, 254, 0.23)), color-stop(89%, #fff)), -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.7)), to(hsla(0, 0%, 100%, 0.7))), url('../images/texas_boot_hero.jpg');
+  background-image: linear-gradient(0deg, rgba(255, 254, 254, 0.23) 66%, #fff 89%), linear-gradient(180deg, hsla(0, 0%, 100%, 0.7), hsla(0, 0%, 100%, 0.7)), url('../images/texas_boot_hero.jpg');
+  background-position: 0px 0px, 0px 0px, 0px 0px;
+  background-size: auto, auto, cover;
+  background-repeat: repeat, repeat, no-repeat;
+}
+
+.austin {
+  position: fixed;
+  width: 100%;
+  height: 100vw;
+  background-image: url('../images/Texas_State_Capitol_South_Facade_2015_Courtesy_of_the_Texas_State_Preservation_Board_FOR_ACVB_USE_ONLY_2_5475363b-0fb9-4455-9d69-037c8f7f2aa1.jpg'), url('../images/example-bg.png');
+  background-position: 50% 50%, 0px 0px;
+  background-size: cover, 125px;
+  background-repeat: no-repeat, repeat;
+}
+
+.image-5 {
+  position: fixed;
+  width: 100%;
+  height: auto;
+}
+
+.txcutout {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/TexasCutOut.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.titleblock {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  margin-top: 2%;
+  margin-bottom: 0px;
+  border: 0px none #000;
+  font-family: Foundersgrotesk, sans-serif;
+  font-weight: 500;
+}
+
+.heading-4 {
+  margin-top: -1px;
+  padding-top: 100px;
+  padding-right: 275px;
+  color: #fff;
+  font-size: 82px;
+  text-align: center;
+}
+
+._30days {
+  position: static;
+  display: block;
+  width: 100%;
+  height: 20%;
+  margin-top: 1%;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  font-family: Foundersgrotesk, sans-serif;
+  color: #000;
+  font-size: 1.2em;
+  line-height: 1em;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+}
+
+.headingblock {
+  position: relative;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 12%;
+  margin-right: 0%;
+  margin-left: 0%;
+  padding-top: 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  -webkit-transform: translate(-5px, 0px);
+  -ms-transform: translate(-5px, 0px);
+  transform: translate(-5px, 0px);
+  color: #000;
+  font-size: 80px;
+  text-align: center;
+}
+
+.texastitle {
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  font-family: Foundersgrotesk, sans-serif;
+  color: #000;
+  font-size: 1.26em;
+  line-height: 1em;
+  font-weight: 500;
+  text-align: center;
+}
+
+.texas-image {
+  position: fixed;
+  left: auto;
+  top: 60%;
+  right: auto;
+  bottom: auto;
+  z-index: 100;
+  display: block;
+  width: 8em;
+  height: auto;
+  max-width: none;
+  min-width: 8em;
+  margin-top: 5%;
+  margin-left: 0px;
+  padding-left: 0%;
+  float: none;
+  clear: none;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  -ms-grid-row-align: auto;
+  align-self: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  border: 5em none #000;
+  border-radius: 0px;
+  opacity: 1;
+  text-align: left;
+}
+
+.div-block-2 {
+  position: relative;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0em;
+  margin-left: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+.timelinerow {
+  position: relative;
+  height: auto;
+}
+
+.colright {
+  left: -0.3em;
+  margin-top: -4px;
+  margin-bottom: 1px;
+  padding-bottom: 217px;
+  padding-left: 8px;
+  border-style: none none none solid;
+  border-width: 10px;
+  border-color: #000 #000 #000 #535252;
+  border-radius: 0px;
+  opacity: 1;
+}
+
+.timeline {
+  position: relative;
+  left: auto;
+  z-index: 2;
+  background-color: transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f0f1f5), to(#fff));
+  background-image: linear-gradient(180deg, #f0f1f5, #fff);
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+}
+
+.colleft {
+  height: 100%;
+  padding-right: 8px;
+}
+
+.timelinediv {
+  position: relative;
+}
+
+.timelineright-content {
+  height: auto;
+  margin-top: 7em;
+  margin-left: 4em;
+  padding: 9px 9px 9px 2em;
+  border-radius: 14px;
+  background-color: rgba(96, 99, 237, 0.39);
+  opacity: 1;
+}
+
+.tlheading {
+  margin-left: 0px;
+  background-color: transparent;
+  color: #000;
+  text-align: right;
+}
+
+.paragraphr {
+  border-style: none;
+  border-width: 1px;
+  border-color: #fff;
+  color: #4b4b4b;
+}
+
+.heading-5 {
+  background-color: transparent;
+  color: #000;
+  text-align: right;
+}
+
+.timelineleft-content {
+  margin-top: 21.7em;
+  margin-right: 5em;
+  padding: 9px 2em 9px 9px;
+  border-radius: 14px;
+  background-color: rgba(96, 99, 237, 0.5);
+}
+
+.paragraphleft {
+  background-color: transparent;
+  color: #5a5a5a;
+  text-align: right;
+}
+
+.div-block-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 3em;
+  height: 3em;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #525151;
+  border-radius: 20px;
+  background-color: #525251;
+}
+
+.tlrheading {
+  color: #000;
+}
+
+.timelineright-contentsecond {
+  height: auto;
+  margin-top: 7em;
+  margin-left: 4em;
+  padding: 9px 9px 9px 2em;
+  border-radius: 14px;
+  background-color: rgba(96, 99, 237, 0.39);
+  opacity: 1;
+}
+
+.timelineleft-contentsecond {
+  margin-top: 21.7em;
+  margin-right: 5em;
+  padding: 9px 2em 9px 9px;
+  border-radius: 14px;
+  background-color: rgba(96, 99, 237, 0.5);
+}
+
+.perspectivetl {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#fff));
+  background-image: linear-gradient(180deg, #000, #fff);
+}
+
+.perspectivecontainer {
+  position: absolute;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+  z-index: 2;
+  display: block;
+  overflow: visible;
+  margin: auto;
+  padding-right: 0%;
+  padding-left: 0%;
+  float: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  background-color: #f5f5f8;
+  -webkit-perspective: 3000px;
+  perspective: 3000px;
+  -webkit-perspective-origin: 50% 100%;
+  perspective-origin: 50% 100%;
+  -webkit-transform: perspective(0px);
+  transform: perspective(0px);
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+.imagefullstatesman {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 1;
+  width: 80%;
+  margin-top: 15%;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-transform: translate(0px, -5px);
+  -ms-transform: translate(0px, -5px);
+  transform: translate(0px, -5px);
+}
+
+.image-6 {
+  position: absolute;
+  z-index: 3;
+  margin-top: 339px;
+  margin-left: 40px;
+  box-shadow: 5px 5px 10px 4px #000;
+}
+
+.image-7 {
+  position: absolute;
+  z-index: 3;
+  margin-top: 36%;
+  margin-left: 36%;
+  box-shadow: 5px 5px 10px 4px #000;
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+.perspectivesection {
+  position: relative;
+  bottom: auto;
+  z-index: 3;
+  width: 100%;
+  height: 125vh;
+  background-color: #fdfdfd;
+}
+
+.newsarticlewrapper {
+  min-width: 100%;
+  background-color: #fff;
+}
+
+.austinarticle {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 4;
+  width: 29%;
+  height: 50%;
+  margin-top: 23%;
+  margin-left: 25%;
+  background-image: url('../images/AustinTaxes.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  box-shadow: 4px 4px 13px 3px #000;
+  -webkit-transform: rotateX(0deg) rotateY(-15deg) rotateZ(0deg) translate(-252px, 138px) scale(1.3);
+  transform: rotateX(0deg) rotateY(-15deg) rotateZ(0deg) translate(-252px, 138px) scale(1.3);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.fullstatesman {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  margin-top: 14%;
+  border: 1px none #000;
+  background-image: url('../images/StatesmanTitleOnly.png');
+  background-position: 50% 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 4px 4px 13px 3px #000;
+  -webkit-transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg) translate(-24px, 10px) scale(0.8);
+  transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg) translate(-24px, 10px) scale(0.8);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.planoimage {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 32%;
+  z-index: 5;
+  width: 34%;
+  height: auto;
+  margin-top: 0%;
+  margin-left: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-image: url('../images/PLanoLiveWell.png');
+  background-position: 0px 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: 4px 4px 13px 0 #000;
+  -webkit-transform: rotateX(0deg) rotateY(-15deg) rotateZ(0deg) translate(-224px, 300px) scale(0.7);
+  transform: rotateX(0deg) rotateY(-15deg) rotateZ(0deg) translate(-224px, 300px) scale(0.7);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.statesmandivblock {
+  position: relative;
+  width: 70vw;
+  height: 120vh;
+  background-color: #fff;
+  -webkit-transform: translate(300px, 0px);
+  -ms-transform: translate(300px, 0px);
+  transform: translate(300px, 0px);
+}
+
+.statesmantitle {
+  position: absolute;
+  left: 24%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 2;
+  width: 35vw;
+  height: 75vh;
+  max-width: 67%;
+  margin-top: 14%;
+  margin-left: 111px;
+  border: 1px none #000;
+  background-image: url('../images/statesmanPost.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: 4px 4px 13px 3px #000;
+  -webkit-perspective-origin: 50% 100%;
+  perspective-origin: 50% 100%;
+  -webkit-transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg) translate(124px, 10px) scale(1.2);
+  transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg) translate(124px, 10px) scale(1.2);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.statesmantitlediv {
+  position: relative;
+  top: auto;
+  width: 70vw;
+  height: 120vh;
+  background-color: #fff;
+  -webkit-perspective-origin: 50% 100%;
+  perspective-origin: 50% 100%;
+}
+
+.titlestatesman {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 8;
+  width: 100%;
+  height: 95vh;
+  margin-top: 14%;
+  border: 1px none #000;
+  background-image: url('../images/StatesmanTitleOnly.png');
+  background-position: 50% 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 4px 4px 13px 3px #000;
+  -webkit-transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg) translate(257px, 10px) scale3d(0.8, 0.8, 0.8);
+  transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg) translate(257px, 10px) scale3d(0.8, 0.8, 0.8);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.movingarticlesday1 {
+  position: absolute;
+  width: 100%;
+  height: 400em;
+  margin-top: 0px;
+  padding-top: 0px;
+  background-color: #fff;
+  background-image: linear-gradient(142deg, rgba(237, 241, 252, 0), rgba(237, 241, 252, 0) 30%, rgba(237, 241, 252, 0.6) 47%, #edf1fc 56%, #fff);
+}
+
+.zoomday1 {
+  position: fixed;
+  left: 0%;
+  top: 24%;
+  right: 0%;
+  bottom: auto;
+  z-index: 19;
+  height: 1em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0.5em;
+  padding-bottom: 0px;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  font-family: Foundersgrotesk, sans-serif;
+  font-size: 6em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.zoomarticle1 {
+  position: fixed;
+  left: auto;
+  top: 15%;
+  right: 30%;
+  bottom: 0px;
+  z-index: 15;
+  width: 33%;
+  height: 38%;
+  background-image: url('../images/StatesmanTitleOnly.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 1;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-perspective: 980px;
+  perspective: 980px;
+  -webkit-transform: perspective(980px);
+  transform: perspective(980px);
+}
+
+.zoomarticle2 {
+  position: fixed;
+  left: auto;
+  top: 30%;
+  right: 40%;
+  bottom: 0%;
+  z-index: 14;
+  width: 20%;
+  height: 20%;
+  background-image: url('../images/ChronicleTXReducingTitle.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 1;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-perspective: 980px;
+  perspective: 980px;
+  -webkit-transform: perspective(980px);
+  transform: perspective(980px);
+}
+
+.progressbarcontainer {
+  position: absolute;
+  z-index: 100;
+  height: 1800em;
+}
+
+.verticalscrollbar {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: auto;
+  bottom: 0%;
+  width: 0.75em;
+  height: 100%;
+  margin-left: 7%;
+  padding-right: 0%;
+  padding-left: 0%;
+  background-color: rgba(121, 122, 121, 0.76);
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+}
+
+.sldot {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 102;
+  width: 1em;
+  height: 1em;
+  margin-top: 1%;
+  margin-left: 6.9%;
+  padding-right: 0em;
+  padding-left: 0em;
+  border-radius: 8em;
+  background-color: #38387c;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+.sldot2 {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 102;
+  width: 1em;
+  height: 1em;
+  margin-top: 2%;
+  margin-left: 6.9%;
+  padding-right: 0em;
+  padding-left: 0em;
+  border-radius: 8em;
+  background-color: #38387c;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+.introductiondiv {
+  position: relative;
+  top: auto;
+  z-index: 0;
+  height: 125vh;
+  margin-top: 0%;
+  margin-bottom: auto;
+  background-color: #fff;
+  background-image: url('../images/texasInLights.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.textblock {
+  position: relative;
+  margin: 5% 5% 0%;
+  padding-right: 0%;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+
+.heading-6 {
+  position: relative;
+  top: 0%;
+  margin: auto 5% 0%;
+  font-family: Foundersgrotesk, sans-serif;
+  font-size: 2.2em;
+  line-height: 1em;
+  font-weight: 600;
+}
+
+.zoomarticle3 {
+  position: fixed;
+  left: auto;
+  top: 30%;
+  right: 40%;
+  bottom: 0%;
+  z-index: 13;
+  width: 40%;
+  height: 17%;
+  background-image: url('../images/TXGOPvoteCompact.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 1;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-perspective: 980px;
+  perspective: 980px;
+  -webkit-transform: perspective(980px);
+  transform: perspective(980px);
+}
+
+.zoomarticle4 {
+  position: fixed;
+  left: auto;
+  top: 30%;
+  right: 60%;
+  bottom: 0%;
+  z-index: 12;
+  width: 29%;
+  height: 30%;
+  background-image: url('../images/TribTAlkImmigrationFuture.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 1;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-perspective: 980px;
+  perspective: 980px;
+  -webkit-transform: perspective(980px);
+  transform: perspective(980px);
+}
+
+.movingarticlesday2 {
+  position: absolute;
+  width: 100%;
+  height: 600em;
+  margin-top: 0px;
+  padding-top: 0px;
+  background-color: #fff;
+  background-image: linear-gradient(142deg, rgba(237, 241, 252, 0), rgba(237, 241, 252, 0) 30%, rgba(237, 241, 252, 0.6) 47%, #edf1fc 56%, #fff);
+}
+
+.day1desc {
+  position: absolute;
+  left: auto;
+  top: auto;
+  margin-left: 0%;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.paragraphdesc1 {
+  position: fixed;
+  left: 19.1%;
+  top: 19%;
+  right: auto;
+  z-index: 44;
+  width: 20em;
+  height: 10em;
+  margin-bottom: 0px;
+  margin-left: auto;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1.75em;
+  line-height: 1.5em;
+}
+
+.sldot3 {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 102;
+  width: 1em;
+  height: 1em;
+  margin-top: 3%;
+  margin-left: 6.9%;
+  padding-right: 0em;
+  padding-left: 0em;
+  border-radius: 8em;
+  background-color: #38387c;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+.sldot4 {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 102;
+  width: 1em;
+  height: 1em;
+  margin-top: 4%;
+  margin-left: 6.9%;
+  padding-right: 0em;
+  padding-left: 0em;
+  border-radius: 8em;
+  background-color: #38387c;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+.zoomday2 {
+  position: fixed;
+  left: 0%;
+  top: 24%;
+  right: 0%;
+  bottom: auto;
+  z-index: 19;
+  height: 1em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0.5em;
+  padding-bottom: 0px;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  font-family: Foundersgrotesktextweb, Arial, sans-serif;
+  font-size: 6em;
+  text-align: center;
+}
+
+.day2desc {
+  position: absolute;
+  left: auto;
+  top: auto;
+  margin-left: 0%;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.paragraphdesc2 {
+  position: fixed;
+  left: 19.1%;
+  top: 19%;
+  right: auto;
+  width: 20em;
+  height: 10em;
+  margin-bottom: 0px;
+  margin-left: auto;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1.75em;
+  line-height: 1.5em;
+}
+
+.zoomarticle5 {
+  position: fixed;
+  left: auto;
+  top: 15%;
+  right: 32%;
+  bottom: 0px;
+  z-index: 15;
+  width: 20%;
+  height: 55%;
+  background-image: url('../images/StatesmanRefugee_1StatesmanRefugee.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 1;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-perspective: 980px;
+  perspective: 980px;
+  -webkit-transform: perspective(980px);
+  transform: perspective(980px);
+}
+
+.sldot5 {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 102;
+  width: 1em;
+  height: 1em;
+  margin-top: 6%;
+  margin-left: 6.9%;
+  padding-right: 0em;
+  padding-left: 0em;
+  border-radius: 8em;
+  background-color: #38387c;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+.div-block-4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #eb9581;
+  text-align: center;
+}
+
+.tooltip {
+  position: absolute;
+  left: 63px;
+  top: -6px;
+  right: 0px;
+  bottom: 135%;
+  z-index: 10;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 110px;
+  min-width: 110px;
+  margin-left: 0px;
+  padding: 7px 10px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 3px;
+  background-color: #fff;
+  background-image: url('../images/StatesmanRefugeeShort.png');
+  background-position: 0px 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container-2 {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  padding-right: 0px;
+}
+
+.nav-link {
+  padding: 40px 10px 10px;
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
+  font-family: Foundersgrotesk, sans-serif;
+  color: #222;
+  font-size: 1.4em;
+  line-height: 17px;
+  font-weight: 500;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.nav-link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-link.w--current {
+  padding: 40px 10px 10px;
+  font-family: Foundersgrotesk, sans-serif;
+  color: #222;
+  font-size: 1.4em;
+  line-height: 17px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.nav-link.donate {
+  color: #21d279;
+}
+
+.image {
+  max-width: 200px;
+}
+
+.navbar {
+  width: 95%;
+  min-width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  border-bottom: 2.5px solid #000;
+  background-color: transparent;
+  font-family: Foundersgrotesk, sans-serif;
+  color: #fff;
+}
+
+.heading-7 {
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1.35em;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.dreamactpass {
+  height: 58em;
+}
+
+.textwrapper {
+  position: relative;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+  z-index: auto;
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+  padding-top: 0%;
+  background-color: transparent;
+}
+
+.dreamactrepeal {
+  position: relative;
+  top: 0px;
+  height: 44em;
+  background-color: #fff;
+}
+
+.naereport {
+  position: relative;
+  top: -4.8em;
+  z-index: 100;
+  display: block;
+  overflow: visible;
+  width: 30vw;
+  height: 40vh;
+  min-height: auto;
+  min-width: auto;
+  margin-right: 60px;
+  margin-left: 0px;
+  float: right;
+  background-image: url('../images/Screen-Shot-2019-05-08-at-5.36.22-PM.png');
+  background-position: 100% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.textwrappernoover {
+  position: relative;
+  overflow: hidden;
+}
+
+.businessmobilizeddiv {
+  height: 100em;
+}
+
+.paragraph {
+  position: relative;
+}
+
+.textblocknew {
+  position: absolute;
+  margin-right: 40%;
+  margin-left: 20%;
+  padding-right: 0%;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+
+.textblock2nd {
+  position: relative;
+  top: auto;
+  display: block;
+  margin-right: 40%;
+  margin-left: 20%;
+  padding-right: 0%;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+
+.researchdiv {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  bottom: 100%;
+  height: 100vh;
+  margin-top: 100%;
+  background-color: #fff;
+}
+
+.dreamact {
+  position: relative;
+  top: 0px;
+  z-index: auto;
+  height: 100%;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.actiondiv {
+  height: 42em;
+}
+
+.textoverpic {
+  position: relative;
+  top: 0%;
+  height: auto;
+  margin: 10% 40% 20% 15%;
+  padding: 3%;
+  background-color: hsla(0, 0%, 100%, 0.95);
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.image-8 {
+  position: relative;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  overflow: visible;
+  width: 86em;
+  height: auto;
+}
+
+.piccoverdiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+.stickytest {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  bottom: 0px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  background-color: transparent;
+  background-image: url('../images/usplashCapital.jpg');
+  background-position: 0% 10%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.textblocksprenae {
+  overflow: hidden;
+  margin-top: -40%;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.stickycontainer {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  bottom: 100%;
+  width: 100%;
+  height: 100vh;
+}
+
+.textoverpic2 {
+  position: relative;
+  overflow: visible;
+  height: auto;
+  margin: 15% 40% 20% 15%;
+  padding: 3%;
+  background-color: hsla(0, 0%, 100%, 0.95);
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1em;
+}
+
+.textblock3rd {
+  position: relative;
+  top: auto;
+  display: block;
+  margin-right: 40%;
+  margin-left: 20%;
+  padding-right: 0%;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+
+.textoverpic3 {
+  position: relative;
+  overflow: visible;
+  height: auto;
+  margin: 15% 40% 20% 15%;
+  padding: 3%;
+  background-color: hsla(0, 0%, 100%, 0.95);
+  font-size: 1em;
+}
+
+.introtextdiv {
+  margin-top: 0%;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.textcompactdiv {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  bottom: 100%;
+  width: 100%;
+  height: 100vh;
+  margin-top: 0px;
+  background-color: transparent;
+}
+
+.introtextdiv-copy {
+  position: relative;
+  top: 0%;
+  margin: -10% 40% 20% 15%;
+  padding: 3%;
+  background-color: hsla(0, 0%, 96.9%, 0.85);
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.textblockcompact {
+  position: relative;
+  margin-top: 0px;
+  margin-right: 5%;
+  margin-left: 0%;
+  padding-right: 0%;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.heading-8 {
+  margin-left: 0%;
+}
+
+.stickypicwind {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  bottom: 0%;
+  height: 100%;
+  background-image: url('../images/businessCompact.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.texascompact {
+  position: relative;
+  top: 0vh;
+  overflow: visible;
+  height: 200vh;
+  margin-top: 0%;
+}
+
+.headingcompact {
+  position: relative;
+  top: 0%;
+  margin: auto 5% 0%;
+  font-family: Foundersgrotesk, sans-serif;
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+.textblock-copy {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-right: 0%;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+
+.textblockcompactmargin {
+  position: relative;
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-right: 0%;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+
+.textblockcompact3 {
+  position: relative;
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-right: 0%;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+
+.statesmantutionopinion {
+  position: relative;
+  left: auto;
+  top: auto;
+  bottom: auto;
+  width: 25vw;
+  margin-bottom: auto;
+  -webkit-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+.statesmantution2 {
+  position: relative;
+  left: auto;
+  top: auto;
+  bottom: auto;
+  width: 25vw;
+  margin-top: 0%;
+  margin-bottom: auto;
+  -webkit-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+.divstickycard {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  bottom: 100%;
+  height: 200vh;
+  margin-bottom: 0%;
+}
+
+.raisingvoicesdiv {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  bottom: 100%;
+  height: 100vh;
+  background-color: transparent;
+}
+
+.textblockresearch {
+  position: relative;
+  top: 14%;
+  margin: 10% 40% 20% 15%;
+  padding: 2%;
+  background-color: hsla(0, 0%, 100%, 0.85);
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.headingdata {
+  position: relative;
+  top: 0%;
+  margin: auto 5% 25px;
+  font-family: Foundersgrotesk, sans-serif;
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+.textblockdata {
+  position: relative;
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-right: 0%;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+
+.textblockdata2 {
+  position: relative;
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-right: 0%;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+
+.headingintroduction {
+  position: relative;
+  top: 0%;
+  margin: auto 5% 25px;
+  font-family: Foundersgrotesk, sans-serif;
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+.textblockintroduction {
+  position: relative;
+  margin: 5% 5% 0%;
+  padding-right: 0%;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+
+.textboxabsolute {
+  position: relative;
+  display: block;
+  font-size: 1em;
+}
+
+.introblockcontainer {
+  position: relative;
+  top: 25%;
+  z-index: 0;
+  height: 100vh;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  padding-top: 0%;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1em;
+}
+
+.div-block-8 {
+  position: relative;
+  margin-top: auto;
+}
+
+.textoverintro {
+  position: relative;
+  top: auto;
+  height: auto;
+  margin: 0% 40% 5% 15%;
+  padding: 3%;
+  background-color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.dataconversationstext {
+  position: relative;
+}
+
+.stickypiccowboy {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  bottom: 0%;
+  height: 100%;
+  background-image: url('../images/dataTexas.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.stickypicvoices {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  bottom: 0%;
+  height: 100%;
+  background-image: url('../images/voicesDivPic.jpg');
+  background-position: 50% 10%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.introtextdiv2nd {
+  position: relative;
+  top: 0%;
+  margin: 10% 40% 20% 15%;
+  padding: 3%;
+  background-color: hsla(0, 0%, 96.9%, 0.85);
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1em;
+  line-height: 1.5px;
+}
+
+.div-block-9 {
+  position: relative;
+  font-size: 1em;
+}
+
+.div-block-10 {
+  position: relative;
+  font-size: 1em;
+}
+
+.businessmo {
+  height: 100em;
+}
+
+.textproblemdiv {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  bottom: 100%;
+  width: 100%;
+  height: 100vh;
+  margin-top: 0px;
+  background-color: transparent;
+}
+
+.stickypicaustinpath {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  bottom: 0%;
+  height: 100%;
+  background-image: url('../images/AustinPathAdS168094564.jpg'), url('../images/businessCompact.jpg');
+  background-position: 50% 50%, 0px 0px;
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.texasproblemtext {
+  position: relative;
+  top: auto;
+  overflow: visible;
+  height: 100vh;
+  margin-top: 0%;
+  margin-bottom: 20%;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.headingproblem {
+  position: relative;
+  top: 0%;
+  margin: auto 5% 0%;
+  font-family: Foundersgrotesk, sans-serif;
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+.textblockproblem {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-right: 0%;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+
+.problemtextdiv2nd {
+  position: relative;
+  top: auto;
+  margin: 10% 40% 20% 15%;
+  padding: 3%;
+  background-color: hsla(0, 0%, 96.9%, 0.85);
+  font-size: 1em;
+}
+
+.textblockproblem2nd {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-right: 0%;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+
+.textblockdatadiv {
+  position: relative;
+  margin-top: 0px;
+  margin-right: 5%;
+  margin-left: 0%;
+  padding-right: 0%;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.textblockresearch2nd {
+  position: relative;
+  top: 14%;
+  margin: 10% 40% 20% 15%;
+  padding: 2%;
+  background-color: hsla(0, 0%, 100%, 0.85);
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.diffvoicestext {
+  position: relative;
+}
+
+.differentvoicestext {
+  position: relative;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.textblockdiffvoice {
+  position: relative;
+  top: 14%;
+  margin: 10% 40% 20% 15%;
+  padding: 2%;
+  background-color: hsla(0, 0%, 100%, 0.85);
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.actionartdiv {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  bottom: 100%;
+  height: 100vh;
+  background-color: transparent;
+  background-image: url('../images/example-bg.png');
+  background-position: 0px 0px;
+  background-size: 125px;
+}
+
+.stickypicaction {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  bottom: 0%;
+  height: 100%;
+  background-image: url('../images/PhonePicDiv.jpg');
+  background-position: 50% 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.actionarttext {
+  position: relative;
+}
+
+.whatsnext {
+  position: relative;
+}
+
+.actionarttextdiv {
+  position: relative;
+}
+
+.whatsnexttext {
+  position: relative;
+  margin-bottom: 25%;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1em;
+}
+
+.whatsnextdiv {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  bottom: 100%;
+  height: 120vh;
+  background-color: transparent;
+}
+
+.stickypiclonghorn {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  bottom: 0%;
+  height: 100%;
+  margin-top: 0vh;
+  background-image: url('../images/longhornNextDiv.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 1em;
+}
+
+.mapdiv {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  bottom: 100%;
+  display: block;
+  height: 200vh;
+  margin-bottom: 0%;
+  background-color: transparent;
+}
+
+.maptexthover {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  bottom: 100%;
+  margin-top: 0px;
+}
+
+.link-block {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 10%;
+  top: 0vh;
+  bottom: auto;
+  display: inline-block;
+  width: 25vh;
+  max-width: 100%;
+  margin-bottom: auto;
+  background-image: url('../images/texasEconomicCompact-01.png');
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.link-block-2 {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 10%;
+  top: 10%;
+  margin-top: 0%;
+  margin-bottom: auto;
+}
+
+.mediacard1 {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 10%;
+  top: 10%;
+}
+
+.mediacard2 {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 40%;
+  top: 10%;
+  margin-top: 0%;
+  margin-bottom: auto;
+}
+
+.mediacard3 {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 70%;
+  top: 10%;
+  margin-top: 0%;
+  margin-bottom: auto;
+}
+
+.gtvcompact {
+  position: relative;
+  left: auto;
+  top: auto;
+  bottom: auto;
+  width: 25vw;
+  margin-bottom: auto;
+  -webkit-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+.austindata {
+  position: relative;
+  left: auto;
+  top: auto;
+  bottom: auto;
+  width: 25vw;
+  margin-top: 0%;
+  margin-bottom: auto;
+  -webkit-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+.dallasnesdata {
+  position: relative;
+  left: auto;
+  top: auto;
+  bottom: auto;
+  width: 25vw;
+  margin-bottom: auto;
+  -webkit-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+.naedata {
+  position: relative;
+  left: auto;
+  top: auto;
+  bottom: auto;
+  width: 25vw;
+  margin-bottom: auto;
+  -webkit-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+.sanantoniovoices {
+  position: relative;
+  left: auto;
+  top: auto;
+  bottom: auto;
+  width: 25vw;
+  margin-top: 0%;
+  margin-bottom: auto;
+  -webkit-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+.houstonchronvoice {
+  position: relative;
+  left: auto;
+  top: auto;
+  bottom: auto;
+  width: 25vw;
+  margin-bottom: auto;
+  -webkit-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+.austinstatesmanvoice {
+  position: relative;
+  left: auto;
+  top: auto;
+  bottom: auto;
+  width: 25vw;
+  margin-bottom: auto;
+  -webkit-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+.wacoaudience {
+  position: relative;
+  left: auto;
+  top: auto;
+  bottom: auto;
+  width: 25vw;
+  margin-top: 0%;
+  margin-bottom: auto;
+  -webkit-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+.planoaudience {
+  position: relative;
+  left: auto;
+  top: auto;
+  bottom: auto;
+  width: 25vw;
+  margin-bottom: auto;
+  -webkit-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+.statesmanrefugee {
+  position: relative;
+  left: auto;
+  top: auto;
+  bottom: auto;
+  width: 25vw;
+  margin-bottom: auto;
+  -webkit-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+.html-embed {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  bottom: 100%;
+  z-index: 400;
+  overflow: hidden;
+  width: auto;
+  height: 120vh;
+  margin-top: -10%;
+  margin-bottom: 0px;
+  -webkit-perspective-origin: 50% 0%;
+  perspective-origin: 50% 0%;
+  -webkit-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+}
+
+.div-block-11 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  bottom: 100%;
+  height: 100%;
+}
+
+.sliderdiv {
+  top: 0px;
+  display: block;
+  height: 100vh;
+}
+
+.slide {
+  height: 100vh;
+  background-image: url('../images/Statesman.png');
+  background-position: 0px 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.slide-nav {
+  height: 100px;
+}
+
+.slider {
+  height: 100%;
+}
+
+.slide-2 {
+  height: 100vh;
+  background-image: url('../images/tgvCompacttx-01.png');
+  background-position: 0px 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.textblockdiffvoice2 {
+  position: relative;
+  top: 14%;
+  margin: 10% 40% 20% 15%;
+  padding: 2%;
+  background-color: hsla(0, 0%, 100%, 0.85);
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.divslider {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  bottom: 100%;
+  height: 100vh;
+  margin-top: 0px;
+  background-color: #000;
+}
+
+.container-3 {
+  position: relative;
+  top: 15%;
+  height: 700px;
+}
+
+.mediaslider {
+  height: 100%;
+}
+
+.div-block-12 {
+  position: relative;
+  top: 0px;
+  bottom: 0%;
+  background-color: #fff;
+}
+
+.mediaslide1 {
+  position: relative;
+  left: 0%;
+  top: 10%;
+  right: 0%;
+  bottom: 0%;
+  height: 80%;
+  padding-top: 0px;
+  background-image: url('../images/texasEconomicCompact-01.png');
+  background-position: 50% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mediaslide1.day2 {
+  padding-right: 0px;
+  padding-bottom: 0px;
+  background-image: url('../images/tgvCompacttx-01.png');
+  background-size: contain;
+}
+
+.div-block-13 {
+  position: absolute;
+  left: 0%;
+  top: -10%;
+  right: 0%;
+  bottom: 100%;
+}
+
+.heading-9 {
+  position: relative;
+  top: -1.5em;
+  z-index: 1000;
+  display: block;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  background-color: #000;
+  font-family: 'Lyondisplay web', sans-serif;
+  color: #fff;
+  line-height: 100%;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+}
+
+.divday {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 100%;
+  z-index: 100;
+}
+
+.mask {
+  margin-top: 0%;
+  background-color: #000;
+}
+
+.mediaslide3 {
+  position: relative;
+  left: 0%;
+  top: 10%;
+  right: 0%;
+  bottom: 0%;
+  height: 80%;
+  padding-top: 0px;
+  background-image: url('../images/telemundoCompact-01.png');
+  background-position: 50% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mediaslide3.day2 {
+  padding-right: 0px;
+  padding-bottom: 0px;
+  background-image: url('../images/tgvCompacttx-01.png');
+  background-size: contain;
+}
+
+.mediaslide2 {
+  position: relative;
+  left: 0%;
+  top: 10%;
+  right: 0%;
+  bottom: 0%;
+  height: 80%;
+  padding-top: 0px;
+  background-image: url('../images/tgvCompacttx-01.png');
+  background-position: 50% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mediaslide2.day2 {
+  padding-right: 0px;
+  padding-bottom: 0px;
+  background-image: url('../images/tgvCompacttx-01.png');
+  background-size: contain;
+}
+
+.mediaslide4 {
+  position: relative;
+  left: 0%;
+  top: 10%;
+  right: 0%;
+  bottom: 0%;
+  height: 80%;
+  padding-top: 0px;
+  background-image: url('../images/naeReport-01.png');
+  background-position: 50% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mediaslide4.day2 {
+  padding-right: 0px;
+  padding-bottom: 0px;
+  background-image: url('../images/tgvCompacttx-01.png');
+  background-size: contain;
+}
+
+.stickymaptest {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  bottom: 100%;
+}
+
+.div-block-14 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  bottom: 100%;
+}
+
+.headlinedifvoices {
+  position: relative;
+  top: 14%;
+  margin: 10% 40% auto 10%;
+  padding: 2%;
+  background-color: hsla(0, 0%, 100%, 0.85);
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.headingvoices {
+  position: relative;
+  top: 0%;
+  margin: auto 5% 25px;
+  font-family: Foundersgrotesk, sans-serif;
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+.textblockdiffvoice3 {
+  position: relative;
+  top: 14%;
+  margin: 10% 40% 20% 15%;
+  padding: 2%;
+  background-color: hsla(0, 0%, 100%, 0.85);
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.textblockdiffaudience {
+  position: relative;
+  top: 14%;
+  margin: 10% 40% auto 10%;
+  padding: 2%;
+  background-color: hsla(0, 0%, 100%, 0.85);
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.headingaction {
+  position: relative;
+  top: 0%;
+  margin: auto 5% 25px;
+  font-family: Foundersgrotesk, sans-serif;
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+.textblocknext {
+  position: relative;
+  top: 14%;
+  margin: 10% 40% auto 10%;
+  padding: 2%;
+  background-color: hsla(0, 0%, 100%, 0.85);
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.headingnext {
+  position: relative;
+  top: 0%;
+  margin: auto 5% 25px;
+  font-family: Foundersgrotesk, sans-serif;
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+.textblockwhatsnext1 {
+  position: relative;
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-right: 0%;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+
+.textblockwhatsnext {
+  position: relative;
+  top: 14%;
+  margin: 10% 40% 20% 15%;
+  padding: 2%;
+  background-color: hsla(0, 0%, 100%, 0.85);
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.textblockwhatsnext2 {
+  position: relative;
+  top: 14%;
+  margin: 10% 40% 20% 15%;
+  padding: 2%;
+  background-color: hsla(0, 0%, 100%, 0.85);
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.textblockwhatsnext3 {
+  position: relative;
+  top: 14%;
+  margin: 10% 40% 20% 15%;
+  padding: 2%;
+  background-color: hsla(0, 0%, 100%, 0.85);
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.div-block-15 {
+  position: relative;
+  top: 15%;
+  display: block;
+  margin-top: 15%;
+}
+
+.localactionheadline {
+  position: relative;
+  left: 10%;
+  z-index: 500;
+  width: 60%;
+  margin-left: 0%;
+  font-family: Foundersgrotesk, sans-serif;
+  font-size: 2.4em;
+}
+
+.paragraph-2 {
+  position: relative;
+  left: 10%;
+  z-index: 500;
+  width: 60%;
+  margin-left: 0%;
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1.2em;
+}
+
+.stckystaydiv {
+  position: relative;
+  top: 0px;
+  bottom: 0%;
+  height: 100vh;
+}
+
+.mapstay {
+  position: relative;
+}
+
+.textblockdiffvoicetwo {
+  position: relative;
+  top: 14%;
+  margin: 10% 40% 20% 15%;
+  padding: 2%;
+  background-color: hsla(0, 0%, 100%, 0.85);
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.mediaslide5 {
+  position: relative;
+  left: 0%;
+  top: 10%;
+  right: 0%;
+  bottom: 0%;
+  height: 80%;
+  padding-top: 0px;
+  background-image: url('../images/dallasNewsStudy-01.png');
+  background-position: 50% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mediaslide5.day2 {
+  padding-right: 0px;
+  padding-bottom: 0px;
+  background-image: url('../images/tgvCompacttx-01.png');
+  background-size: contain;
+}
+
+.mediaslide9 {
+  position: relative;
+  left: 0%;
+  top: 10%;
+  right: 0%;
+  bottom: 0%;
+  height: 80%;
+  padding-top: 0px;
+  background-image: url('../images/sanAntonioVoicesTuition-01.png');
+  background-position: 50% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mediaslide9.day2 {
+  padding-right: 0px;
+  padding-bottom: 0px;
+  background-image: url('../images/tgvCompacttx-01.png');
+  background-size: contain;
+}
+
+.mediaslide7 {
+  position: relative;
+  left: 0%;
+  top: 10%;
+  right: 0%;
+  bottom: 0%;
+  height: 80%;
+  padding-top: 0px;
+  background-image: url('../images/houstonChronNurses-01.png');
+  background-position: 50% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mediaslide7.day2 {
+  padding-right: 0px;
+  padding-bottom: 0px;
+  background-image: url('../images/tgvCompacttx-01.png');
+  background-size: contain;
+}
+
+.mediaslide8 {
+  position: relative;
+  left: 0%;
+  top: 10%;
+  right: 0%;
+  bottom: 0%;
+  height: 80%;
+  padding-top: 0px;
+  background-image: url('../images/Statesman.png');
+  background-position: 50% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mediaslide8.day2 {
+  padding-right: 0px;
+  padding-bottom: 0px;
+  background-image: url('../images/tgvCompacttx-01.png');
+  background-size: contain;
+}
+
+.mediaslide10 {
+  position: relative;
+  left: 0%;
+  top: 10%;
+  right: 0%;
+  bottom: 0%;
+  height: 80%;
+  padding-top: 0px;
+  background-image: url('../images/planoNorthTx-01.png');
+  background-position: 50% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mediaslide10.day2 {
+  padding-right: 0px;
+  padding-bottom: 0px;
+  background-image: url('../images/tgvCompacttx-01.png');
+  background-size: contain;
+}
+
+.mediaslide11 {
+  position: relative;
+  left: 0%;
+  top: 10%;
+  right: 0%;
+  bottom: 0%;
+  height: 80%;
+  padding-top: 0px;
+  background-image: url('../images/statesmanRefugeeNotName-01.png');
+  background-position: 50% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mediaslide11.day2 {
+  padding-right: 0px;
+  padding-bottom: 0px;
+  background-image: url('../images/tgvCompacttx-01.png');
+  background-size: contain;
+}
+
+.mediaslide12 {
+  position: relative;
+  left: 0%;
+  top: 10%;
+  right: 0%;
+  bottom: 0%;
+  height: 80%;
+  padding-top: 0px;
+  background-image: url('../images/wacoTodayEntrepreneurs-01.png');
+  background-position: 50% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mediaslide12.day2 {
+  padding-right: 0px;
+  padding-bottom: 0px;
+  background-image: url('../images/tgvCompacttx-01.png');
+  background-size: contain;
+}
+
+.mediaslide6 {
+  position: relative;
+  left: 0%;
+  top: 10%;
+  right: 0%;
+  bottom: 0%;
+  height: 80%;
+  padding-top: 0px;
+  background-image: url('../images/austinMonitor.png');
+  background-position: 50% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mediaslide6.day2 {
+  padding-right: 0px;
+  padding-bottom: 0px;
+  background-image: url('../images/tgvCompacttx-01.png');
+  background-size: contain;
+}
+
+.div-block-16 {
+  position: relative;
+  top: 5vh;
+  z-index: 500;
+  overflow: hidden;
+  margin-right: 40%;
+  margin-left: 10%;
+}
+
+.paragraph-3 {
+  font-family: 'Lyontext web', sans-serif;
+  font-size: 1.6em;
+}
+
+.heading-10 {
+  font-family: Foundersgrotesk, sans-serif;
+  font-size: 4em;
+}
+
+.bold-text-2 {
+  line-height: 1em;
+  font-weight: 600;
+}
+
+.bold-text-3 {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+@media (max-width: 991px) {
+  .titepage {
+    height: 200em;
+  }
+  .nav-menu {
+    background-color: #000;
+  }
+  .menu-button {
+    color: #fff;
+  }
+  .menu-button:hover {
+    color: #00d6b4;
+  }
+  .menu-button.w--open {
+    background-color: #000;
+  }
+  .div-block-16 {
+    z-index: 200;
+  }
+}
+
+@media (max-width: 479px) {
+  .titleblock {
+    overflow: auto;
+    height: 400%;
+    max-height: none;
+  }
+  .texas-image {
+    top: 65%;
+  }
+}
+
+@font-face {
+  font-family: 'Foundersgrotesktextweb';
+  src: url('../fonts/FoundersGroteskTextWeb-Bold.woff2') format('woff2'), url('../fonts/FoundersGroteskTextWeb-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lyondisplay web';
+  src: url('../fonts/LyonDisplay-Regular-Web.woff2') format('woff2'), url('../fonts/LyonDisplay-Regular-Web.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lyontext web';
+  src: url('../fonts/LyonText-Bold-Web.woff2') format('woff2'), url('../fonts/LyonText-Bold-Web.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lyondisplay web';
+  src: url('../fonts/LyonDisplay-RegularItalic-Web.woff2') format('woff2'), url('../fonts/LyonDisplay-RegularItalic-Web.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Lyontext web';
+  src: url('../fonts/LyonText-BoldItalic-Web.woff2') format('woff2'), url('../fonts/LyonText-BoldItalic-Web.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Lyontext web';
+  src: url('../fonts/LyonText-Regular-Web.woff2') format('woff2'), url('../fonts/LyonText-Regular-Web.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lyontext web';
+  src: url('../fonts/LyonText-RegularItalic-Web.woff2') format('woff2'), url('../fonts/LyonText-RegularItalic-Web.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Foundersgrotesk';
+  src: url('../fonts/FoundersGrotesk-BoldItalic.otf') format('opentype'), url('../fonts/FoundersGrotesk-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Foundersgrotesk';
+  src: url('../fonts/FoundersGrotesk-Light.otf') format('opentype'), url('../fonts/FoundersGrotesk-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Foundersgrotesk';
+  src: url('../fonts/FoundersGrotesk-LightItalic.otf') format('opentype'), url('../fonts/FoundersGrotesk-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Foundersgrotesk';
+  src: url('../fonts/FoundersGrotesk-Medium.otf') format('opentype'), url('../fonts/FoundersGrotesk-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Foundersgrotesk';
+  src: url('../fonts/FoundersGrotesk-MediumItalic.otf') format('opentype'), url('../fonts/FoundersGrotesk-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Foundersgrotesk';
+  src: url('../fonts/FoundersGrotesk-Regular.otf') format('opentype'), url('../fonts/FoundersGrotesk-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Foundersgrotesk';
+  src: url('../fonts/FoundersGrotesk-Bold.otf') format('opentype'), url('../fonts/FoundersGrotesk-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Foundersgrotesk';
+  src: url('../fonts/FoundersGrotesk-RegularItalic.otf') format('opentype'), url('../fonts/FoundersGrotesk-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Foundersgrotesk';
+  src: url('../fonts/FoundersGrotesk-Semibold.otf') format('opentype'), url('../fonts/FoundersGrotesk-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Foundersgrotesk';
+  src: url('../fonts/FoundersGrotesk-SemiboldItalic.otf') format('opentype'), url('../fonts/FoundersGrotesk-SemiboldItalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
