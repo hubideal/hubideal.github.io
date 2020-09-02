@@ -27,7 +27,7 @@
     "eslint-plugin-prettier": "^2.6.2",
     "express": "^4.16.4",
     "fontfaceobserver": "^2.0.13",
-    "googleapis": "^34.0.0",
+    "googleapis": "^39.1.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-clean-css": "^3.9.4",
